@@ -1,0 +1,38 @@
+[binaries]
+c = '/opt/cxc/bin/avr-gcc'
+cpp = '/opt/cxc/bin/avr-g++'
+ar = '/opt/cxc/bin/avr-ar'
+as = '/opt/cxc/bin/avr-as'
+strip = '/opt/cxc/bin/avr-strip'
+objcopy = '/opt/cxc/bin/avr-objcopy'
+size = '/opt/cxc/bin/avr-size'
+cmake = 'false'
+
+[properties]
+sizeof_char = 1
+sizeof_short = 2
+sizeof_int = 2
+sizeof_long = 4
+sizeof_longlong = 8
+sizeof_size_t = 2
+sizeof_ptrdiff_t = 2
+sizeof_void* = 2
+sizeof_float = 2
+sizeof_double = 8
+sizeof_longdouble = 8
+sizeof_wchar_t = 2
+
+needs_exe_wrapper = true
+has_function_printf = true
+sys_root = '/opt/cxc'
+
+c_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=avrxmega6', '-D__AVR_ATxmega256A3U__', '-ffunction-sections', '-fdata-sections']
+cpp_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=avrxmega6', '-D__AVR_ATxmega256A3U__', '-ffunction-sections', '-fdata-sections', '-fno-rtti', '-fno-exceptions']
+c_link_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=avrxmega6']
+cpp_link_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=avrxmega6']
+
+[host_machine]
+system = 'ATXMEGA256A3U'
+cpu_family = 'avr'
+cpu = 'avrxmega6' #atxmega256a3u
+endian = 'little'
