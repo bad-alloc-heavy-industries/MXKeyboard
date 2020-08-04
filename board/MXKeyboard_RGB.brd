@@ -161,6 +161,7 @@
 <rectangle x1="75.184" y1="99.949" x2="78.486" y2="103.251" layer="30"/>
 <rectangle x1="413.512" y1="114.427" x2="420.878" y2="121.793" layer="30"/>
 <rectangle x1="411.734" y1="99.949" x2="415.036" y2="103.251" layer="30" rot="R90"/>
+<rectangle x1="379.476" y1="120.65" x2="381.254" y2="121.92" layer="30"/>
 </plain>
 <libraries>
 <library name="MXKeyboard">
