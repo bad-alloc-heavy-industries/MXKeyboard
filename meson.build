@@ -18,5 +18,8 @@ if not meson.is_cross_build()
 	error('MXKeyboard must be cross-compiled to the target microcontroller and cannot be built for the host machine')
 endif
 
+targetCXX = meson.get_compiler('cpp', native: false)
+hostCXX = meson.get_compiler('cpp', native: true)
+
 subdir('bootloader')
 subdir('firmware')
