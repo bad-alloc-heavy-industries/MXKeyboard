@@ -3,3 +3,5 @@ eagle.epf
 *.s#*
 *.b#*
 *.l#*
+
+img/
