@@ -26,10 +26,13 @@ needs_exe_wrapper = true
 has_function_printf = true
 sys_root = '/opt/cxc'
 
-c_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=avrxmega6', '-D__AVR_ATxmega256A3U__', '-ffunction-sections', '-fdata-sections']
-cpp_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=avrxmega6', '-D__AVR_ATxmega256A3U__', '-ffunction-sections', '-fdata-sections', '-fno-rtti', '-fno-exceptions']
-c_link_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=avrxmega6']
-cpp_link_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=avrxmega6']
+c_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=atxmega256a3u', '-ffunction-sections', '-fdata-sections', '-ffreestanding']
+cpp_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=atxmega256a3u', '-ffunction-sections', '-fdata-sections', '-ffreestanding', '-fno-rtti', '-fno-exceptions']
+c_link_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=atxmega256a3u', '-ffreestanding', '-nostdlib']
+cpp_link_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=atxmega256a3u', '-ffreestanding', '-nostdlib']
+
+cpp_eh = 'none'
+cpp_rtti = false
 
 [host_machine]
 system = 'ATXMEGA256A3U'
