@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: BSD-3-Clause */
 OUTPUT_FORMAT("elf32-avr")
 OUTPUT_ARCH(avr:106)
 

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: BSD-3-Clause
 #ifndef MXKEYBOARD__HXX
 #define MXKEYBOARD__HXX
 
