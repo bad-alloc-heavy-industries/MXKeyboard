@@ -8,6 +8,9 @@
 #define USED __attribute__ ((__used__))
 #define SECTION(name) __attribute__ ((__section__(name)))
 
-extern void run() USED;
+extern void run();
+
+extern void oscInit();
+extern void uartInit();
 
 #endif /*MXKEYBOARD__HXX*/

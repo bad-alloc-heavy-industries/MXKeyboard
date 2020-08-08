@@ -1,7 +1,8 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 keyboardSrc = [
-	'startup.cxx', 'fuses.cxx', 'MXKeyboard.cxx'
+	'startup.cxx', 'fuses.cxx', 'MXKeyboard.cxx', 'uart.cxx',
+	'system.cxx'
 ]
 
 executable(

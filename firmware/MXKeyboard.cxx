@@ -3,4 +3,9 @@
 
 void run()
 {
+	oscInit();
+	uartInit();
+
+	while (true)
+		continue;
 }
