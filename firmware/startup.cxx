@@ -18,7 +18,38 @@ void irqEmptyDef() INTERRUPT;
 using irqFunction_t = void (*)();
 irqFunction_t vectorTable[] USED SECTION(".vectors")
 {
-	init
+	init, oscFailureIRQ, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef/*, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef,
+	irqEmptyDef, irqEmptyDef, irqEmptyDef, irqEmptyDef*/
 };
 
 void irqEmptyDef()
