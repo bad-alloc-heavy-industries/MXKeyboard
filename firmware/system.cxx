@@ -11,6 +11,7 @@ void oscInit()
 	OSC.CTRL = 0x09;
 	while (!(OSC.STATUS & 0x08))
 		continue;
+	CCP = CCP_IOREG_gc;
 	OSC.XOSCFAIL = 1;
 
 	CCP = CCP_IOREG_gc;
