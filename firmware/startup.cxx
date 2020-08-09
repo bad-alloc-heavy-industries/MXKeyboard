@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: BSD-3-Clause
 #include <cstdint>
 #include "MXKeyboard.hxx"
+#include "interrupts.hxx"
 
 extern const char stackTop;
 extern char vectorAddr;
@@ -10,7 +11,9 @@ extern uint8_t dataMemory;
 extern char bssStart;
 extern char bssEnd;
 
-void init();
+extern void init() DEFAULT_VISIBILITY USED SECTION(".startup");
+#define irqEmptyDef __vector_irqEmptyDef
+void irqEmptyDef() INTERRUPT;
 
 using irqFunction_t = void (*)();
 irqFunction_t vectorTable[] USED SECTION(".vectors")
@@ -18,7 +21,12 @@ irqFunction_t vectorTable[] USED SECTION(".vectors")
 	init
 };
 
-extern void init() DEFAULT_VISIBILITY USED SECTION(".startup");
+void irqEmptyDef()
+{
+	/*while (true)
+		continue;*/
+}
+
 void init()
 {
 	SREG = 0;
