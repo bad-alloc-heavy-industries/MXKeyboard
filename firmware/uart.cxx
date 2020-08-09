@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: BSD-3-Clause
+#include <avr/builtins.h>
 #include "MXKeyboard.hxx"
+#include "led.hxx"
 
 /*!
  * SCLK_GREEN = PC1
@@ -36,4 +38,12 @@ void uartInit()
 	PORTC.DIRSET = 0xAA;
 	// Make PD 1 & 3 ouputs
 	PORTD.DIRSET = 0x0A;
+}
+
+void uartWrite(USART_t &uart, const uint8_t data)
+{
+	uart.DATA = data;
+	while (!(uart.STATUS & 0x40))
+		continue;
+	uart.STATUS &= ~0x40;
 }
