@@ -5,6 +5,7 @@ ar = '/opt/cxc/bin/avr-ar'
 as = '/opt/cxc/bin/avr-as'
 strip = '/opt/cxc/bin/avr-strip'
 objcopy = '/opt/cxc/bin/avr-objcopy'
+objdump = '/opt/cxc/bin/avr-objdump'
 size = '/opt/cxc/bin/avr-size'
 cmake = 'false'
 

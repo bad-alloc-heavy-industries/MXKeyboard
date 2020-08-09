@@ -5,7 +5,7 @@ keyboardSrc = [
 	'system.cxx'
 ]
 
-executable(
+firmware = executable(
 	'MXKeyboard',
 	keyboardSrc,
 	include_directories: include_directories('include', 'include/c++'),
@@ -15,4 +15,28 @@ executable(
 	name_suffix: 'elf',
 	build_by_default: true,
 	install: false
+)
+
+avrdude = find_program('avrdude')
+run_target(
+	'program',
+	command: [
+		avrdude,
+		'-p', 'ATxmega256A3U',
+		'-c', 'jtag3',
+		'-U', 'flash:w:@0@:e'.format(firmware.full_path())
+	],
+	depends: firmware
+)
+
+objdump = find_program('objdump')
+run_target(
+	'disasm',
+	command: [objdump, '-dC', firmware]
+)
+
+size = find_program('size')
+run_target(
+	'size',
+	command: [size, firmware]
 )
