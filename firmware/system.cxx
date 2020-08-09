@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 #include "MXKeyboard.hxx"
+#include "interrupts.hxx"
 
 // 16MHz oscilator is on PR1/XTAL1
 void oscInit()
@@ -21,4 +22,13 @@ void oscInit()
 
 	// Disable the internal 2MHz RC osc, but also enable the 32MHz one.
 	OSC.CTRL = 0x0A;
+}
+
+void oscFailureIRQ()
+{
+	CCP = CCP_IOREG_gc;
+	CLK.CTRL = CLK_SCLKSEL_RC32M_gc;
+	CCP = CCP_IOREG_gc;
+	CLK.PSCTRL = CLK_PSADIV_2_gc | CLK_PSBCDIV_2_2_gc;
+	OSC.XOSCFAIL = 3;
 }
