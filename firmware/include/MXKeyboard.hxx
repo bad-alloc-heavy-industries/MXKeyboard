@@ -11,6 +11,6 @@
 extern void run();
 
 extern void oscInit();
-extern void uartInit();
+extern void ledInit();
 
 #endif /*MXKEYBOARD__HXX*/

@@ -4,7 +4,7 @@
 void run()
 {
 	oscInit();
-	uartInit();
+	ledInit();
 
 	while (true)
 		continue;

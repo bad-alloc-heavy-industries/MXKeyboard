@@ -2,7 +2,7 @@
 
 keyboardSrc = [
 	'startup.cxx', 'fuses.cxx', 'MXKeyboard.cxx', 'uart.cxx',
-	'system.cxx'
+	'system.cxx', 'led.cxx'
 ]
 
 firmware = executable(
