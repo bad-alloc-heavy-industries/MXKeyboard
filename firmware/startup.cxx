@@ -12,7 +12,6 @@ extern char bssStart;
 extern char bssEnd;
 
 extern void init() DEFAULT_VISIBILITY USED SECTION(".startup");
-#define irqEmptyDef __vector_irqEmptyDef
 void irqEmptyDef() INTERRUPT;
 
 using irqFunction_t = void (*)();
