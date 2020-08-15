@@ -97,16 +97,48 @@ void ledSendValuePair(const channel_t channel, const uint16_t value1, const uint
 	uartWrite(uart, uint8_t(value1));
 }
 
-void ledSetValue(const uint8_t, const uint8_t r, const uint8_t g, const uint8_t b)
+/*
+ * LED data array:
+ * [ 00 ], [ 00 ], [ 00 ]
+ *
+ * led = 0, correctedR = 0xDA8:
+ * [ DA ], [ 80 ], [ 00 ]
+ *
+ * led = 1, correctedR = 0xDA8:
+ * [ 00 ], [ 0D ], [ A8 ]
+ */
+
+constexpr void ledData_t::colour(const std::size_t led, const uint8_t r, const uint8_t g, const uint8_t b) noexcept
 {
 	const auto correctedR{gammaLUT[r]};
 	const auto correctedG{gammaLUT[g]};
 	const auto correctedB{gammaLUT[b]};
 
-	ledSendValuePair(channel_t::red, correctedR, correctedR);
-	ledSendValuePair(channel_t::green, correctedG, correctedG);
-	ledSendValuePair(channel_t::blue, correctedB, correctedB);
+	const auto startBit{led * 12U};
+	const auto startByte{startBit / 8U};
+
+	if (led & 1U)
+	{
+		red[startByte] = (red[startByte] & 0xF0_b) | std::byte((correctedR >> 8U) & 0x0FU);
+		green[startByte] = (green[startByte] & 0xF0_b) | std::byte((correctedG >> 8U) & 0x0FU);
+		blue[startByte] = (blue[startByte] & 0xF0_b) | std::byte((correctedB >> 8U) & 0x0FU);
+		red[startByte + 1] = std::byte(correctedR);
+		green[startByte + 1] = std::byte(correctedG);
+		blue[startByte + 1] = std::byte(correctedB);
+	}
+	else
+	{
+		red[startByte] = std::byte(correctedR >> 4U);
+		green[startByte] = std::byte(correctedR >> 4U);
+		blue[startByte] = std::byte(correctedR >> 4U);
+		red[startByte + 1] = (red[startByte + 1] & 0x0F_b) | std::byte((correctedR & 0x0FU) << 4U);
+		green[startByte + 1] = (green[startByte + 1] & 0x0F_b) | std::byte((correctedR & 0x0FU) << 4U);
+		blue[startByte + 1] = (blue[startByte + 1] & 0x0F_b) | std::byte((correctedR & 0x0FU) << 4U);
+	}
 }
+
+void ledSetValue(const uint8_t led, const uint8_t r, const uint8_t g, const uint8_t b)
+	{ leds.colour(led, r, g, b); }
 
 void ledLatch()
 {
