@@ -2,6 +2,7 @@
 #ifndef CSTDDEF
 #define CSTDDEF
 
+#include <cstdint>
 #include <stddef.h>
 
 namespace std
@@ -12,7 +13,12 @@ namespace std
 
 	using nullptr_t = decltype(nullptr);
 
-	enum class byte : unsigned char {};
+	enum class byte : uint8_t {};
+
+	constexpr byte operator |(const byte lhs, const byte rhs) noexcept
+		{ return static_cast<byte>(static_cast<uint8_t>(lhs) | static_cast<uint8_t>(rhs)); }
+	constexpr byte operator &(const byte lhs, const byte rhs) noexcept
+		{ return static_cast<byte>(static_cast<uint8_t>(lhs) & static_cast<uint8_t>(rhs)); }
 } // namespace std
 
 #endif /*CSTDDEF*/
