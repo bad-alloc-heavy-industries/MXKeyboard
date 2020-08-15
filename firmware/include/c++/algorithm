@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: BSD-3-Clause
+#ifndef ALGORITHM
+#define ALGORITHM
+
+#include <cstddef>
+#include <utility>
+
+namespace std
+{
+	template<typename forwardIt1_t, typename forwardIt2_t>
+		constexpr inline void iter_swap(const forwardIt1_t a, const forwardIt2_t b)
+		{ swap(*a, *b); }
+
+	template<typename forwardIt1_t, typename forwardIt2_t>
+		constexpr forwardIt2_t swap_ranges(forwardIt1_t first1, forwardIt1_t last1, forwardIt2_t first2)
+	{
+		for (; first1 != last1; ++first1, ++first2)
+			std::iter_swap(first1, first2);
+		return first2;
+	}
+
+	template<typename outputIt_t, typename T>
+		constexpr inline outputIt_t fill_n(outputIt_t first, size_t count, const T &value)
+	{
+		const T value_{value};
+		for (; count > 0; --count, ++first)
+			*first = value_;
+		return first;
+	}
+} // namespace std
+
+#endif /*ALGORITHM*/
