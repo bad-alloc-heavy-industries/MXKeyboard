@@ -1,8 +1,12 @@
 // SPDX-License-Identifier: BSD-3-Clause
 #include <cstddef>
+#include <array>
 #include <avr/cpufunc.h>
 #include "MXKeyboard.hxx"
 #include "led.hxx"
+
+constexpr static inline std::byte operator ""_b(const unsigned long long value) noexcept
+	{ return static_cast<std::byte>(value); }
 
 constexpr std::size_t toNearestWholeChip(const std::size_t ledCount)
 {
@@ -11,6 +15,15 @@ constexpr std::size_t toNearestWholeChip(const std::size_t ledCount)
 }
 
 static_assert(toNearestWholeChip(1) == 36);
+
+struct ledData_t
+{
+	std::array<std::byte, toNearestWholeChip(109)> red{};
+	std::array<std::byte, toNearestWholeChip(109)> green{};
+	std::array<std::byte, toNearestWholeChip(109)> blue{};
+
+	constexpr void colour(std::size_t led, uint8_t r, uint8_t g, uint8_t b) noexcept;
+};
 
 const uint16_t gammaLUT[256]
 {
@@ -49,6 +62,8 @@ const uint16_t gammaLUT[256]
 };
 
 enum class channel_t { red, green, blue };
+
+ledData_t leds;
 
 /*
  * PE4 = Blank
