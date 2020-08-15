@@ -1,0 +1,55 @@
+// SPDX-License-Identifier: BSD-3-Clause
+#ifndef TYPE_TRAITS
+#define TYPE_TRAITS
+
+namespace std
+{
+	template<typename T, T v> struct integral_constant
+	{
+		using value_type = T;
+		using type = integral_constant<T, v>;
+
+		constexpr static T value = v;
+		constexpr operator value_type() const noexcept { return value; }
+		constexpr value_type operator ()() const noexcept { return value; }
+	};
+
+	template<typename T, T v> constexpr T integral_constant<T, v>::value;
+
+	using true_type = integral_constant<bool, true>;
+	using false_type = integral_constant<bool, false>;
+	template<bool value> using _bool_constant = integral_constant<bool, value>;
+
+	namespace impl
+	{
+		template<typename T, typename U = T &&> U declval();
+		template<typename T> T declval();
+	}
+
+	template<typename T> auto declval() noexcept -> decltype(impl::declval<T>());
+
+	namespace impl
+	{
+		template<typename T> struct is_nothrow_swappable
+		{
+			template<typename U> static auto test() ->
+				_bool_constant<noexcept(swap(std::declval<U &>(), std::declval<U &>()))>;
+			template<typename> static false_type test();
+
+			using type = decltype(test<T>());
+		};
+	} // namespace impl
+
+	template<typename T> struct is_nothrow_swappable :
+		impl::is_nothrow_swappable<T>::type { };
+
+	template<typename T> constexpr inline bool is_nothrow_swappable_v = is_nothrow_swappable<T>::value;
+
+	template<typename T> struct remove_reference { using type = T; };
+	template<typename T> struct remove_reference<T &> { using type = T; };
+	template<typename T> struct remove_reference<T &&> { using type = T; };
+
+	template<typename T> using remove_reference_t = typename remove_reference<T>::type;
+} // namespace std
+
+#endif /*TYPE_TRAITS*/
