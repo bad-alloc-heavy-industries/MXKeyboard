@@ -1,7 +1,16 @@
 // SPDX-License-Identifier: BSD-3-Clause
+#include <cstddef>
 #include <avr/cpufunc.h>
 #include "MXKeyboard.hxx"
 #include "led.hxx"
+
+constexpr std::size_t toNearestWholeChip(const std::size_t ledCount)
+{
+	const auto chips{(ledCount / 24) + (ledCount % 24 ? 1 : 0)};
+	return chips * 36;
+}
+
+static_assert(toNearestWholeChip(1) == 36);
 
 const uint16_t gammaLUT[256]
 {

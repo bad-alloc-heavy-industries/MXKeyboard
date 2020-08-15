@@ -38,6 +38,6 @@ namespace std
 
 	using ::uintmax_t;
 	using ::uintptr_t;
-}
+} // namespace std
 
 #endif /*CSTDINT*/

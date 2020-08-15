@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: BSD-3-Clause
+#ifndef CSTDDEF
+#define CSTDDEF
+
+#include <stddef.h>
+
+namespace std
+{
+	using ::size_t;
+	using ::ptrdiff_t;
+	using ::max_align_t;
+
+	using nullptr_t = decltype(nullptr);
+
+	enum class byte : unsigned char {};
+} // namespace std
+
+#endif /*CSTDDEF*/
