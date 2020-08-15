@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: BSD-3-Clause
+#ifndef UTILITY
+#define UTILITY
+
+#include <type_traits>
+
+namespace std
+{
+	template<typename T> constexpr remove_reference_t<T> &&move(T &&t) noexcept
+		{ return static_cast<remove_reference_t<T> &&>(t); }
+
+	template<typename T> constexpr inline /*enable_if_t<!is_tuple_like_v<T> && is_move_constructable_v<T> &&
+		is_move_assignable_v<T>>*/void swap(T &a, T &b) noexcept(true)
+	{
+		T other{move(a)};
+		a = move(b);
+		b = move(other);
+	}
+
+} // namespace std
+
+#endif /*UTILITY*/
