@@ -4,9 +4,12 @@
 
 #define INTERRUPT __attribute__((signal)) __attribute__((used))
 
-void oscFailureIRQ() INTERRUPT;
-void dmaChannel0IRQ() INTERRUPT;
-void dmaChannel1IRQ() INTERRUPT;
-void dmaChannel2IRQ() INTERRUPT;
+extern "C"
+{
+	void oscFailureIRQ() INTERRUPT;
+	void dmaChannel0IRQ() INTERRUPT;
+	void dmaChannel1IRQ() INTERRUPT;
+	void dmaChannel2IRQ() INTERRUPT;
+}
 
 #endif /*INTERRUPTS__HXX*/
