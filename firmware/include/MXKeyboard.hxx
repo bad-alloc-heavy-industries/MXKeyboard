@@ -12,5 +12,6 @@ extern void run();
 
 extern void oscInit();
 extern void ledInit();
+extern void timerInit(TC0_t &timer);
 
 #endif /*MXKEYBOARD__HXX*/
