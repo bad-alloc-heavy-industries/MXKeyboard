@@ -4,6 +4,7 @@
 #include <avr/cpufunc.h>
 #include "MXKeyboard.hxx"
 #include "led.hxx"
+#include "interrupts.hxx"
 
 constexpr static inline std::byte operator ""_b(const unsigned long long value) noexcept
 	{ return static_cast<std::byte>(value); }
@@ -73,9 +74,11 @@ ledData_t leds;
 void ledInit()
 {
 	// Set PE4 and 5 to output and get blanking happening ASAP
+	PORTE.OUTCLR = 0x20;
 	PORTE.DIRSET = 0x30;
 	PORTE.OUTSET = 0x10;
 	uartInit();
+	timerInit(TCC0);
 }
 
 USART_t &ledChannelToUART(const channel_t channel)
@@ -146,4 +149,23 @@ void ledLatch()
 	_NOP();
 	PORTE.OUTCLR = 0x20;
 	PORTE.OUTCLR = 0x10;
+}
+
+uint8_t redValue{0};
+bool incRed{true};
+
+void tcc0OverflowIRQ()
+{
+	if (incRed)
+		++redValue;
+	else
+		--redValue;
+
+	if (redValue == 0)
+		incRed = true;
+	else if (redValue == 255)
+		incRed = false;
+
+	ledSetValue(100, redValue, incRed ? 1 : 0, 255 - redValue);
+	ledLatch();
 }

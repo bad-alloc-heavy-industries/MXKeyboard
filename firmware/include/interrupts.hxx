@@ -10,6 +10,7 @@ extern "C"
 	void dmaChannel0IRQ() INTERRUPT;
 	void dmaChannel1IRQ() INTERRUPT;
 	void dmaChannel2IRQ() INTERRUPT;
+	void tcc0OverflowIRQ() INTERRUPT;
 }
 
 #endif /*INTERRUPTS__HXX*/

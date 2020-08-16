@@ -95,7 +95,7 @@ void vectorTable()
 		jmp irqEmptyDef ; vector 11
 		jmp irqEmptyDef ; vector 12
 		jmp irqEmptyDef ; vector 13
-		jmp irqEmptyDef ; vector 14
+		jmp tcc0OverflowIRQ ; vector 14
 		jmp irqEmptyDef ; vector 15
 		jmp irqEmptyDef ; vector 16
 		jmp irqEmptyDef ; vector 17
