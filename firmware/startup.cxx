@@ -89,7 +89,7 @@ void vectorTable()
 		jmp irqEmptyDef ; Port R Int1 vector
 		jmp irqEmptyDef ; DMA Channel 0 vector
 		jmp irqEmptyDef ; DMA Channel 1 vector
-		jmp irqEmptyDef ; DMA Channel 2 vector
+		jmp dmaChannel2IRQ ; DMA Channel 2 vector
 		jmp irqEmptyDef ; DMA Channel 3 vector
 		jmp irqEmptyDef ; vector 10
 		jmp irqEmptyDef ; vector 11

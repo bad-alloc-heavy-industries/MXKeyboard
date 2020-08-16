@@ -13,5 +13,15 @@ extern void run();
 extern void oscInit();
 extern void ledInit();
 extern void timerInit(TC0_t &timer);
+extern void dmaInit();
+extern void dmaInit(DMA_CH_t &channel, DMA_CH_TRIGSRC_t triggerSource);
+
+extern void dmaTransferLength(DMA_CH_t &channel, uint16_t length);
+extern void dmaTransferSource(DMA_CH_t &channel, const void *address);
+extern void dmaTransferSource(DMA_CH_t &channel, const volatile void *address);
+extern void dmaTransferDest(DMA_CH_t &channel, const void *address);
+extern void dmaTransferDest(DMA_CH_t &channel, const volatile void *address);
+extern void dmaInterruptEnable(DMA_CH_t &channel);
+extern void dmaTrigger(DMA_CH_t &channel);
 
 #endif /*MXKEYBOARD__HXX*/

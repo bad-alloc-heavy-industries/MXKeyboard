@@ -7,6 +7,7 @@ void run()
 {
 	__builtin_avr_cli();
 	oscInit();
+	dmaInit();
 	ledInit();
 	PMIC.CTRL = 0x87;
 	__builtin_avr_sei();

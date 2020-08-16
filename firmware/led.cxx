@@ -79,6 +79,19 @@ void ledInit()
 	PORTE.OUTSET = 0x10;
 	uartInit();
 	timerInit(TCC0);
+	dmaInit(DMA.CH0, DMA_CH_TRIGSRC_USARTC0_DRE_gc);
+	dmaInit(DMA.CH1, DMA_CH_TRIGSRC_USARTD0_DRE_gc);
+	dmaInit(DMA.CH2, DMA_CH_TRIGSRC_USARTC1_DRE_gc);
+	dmaTransferLength(DMA.CH0, leds.red.size());
+	dmaTransferSource(DMA.CH0, leds.red.data());
+	dmaTransferDest(DMA.CH0, &USARTC0.DATA);
+	dmaTransferLength(DMA.CH1, leds.green.size());
+	dmaTransferSource(DMA.CH1, leds.green.data());
+	dmaTransferDest(DMA.CH1, &USARTD0.DATA);
+	dmaTransferLength(DMA.CH2, leds.blue.size());
+	dmaTransferSource(DMA.CH2, leds.blue.data());
+	dmaTransferDest(DMA.CH2, &USARTC1.DATA);
+	dmaInterruptEnable(DMA.CH2);
 }
 
 USART_t &ledChannelToUART(const channel_t channel)
@@ -169,3 +182,5 @@ void tcc0OverflowIRQ()
 	ledSetValue(100, redValue, incRed ? 1 : 0, 255 - redValue);
 	ledLatch();
 }
+
+void dmaChannel2IRQ() { ledLatch(); }
