@@ -95,13 +95,13 @@ void ledInit()
 	dmaInit(DMA.CH2, DMA_CH_TRIGSRC_USARTC1_DRE_gc);
 	dmaTransferLength(DMA.CH0, leds.red.size());
 	dmaTransferSource(DMA.CH0, leds.red.data());
-	dmaTransferDest(DMA.CH0, &USARTC0.DATA);
+	dmaTransferDest(DMA.CH0, &ledChannelToUART(channel_t::red).DATA);
 	dmaTransferLength(DMA.CH1, leds.green.size());
 	dmaTransferSource(DMA.CH1, leds.green.data());
-	dmaTransferDest(DMA.CH1, &USARTD0.DATA);
+	dmaTransferDest(DMA.CH1, &ledChannelToUART(channel_t::green).DATA);
 	dmaTransferLength(DMA.CH2, leds.blue.size());
 	dmaTransferSource(DMA.CH2, leds.blue.data());
-	dmaTransferDest(DMA.CH2, &USARTC1.DATA);
+	dmaTransferDest(DMA.CH2, &ledChannelToUART(channel_t::blue).DATA);
 	dmaInterruptEnable(DMA.CH2);
 }
 
