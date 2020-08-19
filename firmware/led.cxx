@@ -145,11 +145,11 @@ constexpr void ledData_t::colour(const std::size_t led, const uint8_t r, const u
 	else
 	{
 		red[startByte] = std::byte(correctedR >> 4U);
-		green[startByte] = std::byte(correctedR >> 4U);
-		blue[startByte] = std::byte(correctedR >> 4U);
-		red[startByte + 1] = (red[startByte + 1] & 0x0F_b) | std::byte((correctedR & 0x0FU) << 4U);
-		green[startByte + 1] = (green[startByte + 1] & 0x0F_b) | std::byte((correctedR & 0x0FU) << 4U);
-		blue[startByte + 1] = (blue[startByte + 1] & 0x0F_b) | std::byte((correctedR & 0x0FU) << 4U);
+		green[startByte] = std::byte(correctedG >> 4U);
+		blue[startByte] = std::byte(correctedB >> 4U);
+		red[startByte + 1] = (red[startByte + 1] & 0x0F_b) | std::byte((correctedR << 4U) & 0xF0U);
+		green[startByte + 1] = (green[startByte + 1] & 0x0F_b) | std::byte((correctedG << 4U) & 0xF0U);
+		blue[startByte + 1] = (blue[startByte + 1] & 0x0F_b) | std::byte((correctedB << 4U) & 0xF0U);
 	}
 }
 
