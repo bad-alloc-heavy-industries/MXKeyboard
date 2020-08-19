@@ -42,8 +42,13 @@ void uartInit()
 
 void uartWrite(USART_t &uart, const uint8_t data)
 {
+	while (!(uart.STATUS & 0x20))
+		continue;
 	uart.DATA = data;
+}
+
+void uartWaitTXComplete(USART_t &uart)
+{
 	while (!(uart.STATUS & 0x40))
 		continue;
-	uart.STATUS &= ~0x40;
 }

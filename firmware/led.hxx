@@ -9,5 +9,6 @@ extern void ledLatch();
 
 extern void uartInit();
 extern void uartWrite(USART_t &uart, uint8_t data);
+extern void uartWaitTXComplete(USART_t &uart);
 
 #endif /*LED__HXX*/
