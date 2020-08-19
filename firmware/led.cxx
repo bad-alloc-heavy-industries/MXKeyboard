@@ -167,19 +167,19 @@ void ledLatch()
 uint8_t redValue{0};
 bool incRed{true};
 
+void nextRedValue() noexcept
+{
+	incRed ? ++redValue : --redValue;
+	if (redValue == 0U)
+		incRed = true;
+	else if (redValue == 255U)
+		incRed = false;
+}
+
 void tcc0OverflowIRQ()
 {
-	if (incRed)
-		++redValue;
-	else
-		--redValue;
-
-	if (redValue == 0)
-		incRed = true;
-	else if (redValue == 255)
-		incRed = false;
-
 	ledSetValue(100, redValue, incRed ? 1 : 0, 255 - redValue);
+	nextRedValue();
 	ledLatch();
 }
 
