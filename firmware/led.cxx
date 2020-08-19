@@ -26,7 +26,7 @@ struct ledData_t
 	constexpr void colour(std::size_t led, uint8_t r, uint8_t g, uint8_t b) noexcept;
 };
 
-const uint16_t gammaLUT[256]
+constexpr static const std::array<uint16_t, 256> gammaLUT
 {
 	0x000, 0x00A, 0x014, 0x01E, 0x028, 0x033, 0x03D, 0x047,
 	0x051, 0x05C, 0x066, 0x071, 0x07B, 0x086, 0x090, 0x09B,
