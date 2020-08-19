@@ -64,7 +64,18 @@ constexpr static const std::array<uint16_t, 256> gammaLUT
 
 enum class channel_t { red, green, blue };
 
-ledData_t leds;
+static ledData_t leds;
+
+USART_t &ledChannelToUART(const channel_t channel)
+{
+	if (channel == channel_t::red)
+		return USARTC0;
+	else if (channel == channel_t::green)
+		return USARTD0;
+	else if (channel == channel_t::blue)
+		return USARTC1;
+	return USARTD1; // This is invalid but harmless.
+}
 
 /*
  * PE4 = Blank
@@ -92,17 +103,6 @@ void ledInit()
 	dmaTransferSource(DMA.CH2, leds.blue.data());
 	dmaTransferDest(DMA.CH2, &USARTC1.DATA);
 	dmaInterruptEnable(DMA.CH2);
-}
-
-USART_t &ledChannelToUART(const channel_t channel)
-{
-	if (channel == channel_t::red)
-		return USARTC0;
-	else if (channel == channel_t::green)
-		return USARTD0;
-	else if (channel == channel_t::blue)
-		return USARTC1;
-	return USARTD1; // This is invalid but harmless.
 }
 
 void ledSendValuePair(const channel_t channel, const uint16_t value1, const uint16_t value2)
