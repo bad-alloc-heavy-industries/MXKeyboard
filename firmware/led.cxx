@@ -156,8 +156,8 @@ void ledLatch()
 	PORTE.OUTCLR = 0x10;
 }
 
-uint8_t redValue{0};
-bool incRed{true};
+static uint8_t redValue{1};
+static bool incRed{false};
 
 void nextRedValue() noexcept
 {
