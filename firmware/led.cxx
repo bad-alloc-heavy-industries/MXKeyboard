@@ -105,14 +105,6 @@ void ledInit()
 	dmaInterruptEnable(DMA.CH2);
 }
 
-void ledSendValuePair(const channel_t channel, const uint16_t value1, const uint16_t value2)
-{
-	auto &uart{ledChannelToUART(channel)};
-	uartWrite(uart, uint8_t(value2 >> 4U));
-	uartWrite(uart, uint8_t((value2 << 4U) & 0xF0U) | uint8_t(value1 & 0x0FU));
-	uartWrite(uart, uint8_t(value1));
-}
-
 /*
  * LED data array:
  * [ 00 ], [ 00 ], [ 00 ]
@@ -178,9 +170,13 @@ void nextRedValue() noexcept
 
 void tcc0OverflowIRQ()
 {
-	ledSetValue(100, redValue, incRed ? 1 : 0, 255 - redValue);
 	nextRedValue();
-	ledLatch();
+	for (uint8_t i{}; i < 120; ++i)
+		leds.colour(i, redValue, incRed ? 2U : 1U, i);//~redValue);
+
+	dmaTrigger(DMA.CH0);
+	dmaTrigger(DMA.CH1);
+	dmaTrigger(DMA.CH2);
 }
 
 void dmaChannel2IRQ() { ledLatch(); }
