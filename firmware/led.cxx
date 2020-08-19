@@ -174,9 +174,22 @@ void tcc0OverflowIRQ()
 	for (uint8_t i{}; i < 120; ++i)
 		leds.colour(i, redValue, incRed ? 2U : 1U, i);//~redValue);
 
+#if 0
 	dmaTrigger(DMA.CH0);
 	dmaTrigger(DMA.CH1);
 	dmaTrigger(DMA.CH2);
+#else
+	for (const auto &byte : leds.red)
+		uartWrite(ledChannelToUART(channel_t::red), static_cast<uint8_t>(byte));
+	uartWaitTXComplete(ledChannelToUART(channel_t::red));
+	for (const auto &byte : leds.green)
+		uartWrite(ledChannelToUART(channel_t::green), static_cast<uint8_t>(byte));
+	uartWaitTXComplete(ledChannelToUART(channel_t::green));
+	for (const auto &byte : leds.blue)
+		uartWrite(ledChannelToUART(channel_t::blue), static_cast<uint8_t>(byte));
+	uartWaitTXComplete(ledChannelToUART(channel_t::blue));
+	ledLatch();
+#endif
 }
 
 void dmaChannel2IRQ() { ledLatch(); }
