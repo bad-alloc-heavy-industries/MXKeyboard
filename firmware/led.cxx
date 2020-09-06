@@ -179,14 +179,14 @@ void tcc0OverflowIRQ()
 	dmaTrigger(DMA.CH1);
 	dmaTrigger(DMA.CH2);
 #else
-	for (const auto &byte : leds.red)
-		uartWrite(ledChannelToUART(channel_t::red), static_cast<uint8_t>(byte));
+	for (uint8_t i{0}; i < 180; ++i)
+	{
+		uartWrite(ledChannelToUART(channel_t::red), static_cast<uint8_t>(leds.red[i]));
+		uartWrite(ledChannelToUART(channel_t::green), static_cast<uint8_t>(leds.green[i]));
+		uartWrite(ledChannelToUART(channel_t::blue), static_cast<uint8_t>(leds.blue[i]));
+	}
 	uartWaitTXComplete(ledChannelToUART(channel_t::red));
-	for (const auto &byte : leds.green)
-		uartWrite(ledChannelToUART(channel_t::green), static_cast<uint8_t>(byte));
 	uartWaitTXComplete(ledChannelToUART(channel_t::green));
-	for (const auto &byte : leds.blue)
-		uartWrite(ledChannelToUART(channel_t::blue), static_cast<uint8_t>(byte));
 	uartWaitTXComplete(ledChannelToUART(channel_t::blue));
 	ledLatch();
 #endif
