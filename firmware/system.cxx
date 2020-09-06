@@ -27,9 +27,10 @@ void oscInit()
 
 void oscFailureIRQ()
 {
+	OSC.CTRL = 0x0A;
 	CCP = CCP_IOREG_gc;
 	CLK.CTRL = CLK_SCLKSEL_RC32M_gc;
 	CCP = CCP_IOREG_gc;
 	CLK.PSCTRL = CLK_PSADIV_2_gc | CLK_PSBCDIV_2_2_gc;
-	OSC.XOSCFAIL = 3;
+	OSC.XOSCFAIL = 2;
 }

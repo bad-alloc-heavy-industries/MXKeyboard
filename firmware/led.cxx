@@ -122,7 +122,8 @@ constexpr void ledData_t::colour(const std::size_t led, const uint8_t r, const u
 	const auto correctedG{gammaLUT[g]};
 	const auto correctedB{gammaLUT[b]};
 
-	const auto startBit{led * 12U};
+	const auto offsetLed{led >= 96 ? led + 12 : led};
+	const auto startBit{offsetLed * 12U};
 	const auto startByte{startBit / 8U};
 
 	if (led & 1U)
@@ -151,7 +152,6 @@ void ledSetValue(const uint8_t led, const uint8_t r, const uint8_t g, const uint
 void ledLatch()
 {
 	PORTE.OUTSET = 0x30;
-	_NOP();
 	PORTE.OUTCLR = 0x20;
 	PORTE.OUTCLR = 0x10;
 }
