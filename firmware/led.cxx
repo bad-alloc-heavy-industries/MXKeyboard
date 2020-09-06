@@ -171,8 +171,9 @@ void nextRedValue() noexcept
 void tcc0OverflowIRQ()
 {
 	nextRedValue();
-	for (uint8_t i{}; i < 120; ++i)
-		leds.colour(i, redValue, incRed ? 2U : 1U, i);//~redValue);
+	for (uint8_t i{0}; i < 109; ++i)
+		//leds.colour(i, 127, 7, 63);
+		leds.colour(i, redValue, 7, i);//~redValue);
 
 #if 0
 	dmaTrigger(DMA.CH0);
