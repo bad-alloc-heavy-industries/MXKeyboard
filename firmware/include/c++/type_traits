@@ -50,6 +50,15 @@ namespace std
 	template<typename T> struct remove_reference<T &&> { using type = T; };
 
 	template<typename T> using remove_reference_t = typename remove_reference<T>::type;
+
+	constexpr bool is_constant_evaluated() noexcept
+	{
+#if defined(__GNUC__)
+		return __builtin_is_constant_evaluated();
+#else
+		return false;
+#endif
+	}
 } // namespace std
 
 #endif /*TYPE_TRAITS*/
