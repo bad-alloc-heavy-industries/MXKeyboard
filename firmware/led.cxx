@@ -23,7 +23,7 @@ struct ledData_t
 	std::array<std::byte, toNearestWholeChip(109)> green{};
 	std::array<std::byte, toNearestWholeChip(109)> blue{};
 
-	constexpr void colour(std::size_t led, uint8_t r, uint8_t g, uint8_t b) noexcept;
+	void colour(std::size_t led, uint8_t r, uint8_t g, uint8_t b) noexcept;
 };
 
 constexpr static const std::array<uint16_t, 256> gammaLUT
@@ -116,7 +116,7 @@ void ledInit()
  * [ 00 ], [ 0D ], [ A8 ]
  */
 
-constexpr void ledData_t::colour(const std::size_t led, const uint8_t r, const uint8_t g, const uint8_t b) noexcept
+void ledData_t::colour(const std::size_t led, const uint8_t r, const uint8_t g, const uint8_t b) noexcept
 {
 	const auto correctedR{gammaLUT[r]};
 	const auto correctedG{gammaLUT[g]};
@@ -156,24 +156,47 @@ void ledLatch()
 	PORTE.OUTCLR = 0x10;
 }
 
-static uint8_t redValue{1};
-static bool incRed{false};
-
-void nextRedValue() noexcept
+enum class rgbState_t : uint8_t
 {
-	incRed ? ++redValue : --redValue;
-	if (redValue == 0U)
-		incRed = true;
-	else if (redValue == 255U)
-		incRed = false;
+	none, red, purple, blue
+};
+static rgbState_t currentState{rgbState_t::none};
+static uint8_t redValue{0};
+static uint8_t blueValue{0};
+
+void nextRGBValue() noexcept
+{
+	switch (currentState)
+	{
+		case rgbState_t::none:
+			++redValue;
+			if (redValue == 255U)
+				currentState = rgbState_t::red;
+			break;
+		case rgbState_t::red:
+			++blueValue;
+			if (blueValue == 255U)
+				currentState = rgbState_t::purple;
+			break;
+		case rgbState_t::purple:
+			--redValue;
+			if (!redValue)
+				currentState = rgbState_t::blue;
+			break;
+		case rgbState_t::blue:
+			--blueValue;
+			if (!blueValue)
+				currentState = rgbState_t::none;
+			break;
+	}
 }
 
 void tcc0OverflowIRQ()
 {
-	nextRedValue();
 	for (uint8_t i{0}; i < 109; ++i)
 		//leds.colour(i, 127, 7, 63);
-		leds.colour(i, redValue, 7, i);//~redValue);
+		leds.colour(i, redValue, 7, blueValue);
+	nextRGBValue();
 
 #if 0
 	dmaTrigger(DMA.CH0);
