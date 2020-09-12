@@ -4,6 +4,7 @@
 #include <avr/cpufunc.h>
 #include "MXKeyboard.hxx"
 #include "led.hxx"
+#include "flash.hxx"
 #include "interrupts.hxx"
 
 constexpr static inline std::byte operator ""_b(const unsigned long long value) noexcept
@@ -26,7 +27,7 @@ struct ledData_t
 	void colour(std::size_t led, uint8_t r, uint8_t g, uint8_t b) noexcept;
 };
 
-constexpr static const std::array<uint16_t, 256> gammaLUT
+constexpr static const std::array<flash_t<uint16_t>, 256> gammaLUT
 {
 	0x000, 0x00A, 0x014, 0x01E, 0x028, 0x033, 0x03D, 0x047,
 	0x051, 0x05C, 0x066, 0x071, 0x07B, 0x086, 0x090, 0x09B,
@@ -118,9 +119,9 @@ void ledInit()
 
 void ledData_t::colour(const std::size_t led, const uint8_t r, const uint8_t g, const uint8_t b) noexcept
 {
-	const auto correctedR{gammaLUT[r]};
-	const auto correctedG{gammaLUT[g]};
-	const auto correctedB{gammaLUT[b]};
+	const uint16_t correctedR{gammaLUT[r]};
+	const uint16_t correctedG{gammaLUT[g]};
+	const uint16_t correctedB{gammaLUT[b]};
 
 	const auto offsetLed{led >= 96 ? led + 12 : led};
 	const auto startBit{offsetLed * 12U};
