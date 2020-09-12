@@ -1,12 +1,18 @@
+[constants]
+prefix = '/opt/cxc'
+exec_prefix = prefix / 'bin'
+common_flags = ['-mdouble=64', '-mlong-double=64', '-mmcu=atxmega256a3u', '-ffreestanding']
+compile_flags = ['-ffunction-sections', '-fdata-sections']
+
 [binaries]
-c = '/opt/cxc/bin/avr-gcc'
-cpp = '/opt/cxc/bin/avr-g++'
-ar = '/opt/cxc/bin/avr-ar'
-as = '/opt/cxc/bin/avr-as'
-strip = '/opt/cxc/bin/avr-strip'
-objcopy = '/opt/cxc/bin/avr-objcopy'
-objdump = '/opt/cxc/bin/avr-objdump'
-size = '/opt/cxc/bin/avr-size'
+c = exec_prefix / 'avr-gcc'
+cpp = exec_prefix / 'avr-g++'
+ar = exec_prefix / 'avr-ar'
+as = exec_prefix / 'avr-as'
+strip = exec_prefix / 'avr-strip'
+objcopy = exec_prefix / 'avr-objcopy'
+objdump = exec_prefix / 'avr-objdump'
+size = exec_prefix / 'avr-size'
 cmake = 'false'
 
 [properties]
@@ -25,12 +31,12 @@ sizeof_wchar_t = 2
 
 needs_exe_wrapper = true
 has_function_printf = true
-sys_root = '/opt/cxc'
+sys_root = prefix
 
-c_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=atxmega256a3u', '-ffunction-sections', '-fdata-sections', '-ffreestanding']
-cpp_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=atxmega256a3u', '-ffunction-sections', '-fdata-sections', '-ffreestanding', '-fno-rtti', '-fno-exceptions']
-c_link_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=atxmega256a3u', '-ffreestanding', '-nostdlib']
-cpp_link_args = ['-mdouble=64', '-mlong-double=64', '-mmcu=atxmega256a3u', '-ffreestanding', '-nostdlib']
+c_args = common_flags + compile_flags
+cpp_args = common_flags + compile_flags + ['-fno-rtti', '-fno-exceptions']
+c_link_args = common_flags + ['-nostdlib']
+cpp_link_args = common_flags + ['-nostdlib']
 
 cpp_eh = 'none'
 cpp_rtti = false
