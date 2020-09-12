@@ -1,0 +1,11 @@
+#ifndef CSTRING
+#define CSTRING
+
+#include <cstddef>
+
+namespace std
+{
+	extern void *memcpy(void *dest, const void *src, size_t len);
+}
+
+#endif /*CSTRING*/

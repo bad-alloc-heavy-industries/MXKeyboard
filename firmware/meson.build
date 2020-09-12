@@ -2,7 +2,8 @@
 
 keyboardSrc = [
 	'startup.cxx', 'fuses.cxx', 'MXKeyboard.cxx', 'uart.cxx',
-	'system.cxx', 'led.cxx', 'timer.cxx', 'dma.cxx'
+	'system.cxx', 'led.cxx', 'timer.cxx', 'dma.cxx',
+	'memory.cxx'
 ]
 
 firmwareArgs = []
