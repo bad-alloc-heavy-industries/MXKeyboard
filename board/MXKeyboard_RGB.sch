@@ -8549,6 +8549,10 @@ DIN A4, landscape with location and doc. field</description>
 <part name="H11" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.2" value="MOUNT-PAD-ROUND3.2"/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="OSC1" library="MXKeyboard" deviceset="CXO" device="-7M" value="16MHz">
+<attribute name="ALT_MFR" value="Multicomp"/>
+<attribute name="ALT_MPN" value="MCSJK-3N-16.00-3.3-25-B"/>
+<attribute name="ALT_OC_FARNELL" value="2854286"/>
+<attribute name="ALT_URL" value="https://uk.farnell.com/multicomp/mcsjk-3n-16-00-3-3-25-b/oscillator-16mhz-3-2mm-x-2-5mm/dp/2854286"/>
 <attribute name="MFR" value="IQD"/>
 <attribute name="MPN" value="LFSPXO025494"/>
 <attribute name="OC_FARNELL" value="2449455"/>
@@ -14475,10 +14479,10 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="353.06" y="259.08"/>
 <wire x1="353.06" y1="259.08" x2="342.9" y2="259.08" width="0.1524" layer="91"/>
 <wire x1="414.02" y1="256.54" x2="414.02" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="403.86" y1="259.08" x2="414.02" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="403.86" y1="256.54" x2="403.86" y2="259.08" width="0.1524" layer="91"/>
-<junction x="403.86" y="259.08"/>
-<wire x1="403.86" y1="259.08" x2="383.54" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="259.08" x2="414.02" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="256.54" x2="398.78" y2="259.08" width="0.1524" layer="91"/>
+<junction x="398.78" y="259.08"/>
+<wire x1="398.78" y1="259.08" x2="383.54" y2="259.08" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="259.08" x2="383.54" y2="256.54" width="0.1524" layer="91"/>
 <junction x="383.54" y="259.08"/>
 <wire x1="383.54" y1="259.08" x2="368.3" y2="259.08" width="0.1524" layer="91"/>
@@ -14508,6 +14512,7 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="LED56" gate="G$1" pin="A"/>
 <pinref part="LED62" gate="G$1" pin="A"/>
 <pinref part="LED68" gate="G$1" pin="A"/>
+<pinref part="LED71" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="175.26" x2="231.14" y2="172.72" width="0.1524" layer="91"/>
@@ -16315,6 +16320,10 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="MPN" x="228.6" y="205.74" size="1.27" layer="96" display="off"/>
 <attribute name="OC_FARNELL" x="228.6" y="205.74" size="1.27" layer="96" display="off"/>
 <attribute name="URL" x="228.6" y="205.74" size="1.27" layer="96" display="off"/>
+<attribute name="ALT_OC_FARNELL" x="228.6" y="205.74" size="1.778" layer="96" display="off"/>
+<attribute name="ALT_URL" x="228.6" y="205.74" size="1.778" layer="96" display="off"/>
+<attribute name="ALT_MFR" x="228.6" y="205.74" size="1.778" layer="96" display="off"/>
+<attribute name="ALT_MPN" x="228.6" y="205.74" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="+3V14" gate="G$1" x="228.6" y="228.6" smashed="yes">
 <attribute name="VALUE" x="226.06" y="228.6" size="1.778" layer="96" rot="R90"/>

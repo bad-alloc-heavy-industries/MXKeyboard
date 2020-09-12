@@ -2940,6 +2940,10 @@ design rules under a new name.</description>
 <attribute name="MPN" value="LFSPXO025494" x="420.37" y="107.315" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="2449455" x="420.37" y="107.315" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="URL" value="http://uk.farnell.com/iqd-frequency-products/lfspxo025494/oscillator-16mhz-15pf-smd/dp/2449455" x="420.37" y="107.315" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ALT_OC_FARNELL" value="2854286" x="420.37" y="107.315" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ALT_URL" value="https://uk.farnell.com/multicomp/mcsjk-3n-16-00-3-3-25-b/oscillator-16mhz-3-2mm-x-2-5mm/dp/2854286" x="420.37" y="107.315" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ALT_MFR" value="Multicomp" x="420.37" y="107.315" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ALT_MPN" value="MCSJK-3N-16.00-3.3-25-B" x="420.37" y="107.315" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U18" library="MXKeyboard" package="PVQFN32" value="TLC5947RHBT" x="76.835" y="101.6" smashed="yes" rot="R90">
 <attribute name="MFR" value="TI" x="67.135" y="93.6" size="1.778" layer="27" rot="R90" display="off"/>
@@ -13209,6 +13213,7 @@ design rules under a new name.</description>
 <via x="391.16" y="123.952" extent="1-16" drill="0.3"/>
 <via x="391.16" y="122.682" extent="1-16" drill="0.3"/>
 <via x="391.16" y="121.412" extent="1-16" drill="0.3"/>
+<contactref element="LED71" pad="2"/>
 </signal>
 <signal name="EARTH_USB">
 <polygon width="0.254" layer="16" isolate="0.254">
