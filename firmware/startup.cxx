@@ -7,9 +7,9 @@ extern const char stackTop;
 extern char vectorAddr;
 extern const uint8_t dataStart;
 extern const uint8_t dataEnd;
-extern uint8_t dataMemory;
+extern const uint8_t dataMemory;
 extern char bssStart;
-extern char bssEnd;
+extern const char bssEnd;
 
 #define NAKED __attribute__((naked))
 
@@ -19,6 +19,7 @@ extern "C" void irqEmptyDef() INTERRUPT;
 
 void init()
 {
+	__asm__("clr r1");
 	SREG = 0;
 
 	static_assert(__AVR_XMEGA__);
