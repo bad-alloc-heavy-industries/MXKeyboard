@@ -1,0 +1,5236 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 21951 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1750 5400 2550 5400
+Wire Wire Line
+	2550 5400 3350 5400
+Wire Wire Line
+	3350 5400 6550 5400
+Wire Wire Line
+	6550 5400 8950 5400
+Wire Wire Line
+	8950 5400 9750 5400
+Wire Wire Line
+	9750 5400 10550 5400
+Wire Wire Line
+	10550 5400 11350 5400
+Wire Wire Line
+	11350 5400 11350 5600
+Wire Wire Line
+	11350 5600 11400 5600
+Wire Wire Line
+	10550 5400 10550 5600
+Wire Wire Line
+	10550 5600 10600 5600
+Wire Wire Line
+	9750 5400 9750 5600
+Wire Wire Line
+	9750 5600 9800 5600
+Wire Wire Line
+	8950 5400 8950 5600
+Wire Wire Line
+	8950 5600 9000 5600
+Wire Wire Line
+	6550 5400 6550 5600
+Wire Wire Line
+	6550 5600 6600 5600
+Wire Wire Line
+	3350 5400 3350 5600
+Wire Wire Line
+	3350 5600 3400 5600
+Wire Wire Line
+	2550 5400 2550 5600
+Wire Wire Line
+	2550 5600 2600 5600
+Wire Wire Line
+	1750 5400 1750 5600
+Wire Wire Line
+	1750 5600 1800 5600
+Wire Wire Line
+	13800 5400 13750 5400
+Wire Wire Line
+	13750 5400 13750 5200
+Wire Wire Line
+	13750 5200 14550 5200
+Wire Wire Line
+	14550 5200 15350 5200
+Wire Wire Line
+	15350 5200 16950 5200
+Wire Wire Line
+	16950 5200 18550 5200
+Wire Wire Line
+	18550 5200 19350 5200
+Wire Wire Line
+	19350 5200 19350 5400
+Wire Wire Line
+	19350 5400 19400 5400
+Wire Wire Line
+	14550 5200 14550 5400
+Wire Wire Line
+	14550 5400 14600 5400
+Wire Wire Line
+	15350 5200 15350 5400
+Wire Wire Line
+	15350 5400 15400 5400
+Wire Wire Line
+	16950 5200 16950 5400
+Wire Wire Line
+	16950 5400 17000 5400
+Wire Wire Line
+	18550 5200 18550 5400
+Wire Wire Line
+	18550 5400 18600 5400
+Wire Wire Line
+	11350 5400 13750 5400
+Connection ~ 10550 5400
+Connection ~ 9750 5400
+Connection ~ 8950 5400
+Connection ~ 6550 5400
+Connection ~ 3350 5400
+Connection ~ 2550 5400
+Connection ~ 14550 5200
+Connection ~ 15350 5200
+Connection ~ 16950 5200
+Connection ~ 18550 5200
+Connection ~ 11350 5400
+Connection ~ 13750 5400
+Connection ~ 19350 5200
+Wire Wire Line
+	1750 4900 2550 4900
+Wire Wire Line
+	2550 4900 3350 4900
+Wire Wire Line
+	3350 4900 4150 4900
+Wire Wire Line
+	4150 4900 4950 4900
+Wire Wire Line
+	4950 4900 5750 4900
+Wire Wire Line
+	5750 4900 6550 4900
+Wire Wire Line
+	6550 4900 7350 4900
+Wire Wire Line
+	7350 4900 8150 4900
+Wire Wire Line
+	8150 4900 8950 4900
+Wire Wire Line
+	8950 4900 9750 4900
+Wire Wire Line
+	9750 4900 10550 4900
+Wire Wire Line
+	10550 4900 11350 4900
+Wire Wire Line
+	11350 4900 11350 5100
+Wire Wire Line
+	11350 5100 11400 5100
+Wire Wire Line
+	1750 4900 1750 5100
+Wire Wire Line
+	1750 5100 1800 5100
+Wire Wire Line
+	2550 4900 2550 5100
+Wire Wire Line
+	2550 5100 2600 5100
+Wire Wire Line
+	3350 4900 3350 5100
+Wire Wire Line
+	3350 5100 3400 5100
+Wire Wire Line
+	4150 4900 4150 5100
+Wire Wire Line
+	4150 5100 4200 5100
+Wire Wire Line
+	4950 4900 4950 5100
+Wire Wire Line
+	4950 5100 5000 5100
+Wire Wire Line
+	5750 4900 5750 5100
+Wire Wire Line
+	5750 5100 5800 5100
+Wire Wire Line
+	6550 4900 6550 5100
+Wire Wire Line
+	6550 5100 6600 5100
+Wire Wire Line
+	7350 4900 7350 5100
+Wire Wire Line
+	7350 5100 7400 5100
+Wire Wire Line
+	8150 4900 8150 5100
+Wire Wire Line
+	8150 5100 8200 5100
+Wire Wire Line
+	8950 4900 8950 5100
+Wire Wire Line
+	8950 5100 9000 5100
+Wire Wire Line
+	9750 4900 9750 5100
+Wire Wire Line
+	9750 5100 9800 5100
+Wire Wire Line
+	10550 4900 10550 5100
+Wire Wire Line
+	10550 5100 10600 5100
+Wire Wire Line
+	11350 4900 14550 4900
+Wire Wire Line
+	14600 5100 14550 5100
+Wire Wire Line
+	14550 5100 14550 4900
+Wire Wire Line
+	14550 4900 16950 4900
+Wire Wire Line
+	16950 4900 17750 4900
+Wire Wire Line
+	17750 4900 18550 4900
+Wire Wire Line
+	18550 4900 18550 5100
+Wire Wire Line
+	18550 5100 18600 5100
+Wire Wire Line
+	17000 5100 16950 5100
+Wire Wire Line
+	16950 5100 16950 4900
+Wire Wire Line
+	17750 4900 17750 5100
+Wire Wire Line
+	17750 5100 17800 5100
+Wire Wire Line
+	18550 4900 20200 4900
+Connection ~ 2550 4900
+Connection ~ 3350 4900
+Connection ~ 4150 4900
+Connection ~ 4950 4900
+Connection ~ 5750 4900
+Connection ~ 6550 4900
+Connection ~ 7350 4900
+Connection ~ 8150 4900
+Connection ~ 8950 4900
+Connection ~ 9750 4900
+Connection ~ 10550 4900
+Connection ~ 11350 4900
+Connection ~ 16950 4900
+Connection ~ 17750 4900
+Connection ~ 14550 4900
+Connection ~ 18550 4900
+Wire Wire Line
+	1750 4600 2550 4600
+Wire Wire Line
+	2550 4600 3350 4600
+Wire Wire Line
+	3350 4600 4150 4600
+Wire Wire Line
+	4150 4600 4950 4600
+Wire Wire Line
+	4950 4600 5750 4600
+Wire Wire Line
+	5750 4600 6550 4600
+Wire Wire Line
+	6550 4600 7350 4600
+Wire Wire Line
+	7350 4600 8150 4600
+Wire Wire Line
+	8150 4600 8950 4600
+Wire Wire Line
+	8950 4600 9750 4600
+Wire Wire Line
+	9750 4600 10550 4600
+Wire Wire Line
+	10550 4600 11350 4600
+Wire Wire Line
+	11350 4600 12150 4600
+Wire Wire Line
+	12150 4600 12150 4800
+Wire Wire Line
+	12150 4800 12200 4800
+Wire Wire Line
+	1750 4600 1750 4800
+Wire Wire Line
+	1750 4800 1800 4800
+Wire Wire Line
+	2550 4600 2550 4800
+Wire Wire Line
+	2550 4800 2600 4800
+Wire Wire Line
+	3350 4600 3350 4800
+Wire Wire Line
+	3350 4800 3400 4800
+Wire Wire Line
+	4150 4600 4150 4800
+Wire Wire Line
+	4150 4800 4200 4800
+Wire Wire Line
+	4950 4600 4950 4800
+Wire Wire Line
+	4950 4800 5000 4800
+Wire Wire Line
+	5750 4600 5750 4800
+Wire Wire Line
+	5750 4800 5800 4800
+Wire Wire Line
+	6550 4600 6550 4800
+Wire Wire Line
+	6550 4800 6600 4800
+Wire Wire Line
+	11350 4600 11350 4800
+Wire Wire Line
+	11350 4800 11400 4800
+Wire Wire Line
+	7350 4600 7350 4800
+Wire Wire Line
+	7350 4800 7400 4800
+Wire Wire Line
+	8150 4600 8150 4800
+Wire Wire Line
+	8150 4800 8200 4800
+Wire Wire Line
+	8950 4600 8950 4800
+Wire Wire Line
+	8950 4800 9000 4800
+Wire Wire Line
+	9750 4600 9750 4800
+Wire Wire Line
+	9750 4800 9800 4800
+Wire Wire Line
+	10550 4600 10550 4800
+Wire Wire Line
+	10550 4800 10600 4800
+Wire Wire Line
+	14600 4800 14550 4800
+Wire Wire Line
+	14550 4800 14550 4600
+Wire Wire Line
+	14550 4600 16950 4600
+Wire Wire Line
+	16950 4600 17750 4600
+Wire Wire Line
+	17750 4600 18550 4600
+Wire Wire Line
+	18550 4600 19350 4600
+Wire Wire Line
+	19350 4600 19350 4800
+Wire Wire Line
+	19350 4800 19400 4800
+Wire Wire Line
+	16950 4600 16950 4800
+Wire Wire Line
+	16950 4800 17000 4800
+Wire Wire Line
+	17750 4600 17750 4800
+Wire Wire Line
+	17750 4800 17800 4800
+Wire Wire Line
+	18550 4600 18550 4800
+Wire Wire Line
+	18550 4800 18600 4800
+Wire Wire Line
+	12150 4600 14550 4600
+Wire Wire Line
+	19350 4600 20200 4600
+Connection ~ 2550 4600
+Connection ~ 3350 4600
+Connection ~ 4150 4600
+Connection ~ 4950 4600
+Connection ~ 5750 4600
+Connection ~ 6550 4600
+Connection ~ 11350 4600
+Connection ~ 7350 4600
+Connection ~ 8150 4600
+Connection ~ 8950 4600
+Connection ~ 9750 4600
+Connection ~ 10550 4600
+Connection ~ 16950 4600
+Connection ~ 17750 4600
+Connection ~ 18550 4600
+Connection ~ 12150 4600
+Connection ~ 14550 4600
+Connection ~ 19350 4600
+Wire Wire Line
+	1750 4300 2550 4300
+Wire Wire Line
+	2550 4300 3350 4300
+Wire Wire Line
+	3350 4300 4150 4300
+Wire Wire Line
+	4150 4300 4950 4300
+Wire Wire Line
+	4950 4300 5750 4300
+Wire Wire Line
+	5750 4300 6550 4300
+Wire Wire Line
+	6550 4300 7350 4300
+Wire Wire Line
+	7350 4300 8150 4300
+Wire Wire Line
+	8150 4300 8950 4300
+Wire Wire Line
+	8950 4300 9750 4300
+Wire Wire Line
+	9750 4300 10550 4300
+Wire Wire Line
+	10550 4300 11350 4300
+Wire Wire Line
+	11350 4300 11350 4500
+Wire Wire Line
+	11350 4500 11400 4500
+Wire Wire Line
+	1750 4300 1750 4500
+Wire Wire Line
+	1750 4500 1800 4500
+Wire Wire Line
+	2550 4300 2550 4500
+Wire Wire Line
+	2550 4500 2600 4500
+Wire Wire Line
+	3350 4300 3350 4500
+Wire Wire Line
+	3350 4500 3400 4500
+Wire Wire Line
+	4150 4300 4150 4500
+Wire Wire Line
+	4150 4500 4200 4500
+Wire Wire Line
+	4950 4300 4950 4500
+Wire Wire Line
+	4950 4500 5000 4500
+Wire Wire Line
+	5750 4300 5750 4500
+Wire Wire Line
+	5750 4500 5800 4500
+Wire Wire Line
+	6550 4300 6550 4500
+Wire Wire Line
+	6550 4500 6600 4500
+Wire Wire Line
+	7350 4300 7350 4500
+Wire Wire Line
+	7350 4500 7400 4500
+Wire Wire Line
+	8150 4300 8150 4500
+Wire Wire Line
+	8150 4500 8200 4500
+Wire Wire Line
+	8950 4300 8950 4500
+Wire Wire Line
+	8950 4500 9000 4500
+Wire Wire Line
+	9750 4300 9750 4500
+Wire Wire Line
+	9750 4500 9800 4500
+Wire Wire Line
+	10550 4300 10550 4500
+Wire Wire Line
+	10550 4500 10600 4500
+Wire Wire Line
+	13800 4500 13750 4500
+Wire Wire Line
+	13750 4500 13750 4300
+Wire Wire Line
+	13750 4300 14550 4300
+Wire Wire Line
+	14550 4300 15350 4300
+Wire Wire Line
+	15350 4300 16950 4300
+Wire Wire Line
+	16950 4300 17750 4300
+Wire Wire Line
+	17750 4300 18550 4300
+Wire Wire Line
+	18550 4300 18550 4500
+Wire Wire Line
+	18550 4500 18600 4500
+Wire Wire Line
+	14550 4300 14550 4500
+Wire Wire Line
+	14550 4500 14600 4500
+Wire Wire Line
+	15350 4300 15350 4500
+Wire Wire Line
+	15350 4500 15400 4500
+Wire Wire Line
+	16950 4300 16950 4500
+Wire Wire Line
+	16950 4500 17000 4500
+Wire Wire Line
+	17750 4300 17750 4500
+Wire Wire Line
+	17750 4500 17800 4500
+Wire Wire Line
+	11350 4300 13750 4300
+Wire Wire Line
+	18550 4300 20200 4300
+Connection ~ 2550 4300
+Connection ~ 3350 4300
+Connection ~ 4150 4300
+Connection ~ 4950 4300
+Connection ~ 5750 4300
+Connection ~ 6550 4300
+Connection ~ 7350 4300
+Connection ~ 8150 4300
+Connection ~ 8950 4300
+Connection ~ 9750 4300
+Connection ~ 10550 4300
+Connection ~ 14550 4300
+Connection ~ 15350 4300
+Connection ~ 16950 4300
+Connection ~ 17750 4300
+Connection ~ 11350 4300
+Connection ~ 13750 4300
+Connection ~ 18550 4300
+Wire Wire Line
+	1750 4000 2550 4000
+Wire Wire Line
+	2550 4000 3350 4000
+Wire Wire Line
+	3350 4000 4150 4000
+Wire Wire Line
+	4150 4000 4950 4000
+Wire Wire Line
+	4950 4000 5750 4000
+Wire Wire Line
+	5750 4000 6550 4000
+Wire Wire Line
+	6550 4000 7350 4000
+Wire Wire Line
+	7350 4000 8150 4000
+Wire Wire Line
+	8150 4000 8950 4000
+Wire Wire Line
+	8950 4000 9750 4000
+Wire Wire Line
+	9750 4000 10550 4000
+Wire Wire Line
+	10550 4000 11350 4000
+Wire Wire Line
+	11350 4000 12150 4000
+Wire Wire Line
+	12150 4000 12150 4200
+Wire Wire Line
+	12150 4200 12200 4200
+Wire Wire Line
+	1750 4000 1750 4200
+Wire Wire Line
+	1750 4200 1800 4200
+Wire Wire Line
+	3350 4000 3350 4200
+Wire Wire Line
+	3350 4200 3400 4200
+Wire Wire Line
+	2550 4000 2550 4200
+Wire Wire Line
+	2550 4200 2600 4200
+Wire Wire Line
+	4150 4000 4150 4200
+Wire Wire Line
+	4150 4200 4200 4200
+Wire Wire Line
+	4950 4000 4950 4200
+Wire Wire Line
+	4950 4200 5000 4200
+Wire Wire Line
+	5750 4000 5750 4200
+Wire Wire Line
+	5750 4200 5800 4200
+Wire Wire Line
+	6550 4000 6550 4200
+Wire Wire Line
+	6550 4200 6600 4200
+Wire Wire Line
+	11350 4000 11350 4200
+Wire Wire Line
+	11350 4200 11400 4200
+Wire Wire Line
+	7350 4000 7350 4200
+Wire Wire Line
+	7350 4200 7400 4200
+Wire Wire Line
+	8150 4000 8150 4200
+Wire Wire Line
+	8150 4200 8200 4200
+Wire Wire Line
+	8950 4000 8950 4200
+Wire Wire Line
+	8950 4200 9000 4200
+Wire Wire Line
+	9750 4000 9750 4200
+Wire Wire Line
+	9750 4200 9800 4200
+Wire Wire Line
+	10550 4000 10550 4200
+Wire Wire Line
+	10550 4200 10600 4200
+Wire Wire Line
+	12150 4000 13750 4000
+Wire Wire Line
+	13750 4000 14550 4000
+Wire Wire Line
+	14550 4000 15350 4000
+Wire Wire Line
+	15350 4000 16950 4000
+Wire Wire Line
+	16950 4000 17750 4000
+Wire Wire Line
+	17750 4000 18550 4000
+Wire Wire Line
+	18550 4000 19350 4000
+Wire Wire Line
+	19350 4000 19350 4200
+Wire Wire Line
+	19350 4200 19400 4200
+Wire Wire Line
+	13750 4000 13750 4200
+Wire Wire Line
+	13750 4200 13800 4200
+Wire Wire Line
+	14550 4000 14550 4200
+Wire Wire Line
+	14550 4200 14600 4200
+Wire Wire Line
+	15350 4000 15350 4200
+Wire Wire Line
+	15350 4200 15400 4200
+Wire Wire Line
+	16950 4000 16950 4200
+Wire Wire Line
+	16950 4200 17000 4200
+Wire Wire Line
+	17750 4000 17750 4200
+Wire Wire Line
+	17750 4200 17800 4200
+Wire Wire Line
+	18550 4000 18550 4200
+Wire Wire Line
+	18550 4200 18600 4200
+Wire Wire Line
+	19350 4000 20200 4000
+Connection ~ 3350 4000
+Connection ~ 2550 4000
+Connection ~ 4150 4000
+Connection ~ 4950 4000
+Connection ~ 5750 4000
+Connection ~ 6550 4000
+Connection ~ 11350 4000
+Connection ~ 7350 4000
+Connection ~ 8150 4000
+Connection ~ 8950 4000
+Connection ~ 9750 4000
+Connection ~ 10550 4000
+Connection ~ 12150 4000
+Connection ~ 13750 4000
+Connection ~ 14550 4000
+Connection ~ 15350 4000
+Connection ~ 16950 4000
+Connection ~ 17750 4000
+Connection ~ 18550 4000
+Connection ~ 19350 4000
+Wire Wire Line
+	1750 3500 2550 3500
+Wire Wire Line
+	2550 3500 3350 3500
+Wire Wire Line
+	3350 3500 4150 3500
+Wire Wire Line
+	4150 3500 4950 3500
+Wire Wire Line
+	4950 3500 5750 3500
+Wire Wire Line
+	5750 3500 6550 3500
+Wire Wire Line
+	6550 3500 7350 3500
+Wire Wire Line
+	7350 3500 8150 3500
+Wire Wire Line
+	8150 3500 8950 3500
+Wire Wire Line
+	8950 3500 9750 3500
+Wire Wire Line
+	9750 3500 10550 3500
+Wire Wire Line
+	10550 3500 11350 3500
+Wire Wire Line
+	11350 3500 11350 3700
+Wire Wire Line
+	11350 3700 11400 3700
+Wire Wire Line
+	1750 3500 1750 3700
+Wire Wire Line
+	1750 3700 1800 3700
+Wire Wire Line
+	2600 3700 2550 3700
+Wire Wire Line
+	2550 3700 2550 3500
+Wire Wire Line
+	3350 3500 3350 3700
+Wire Wire Line
+	3350 3700 3400 3700
+Wire Wire Line
+	4150 3500 4150 3700
+Wire Wire Line
+	4150 3700 4200 3700
+Wire Wire Line
+	4950 3500 4950 3700
+Wire Wire Line
+	4950 3700 5000 3700
+Wire Wire Line
+	5750 3500 5750 3700
+Wire Wire Line
+	5750 3700 5800 3700
+Wire Wire Line
+	6550 3500 6550 3700
+Wire Wire Line
+	6550 3700 6600 3700
+Wire Wire Line
+	7350 3500 7350 3700
+Wire Wire Line
+	7350 3700 7400 3700
+Wire Wire Line
+	8150 3500 8150 3700
+Wire Wire Line
+	8150 3700 8200 3700
+Wire Wire Line
+	8950 3500 8950 3700
+Wire Wire Line
+	8950 3700 9000 3700
+Wire Wire Line
+	9750 3500 9750 3700
+Wire Wire Line
+	9750 3700 9800 3700
+Wire Wire Line
+	10550 3500 10550 3700
+Wire Wire Line
+	10550 3700 10600 3700
+Wire Wire Line
+	11350 3500 13750 3500
+Wire Wire Line
+	13750 3500 14550 3500
+Wire Wire Line
+	14550 3500 15350 3500
+Wire Wire Line
+	15350 3500 15350 3700
+Wire Wire Line
+	15350 3700 15400 3700
+Wire Wire Line
+	13750 3500 13750 3700
+Wire Wire Line
+	13750 3700 13800 3700
+Wire Wire Line
+	14550 3500 14550 3700
+Wire Wire Line
+	14550 3700 14600 3700
+Wire Wire Line
+	15350 3500 20200 3500
+Connection ~ 2550 3500
+Connection ~ 3350 3500
+Connection ~ 4150 3500
+Connection ~ 4950 3500
+Connection ~ 5750 3500
+Connection ~ 6550 3500
+Connection ~ 7350 3500
+Connection ~ 8150 3500
+Connection ~ 8950 3500
+Connection ~ 9750 3500
+Connection ~ 10550 3500
+Connection ~ 11350 3500
+Connection ~ 13750 3500
+Connection ~ 14550 3500
+Connection ~ 15350 3500
+Wire Wire Line
+	7750 5450 7700 5450
+Wire Wire Line
+	7700 5450 7700 5650
+Wire Wire Line
+	7700 5650 8100 5650
+Wire Wire Line
+	8100 5650 8100 5700
+Wire Wire Line
+	8050 5450 8100 5450
+Wire Wire Line
+	8100 5450 8100 5650
+Wire Wire Line
+	8100 5450 8150 5450
+Wire Wire Line
+	8450 5450 8500 5450
+Wire Wire Line
+	8500 5450 8500 5650
+Wire Wire Line
+	8500 5650 8100 5650
+Connection ~ 8100 5650
+Connection ~ 8100 5450
+Text GLabel 7750 5450 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	12550 5100 12500 5100
+Wire Wire Line
+	12500 5100 12500 5300
+Wire Wire Line
+	12500 5300 12900 5300
+Wire Wire Line
+	12850 5100 12900 5100
+Wire Wire Line
+	12900 5100 12900 5300
+Wire Wire Line
+	12900 5100 12950 5100
+Wire Wire Line
+	13300 5100 13300 5300
+Wire Wire Line
+	13300 5300 12900 5300
+Wire Wire Line
+	12900 5300 12900 5500
+Wire Wire Line
+	13250 5100 13300 5100
+Connection ~ 12900 5100
+Connection ~ 12900 5300
+Text GLabel 12550 5100 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	16350 5400 16300 5400
+Wire Wire Line
+	16300 5400 16300 5600
+Wire Wire Line
+	16300 5600 16500 5600
+Wire Wire Line
+	16500 5600 16500 5650
+Wire Wire Line
+	16650 5400 16700 5400
+Wire Wire Line
+	16700 5400 16700 5600
+Wire Wire Line
+	16700 5600 16500 5600
+Connection ~ 16500 5600
+Text GLabel 16350 5400 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	1100 3500 1000 3500
+Wire Wire Line
+	1000 3500 1000 4000
+Wire Wire Line
+	1000 4000 1000 4300
+Wire Wire Line
+	1000 4300 1000 4600
+Wire Wire Line
+	1000 4600 1000 4900
+Wire Wire Line
+	1000 4900 1000 5400
+Wire Wire Line
+	1000 5400 1000 5500
+Wire Wire Line
+	1100 4000 1000 4000
+Wire Wire Line
+	1100 4300 1000 4300
+Wire Wire Line
+	1100 4600 1000 4600
+Wire Wire Line
+	1100 4900 1000 4900
+Wire Wire Line
+	1100 5400 1000 5400
+Connection ~ 1000 4000
+Connection ~ 1000 4300
+Connection ~ 1000 4600
+Connection ~ 1000 4900
+Connection ~ 1000 5400
+Wire Wire Line
+	1850 3200 1850 3550
+Wire Wire Line
+	1850 3550 1850 4050
+Wire Wire Line
+	1850 4050 1850 4350
+Wire Wire Line
+	1850 4350 1850 4650
+Wire Wire Line
+	1850 4650 1850 4950
+Wire Wire Line
+	1850 4950 1850 5450
+Wire Wire Line
+	1850 5450 2150 5450
+Wire Wire Line
+	1850 4950 2150 4950
+Wire Wire Line
+	1850 4650 2150 4650
+Wire Wire Line
+	1850 4350 2150 4350
+Wire Wire Line
+	1850 4050 2150 4050
+Wire Wire Line
+	1850 3550 2150 3550
+Connection ~ 1850 4950
+Connection ~ 1850 4650
+Connection ~ 1850 4350
+Connection ~ 1850 4050
+Connection ~ 1850 3550
+Wire Wire Line
+	2450 3550 2500 3550
+Wire Wire Line
+	2500 3550 2500 3700
+Wire Wire Line
+	2500 3700 2400 3700
+Wire Wire Line
+	2450 4050 2500 4050
+Wire Wire Line
+	2500 4050 2500 4200
+Wire Wire Line
+	2500 4200 2400 4200
+Wire Wire Line
+	2450 4350 2500 4350
+Wire Wire Line
+	2500 4350 2500 4500
+Wire Wire Line
+	2500 4500 2400 4500
+Wire Wire Line
+	2450 4650 2500 4650
+Wire Wire Line
+	2500 4650 2500 4800
+Wire Wire Line
+	2500 4800 2400 4800
+Wire Wire Line
+	2450 4950 2500 4950
+Wire Wire Line
+	2500 4950 2500 5100
+Wire Wire Line
+	2500 5100 2400 5100
+Wire Wire Line
+	2450 5450 2500 5450
+Wire Wire Line
+	2500 5450 2500 5600
+Wire Wire Line
+	2500 5600 2400 5600
+Wire Wire Line
+	2650 3200 2650 3550
+Wire Wire Line
+	2650 3550 2650 4050
+Wire Wire Line
+	2650 4050 2650 4350
+Wire Wire Line
+	2650 4350 2650 4650
+Wire Wire Line
+	2650 4650 2650 4950
+Wire Wire Line
+	2650 4950 2650 5450
+Wire Wire Line
+	2650 5450 2950 5450
+Wire Wire Line
+	2650 4950 2950 4950
+Wire Wire Line
+	2650 4650 2950 4650
+Wire Wire Line
+	2650 4350 2950 4350
+Wire Wire Line
+	2650 4050 2950 4050
+Wire Wire Line
+	2650 3550 2950 3550
+Connection ~ 2650 4950
+Connection ~ 2650 4650
+Connection ~ 2650 4350
+Connection ~ 2650 4050
+Connection ~ 2650 3550
+Wire Wire Line
+	3450 3200 3450 3550
+Wire Wire Line
+	3450 3550 3450 4050
+Wire Wire Line
+	3450 4050 3450 4350
+Wire Wire Line
+	3450 4350 3450 4650
+Wire Wire Line
+	3450 4650 3450 4950
+Wire Wire Line
+	3450 4950 3450 5450
+Wire Wire Line
+	3450 5450 3750 5450
+Wire Wire Line
+	3450 4950 3750 4950
+Wire Wire Line
+	3450 4650 3750 4650
+Wire Wire Line
+	3450 4350 3750 4350
+Wire Wire Line
+	3450 4050 3750 4050
+Wire Wire Line
+	3450 3550 3750 3550
+Connection ~ 3450 4950
+Connection ~ 3450 4650
+Connection ~ 3450 4350
+Connection ~ 3450 4050
+Connection ~ 3450 3550
+Wire Wire Line
+	3250 3550 3300 3550
+Wire Wire Line
+	3300 3550 3300 3700
+Wire Wire Line
+	3300 3700 3200 3700
+Wire Wire Line
+	3250 4050 3300 4050
+Wire Wire Line
+	3300 4050 3300 4200
+Wire Wire Line
+	3300 4200 3200 4200
+Wire Wire Line
+	3250 4350 3300 4350
+Wire Wire Line
+	3300 4350 3300 4500
+Wire Wire Line
+	3300 4500 3200 4500
+Wire Wire Line
+	3250 4650 3300 4650
+Wire Wire Line
+	3300 4650 3300 4800
+Wire Wire Line
+	3300 4800 3200 4800
+Wire Wire Line
+	3250 4950 3300 4950
+Wire Wire Line
+	3300 4950 3300 5100
+Wire Wire Line
+	3300 5100 3200 5100
+Wire Wire Line
+	3250 5450 3300 5450
+Wire Wire Line
+	3300 5450 3300 5600
+Wire Wire Line
+	3300 5600 3200 5600
+Wire Wire Line
+	4000 5600 4100 5600
+Wire Wire Line
+	4100 5600 4100 5450
+Wire Wire Line
+	4100 5450 4050 5450
+Wire Wire Line
+	4000 5100 4100 5100
+Wire Wire Line
+	4100 5100 4100 4950
+Wire Wire Line
+	4100 4950 4050 4950
+Wire Wire Line
+	4000 4800 4100 4800
+Wire Wire Line
+	4100 4800 4100 4650
+Wire Wire Line
+	4100 4650 4050 4650
+Wire Wire Line
+	4000 4500 4100 4500
+Wire Wire Line
+	4100 4500 4100 4350
+Wire Wire Line
+	4100 4350 4050 4350
+Wire Wire Line
+	4000 4200 4100 4200
+Wire Wire Line
+	4100 4200 4100 4050
+Wire Wire Line
+	4100 4050 4050 4050
+Wire Wire Line
+	4000 3700 4100 3700
+Wire Wire Line
+	4100 3700 4100 3550
+Wire Wire Line
+	4100 3550 4050 3550
+Wire Wire Line
+	4250 3200 4250 3550
+Wire Wire Line
+	4250 3550 4250 4050
+Wire Wire Line
+	4250 4050 4250 4350
+Wire Wire Line
+	4250 4350 4250 4650
+Wire Wire Line
+	4250 4650 4250 4950
+Wire Wire Line
+	4250 4950 4550 4950
+Wire Wire Line
+	4250 4650 4550 4650
+Wire Wire Line
+	4250 4350 4550 4350
+Wire Wire Line
+	4250 4050 4550 4050
+Wire Wire Line
+	4550 3550 4250 3550
+Connection ~ 4250 4650
+Connection ~ 4250 4350
+Connection ~ 4250 4050
+Connection ~ 4250 3550
+Wire Wire Line
+	5050 3200 5050 3550
+Wire Wire Line
+	5050 3550 5050 4050
+Wire Wire Line
+	5050 4050 5050 4350
+Wire Wire Line
+	5050 4350 5050 4650
+Wire Wire Line
+	5050 4650 5050 4950
+Wire Wire Line
+	5050 3550 5350 3550
+Wire Wire Line
+	5050 4050 5350 4050
+Wire Wire Line
+	5050 4350 5350 4350
+Wire Wire Line
+	5050 4950 5350 4950
+Wire Wire Line
+	5050 4650 5350 4650
+Connection ~ 5050 3550
+Connection ~ 5050 4050
+Connection ~ 5050 4350
+Connection ~ 5050 4650
+Wire Wire Line
+	5850 3200 5850 3550
+Wire Wire Line
+	5850 3550 5850 4050
+Wire Wire Line
+	5850 4050 5850 4350
+Wire Wire Line
+	5850 4350 5850 4650
+Wire Wire Line
+	5850 4650 5850 4950
+Wire Wire Line
+	5850 4950 6150 4950
+Wire Wire Line
+	5850 4350 6150 4350
+Wire Wire Line
+	5850 4050 6150 4050
+Wire Wire Line
+	5850 3550 6150 3550
+Wire Wire Line
+	6150 4650 5850 4650
+Connection ~ 5850 4350
+Connection ~ 5850 4050
+Connection ~ 5850 3550
+Connection ~ 5850 4650
+Wire Wire Line
+	6650 3200 6650 3550
+Wire Wire Line
+	6650 3550 6650 4050
+Wire Wire Line
+	6650 4050 6650 4350
+Wire Wire Line
+	6650 4350 6650 4650
+Wire Wire Line
+	6650 4650 6650 4950
+Wire Wire Line
+	6650 4950 6650 5450
+Wire Wire Line
+	6650 3550 6950 3550
+Wire Wire Line
+	6650 4050 6950 4050
+Wire Wire Line
+	6650 4350 6950 4350
+Wire Wire Line
+	6650 4650 6950 4650
+Wire Wire Line
+	6650 4950 6950 4950
+Wire Wire Line
+	6650 5450 6950 5450
+Connection ~ 6650 3550
+Connection ~ 6650 4050
+Connection ~ 6650 4350
+Connection ~ 6650 4650
+Connection ~ 6650 4950
+Wire Wire Line
+	7450 3200 7450 3550
+Wire Wire Line
+	7450 3550 7450 4050
+Wire Wire Line
+	7450 4050 7450 4350
+Wire Wire Line
+	7450 4350 7450 4650
+Wire Wire Line
+	7450 4650 7450 4950
+Wire Wire Line
+	7450 4350 7750 4350
+Wire Wire Line
+	7450 4050 7750 4050
+Wire Wire Line
+	7450 3550 7750 3550
+Wire Wire Line
+	7450 4650 7750 4650
+Wire Wire Line
+	7450 4950 7750 4950
+Connection ~ 7450 4350
+Connection ~ 7450 4050
+Connection ~ 7450 3550
+Connection ~ 7450 4650
+Wire Wire Line
+	8250 3200 8250 3550
+Wire Wire Line
+	8250 3550 8250 4050
+Wire Wire Line
+	8250 4050 8250 4350
+Wire Wire Line
+	8250 4350 8250 4650
+Wire Wire Line
+	8250 4650 8250 4950
+Wire Wire Line
+	8250 3550 8550 3550
+Wire Wire Line
+	8250 4050 8550 4050
+Wire Wire Line
+	8250 4350 8550 4350
+Wire Wire Line
+	8250 4650 8550 4650
+Wire Wire Line
+	8250 4950 8550 4950
+Connection ~ 8250 3550
+Connection ~ 8250 4050
+Connection ~ 8250 4350
+Connection ~ 8250 4650
+Wire Wire Line
+	9050 3200 9050 3550
+Wire Wire Line
+	9050 3550 9050 4050
+Wire Wire Line
+	9050 4050 9050 4350
+Wire Wire Line
+	9050 4350 9050 4650
+Wire Wire Line
+	9050 4650 9050 4950
+Wire Wire Line
+	9050 4950 9050 5450
+Wire Wire Line
+	9050 5450 9350 5450
+Wire Wire Line
+	9050 4950 9350 4950
+Wire Wire Line
+	9050 4650 9350 4650
+Wire Wire Line
+	9050 4350 9350 4350
+Wire Wire Line
+	9050 4050 9350 4050
+Wire Wire Line
+	9050 3550 9350 3550
+Connection ~ 9050 4950
+Connection ~ 9050 4650
+Connection ~ 9050 4350
+Connection ~ 9050 4050
+Connection ~ 9050 3550
+Wire Wire Line
+	9850 3200 9850 3550
+Wire Wire Line
+	9850 3550 9850 4050
+Wire Wire Line
+	9850 4050 9850 4350
+Wire Wire Line
+	9850 4350 9850 4650
+Wire Wire Line
+	9850 4650 9850 4950
+Wire Wire Line
+	9850 4950 9850 5450
+Wire Wire Line
+	9850 3550 10150 3550
+Wire Wire Line
+	9850 4050 10150 4050
+Wire Wire Line
+	9850 4350 10150 4350
+Wire Wire Line
+	9850 4650 10150 4650
+Wire Wire Line
+	9850 4950 10150 4950
+Wire Wire Line
+	9850 5450 10150 5450
+Connection ~ 9850 3550
+Connection ~ 9850 4050
+Connection ~ 9850 4350
+Connection ~ 9850 4650
+Connection ~ 9850 4950
+Wire Wire Line
+	10650 3200 10650 3550
+Wire Wire Line
+	10650 3550 10650 4050
+Wire Wire Line
+	10650 4050 10650 4350
+Wire Wire Line
+	10650 4350 10650 4650
+Wire Wire Line
+	10650 4650 10650 5000
+Wire Wire Line
+	10650 5000 10650 5500
+Wire Wire Line
+	10650 5500 10950 5450
+Wire Wire Line
+	10650 5000 10950 4950
+Wire Wire Line
+	10650 4650 10950 4650
+Wire Wire Line
+	10650 4350 10950 4350
+Wire Wire Line
+	10650 4050 10950 4050
+Wire Wire Line
+	10650 3550 10950 3550
+Connection ~ 10650 5000
+Connection ~ 10650 4650
+Connection ~ 10650 4350
+Connection ~ 10650 4050
+Connection ~ 10650 3550
+Wire Wire Line
+	11450 3200 11450 3550
+Wire Wire Line
+	11450 3550 11450 4050
+Wire Wire Line
+	11450 4050 11450 4350
+Wire Wire Line
+	11450 4350 11450 4650
+Wire Wire Line
+	11450 4650 11450 4950
+Wire Wire Line
+	11450 4950 11450 5450
+Wire Wire Line
+	11450 3550 11750 3550
+Wire Wire Line
+	11450 4050 11750 4050
+Wire Wire Line
+	11450 4350 11750 4350
+Wire Wire Line
+	11450 4650 11750 4650
+Wire Wire Line
+	11450 4950 11750 4950
+Wire Wire Line
+	11450 5450 11750 5450
+Connection ~ 11450 3550
+Connection ~ 11450 4050
+Connection ~ 11450 4350
+Connection ~ 11450 4650
+Connection ~ 11450 4950
+Wire Wire Line
+	12250 3200 12250 4050
+Wire Wire Line
+	12250 4050 12250 4650
+Wire Wire Line
+	12250 4650 12550 4650
+Wire Wire Line
+	12250 4050 12550 4050
+Connection ~ 12250 4050
+Wire Wire Line
+	13850 3200 13850 3550
+Wire Wire Line
+	13850 3550 13850 4050
+Wire Wire Line
+	13850 4050 13850 4350
+Wire Wire Line
+	13850 4350 13850 5250
+Wire Wire Line
+	13850 4050 14150 4050
+Wire Wire Line
+	13850 3550 14150 3550
+Wire Wire Line
+	13850 4350 14150 4350
+Wire Wire Line
+	13850 5250 14150 5250
+Connection ~ 13850 4050
+Connection ~ 13850 3550
+Connection ~ 13850 4350
+Wire Wire Line
+	14650 3200 14650 3550
+Wire Wire Line
+	14650 3550 14650 4050
+Wire Wire Line
+	14650 4050 14650 4350
+Wire Wire Line
+	14650 4350 14650 4650
+Wire Wire Line
+	14650 4650 14650 4950
+Wire Wire Line
+	14650 4950 14650 5250
+Wire Wire Line
+	14650 5250 14950 5250
+Wire Wire Line
+	14650 4950 14950 4950
+Wire Wire Line
+	14650 4650 14950 4650
+Wire Wire Line
+	14650 4350 14950 4350
+Wire Wire Line
+	14650 4050 14950 4050
+Wire Wire Line
+	14650 3550 14950 3550
+Connection ~ 14650 4950
+Connection ~ 14650 4650
+Connection ~ 14650 4350
+Connection ~ 14650 4050
+Connection ~ 14650 3550
+Wire Wire Line
+	15450 3200 15450 3550
+Wire Wire Line
+	15450 3550 15450 4050
+Wire Wire Line
+	15450 4050 15450 4350
+Wire Wire Line
+	15450 4350 15450 5250
+Wire Wire Line
+	15450 5250 15750 5250
+Wire Wire Line
+	15450 4350 15750 4350
+Wire Wire Line
+	15450 4050 15750 4050
+Wire Wire Line
+	15450 3550 15750 3550
+Connection ~ 15450 4350
+Connection ~ 15450 4050
+Connection ~ 15450 3550
+Wire Wire Line
+	17050 3200 17050 4050
+Wire Wire Line
+	17050 4050 17050 4350
+Wire Wire Line
+	17050 4350 17050 4650
+Wire Wire Line
+	17050 4650 17050 4950
+Wire Wire Line
+	17050 4950 17050 5250
+Wire Wire Line
+	17350 4050 17050 4050
+Wire Wire Line
+	17050 4350 17350 4350
+Wire Wire Line
+	17350 4650 17050 4650
+Wire Wire Line
+	17050 4950 17350 4950
+Wire Wire Line
+	17050 5250 17350 5250
+Connection ~ 17050 4050
+Connection ~ 17050 4350
+Connection ~ 17050 4650
+Connection ~ 17050 4950
+Wire Wire Line
+	17850 3200 17850 4050
+Wire Wire Line
+	17850 4050 17850 4350
+Wire Wire Line
+	17850 4350 17850 4650
+Wire Wire Line
+	17850 4650 17850 4950
+Wire Wire Line
+	17850 4650 18150 4650
+Wire Wire Line
+	17850 4350 18150 4350
+Wire Wire Line
+	17850 4050 18150 4050
+Wire Wire Line
+	17850 4950 18150 4950
+Connection ~ 17850 4650
+Connection ~ 17850 4350
+Connection ~ 17850 4050
+Wire Wire Line
+	18650 3200 18650 4050
+Wire Wire Line
+	18650 4050 18650 4350
+Wire Wire Line
+	18650 4350 18650 4650
+Wire Wire Line
+	18650 4650 18650 4950
+Wire Wire Line
+	18650 4950 18650 5250
+Wire Wire Line
+	18650 4050 18950 4050
+Wire Wire Line
+	18650 4350 18950 4350
+Wire Wire Line
+	18650 4650 18950 4650
+Wire Wire Line
+	18650 4950 18950 4950
+Wire Wire Line
+	18650 5250 18950 5250
+Connection ~ 18650 4050
+Connection ~ 18650 4350
+Connection ~ 18650 4650
+Connection ~ 18650 4950
+Wire Wire Line
+	19450 3200 19450 4050
+Wire Wire Line
+	19450 4050 19450 4650
+Wire Wire Line
+	19450 4650 19450 5250
+Wire Wire Line
+	19450 5250 19750 5250
+Wire Wire Line
+	19450 4650 19750 4650
+Wire Wire Line
+	19450 4050 19750 4050
+Connection ~ 19450 4650
+Connection ~ 19450 4050
+Wire Wire Line
+	4800 3700 4900 3700
+Wire Wire Line
+	4900 3700 4900 3550
+Wire Wire Line
+	4900 3550 4850 3550
+Wire Wire Line
+	4800 4200 4900 4200
+Wire Wire Line
+	4900 4200 4900 4050
+Wire Wire Line
+	4900 4050 4850 4050
+Wire Wire Line
+	4800 4500 4900 4500
+Wire Wire Line
+	4900 4500 4900 4350
+Wire Wire Line
+	4900 4350 4850 4350
+Wire Wire Line
+	5600 4500 5700 4500
+Wire Wire Line
+	5700 4500 5700 4350
+Wire Wire Line
+	5700 4350 5650 4350
+Wire Wire Line
+	5600 4200 5700 4200
+Wire Wire Line
+	5700 4200 5700 4050
+Wire Wire Line
+	5700 4050 5650 4050
+Wire Wire Line
+	6450 3550 6500 3550
+Wire Wire Line
+	6500 3550 6500 3700
+Wire Wire Line
+	6500 3700 6400 3700
+Wire Wire Line
+	6450 4050 6500 4050
+Wire Wire Line
+	6500 4050 6500 4200
+Wire Wire Line
+	6500 4200 6400 4200
+Wire Wire Line
+	6450 4350 6500 4350
+Wire Wire Line
+	6500 4350 6500 4500
+Wire Wire Line
+	6500 4500 6400 4500
+Wire Wire Line
+	4850 4650 4900 4650
+Wire Wire Line
+	4900 4650 4900 4800
+Wire Wire Line
+	4900 4800 4800 4800
+Wire Wire Line
+	4850 4950 4900 4950
+Wire Wire Line
+	4900 4950 4900 5100
+Wire Wire Line
+	4900 5100 4800 5100
+Wire Wire Line
+	5700 5100 5700 4950
+Wire Wire Line
+	5700 4950 5650 4950
+Wire Wire Line
+	5600 5100 5700 5100
+Wire Wire Line
+	5600 4800 5700 4800
+Wire Wire Line
+	5700 4800 5700 4650
+Wire Wire Line
+	5650 4650 5700 4650
+Wire Wire Line
+	6400 4800 6500 4800
+Wire Wire Line
+	6500 4800 6500 4650
+Wire Wire Line
+	6450 4650 6500 4650
+Wire Wire Line
+	6400 5100 6500 5100
+Wire Wire Line
+	6500 5100 6500 4950
+Wire Wire Line
+	6500 4950 6450 4950
+Wire Wire Line
+	5650 3550 5700 3550
+Wire Wire Line
+	5700 3550 5700 3700
+Wire Wire Line
+	5700 3700 5600 3700
+Wire Wire Line
+	7300 5450 7300 5600
+Wire Wire Line
+	7300 5600 7200 5600
+Wire Wire Line
+	7250 5450 7300 5450
+Wire Wire Line
+	7250 4950 7300 4950
+Wire Wire Line
+	7300 4950 7300 5100
+Wire Wire Line
+	7300 5100 7200 5100
+Wire Wire Line
+	7250 4650 7300 4650
+Wire Wire Line
+	7300 4650 7300 4800
+Wire Wire Line
+	7300 4800 7200 4800
+Wire Wire Line
+	7250 4350 7300 4350
+Wire Wire Line
+	7300 4350 7300 4500
+Wire Wire Line
+	7300 4500 7200 4500
+Wire Wire Line
+	7250 4050 7300 4050
+Wire Wire Line
+	7300 4050 7300 4200
+Wire Wire Line
+	7300 4200 7200 4200
+Wire Wire Line
+	7250 3550 7300 3550
+Wire Wire Line
+	7300 3550 7300 3700
+Wire Wire Line
+	7300 3700 7200 3700
+Wire Wire Line
+	8050 3550 8100 3550
+Wire Wire Line
+	8100 3550 8100 3700
+Wire Wire Line
+	8100 3700 8000 3700
+Wire Wire Line
+	8050 4050 8100 4050
+Wire Wire Line
+	8100 4050 8100 4200
+Wire Wire Line
+	8100 4200 8000 4200
+Wire Wire Line
+	8050 4350 8100 4350
+Wire Wire Line
+	8100 4350 8100 4500
+Wire Wire Line
+	8100 4500 8000 4500
+Wire Wire Line
+	8050 4650 8100 4650
+Wire Wire Line
+	8100 4650 8100 4800
+Wire Wire Line
+	8100 4800 8000 4800
+Wire Wire Line
+	8050 4950 8100 4950
+Wire Wire Line
+	8100 4950 8100 5100
+Wire Wire Line
+	8100 5100 8000 5100
+Wire Wire Line
+	8850 4950 8900 4950
+Wire Wire Line
+	8900 4950 8900 5100
+Wire Wire Line
+	8900 5100 8800 5100
+Wire Wire Line
+	8800 4800 8900 4800
+Wire Wire Line
+	8900 4800 8900 4650
+Wire Wire Line
+	8900 4650 8850 4650
+Wire Wire Line
+	8800 4500 8900 4500
+Wire Wire Line
+	8900 4500 8900 4350
+Wire Wire Line
+	8900 4350 8850 4350
+Wire Wire Line
+	8800 4200 8900 4200
+Wire Wire Line
+	8900 4200 8900 4050
+Wire Wire Line
+	8900 4050 8850 4050
+Wire Wire Line
+	8800 3700 8900 3700
+Wire Wire Line
+	8900 3700 8900 3550
+Wire Wire Line
+	8900 3550 8850 3550
+Wire Wire Line
+	9700 3550 9700 3700
+Wire Wire Line
+	9700 3700 9600 3700
+Wire Wire Line
+	9650 3550 9700 3550
+Wire Wire Line
+	9650 4050 9700 4050
+Wire Wire Line
+	9700 4050 9700 4200
+Wire Wire Line
+	9700 4200 9600 4200
+Wire Wire Line
+	9650 4350 9700 4350
+Wire Wire Line
+	9700 4350 9700 4500
+Wire Wire Line
+	9700 4500 9600 4500
+Wire Wire Line
+	9650 4650 9700 4650
+Wire Wire Line
+	9700 4650 9700 4800
+Wire Wire Line
+	9700 4800 9600 4800
+Wire Wire Line
+	9650 4950 9700 4950
+Wire Wire Line
+	9700 4950 9700 5100
+Wire Wire Line
+	9700 5100 9600 5100
+Wire Wire Line
+	9650 5450 9700 5450
+Wire Wire Line
+	9700 5450 9700 5600
+Wire Wire Line
+	9700 5600 9600 5600
+Wire Wire Line
+	10450 3550 10500 3550
+Wire Wire Line
+	10500 3550 10500 3700
+Wire Wire Line
+	10500 3700 10400 3700
+Wire Wire Line
+	10450 4050 10500 4050
+Wire Wire Line
+	10500 4050 10500 4200
+Wire Wire Line
+	10500 4200 10400 4200
+Wire Wire Line
+	10450 4350 10500 4350
+Wire Wire Line
+	10500 4350 10500 4500
+Wire Wire Line
+	10500 4500 10400 4500
+Wire Wire Line
+	10450 4650 10500 4650
+Wire Wire Line
+	10500 4650 10500 4800
+Wire Wire Line
+	10500 4800 10400 4800
+Wire Wire Line
+	10450 4950 10500 4950
+Wire Wire Line
+	10500 4950 10500 5100
+Wire Wire Line
+	10500 5100 10400 5100
+Wire Wire Line
+	10450 5450 10500 5450
+Wire Wire Line
+	10500 5450 10500 5600
+Wire Wire Line
+	10500 5600 10400 5600
+Wire Wire Line
+	11250 3550 11300 3550
+Wire Wire Line
+	11300 3550 11300 3700
+Wire Wire Line
+	11300 3700 11200 3700
+Wire Wire Line
+	11250 4050 11300 4050
+Wire Wire Line
+	11300 4050 11300 4200
+Wire Wire Line
+	11300 4200 11200 4200
+Wire Wire Line
+	11250 4350 11300 4350
+Wire Wire Line
+	11300 4350 11300 4500
+Wire Wire Line
+	11300 4500 11200 4500
+Wire Wire Line
+	11250 4650 11300 4650
+Wire Wire Line
+	11300 4650 11300 4800
+Wire Wire Line
+	11300 4800 11200 4800
+Wire Wire Line
+	11250 4950 11300 4950
+Wire Wire Line
+	11300 4950 11300 5100
+Wire Wire Line
+	11300 5100 11200 5100
+Wire Wire Line
+	11250 5450 11300 5450
+Wire Wire Line
+	11300 5450 11300 5600
+Wire Wire Line
+	11300 5600 11200 5600
+Wire Wire Line
+	12050 5450 12100 5450
+Wire Wire Line
+	12100 5450 12100 5600
+Wire Wire Line
+	12100 5600 12000 5600
+Wire Wire Line
+	12050 4950 12100 4950
+Wire Wire Line
+	12100 4950 12100 5100
+Wire Wire Line
+	12100 5100 12000 5100
+Wire Wire Line
+	12050 4650 12100 4650
+Wire Wire Line
+	12100 4650 12100 4800
+Wire Wire Line
+	12100 4800 12000 4800
+Wire Wire Line
+	12050 4350 12100 4350
+Wire Wire Line
+	12100 4350 12100 4500
+Wire Wire Line
+	12100 4500 12000 4500
+Wire Wire Line
+	12050 4050 12100 4050
+Wire Wire Line
+	12100 4050 12100 4200
+Wire Wire Line
+	12100 4200 12000 4200
+Wire Wire Line
+	12050 3550 12100 3550
+Wire Wire Line
+	12100 3550 12100 3700
+Wire Wire Line
+	12100 3700 12000 3700
+Wire Wire Line
+	12850 4050 12900 4050
+Wire Wire Line
+	12900 4050 12900 4200
+Wire Wire Line
+	12900 4200 12800 4200
+Wire Wire Line
+	12850 4650 12900 4650
+Wire Wire Line
+	12900 4650 12900 4800
+Wire Wire Line
+	12900 4800 12800 4800
+Wire Wire Line
+	14450 3550 14500 3550
+Wire Wire Line
+	14500 3550 14500 3700
+Wire Wire Line
+	14500 3700 14400 3700
+Wire Wire Line
+	14450 4050 14500 4050
+Wire Wire Line
+	14500 4050 14500 4200
+Wire Wire Line
+	14500 4200 14400 4200
+Wire Wire Line
+	14450 4350 14500 4350
+Wire Wire Line
+	14500 4350 14500 4500
+Wire Wire Line
+	14500 4500 14400 4500
+Wire Wire Line
+	14450 5250 14500 5250
+Wire Wire Line
+	14500 5250 14500 5400
+Wire Wire Line
+	14500 5400 14400 5400
+Wire Wire Line
+	15250 3550 15300 3550
+Wire Wire Line
+	15300 3550 15300 3700
+Wire Wire Line
+	15300 3700 15200 3700
+Wire Wire Line
+	15250 4050 15300 4050
+Wire Wire Line
+	15300 4050 15300 4200
+Wire Wire Line
+	15300 4200 15200 4200
+Wire Wire Line
+	15250 4350 15300 4350
+Wire Wire Line
+	15300 4350 15300 4500
+Wire Wire Line
+	15300 4500 15200 4500
+Wire Wire Line
+	15250 4650 15300 4650
+Wire Wire Line
+	15300 4650 15300 4800
+Wire Wire Line
+	15300 4800 15200 4800
+Wire Wire Line
+	15250 4950 15300 4950
+Wire Wire Line
+	15300 4950 15300 5100
+Wire Wire Line
+	15300 5100 15200 5100
+Wire Wire Line
+	15250 5250 15300 5250
+Wire Wire Line
+	15300 5250 15300 5400
+Wire Wire Line
+	15300 5400 15200 5400
+Wire Wire Line
+	16050 5250 16100 5250
+Wire Wire Line
+	16100 5250 16100 5400
+Wire Wire Line
+	16100 5400 16000 5400
+Wire Wire Line
+	16050 4350 16100 4350
+Wire Wire Line
+	16100 4350 16100 4500
+Wire Wire Line
+	16100 4500 16000 4500
+Wire Wire Line
+	16050 4050 16100 4050
+Wire Wire Line
+	16100 4050 16100 4200
+Wire Wire Line
+	16100 4200 16000 4200
+Wire Wire Line
+	16050 3550 16100 3550
+Wire Wire Line
+	16100 3550 16100 3700
+Wire Wire Line
+	16100 3700 16000 3700
+Wire Wire Line
+	20050 4050 20100 4050
+Wire Wire Line
+	20100 4050 20100 4200
+Wire Wire Line
+	20100 4200 20000 4200
+Wire Wire Line
+	20050 4650 20100 4650
+Wire Wire Line
+	20100 4650 20100 4800
+Wire Wire Line
+	20100 4800 20000 4800
+Wire Wire Line
+	20050 5250 20100 5250
+Wire Wire Line
+	20100 5250 20100 5400
+Wire Wire Line
+	20100 5400 20000 5400
+Wire Wire Line
+	19250 5250 19300 5250
+Wire Wire Line
+	19300 5250 19300 5400
+Wire Wire Line
+	19300 5400 19200 5400
+Wire Wire Line
+	19250 4950 19300 4950
+Wire Wire Line
+	19300 4950 19300 5100
+Wire Wire Line
+	19300 5100 19200 5100
+Wire Wire Line
+	19250 4650 19300 4650
+Wire Wire Line
+	19300 4650 19300 4800
+Wire Wire Line
+	19300 4800 19200 4800
+Wire Wire Line
+	19250 4350 19300 4350
+Wire Wire Line
+	19300 4350 19300 4500
+Wire Wire Line
+	19300 4500 19200 4500
+Wire Wire Line
+	19250 4050 19300 4050
+Wire Wire Line
+	19300 4050 19300 4200
+Wire Wire Line
+	19300 4200 19200 4200
+Wire Wire Line
+	18450 4050 18500 4050
+Wire Wire Line
+	18500 4050 18500 4200
+Wire Wire Line
+	18500 4200 18400 4200
+Wire Wire Line
+	18450 4350 18500 4350
+Wire Wire Line
+	18500 4350 18500 4500
+Wire Wire Line
+	18500 4500 18400 4500
+Wire Wire Line
+	18450 4650 18500 4650
+Wire Wire Line
+	18500 4650 18500 4800
+Wire Wire Line
+	18500 4800 18400 4800
+Wire Wire Line
+	18500 4950 18500 5100
+Wire Wire Line
+	18500 5100 18400 5100
+Wire Wire Line
+	18450 4950 18500 4950
+Wire Wire Line
+	17650 4950 17700 4950
+Wire Wire Line
+	17700 4950 17700 5100
+Wire Wire Line
+	17700 5100 17600 5100
+Wire Wire Line
+	17700 5250 17700 5400
+Wire Wire Line
+	17700 5400 17600 5400
+Wire Wire Line
+	17650 5250 17700 5250
+Wire Wire Line
+	17650 4650 17700 4650
+Wire Wire Line
+	17700 4650 17700 4800
+Wire Wire Line
+	17700 4800 17600 4800
+Wire Wire Line
+	17650 4350 17700 4350
+Wire Wire Line
+	17700 4350 17700 4500
+Wire Wire Line
+	17700 4500 17600 4500
+Wire Wire Line
+	17650 4050 17700 4050
+Wire Wire Line
+	17700 4050 17700 4200
+Wire Wire Line
+	17700 4200 17600 4200
+Entry Wire Line
+	1550 5300 1650 5400
+Entry Wire Line
+	1550 4800 1650 4900
+Entry Wire Line
+	1550 4500 1650 4600
+Entry Wire Line
+	1550 4200 1650 4300
+Entry Wire Line
+	1550 3900 1650 4000
+Entry Wire Line
+	1850 3200 1750 3100
+Entry Wire Line
+	2550 3100 2650 3200
+Entry Wire Line
+	3350 3100 3450 3200
+Entry Wire Line
+	4150 3100 4250 3200
+Entry Wire Line
+	4950 3100 5050 3200
+Entry Wire Line
+	5750 3100 5850 3200
+Entry Wire Line
+	6550 3100 6650 3200
+Entry Wire Line
+	7350 3100 7450 3200
+Entry Wire Line
+	8150 3100 8250 3200
+Entry Wire Line
+	8950 3100 9050 3200
+Entry Wire Line
+	9750 3100 9850 3200
+Entry Wire Line
+	10550 3100 10650 3200
+Entry Wire Line
+	11350 3100 11450 3200
+Entry Wire Line
+	12150 3100 12250 3200
+Entry Wire Line
+	13750 3100 13850 3200
+Entry Wire Line
+	14550 3100 14650 3200
+Entry Wire Line
+	15350 3100 15450 3200
+Entry Wire Line
+	16950 3100 17050 3200
+Entry Wire Line
+	17750 3100 17850 3200
+Entry Wire Line
+	18550 3100 18650 3200
+Entry Wire Line
+	19350 3100 19450 3200
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.1 S6
+U 1 1 39006DD0
+P 2100 5600
+AR Path="/39006DD0" Ref="S6"  Part="1" 
+AR Path="/5F5D4893/39006DD0" Ref="S6"  Part="1" 
+F 0 "S6" H 1900 5700 59  0000 L BNN
+F 1 "LCtrl" H 2300 5500 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_1.1" H 2100 5600 50  0001 C CNN
+F 3 "" H 2100 5600 50  0001 C CNN
+	1    2100 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_0.9 S5
+U 1 1 E921BBEB
+P 2100 5100
+AR Path="/E921BBEB" Ref="S5"  Part="1" 
+AR Path="/5F5D4893/E921BBEB" Ref="S5"  Part="1" 
+F 0 "S5" H 1900 5200 59  0000 L BNN
+F 1 "LShift" H 2300 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_0.9" H 2100 5100 50  0001 C CNN
+F 3 "" H 2100 5100 50  0001 C CNN
+	1    2100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.3 S4
+U 1 1 9362518E
+P 2100 4800
+AR Path="/9362518E" Ref="S4"  Part="1" 
+AR Path="/5F5D4893/9362518E" Ref="S4"  Part="1" 
+F 0 "S4" H 1900 4900 59  0000 L BNN
+F 1 "CapsLock" H 2300 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_1.3" H 2100 4800 50  0001 C CNN
+F 3 "" H 2100 4800 50  0001 C CNN
+	1    2100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.1 S3
+U 1 1 7F1BDAE0
+P 2100 4500
+AR Path="/7F1BDAE0" Ref="S3"  Part="1" 
+AR Path="/5F5D4893/7F1BDAE0" Ref="S3"  Part="1" 
+F 0 "S3" H 1900 4600 59  0000 L BNN
+F 1 "Tab" H 2300 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_1.1" H 2100 4500 50  0001 C CNN
+F 3 "" H 2100 4500 50  0001 C CNN
+	1    2100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S2
+U 1 1 74ED010F
+P 2100 4200
+AR Path="/74ED010F" Ref="S2"  Part="1" 
+AR Path="/5F5D4893/74ED010F" Ref="S2"  Part="1" 
+F 0 "S2" H 1900 4300 59  0000 L BNN
+F 1 "` ¬" H 2300 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2100 4200 50  0001 C CNN
+F 3 "" H 2100 4200 50  0001 C CNN
+	1    2100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S1
+U 1 1 E242179E
+P 2100 3700
+AR Path="/E242179E" Ref="S1"  Part="1" 
+AR Path="/5F5D4893/E242179E" Ref="S1"  Part="1" 
+F 0 "S1" H 1900 3800 59  0000 L BNN
+F 1 "Esc" H 2300 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2100 3700 50  0001 C CNN
+F 3 "" H 2100 3700 50  0001 C CNN
+	1    2100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S12
+U 1 1 7AC63C48
+P 2900 5600
+AR Path="/7AC63C48" Ref="S12"  Part="1" 
+AR Path="/5F5D4893/7AC63C48" Ref="S12"  Part="1" 
+F 0 "S12" H 2700 5700 59  0000 L BNN
+F 1 "LMeta" H 3100 5500 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2900 5600 50  0001 C CNN
+F 3 "" H 2900 5600 50  0001 C CNN
+	1    2900 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S11
+U 1 1 0909D387
+P 2900 5100
+AR Path="/0909D387" Ref="S11"  Part="1" 
+AR Path="/5F5D4893/0909D387" Ref="S11"  Part="1" 
+F 0 "S11" H 2700 5200 59  0000 L BNN
+F 1 "\\\\ |" H 3100 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2900 5100 50  0001 C CNN
+F 3 "" H 2900 5100 50  0001 C CNN
+	1    2900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S10
+U 1 1 21AB59D7
+P 2900 4800
+AR Path="/21AB59D7" Ref="S10"  Part="1" 
+AR Path="/5F5D4893/21AB59D7" Ref="S10"  Part="1" 
+F 0 "S10" H 2700 4900 59  0000 L BNN
+F 1 "a" H 3100 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2900 4800 50  0001 C CNN
+F 3 "" H 2900 4800 50  0001 C CNN
+	1    2900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S9
+U 1 1 DC464A95
+P 2900 4500
+AR Path="/DC464A95" Ref="S9"  Part="1" 
+AR Path="/5F5D4893/DC464A95" Ref="S9"  Part="1" 
+F 0 "S9" H 2700 4600 59  0000 L BNN
+F 1 "q" H 3100 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2900 4500 50  0001 C CNN
+F 3 "" H 2900 4500 50  0001 C CNN
+	1    2900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S8
+U 1 1 64BE99A7
+P 2900 4200
+AR Path="/64BE99A7" Ref="S8"  Part="1" 
+AR Path="/5F5D4893/64BE99A7" Ref="S8"  Part="1" 
+F 0 "S8" H 2700 4300 59  0000 L BNN
+F 1 "1" H 3100 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2900 4200 50  0001 C CNN
+F 3 "" H 2900 4200 50  0001 C CNN
+	1    2900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S7
+U 1 1 46F8529D
+P 2900 3700
+AR Path="/46F8529D" Ref="S7"  Part="1" 
+AR Path="/5F5D4893/46F8529D" Ref="S7"  Part="1" 
+F 0 "S7" H 2700 3800 59  0000 L BNN
+F 1 "F1" H 3100 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2900 3700 50  0001 C CNN
+F 3 "" H 2900 3700 50  0001 C CNN
+	1    2900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.1 S18
+U 1 1 9D02EBC1
+P 3700 5600
+AR Path="/9D02EBC1" Ref="S18"  Part="1" 
+AR Path="/5F5D4893/9D02EBC1" Ref="S18"  Part="1" 
+F 0 "S18" H 3500 5700 59  0000 L BNN
+F 1 "LAlt" H 3900 5500 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_1.1" H 3700 5600 50  0001 C CNN
+F 3 "" H 3700 5600 50  0001 C CNN
+	1    3700 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S17
+U 1 1 84207D4C
+P 3700 5100
+AR Path="/84207D4C" Ref="S17"  Part="1" 
+AR Path="/5F5D4893/84207D4C" Ref="S17"  Part="1" 
+F 0 "S17" H 3500 5200 59  0000 L BNN
+F 1 "z" H 3900 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 3700 5100 50  0001 C CNN
+F 3 "" H 3700 5100 50  0001 C CNN
+	1    3700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S16
+U 1 1 9CFB7B82
+P 3700 4800
+AR Path="/9CFB7B82" Ref="S16"  Part="1" 
+AR Path="/5F5D4893/9CFB7B82" Ref="S16"  Part="1" 
+F 0 "S16" H 3500 4900 59  0000 L BNN
+F 1 "s" H 3900 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 3700 4800 50  0001 C CNN
+F 3 "" H 3700 4800 50  0001 C CNN
+	1    3700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S15
+U 1 1 86082226
+P 3700 4500
+AR Path="/86082226" Ref="S15"  Part="1" 
+AR Path="/5F5D4893/86082226" Ref="S15"  Part="1" 
+F 0 "S15" H 3500 4600 59  0000 L BNN
+F 1 "w" H 3900 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 3700 4500 50  0001 C CNN
+F 3 "" H 3700 4500 50  0001 C CNN
+	1    3700 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S14
+U 1 1 B76BFAC6
+P 3700 4200
+AR Path="/B76BFAC6" Ref="S14"  Part="1" 
+AR Path="/5F5D4893/B76BFAC6" Ref="S14"  Part="1" 
+F 0 "S14" H 3500 4300 59  0000 L BNN
+F 1 "2" H 3900 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 3700 4200 50  0001 C CNN
+F 3 "" H 3700 4200 50  0001 C CNN
+	1    3700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S13
+U 1 1 1BB0FAFC
+P 3700 3700
+AR Path="/1BB0FAFC" Ref="S13"  Part="1" 
+AR Path="/5F5D4893/1BB0FAFC" Ref="S13"  Part="1" 
+F 0 "S13" H 3500 3800 59  0000 L BNN
+F 1 "F2" H 3900 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 3700 3700 50  0001 C CNN
+F 3 "" H 3700 3700 50  0001 C CNN
+	1    3700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_4.45 S39
+U 1 1 BC504E0B
+P 6900 5600
+AR Path="/BC504E0B" Ref="S39"  Part="1" 
+AR Path="/5F5D4893/BC504E0B" Ref="S39"  Part="1" 
+F 0 "S39" H 6700 5700 59  0000 L BNN
+F 1 "Space" H 7100 5500 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_4.45" H 6900 5600 50  0001 C CNN
+F 3 "" H 6900 5600 50  0001 C CNN
+	1    6900 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S23
+U 1 1 7A8FB1E1
+P 4500 5100
+AR Path="/7A8FB1E1" Ref="S23"  Part="1" 
+AR Path="/5F5D4893/7A8FB1E1" Ref="S23"  Part="1" 
+F 0 "S23" H 4300 5200 59  0000 L BNN
+F 1 "x" H 4700 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 4500 5100 50  0001 C CNN
+F 3 "" H 4500 5100 50  0001 C CNN
+	1    4500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S22
+U 1 1 9FA30F68
+P 4500 4800
+AR Path="/9FA30F68" Ref="S22"  Part="1" 
+AR Path="/5F5D4893/9FA30F68" Ref="S22"  Part="1" 
+F 0 "S22" H 4300 4900 59  0000 L BNN
+F 1 "d" H 4700 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 4500 4800 50  0001 C CNN
+F 3 "" H 4500 4800 50  0001 C CNN
+	1    4500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S21
+U 1 1 10ECEC49
+P 4500 4500
+AR Path="/10ECEC49" Ref="S21"  Part="1" 
+AR Path="/5F5D4893/10ECEC49" Ref="S21"  Part="1" 
+F 0 "S21" H 4300 4600 59  0000 L BNN
+F 1 "e" H 4700 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 4500 4500 50  0001 C CNN
+F 3 "" H 4500 4500 50  0001 C CNN
+	1    4500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S20
+U 1 1 20DF8B59
+P 4500 4200
+AR Path="/20DF8B59" Ref="S20"  Part="1" 
+AR Path="/5F5D4893/20DF8B59" Ref="S20"  Part="1" 
+F 0 "S20" H 4300 4300 59  0000 L BNN
+F 1 "3" H 4700 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 4500 4200 50  0001 C CNN
+F 3 "" H 4500 4200 50  0001 C CNN
+	1    4500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S19
+U 1 1 B9D720DF
+P 4500 3700
+AR Path="/B9D720DF" Ref="S19"  Part="1" 
+AR Path="/5F5D4893/B9D720DF" Ref="S19"  Part="1" 
+F 0 "S19" H 4300 3800 59  0000 L BNN
+F 1 "F3" H 4700 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 4500 3700 50  0001 C CNN
+F 3 "" H 4500 3700 50  0001 C CNN
+	1    4500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S28
+U 1 1 3598A5AF
+P 5300 5100
+AR Path="/3598A5AF" Ref="S28"  Part="1" 
+AR Path="/5F5D4893/3598A5AF" Ref="S28"  Part="1" 
+F 0 "S28" H 5100 5200 59  0000 L BNN
+F 1 "c" H 5500 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 5300 5100 50  0001 C CNN
+F 3 "" H 5300 5100 50  0001 C CNN
+	1    5300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S27
+U 1 1 0E6B34C4
+P 5300 4800
+AR Path="/0E6B34C4" Ref="S27"  Part="1" 
+AR Path="/5F5D4893/0E6B34C4" Ref="S27"  Part="1" 
+F 0 "S27" H 5100 4900 59  0000 L BNN
+F 1 "f" H 5500 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 5300 4800 50  0001 C CNN
+F 3 "" H 5300 4800 50  0001 C CNN
+	1    5300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S26
+U 1 1 EC1552D0
+P 5300 4500
+AR Path="/EC1552D0" Ref="S26"  Part="1" 
+AR Path="/5F5D4893/EC1552D0" Ref="S26"  Part="1" 
+F 0 "S26" H 5100 4600 59  0000 L BNN
+F 1 "r" H 5500 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 5300 4500 50  0001 C CNN
+F 3 "" H 5300 4500 50  0001 C CNN
+	1    5300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S25
+U 1 1 80F00705
+P 5300 4200
+AR Path="/80F00705" Ref="S25"  Part="1" 
+AR Path="/5F5D4893/80F00705" Ref="S25"  Part="1" 
+F 0 "S25" H 5100 4300 59  0000 L BNN
+F 1 "4" H 5500 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 5300 4200 50  0001 C CNN
+F 3 "" H 5300 4200 50  0001 C CNN
+	1    5300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S33
+U 1 1 66273E15
+P 6100 5100
+AR Path="/66273E15" Ref="S33"  Part="1" 
+AR Path="/5F5D4893/66273E15" Ref="S33"  Part="1" 
+F 0 "S33" H 5900 5200 59  0000 L BNN
+F 1 "v" H 6300 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6100 5100 50  0001 C CNN
+F 3 "" H 6100 5100 50  0001 C CNN
+	1    6100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S32
+U 1 1 E4891926
+P 6100 4800
+AR Path="/E4891926" Ref="S32"  Part="1" 
+AR Path="/5F5D4893/E4891926" Ref="S32"  Part="1" 
+F 0 "S32" H 5900 4900 59  0000 L BNN
+F 1 "g" H 6300 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6100 4800 50  0001 C CNN
+F 3 "" H 6100 4800 50  0001 C CNN
+	1    6100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S31
+U 1 1 96320B9E
+P 6100 4500
+AR Path="/96320B9E" Ref="S31"  Part="1" 
+AR Path="/5F5D4893/96320B9E" Ref="S31"  Part="1" 
+F 0 "S31" H 5900 4600 59  0000 L BNN
+F 1 "t" H 6300 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6100 4500 50  0001 C CNN
+F 3 "" H 6100 4500 50  0001 C CNN
+	1    6100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S30
+U 1 1 DE9B1E2C
+P 6100 4200
+AR Path="/DE9B1E2C" Ref="S30"  Part="1" 
+AR Path="/5F5D4893/DE9B1E2C" Ref="S30"  Part="1" 
+F 0 "S30" H 5900 4300 59  0000 L BNN
+F 1 "5" H 6300 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6100 4200 50  0001 C CNN
+F 3 "" H 6100 4200 50  0001 C CNN
+	1    6100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S24
+U 1 1 D2ED4BE2
+P 5300 3700
+AR Path="/D2ED4BE2" Ref="S24"  Part="1" 
+AR Path="/5F5D4893/D2ED4BE2" Ref="S24"  Part="1" 
+F 0 "S24" H 5100 3800 59  0000 L BNN
+F 1 "F4" H 5500 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 5300 3700 50  0001 C CNN
+F 3 "" H 5300 3700 50  0001 C CNN
+	1    5300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S38
+U 1 1 0B166F96
+P 6900 5100
+AR Path="/0B166F96" Ref="S38"  Part="1" 
+AR Path="/5F5D4893/0B166F96" Ref="S38"  Part="1" 
+F 0 "S38" H 6700 5200 59  0000 L BNN
+F 1 "b" H 7100 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6900 5100 50  0001 C CNN
+F 3 "" H 6900 5100 50  0001 C CNN
+	1    6900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S37
+U 1 1 B3A7698C
+P 6900 4800
+AR Path="/B3A7698C" Ref="S37"  Part="1" 
+AR Path="/5F5D4893/B3A7698C" Ref="S37"  Part="1" 
+F 0 "S37" H 6700 4900 59  0000 L BNN
+F 1 "h" H 7100 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6900 4800 50  0001 C CNN
+F 3 "" H 6900 4800 50  0001 C CNN
+	1    6900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S36
+U 1 1 2CC54D9A
+P 6900 4500
+AR Path="/2CC54D9A" Ref="S36"  Part="1" 
+AR Path="/5F5D4893/2CC54D9A" Ref="S36"  Part="1" 
+F 0 "S36" H 6700 4600 59  0000 L BNN
+F 1 "y" H 7100 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6900 4500 50  0001 C CNN
+F 3 "" H 6900 4500 50  0001 C CNN
+	1    6900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S35
+U 1 1 2435C087
+P 6900 4200
+AR Path="/2435C087" Ref="S35"  Part="1" 
+AR Path="/5F5D4893/2435C087" Ref="S35"  Part="1" 
+F 0 "S35" H 6700 4300 59  0000 L BNN
+F 1 "6" H 7100 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6900 4200 50  0001 C CNN
+F 3 "" H 6900 4200 50  0001 C CNN
+	1    6900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S29
+U 1 1 B1700775
+P 6100 3700
+AR Path="/B1700775" Ref="S29"  Part="1" 
+AR Path="/5F5D4893/B1700775" Ref="S29"  Part="1" 
+F 0 "S29" H 5900 3800 59  0000 L BNN
+F 1 "F5" H 6300 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6100 3700 50  0001 C CNN
+F 3 "" H 6100 3700 50  0001 C CNN
+	1    6100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S44
+U 1 1 FAB6B405
+P 7700 5100
+AR Path="/FAB6B405" Ref="S44"  Part="1" 
+AR Path="/5F5D4893/FAB6B405" Ref="S44"  Part="1" 
+F 0 "S44" H 7500 5200 59  0000 L BNN
+F 1 "n" H 7900 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 7700 5100 50  0001 C CNN
+F 3 "" H 7700 5100 50  0001 C CNN
+	1    7700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S43
+U 1 1 18AA6FD4
+P 7700 4800
+AR Path="/18AA6FD4" Ref="S43"  Part="1" 
+AR Path="/5F5D4893/18AA6FD4" Ref="S43"  Part="1" 
+F 0 "S43" H 7500 4900 59  0000 L BNN
+F 1 "j" H 7900 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 7700 4800 50  0001 C CNN
+F 3 "" H 7700 4800 50  0001 C CNN
+	1    7700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S42
+U 1 1 A08389E7
+P 7700 4500
+AR Path="/A08389E7" Ref="S42"  Part="1" 
+AR Path="/5F5D4893/A08389E7" Ref="S42"  Part="1" 
+F 0 "S42" H 7500 4600 59  0000 L BNN
+F 1 "u" H 7900 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 7700 4500 50  0001 C CNN
+F 3 "" H 7700 4500 50  0001 C CNN
+	1    7700 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S41
+U 1 1 6F40A970
+P 7700 4200
+AR Path="/6F40A970" Ref="S41"  Part="1" 
+AR Path="/5F5D4893/6F40A970" Ref="S41"  Part="1" 
+F 0 "S41" H 7500 4300 59  0000 L BNN
+F 1 "7" H 7900 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 7700 4200 50  0001 C CNN
+F 3 "" H 7700 4200 50  0001 C CNN
+	1    7700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S34
+U 1 1 97E46C11
+P 6900 3700
+AR Path="/97E46C11" Ref="S34"  Part="1" 
+AR Path="/5F5D4893/97E46C11" Ref="S34"  Part="1" 
+F 0 "S34" H 6700 3800 59  0000 L BNN
+F 1 "F6" H 7100 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6900 3700 50  0001 C CNN
+F 3 "" H 6900 3700 50  0001 C CNN
+	1    6900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S49
+U 1 1 2352CFBA
+P 8500 5100
+AR Path="/2352CFBA" Ref="S49"  Part="1" 
+AR Path="/5F5D4893/2352CFBA" Ref="S49"  Part="1" 
+F 0 "S49" H 8300 5200 59  0000 L BNN
+F 1 "m" H 8700 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 8500 5100 50  0001 C CNN
+F 3 "" H 8500 5100 50  0001 C CNN
+	1    8500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S48
+U 1 1 D5580955
+P 8500 4800
+AR Path="/D5580955" Ref="S48"  Part="1" 
+AR Path="/5F5D4893/D5580955" Ref="S48"  Part="1" 
+F 0 "S48" H 8300 4900 59  0000 L BNN
+F 1 "k" H 8700 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 8500 4800 50  0001 C CNN
+F 3 "" H 8500 4800 50  0001 C CNN
+	1    8500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S47
+U 1 1 4032DEA9
+P 8500 4500
+AR Path="/4032DEA9" Ref="S47"  Part="1" 
+AR Path="/5F5D4893/4032DEA9" Ref="S47"  Part="1" 
+F 0 "S47" H 8300 4600 59  0000 L BNN
+F 1 "i" H 8700 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 8500 4500 50  0001 C CNN
+F 3 "" H 8500 4500 50  0001 C CNN
+	1    8500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S46
+U 1 1 6AE3F873
+P 8500 4200
+AR Path="/6AE3F873" Ref="S46"  Part="1" 
+AR Path="/5F5D4893/6AE3F873" Ref="S46"  Part="1" 
+F 0 "S46" H 8300 4300 59  0000 L BNN
+F 1 "8" H 8700 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 8500 4200 50  0001 C CNN
+F 3 "" H 8500 4200 50  0001 C CNN
+	1    8500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S40
+U 1 1 84F22946
+P 7700 3700
+AR Path="/84F22946" Ref="S40"  Part="1" 
+AR Path="/5F5D4893/84F22946" Ref="S40"  Part="1" 
+F 0 "S40" H 7500 3800 59  0000 L BNN
+F 1 "F7" H 7900 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 7700 3700 50  0001 C CNN
+F 3 "" H 7700 3700 50  0001 C CNN
+	1    7700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S54
+U 1 1 73AB48F2
+P 9300 5100
+AR Path="/73AB48F2" Ref="S54"  Part="1" 
+AR Path="/5F5D4893/73AB48F2" Ref="S54"  Part="1" 
+F 0 "S54" H 9100 5200 59  0000 L BNN
+F 1 ", <" H 9500 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 9300 5100 50  0001 C CNN
+F 3 "" H 9300 5100 50  0001 C CNN
+	1    9300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S53
+U 1 1 BB154378
+P 9300 4800
+AR Path="/BB154378" Ref="S53"  Part="1" 
+AR Path="/5F5D4893/BB154378" Ref="S53"  Part="1" 
+F 0 "S53" H 9100 4900 59  0000 L BNN
+F 1 "l" H 9500 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 9300 4800 50  0001 C CNN
+F 3 "" H 9300 4800 50  0001 C CNN
+	1    9300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S52
+U 1 1 8D142799
+P 9300 4500
+AR Path="/8D142799" Ref="S52"  Part="1" 
+AR Path="/5F5D4893/8D142799" Ref="S52"  Part="1" 
+F 0 "S52" H 9100 4600 59  0000 L BNN
+F 1 "o" H 9500 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 9300 4500 50  0001 C CNN
+F 3 "" H 9300 4500 50  0001 C CNN
+	1    9300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S51
+U 1 1 F6E1B535
+P 9300 4200
+AR Path="/F6E1B535" Ref="S51"  Part="1" 
+AR Path="/5F5D4893/F6E1B535" Ref="S51"  Part="1" 
+F 0 "S51" H 9100 4300 59  0000 L BNN
+F 1 "9" H 9500 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 9300 4200 50  0001 C CNN
+F 3 "" H 9300 4200 50  0001 C CNN
+	1    9300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S45
+U 1 1 77053871
+P 8500 3700
+AR Path="/77053871" Ref="S45"  Part="1" 
+AR Path="/5F5D4893/77053871" Ref="S45"  Part="1" 
+F 0 "S45" H 8300 3800 59  0000 L BNN
+F 1 "F8" H 8700 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 8500 3700 50  0001 C CNN
+F 3 "" H 8500 3700 50  0001 C CNN
+	1    8500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S60
+U 1 1 CDCC5306
+P 10100 5100
+AR Path="/CDCC5306" Ref="S60"  Part="1" 
+AR Path="/5F5D4893/CDCC5306" Ref="S60"  Part="1" 
+F 0 "S60" H 9900 5200 59  0000 L BNN
+F 1 ". >" H 10300 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10100 5100 50  0001 C CNN
+F 3 "" H 10100 5100 50  0001 C CNN
+	1    10100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S59
+U 1 1 31C7DACE
+P 10100 4800
+AR Path="/31C7DACE" Ref="S59"  Part="1" 
+AR Path="/5F5D4893/31C7DACE" Ref="S59"  Part="1" 
+F 0 "S59" H 9900 4900 59  0000 L BNN
+F 1 "; :" H 10300 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10100 4800 50  0001 C CNN
+F 3 "" H 10100 4800 50  0001 C CNN
+	1    10100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S58
+U 1 1 0BA1352C
+P 10100 4500
+AR Path="/0BA1352C" Ref="S58"  Part="1" 
+AR Path="/5F5D4893/0BA1352C" Ref="S58"  Part="1" 
+F 0 "S58" H 9900 4600 59  0000 L BNN
+F 1 "p" H 10300 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10100 4500 50  0001 C CNN
+F 3 "" H 10100 4500 50  0001 C CNN
+	1    10100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S57
+U 1 1 4D8D656F
+P 10100 4200
+AR Path="/4D8D656F" Ref="S57"  Part="1" 
+AR Path="/5F5D4893/4D8D656F" Ref="S57"  Part="1" 
+F 0 "S57" H 9900 4300 59  0000 L BNN
+F 1 "0" H 10300 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10100 4200 50  0001 C CNN
+F 3 "" H 10100 4200 50  0001 C CNN
+	1    10100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S50
+U 1 1 60854874
+P 9300 3700
+AR Path="/60854874" Ref="S50"  Part="1" 
+AR Path="/5F5D4893/60854874" Ref="S50"  Part="1" 
+F 0 "S50" H 9100 3800 59  0000 L BNN
+F 1 "F9" H 9500 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 9300 3700 50  0001 C CNN
+F 3 "" H 9300 3700 50  0001 C CNN
+	1    9300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.1 S55
+U 1 1 DEB75B43
+P 9300 5600
+AR Path="/DEB75B43" Ref="S55"  Part="1" 
+AR Path="/5F5D4893/DEB75B43" Ref="S55"  Part="1" 
+F 0 "S55" H 9100 5700 59  0000 L BNN
+F 1 "RAlt_Gr" H 9500 5500 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_1.1" H 9300 5600 50  0001 C CNN
+F 3 "" H 9300 5600 50  0001 C CNN
+	1    9300 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S61
+U 1 1 54DAB206
+P 10100 5600
+AR Path="/54DAB206" Ref="S61"  Part="1" 
+AR Path="/5F5D4893/54DAB206" Ref="S61"  Part="1" 
+F 0 "S61" H 9900 5700 59  0000 L BNN
+F 1 "RMeta" H 10300 5500 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10100 5600 50  0001 C CNN
+F 3 "" H 10100 5600 50  0001 C CNN
+	1    10100 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S56
+U 1 1 18C6B39E
+P 10100 3700
+AR Path="/18C6B39E" Ref="S56"  Part="1" 
+AR Path="/5F5D4893/18C6B39E" Ref="S56"  Part="1" 
+F 0 "S56" H 9900 3800 59  0000 L BNN
+F 1 "F10" H 10300 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10100 3700 50  0001 C CNN
+F 3 "" H 10100 3700 50  0001 C CNN
+	1    10100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S62
+U 1 1 CA9D74BE
+P 10900 3700
+AR Path="/CA9D74BE" Ref="S62"  Part="1" 
+AR Path="/5F5D4893/CA9D74BE" Ref="S62"  Part="1" 
+F 0 "S62" H 10700 3800 59  0000 L BNN
+F 1 "F11" H 11100 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10900 3700 50  0001 C CNN
+F 3 "" H 10900 3700 50  0001 C CNN
+	1    10900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S65
+U 1 1 D0DFD69C
+P 10900 4800
+AR Path="/D0DFD69C" Ref="S65"  Part="1" 
+AR Path="/5F5D4893/D0DFD69C" Ref="S65"  Part="1" 
+F 0 "S65" H 10700 4900 59  0000 L BNN
+F 1 "' @" H 11100 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10900 4800 50  0001 C CNN
+F 3 "" H 10900 4800 50  0001 C CNN
+	1    10900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S64
+U 1 1 5B3335D6
+P 10900 4500
+AR Path="/5B3335D6" Ref="S64"  Part="1" 
+AR Path="/5F5D4893/5B3335D6" Ref="S64"  Part="1" 
+F 0 "S64" H 10700 4600 59  0000 L BNN
+F 1 "[ {" H 11100 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10900 4500 50  0001 C CNN
+F 3 "" H 10900 4500 50  0001 C CNN
+	1    10900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S63
+U 1 1 6B759930
+P 10900 4200
+AR Path="/6B759930" Ref="S63"  Part="1" 
+AR Path="/5F5D4893/6B759930" Ref="S63"  Part="1" 
+F 0 "S63" H 10700 4300 59  0000 L BNN
+F 1 "- _" H 11100 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10900 4200 50  0001 C CNN
+F 3 "" H 10900 4200 50  0001 C CNN
+	1    10900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S71
+U 1 1 5CFD4A7C
+P 11700 4800
+AR Path="/5CFD4A7C" Ref="S71"  Part="1" 
+AR Path="/5F5D4893/5CFD4A7C" Ref="S71"  Part="1" 
+F 0 "S71" H 11500 4900 59  0000 L BNN
+F 1 "# ~" H 11900 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 11700 4800 50  0001 C CNN
+F 3 "" H 11700 4800 50  0001 C CNN
+	1    11700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S70
+U 1 1 F769DD2F
+P 11700 4500
+AR Path="/F769DD2F" Ref="S70"  Part="1" 
+AR Path="/5F5D4893/F769DD2F" Ref="S70"  Part="1" 
+F 0 "S70" H 11500 4600 59  0000 L BNN
+F 1 "] }" H 11900 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 11700 4500 50  0001 C CNN
+F 3 "" H 11700 4500 50  0001 C CNN
+	1    11700 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S69
+U 1 1 8F6F7655
+P 11700 4200
+AR Path="/8F6F7655" Ref="S69"  Part="1" 
+AR Path="/5F5D4893/8F6F7655" Ref="S69"  Part="1" 
+F 0 "S69" H 11500 4300 59  0000 L BNN
+F 1 "= +" H 11900 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 11700 4200 50  0001 C CNN
+F 3 "" H 11700 4200 50  0001 C CNN
+	1    11700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S66
+U 1 1 EE796BDA
+P 10900 5100
+AR Path="/EE796BDA" Ref="S66"  Part="1" 
+AR Path="/5F5D4893/EE796BDA" Ref="S66"  Part="1" 
+F 0 "S66" H 10700 5200 59  0000 L BNN
+F 1 "/ ?" H 11100 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10900 5100 50  0001 C CNN
+F 3 "" H 10900 5100 50  0001 C CNN
+	1    10900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S68
+U 1 1 1F782065
+P 11700 3700
+AR Path="/1F782065" Ref="S68"  Part="1" 
+AR Path="/5F5D4893/1F782065" Ref="S68"  Part="1" 
+F 0 "S68" H 11500 3800 59  0000 L BNN
+F 1 "F12" H 11900 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 11700 3700 50  0001 C CNN
+F 3 "" H 11700 3700 50  0001 C CNN
+	1    11700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_2 S72
+U 1 1 616BB05F
+P 11700 5100
+AR Path="/616BB05F" Ref="S72"  Part="1" 
+AR Path="/5F5D4893/616BB05F" Ref="S72"  Part="1" 
+F 0 "S72" H 11500 5200 59  0000 L BNN
+F 1 "RShift" H 11900 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_2" H 11700 5100 50  0001 C CNN
+F 3 "" H 11700 5100 50  0001 C CNN
+	1    11700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S67
+U 1 1 A031D05D
+P 10900 5600
+AR Path="/A031D05D" Ref="S67"  Part="1" 
+AR Path="/5F5D4893/A031D05D" Ref="S67"  Part="1" 
+F 0 "S67" H 10700 5700 59  0000 L BNN
+F 1 "Menu" H 11100 5500 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10900 5600 50  0001 C CNN
+F 3 "" H 10900 5600 50  0001 C CNN
+	1    10900 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.1 S73
+U 1 1 6F0D7EE6
+P 11700 5600
+AR Path="/6F0D7EE6" Ref="S73"  Part="1" 
+AR Path="/5F5D4893/6F0D7EE6" Ref="S73"  Part="1" 
+F 0 "S73" H 11500 5700 59  0000 L BNN
+F 1 "RCtrl" H 11900 5500 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_1.1" H 11700 5600 50  0001 C CNN
+F 3 "" H 11700 5600 50  0001 C CNN
+	1    11700 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_0.7X1.45 S74
+U 1 1 F7F1C23A
+P 12500 4200
+AR Path="/F7F1C23A" Ref="S74"  Part="1" 
+AR Path="/5F5D4893/F7F1C23A" Ref="S74"  Part="1" 
+F 0 "S74" H 12300 4300 59  0000 L BNN
+F 1 "Backspace" H 12700 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_0.7X1.45" H 12500 4200 50  0001 C CNN
+F 3 "" H 12500 4200 50  0001 C CNN
+	1    12500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_ENTER S75
+U 1 1 989E095E
+P 12500 4800
+AR Path="/989E095E" Ref="S75"  Part="1" 
+AR Path="/5F5D4893/989E095E" Ref="S75"  Part="1" 
+F 0 "S75" H 12300 4900 59  0000 L BNN
+F 1 "Enter" H 12700 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_ENTER" H 12500 4800 50  0001 C CNN
+F 3 "" H 12500 4800 50  0001 C CNN
+	1    12500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S76
+U 1 1 1B7138D8
+P 14100 3700
+AR Path="/1B7138D8" Ref="S76"  Part="1" 
+AR Path="/5F5D4893/1B7138D8" Ref="S76"  Part="1" 
+F 0 "S76" H 13900 3800 59  0000 L BNN
+F 1 "PtrScr/SysReq" H 14300 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14100 3700 50  0001 C CNN
+F 3 "" H 14100 3700 50  0001 C CNN
+	1    14100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S77
+U 1 1 058DBF50
+P 14100 4200
+AR Path="/058DBF50" Ref="S77"  Part="1" 
+AR Path="/5F5D4893/058DBF50" Ref="S77"  Part="1" 
+F 0 "S77" H 13900 4300 59  0000 L BNN
+F 1 "Ins" H 14300 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14100 4200 50  0001 C CNN
+F 3 "" H 14100 4200 50  0001 C CNN
+	1    14100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S78
+U 1 1 B9390BF2
+P 14100 4500
+AR Path="/B9390BF2" Ref="S78"  Part="1" 
+AR Path="/5F5D4893/B9390BF2" Ref="S78"  Part="1" 
+F 0 "S78" H 13900 4600 59  0000 L BNN
+F 1 "Del" H 14300 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14100 4500 50  0001 C CNN
+F 3 "" H 14100 4500 50  0001 C CNN
+	1    14100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S80
+U 1 1 714E104C
+P 14900 3700
+AR Path="/714E104C" Ref="S80"  Part="1" 
+AR Path="/5F5D4893/714E104C" Ref="S80"  Part="1" 
+F 0 "S80" H 14700 3800 59  0000 L BNN
+F 1 "Scroll Lock" H 15100 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 3700 50  0001 C CNN
+F 3 "" H 14900 3700 50  0001 C CNN
+	1    14900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S81
+U 1 1 96FCB3FD
+P 14900 4200
+AR Path="/96FCB3FD" Ref="S81"  Part="1" 
+AR Path="/5F5D4893/96FCB3FD" Ref="S81"  Part="1" 
+F 0 "S81" H 14700 4300 59  0000 L BNN
+F 1 "Begin()" H 15100 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 4200 50  0001 C CNN
+F 3 "" H 14900 4200 50  0001 C CNN
+	1    14900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S82
+U 1 1 2FB362B0
+P 14900 4500
+AR Path="/2FB362B0" Ref="S82"  Part="1" 
+AR Path="/5F5D4893/2FB362B0" Ref="S82"  Part="1" 
+F 0 "S82" H 14700 4600 59  0000 L BNN
+F 1 "End()" H 15100 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 4500 50  0001 C CNN
+F 3 "" H 14900 4500 50  0001 C CNN
+	1    14900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S86
+U 1 1 5DC1DB80
+P 15700 3700
+AR Path="/5DC1DB80" Ref="S86"  Part="1" 
+AR Path="/5F5D4893/5DC1DB80" Ref="S86"  Part="1" 
+F 0 "S86" H 15500 3800 59  0000 L BNN
+F 1 "Synergy" H 15900 3600 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 15700 3700 50  0001 C CNN
+F 3 "" H 15700 3700 50  0001 C CNN
+	1    15700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S87
+U 1 1 C46E5BA7
+P 15700 4200
+AR Path="/C46E5BA7" Ref="S87"  Part="1" 
+AR Path="/5F5D4893/C46E5BA7" Ref="S87"  Part="1" 
+F 0 "S87" H 15500 4300 59  0000 L BNN
+F 1 "Page Up" H 15900 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 15700 4200 50  0001 C CNN
+F 3 "" H 15700 4200 50  0001 C CNN
+	1    15700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S88
+U 1 1 807EA112
+P 15700 4500
+AR Path="/807EA112" Ref="S88"  Part="1" 
+AR Path="/5F5D4893/807EA112" Ref="S88"  Part="1" 
+F 0 "S88" H 15500 4600 59  0000 L BNN
+F 1 "Page Down" H 15900 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 15700 4500 50  0001 C CNN
+F 3 "" H 15700 4500 50  0001 C CNN
+	1    15700 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S84
+U 1 1 13355FB8
+P 14900 5100
+AR Path="/13355FB8" Ref="S84"  Part="1" 
+AR Path="/5F5D4893/13355FB8" Ref="S84"  Part="1" 
+F 0 "S84" H 14700 5200 59  0000 L BNN
+F 1 "Up" H 15100 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 5100 50  0001 C CNN
+F 3 "" H 14900 5100 50  0001 C CNN
+	1    14900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S79
+U 1 1 67CF1735
+P 14100 5400
+AR Path="/67CF1735" Ref="S79"  Part="1" 
+AR Path="/5F5D4893/67CF1735" Ref="S79"  Part="1" 
+F 0 "S79" H 13900 5500 59  0000 L BNN
+F 1 "Left" H 14300 5300 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14100 5400 50  0001 C CNN
+F 3 "" H 14100 5400 50  0001 C CNN
+	1    14100 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S85
+U 1 1 96EA2D50
+P 14900 5400
+AR Path="/96EA2D50" Ref="S85"  Part="1" 
+AR Path="/5F5D4893/96EA2D50" Ref="S85"  Part="1" 
+F 0 "S85" H 14700 5500 59  0000 L BNN
+F 1 "Down" H 15100 5300 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 5400 50  0001 C CNN
+F 3 "" H 14900 5400 50  0001 C CNN
+	1    14900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S89
+U 1 1 12BBAE07
+P 15700 5400
+AR Path="/12BBAE07" Ref="S89"  Part="1" 
+AR Path="/5F5D4893/12BBAE07" Ref="S89"  Part="1" 
+F 0 "S89" H 15500 5500 59  0000 L BNN
+F 1 "Right" H 15900 5300 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 15700 5400 50  0001 C CNN
+F 3 "" H 15700 5400 50  0001 C CNN
+	1    15700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S83
+U 1 1 2F941615
+P 14900 4800
+AR Path="/2F941615" Ref="S83"  Part="1" 
+AR Path="/5F5D4893/2F941615" Ref="S83"  Part="1" 
+F 0 "S83" H 14700 4900 59  0000 L BNN
+F 1 "Fn" H 15100 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 4800 50  0001 C CNN
+F 3 "" H 14900 4800 50  0001 C CNN
+	1    14900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S90
+U 1 1 FFA03D0A
+P 17300 4200
+AR Path="/FFA03D0A" Ref="S90"  Part="1" 
+AR Path="/5F5D4893/FFA03D0A" Ref="S90"  Part="1" 
+F 0 "S90" H 17100 4300 59  0000 L BNN
+F 1 "Num Lock" H 17500 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 17300 4200 50  0001 C CNN
+F 3 "" H 17300 4200 50  0001 C CNN
+	1    17300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S91
+U 1 1 34D68417
+P 17300 4500
+AR Path="/34D68417" Ref="S91"  Part="1" 
+AR Path="/5F5D4893/34D68417" Ref="S91"  Part="1" 
+F 0 "S91" H 17100 4600 59  0000 L BNN
+F 1 "7" H 17500 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 17300 4500 50  0001 C CNN
+F 3 "" H 17300 4500 50  0001 C CNN
+	1    17300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S92
+U 1 1 5C676FCA
+P 17300 4800
+AR Path="/5C676FCA" Ref="S92"  Part="1" 
+AR Path="/5F5D4893/5C676FCA" Ref="S92"  Part="1" 
+F 0 "S92" H 17100 4900 59  0000 L BNN
+F 1 "4" H 17500 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 17300 4800 50  0001 C CNN
+F 3 "" H 17300 4800 50  0001 C CNN
+	1    17300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S93
+U 1 1 ED30A4C6
+P 17300 5100
+AR Path="/ED30A4C6" Ref="S93"  Part="1" 
+AR Path="/5F5D4893/ED30A4C6" Ref="S93"  Part="1" 
+F 0 "S93" H 17100 5200 59  0000 L BNN
+F 1 "1" H 17500 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 17300 5100 50  0001 C CNN
+F 3 "" H 17300 5100 50  0001 C CNN
+	1    17300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_0.7X1.45 S94
+U 1 1 DEED8008
+P 17300 5400
+AR Path="/DEED8008" Ref="S94"  Part="1" 
+AR Path="/5F5D4893/DEED8008" Ref="S94"  Part="1" 
+F 0 "S94" H 17100 5500 59  0000 L BNN
+F 1 "0" H 17500 5300 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_0.7X1.45" H 17300 5400 50  0001 C CNN
+F 3 "" H 17300 5400 50  0001 C CNN
+	1    17300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S95
+U 1 1 B232C28E
+P 18100 4200
+AR Path="/B232C28E" Ref="S95"  Part="1" 
+AR Path="/5F5D4893/B232C28E" Ref="S95"  Part="1" 
+F 0 "S95" H 17900 4300 59  0000 L BNN
+F 1 "/" H 18300 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18100 4200 50  0001 C CNN
+F 3 "" H 18100 4200 50  0001 C CNN
+	1    18100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S96
+U 1 1 E4152C4C
+P 18100 4500
+AR Path="/E4152C4C" Ref="S96"  Part="1" 
+AR Path="/5F5D4893/E4152C4C" Ref="S96"  Part="1" 
+F 0 "S96" H 17900 4600 59  0000 L BNN
+F 1 "8" H 18300 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18100 4500 50  0001 C CNN
+F 3 "" H 18100 4500 50  0001 C CNN
+	1    18100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S97
+U 1 1 362A74C9
+P 18100 4800
+AR Path="/362A74C9" Ref="S97"  Part="1" 
+AR Path="/5F5D4893/362A74C9" Ref="S97"  Part="1" 
+F 0 "S97" H 17900 4900 59  0000 L BNN
+F 1 "5" H 18300 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18100 4800 50  0001 C CNN
+F 3 "" H 18100 4800 50  0001 C CNN
+	1    18100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S98
+U 1 1 789672E0
+P 18100 5100
+AR Path="/789672E0" Ref="S98"  Part="1" 
+AR Path="/5F5D4893/789672E0" Ref="S98"  Part="1" 
+F 0 "S98" H 17900 5200 59  0000 L BNN
+F 1 "2" H 18300 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18100 5100 50  0001 C CNN
+F 3 "" H 18100 5100 50  0001 C CNN
+	1    18100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S103
+U 1 1 7434A669
+P 18900 5400
+AR Path="/7434A669" Ref="S103"  Part="1" 
+AR Path="/5F5D4893/7434A669" Ref="S103"  Part="1" 
+F 0 "S103" H 18700 5500 59  0000 L BNN
+F 1 "." H 19100 5300 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18900 5400 50  0001 C CNN
+F 3 "" H 18900 5400 50  0001 C CNN
+	1    18900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S99
+U 1 1 8666D7C3
+P 18900 4200
+AR Path="/8666D7C3" Ref="S99"  Part="1" 
+AR Path="/5F5D4893/8666D7C3" Ref="S99"  Part="1" 
+F 0 "S99" H 18700 4300 59  0000 L BNN
+F 1 "*" H 19100 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18900 4200 50  0001 C CNN
+F 3 "" H 18900 4200 50  0001 C CNN
+	1    18900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S100
+U 1 1 31CD12C0
+P 18900 4500
+AR Path="/31CD12C0" Ref="S100"  Part="1" 
+AR Path="/5F5D4893/31CD12C0" Ref="S100"  Part="1" 
+F 0 "S100" H 18700 4600 59  0000 L BNN
+F 1 "9" H 19100 4400 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18900 4500 50  0001 C CNN
+F 3 "" H 18900 4500 50  0001 C CNN
+	1    18900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S101
+U 1 1 27AF0B56
+P 18900 4800
+AR Path="/27AF0B56" Ref="S101"  Part="1" 
+AR Path="/5F5D4893/27AF0B56" Ref="S101"  Part="1" 
+F 0 "S101" H 18700 4900 59  0000 L BNN
+F 1 "6" H 19100 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18900 4800 50  0001 C CNN
+F 3 "" H 18900 4800 50  0001 C CNN
+	1    18900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S102
+U 1 1 5B86533B
+P 18900 5100
+AR Path="/5B86533B" Ref="S102"  Part="1" 
+AR Path="/5F5D4893/5B86533B" Ref="S102"  Part="1" 
+F 0 "S102" H 18700 5200 59  0000 L BNN
+F 1 "3" H 19100 5000 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18900 5100 50  0001 C CNN
+F 3 "" H 18900 5100 50  0001 C CNN
+	1    18900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S104
+U 1 1 CCD5440B
+P 19700 4200
+AR Path="/CCD5440B" Ref="S104"  Part="1" 
+AR Path="/5F5D4893/CCD5440B" Ref="S104"  Part="1" 
+F 0 "S104" H 19500 4300 59  0000 L BNN
+F 1 "-" H 19900 4100 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 19700 4200 50  0001 C CNN
+F 3 "" H 19700 4200 50  0001 C CNN
+	1    19700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.45X0.7 S105
+U 1 1 9C4F5E6A
+P 19700 4800
+AR Path="/9C4F5E6A" Ref="S105"  Part="1" 
+AR Path="/5F5D4893/9C4F5E6A" Ref="S105"  Part="1" 
+F 0 "S105" H 19500 4900 59  0000 L BNN
+F 1 "+" H 19900 4700 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_1.45X0.7" H 19700 4800 50  0001 C CNN
+F 3 "" H 19700 4800 50  0001 C CNN
+	1    19700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.45X0.7 S106
+U 1 1 C5A72085
+P 19700 5400
+AR Path="/C5A72085" Ref="S106"  Part="1" 
+AR Path="/5F5D4893/C5A72085" Ref="S106"  Part="1" 
+F 0 "S106" H 19500 5500 59  0000 L BNN
+F 1 "Enter" H 19900 5300 59  0000 R BNN
+F 2 "MXKeyboard_RGB:MX_KEY_1.45X0.7" H 19700 5400 50  0001 C CNN
+F 3 "" H 19700 5400 50  0001 C CNN
+	1    19700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D1
+U 1 1 8D141E84
+P 2300 3550
+AR Path="/8D141E84" Ref="D1"  Part="1" 
+AR Path="/5F5D4893/8D141E84" Ref="D1"  Part="1" 
+F 0 "D1" H 2150 3610 59  0000 L BNN
+F 1 "BAS16VY" H 2300 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 2300 3550 50  0001 C CNN
+F 3 "" H 2300 3550 50  0001 C CNN
+	1    2300 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D1
+U 2 1 8D141E88
+P 2300 4050
+AR Path="/8D141E88" Ref="D1"  Part="2" 
+AR Path="/5F5D4893/8D141E88" Ref="D1"  Part="2" 
+F 0 "D1" H 2150 4110 59  0000 L BNN
+F 1 "BAS16VY" H 2300 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 2300 4050 50  0001 C CNN
+F 3 "" H 2300 4050 50  0001 C CNN
+	2    2300 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D1
+U 3 1 8D141E8C
+P 2300 4350
+AR Path="/8D141E8C" Ref="D1"  Part="3" 
+AR Path="/5F5D4893/8D141E8C" Ref="D1"  Part="3" 
+F 0 "D1" H 2150 4410 59  0000 L BNN
+F 1 "BAS16VY" H 2300 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 2300 4350 50  0001 C CNN
+F 3 "" H 2300 4350 50  0001 C CNN
+	3    2300 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D2
+U 1 1 20478EC3
+P 2300 4650
+AR Path="/20478EC3" Ref="D2"  Part="1" 
+AR Path="/5F5D4893/20478EC3" Ref="D2"  Part="1" 
+F 0 "D2" H 2150 4710 59  0000 L BNN
+F 1 "BAS16VY" H 2300 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 2300 4650 50  0001 C CNN
+F 3 "" H 2300 4650 50  0001 C CNN
+	1    2300 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D2
+U 2 1 20478ECF
+P 2300 4950
+AR Path="/20478ECF" Ref="D2"  Part="2" 
+AR Path="/5F5D4893/20478ECF" Ref="D2"  Part="2" 
+F 0 "D2" H 2150 5010 59  0000 L BNN
+F 1 "BAS16VY" H 2300 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 2300 4950 50  0001 C CNN
+F 3 "" H 2300 4950 50  0001 C CNN
+	2    2300 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D2
+U 3 1 20478ECB
+P 2300 5450
+AR Path="/20478ECB" Ref="D2"  Part="3" 
+AR Path="/5F5D4893/20478ECB" Ref="D2"  Part="3" 
+F 0 "D2" H 2150 5510 59  0000 L BNN
+F 1 "BAS16VY" H 2300 5450 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 2300 5450 50  0001 C CNN
+F 3 "" H 2300 5450 50  0001 C CNN
+	3    2300 5450
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D3
+U 1 1 39967F7A
+P 3100 3550
+AR Path="/39967F7A" Ref="D3"  Part="1" 
+AR Path="/5F5D4893/39967F7A" Ref="D3"  Part="1" 
+F 0 "D3" H 2950 3610 59  0000 L BNN
+F 1 "BAS16VY" H 3100 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3100 3550 50  0001 C CNN
+F 3 "" H 3100 3550 50  0001 C CNN
+	1    3100 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D3
+U 2 1 39967F76
+P 3100 4050
+AR Path="/39967F76" Ref="D3"  Part="2" 
+AR Path="/5F5D4893/39967F76" Ref="D3"  Part="2" 
+F 0 "D3" H 2950 4110 59  0000 L BNN
+F 1 "BAS16VY" H 3100 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3100 4050 50  0001 C CNN
+F 3 "" H 3100 4050 50  0001 C CNN
+	2    3100 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D3
+U 3 1 39967F72
+P 3100 4350
+AR Path="/39967F72" Ref="D3"  Part="3" 
+AR Path="/5F5D4893/39967F72" Ref="D3"  Part="3" 
+F 0 "D3" H 2950 4410 59  0000 L BNN
+F 1 "BAS16VY" H 3100 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3100 4350 50  0001 C CNN
+F 3 "" H 3100 4350 50  0001 C CNN
+	3    3100 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D4
+U 1 1 DCE5EB0D
+P 3100 4650
+AR Path="/DCE5EB0D" Ref="D4"  Part="1" 
+AR Path="/5F5D4893/DCE5EB0D" Ref="D4"  Part="1" 
+F 0 "D4" H 2950 4710 59  0000 L BNN
+F 1 "BAS16VY" H 3100 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3100 4650 50  0001 C CNN
+F 3 "" H 3100 4650 50  0001 C CNN
+	1    3100 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D4
+U 2 1 DCE5EB01
+P 3100 4950
+AR Path="/DCE5EB01" Ref="D4"  Part="2" 
+AR Path="/5F5D4893/DCE5EB01" Ref="D4"  Part="2" 
+F 0 "D4" H 2950 5010 59  0000 L BNN
+F 1 "BAS16VY" H 3100 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3100 4950 50  0001 C CNN
+F 3 "" H 3100 4950 50  0001 C CNN
+	2    3100 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D4
+U 3 1 DCE5EB05
+P 3100 5450
+AR Path="/DCE5EB05" Ref="D4"  Part="3" 
+AR Path="/5F5D4893/DCE5EB05" Ref="D4"  Part="3" 
+F 0 "D4" H 2950 5510 59  0000 L BNN
+F 1 "BAS16VY" H 3100 5450 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3100 5450 50  0001 C CNN
+F 3 "" H 3100 5450 50  0001 C CNN
+	3    3100 5450
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D5
+U 1 1 73B70CE6
+P 3900 3550
+AR Path="/73B70CE6" Ref="D5"  Part="1" 
+AR Path="/5F5D4893/73B70CE6" Ref="D5"  Part="1" 
+F 0 "D5" H 3750 3610 59  0000 L BNN
+F 1 "BAS16VY" H 3900 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3900 3550 50  0001 C CNN
+F 3 "" H 3900 3550 50  0001 C CNN
+	1    3900 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D5
+U 2 1 73B70CEA
+P 3900 4050
+AR Path="/73B70CEA" Ref="D5"  Part="2" 
+AR Path="/5F5D4893/73B70CEA" Ref="D5"  Part="2" 
+F 0 "D5" H 3750 4110 59  0000 L BNN
+F 1 "BAS16VY" H 3900 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3900 4050 50  0001 C CNN
+F 3 "" H 3900 4050 50  0001 C CNN
+	2    3900 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D5
+U 3 1 73B70CEE
+P 3900 4350
+AR Path="/73B70CEE" Ref="D5"  Part="3" 
+AR Path="/5F5D4893/73B70CEE" Ref="D5"  Part="3" 
+F 0 "D5" H 3750 4410 59  0000 L BNN
+F 1 "BAS16VY" H 3900 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3900 4350 50  0001 C CNN
+F 3 "" H 3900 4350 50  0001 C CNN
+	3    3900 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D6
+U 1 1 0CA8CD4D
+P 3900 4650
+AR Path="/0CA8CD4D" Ref="D6"  Part="1" 
+AR Path="/5F5D4893/0CA8CD4D" Ref="D6"  Part="1" 
+F 0 "D6" H 3750 4710 59  0000 L BNN
+F 1 "BAS16VY" H 3900 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3900 4650 50  0001 C CNN
+F 3 "" H 3900 4650 50  0001 C CNN
+	1    3900 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D6
+U 2 1 0CA8CD41
+P 3900 4950
+AR Path="/0CA8CD41" Ref="D6"  Part="2" 
+AR Path="/5F5D4893/0CA8CD41" Ref="D6"  Part="2" 
+F 0 "D6" H 3750 5010 59  0000 L BNN
+F 1 "BAS16VY" H 3900 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3900 4950 50  0001 C CNN
+F 3 "" H 3900 4950 50  0001 C CNN
+	2    3900 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D6
+U 3 1 0CA8CD45
+P 3900 5450
+AR Path="/0CA8CD45" Ref="D6"  Part="3" 
+AR Path="/5F5D4893/0CA8CD45" Ref="D6"  Part="3" 
+F 0 "D6" H 3750 5510 59  0000 L BNN
+F 1 "BAS16VY" H 3900 5450 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 3900 5450 50  0001 C CNN
+F 3 "" H 3900 5450 50  0001 C CNN
+	3    3900 5450
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D7
+U 1 1 64AFC188
+P 4700 3550
+AR Path="/64AFC188" Ref="D7"  Part="1" 
+AR Path="/5F5D4893/64AFC188" Ref="D7"  Part="1" 
+F 0 "D7" H 4550 3610 59  0000 L BNN
+F 1 "BAS16VY" H 4700 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 4700 3550 50  0001 C CNN
+F 3 "" H 4700 3550 50  0001 C CNN
+	1    4700 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D7
+U 2 1 64AFC184
+P 4700 4050
+AR Path="/64AFC184" Ref="D7"  Part="2" 
+AR Path="/5F5D4893/64AFC184" Ref="D7"  Part="2" 
+F 0 "D7" H 4550 4110 59  0000 L BNN
+F 1 "BAS16VY" H 4700 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 4700 4050 50  0001 C CNN
+F 3 "" H 4700 4050 50  0001 C CNN
+	2    4700 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D7
+U 3 1 64AFC180
+P 4700 4350
+AR Path="/64AFC180" Ref="D7"  Part="3" 
+AR Path="/5F5D4893/64AFC180" Ref="D7"  Part="3" 
+F 0 "D7" H 4550 4410 59  0000 L BNN
+F 1 "BAS16VY" H 4700 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 4700 4350 50  0001 C CNN
+F 3 "" H 4700 4350 50  0001 C CNN
+	3    4700 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D8
+U 1 1 F6A72D8D
+P 4700 4650
+AR Path="/F6A72D8D" Ref="D8"  Part="1" 
+AR Path="/5F5D4893/F6A72D8D" Ref="D8"  Part="1" 
+F 0 "D8" H 4550 4710 59  0000 L BNN
+F 1 "BAS16VY" H 4700 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 4700 4650 50  0001 C CNN
+F 3 "" H 4700 4650 50  0001 C CNN
+	1    4700 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D8
+U 2 1 F6A72D81
+P 4700 4950
+AR Path="/F6A72D81" Ref="D8"  Part="2" 
+AR Path="/5F5D4893/F6A72D81" Ref="D8"  Part="2" 
+F 0 "D8" H 4550 5010 59  0000 L BNN
+F 1 "BAS16VY" H 4700 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 4700 4950 50  0001 C CNN
+F 3 "" H 4700 4950 50  0001 C CNN
+	2    4700 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D8
+U 3 1 F6A72D85
+P 5500 4950
+AR Path="/F6A72D85" Ref="D8"  Part="3" 
+AR Path="/5F5D4893/F6A72D85" Ref="D8"  Part="3" 
+F 0 "D8" H 5350 5010 59  0000 L BNN
+F 1 "BAS16VY" H 5500 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 5500 4950 50  0001 C CNN
+F 3 "" H 5500 4950 50  0001 C CNN
+	3    5500 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D9
+U 1 1 01F958EF
+P 5500 3550
+AR Path="/01F958EF" Ref="D9"  Part="1" 
+AR Path="/5F5D4893/01F958EF" Ref="D9"  Part="1" 
+F 0 "D9" H 5350 3610 59  0000 L BNN
+F 1 "BAS16VY" H 5500 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 5500 3550 50  0001 C CNN
+F 3 "" H 5500 3550 50  0001 C CNN
+	1    5500 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D9
+U 2 1 01F958E3
+P 5500 4050
+AR Path="/01F958E3" Ref="D9"  Part="2" 
+AR Path="/5F5D4893/01F958E3" Ref="D9"  Part="2" 
+F 0 "D9" H 5350 4110 59  0000 L BNN
+F 1 "BAS16VY" H 5500 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 5500 4050 50  0001 C CNN
+F 3 "" H 5500 4050 50  0001 C CNN
+	2    5500 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D9
+U 3 1 01F958E7
+P 5500 4350
+AR Path="/01F958E7" Ref="D9"  Part="3" 
+AR Path="/5F5D4893/01F958E7" Ref="D9"  Part="3" 
+F 0 "D9" H 5350 4410 59  0000 L BNN
+F 1 "BAS16VY" H 5500 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 5500 4350 50  0001 C CNN
+F 3 "" H 5500 4350 50  0001 C CNN
+	3    5500 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D10
+U 1 1 4EB806FC
+P 6300 3550
+AR Path="/4EB806FC" Ref="D10"  Part="1" 
+AR Path="/5F5D4893/4EB806FC" Ref="D10"  Part="1" 
+F 0 "D10" H 6150 3610 59  0000 L BNN
+F 1 "BAS16VY" H 6300 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 6300 3550 50  0001 C CNN
+F 3 "" H 6300 3550 50  0001 C CNN
+	1    6300 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D10
+U 2 1 4EB806F0
+P 6300 4050
+AR Path="/4EB806F0" Ref="D10"  Part="2" 
+AR Path="/5F5D4893/4EB806F0" Ref="D10"  Part="2" 
+F 0 "D10" H 6150 4110 59  0000 L BNN
+F 1 "BAS16VY" H 6300 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 6300 4050 50  0001 C CNN
+F 3 "" H 6300 4050 50  0001 C CNN
+	2    6300 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D10
+U 3 1 4EB806F4
+P 6300 4350
+AR Path="/4EB806F4" Ref="D10"  Part="3" 
+AR Path="/5F5D4893/4EB806F4" Ref="D10"  Part="3" 
+F 0 "D10" H 6150 4410 59  0000 L BNN
+F 1 "BAS16VY" H 6300 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 6300 4350 50  0001 C CNN
+F 3 "" H 6300 4350 50  0001 C CNN
+	3    6300 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D11
+U 1 1 BAC73F4F
+P 6300 4650
+AR Path="/BAC73F4F" Ref="D11"  Part="1" 
+AR Path="/5F5D4893/BAC73F4F" Ref="D11"  Part="1" 
+F 0 "D11" H 6150 4710 59  0000 L BNN
+F 1 "BAS16VY" H 6300 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 6300 4650 50  0001 C CNN
+F 3 "" H 6300 4650 50  0001 C CNN
+	1    6300 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D11
+U 2 1 BAC73F43
+P 5500 4650
+AR Path="/BAC73F43" Ref="D11"  Part="2" 
+AR Path="/5F5D4893/BAC73F43" Ref="D11"  Part="2" 
+F 0 "D11" H 5350 4710 59  0000 L BNN
+F 1 "BAS16VY" H 5500 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 5500 4650 50  0001 C CNN
+F 3 "" H 5500 4650 50  0001 C CNN
+	2    5500 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D11
+U 3 1 BAC73F47
+P 6300 4950
+AR Path="/BAC73F47" Ref="D11"  Part="3" 
+AR Path="/5F5D4893/BAC73F47" Ref="D11"  Part="3" 
+F 0 "D11" H 6150 5010 59  0000 L BNN
+F 1 "BAS16VY" H 6300 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 6300 4950 50  0001 C CNN
+F 3 "" H 6300 4950 50  0001 C CNN
+	3    6300 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D12
+U 1 1 279ED16D
+P 7100 3550
+AR Path="/279ED16D" Ref="D12"  Part="1" 
+AR Path="/5F5D4893/279ED16D" Ref="D12"  Part="1" 
+F 0 "D12" H 6950 3610 59  0000 L BNN
+F 1 "BAS16VY" H 7100 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7100 3550 50  0001 C CNN
+F 3 "" H 7100 3550 50  0001 C CNN
+	1    7100 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D12
+U 2 1 279ED161
+P 7100 4050
+AR Path="/279ED161" Ref="D12"  Part="2" 
+AR Path="/5F5D4893/279ED161" Ref="D12"  Part="2" 
+F 0 "D12" H 6950 4110 59  0000 L BNN
+F 1 "BAS16VY" H 7100 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7100 4050 50  0001 C CNN
+F 3 "" H 7100 4050 50  0001 C CNN
+	2    7100 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D12
+U 3 1 279ED165
+P 7100 4350
+AR Path="/279ED165" Ref="D12"  Part="3" 
+AR Path="/5F5D4893/279ED165" Ref="D12"  Part="3" 
+F 0 "D12" H 6950 4410 59  0000 L BNN
+F 1 "BAS16VY" H 7100 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7100 4350 50  0001 C CNN
+F 3 "" H 7100 4350 50  0001 C CNN
+	3    7100 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D13
+U 1 1 1B9FE3C0
+P 7100 4650
+AR Path="/1B9FE3C0" Ref="D13"  Part="1" 
+AR Path="/5F5D4893/1B9FE3C0" Ref="D13"  Part="1" 
+F 0 "D13" H 6950 4710 59  0000 L BNN
+F 1 "BAS16VY" H 7100 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7100 4650 50  0001 C CNN
+F 3 "" H 7100 4650 50  0001 C CNN
+	1    7100 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D13
+U 2 1 1B9FE3CC
+P 7100 4950
+AR Path="/1B9FE3CC" Ref="D13"  Part="2" 
+AR Path="/5F5D4893/1B9FE3CC" Ref="D13"  Part="2" 
+F 0 "D13" H 6950 5010 59  0000 L BNN
+F 1 "BAS16VY" H 7100 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7100 4950 50  0001 C CNN
+F 3 "" H 7100 4950 50  0001 C CNN
+	2    7100 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D13
+U 3 1 1B9FE3C8
+P 7100 5450
+AR Path="/1B9FE3C8" Ref="D13"  Part="3" 
+AR Path="/5F5D4893/1B9FE3C8" Ref="D13"  Part="3" 
+F 0 "D13" H 6950 5510 59  0000 L BNN
+F 1 "BAS16VY" H 7100 5450 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7100 5450 50  0001 C CNN
+F 3 "" H 7100 5450 50  0001 C CNN
+	3    7100 5450
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D14
+U 1 1 1213472B
+P 7900 3550
+AR Path="/1213472B" Ref="D14"  Part="1" 
+AR Path="/5F5D4893/1213472B" Ref="D14"  Part="1" 
+F 0 "D14" H 7750 3610 59  0000 L BNN
+F 1 "BAS16VY" H 7900 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7900 3550 50  0001 C CNN
+F 3 "" H 7900 3550 50  0001 C CNN
+	1    7900 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D14
+U 2 1 12134727
+P 7900 4050
+AR Path="/12134727" Ref="D14"  Part="2" 
+AR Path="/5F5D4893/12134727" Ref="D14"  Part="2" 
+F 0 "D14" H 7750 4110 59  0000 L BNN
+F 1 "BAS16VY" H 7900 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7900 4050 50  0001 C CNN
+F 3 "" H 7900 4050 50  0001 C CNN
+	2    7900 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D14
+U 3 1 12134723
+P 7900 4350
+AR Path="/12134723" Ref="D14"  Part="3" 
+AR Path="/5F5D4893/12134723" Ref="D14"  Part="3" 
+F 0 "D14" H 7750 4410 59  0000 L BNN
+F 1 "BAS16VY" H 7900 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7900 4350 50  0001 C CNN
+F 3 "" H 7900 4350 50  0001 C CNN
+	3    7900 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D15
+U 1 1 2A336CCE
+P 7900 4650
+AR Path="/2A336CCE" Ref="D15"  Part="1" 
+AR Path="/5F5D4893/2A336CCE" Ref="D15"  Part="1" 
+F 0 "D15" H 7750 4710 59  0000 L BNN
+F 1 "BAS16VY" H 7900 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7900 4650 50  0001 C CNN
+F 3 "" H 7900 4650 50  0001 C CNN
+	1    7900 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D15
+U 2 1 2A336CC2
+P 7900 4950
+AR Path="/2A336CC2" Ref="D15"  Part="2" 
+AR Path="/5F5D4893/2A336CC2" Ref="D15"  Part="2" 
+F 0 "D15" H 7750 5010 59  0000 L BNN
+F 1 "BAS16VY" H 7900 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7900 4950 50  0001 C CNN
+F 3 "" H 7900 4950 50  0001 C CNN
+	2    7900 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D15
+U 3 1 2A336CC6
+P 7900 5450
+AR Path="/2A336CC6" Ref="D15"  Part="3" 
+AR Path="/5F5D4893/2A336CC6" Ref="D15"  Part="3" 
+F 0 "D15" H 7750 5510 59  0000 L BNN
+F 1 "BAS16VY" H 7900 5450 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 7900 5450 50  0001 C CNN
+F 3 "" H 7900 5450 50  0001 C CNN
+	3    7900 5450
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D16
+U 1 1 2B8C609C
+P 8700 3550
+AR Path="/2B8C609C" Ref="D16"  Part="1" 
+AR Path="/5F5D4893/2B8C609C" Ref="D16"  Part="1" 
+F 0 "D16" H 8550 3610 59  0000 L BNN
+F 1 "BAS16VY" H 8700 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 8700 3550 50  0001 C CNN
+F 3 "" H 8700 3550 50  0001 C CNN
+	1    8700 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D16
+U 2 1 2B8C6090
+P 8700 4050
+AR Path="/2B8C6090" Ref="D16"  Part="2" 
+AR Path="/5F5D4893/2B8C6090" Ref="D16"  Part="2" 
+F 0 "D16" H 8550 4110 59  0000 L BNN
+F 1 "BAS16VY" H 8700 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 8700 4050 50  0001 C CNN
+F 3 "" H 8700 4050 50  0001 C CNN
+	2    8700 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D16
+U 3 1 2B8C6094
+P 8700 4350
+AR Path="/2B8C6094" Ref="D16"  Part="3" 
+AR Path="/5F5D4893/2B8C6094" Ref="D16"  Part="3" 
+F 0 "D16" H 8550 4410 59  0000 L BNN
+F 1 "BAS16VY" H 8700 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 8700 4350 50  0001 C CNN
+F 3 "" H 8700 4350 50  0001 C CNN
+	3    8700 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D17
+U 1 1 20A09832
+P 8700 4650
+AR Path="/20A09832" Ref="D17"  Part="1" 
+AR Path="/5F5D4893/20A09832" Ref="D17"  Part="1" 
+F 0 "D17" H 8550 4710 59  0000 L BNN
+F 1 "BAS16VY" H 8700 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 8700 4650 50  0001 C CNN
+F 3 "" H 8700 4650 50  0001 C CNN
+	1    8700 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D18
+U 1 1 A2E1D69D
+P 9500 3550
+AR Path="/A2E1D69D" Ref="D18"  Part="1" 
+AR Path="/5F5D4893/A2E1D69D" Ref="D18"  Part="1" 
+F 0 "D18" H 9350 3610 59  0000 L BNN
+F 1 "BAS16VY" H 9500 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 9500 3550 50  0001 C CNN
+F 3 "" H 9500 3550 50  0001 C CNN
+	1    9500 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D17
+U 2 1 20A0983E
+P 8700 4950
+AR Path="/20A0983E" Ref="D17"  Part="2" 
+AR Path="/5F5D4893/20A0983E" Ref="D17"  Part="2" 
+F 0 "D17" H 8550 5010 59  0000 L BNN
+F 1 "BAS16VY" H 8700 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 8700 4950 50  0001 C CNN
+F 3 "" H 8700 4950 50  0001 C CNN
+	2    8700 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D17
+U 3 1 20A0983A
+P 8300 5450
+AR Path="/20A0983A" Ref="D17"  Part="3" 
+AR Path="/5F5D4893/20A0983A" Ref="D17"  Part="3" 
+F 0 "D17" H 8150 5510 59  0000 L BNN
+F 1 "BAS16VY" H 8300 5450 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 8300 5450 50  0001 C CNN
+F 3 "" H 8300 5450 50  0001 C CNN
+	3    8300 5450
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D18
+U 2 1 A2E1D691
+P 9500 4050
+AR Path="/A2E1D691" Ref="D18"  Part="2" 
+AR Path="/5F5D4893/A2E1D691" Ref="D18"  Part="2" 
+F 0 "D18" H 9350 4110 59  0000 L BNN
+F 1 "BAS16VY" H 9500 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 9500 4050 50  0001 C CNN
+F 3 "" H 9500 4050 50  0001 C CNN
+	2    9500 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D18
+U 3 1 A2E1D695
+P 9500 4350
+AR Path="/A2E1D695" Ref="D18"  Part="3" 
+AR Path="/5F5D4893/A2E1D695" Ref="D18"  Part="3" 
+F 0 "D18" H 9350 4410 59  0000 L BNN
+F 1 "BAS16VY" H 9500 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 9500 4350 50  0001 C CNN
+F 3 "" H 9500 4350 50  0001 C CNN
+	3    9500 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D19
+U 1 1 9B5A414A
+P 9500 4650
+AR Path="/9B5A414A" Ref="D19"  Part="1" 
+AR Path="/5F5D4893/9B5A414A" Ref="D19"  Part="1" 
+F 0 "D19" H 9350 4710 59  0000 L BNN
+F 1 "BAS16VY" H 9500 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 9500 4650 50  0001 C CNN
+F 3 "" H 9500 4650 50  0001 C CNN
+	1    9500 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D19
+U 2 1 9B5A4146
+P 9500 4950
+AR Path="/9B5A4146" Ref="D19"  Part="2" 
+AR Path="/5F5D4893/9B5A4146" Ref="D19"  Part="2" 
+F 0 "D19" H 9350 5010 59  0000 L BNN
+F 1 "BAS16VY" H 9500 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 9500 4950 50  0001 C CNN
+F 3 "" H 9500 4950 50  0001 C CNN
+	2    9500 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D19
+U 3 1 9B5A4142
+P 9500 5450
+AR Path="/9B5A4142" Ref="D19"  Part="3" 
+AR Path="/5F5D4893/9B5A4142" Ref="D19"  Part="3" 
+F 0 "D19" H 9350 5510 59  0000 L BNN
+F 1 "BAS16VY" H 9500 5450 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 9500 5450 50  0001 C CNN
+F 3 "" H 9500 5450 50  0001 C CNN
+	3    9500 5450
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D20
+U 1 1 5A7E911D
+P 10300 3550
+AR Path="/5A7E911D" Ref="D20"  Part="1" 
+AR Path="/5F5D4893/5A7E911D" Ref="D20"  Part="1" 
+F 0 "D20" H 10150 3610 59  0000 L BNN
+F 1 "BAS16VY" H 10300 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 10300 3550 50  0001 C CNN
+F 3 "" H 10300 3550 50  0001 C CNN
+	1    10300 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D20
+U 2 1 5A7E9111
+P 10300 4050
+AR Path="/5A7E9111" Ref="D20"  Part="2" 
+AR Path="/5F5D4893/5A7E9111" Ref="D20"  Part="2" 
+F 0 "D20" H 10150 4110 59  0000 L BNN
+F 1 "BAS16VY" H 10300 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 10300 4050 50  0001 C CNN
+F 3 "" H 10300 4050 50  0001 C CNN
+	2    10300 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D20
+U 3 1 5A7E9115
+P 10300 4350
+AR Path="/5A7E9115" Ref="D20"  Part="3" 
+AR Path="/5F5D4893/5A7E9115" Ref="D20"  Part="3" 
+F 0 "D20" H 10150 4410 59  0000 L BNN
+F 1 "BAS16VY" H 10300 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 10300 4350 50  0001 C CNN
+F 3 "" H 10300 4350 50  0001 C CNN
+	3    10300 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D21
+U 1 1 A44ADF98
+P 10300 4650
+AR Path="/A44ADF98" Ref="D21"  Part="1" 
+AR Path="/5F5D4893/A44ADF98" Ref="D21"  Part="1" 
+F 0 "D21" H 10150 4710 59  0000 L BNN
+F 1 "BAS16VY" H 10300 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 10300 4650 50  0001 C CNN
+F 3 "" H 10300 4650 50  0001 C CNN
+	1    10300 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D21
+U 2 1 A44ADF94
+P 10300 4950
+AR Path="/A44ADF94" Ref="D21"  Part="2" 
+AR Path="/5F5D4893/A44ADF94" Ref="D21"  Part="2" 
+F 0 "D21" H 10150 5010 59  0000 L BNN
+F 1 "BAS16VY" H 10300 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 10300 4950 50  0001 C CNN
+F 3 "" H 10300 4950 50  0001 C CNN
+	2    10300 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D21
+U 3 1 A44ADF90
+P 10300 5450
+AR Path="/A44ADF90" Ref="D21"  Part="3" 
+AR Path="/5F5D4893/A44ADF90" Ref="D21"  Part="3" 
+F 0 "D21" H 10150 5510 59  0000 L BNN
+F 1 "BAS16VY" H 10300 5450 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 10300 5450 50  0001 C CNN
+F 3 "" H 10300 5450 50  0001 C CNN
+	3    10300 5450
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D22
+U 1 1 5D706025
+P 11100 3550
+AR Path="/5D706025" Ref="D22"  Part="1" 
+AR Path="/5F5D4893/5D706025" Ref="D22"  Part="1" 
+F 0 "D22" H 10950 3610 59  0000 L BNN
+F 1 "BAS16VY" H 11100 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11100 3550 50  0001 C CNN
+F 3 "" H 11100 3550 50  0001 C CNN
+	1    11100 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D22
+U 2 1 5D706029
+P 11100 4050
+AR Path="/5D706029" Ref="D22"  Part="2" 
+AR Path="/5F5D4893/5D706029" Ref="D22"  Part="2" 
+F 0 "D22" H 10950 4110 59  0000 L BNN
+F 1 "BAS16VY" H 11100 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11100 4050 50  0001 C CNN
+F 3 "" H 11100 4050 50  0001 C CNN
+	2    11100 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D22
+U 3 1 5D70602D
+P 11100 4350
+AR Path="/5D70602D" Ref="D22"  Part="3" 
+AR Path="/5F5D4893/5D70602D" Ref="D22"  Part="3" 
+F 0 "D22" H 10950 4410 59  0000 L BNN
+F 1 "BAS16VY" H 11100 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11100 4350 50  0001 C CNN
+F 3 "" H 11100 4350 50  0001 C CNN
+	3    11100 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D23
+U 1 1 40BA98E3
+P 11100 4650
+AR Path="/40BA98E3" Ref="D23"  Part="1" 
+AR Path="/5F5D4893/40BA98E3" Ref="D23"  Part="1" 
+F 0 "D23" H 10950 4710 59  0000 L BNN
+F 1 "BAS16VY" H 11100 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11100 4650 50  0001 C CNN
+F 3 "" H 11100 4650 50  0001 C CNN
+	1    11100 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D23
+U 2 1 40BA98EF
+P 11100 4950
+AR Path="/40BA98EF" Ref="D23"  Part="2" 
+AR Path="/5F5D4893/40BA98EF" Ref="D23"  Part="2" 
+F 0 "D23" H 10950 5010 59  0000 L BNN
+F 1 "BAS16VY" H 11100 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11100 4950 50  0001 C CNN
+F 3 "" H 11100 4950 50  0001 C CNN
+	2    11100 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D23
+U 3 1 40BA98EB
+P 11100 5450
+AR Path="/40BA98EB" Ref="D23"  Part="3" 
+AR Path="/5F5D4893/40BA98EB" Ref="D23"  Part="3" 
+F 0 "D23" H 10950 5510 59  0000 L BNN
+F 1 "BAS16VY" H 11100 5450 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11100 5450 50  0001 C CNN
+F 3 "" H 11100 5450 50  0001 C CNN
+	3    11100 5450
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D24
+U 1 1 5A2B5BA5
+P 11900 3550
+AR Path="/5A2B5BA5" Ref="D24"  Part="1" 
+AR Path="/5F5D4893/5A2B5BA5" Ref="D24"  Part="1" 
+F 0 "D24" H 11750 3610 59  0000 L BNN
+F 1 "BAS16VY" H 11900 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11900 3550 50  0001 C CNN
+F 3 "" H 11900 3550 50  0001 C CNN
+	1    11900 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D24
+U 2 1 5A2B5BA9
+P 11900 4050
+AR Path="/5A2B5BA9" Ref="D24"  Part="2" 
+AR Path="/5F5D4893/5A2B5BA9" Ref="D24"  Part="2" 
+F 0 "D24" H 11750 4110 59  0000 L BNN
+F 1 "BAS16VY" H 11900 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11900 4050 50  0001 C CNN
+F 3 "" H 11900 4050 50  0001 C CNN
+	2    11900 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D24
+U 3 1 5A2B5BAD
+P 11900 4350
+AR Path="/5A2B5BAD" Ref="D24"  Part="3" 
+AR Path="/5F5D4893/5A2B5BAD" Ref="D24"  Part="3" 
+F 0 "D24" H 11750 4410 59  0000 L BNN
+F 1 "BAS16VY" H 11900 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11900 4350 50  0001 C CNN
+F 3 "" H 11900 4350 50  0001 C CNN
+	3    11900 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D25
+U 1 1 58164064
+P 11900 4650
+AR Path="/58164064" Ref="D25"  Part="1" 
+AR Path="/5F5D4893/58164064" Ref="D25"  Part="1" 
+F 0 "D25" H 11750 4710 59  0000 L BNN
+F 1 "BAS16VY" H 11900 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11900 4650 50  0001 C CNN
+F 3 "" H 11900 4650 50  0001 C CNN
+	1    11900 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D25
+U 2 1 58164068
+P 11900 4950
+AR Path="/58164068" Ref="D25"  Part="2" 
+AR Path="/5F5D4893/58164068" Ref="D25"  Part="2" 
+F 0 "D25" H 11750 5010 59  0000 L BNN
+F 1 "BAS16VY" H 11900 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11900 4950 50  0001 C CNN
+F 3 "" H 11900 4950 50  0001 C CNN
+	2    11900 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D25
+U 3 1 5816406C
+P 11900 5450
+AR Path="/5816406C" Ref="D25"  Part="3" 
+AR Path="/5F5D4893/5816406C" Ref="D25"  Part="3" 
+F 0 "D25" H 11750 5510 59  0000 L BNN
+F 1 "BAS16VY" H 11900 5450 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 11900 5450 50  0001 C CNN
+F 3 "" H 11900 5450 50  0001 C CNN
+	3    11900 5450
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D26
+U 1 1 E30E77C8
+P 12700 4050
+AR Path="/E30E77C8" Ref="D26"  Part="1" 
+AR Path="/5F5D4893/E30E77C8" Ref="D26"  Part="1" 
+F 0 "D26" H 12550 4110 59  0000 L BNN
+F 1 "BAS16VY" H 12700 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 12700 4050 50  0001 C CNN
+F 3 "" H 12700 4050 50  0001 C CNN
+	1    12700 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D26
+U 2 1 E30E77C4
+P 12700 4650
+AR Path="/E30E77C4" Ref="D26"  Part="2" 
+AR Path="/5F5D4893/E30E77C4" Ref="D26"  Part="2" 
+F 0 "D26" H 12550 4710 59  0000 L BNN
+F 1 "BAS16VY" H 12700 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 12700 4650 50  0001 C CNN
+F 3 "" H 12700 4650 50  0001 C CNN
+	2    12700 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D26
+U 3 1 E30E77C0
+P 12700 5100
+AR Path="/E30E77C0" Ref="D26"  Part="3" 
+AR Path="/5F5D4893/E30E77C0" Ref="D26"  Part="3" 
+F 0 "D26" H 12550 5160 59  0000 L BNN
+F 1 "BAS16VY" H 12700 5100 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 12700 5100 50  0001 C CNN
+F 3 "" H 12700 5100 50  0001 C CNN
+	3    12700 5100
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D27
+U 1 1 55B9129C
+P 14300 3550
+AR Path="/55B9129C" Ref="D27"  Part="1" 
+AR Path="/5F5D4893/55B9129C" Ref="D27"  Part="1" 
+F 0 "D27" H 14150 3610 59  0000 L BNN
+F 1 "BAS16VY" H 14300 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 14300 3550 50  0001 C CNN
+F 3 "" H 14300 3550 50  0001 C CNN
+	1    14300 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D27
+U 2 1 55B91290
+P 14300 4050
+AR Path="/55B91290" Ref="D27"  Part="2" 
+AR Path="/5F5D4893/55B91290" Ref="D27"  Part="2" 
+F 0 "D27" H 14150 4110 59  0000 L BNN
+F 1 "BAS16VY" H 14300 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 14300 4050 50  0001 C CNN
+F 3 "" H 14300 4050 50  0001 C CNN
+	2    14300 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D27
+U 3 1 55B91294
+P 14300 4350
+AR Path="/55B91294" Ref="D27"  Part="3" 
+AR Path="/5F5D4893/55B91294" Ref="D27"  Part="3" 
+F 0 "D27" H 14150 4410 59  0000 L BNN
+F 1 "BAS16VY" H 14300 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 14300 4350 50  0001 C CNN
+F 3 "" H 14300 4350 50  0001 C CNN
+	3    14300 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D28
+U 1 1 B5D15FF9
+P 15100 3550
+AR Path="/B5D15FF9" Ref="D28"  Part="1" 
+AR Path="/5F5D4893/B5D15FF9" Ref="D28"  Part="1" 
+F 0 "D28" H 14950 3610 59  0000 L BNN
+F 1 "BAS16VY" H 15100 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 15100 3550 50  0001 C CNN
+F 3 "" H 15100 3550 50  0001 C CNN
+	1    15100 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D28
+U 2 1 B5D15FF5
+P 15100 4050
+AR Path="/B5D15FF5" Ref="D28"  Part="2" 
+AR Path="/5F5D4893/B5D15FF5" Ref="D28"  Part="2" 
+F 0 "D28" H 14950 4110 59  0000 L BNN
+F 1 "BAS16VY" H 15100 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 15100 4050 50  0001 C CNN
+F 3 "" H 15100 4050 50  0001 C CNN
+	2    15100 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D28
+U 3 1 B5D15FF1
+P 15100 4350
+AR Path="/B5D15FF1" Ref="D28"  Part="3" 
+AR Path="/5F5D4893/B5D15FF1" Ref="D28"  Part="3" 
+F 0 "D28" H 14950 4410 59  0000 L BNN
+F 1 "BAS16VY" H 15100 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 15100 4350 50  0001 C CNN
+F 3 "" H 15100 4350 50  0001 C CNN
+	3    15100 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D29
+U 1 1 773A8A4A
+P 15900 3550
+AR Path="/773A8A4A" Ref="D29"  Part="1" 
+AR Path="/5F5D4893/773A8A4A" Ref="D29"  Part="1" 
+F 0 "D29" H 15750 3610 59  0000 L BNN
+F 1 "BAS16VY" H 15900 3550 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 15900 3550 50  0001 C CNN
+F 3 "" H 15900 3550 50  0001 C CNN
+	1    15900 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D29
+U 2 1 773A8A46
+P 15900 4050
+AR Path="/773A8A46" Ref="D29"  Part="2" 
+AR Path="/5F5D4893/773A8A46" Ref="D29"  Part="2" 
+F 0 "D29" H 15750 4110 59  0000 L BNN
+F 1 "BAS16VY" H 15900 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 15900 4050 50  0001 C CNN
+F 3 "" H 15900 4050 50  0001 C CNN
+	2    15900 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D29
+U 3 1 773A8A42
+P 15900 4350
+AR Path="/773A8A42" Ref="D29"  Part="3" 
+AR Path="/5F5D4893/773A8A42" Ref="D29"  Part="3" 
+F 0 "D29" H 15750 4410 59  0000 L BNN
+F 1 "BAS16VY" H 15900 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 15900 4350 50  0001 C CNN
+F 3 "" H 15900 4350 50  0001 C CNN
+	3    15900 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D30
+U 1 1 C9688693
+P 15100 4650
+AR Path="/C9688693" Ref="D30"  Part="1" 
+AR Path="/5F5D4893/C9688693" Ref="D30"  Part="1" 
+F 0 "D30" H 14950 4710 59  0000 L BNN
+F 1 "BAS16VY" H 15100 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 15100 4650 50  0001 C CNN
+F 3 "" H 15100 4650 50  0001 C CNN
+	1    15100 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D30
+U 2 1 C968869F
+P 15100 4950
+AR Path="/C968869F" Ref="D30"  Part="2" 
+AR Path="/5F5D4893/C968869F" Ref="D30"  Part="2" 
+F 0 "D30" H 14950 5010 59  0000 L BNN
+F 1 "BAS16VY" H 15100 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 15100 4950 50  0001 C CNN
+F 3 "" H 15100 4950 50  0001 C CNN
+	2    15100 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D30
+U 3 1 C968869B
+P 13100 5100
+AR Path="/C968869B" Ref="D30"  Part="3" 
+AR Path="/5F5D4893/C968869B" Ref="D30"  Part="3" 
+F 0 "D30" H 12950 5160 59  0000 L BNN
+F 1 "BAS16VY" H 13100 5100 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 13100 5100 50  0001 C CNN
+F 3 "" H 13100 5100 50  0001 C CNN
+	3    13100 5100
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D31
+U 1 1 FF02821F
+P 14300 5250
+AR Path="/FF02821F" Ref="D31"  Part="1" 
+AR Path="/5F5D4893/FF02821F" Ref="D31"  Part="1" 
+F 0 "D31" H 14150 5310 59  0000 L BNN
+F 1 "BAS16VY" H 14300 5250 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 14300 5250 50  0001 C CNN
+F 3 "" H 14300 5250 50  0001 C CNN
+	1    14300 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D31
+U 2 1 FF028213
+P 15100 5250
+AR Path="/FF028213" Ref="D31"  Part="2" 
+AR Path="/5F5D4893/FF028213" Ref="D31"  Part="2" 
+F 0 "D31" H 14950 5310 59  0000 L BNN
+F 1 "BAS16VY" H 15100 5250 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 15100 5250 50  0001 C CNN
+F 3 "" H 15100 5250 50  0001 C CNN
+	2    15100 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D31
+U 3 1 FF028217
+P 15900 5250
+AR Path="/FF028217" Ref="D31"  Part="3" 
+AR Path="/5F5D4893/FF028217" Ref="D31"  Part="3" 
+F 0 "D31" H 15750 5310 59  0000 L BNN
+F 1 "BAS16VY" H 15900 5250 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 15900 5250 50  0001 C CNN
+F 3 "" H 15900 5250 50  0001 C CNN
+	3    15900 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D32
+U 1 1 49718CC1
+P 17500 4050
+AR Path="/49718CC1" Ref="D32"  Part="1" 
+AR Path="/5F5D4893/49718CC1" Ref="D32"  Part="1" 
+F 0 "D32" H 17350 4110 59  0000 L BNN
+F 1 "BAS16VY" H 17500 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 17500 4050 50  0001 C CNN
+F 3 "" H 17500 4050 50  0001 C CNN
+	1    17500 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D32
+U 2 1 49718CCD
+P 17500 4350
+AR Path="/49718CCD" Ref="D32"  Part="2" 
+AR Path="/5F5D4893/49718CCD" Ref="D32"  Part="2" 
+F 0 "D32" H 17350 4410 59  0000 L BNN
+F 1 "BAS16VY" H 17500 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 17500 4350 50  0001 C CNN
+F 3 "" H 17500 4350 50  0001 C CNN
+	2    17500 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D32
+U 3 1 49718CC9
+P 17500 4650
+AR Path="/49718CC9" Ref="D32"  Part="3" 
+AR Path="/5F5D4893/49718CC9" Ref="D32"  Part="3" 
+F 0 "D32" H 17350 4710 59  0000 L BNN
+F 1 "BAS16VY" H 17500 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 17500 4650 50  0001 C CNN
+F 3 "" H 17500 4650 50  0001 C CNN
+	3    17500 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D33
+U 1 1 B9D1D775
+P 17500 4950
+AR Path="/B9D1D775" Ref="D33"  Part="1" 
+AR Path="/5F5D4893/B9D1D775" Ref="D33"  Part="1" 
+F 0 "D33" H 17350 5010 59  0000 L BNN
+F 1 "BAS16VY" H 17500 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 17500 4950 50  0001 C CNN
+F 3 "" H 17500 4950 50  0001 C CNN
+	1    17500 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D33
+U 2 1 B9D1D779
+P 18300 4950
+AR Path="/B9D1D779" Ref="D33"  Part="2" 
+AR Path="/5F5D4893/B9D1D779" Ref="D33"  Part="2" 
+F 0 "D33" H 18150 5010 59  0000 L BNN
+F 1 "BAS16VY" H 18300 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 18300 4950 50  0001 C CNN
+F 3 "" H 18300 4950 50  0001 C CNN
+	2    18300 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D33
+U 3 1 B9D1D77D
+P 17500 5250
+AR Path="/B9D1D77D" Ref="D33"  Part="3" 
+AR Path="/5F5D4893/B9D1D77D" Ref="D33"  Part="3" 
+F 0 "D33" H 17350 5310 59  0000 L BNN
+F 1 "BAS16VY" H 17500 5250 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 17500 5250 50  0001 C CNN
+F 3 "" H 17500 5250 50  0001 C CNN
+	3    17500 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D34
+U 1 1 802F4FC5
+P 18300 4050
+AR Path="/802F4FC5" Ref="D34"  Part="1" 
+AR Path="/5F5D4893/802F4FC5" Ref="D34"  Part="1" 
+F 0 "D34" H 18150 4110 59  0000 L BNN
+F 1 "BAS16VY" H 18300 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 18300 4050 50  0001 C CNN
+F 3 "" H 18300 4050 50  0001 C CNN
+	1    18300 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D34
+U 2 1 802F4FC9
+P 18300 4350
+AR Path="/802F4FC9" Ref="D34"  Part="2" 
+AR Path="/5F5D4893/802F4FC9" Ref="D34"  Part="2" 
+F 0 "D34" H 18150 4410 59  0000 L BNN
+F 1 "BAS16VY" H 18300 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 18300 4350 50  0001 C CNN
+F 3 "" H 18300 4350 50  0001 C CNN
+	2    18300 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D34
+U 3 1 802F4FCD
+P 18300 4650
+AR Path="/802F4FCD" Ref="D34"  Part="3" 
+AR Path="/5F5D4893/802F4FCD" Ref="D34"  Part="3" 
+F 0 "D34" H 18150 4710 59  0000 L BNN
+F 1 "BAS16VY" H 18300 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 18300 4650 50  0001 C CNN
+F 3 "" H 18300 4650 50  0001 C CNN
+	3    18300 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D35
+U 1 1 958FFED1
+P 19100 4050
+AR Path="/958FFED1" Ref="D35"  Part="1" 
+AR Path="/5F5D4893/958FFED1" Ref="D35"  Part="1" 
+F 0 "D35" H 18950 4110 59  0000 L BNN
+F 1 "BAS16VY" H 19100 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 19100 4050 50  0001 C CNN
+F 3 "" H 19100 4050 50  0001 C CNN
+	1    19100 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D35
+U 2 1 958FFEDD
+P 19100 4350
+AR Path="/958FFEDD" Ref="D35"  Part="2" 
+AR Path="/5F5D4893/958FFEDD" Ref="D35"  Part="2" 
+F 0 "D35" H 18950 4410 59  0000 L BNN
+F 1 "BAS16VY" H 19100 4350 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 19100 4350 50  0001 C CNN
+F 3 "" H 19100 4350 50  0001 C CNN
+	2    19100 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D35
+U 3 1 958FFED9
+P 19100 4650
+AR Path="/958FFED9" Ref="D35"  Part="3" 
+AR Path="/5F5D4893/958FFED9" Ref="D35"  Part="3" 
+F 0 "D35" H 18950 4710 59  0000 L BNN
+F 1 "BAS16VY" H 19100 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 19100 4650 50  0001 C CNN
+F 3 "" H 19100 4650 50  0001 C CNN
+	3    19100 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D36
+U 1 1 9C1443FC
+P 19100 4950
+AR Path="/9C1443FC" Ref="D36"  Part="1" 
+AR Path="/5F5D4893/9C1443FC" Ref="D36"  Part="1" 
+F 0 "D36" H 18950 5010 59  0000 L BNN
+F 1 "BAS16VY" H 19100 4950 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 19100 4950 50  0001 C CNN
+F 3 "" H 19100 4950 50  0001 C CNN
+	1    19100 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D36
+U 2 1 9C1443F0
+P 19100 5250
+AR Path="/9C1443F0" Ref="D36"  Part="2" 
+AR Path="/5F5D4893/9C1443F0" Ref="D36"  Part="2" 
+F 0 "D36" H 18950 5310 59  0000 L BNN
+F 1 "BAS16VY" H 19100 5250 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 19100 5250 50  0001 C CNN
+F 3 "" H 19100 5250 50  0001 C CNN
+	2    19100 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D36
+U 3 1 9C1443F4
+P 16500 5400
+AR Path="/9C1443F4" Ref="D36"  Part="3" 
+AR Path="/5F5D4893/9C1443F4" Ref="D36"  Part="3" 
+F 0 "D36" H 16350 5460 59  0000 L BNN
+F 1 "BAS16VY" H 16500 5400 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 16500 5400 50  0001 C CNN
+F 3 "" H 16500 5400 50  0001 C CNN
+	3    16500 5400
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D37
+U 1 1 92531D2C
+P 19900 4050
+AR Path="/92531D2C" Ref="D37"  Part="1" 
+AR Path="/5F5D4893/92531D2C" Ref="D37"  Part="1" 
+F 0 "D37" H 19750 4110 59  0000 L BNN
+F 1 "BAS16VY" H 19900 4050 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 19900 4050 50  0001 C CNN
+F 3 "" H 19900 4050 50  0001 C CNN
+	1    19900 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D37
+U 2 1 92531D20
+P 19900 4650
+AR Path="/92531D20" Ref="D37"  Part="2" 
+AR Path="/5F5D4893/92531D20" Ref="D37"  Part="2" 
+F 0 "D37" H 19750 4710 59  0000 L BNN
+F 1 "BAS16VY" H 19900 4650 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 19900 4650 50  0001 C CNN
+F 3 "" H 19900 4650 50  0001 C CNN
+	2    19900 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:BAS16VY D37
+U 3 1 92531D24
+P 19900 5250
+AR Path="/92531D24" Ref="D37"  Part="3" 
+AR Path="/5F5D4893/92531D24" Ref="D37"  Part="3" 
+F 0 "D37" H 19750 5310 59  0000 L BNN
+F 1 "BAS16VY" H 19900 5250 50  0001 C CNN
+F 2 "MXKeyboard_RGB:SOT363_PHILIPS" H 19900 5250 50  0001 C CNN
+F 3 "" H 19900 5250 50  0001 C CNN
+	3    19900 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:GND #SUPPLY2
+U 1 1 33EFDB7C
+P 16500 5750
+AR Path="/33EFDB7C" Ref="#SUPPLY2"  Part="1" 
+AR Path="/5F5D4893/33EFDB7C" Ref="#SUPPLY02"  Part="1" 
+F 0 "#SUPPLY02" H 16500 5750 50  0001 C CNN
+F 1 "GND" H 16425 5625 59  0000 L BNN
+F 2 "" H 16500 5750 50  0001 C CNN
+F 3 "" H 16500 5750 50  0001 C CNN
+	1    16500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:GND #SUPPLY3
+U 1 1 D5692080
+P 12900 5600
+AR Path="/D5692080" Ref="#SUPPLY3"  Part="1" 
+AR Path="/5F5D4893/D5692080" Ref="#SUPPLY03"  Part="1" 
+F 0 "#SUPPLY03" H 12900 5600 50  0001 C CNN
+F 1 "GND" H 12825 5475 59  0000 L BNN
+F 2 "" H 12900 5600 50  0001 C CNN
+F 3 "" H 12900 5600 50  0001 C CNN
+	1    12900 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:GND #SUPPLY4
+U 1 1 6DF68C43
+P 8100 5800
+AR Path="/6DF68C43" Ref="#SUPPLY4"  Part="1" 
+AR Path="/5F5D4893/6DF68C43" Ref="#SUPPLY04"  Part="1" 
+F 0 "#SUPPLY04" H 8100 5800 50  0001 C CNN
+F 1 "GND" H 8025 5675 59  0000 L BNN
+F 2 "" H 8100 5800 50  0001 C CNN
+F 3 "" H 8100 5800 50  0001 C CNN
+	1    8100 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:R-EU_R0603 R31
+U 1 1 19BAA81D
+P 1300 4000
+AR Path="/19BAA81D" Ref="R31"  Part="1" 
+AR Path="/5F5D4893/19BAA81D" Ref="R31"  Part="1" 
+F 0 "R31" H 1250 4059 59  0000 L BNN
+F 1 "20k" H 1400 3930 59  0000 R TNN
+F 2 "rcl:R0603" H 1300 4000 50  0001 C CNN
+F 3 "" H 1300 4000 50  0001 C CNN
+F 4 "Multicomp" H 1300 4000 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 1300 4000 59  0001 L BNN "MPN"
+F 6 "2130963" H 1300 4000 59  0001 L BNN "OC_FARNELL"
+	1    1300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:R-EU_R0603 R32
+U 1 1 A55F53B5
+P 1300 4300
+AR Path="/A55F53B5" Ref="R32"  Part="1" 
+AR Path="/5F5D4893/A55F53B5" Ref="R32"  Part="1" 
+F 0 "R32" H 1250 4359 59  0000 L BNN
+F 1 "20k" H 1400 4230 59  0000 R TNN
+F 2 "rcl:R0603" H 1300 4300 50  0001 C CNN
+F 3 "" H 1300 4300 50  0001 C CNN
+F 4 "Multicomp" H 1300 4300 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 1300 4300 59  0001 L BNN "MPN"
+F 6 "2130963" H 1300 4300 59  0001 L BNN "OC_FARNELL"
+	1    1300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:R-EU_R0603 R33
+U 1 1 70C53D48
+P 1300 4600
+AR Path="/70C53D48" Ref="R33"  Part="1" 
+AR Path="/5F5D4893/70C53D48" Ref="R33"  Part="1" 
+F 0 "R33" H 1250 4659 59  0000 L BNN
+F 1 "20k" H 1400 4530 59  0000 R TNN
+F 2 "rcl:R0603" H 1300 4600 50  0001 C CNN
+F 3 "" H 1300 4600 50  0001 C CNN
+F 4 "Multicomp" H 1300 4600 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 1300 4600 59  0001 L BNN "MPN"
+F 6 "2130963" H 1300 4600 59  0001 L BNN "OC_FARNELL"
+	1    1300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:R-EU_R0603 R34
+U 1 1 AD2297CA
+P 1300 4900
+AR Path="/AD2297CA" Ref="R34"  Part="1" 
+AR Path="/5F5D4893/AD2297CA" Ref="R34"  Part="1" 
+F 0 "R34" H 1250 4959 59  0000 L BNN
+F 1 "20k" H 1400 4830 59  0000 R TNN
+F 2 "rcl:R0603" H 1300 4900 50  0001 C CNN
+F 3 "" H 1300 4900 50  0001 C CNN
+F 4 "Multicomp" H 1300 4900 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 1300 4900 59  0001 L BNN "MPN"
+F 6 "2130963" H 1300 4900 59  0001 L BNN "OC_FARNELL"
+	1    1300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:R-EU_R0603 R35
+U 1 1 357824E1
+P 1300 5400
+AR Path="/357824E1" Ref="R35"  Part="1" 
+AR Path="/5F5D4893/357824E1" Ref="R35"  Part="1" 
+F 0 "R35" H 1250 5459 59  0000 L BNN
+F 1 "20k" H 1400 5330 59  0000 R TNN
+F 2 "rcl:R0603" H 1300 5400 50  0001 C CNN
+F 3 "" H 1300 5400 50  0001 C CNN
+F 4 "Multicomp" H 1300 5400 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 1300 5400 59  0001 L BNN "MPN"
+F 6 "2130963" H 1300 5400 59  0001 L BNN "OC_FARNELL"
+	1    1300 5400
+	1    0    0    -1  
+$EndComp
+Text Notes 1600 2400 0    59   ~ 0
+MXKeyboard (RGB LED)
+Text Notes 1600 2500 0    59   ~ 0
+106 key keyboard based on Cherry MX keyswitches
+Text Notes 1600 2600 0    59   ~ 0
+https://www.mouser.co.uk/ProductDetail/CHERRY/MX1A-G1NA?qs=%2Fha2pyFadujPAJckSGoW4N3JsH8qdpazUezpP6PYIu5AraiKXPMP8Q%3D%3D
+Text Notes 1600 2700 0    59   ~ 0
+https://www.mouser.co.uk/ProductDetail/540-MX1A-G1NA
+Text HLabel 1650 3100 0    50   Input ~ 0
+COLUMN[1..21]
+Text Label 1850 3200 3    10   ~ 0
+COLUMN1
+Text Label 2650 3200 3    10   ~ 0
+COLUMN2
+Text Label 3450 3200 3    10   ~ 0
+COLUMN3
+Text Label 4250 3200 3    10   ~ 0
+COLUMN4
+Text Label 5050 3200 3    10   ~ 0
+COLUMN5
+Text Label 5850 3200 3    10   ~ 0
+COLUMN6
+Text Label 6650 3200 3    10   ~ 0
+COLUMN7
+Text Label 7450 3200 3    10   ~ 0
+COLUMN8
+Text Label 8250 3200 3    10   ~ 0
+COLUMN9
+Text Label 9050 3200 3    10   ~ 0
+COLUMN10
+Text Label 9850 3200 3    10   ~ 0
+COLUMN11
+Text Label 10650 3200 3    10   ~ 0
+COLUMN12
+Text Label 11450 3200 3    10   ~ 0
+COLUMN13
+Text Label 12250 3200 3    10   ~ 0
+COLUMN14
+Text Label 13850 3200 3    10   ~ 0
+COLUMN15
+Text Label 14650 3200 3    10   ~ 0
+COLUMN16
+Text Label 15450 3200 3    10   ~ 0
+COLUMN17
+Text Label 17050 3200 3    10   ~ 0
+COLUMN18
+Text Label 17850 3200 3    10   ~ 0
+COLUMN19
+Text Label 18650 3200 3    10   ~ 0
+COLUMN20
+Text Label 19450 3200 3    10   ~ 0
+COLUMN21
+$Comp
+L Device:R_Small R2
+U 1 1 3068770C
+P 20300 4000
+AR Path="/3068770C" Ref="R2"  Part="1" 
+AR Path="/5F5D4893/3068770C" Ref="R2"  Part="1" 
+F 0 "R2" V 20250 4000 59  0000 C BNN
+F 1 "20k" V 20350 4000 59  0000 C TNN
+F 2 "rcl:R0603" H 20300 4000 50  0001 C CNN
+F 3 "" H 20300 4000 50  0001 C CNN
+F 4 "Multicomp" H 20300 4000 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 20300 4000 59  0001 L BNN "MPN"
+F 6 "2130963" H 20300 4000 59  0001 L BNN "OC_FARNELL"
+	1    20300 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6FB0AE33
+P 20500 5300
+F 0 "#PWR02" H 20500 5050 50  0001 C CNN
+F 1 "GND" H 20505 5127 50  0000 C CNN
+F 2 "" H 20500 5300 50  0001 C CNN
+F 3 "" H 20500 5300 50  0001 C CNN
+	1    20500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 273358DB
+P 20300 5200
+AR Path="/273358DB" Ref="R6"  Part="1" 
+AR Path="/5F5D4893/273358DB" Ref="R6"  Part="1" 
+F 0 "R6" V 20250 5200 59  0000 C BNN
+F 1 "20k" V 20350 5200 59  0000 C TNN
+F 2 "rcl:R0603" H 20300 5200 50  0001 C CNN
+F 3 "" H 20300 5200 50  0001 C CNN
+F 4 "Multicomp" H 20300 5200 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 20300 5200 59  0001 L BNN "MPN"
+F 6 "2130963" H 20300 5200 59  0001 L BNN "OC_FARNELL"
+	1    20300 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 B6B05A86
+P 20300 4900
+AR Path="/B6B05A86" Ref="R5"  Part="1" 
+AR Path="/5F5D4893/B6B05A86" Ref="R5"  Part="1" 
+F 0 "R5" V 20250 4900 59  0000 C BNN
+F 1 "20k" V 20350 4900 59  0000 C TNN
+F 2 "rcl:R0603" H 20300 4900 50  0001 C CNN
+F 3 "" H 20300 4900 50  0001 C CNN
+F 4 "Multicomp" H 20300 4900 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 20300 4900 59  0001 L BNN "MPN"
+F 6 "2130963" H 20300 4900 59  0001 L BNN "OC_FARNELL"
+	1    20300 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 2908B31E
+P 20300 4600
+AR Path="/2908B31E" Ref="R4"  Part="1" 
+AR Path="/5F5D4893/2908B31E" Ref="R4"  Part="1" 
+F 0 "R4" V 20250 4600 59  0000 C BNN
+F 1 "20k" V 20350 4600 59  0000 C TNN
+F 2 "rcl:R0603" H 20300 4600 50  0001 C CNN
+F 3 "" H 20300 4600 50  0001 C CNN
+F 4 "Multicomp" H 20300 4600 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 20300 4600 59  0001 L BNN "MPN"
+F 6 "2130963" H 20300 4600 59  0001 L BNN "OC_FARNELL"
+	1    20300 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 97D6B0C7
+P 20300 4300
+AR Path="/97D6B0C7" Ref="R3"  Part="1" 
+AR Path="/5F5D4893/97D6B0C7" Ref="R3"  Part="1" 
+F 0 "R3" V 20250 4300 59  0000 C BNN
+F 1 "20k" V 20350 4300 59  0000 C TNN
+F 2 "rcl:R0603" H 20300 4300 50  0001 C CNN
+F 3 "" H 20300 4300 50  0001 C CNN
+F 4 "Multicomp" H 20300 4300 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 20300 4300 59  0001 L BNN "MPN"
+F 6 "2130963" H 20300 4300 59  0001 L BNN "OC_FARNELL"
+	1    20300 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 086E4599
+P 20300 3500
+AR Path="/086E4599" Ref="R1"  Part="1" 
+AR Path="/5F5D4893/086E4599" Ref="R1"  Part="1" 
+F 0 "R1" V 20250 3500 59  0000 C BNN
+F 1 "20k" V 20350 3500 59  0000 C TNN
+F 2 "rcl:R0603" H 20300 3500 50  0001 C CNN
+F 3 "" H 20300 3500 50  0001 C CNN
+F 4 "Multicomp" H 20300 3500 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 20300 3500 59  0001 L BNN "MPN"
+F 6 "2130963" H 20300 3500 59  0001 L BNN "OC_FARNELL"
+	1    20300 3500
+	0    1    1    0   
+$EndComp
+Connection ~ 20500 4000
+Connection ~ 20500 4300
+Connection ~ 20500 4600
+Connection ~ 20500 4900
+Connection ~ 20500 5200
+Wire Wire Line
+	20500 3500 20500 4000
+Wire Wire Line
+	20400 3500 20500 3500
+Wire Wire Line
+	20500 4000 20500 4300
+Wire Wire Line
+	20400 4000 20500 4000
+Wire Wire Line
+	20500 4300 20500 4600
+Wire Wire Line
+	20400 4300 20500 4300
+Wire Wire Line
+	20500 4600 20500 4900
+Wire Wire Line
+	20400 4600 20500 4600
+Wire Wire Line
+	20500 4900 20500 5200
+Wire Wire Line
+	20400 4900 20500 4900
+Wire Wire Line
+	20500 5200 20500 5300
+Wire Wire Line
+	20400 5200 20500 5200
+Wire Wire Line
+	19350 5200 20200 5200
+Entry Wire Line
+	1650 3500 1550 3400
+Text HLabel 1550 5500 3    50   Output ~ 0
+ROW[1..6]
+$Comp
+L power:GND #PWR01
+U 1 1 70C1662A
+P 1000 5500
+F 0 "#PWR01" H 1000 5250 50  0001 C CNN
+F 1 "GND" H 1005 5327 50  0000 C CNN
+F 2 "" H 1000 5500 50  0001 C CNN
+F 3 "" H 1000 5500 50  0001 C CNN
+	1    1000 5500
+	1    0    0    -1  
+$EndComp
+Text Label 1650 5400 0    10   ~ 0
+ROW6
+Text Label 1650 4600 0    10   ~ 0
+ROW4
+Text Label 1650 4300 0    10   ~ 0
+ROW3
+Text Label 1650 4000 0    10   ~ 0
+ROW2
+Text Label 1650 3500 0    10   ~ 0
+ROW1
+Text Label 1650 4900 0    10   ~ 0
+ROW5
+Connection ~ 1750 3500
+Connection ~ 1750 4000
+Connection ~ 1750 4300
+Connection ~ 1750 4600
+Connection ~ 1750 4900
+Connection ~ 1750 5400
+$Comp
+L MXKeyboard_RGB-eagle-import:R-EU_R0603 R30
+U 1 1 B032C944
+P 1300 3500
+AR Path="/B032C944" Ref="R30"  Part="1" 
+AR Path="/5F5D4893/B032C944" Ref="R30"  Part="1" 
+F 0 "R30" H 1250 3559 59  0000 L BNN
+F 1 "20k" H 1400 3430 59  0000 R TNN
+F 2 "rcl:R0603" H 1300 3500 50  0001 C CNN
+F 3 "" H 1300 3500 50  0001 C CNN
+F 4 "Multicomp" H 1300 3500 59  0001 L BNN "MFR"
+F 5 "MC0063W0603120K5" H 1300 3500 59  0001 L BNN "MPN"
+F 6 "2130963" H 1300 3500 59  0001 L BNN "OC_FARNELL"
+	1    1300 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5400 1750 5400
+Wire Wire Line
+	1500 4900 1750 4900
+Wire Wire Line
+	1500 4600 1750 4600
+Wire Wire Line
+	1500 4300 1750 4300
+Wire Wire Line
+	1500 4000 1750 4000
+Wire Wire Line
+	1500 3500 1750 3500
+Wire Bus Line
+	1550 3400 1550 5500
+Wire Bus Line
+	1650 3100 19350 3100
+$EndSCHEMATC

@@ -1,0 +1,536 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4100 1900 4100 2000
+Wire Wire Line
+	4100 2000 4100 2200
+Wire Wire Line
+	4100 2000 4900 2000
+Wire Wire Line
+	4900 2000 4900 2800
+Connection ~ 4100 2000
+Wire Wire Line
+	6500 1900 6500 2000
+Wire Wire Line
+	6500 2000 6500 2200
+Wire Wire Line
+	7300 2800 7300 2000
+Wire Wire Line
+	7300 2000 6500 2000
+Connection ~ 6500 2000
+Wire Wire Line
+	2700 3500 2700 3800
+Wire Wire Line
+	2700 3800 2900 3800
+Wire Wire Line
+	8900 1900 8900 2000
+Wire Wire Line
+	8900 2000 8900 2200
+Wire Wire Line
+	8900 2000 9700 2000
+Wire Wire Line
+	9700 2000 9700 2800
+Connection ~ 8900 2000
+Wire Wire Line
+	4100 3800 4100 3700
+Wire Wire Line
+	4100 3700 4100 3500
+Wire Wire Line
+	4900 3000 4900 3700
+Wire Wire Line
+	4900 3700 4100 3700
+Connection ~ 4100 3700
+Wire Wire Line
+	6500 3500 6500 3700
+Wire Wire Line
+	6500 3700 6500 3800
+Wire Wire Line
+	6500 3700 7300 3700
+Wire Wire Line
+	7300 3700 7300 3000
+Connection ~ 6500 3700
+Wire Wire Line
+	8900 3500 8900 3700
+Wire Wire Line
+	8900 3700 8900 3800
+Wire Wire Line
+	9700 3000 9700 3700
+Wire Wire Line
+	9700 3700 8900 3700
+Connection ~ 8900 3700
+Entry Wire Line
+	4550 2500 4650 2600
+Entry Wire Line
+	4550 2600 4650 2700
+Entry Wire Line
+	4550 2700 4650 2800
+Entry Wire Line
+	4550 2800 4650 2900
+Entry Wire Line
+	4550 2900 4650 3000
+Entry Wire Line
+	4550 3000 4650 3100
+Entry Wire Line
+	4550 3100 4650 3200
+Entry Wire Line
+	4650 3300 4550 3200
+Entry Wire Line
+	9350 2500 9450 2600
+Entry Wire Line
+	9350 2600 9450 2700
+Entry Wire Line
+	9350 2700 9450 2800
+Entry Wire Line
+	9350 2800 9450 2900
+Entry Wire Line
+	9350 2900 9450 3000
+Entry Wire Line
+	2850 2700 2750 2600
+Entry Wire Line
+	2750 2700 2850 2800
+Entry Wire Line
+	2750 2800 2850 2900
+Entry Wire Line
+	2750 3500 2850 3600
+Entry Wire Line
+	2750 3600 2850 3700
+Entry Wire Line
+	5150 3700 5250 3800
+Entry Wire Line
+	5150 3500 5250 3600
+Entry Wire Line
+	7650 2700 7550 2600
+Entry Wire Line
+	7550 2700 7650 2800
+Entry Wire Line
+	7550 2800 7650 2900
+Entry Wire Line
+	7550 3500 7650 3600
+Entry Wire Line
+	7550 3700 7650 3800
+$Comp
+L MXKeyboard_RGB-eagle-import:74HC238BQ U15
+U 1 1 6D3D1EC3
+P 3700 3100
+AR Path="/6D3D1EC3" Ref="U15"  Part="1" 
+AR Path="/5F5D661B/6D3D1EC3" Ref="U15"  Part="1" 
+F 0 "U15" H 3700 3100 50  0001 C CNN
+F 1 "74HC238BQ" H 3700 3100 50  0001 C CNN
+F 2 "MXKeyboard_RGB:DHVQFN-16" H 3700 3100 50  0001 C CNN
+F 3 "" H 3700 3100 50  0001 C CNN
+	1    3700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:74HC238BQ U16
+U 1 1 3D1E7172
+P 6100 3100
+AR Path="/3D1E7172" Ref="U16"  Part="1" 
+AR Path="/5F5D661B/3D1E7172" Ref="U16"  Part="1" 
+F 0 "U16" H 6100 3100 50  0001 C CNN
+F 1 "74HC238BQ" H 6100 3100 50  0001 C CNN
+F 2 "MXKeyboard_RGB:DHVQFN-16" H 6100 3100 50  0001 C CNN
+F 3 "" H 6100 3100 50  0001 C CNN
+	1    6100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C30
+U 1 1 B941D5C4
+P 7300 2900
+AR Path="/B941D5C4" Ref="C30"  Part="1" 
+AR Path="/5F5D661B/B941D5C4" Ref="C30"  Part="1" 
+F 0 "C30" V 7200 2900 59  0000 C CNN
+F 1 "0.1uF" V 7400 2900 59  0000 C CNN
+F 2 "rcl:C0603" H 7300 2900 50  0001 C CNN
+F 3 "" H 7300 2900 50  0001 C CNN
+F 4 "Multicomp" H 7300 2900 59  0001 L BNN "MFR"
+F 5 "MC0603B104J250CT" H 7300 2900 59  0001 L BNN "MPN"
+F 6 "2310559" H 7300 2900 59  0001 L BNN "OC_FARNELL"
+	1    7300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C31
+U 1 1 1181AB2E
+P 9700 2900
+AR Path="/1181AB2E" Ref="C31"  Part="1" 
+AR Path="/5F5D661B/1181AB2E" Ref="C31"  Part="1" 
+F 0 "C31" V 9600 2900 59  0000 C CNN
+F 1 "0.1uF" V 9800 2900 59  0000 C CNN
+F 2 "rcl:C0603" H 9700 2900 50  0001 C CNN
+F 3 "" H 9700 2900 50  0001 C CNN
+F 4 "Multicomp" H 9700 2900 59  0001 L BNN "MFR"
+F 5 "MC0603B104J250CT" H 9700 2900 59  0001 L BNN "MPN"
+F 6 "2310559" H 9700 2900 59  0001 L BNN "OC_FARNELL"
+	1    9700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:A4L-LOC #FRAME2
+U 1 1 DFE0E5A0
+P 900 6400
+AR Path="/DFE0E5A0" Ref="#FRAME2"  Part="1" 
+AR Path="/5F5D661B/DFE0E5A0" Ref="#FRAME2"  Part="1" 
+F 0 "#FRAME2" H 900 6400 50  0001 C CNN
+F 1 "A4L-LOC" H 900 6400 50  0001 C CNN
+F 2 "" H 900 6400 50  0001 C CNN
+F 3 "" H 900 6400 50  0001 C CNN
+	1    900  6400
+	1    0    0    -1  
+$EndComp
+Text Notes 2700 2200 0    59   ~ 0
+Active when DCOL[5..4] == 00
+Text Notes 5100 2200 0    59   ~ 0
+Active when DCOL[5..4] == 01
+Text Notes 7500 2200 0    59   ~ 0
+Active when DCOL[5..4] == 10
+Text Notes 8300 5900 0    85   ~ 0
+Column decoder
+Text Notes 10200 5600 0    85   ~ 0
+Rachel Mant
+Text Notes 10800 6200 0    85   ~ 0
+R1
+$Comp
+L power:GND #PWR053
+U 1 1 6F6F2EC8
+P 4100 3800
+F 0 "#PWR053" H 4100 3550 50  0001 C CNN
+F 1 "GND" H 4105 3627 50  0000 C CNN
+F 2 "" H 4100 3800 50  0001 C CNN
+F 3 "" H 4100 3800 50  0001 C CNN
+	1    4100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR054
+U 1 1 6F6F31C7
+P 5200 3900
+F 0 "#PWR054" H 5200 3650 50  0001 C CNN
+F 1 "GND" H 5205 3727 50  0000 C CNN
+F 2 "" H 5200 3900 50  0001 C CNN
+F 3 "" H 5200 3900 50  0001 C CNN
+	1    5200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR056
+U 1 1 6F6F47BA
+P 6500 3800
+F 0 "#PWR056" H 6500 3550 50  0001 C CNN
+F 1 "GND" H 6505 3627 50  0000 C CNN
+F 2 "" H 6500 3800 50  0001 C CNN
+F 3 "" H 6500 3800 50  0001 C CNN
+	1    6500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR057
+U 1 1 6F6F5B1C
+P 7600 3900
+F 0 "#PWR057" H 7600 3650 50  0001 C CNN
+F 1 "GND" H 7605 3727 50  0000 C CNN
+F 2 "" H 7600 3900 50  0001 C CNN
+F 3 "" H 7600 3900 50  0001 C CNN
+	1    7600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR059
+U 1 1 6F6F5ECA
+P 8900 3800
+F 0 "#PWR059" H 8900 3550 50  0001 C CNN
+F 1 "GND" H 8905 3627 50  0000 C CNN
+F 2 "" H 8900 3800 50  0001 C CNN
+F 3 "" H 8900 3800 50  0001 C CNN
+	1    8900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:74HC238BQ U17
+U 1 1 E1651699
+P 8500 3100
+AR Path="/E1651699" Ref="U17"  Part="1" 
+AR Path="/5F5D661B/E1651699" Ref="U17"  Part="1" 
+F 0 "U17" H 8500 3100 50  0001 C CNN
+F 1 "74HC238BQ" H 8500 3100 50  0001 C CNN
+F 2 "MXKeyboard_RGB:DHVQFN-16" H 8500 3100 50  0001 C CNN
+F 3 "" H 8500 3100 50  0001 C CNN
+	1    8500 3100
+	1    0    0    -1  
+$EndComp
+Text Label 9350 2900 2    10   ~ 0
+COLUMN21
+Text Label 9350 2800 2    10   ~ 0
+COLUMN20
+Text Label 9350 2700 2    10   ~ 0
+COLUMN19
+Text Label 9350 2600 2    10   ~ 0
+COLUMN18
+Text Label 9350 2500 2    10   ~ 0
+COLUMN17
+Text HLabel 9450 3400 3    50   Output ~ 0
+COLUMN[1..21]
+Wire Wire Line
+	9300 2500 9350 2500
+Wire Wire Line
+	9350 2600 9300 2600
+Wire Wire Line
+	9300 2700 9350 2700
+Wire Wire Line
+	9350 2800 9300 2800
+Wire Wire Line
+	9300 2900 9350 2900
+Text HLabel 7050 3400 3    50   Output ~ 0
+COLUMN[1..21]
+Entry Wire Line
+	6950 3100 7050 3200
+Entry Wire Line
+	6950 3000 7050 3100
+Entry Wire Line
+	6950 2900 7050 3000
+Entry Wire Line
+	6950 2800 7050 2900
+Entry Wire Line
+	6950 2700 7050 2800
+Entry Wire Line
+	6950 2600 7050 2700
+Entry Wire Line
+	6950 2500 7050 2600
+Entry Wire Line
+	6950 3200 7050 3300
+Text Label 6950 3200 2    10   ~ 0
+COLUMN16
+Text Label 6950 3100 2    10   ~ 0
+COLUMN15
+Text Label 6950 3000 2    10   ~ 0
+COLUMN14
+Text Label 6950 2900 2    10   ~ 0
+COLUMN13
+Text Label 6950 2800 2    10   ~ 0
+COLUMN12
+Text Label 6950 2700 2    10   ~ 0
+COLUMN11
+Text Label 6950 2600 2    10   ~ 0
+COLUMN10
+Text Label 6950 2500 2    10   ~ 0
+COLUMN9
+Wire Wire Line
+	6900 2500 6950 2500
+Wire Wire Line
+	6950 2600 6900 2600
+Wire Wire Line
+	6900 2700 6950 2700
+Wire Wire Line
+	6950 2800 6900 2800
+Wire Wire Line
+	6900 2900 6950 2900
+Wire Wire Line
+	6950 3000 6900 3000
+Wire Wire Line
+	6900 3100 6950 3100
+Wire Wire Line
+	6950 3200 6900 3200
+Text Label 7650 2700 0    10   ~ 0
+DCOL1
+Text Label 7650 2800 0    10   ~ 0
+DCOL2
+Text HLabel 7550 2500 1    50   Input ~ 0
+DCOL[1..5]
+Wire Wire Line
+	7650 2700 7700 2700
+Wire Wire Line
+	7700 2800 7650 2800
+Wire Wire Line
+	7650 2900 7700 2900
+Text Label 7650 2900 0    10   ~ 0
+DCOL3
+Wire Wire Line
+	7600 3900 7600 3700
+Wire Wire Line
+	7600 3700 7700 3700
+Text Label 7650 3600 0    10   ~ 0
+DCOL4
+Text Label 7650 3800 0    10   ~ 0
+DCOL5
+Wire Wire Line
+	7650 3600 7700 3600
+Wire Wire Line
+	7700 3800 7650 3800
+Text Label 5250 3800 0    10   ~ 0
+DCOL4
+Text Label 5250 3600 0    10   ~ 0
+DCOL5
+Wire Wire Line
+	5250 3800 5300 3800
+Wire Wire Line
+	5300 3600 5250 3600
+Wire Wire Line
+	5300 3700 5200 3700
+Wire Wire Line
+	5200 3700 5200 3900
+Entry Wire Line
+	5150 2800 5250 2900
+Entry Wire Line
+	5150 2700 5250 2800
+Entry Wire Line
+	5250 2700 5150 2600
+Text Label 5250 2700 0    10   ~ 0
+DCOL1
+Text Label 5250 2800 0    10   ~ 0
+DCOL2
+Text Label 5250 2900 0    10   ~ 0
+DCOL3
+$Comp
+L Device:C_Small C29
+U 1 1 B4176B2A
+P 4900 2900
+AR Path="/B4176B2A" Ref="C29"  Part="1" 
+AR Path="/5F5D661B/B4176B2A" Ref="C29"  Part="1" 
+F 0 "C29" V 4800 2900 59  0000 C CNN
+F 1 "0.1uF" V 5000 2900 59  0000 C CNN
+F 2 "rcl:C0603" H 4900 2900 50  0001 C CNN
+F 3 "" H 4900 2900 50  0001 C CNN
+F 4 "Multicomp" H 4900 2900 59  0001 L BNN "MFR"
+F 5 "MC0603B104J250CT" H 4900 2900 59  0001 L BNN "MPN"
+F 6 "2310559" H 4900 2900 59  0001 L BNN "OC_FARNELL"
+	1    4900 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2900 5300 2900
+Wire Wire Line
+	5300 2800 5250 2800
+Wire Wire Line
+	5250 2700 5300 2700
+Text HLabel 5150 2500 1    50   Input ~ 0
+DCOL[1..5]
+Text HLabel 2750 2500 1    50   Input ~ 0
+DCOL[1..5]
+$Comp
+L power:+3.3V #PWR051
+U 1 1 6F7304B4
+P 2700 3500
+F 0 "#PWR051" H 2700 3350 50  0001 C CNN
+F 1 "+3.3V" V 2650 3500 50  0000 L BNN
+F 2 "" H 2700 3500 50  0001 C CNN
+F 3 "" H 2700 3500 50  0001 C CNN
+	1    2700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR052
+U 1 1 6F730C17
+P 4100 1900
+F 0 "#PWR052" H 4100 1750 50  0001 C CNN
+F 1 "+3.3V" V 4050 1900 50  0000 L BNN
+F 2 "" H 4100 1900 50  0001 C CNN
+F 3 "" H 4100 1900 50  0001 C CNN
+	1    4100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR055
+U 1 1 6F730F8F
+P 6500 1900
+F 0 "#PWR055" H 6500 1750 50  0001 C CNN
+F 1 "+3.3V" V 6450 1900 50  0000 L BNN
+F 2 "" H 6500 1900 50  0001 C CNN
+F 3 "" H 6500 1900 50  0001 C CNN
+	1    6500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR058
+U 1 1 6F7315E7
+P 8900 1900
+F 0 "#PWR058" H 8900 1750 50  0001 C CNN
+F 1 "+3.3V" V 8850 1900 50  0000 L BNN
+F 2 "" H 8900 1900 50  0001 C CNN
+F 3 "" H 8900 1900 50  0001 C CNN
+	1    8900 1900
+	1    0    0    -1  
+$EndComp
+Text Label 2850 3600 0    10   ~ 0
+DCOL4
+Text Label 2850 3700 0    10   ~ 0
+DCOL5
+Wire Wire Line
+	2850 3600 2900 3600
+Wire Wire Line
+	2900 3700 2850 3700
+Text Label 2850 2700 0    10   ~ 0
+DCOL1
+Text Label 2850 2800 0    10   ~ 0
+DCOL2
+Text Label 2850 2900 0    10   ~ 0
+DCOL3
+Wire Wire Line
+	2850 2700 2900 2700
+Wire Wire Line
+	2900 2800 2850 2800
+Wire Wire Line
+	2850 2900 2900 2900
+Text HLabel 4650 3400 3    50   Output ~ 0
+COLUMN[1..21]
+Text Label 4550 3200 2    10   ~ 0
+COLUMN8
+Text Label 4550 3000 2    10   ~ 0
+COLUMN6
+Text Label 4550 3100 2    10   ~ 0
+COLUMN7
+Text Label 4550 2900 2    10   ~ 0
+COLUMN5
+Text Label 4550 2800 2    10   ~ 0
+COLUMN4
+Text Label 4550 2700 2    10   ~ 0
+COLUMN3
+Text Label 4550 2600 2    10   ~ 0
+COLUMN2
+Text Label 4550 2500 2    10   ~ 0
+COLUMN1
+Wire Wire Line
+	4500 2500 4550 2500
+Wire Wire Line
+	4550 2600 4500 2600
+Wire Wire Line
+	4500 2700 4550 2700
+Wire Wire Line
+	4550 2800 4500 2800
+Wire Wire Line
+	4500 2900 4550 2900
+Wire Wire Line
+	4550 3000 4500 3000
+Wire Wire Line
+	4500 3100 4550 3100
+Wire Wire Line
+	4550 3200 4500 3200
+NoConn ~ 9300 3000
+NoConn ~ 9300 3100
+NoConn ~ 9300 3200
+Wire Bus Line
+	7550 2500 7550 3700
+Wire Bus Line
+	9450 2600 9450 3400
+Wire Bus Line
+	2750 2500 2750 3600
+Wire Bus Line
+	5150 2500 5150 3700
+Wire Bus Line
+	7050 2600 7050 3400
+Wire Bus Line
+	4650 2600 4650 3400
+$EndSCHEMATC
