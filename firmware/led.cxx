@@ -10,19 +10,17 @@
 constexpr static inline std::byte operator ""_b(const unsigned long long value) noexcept
 	{ return static_cast<std::byte>(value); }
 
-constexpr std::size_t toNearestWholeChip(const std::size_t ledCount)
-{
-	const auto chips{(ledCount / 24) + (ledCount % 24 ? 1 : 0)};
-	return chips * 36;
-}
-
-static_assert(toNearestWholeChip(1) == 36);
+constexpr std::size_t toChips(const std::size_t ledCount) { return (ledCount / 24) + (ledCount % 24 ? 1 : 0); }
+constexpr std::size_t toNearestWholeChipBytes(const std::size_t ledCount) { return toChips(ledCount) * 36; }
+constexpr std::size_t toNearestWholeChipLEDs(const std::size_t ledCount) { return toChips(ledCount) * 24; }
+static_assert(toNearestWholeChipBytes(1) == 36);
+static_assert(toNearestWholeChipLEDs(1) == 24);
 
 struct ledData_t
 {
-	std::array<std::byte, toNearestWholeChip(109)> red{};
-	std::array<std::byte, toNearestWholeChip(109)> green{};
-	std::array<std::byte, toNearestWholeChip(109)> blue{};
+	std::array<uint8_t, toNearestWholeChipBytes(109)> red{};
+	std::array<uint8_t, toNearestWholeChipBytes(109)> green{};
+	std::array<uint8_t, toNearestWholeChipBytes(109)> blue{};
 
 	void colour(std::size_t led, uint8_t r, uint8_t g, uint8_t b) noexcept;
 };
@@ -117,6 +115,12 @@ void ledInit()
  * [ 00 ], [ 0D ], [ A8 ]
  */
 
+constexpr void maskAndCombine(uint8_t &value, const uint8_t mask, const uint8_t comb)
+{
+	value &= mask;
+	value |= comb;
+}
+
 void ledData_t::colour(const std::size_t led, const uint8_t r, const uint8_t g, const uint8_t b) noexcept
 {
 	const uint16_t correctedR{gammaLUT[r]};
@@ -129,21 +133,21 @@ void ledData_t::colour(const std::size_t led, const uint8_t r, const uint8_t g, 
 
 	if (led & 1U)
 	{
-		red[startByte] = (red[startByte] & 0xF0_b) | std::byte((correctedR >> 8U) & 0x0FU);
-		green[startByte] = (green[startByte] & 0xF0_b) | std::byte((correctedG >> 8U) & 0x0FU);
-		blue[startByte] = (blue[startByte] & 0xF0_b) | std::byte((correctedB >> 8U) & 0x0FU);
-		red[startByte + 1] = std::byte(correctedR);
-		green[startByte + 1] = std::byte(correctedG);
-		blue[startByte + 1] = std::byte(correctedB);
+		maskAndCombine(red[startByte], 0xF0U, correctedR >> 8U);
+		red[startByte + 1] = uint8_t(correctedR);
+		maskAndCombine(green[startByte], 0xF0U, correctedG >> 8U);
+		green[startByte + 1] = uint8_t(correctedG);
+		maskAndCombine(blue[startByte], 0xF0U, correctedB >> 8U);
+		blue[startByte + 1] = uint8_t(correctedB);
 	}
 	else
 	{
-		red[startByte] = std::byte(correctedR >> 4U);
-		green[startByte] = std::byte(correctedG >> 4U);
-		blue[startByte] = std::byte(correctedB >> 4U);
-		red[startByte + 1] = (red[startByte + 1] & 0x0F_b) | std::byte((correctedR << 4U) & 0xF0U);
-		green[startByte + 1] = (green[startByte + 1] & 0x0F_b) | std::byte((correctedG << 4U) & 0xF0U);
-		blue[startByte + 1] = (blue[startByte + 1] & 0x0F_b) | std::byte((correctedB << 4U) & 0xF0U);
+		red[startByte] = uint8_t(correctedR >> 4U);
+		maskAndCombine(red[startByte + 1], 0x0FU, correctedR << 4U);
+		green[startByte] = uint8_t(correctedG >> 4U);
+		maskAndCombine(green[startByte + 1], 0x0FU, correctedG << 4U);
+		blue[startByte] = uint8_t(correctedB >> 4U);
+		maskAndCombine(blue[startByte + 1], 0x0FU, correctedB << 4U);
 	}
 }
 
