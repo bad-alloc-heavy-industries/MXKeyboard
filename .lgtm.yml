@@ -6,7 +6,7 @@ extraction:
       - pip3 install --upgrade meson
     configure:
       command:
-        - meson build --cross-file cross-files/system-avr.meson
+        - meson build --cross-file cross-files/avr-system.meson
     index:
       build_command:
         - ninja -C build
