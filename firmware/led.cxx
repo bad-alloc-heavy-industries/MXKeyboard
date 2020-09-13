@@ -22,7 +22,7 @@ struct ledData_t
 	std::array<uint8_t, toNearestWholeChipBytes(109)> green{};
 	std::array<uint8_t, toNearestWholeChipBytes(109)> blue{};
 
-	void colour(std::size_t led, uint8_t r, uint8_t g, uint8_t b) noexcept;
+	void colour(uint8_t led, uint8_t r, uint8_t g, uint8_t b) noexcept;
 };
 
 constexpr static const std::array<flash_t<uint16_t>, 256> gammaLUT
@@ -61,9 +61,28 @@ constexpr static const std::array<flash_t<uint16_t>, 256> gammaLUT
 	0xF58, 0xF70, 0xF88, 0xF9F, 0xFB7, 0xFCF, 0xFE7, 0xFFF
 };
 
+constexpr static const std::array<flash_t<uint8_t>, toNearestWholeChipLEDs(109)> ledIndexMap
+{
+	23, 22, 21, 20, 19, 18, 17, 16,
+	15, 14, 13, 12, 11, 10, 9, 8,
+	7, 6, 5, 4, 3, 2, 1, 0,
+	47, 46, 45, 44, 43, 42, 41, 40,
+	39, 38, 37, 36, 35, 34, 33, 32,
+	31, 30, 29, 28, 27, 26, 25, 24,
+	71, 70, 69, 68, 67, 66, 65, 64,
+	63, 62, 61, 60, 59, 58, 57, 56,
+	55, 54, 53, 52, 51, 50, 49, 48,
+	95, 94, 93, 92, 91, 90, 89, 88,
+	87, 86, 85, 84, 83, 82, 81, 80,
+	79, 78, 77, 76, 75, 74, 73, 72,
+	119, 118, 117, 116, 115, 114, 113, 112,
+	111, 110, 109, 108, 107, 255, 255, 255,
+	255, 255, 255, 255, 255, 255, 255, 255
+};
+
 enum class channel_t { red, green, blue };
 
-static ledData_t leds;
+static ledData_t leds{};
 
 USART_t &ledChannelToUART(const channel_t channel)
 {
@@ -121,14 +140,15 @@ constexpr void maskAndCombine(uint8_t &value, const uint8_t mask, const uint8_t 
 	value |= comb;
 }
 
-void ledData_t::colour(const std::size_t led, const uint8_t r, const uint8_t g, const uint8_t b) noexcept
+void ledData_t::colour(const uint8_t led, const uint8_t r, const uint8_t g, const uint8_t b) noexcept
 {
 	const uint16_t correctedR{gammaLUT[r]};
 	const uint16_t correctedG{gammaLUT[g]};
 	const uint16_t correctedB{gammaLUT[b]};
 
-	const auto offsetLed{led >= 96 ? led + 12 : led};
-	const auto startBit{offsetLed * 12U};
+	//const auto offsetLed{led >= 96 ? led + 12 : led};
+	//const uint8_t offsetLed{ledIndexMap[led]};
+	const auto startBit{led * 12U};
 	const auto startByte{startBit / 8U};
 
 	if (led & 1U)
@@ -151,8 +171,8 @@ void ledData_t::colour(const std::size_t led, const uint8_t r, const uint8_t g, 
 	}
 }
 
-void ledSetValue(const uint8_t led, const uint8_t r, const uint8_t g, const uint8_t b)
-	{ leds.colour(led, r, g, b); }
+void ledSetValue(const std::size_t led, const uint8_t r, const uint8_t g, const uint8_t b)
+	{ leds.colour(ledIndexMap[led], r, g, b); }
 
 void ledLatch()
 {

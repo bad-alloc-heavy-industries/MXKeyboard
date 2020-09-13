@@ -2,9 +2,10 @@
 #define LED__HXX
 
 #include <cstdint>
+#include <cstddef>
 #include <avr/io.h>
 
-extern void ledSetValue(uint8_t led, uint8_t r, uint8_t g, uint8_t b);
+extern void ledSetValue(std::size_t led, uint8_t r, uint8_t g, uint8_t b);
 extern void ledLatch();
 
 extern void uartInit();
