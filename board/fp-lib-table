@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name MXKeyboard_RGB)(type KiCad)(uri "$(KIPRJMOD)/MXKeyboard_RGB.pretty")(options "")(descr ""))
+)

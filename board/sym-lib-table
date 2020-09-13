@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MXKeyboard_RGB-eagle-import)(type Legacy)(uri ${KIPRJMOD}/MXKeyboard_RGB-eagle-import.lib)(options "")(descr ""))
+)
