@@ -84,7 +84,7 @@ enum class channel_t { red, green, blue };
 
 static ledData_t leds{};
 
-USART_t &ledChannelToUART(const channel_t channel)
+inline USART_t &ledChannelToUART(const channel_t channel)
 {
 	if (channel == channel_t::red)
 		return USARTC0;
@@ -216,11 +216,12 @@ void nextRGBValue() noexcept
 	}
 }
 
+//leds.colour(i, 127, 7, 63);
+
 void tcc0OverflowIRQ()
 {
 	for (uint8_t i{0}; i < 109; ++i)
-		//leds.colour(i, 127, 7, 63);
-		leds.colour(i, redValue, 7, blueValue);
+		ledSetValue(i, redValue, 7, blueValue);
 	nextRGBValue();
 
 #if 0
@@ -228,7 +229,7 @@ void tcc0OverflowIRQ()
 	dmaTrigger(DMA.CH1);
 	dmaTrigger(DMA.CH2);
 #else
-	for (uint8_t i{0}; i < 180; ++i)
+	for (uint8_t i{0}; i < toNearestWholeChipBytes(109); ++i)
 	{
 		uartWrite(ledChannelToUART(channel_t::red), static_cast<uint8_t>(leds.red[i]));
 		uartWrite(ledChannelToUART(channel_t::green), static_cast<uint8_t>(leds.green[i]));
