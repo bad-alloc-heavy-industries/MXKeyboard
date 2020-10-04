@@ -162,7 +162,8 @@ F 3 "" H 8300 2600 50  0001 C CNN
 F 4 "muRata" H 8300 2600 59  0001 L BNN "MFR"
 F 5 "GRM21BR61A476ME15L" H 8300 2600 59  0001 L BNN "MPN"
 F 6 "2611939" H 8300 2600 59  0001 L BNN "OC_FARNELL"
-F 7 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 8300 2600 59  0001 L BNN "URL"
+F 7 "" H 8300 2600 59  0001 L BNN "URL"
+F 8 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 8300 2600 50  0001 C CNN "URL_FARNELL"
 	1    8300 2600
 	1    0    0    -1  
 $EndComp
@@ -206,7 +207,7 @@ AR Path="/7A211019" Ref="Q1"  Part="1"
 AR Path="/5F5D6721/7A211019" Ref="Q1"  Part="1" 
 F 0 "Q1" H 3800 3200 59  0000 L BNN
 F 1 "DMN65D8L" V 4450 3400 59  0000 L BNN
-F 2 "MXKeyboard_RGB:SOT23" H 4100 3600 50  0001 C CNN
+F 2 "DX-MON:SOT23" H 4100 3600 50  0001 C CNN
 F 3 "" H 4100 3600 50  0001 C CNN
 	1    4100 3600
 	1    0    0    -1  
@@ -282,7 +283,8 @@ F 3 "" H 6800 2600 50  0001 C CNN
 F 4 "muRata" H 6800 2600 59  0001 L BNN "MFR"
 F 5 "GRM21BR61A476ME15L" H 6800 2600 59  0001 L BNN "MPN"
 F 6 "2611939" H 6800 2600 59  0001 L BNN "OC_FARNELL"
-F 7 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 6800 2600 59  0001 L BNN "URL"
+F 7 "" H 6800 2600 59  0001 L BNN "URL"
+F 8 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 6800 2600 50  0001 C CNN "URL_FARNELL"
 	1    6800 2600
 	-1   0    0    -1  
 $EndComp
@@ -357,8 +359,63 @@ F 3 "" H 4700 4000 50  0001 C CNN
 F 4 "muRata" H 4700 4000 59  0001 L BNN "MFR"
 F 5 "GRM21BR61A476ME15L" H 4700 4000 59  0001 L BNN "MPN"
 F 6 "2611939" H 4700 4000 59  0001 L BNN "OC_FARNELL"
-F 7 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 4700 4000 59  0001 L BNN "URL"
+F 7 "" H 4700 4000 59  0001 L BNN "URL"
+F 8 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 4700 4000 50  0001 C CNN "URL_FARNELL"
 	1    4700 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint_Small TP1
+U 1 1 5F6FCA50
+P 5500 3000
+F 0 "TP1" H 5548 3046 50  0000 L CNN
+F 1 "5V_USB" H 5500 2950 39  0000 C TNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5700 3000 50  0001 C CNN
+F 3 "~" H 5700 3000 50  0001 C CNN
+	1    5500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP2
+U 1 1 5F6FE1CF
+P 5750 3000
+F 0 "TP2" H 5798 3046 50  0000 L CNN
+F 1 "+5V" H 5750 2950 39  0000 C TNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5950 3000 50  0001 C CNN
+F 3 "~" H 5950 3000 50  0001 C CNN
+	1    5750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP3
+U 1 1 5F6FEBD4
+P 6000 3000
+F 0 "TP3" H 6048 3046 50  0000 L CNN
+F 1 "5V_PS2" H 6000 2950 39  0000 C TNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6200 3000 50  0001 C CNN
+F 3 "~" H 6200 3000 50  0001 C CNN
+	1    6000 3000
+	1    0    0    -1  
+$EndComp
+Text HLabel 6000 2900 1    50   Input ~ 0
+5V_PS2
+$Comp
+L power:+5V #PWR064
+U 1 1 5F700442
+P 5750 2900
+F 0 "#PWR064" H 5750 2750 50  0001 C CNN
+F 1 "+5V" H 5765 3073 50  0000 C CNN
+F 2 "" H 5750 2900 50  0001 C CNN
+F 3 "" H 5750 2900 50  0001 C CNN
+	1    5750 2900
+	1    0    0    -1  
+$EndComp
+Text HLabel 5500 2900 1    50   Input ~ 0
+5V_USB
+Wire Wire Line
+	5500 2900 5500 3000
+Wire Wire Line
+	5750 2900 5750 3000
+Wire Wire Line
+	6000 2900 6000 3000
 $EndSCHEMATC

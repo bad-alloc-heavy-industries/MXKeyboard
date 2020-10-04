@@ -467,7 +467,8 @@ F 3 "" H 9700 5950 50  0001 C CNN
 F 4 "Vishay" H 9700 5950 59  0001 L BNN "MFR"
 F 5 "CRCW08051M00FKEA" H 9700 5950 59  0001 L BNN "MPN"
 F 6 "1652946" H 9700 5950 59  0001 L BNN "OC_FARNELL"
-F 7 "https://uk.farnell.com/vishay/crcw08051m00fkea/res-1m-1-0-125w-0805-thick-film/dp/1652946" H 9700 5950 59  0001 L BNN "URL"
+F 7 "" H 9700 5950 59  0001 L BNN "URL"
+F 8 "https://uk.farnell.com/vishay/crcw08051m00fkea/res-1m-1-0-125w-0805-thick-film/dp/1652946" H 9700 5950 50  0001 C CNN "URL_FARNELL"
 	1    9700 5950
 	0    -1   -1   0   
 $EndComp
@@ -606,7 +607,8 @@ F 3 "" H 14300 7400 50  0001 C CNN
 F 4 "Vishay" H 14300 7400 59  0001 L BNN "MFR"
 F 5 "CRCW08051M00FKEA" H 14300 7400 59  0001 L BNN "MPN"
 F 6 "1652946" H 14300 7400 59  0001 L BNN "OC_FARNELL"
-F 7 "https://uk.farnell.com/vishay/crcw08051m00fkea/res-1m-1-0-125w-0805-thick-film/dp/1652946" H 14300 7400 59  0001 L BNN "URL"
+F 7 "" H 14300 7400 59  0001 L BNN "URL"
+F 8 "https://uk.farnell.com/vishay/crcw08051m00fkea/res-1m-1-0-125w-0805-thick-film/dp/1652946" H 14300 7400 50  0001 C CNN "URL_FARNELL"
 	1    14300 7400
 	1    0    0    -1  
 $EndComp
@@ -683,7 +685,7 @@ AR Path="/9D30ECAF" Ref="U14"  Part="1"
 AR Path="/5F5D6257/9D30ECAF" Ref="U14"  Part="1" 
 F 0 "U14" H 7700 2200 50  0001 C CNN
 F 1 "TC1015-3.3VCT713" H 7700 2200 50  0001 C CNN
-F 2 "MXKeyboard_RGB:SOT23-5L" H 7700 2200 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7700 2200 50  0001 C CNN
 F 3 "" H 7700 2200 50  0001 C CNN
 	1    7700 2200
 	1    0    0    -1  
@@ -701,7 +703,8 @@ F 3 "" H 7000 2400 50  0001 C CNN
 F 4 "Multicomp" H 7000 2400 59  0001 L BNN "MFR"
 F 5 "MC0603X105K100CT" H 7000 2400 59  0001 L BNN "MPN"
 F 6 "1759399" H 7000 2400 59  0001 L BNN "OC_FARNELL"
-F 7 "https://uk.farnell.com/multicomp/mc0603x105k100ct/cap-1-f-10v-10-x5r-0603/dp/1759399" H 7000 2400 59  0001 L BNN "URL"
+F 7 "" H 7000 2400 59  0001 L BNN "URL"
+F 8 "https://uk.farnell.com/multicomp/mc0603x105k100ct/cap-1-f-10v-10-x5r-0603/dp/1759399" H 7000 2400 50  0001 C CNN "URL_FARNELL"
 	1    7000 2400
 	1    0    0    -1  
 $EndComp
@@ -718,7 +721,8 @@ F 3 "" H 8400 2400 50  0001 C CNN
 F 4 "Multicomp" H 8400 2400 59  0001 L BNN "MFR"
 F 5 "MC0603B471J500CT" H 8400 2400 59  0001 L BNN "MPN"
 F 6 "2627442" H 8400 2400 59  0001 L BNN "OC_FARNELL"
-F 7 "https://uk.farnell.com/multicomp/mc0603b471j500ct/cap-470pf-50v-5-x7r-0603/dp/2627442" H 8400 2400 59  0001 L BNN "URL"
+F 7 "" H 8400 2400 59  0001 L BNN "URL"
+F 8 "https://uk.farnell.com/multicomp/mc0603b471j500ct/cap-470pf-50v-5-x7r-0603/dp/2627442" H 8400 2400 50  0001 C CNN "URL_FARNELL"
 	1    8400 2400
 	1    0    0    -1  
 $EndComp
@@ -735,7 +739,8 @@ F 3 "" H 8600 2400 50  0001 C CNN
 F 4 "Multicomp" H 8600 2400 59  0001 L BNN "MFR"
 F 5 "MC0603X105K100CT" H 8600 2400 59  0001 L BNN "MPN"
 F 6 "1759399" H 8600 2400 59  0001 L BNN "OC_FARNELL"
-F 7 "https://uk.farnell.com/multicomp/mc0603x105k100ct/cap-1-f-10v-10-x5r-0603/dp/1759399" H 8600 2400 59  0001 L BNN "URL"
+F 7 "" H 8600 2400 59  0001 L BNN "URL"
+F 8 "https://uk.farnell.com/multicomp/mc0603x105k100ct/cap-1-f-10v-10-x5r-0603/dp/1759399" H 8600 2400 50  0001 C CNN "URL_FARNELL"
 	1    8600 2400
 	1    0    0    -1  
 $EndComp
@@ -847,7 +852,8 @@ F 7 "https://uk.farnell.com/multicomp/mcsjk-3n-16-00-3-3-25-b/oscillator-16mhz-3
 F 8 "IQD" H 9900 2200 85  0001 L BNN "MFR"
 F 9 "LFSPXO025494" H 9900 2200 85  0001 L BNN "MPN"
 F 10 "2449455" H 9900 2200 85  0001 L BNN "OC_FARNELL"
-F 11 "http://uk.farnell.com/iqd-frequency-products/lfspxo025494/oscillator-16mhz-15pf-smd/dp/2449455" H 9900 2200 85  0001 L BNN "URL"
+F 11 "" H 9900 2200 85  0001 L BNN "URL"
+F 12 "http://uk.farnell.com/iqd-frequency-products/lfspxo025494/oscillator-16mhz-15pf-smd/dp/2449455" H 9900 2200 50  0001 C CNN "URL_FARNELL"
 	1    9900 2200
 	1    0    0    -1  
 $EndComp
@@ -1323,6 +1329,20 @@ F 3 "" H 14000 2400 50  0001 C CNN
 	1    14000 2400
 	-1   0    0    1   
 $EndComp
+$Comp
+L Connector:TestPoint_Small TP4
+U 1 1 5F711D45
+P 8700 2000
+F 0 "TP4" H 8748 2046 50  0000 L CNN
+F 1 "+3.3V" H 8748 1955 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8900 2000 50  0001 C CNN
+F 3 "~" H 8900 2000 50  0001 C CNN
+	1    8700 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2000 8600 2000
+Connection ~ 8600 2000
 Wire Bus Line
 	4350 4400 4350 4800
 Wire Bus Line
