@@ -40,9 +40,9 @@ Wire Wire Line
 Wire Wire Line
 	9950 6200 9950 6100
 Wire Wire Line
-	9700 6150 9700 6200
+	9700 6050 9700 6200
 Wire Wire Line
-	9300 5950 9300 6200
+	9300 5850 9300 6200
 Wire Wire Line
 	9300 6200 9500 6200
 Connection ~ 9500 6200
@@ -92,7 +92,7 @@ Wire Wire Line
 Wire Wire Line
 	14000 7100 14000 7400
 Wire Wire Line
-	14000 7400 14100 7400
+	14000 7400 14200 7400
 Wire Wire Line
 	14150 7100 14000 7100
 Wire Wire Line
@@ -201,7 +201,7 @@ Wire Wire Line
 Wire Wire Line
 	9950 5700 10050 5700
 Wire Wire Line
-	9700 5750 9700 5700
+	9700 5850 9700 5700
 Connection ~ 9950 5700
 Text Label 10050 5700 0    50   ~ 0
 EARTH_USB
@@ -244,7 +244,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 4200 5100 4100
 Wire Wire Line
-	5100 4100 5000 4100
+	5100 4100 4900 4100
 Wire Wire Line
 	5100 4100 5100 4000
 Connection ~ 5100 4100
@@ -286,7 +286,7 @@ Connection ~ 5900 1900
 Wire Wire Line
 	4500 4000 4500 4100
 Wire Wire Line
-	4500 4100 4600 4100
+	4500 4100 4700 4100
 Wire Wire Line
 	12600 5500 12600 5600
 Wire Wire Line
@@ -318,7 +318,7 @@ Wire Wire Line
 Wire Wire Line
 	14600 7100 14600 7400
 Wire Wire Line
-	14600 7400 14500 7400
+	14600 7400 14400 7400
 Wire Wire Line
 	14450 7100 14600 7100
 Wire Wire Line
@@ -401,7 +401,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 5400 6900 5400
 Wire Wire Line
-	9300 5300 9300 5550
+	9300 5300 9300 5650
 Connection ~ 9300 5300
 Entry Wire Line
 	6950 6400 7050 6300
@@ -453,24 +453,6 @@ F 5 "MC0603B104J250CT" H 9950 5900 59  0001 L BNN "MPN"
 F 6 "2310559" H 9950 5900 59  0001 L BNN "OC_FARNELL"
 	1    9950 5900
 	1    0    0    -1  
-$EndComp
-$Comp
-L MXKeyboard_RGB-eagle-import:R-EU_R0805 R17
-U 1 1 063E4601
-P 9700 5950
-AR Path="/063E4601" Ref="R17"  Part="1" 
-AR Path="/5F5D6257/063E4601" Ref="R17"  Part="1" 
-F 0 "R17" H 9700 6000 59  0000 C BNN
-F 1 "1M" H 9700 5900 59  0000 C TNN
-F 2 "rhais_rcl:R0603" H 9700 5950 50  0001 C CNN
-F 3 "" H 9700 5950 50  0001 C CNN
-F 4 "Vishay" H 9700 5950 59  0001 L BNN "MFR"
-F 5 "CRCW08051M00FKEA" H 9700 5950 59  0001 L BNN "MPN"
-F 6 "1652946" H 9700 5950 59  0001 L BNN "OC_FARNELL"
-F 7 "" H 9700 5950 59  0001 L BNN "URL"
-F 8 "https://uk.farnell.com/vishay/crcw08051m00fkea/res-1m-1-0-125w-0805-thick-film/dp/1652946" H 9700 5950 50  0001 C CNN "URL_FARNELL"
-	1    9700 5950
-	0    -1   -1   0   
 $EndComp
 $Comp
 L MXKeyboard_RGB-eagle-import:PINHD-2X5 JP1
@@ -566,20 +548,20 @@ F 6 "2310559" H 6100 2100 59  0001 L BNN "OC_FARNELL"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:R-EU_R0603 R18
+L Device:R_Small R18
 U 1 1 6A070FAE
 P 4800 4100
 AR Path="/6A070FAE" Ref="R18"  Part="1" 
 AR Path="/5F5D6257/6A070FAE" Ref="R18"  Part="1" 
-F 0 "R18" H 4800 4150 59  0000 C BNN
-F 1 "10k" H 4800 4050 59  0000 C TNN
+F 0 "R18" V 4750 4100 59  0000 C BNN
+F 1 "10k" V 4850 4100 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 4800 4100 50  0001 C CNN
 F 3 "" H 4800 4100 50  0001 C CNN
 F 4 "Multicomp" H 4800 4100 59  0001 L BNN "MFR"
 F 5 "MC0063W0603110K" H 4800 4100 59  0001 L BNN "MPN"
 F 6 "2130939" H 4800 4100 59  0001 L BNN "OC_FARNELL"
 	1    4800 4100
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
 L MXKeyboard_RGB-eagle-import:PS_2 PS/2
@@ -595,13 +577,13 @@ F 3 "" H 14300 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:R-EU_R0805 R19
+L Device:R_Small R19
 U 1 1 B4133811
 P 14300 7400
 AR Path="/B4133811" Ref="R19"  Part="1" 
 AR Path="/5F5D6257/B4133811" Ref="R19"  Part="1" 
-F 0 "R19" H 14300 7450 59  0000 C BNN
-F 1 "1M" H 14300 7350 59  0000 C TNN
+F 0 "R19" V 14250 7400 59  0000 C BNN
+F 1 "1M" V 14350 7400 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 14300 7400 50  0001 C CNN
 F 3 "" H 14300 7400 50  0001 C CNN
 F 4 "Vishay" H 14300 7400 59  0001 L BNN "MFR"
@@ -610,7 +592,7 @@ F 6 "1652946" H 14300 7400 59  0001 L BNN "OC_FARNELL"
 F 7 "" H 14300 7400 59  0001 L BNN "URL"
 F 8 "https://uk.farnell.com/vishay/crcw08051m00fkea/res-1m-1-0-125w-0805-thick-film/dp/1652946" H 14300 7400 50  0001 C CNN "URL_FARNELL"
 	1    14300 7400
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
 L MXKeyboard_RGB-eagle-import:C-EUC0603K C7
@@ -871,17 +853,17 @@ F 3 "" H 5700 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:R-EU_R0603 R37
+L Device:R_Small R37
 U 1 1 B80E1D1D
 P 9300 5750
 AR Path="/B80E1D1D" Ref="R37"  Part="1" 
 AR Path="/5F5D6257/B80E1D1D" Ref="R37"  Part="1" 
-F 0 "R37" H 9300 5800 59  0000 C BNN
-F 1 "100k" H 9300 5700 59  0000 C TNN
+F 0 "R37" V 9250 5750 59  0000 C BNN
+F 1 "100k" V 9350 5750 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 9300 5750 50  0001 C CNN
 F 3 "" H 9300 5750 50  0001 C CNN
 	1    9300 5750
-	0    -1   -1   0   
+	1    0    0    -1  
 $EndComp
 Text HLabel 4400 6500 0    50   Output ~ 0
 SCLK_GREEN
@@ -1324,6 +1306,24 @@ $EndComp
 Wire Wire Line
 	8700 2000 8600 2000
 Connection ~ 8600 2000
+$Comp
+L Device:R_Small R17
+U 1 1 063E4601
+P 9700 5950
+AR Path="/063E4601" Ref="R17"  Part="1" 
+AR Path="/5F5D6257/063E4601" Ref="R17"  Part="1" 
+F 0 "R17" V 9650 5950 59  0000 C BNN
+F 1 "1M" V 9750 5950 59  0000 C TNN
+F 2 "rhais_rcl:R0603" H 9700 5950 50  0001 C CNN
+F 3 "" H 9700 5950 50  0001 C CNN
+F 4 "Vishay" H 9700 5950 59  0001 L BNN "MFR"
+F 5 "CRCW08051M00FKEA" H 9700 5950 59  0001 L BNN "MPN"
+F 6 "1652946" H 9700 5950 59  0001 L BNN "OC_FARNELL"
+F 7 "" H 9700 5950 59  0001 L BNN "URL"
+F 8 "https://uk.farnell.com/vishay/crcw08051m00fkea/res-1m-1-0-125w-0805-thick-film/dp/1652946" H 9700 5950 50  0001 C CNN "URL_FARNELL"
+	1    9700 5950
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	4350 4400 4350 4800
 Wire Bus Line
