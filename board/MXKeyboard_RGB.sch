@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 8000 3500 1000 1500
+S 8000 3500 1000 400 
 U 5F5D4893
 F0 "Key matrix" 50
 F1 "Key_matrix.sch" 50
@@ -44,7 +44,7 @@ F2 "COLUMN[1..21]" O R 7500 3800 50
 F3 "DCOL[1..5]" I L 6000 3800 50 
 $EndSheet
 $Sheet
-S 6000 4400 550  300 
+S 6000 4400 1000 300 
 U 5F5D6721
 F0 "Power_Control" 50
 F1 "Power_Control.sch" 50
