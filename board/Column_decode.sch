@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 6
-Title ""
+Title "Column decoder"
 Date ""
-Rev ""
-Comp ""
+Rev "1"
+Comp "Rachel Mant"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -179,31 +179,12 @@ F 6 "2310559" H 9700 2900 59  0001 L BNN "OC_FARNELL"
 	1    9700 2900
 	1    0    0    -1  
 $EndComp
-$Comp
-L MXKeyboard_RGB-eagle-import:A4L-LOC #FRAME2
-U 1 1 DFE0E5A0
-P 900 6400
-AR Path="/DFE0E5A0" Ref="#FRAME2"  Part="1" 
-AR Path="/5F5D661B/DFE0E5A0" Ref="#FRAME2"  Part="1" 
-F 0 "#FRAME2" H 900 6400 50  0001 C CNN
-F 1 "A4L-LOC" H 900 6400 50  0001 C CNN
-F 2 "" H 900 6400 50  0001 C CNN
-F 3 "" H 900 6400 50  0001 C CNN
-	1    900  6400
-	1    0    0    -1  
-$EndComp
 Text Notes 2700 2200 0    59   ~ 0
 Active when DCOL[5..4] == 00
 Text Notes 5100 2200 0    59   ~ 0
 Active when DCOL[5..4] == 01
 Text Notes 7500 2200 0    59   ~ 0
 Active when DCOL[5..4] == 10
-Text Notes 8300 5900 0    85   ~ 0
-Column decoder
-Text Notes 10200 5600 0    85   ~ 0
-Rachel Mant
-Text Notes 10800 6200 0    85   ~ 0
-R1
 $Comp
 L power:GND #PWR053
 U 1 1 6F6F2EC8

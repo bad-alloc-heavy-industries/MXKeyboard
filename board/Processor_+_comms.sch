@@ -4,10 +4,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 6
-Title ""
+Title "CPU and Comms"
 Date ""
-Rev ""
-Comp ""
+Rev "4"
+Comp "Rachel Mant"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -871,19 +871,6 @@ F 3 "" H 5700 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:A3L-LOC #FRAME1
-U 1 1 73DA64CA
-P 900 10300
-AR Path="/73DA64CA" Ref="#FRAME1"  Part="1" 
-AR Path="/5F5D6257/73DA64CA" Ref="#FRAME1"  Part="1" 
-F 0 "#FRAME1" H 900 10300 50  0001 C CNN
-F 1 "A3L-LOC" H 900 10300 50  0001 C CNN
-F 2 "" H 900 10300 50  0001 C CNN
-F 3 "" H 900 10300 50  0001 C CNN
-	1    900  10300
-	1    0    0    -1  
-$EndComp
-$Comp
 L MXKeyboard_RGB-eagle-import:R-EU_R0603 R37
 U 1 1 B80E1D1D
 P 9300 5750
@@ -896,12 +883,6 @@ F 3 "" H 9300 5750 50  0001 C CNN
 	1    9300 5750
 	0    -1   -1   0   
 $EndComp
-Text Notes 13300 9800 0    85   ~ 0
-CPU and Comms
-Text Notes 15800 10100 0    85   ~ 0
-R4
-Text Notes 15200 9500 0    85   ~ 0
-Rachel Mant
 Text HLabel 4400 6500 0    50   Output ~ 0
 SCLK_GREEN
 Text HLabel 4400 6700 0    50   Output ~ 0

@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
-Title ""
+Title "MXKeyboard top-level schematic"
 Date ""
-Rev ""
-Comp ""
+Rev "1"
+Comp "Rachel Mant"
 Comment1 ""
 Comment2 ""
 Comment3 ""

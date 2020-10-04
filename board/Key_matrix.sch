@@ -4,10 +4,10 @@ EELAYER END
 $Descr User 21951 8268
 encoding utf-8
 Sheet 2 6
-Title ""
+Title "Key matrix"
 Date ""
-Rev ""
-Comp ""
+Rev "1"
+Comp "Rachel Mant"
 Comment1 ""
 Comment2 ""
 Comment3 ""

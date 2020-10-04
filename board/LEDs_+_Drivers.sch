@@ -4,10 +4,10 @@ EELAYER END
 $Descr User 23043 21294
 encoding utf-8
 Sheet 3 6
-Title ""
+Title "RGB Backlighting"
 Date ""
-Rev ""
-Comp ""
+Rev "1"
+Comp "Rachel Mant"
 Comment1 ""
 Comment2 ""
 Comment3 ""

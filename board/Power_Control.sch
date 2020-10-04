@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 6
-Title ""
+Title "Power Control"
 Date ""
-Rev ""
-Comp ""
+Rev "1"
+Comp "Rachel Mant"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -104,19 +104,6 @@ Wire Wire Line
 	3900 2400 3900 2600
 Wire Wire Line
 	7800 2400 7800 2500
-$Comp
-L MXKeyboard_RGB-eagle-import:A4L-LOC #FRAME3
-U 1 1 F8E72027
-P 900 6600
-AR Path="/F8E72027" Ref="#FRAME3"  Part="1" 
-AR Path="/5F5D6721/F8E72027" Ref="#FRAME3"  Part="1" 
-F 0 "#FRAME3" H 900 6600 50  0001 C CNN
-F 1 "A4L-LOC" H 900 6600 50  0001 C CNN
-F 2 "" H 900 6600 50  0001 C CNN
-F 3 "" H 900 6600 50  0001 C CNN
-	1    900  6600
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R20
 U 1 1 A5EEF4AE
@@ -288,12 +275,6 @@ F 8 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/d
 	1    6800 2600
 	-1   0    0    -1  
 $EndComp
-Text Notes 10200 5800 0    85   ~ 0
-Rachel Mant
-Text Notes 10800 6400 0    85   ~ 0
-R0
-Text Notes 8300 6100 0    85   ~ 0
-Power Control
 Text HLabel 7800 2800 3    50   Input ~ 0
 5V_USB
 Text HLabel 6700 1900 0    50   Input ~ 0
