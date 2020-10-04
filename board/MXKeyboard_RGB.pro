@@ -1,4 +1,4 @@
-update=Sun 04 Oct 2020 01:37:16 BST
+update=Sun 04 Oct 2020 21:17:01 BST
 version=1
 last_client=kicad
 [general]
@@ -77,23 +77,23 @@ SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=Top
-Type=0
+Type=2
 Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=Route4
-Type=0
+Type=2
 Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=Route6
-Type=0
+Type=2
 Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=Route10
-Type=0
+Type=2
 Enabled=1
 [pcbnew/Layer.In4.Cu]
 Name=Route12
-Type=0
+Type=2
 Enabled=1
 [pcbnew/Layer.In5.Cu]
 Name=In5.Cu
@@ -201,7 +201,7 @@ Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
 Name=Bottom
-Type=0
+Type=2
 Enabled=1
 [pcbnew/Layer.B.Adhes]
 Enabled=1
@@ -222,11 +222,11 @@ Enabled=1
 [pcbnew/Layer.Dwgs.User]
 Enabled=1
 [pcbnew/Layer.Cmts.User]
-Enabled=1
+Enabled=0
 [pcbnew/Layer.Eco1.User]
-Enabled=1
+Enabled=0
 [pcbnew/Layer.Eco2.User]
-Enabled=1
+Enabled=0
 [pcbnew/Layer.Edge.Cuts]
 Enabled=1
 [pcbnew/Layer.Margin]
