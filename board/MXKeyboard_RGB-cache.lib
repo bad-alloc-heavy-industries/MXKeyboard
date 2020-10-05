@@ -479,21 +479,6 @@ X D 4 100 400 100 D 0 50 2 0 I
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_GND
-#
-DEF MXKeyboard_RGB-eagle-import_GND #SUPPLY 0 40 Y Y 1 L P
-F0 "#SUPPLY" 0 0 50 H I C CNN
-F1 "MXKeyboard_RGB-eagle-import_GND" -75 -125 59 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 1 0 0 -50 0 50 0 N
-P 2 1 0 0 0 -50 -50 0 N
-P 2 1 0 0 50 0 0 -50 N
-X GND 1 0 100 100 D 0 0 1 0 W
-ENDDRAW
-ENDDEF
-#
 # MXKeyboard_RGB-eagle-import_NTS0104
 #
 DEF MXKeyboard_RGB-eagle-import_NTS0104 U 0 40 Y Y 1 L N
