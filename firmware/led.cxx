@@ -16,11 +16,14 @@ constexpr std::size_t toNearestWholeChipLEDs(const std::size_t ledCount) { retur
 static_assert(toNearestWholeChipBytes(1) == 36);
 static_assert(toNearestWholeChipLEDs(1) == 24);
 
+constexpr static std::size_t ledStringLength{toNearestWholeChipBytes(109)};
+constexpr static std::size_t ledStringLEDs{toNearestWholeChipLEDs(109)};
+
 struct ledData_t
 {
-	std::array<uint8_t, toNearestWholeChipBytes(109)> red{};
-	std::array<uint8_t, toNearestWholeChipBytes(109)> green{};
-	std::array<uint8_t, toNearestWholeChipBytes(109)> blue{};
+	std::array<uint8_t, ledStringLength> red{};
+	std::array<uint8_t, ledStringLength> green{};
+	std::array<uint8_t, ledStringLength> blue{};
 
 	void colour(uint8_t led, uint8_t r, uint8_t g, uint8_t b) noexcept;
 };
@@ -61,7 +64,7 @@ constexpr static const std::array<flash_t<uint16_t>, 256> gammaLUT
 	0xF58, 0xF70, 0xF88, 0xF9F, 0xFB7, 0xFCF, 0xFE7, 0xFFF
 };
 
-constexpr static const std::array<flash_t<uint8_t>, toNearestWholeChipLEDs(109)> ledIndexMap
+constexpr static const std::array<flash_t<uint8_t>, ledStringLEDs> ledIndexMap
 {
 	23, 22, 21, 20, 19, 18, 17, 16,
 	15, 14, 13, 12, 11, 10, 9, 8,
@@ -229,7 +232,7 @@ void tcc0OverflowIRQ()
 	dmaTrigger(DMA.CH1);
 	dmaTrigger(DMA.CH2);
 #else
-	for (uint8_t i{0}; i < toNearestWholeChipBytes(109); ++i)
+	for (uint8_t i{0}; i < ledStringLength; ++i)
 	{
 		uartWrite(ledChannelToUART(channel_t::red), static_cast<uint8_t>(leds.red[i]));
 		uartWrite(ledChannelToUART(channel_t::green), static_cast<uint8_t>(leds.green[i]));
