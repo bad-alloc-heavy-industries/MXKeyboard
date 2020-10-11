@@ -122,32 +122,6 @@ Entry Wire Line
 Entry Wire Line
 	7550 3700 7650 3800
 $Comp
-L MXKeyboard_RGB-eagle-import:74HC238BQ U15
-U 1 1 6D3D1EC3
-P 3700 3100
-AR Path="/6D3D1EC3" Ref="U15"  Part="1" 
-AR Path="/5F5D661B/6D3D1EC3" Ref="U15"  Part="1" 
-F 0 "U15" H 3700 3100 50  0001 C CNN
-F 1 "74HC238BQ" H 3700 3100 50  0001 C CNN
-F 2 "MXKeyboard_RGB:DHVQFN-16" H 3700 3100 50  0001 C CNN
-F 3 "" H 3700 3100 50  0001 C CNN
-	1    3700 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L MXKeyboard_RGB-eagle-import:74HC238BQ U16
-U 1 1 3D1E7172
-P 6100 3100
-AR Path="/3D1E7172" Ref="U16"  Part="1" 
-AR Path="/5F5D661B/3D1E7172" Ref="U16"  Part="1" 
-F 0 "U16" H 6100 3100 50  0001 C CNN
-F 1 "74HC238BQ" H 6100 3100 50  0001 C CNN
-F 2 "MXKeyboard_RGB:DHVQFN-16" H 6100 3100 50  0001 C CNN
-F 3 "" H 6100 3100 50  0001 C CNN
-	1    6100 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C30
 U 1 1 B941D5C4
 P 7300 2900
@@ -238,19 +212,6 @@ F 1 "GND" H 8905 3627 50  0000 C CNN
 F 2 "" H 8900 3800 50  0001 C CNN
 F 3 "" H 8900 3800 50  0001 C CNN
 	1    8900 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L MXKeyboard_RGB-eagle-import:74HC238BQ U17
-U 1 1 E1651699
-P 8500 3100
-AR Path="/E1651699" Ref="U17"  Part="1" 
-AR Path="/5F5D661B/E1651699" Ref="U17"  Part="1" 
-F 0 "U17" H 8500 3100 50  0001 C CNN
-F 1 "74HC238BQ" H 8500 3100 50  0001 C CNN
-F 2 "MXKeyboard_RGB:DHVQFN-16" H 8500 3100 50  0001 C CNN
-F 3 "" H 8500 3100 50  0001 C CNN
-	1    8500 3100
 	1    0    0    -1  
 $EndComp
 Text Label 9350 2900 2    10   ~ 0
@@ -502,6 +463,45 @@ Wire Wire Line
 NoConn ~ 9300 3000
 NoConn ~ 9300 3100
 NoConn ~ 9300 3200
+$Comp
+L MXKeyboard_RGB-eagle-import:74HC238BQ U17
+U 1 1 E1651699
+P 8500 3100
+AR Path="/E1651699" Ref="U17"  Part="1" 
+AR Path="/5F5D661B/E1651699" Ref="U17"  Part="1" 
+F 0 "U17" H 8500 3100 50  0001 C CNN
+F 1 "74HC238BQ" H 8500 3100 50  0001 C CNN
+F 2 "rhais_package-qfn:DQFN16_1EP_2.5x3.5mm_P0.5mm" H 8500 3100 50  0001 C CNN
+F 3 "" H 8500 3100 50  0001 C CNN
+	1    8500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:74HC238BQ U16
+U 1 1 3D1E7172
+P 6100 3100
+AR Path="/3D1E7172" Ref="U16"  Part="1" 
+AR Path="/5F5D661B/3D1E7172" Ref="U16"  Part="1" 
+F 0 "U16" H 6100 3100 50  0001 C CNN
+F 1 "74HC238BQ" H 6100 3100 50  0001 C CNN
+F 2 "rhais_package-qfn:DQFN16_1EP_2.5x3.5mm_P0.5mm" H 6100 3100 50  0001 C CNN
+F 3 "" H 6100 3100 50  0001 C CNN
+	1    6100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:74HC238BQ U15
+U 1 1 6D3D1EC3
+P 3700 3100
+AR Path="/6D3D1EC3" Ref="U15"  Part="1" 
+AR Path="/5F5D661B/6D3D1EC3" Ref="U15"  Part="1" 
+F 0 "U15" H 3700 3100 50  0001 C CNN
+F 1 "74HC238BQ" H 3700 3100 50  0001 C CNN
+F 2 "rhais_package-qfn:DQFN16_1EP_2.5x3.5mm_P0.5mm" H 3700 3100 50  0001 C CNN
+F 3 "" H 3700 3100 50  0001 C CNN
+	1    3700 3100
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	7550 2500 7550 3700
 Wire Bus Line
