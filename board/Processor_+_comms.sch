@@ -50,11 +50,11 @@ Connection ~ 9700 6100
 Wire Wire Line
 	5700 7500 5700 7400
 Wire Wire Line
-	3800 2400 4000 2400
+	3900 2400 4000 2400
 Wire Wire Line
 	4000 2400 4050 2400
 Wire Wire Line
-	3800 2000 4050 2000
+	3900 2000 4050 2000
 Wire Wire Line
 	4050 2400 4050 2000
 Wire Wire Line
@@ -212,7 +212,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 5900 4400 5900
 Wire Wire Line
-	3500 2200 3300 2200
+	3400 2200 3300 2200
 Text Label 3300 2200 2    50   ~ 0
 TMS
 Wire Wire Line
@@ -220,7 +220,7 @@ Wire Wire Line
 Text Label 4400 6000 2    50   ~ 0
 TDI
 Wire Wire Line
-	3500 2400 3300 2400
+	3400 2400 3300 2400
 Text Label 3300 2400 2    50   ~ 0
 TDI
 Wire Wire Line
@@ -228,7 +228,7 @@ Wire Wire Line
 Text Label 4400 6100 2    50   ~ 0
 TCK
 Wire Wire Line
-	3500 2000 3300 2000
+	3400 2000 3300 2000
 Text Label 3300 2000 2    50   ~ 0
 TCK
 Wire Wire Line
@@ -236,11 +236,9 @@ Wire Wire Line
 Text Label 4400 6200 2    50   ~ 0
 TDO
 Wire Wire Line
-	3500 2100 3300 2100
+	3400 2100 3300 2100
 Text Label 3300 2100 2    50   ~ 0
 TDO
-Wire Wire Line
-	3800 2300 4000 2300
 Wire Wire Line
 	5100 4200 5100 4100
 Wire Wire Line
@@ -251,11 +249,11 @@ Connection ~ 5100 4100
 Text Label 5100 4000 1    50   ~ 0
 ~RESET
 Wire Wire Line
-	3800 2200 4100 2200
+	3900 2200 4100 2200
 Text Label 4100 2200 0    50   ~ 0
 ~RESET
 Wire Wire Line
-	3800 2100 4000 2100
+	3900 2100 4000 2100
 Wire Wire Line
 	4000 2100 4000 1900
 Wire Wire Line
@@ -455,14 +453,14 @@ F 6 "2310559" H 9950 5900 59  0001 L BNN "OC_FARNELL"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:PINHD-2X5 JP1
+L Connector_Generic:Conn_02x05_Odd_Even JP1
 U 1 1 2F430EF2
 P 3600 2200
 AR Path="/2F430EF2" Ref="JP1"  Part="1" 
 AR Path="/5F5D6257/2F430EF2" Ref="JP1"  Part="1" 
 F 0 "JP1" H 3350 2525 59  0000 L BNN
 F 1 "PINHD-2X5" H 3350 1800 59  0000 L BNN
-F 2 "MXKeyboard_RGB:20021121-00010C4LF" H 3600 2200 50  0001 C CNN
+F 2 "rhais_connector-pinheader:PinHeader_2x05_P1.27mm_Vertical_SMD" H 3600 2200 50  0001 C CNN
 F 3 "" H 3600 2200 50  0001 C CNN
 	1    3600 2200
 	1    0    0    -1  
@@ -572,7 +570,11 @@ AR Path="/5F5D6257/554878EE" Ref="PS/2"  Part="1"
 F 0 "PS/2" H 14300 6300 50  0001 C CNN
 F 1 "PS_2" H 14300 6300 50  0001 C CNN
 F 2 "MXKeyboard_RGB:TM_0508_A_6" H 14300 6300 50  0001 C CNN
-F 3 "" H 14300 6300 50  0001 C CNN
+F 3 "https://downloads.lumberg.com/datenblaetter/en/tm0508a.pdf" H 14300 6300 50  0001 C CNN
+F 4 "https://uk.farnell.com/lumberg/tm-0508-a-6/socket-mini-din-chassis-6-way/dp/1200113" H 14300 6300 50  0001 C CNN "URL_FARNELL"
+F 5 "1200113" H 14300 6300 50  0001 C CNN "OC_FARNELL"
+F 6 "TM 0508 A/6" H 14300 6300 50  0001 C CNN "MPN"
+F 7 "Lumberg" H 14300 6300 50  0001 C CNN "MFR"
 	1    14300 6300
 	1    0    0    -1  
 $EndComp
@@ -1154,7 +1156,7 @@ NoConn ~ 6900 4500
 NoConn ~ 6100 4200
 NoConn ~ 5500 4200
 NoConn ~ 5200 4200
-NoConn ~ 3500 2300
+NoConn ~ 3400 2300
 NoConn ~ 9300 2200
 Wire Wire Line
 	9900 1400 9900 1600
@@ -1324,6 +1326,7 @@ F 6 "2310559" H 14300 7100 59  0001 L BNN "OC_FARNELL"
 	1    14300 7100
 	0    -1   -1   0   
 $EndComp
+NoConn ~ 3900 2300
 Wire Bus Line
 	4350 4400 4350 4800
 Wire Bus Line
