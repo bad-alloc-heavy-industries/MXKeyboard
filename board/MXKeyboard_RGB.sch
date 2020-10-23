@@ -99,8 +99,6 @@ Wire Bus Line
 	5750 3700 5750 3800
 Wire Bus Line
 	5750 3800 6000 3800
-Text GLabel 5750 4450 1    50   UnSpc ~ 0
-5V_USB
 Wire Wire Line
 	5750 4450 5750 4500
 Connection ~ 5750 4500
@@ -111,6 +109,8 @@ Wire Wire Line
 Connection ~ 5750 4600
 Wire Wire Line
 	5750 4600 5500 4600
-Text GLabel 5750 4650 3    50   UnSpc ~ 0
+Text Label 5750 4450 1    50   ~ 0
+5V_USB
+Text Label 5750 4650 3    50   ~ 0
 5V_PS2
 $EndSCHEMATC
