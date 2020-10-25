@@ -5222,4 +5222,136 @@ Wire Bus Line
 	1550 3400 1550 5500
 Wire Bus Line
 	1650 3100 19350 3100
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB1
+U 1 1 9D59DDD9
+P 12350 5050
+F 0 "STB1" V 12200 5050 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 12100 4900 50  0000 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 12350 4800 50  0001 C CNN
+F 3 "" H 12350 5050 50  0001 C CNN
+	1    12350 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB2
+U 1 1 9D5E9FF4
+P 12600 5050
+F 0 "STB2" V 12750 5050 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 12728 5005 50  0001 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 12600 4800 50  0001 C CNN
+F 3 "" H 12600 5050 50  0001 C CNN
+	1    12600 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB3
+U 1 1 9D62F4B4
+P 12500 3800
+F 0 "STB3" V 12350 3800 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 12250 3650 50  0000 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 12500 3550 50  0001 C CNN
+F 3 "" H 12500 3800 50  0001 C CNN
+	1    12500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB4
+U 1 1 9D6305AF
+P 12750 3800
+F 0 "STB4" V 12900 3800 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 12878 3755 50  0001 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 12750 3550 50  0001 C CNN
+F 3 "" H 12750 3800 50  0001 C CNN
+	1    12750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB5
+U 1 1 9D63095A
+P 17950 5350
+F 0 "STB5" V 17800 5350 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 17700 5200 50  0000 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 17950 5100 50  0001 C CNN
+F 3 "" H 17950 5350 50  0001 C CNN
+	1    17950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB6
+U 1 1 9D631531
+P 18200 5350
+F 0 "STB6" V 18350 5350 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 18328 5305 50  0001 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 18200 5100 50  0001 C CNN
+F 3 "" H 18200 5350 50  0001 C CNN
+	1    18200 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB7
+U 1 1 9E908433
+P 19550 5650
+F 0 "STB7" V 19400 5650 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 19300 5500 50  0000 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 19550 5400 50  0001 C CNN
+F 3 "" H 19550 5650 50  0001 C CNN
+	1    19550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB8
+U 1 1 9E90908D
+P 19800 5650
+F 0 "STB8" V 19950 5650 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 19928 5605 50  0001 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 19800 5400 50  0001 C CNN
+F 3 "" H 19800 5650 50  0001 C CNN
+	1    19800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB9
+U 1 1 9E90DCC1
+P 19550 6000
+F 0 "STB9" V 19400 6000 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 19300 5850 50  0000 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 19550 5750 50  0001 C CNN
+F 3 "" H 19550 6000 50  0001 C CNN
+	1    19550 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB10
+U 1 1 9E90DEB2
+P 19800 6000
+F 0 "STB10" V 19950 6000 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 19928 5955 50  0001 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 19800 5750 50  0001 C CNN
+F 3 "" H 19800 6000 50  0001 C CNN
+	1    19800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB11
+U 1 1 9E9918C2
+P 13150 5050
+F 0 "STB11" V 13000 5050 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 12900 4900 50  0000 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 13150 4800 50  0001 C CNN
+F 3 "" H 13150 5050 50  0001 C CNN
+	1    13150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB12
+U 1 1 9E9929B3
+P 13400 5050
+F 0 "STB12" V 13550 5050 50  0000 C CNN
+F 1 "Cherry_MX_Stabiliser" H 13528 5005 50  0001 L CNN
+F 2 "MXKeyboard_RGB:MX_STABILISER" H 13400 4800 50  0001 C CNN
+F 3 "" H 13400 5050 50  0001 C CNN
+	1    13400 5050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
