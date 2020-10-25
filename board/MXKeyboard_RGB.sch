@@ -113,4 +113,37 @@ Text Label 5750 4450 1    50   ~ 0
 5V_USB
 Text Label 5750 4650 3    50   ~ 0
 5V_PS2
+$Comp
+L DX_MON:トール DRG1
+U 1 1 9E88D37C
+P 8000 4450
+F 0 "DRG1" H 8000 4286 60  0001 C CNN
+F 1 "トール" H 8000 4614 60  0001 C CNN
+F 2 "トール:トール-12.9x14.8" H 8000 4450 59  0001 C CNN
+F 3 "" H 8000 4450 59  0001 C CNN
+	1    8000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 9E8917BB
+P 8500 4500
+F 0 "LOGO1" H 8500 4775 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 8500 4275 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo_11.4x12mm_SilkScreen" H 8500 4500 50  0001 C CNN
+F 3 "~" H 8500 4500 50  0001 C CNN
+	1    8500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_ESD_Large SYM1
+U 1 1 9E891CAA
+P 9000 4450
+F 0 "SYM1" H 9000 4650 50  0001 C CNN
+F 1 "SYM_ESD_Large" H 9000 4200 50  0001 C CNN
+F 2 "Symbol:WEEE-Logo_8.4x12mm_SilkScreen" H 8995 4420 50  0001 C CNN
+F 3 "~" H 8995 4420 50  0001 C CNN
+	1    9000 4450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
