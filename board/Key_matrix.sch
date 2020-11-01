@@ -2033,2833 +2033,2833 @@ Entry Wire Line
 Entry Wire Line
 	19350 3100 19450 3200
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.1 S6
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_1.1 S6
 U 1 1 39006DD0
 P 2100 5600
-AR Path="/39006DD0" Ref="S6"  Part="1" 
-AR Path="/5F5D4893/39006DD0" Ref="S6"  Part="1" 
+AR Path="/39006DD0" Ref="S6"  Part="1"
+AR Path="/5F5D4893/39006DD0" Ref="S6"  Part="1"
 F 0 "S6" H 1900 5700 59  0000 L BNN
 F 1 "LCtrl" H 2300 5500 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.25u" H 2100 5600 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.25u" H 2100 5600 50  0001 C CNN
 F 3 "" H 2100 5600 50  0001 C CNN
 	1    2100 5600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_0.9 S5
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_0.9 S5
 U 1 1 E921BBEB
 P 2100 5100
-AR Path="/E921BBEB" Ref="S5"  Part="1" 
-AR Path="/5F5D4893/E921BBEB" Ref="S5"  Part="1" 
+AR Path="/E921BBEB" Ref="S5"  Part="1"
+AR Path="/5F5D4893/E921BBEB" Ref="S5"  Part="1"
 F 0 "S5" H 1900 5200 59  0000 L BNN
 F 1 "LShift" H 2300 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.25u" H 2100 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.25u" H 2100 5100 50  0001 C CNN
 F 3 "" H 2100 5100 50  0001 C CNN
 	1    2100 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.3 S4
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_1.3 S4
 U 1 1 9362518E
 P 2100 4800
-AR Path="/9362518E" Ref="S4"  Part="1" 
-AR Path="/5F5D4893/9362518E" Ref="S4"  Part="1" 
+AR Path="/9362518E" Ref="S4"  Part="1"
+AR Path="/5F5D4893/9362518E" Ref="S4"  Part="1"
 F 0 "S4" H 1900 4900 59  0000 L BNN
 F 1 "CapsLock" H 2300 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.3" H 2100 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.3" H 2100 4800 50  0001 C CNN
 F 3 "" H 2100 4800 50  0001 C CNN
 	1    2100 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.1 S3
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_1.1 S3
 U 1 1 7F1BDAE0
 P 2100 4500
-AR Path="/7F1BDAE0" Ref="S3"  Part="1" 
-AR Path="/5F5D4893/7F1BDAE0" Ref="S3"  Part="1" 
+AR Path="/7F1BDAE0" Ref="S3"  Part="1"
+AR Path="/5F5D4893/7F1BDAE0" Ref="S3"  Part="1"
 F 0 "S3" H 1900 4600 59  0000 L BNN
 F 1 "Tab" H 2300 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.1" H 2100 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.1" H 2100 4500 50  0001 C CNN
 F 3 "" H 2100 4500 50  0001 C CNN
 	1    2100 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S2
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S2
 U 1 1 74ED010F
 P 2100 4200
-AR Path="/74ED010F" Ref="S2"  Part="1" 
-AR Path="/5F5D4893/74ED010F" Ref="S2"  Part="1" 
+AR Path="/74ED010F" Ref="S2"  Part="1"
+AR Path="/5F5D4893/74ED010F" Ref="S2"  Part="1"
 F 0 "S2" H 1900 4300 59  0000 L BNN
 F 1 "` ¬" H 2300 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2100 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 2100 4200 50  0001 C CNN
 F 3 "" H 2100 4200 50  0001 C CNN
 	1    2100 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S1
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S1
 U 1 1 E242179E
 P 2100 3700
-AR Path="/E242179E" Ref="S1"  Part="1" 
-AR Path="/5F5D4893/E242179E" Ref="S1"  Part="1" 
+AR Path="/E242179E" Ref="S1"  Part="1"
+AR Path="/5F5D4893/E242179E" Ref="S1"  Part="1"
 F 0 "S1" H 1900 3800 59  0000 L BNN
 F 1 "Esc" H 2300 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2100 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 2100 3700 50  0001 C CNN
 F 3 "" H 2100 3700 50  0001 C CNN
 	1    2100 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S12
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S12
 U 1 1 7AC63C48
 P 2900 5600
-AR Path="/7AC63C48" Ref="S12"  Part="1" 
-AR Path="/5F5D4893/7AC63C48" Ref="S12"  Part="1" 
+AR Path="/7AC63C48" Ref="S12"  Part="1"
+AR Path="/5F5D4893/7AC63C48" Ref="S12"  Part="1"
 F 0 "S12" H 2700 5700 59  0000 L BNN
 F 1 "LMeta" H 3100 5500 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.25u" H 2900 5600 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.25u" H 2900 5600 50  0001 C CNN
 F 3 "" H 2900 5600 50  0001 C CNN
 	1    2900 5600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S11
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S11
 U 1 1 0909D387
 P 2900 5100
-AR Path="/0909D387" Ref="S11"  Part="1" 
-AR Path="/5F5D4893/0909D387" Ref="S11"  Part="1" 
+AR Path="/0909D387" Ref="S11"  Part="1"
+AR Path="/5F5D4893/0909D387" Ref="S11"  Part="1"
 F 0 "S11" H 2700 5200 59  0000 L BNN
 F 1 "\\\\ |" H 3100 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2900 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 2900 5100 50  0001 C CNN
 F 3 "" H 2900 5100 50  0001 C CNN
 	1    2900 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S10
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S10
 U 1 1 21AB59D7
 P 2900 4800
-AR Path="/21AB59D7" Ref="S10"  Part="1" 
-AR Path="/5F5D4893/21AB59D7" Ref="S10"  Part="1" 
+AR Path="/21AB59D7" Ref="S10"  Part="1"
+AR Path="/5F5D4893/21AB59D7" Ref="S10"  Part="1"
 F 0 "S10" H 2700 4900 59  0000 L BNN
 F 1 "a" H 3100 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2900 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 2900 4800 50  0001 C CNN
 F 3 "" H 2900 4800 50  0001 C CNN
 	1    2900 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S9
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S9
 U 1 1 DC464A95
 P 2900 4500
-AR Path="/DC464A95" Ref="S9"  Part="1" 
-AR Path="/5F5D4893/DC464A95" Ref="S9"  Part="1" 
+AR Path="/DC464A95" Ref="S9"  Part="1"
+AR Path="/5F5D4893/DC464A95" Ref="S9"  Part="1"
 F 0 "S9" H 2700 4600 59  0000 L BNN
 F 1 "q" H 3100 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2900 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 2900 4500 50  0001 C CNN
 F 3 "" H 2900 4500 50  0001 C CNN
 	1    2900 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S8
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S8
 U 1 1 64BE99A7
 P 2900 4200
-AR Path="/64BE99A7" Ref="S8"  Part="1" 
-AR Path="/5F5D4893/64BE99A7" Ref="S8"  Part="1" 
+AR Path="/64BE99A7" Ref="S8"  Part="1"
+AR Path="/5F5D4893/64BE99A7" Ref="S8"  Part="1"
 F 0 "S8" H 2700 4300 59  0000 L BNN
 F 1 "1" H 3100 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2900 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 2900 4200 50  0001 C CNN
 F 3 "" H 2900 4200 50  0001 C CNN
 	1    2900 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S7
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S7
 U 1 1 46F8529D
 P 2900 3700
-AR Path="/46F8529D" Ref="S7"  Part="1" 
-AR Path="/5F5D4893/46F8529D" Ref="S7"  Part="1" 
+AR Path="/46F8529D" Ref="S7"  Part="1"
+AR Path="/5F5D4893/46F8529D" Ref="S7"  Part="1"
 F 0 "S7" H 2700 3800 59  0000 L BNN
 F 1 "F1" H 3100 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 2900 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 2900 3700 50  0001 C CNN
 F 3 "" H 2900 3700 50  0001 C CNN
 	1    2900 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.1 S18
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_1.1 S18
 U 1 1 9D02EBC1
 P 3700 5600
-AR Path="/9D02EBC1" Ref="S18"  Part="1" 
-AR Path="/5F5D4893/9D02EBC1" Ref="S18"  Part="1" 
+AR Path="/9D02EBC1" Ref="S18"  Part="1"
+AR Path="/5F5D4893/9D02EBC1" Ref="S18"  Part="1"
 F 0 "S18" H 3500 5700 59  0000 L BNN
 F 1 "LAlt" H 3900 5500 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.25u" H 3700 5600 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.25u" H 3700 5600 50  0001 C CNN
 F 3 "" H 3700 5600 50  0001 C CNN
 	1    3700 5600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S17
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S17
 U 1 1 84207D4C
 P 3700 5100
-AR Path="/84207D4C" Ref="S17"  Part="1" 
-AR Path="/5F5D4893/84207D4C" Ref="S17"  Part="1" 
+AR Path="/84207D4C" Ref="S17"  Part="1"
+AR Path="/5F5D4893/84207D4C" Ref="S17"  Part="1"
 F 0 "S17" H 3500 5200 59  0000 L BNN
 F 1 "z" H 3900 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 3700 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 3700 5100 50  0001 C CNN
 F 3 "" H 3700 5100 50  0001 C CNN
 	1    3700 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S16
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S16
 U 1 1 9CFB7B82
 P 3700 4800
-AR Path="/9CFB7B82" Ref="S16"  Part="1" 
-AR Path="/5F5D4893/9CFB7B82" Ref="S16"  Part="1" 
+AR Path="/9CFB7B82" Ref="S16"  Part="1"
+AR Path="/5F5D4893/9CFB7B82" Ref="S16"  Part="1"
 F 0 "S16" H 3500 4900 59  0000 L BNN
 F 1 "s" H 3900 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 3700 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 3700 4800 50  0001 C CNN
 F 3 "" H 3700 4800 50  0001 C CNN
 	1    3700 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S15
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S15
 U 1 1 86082226
 P 3700 4500
-AR Path="/86082226" Ref="S15"  Part="1" 
-AR Path="/5F5D4893/86082226" Ref="S15"  Part="1" 
+AR Path="/86082226" Ref="S15"  Part="1"
+AR Path="/5F5D4893/86082226" Ref="S15"  Part="1"
 F 0 "S15" H 3500 4600 59  0000 L BNN
 F 1 "w" H 3900 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 3700 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 3700 4500 50  0001 C CNN
 F 3 "" H 3700 4500 50  0001 C CNN
 	1    3700 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S14
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S14
 U 1 1 B76BFAC6
 P 3700 4200
-AR Path="/B76BFAC6" Ref="S14"  Part="1" 
-AR Path="/5F5D4893/B76BFAC6" Ref="S14"  Part="1" 
+AR Path="/B76BFAC6" Ref="S14"  Part="1"
+AR Path="/5F5D4893/B76BFAC6" Ref="S14"  Part="1"
 F 0 "S14" H 3500 4300 59  0000 L BNN
 F 1 "2" H 3900 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 3700 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 3700 4200 50  0001 C CNN
 F 3 "" H 3700 4200 50  0001 C CNN
 	1    3700 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S13
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S13
 U 1 1 1BB0FAFC
 P 3700 3700
-AR Path="/1BB0FAFC" Ref="S13"  Part="1" 
-AR Path="/5F5D4893/1BB0FAFC" Ref="S13"  Part="1" 
+AR Path="/1BB0FAFC" Ref="S13"  Part="1"
+AR Path="/5F5D4893/1BB0FAFC" Ref="S13"  Part="1"
 F 0 "S13" H 3500 3800 59  0000 L BNN
 F 1 "F2" H 3900 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 3700 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 3700 3700 50  0001 C CNN
 F 3 "" H 3700 3700 50  0001 C CNN
 	1    3700 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_4.45 S39
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_4.45 S39
 U 1 1 BC504E0B
 P 6900 5600
-AR Path="/BC504E0B" Ref="S39"  Part="1" 
-AR Path="/5F5D4893/BC504E0B" Ref="S39"  Part="1" 
+AR Path="/BC504E0B" Ref="S39"  Part="1"
+AR Path="/5F5D4893/BC504E0B" Ref="S39"  Part="1"
 F 0 "S39" H 6700 5700 59  0000 L BNN
 F 1 "Space" H 7100 5500 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_4.45" H 6900 5600 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_4.45" H 6900 5600 50  0001 C CNN
 F 3 "" H 6900 5600 50  0001 C CNN
 	1    6900 5600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S23
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S23
 U 1 1 7A8FB1E1
 P 4500 5100
-AR Path="/7A8FB1E1" Ref="S23"  Part="1" 
-AR Path="/5F5D4893/7A8FB1E1" Ref="S23"  Part="1" 
+AR Path="/7A8FB1E1" Ref="S23"  Part="1"
+AR Path="/5F5D4893/7A8FB1E1" Ref="S23"  Part="1"
 F 0 "S23" H 4300 5200 59  0000 L BNN
 F 1 "x" H 4700 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 4500 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 4500 5100 50  0001 C CNN
 F 3 "" H 4500 5100 50  0001 C CNN
 	1    4500 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S22
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S22
 U 1 1 9FA30F68
 P 4500 4800
-AR Path="/9FA30F68" Ref="S22"  Part="1" 
-AR Path="/5F5D4893/9FA30F68" Ref="S22"  Part="1" 
+AR Path="/9FA30F68" Ref="S22"  Part="1"
+AR Path="/5F5D4893/9FA30F68" Ref="S22"  Part="1"
 F 0 "S22" H 4300 4900 59  0000 L BNN
 F 1 "d" H 4700 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 4500 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 4500 4800 50  0001 C CNN
 F 3 "" H 4500 4800 50  0001 C CNN
 	1    4500 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S21
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S21
 U 1 1 10ECEC49
 P 4500 4500
-AR Path="/10ECEC49" Ref="S21"  Part="1" 
-AR Path="/5F5D4893/10ECEC49" Ref="S21"  Part="1" 
+AR Path="/10ECEC49" Ref="S21"  Part="1"
+AR Path="/5F5D4893/10ECEC49" Ref="S21"  Part="1"
 F 0 "S21" H 4300 4600 59  0000 L BNN
 F 1 "e" H 4700 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 4500 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 4500 4500 50  0001 C CNN
 F 3 "" H 4500 4500 50  0001 C CNN
 	1    4500 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S20
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S20
 U 1 1 20DF8B59
 P 4500 4200
-AR Path="/20DF8B59" Ref="S20"  Part="1" 
-AR Path="/5F5D4893/20DF8B59" Ref="S20"  Part="1" 
+AR Path="/20DF8B59" Ref="S20"  Part="1"
+AR Path="/5F5D4893/20DF8B59" Ref="S20"  Part="1"
 F 0 "S20" H 4300 4300 59  0000 L BNN
 F 1 "3" H 4700 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 4500 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 4500 4200 50  0001 C CNN
 F 3 "" H 4500 4200 50  0001 C CNN
 	1    4500 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S19
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S19
 U 1 1 B9D720DF
 P 4500 3700
-AR Path="/B9D720DF" Ref="S19"  Part="1" 
-AR Path="/5F5D4893/B9D720DF" Ref="S19"  Part="1" 
+AR Path="/B9D720DF" Ref="S19"  Part="1"
+AR Path="/5F5D4893/B9D720DF" Ref="S19"  Part="1"
 F 0 "S19" H 4300 3800 59  0000 L BNN
 F 1 "F3" H 4700 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 4500 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 4500 3700 50  0001 C CNN
 F 3 "" H 4500 3700 50  0001 C CNN
 	1    4500 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S28
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S28
 U 1 1 3598A5AF
 P 5300 5100
-AR Path="/3598A5AF" Ref="S28"  Part="1" 
-AR Path="/5F5D4893/3598A5AF" Ref="S28"  Part="1" 
+AR Path="/3598A5AF" Ref="S28"  Part="1"
+AR Path="/5F5D4893/3598A5AF" Ref="S28"  Part="1"
 F 0 "S28" H 5100 5200 59  0000 L BNN
 F 1 "c" H 5500 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 5300 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 5300 5100 50  0001 C CNN
 F 3 "" H 5300 5100 50  0001 C CNN
 	1    5300 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S27
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S27
 U 1 1 0E6B34C4
 P 5300 4800
-AR Path="/0E6B34C4" Ref="S27"  Part="1" 
-AR Path="/5F5D4893/0E6B34C4" Ref="S27"  Part="1" 
+AR Path="/0E6B34C4" Ref="S27"  Part="1"
+AR Path="/5F5D4893/0E6B34C4" Ref="S27"  Part="1"
 F 0 "S27" H 5100 4900 59  0000 L BNN
 F 1 "f" H 5500 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 5300 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 5300 4800 50  0001 C CNN
 F 3 "" H 5300 4800 50  0001 C CNN
 	1    5300 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S26
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S26
 U 1 1 EC1552D0
 P 5300 4500
-AR Path="/EC1552D0" Ref="S26"  Part="1" 
-AR Path="/5F5D4893/EC1552D0" Ref="S26"  Part="1" 
+AR Path="/EC1552D0" Ref="S26"  Part="1"
+AR Path="/5F5D4893/EC1552D0" Ref="S26"  Part="1"
 F 0 "S26" H 5100 4600 59  0000 L BNN
 F 1 "r" H 5500 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 5300 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 5300 4500 50  0001 C CNN
 F 3 "" H 5300 4500 50  0001 C CNN
 	1    5300 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S25
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S25
 U 1 1 80F00705
 P 5300 4200
-AR Path="/80F00705" Ref="S25"  Part="1" 
-AR Path="/5F5D4893/80F00705" Ref="S25"  Part="1" 
+AR Path="/80F00705" Ref="S25"  Part="1"
+AR Path="/5F5D4893/80F00705" Ref="S25"  Part="1"
 F 0 "S25" H 5100 4300 59  0000 L BNN
 F 1 "4" H 5500 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 5300 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 5300 4200 50  0001 C CNN
 F 3 "" H 5300 4200 50  0001 C CNN
 	1    5300 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S33
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S33
 U 1 1 66273E15
 P 6100 5100
-AR Path="/66273E15" Ref="S33"  Part="1" 
-AR Path="/5F5D4893/66273E15" Ref="S33"  Part="1" 
+AR Path="/66273E15" Ref="S33"  Part="1"
+AR Path="/5F5D4893/66273E15" Ref="S33"  Part="1"
 F 0 "S33" H 5900 5200 59  0000 L BNN
 F 1 "v" H 6300 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6100 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 6100 5100 50  0001 C CNN
 F 3 "" H 6100 5100 50  0001 C CNN
 	1    6100 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S32
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S32
 U 1 1 E4891926
 P 6100 4800
-AR Path="/E4891926" Ref="S32"  Part="1" 
-AR Path="/5F5D4893/E4891926" Ref="S32"  Part="1" 
+AR Path="/E4891926" Ref="S32"  Part="1"
+AR Path="/5F5D4893/E4891926" Ref="S32"  Part="1"
 F 0 "S32" H 5900 4900 59  0000 L BNN
 F 1 "g" H 6300 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6100 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 6100 4800 50  0001 C CNN
 F 3 "" H 6100 4800 50  0001 C CNN
 	1    6100 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S31
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S31
 U 1 1 96320B9E
 P 6100 4500
-AR Path="/96320B9E" Ref="S31"  Part="1" 
-AR Path="/5F5D4893/96320B9E" Ref="S31"  Part="1" 
+AR Path="/96320B9E" Ref="S31"  Part="1"
+AR Path="/5F5D4893/96320B9E" Ref="S31"  Part="1"
 F 0 "S31" H 5900 4600 59  0000 L BNN
 F 1 "t" H 6300 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6100 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 6100 4500 50  0001 C CNN
 F 3 "" H 6100 4500 50  0001 C CNN
 	1    6100 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S30
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S30
 U 1 1 DE9B1E2C
 P 6100 4200
-AR Path="/DE9B1E2C" Ref="S30"  Part="1" 
-AR Path="/5F5D4893/DE9B1E2C" Ref="S30"  Part="1" 
+AR Path="/DE9B1E2C" Ref="S30"  Part="1"
+AR Path="/5F5D4893/DE9B1E2C" Ref="S30"  Part="1"
 F 0 "S30" H 5900 4300 59  0000 L BNN
 F 1 "5" H 6300 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6100 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 6100 4200 50  0001 C CNN
 F 3 "" H 6100 4200 50  0001 C CNN
 	1    6100 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S24
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S24
 U 1 1 D2ED4BE2
 P 5300 3700
-AR Path="/D2ED4BE2" Ref="S24"  Part="1" 
-AR Path="/5F5D4893/D2ED4BE2" Ref="S24"  Part="1" 
+AR Path="/D2ED4BE2" Ref="S24"  Part="1"
+AR Path="/5F5D4893/D2ED4BE2" Ref="S24"  Part="1"
 F 0 "S24" H 5100 3800 59  0000 L BNN
 F 1 "F4" H 5500 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 5300 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 5300 3700 50  0001 C CNN
 F 3 "" H 5300 3700 50  0001 C CNN
 	1    5300 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S38
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S38
 U 1 1 0B166F96
 P 6900 5100
-AR Path="/0B166F96" Ref="S38"  Part="1" 
-AR Path="/5F5D4893/0B166F96" Ref="S38"  Part="1" 
+AR Path="/0B166F96" Ref="S38"  Part="1"
+AR Path="/5F5D4893/0B166F96" Ref="S38"  Part="1"
 F 0 "S38" H 6700 5200 59  0000 L BNN
 F 1 "b" H 7100 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6900 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 6900 5100 50  0001 C CNN
 F 3 "" H 6900 5100 50  0001 C CNN
 	1    6900 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S37
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S37
 U 1 1 B3A7698C
 P 6900 4800
-AR Path="/B3A7698C" Ref="S37"  Part="1" 
-AR Path="/5F5D4893/B3A7698C" Ref="S37"  Part="1" 
+AR Path="/B3A7698C" Ref="S37"  Part="1"
+AR Path="/5F5D4893/B3A7698C" Ref="S37"  Part="1"
 F 0 "S37" H 6700 4900 59  0000 L BNN
 F 1 "h" H 7100 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6900 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 6900 4800 50  0001 C CNN
 F 3 "" H 6900 4800 50  0001 C CNN
 	1    6900 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S36
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S36
 U 1 1 2CC54D9A
 P 6900 4500
-AR Path="/2CC54D9A" Ref="S36"  Part="1" 
-AR Path="/5F5D4893/2CC54D9A" Ref="S36"  Part="1" 
+AR Path="/2CC54D9A" Ref="S36"  Part="1"
+AR Path="/5F5D4893/2CC54D9A" Ref="S36"  Part="1"
 F 0 "S36" H 6700 4600 59  0000 L BNN
 F 1 "y" H 7100 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6900 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 6900 4500 50  0001 C CNN
 F 3 "" H 6900 4500 50  0001 C CNN
 	1    6900 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S35
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S35
 U 1 1 2435C087
 P 6900 4200
-AR Path="/2435C087" Ref="S35"  Part="1" 
-AR Path="/5F5D4893/2435C087" Ref="S35"  Part="1" 
+AR Path="/2435C087" Ref="S35"  Part="1"
+AR Path="/5F5D4893/2435C087" Ref="S35"  Part="1"
 F 0 "S35" H 6700 4300 59  0000 L BNN
 F 1 "6" H 7100 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6900 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 6900 4200 50  0001 C CNN
 F 3 "" H 6900 4200 50  0001 C CNN
 	1    6900 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S29
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S29
 U 1 1 B1700775
 P 6100 3700
-AR Path="/B1700775" Ref="S29"  Part="1" 
-AR Path="/5F5D4893/B1700775" Ref="S29"  Part="1" 
+AR Path="/B1700775" Ref="S29"  Part="1"
+AR Path="/5F5D4893/B1700775" Ref="S29"  Part="1"
 F 0 "S29" H 5900 3800 59  0000 L BNN
 F 1 "F5" H 6300 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6100 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 6100 3700 50  0001 C CNN
 F 3 "" H 6100 3700 50  0001 C CNN
 	1    6100 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S44
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S44
 U 1 1 FAB6B405
 P 7700 5100
-AR Path="/FAB6B405" Ref="S44"  Part="1" 
-AR Path="/5F5D4893/FAB6B405" Ref="S44"  Part="1" 
+AR Path="/FAB6B405" Ref="S44"  Part="1"
+AR Path="/5F5D4893/FAB6B405" Ref="S44"  Part="1"
 F 0 "S44" H 7500 5200 59  0000 L BNN
 F 1 "n" H 7900 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 7700 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 7700 5100 50  0001 C CNN
 F 3 "" H 7700 5100 50  0001 C CNN
 	1    7700 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S43
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S43
 U 1 1 18AA6FD4
 P 7700 4800
-AR Path="/18AA6FD4" Ref="S43"  Part="1" 
-AR Path="/5F5D4893/18AA6FD4" Ref="S43"  Part="1" 
+AR Path="/18AA6FD4" Ref="S43"  Part="1"
+AR Path="/5F5D4893/18AA6FD4" Ref="S43"  Part="1"
 F 0 "S43" H 7500 4900 59  0000 L BNN
 F 1 "j" H 7900 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 7700 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 7700 4800 50  0001 C CNN
 F 3 "" H 7700 4800 50  0001 C CNN
 	1    7700 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S42
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S42
 U 1 1 A08389E7
 P 7700 4500
-AR Path="/A08389E7" Ref="S42"  Part="1" 
-AR Path="/5F5D4893/A08389E7" Ref="S42"  Part="1" 
+AR Path="/A08389E7" Ref="S42"  Part="1"
+AR Path="/5F5D4893/A08389E7" Ref="S42"  Part="1"
 F 0 "S42" H 7500 4600 59  0000 L BNN
 F 1 "u" H 7900 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 7700 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 7700 4500 50  0001 C CNN
 F 3 "" H 7700 4500 50  0001 C CNN
 	1    7700 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S41
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S41
 U 1 1 6F40A970
 P 7700 4200
-AR Path="/6F40A970" Ref="S41"  Part="1" 
-AR Path="/5F5D4893/6F40A970" Ref="S41"  Part="1" 
+AR Path="/6F40A970" Ref="S41"  Part="1"
+AR Path="/5F5D4893/6F40A970" Ref="S41"  Part="1"
 F 0 "S41" H 7500 4300 59  0000 L BNN
 F 1 "7" H 7900 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 7700 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 7700 4200 50  0001 C CNN
 F 3 "" H 7700 4200 50  0001 C CNN
 	1    7700 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S34
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S34
 U 1 1 97E46C11
 P 6900 3700
-AR Path="/97E46C11" Ref="S34"  Part="1" 
-AR Path="/5F5D4893/97E46C11" Ref="S34"  Part="1" 
+AR Path="/97E46C11" Ref="S34"  Part="1"
+AR Path="/5F5D4893/97E46C11" Ref="S34"  Part="1"
 F 0 "S34" H 6700 3800 59  0000 L BNN
 F 1 "F6" H 7100 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 6900 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 6900 3700 50  0001 C CNN
 F 3 "" H 6900 3700 50  0001 C CNN
 	1    6900 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S49
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S49
 U 1 1 2352CFBA
 P 8500 5100
-AR Path="/2352CFBA" Ref="S49"  Part="1" 
-AR Path="/5F5D4893/2352CFBA" Ref="S49"  Part="1" 
+AR Path="/2352CFBA" Ref="S49"  Part="1"
+AR Path="/5F5D4893/2352CFBA" Ref="S49"  Part="1"
 F 0 "S49" H 8300 5200 59  0000 L BNN
 F 1 "m" H 8700 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 8500 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 8500 5100 50  0001 C CNN
 F 3 "" H 8500 5100 50  0001 C CNN
 	1    8500 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S48
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S48
 U 1 1 D5580955
 P 8500 4800
-AR Path="/D5580955" Ref="S48"  Part="1" 
-AR Path="/5F5D4893/D5580955" Ref="S48"  Part="1" 
+AR Path="/D5580955" Ref="S48"  Part="1"
+AR Path="/5F5D4893/D5580955" Ref="S48"  Part="1"
 F 0 "S48" H 8300 4900 59  0000 L BNN
 F 1 "k" H 8700 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 8500 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 8500 4800 50  0001 C CNN
 F 3 "" H 8500 4800 50  0001 C CNN
 	1    8500 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S47
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S47
 U 1 1 4032DEA9
 P 8500 4500
-AR Path="/4032DEA9" Ref="S47"  Part="1" 
-AR Path="/5F5D4893/4032DEA9" Ref="S47"  Part="1" 
+AR Path="/4032DEA9" Ref="S47"  Part="1"
+AR Path="/5F5D4893/4032DEA9" Ref="S47"  Part="1"
 F 0 "S47" H 8300 4600 59  0000 L BNN
 F 1 "i" H 8700 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 8500 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 8500 4500 50  0001 C CNN
 F 3 "" H 8500 4500 50  0001 C CNN
 	1    8500 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S46
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S46
 U 1 1 6AE3F873
 P 8500 4200
-AR Path="/6AE3F873" Ref="S46"  Part="1" 
-AR Path="/5F5D4893/6AE3F873" Ref="S46"  Part="1" 
+AR Path="/6AE3F873" Ref="S46"  Part="1"
+AR Path="/5F5D4893/6AE3F873" Ref="S46"  Part="1"
 F 0 "S46" H 8300 4300 59  0000 L BNN
 F 1 "8" H 8700 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 8500 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 8500 4200 50  0001 C CNN
 F 3 "" H 8500 4200 50  0001 C CNN
 	1    8500 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S40
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S40
 U 1 1 84F22946
 P 7700 3700
-AR Path="/84F22946" Ref="S40"  Part="1" 
-AR Path="/5F5D4893/84F22946" Ref="S40"  Part="1" 
+AR Path="/84F22946" Ref="S40"  Part="1"
+AR Path="/5F5D4893/84F22946" Ref="S40"  Part="1"
 F 0 "S40" H 7500 3800 59  0000 L BNN
 F 1 "F7" H 7900 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 7700 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 7700 3700 50  0001 C CNN
 F 3 "" H 7700 3700 50  0001 C CNN
 	1    7700 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S54
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S54
 U 1 1 73AB48F2
 P 9300 5100
-AR Path="/73AB48F2" Ref="S54"  Part="1" 
-AR Path="/5F5D4893/73AB48F2" Ref="S54"  Part="1" 
+AR Path="/73AB48F2" Ref="S54"  Part="1"
+AR Path="/5F5D4893/73AB48F2" Ref="S54"  Part="1"
 F 0 "S54" H 9100 5200 59  0000 L BNN
 F 1 ", <" H 9500 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 9300 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 9300 5100 50  0001 C CNN
 F 3 "" H 9300 5100 50  0001 C CNN
 	1    9300 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S53
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S53
 U 1 1 BB154378
 P 9300 4800
-AR Path="/BB154378" Ref="S53"  Part="1" 
-AR Path="/5F5D4893/BB154378" Ref="S53"  Part="1" 
+AR Path="/BB154378" Ref="S53"  Part="1"
+AR Path="/5F5D4893/BB154378" Ref="S53"  Part="1"
 F 0 "S53" H 9100 4900 59  0000 L BNN
 F 1 "l" H 9500 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 9300 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 9300 4800 50  0001 C CNN
 F 3 "" H 9300 4800 50  0001 C CNN
 	1    9300 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S52
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S52
 U 1 1 8D142799
 P 9300 4500
-AR Path="/8D142799" Ref="S52"  Part="1" 
-AR Path="/5F5D4893/8D142799" Ref="S52"  Part="1" 
+AR Path="/8D142799" Ref="S52"  Part="1"
+AR Path="/5F5D4893/8D142799" Ref="S52"  Part="1"
 F 0 "S52" H 9100 4600 59  0000 L BNN
 F 1 "o" H 9500 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 9300 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 9300 4500 50  0001 C CNN
 F 3 "" H 9300 4500 50  0001 C CNN
 	1    9300 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S51
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S51
 U 1 1 F6E1B535
 P 9300 4200
-AR Path="/F6E1B535" Ref="S51"  Part="1" 
-AR Path="/5F5D4893/F6E1B535" Ref="S51"  Part="1" 
+AR Path="/F6E1B535" Ref="S51"  Part="1"
+AR Path="/5F5D4893/F6E1B535" Ref="S51"  Part="1"
 F 0 "S51" H 9100 4300 59  0000 L BNN
 F 1 "9" H 9500 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 9300 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 9300 4200 50  0001 C CNN
 F 3 "" H 9300 4200 50  0001 C CNN
 	1    9300 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S45
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S45
 U 1 1 77053871
 P 8500 3700
-AR Path="/77053871" Ref="S45"  Part="1" 
-AR Path="/5F5D4893/77053871" Ref="S45"  Part="1" 
+AR Path="/77053871" Ref="S45"  Part="1"
+AR Path="/5F5D4893/77053871" Ref="S45"  Part="1"
 F 0 "S45" H 8300 3800 59  0000 L BNN
 F 1 "F8" H 8700 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 8500 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 8500 3700 50  0001 C CNN
 F 3 "" H 8500 3700 50  0001 C CNN
 	1    8500 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S60
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S60
 U 1 1 CDCC5306
 P 10100 5100
-AR Path="/CDCC5306" Ref="S60"  Part="1" 
-AR Path="/5F5D4893/CDCC5306" Ref="S60"  Part="1" 
+AR Path="/CDCC5306" Ref="S60"  Part="1"
+AR Path="/5F5D4893/CDCC5306" Ref="S60"  Part="1"
 F 0 "S60" H 9900 5200 59  0000 L BNN
 F 1 ". >" H 10300 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10100 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 10100 5100 50  0001 C CNN
 F 3 "" H 10100 5100 50  0001 C CNN
 	1    10100 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S59
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S59
 U 1 1 31C7DACE
 P 10100 4800
-AR Path="/31C7DACE" Ref="S59"  Part="1" 
-AR Path="/5F5D4893/31C7DACE" Ref="S59"  Part="1" 
+AR Path="/31C7DACE" Ref="S59"  Part="1"
+AR Path="/5F5D4893/31C7DACE" Ref="S59"  Part="1"
 F 0 "S59" H 9900 4900 59  0000 L BNN
 F 1 "; :" H 10300 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10100 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 10100 4800 50  0001 C CNN
 F 3 "" H 10100 4800 50  0001 C CNN
 	1    10100 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S58
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S58
 U 1 1 0BA1352C
 P 10100 4500
-AR Path="/0BA1352C" Ref="S58"  Part="1" 
-AR Path="/5F5D4893/0BA1352C" Ref="S58"  Part="1" 
+AR Path="/0BA1352C" Ref="S58"  Part="1"
+AR Path="/5F5D4893/0BA1352C" Ref="S58"  Part="1"
 F 0 "S58" H 9900 4600 59  0000 L BNN
 F 1 "p" H 10300 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10100 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 10100 4500 50  0001 C CNN
 F 3 "" H 10100 4500 50  0001 C CNN
 	1    10100 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S57
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S57
 U 1 1 4D8D656F
 P 10100 4200
-AR Path="/4D8D656F" Ref="S57"  Part="1" 
-AR Path="/5F5D4893/4D8D656F" Ref="S57"  Part="1" 
+AR Path="/4D8D656F" Ref="S57"  Part="1"
+AR Path="/5F5D4893/4D8D656F" Ref="S57"  Part="1"
 F 0 "S57" H 9900 4300 59  0000 L BNN
 F 1 "0" H 10300 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10100 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 10100 4200 50  0001 C CNN
 F 3 "" H 10100 4200 50  0001 C CNN
 	1    10100 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S50
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S50
 U 1 1 60854874
 P 9300 3700
-AR Path="/60854874" Ref="S50"  Part="1" 
-AR Path="/5F5D4893/60854874" Ref="S50"  Part="1" 
+AR Path="/60854874" Ref="S50"  Part="1"
+AR Path="/5F5D4893/60854874" Ref="S50"  Part="1"
 F 0 "S50" H 9100 3800 59  0000 L BNN
 F 1 "F9" H 9500 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 9300 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 9300 3700 50  0001 C CNN
 F 3 "" H 9300 3700 50  0001 C CNN
 	1    9300 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.1 S55
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_1.1 S55
 U 1 1 DEB75B43
 P 9300 5600
-AR Path="/DEB75B43" Ref="S55"  Part="1" 
-AR Path="/5F5D4893/DEB75B43" Ref="S55"  Part="1" 
+AR Path="/DEB75B43" Ref="S55"  Part="1"
+AR Path="/5F5D4893/DEB75B43" Ref="S55"  Part="1"
 F 0 "S55" H 9100 5700 59  0000 L BNN
 F 1 "RAlt_Gr" H 9500 5500 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.25u" H 9300 5600 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.25u" H 9300 5600 50  0001 C CNN
 F 3 "" H 9300 5600 50  0001 C CNN
 	1    9300 5600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S61
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S61
 U 1 1 54DAB206
 P 10100 5600
-AR Path="/54DAB206" Ref="S61"  Part="1" 
-AR Path="/5F5D4893/54DAB206" Ref="S61"  Part="1" 
+AR Path="/54DAB206" Ref="S61"  Part="1"
+AR Path="/5F5D4893/54DAB206" Ref="S61"  Part="1"
 F 0 "S61" H 9900 5700 59  0000 L BNN
 F 1 "RMeta" H 10300 5500 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.25u" H 10100 5600 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.25u" H 10100 5600 50  0001 C CNN
 F 3 "" H 10100 5600 50  0001 C CNN
 	1    10100 5600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S56
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S56
 U 1 1 18C6B39E
 P 10100 3700
-AR Path="/18C6B39E" Ref="S56"  Part="1" 
-AR Path="/5F5D4893/18C6B39E" Ref="S56"  Part="1" 
+AR Path="/18C6B39E" Ref="S56"  Part="1"
+AR Path="/5F5D4893/18C6B39E" Ref="S56"  Part="1"
 F 0 "S56" H 9900 3800 59  0000 L BNN
 F 1 "F10" H 10300 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10100 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 10100 3700 50  0001 C CNN
 F 3 "" H 10100 3700 50  0001 C CNN
 	1    10100 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S62
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S62
 U 1 1 CA9D74BE
 P 10900 3700
-AR Path="/CA9D74BE" Ref="S62"  Part="1" 
-AR Path="/5F5D4893/CA9D74BE" Ref="S62"  Part="1" 
+AR Path="/CA9D74BE" Ref="S62"  Part="1"
+AR Path="/5F5D4893/CA9D74BE" Ref="S62"  Part="1"
 F 0 "S62" H 10700 3800 59  0000 L BNN
 F 1 "F11" H 11100 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10900 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 10900 3700 50  0001 C CNN
 F 3 "" H 10900 3700 50  0001 C CNN
 	1    10900 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S65
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S65
 U 1 1 D0DFD69C
 P 10900 4800
-AR Path="/D0DFD69C" Ref="S65"  Part="1" 
-AR Path="/5F5D4893/D0DFD69C" Ref="S65"  Part="1" 
+AR Path="/D0DFD69C" Ref="S65"  Part="1"
+AR Path="/5F5D4893/D0DFD69C" Ref="S65"  Part="1"
 F 0 "S65" H 10700 4900 59  0000 L BNN
 F 1 "' @" H 11100 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10900 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 10900 4800 50  0001 C CNN
 F 3 "" H 10900 4800 50  0001 C CNN
 	1    10900 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S64
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S64
 U 1 1 5B3335D6
 P 10900 4500
-AR Path="/5B3335D6" Ref="S64"  Part="1" 
-AR Path="/5F5D4893/5B3335D6" Ref="S64"  Part="1" 
+AR Path="/5B3335D6" Ref="S64"  Part="1"
+AR Path="/5F5D4893/5B3335D6" Ref="S64"  Part="1"
 F 0 "S64" H 10700 4600 59  0000 L BNN
 F 1 "[ {" H 11100 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10900 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 10900 4500 50  0001 C CNN
 F 3 "" H 10900 4500 50  0001 C CNN
 	1    10900 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S63
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S63
 U 1 1 6B759930
 P 10900 4200
-AR Path="/6B759930" Ref="S63"  Part="1" 
-AR Path="/5F5D4893/6B759930" Ref="S63"  Part="1" 
+AR Path="/6B759930" Ref="S63"  Part="1"
+AR Path="/5F5D4893/6B759930" Ref="S63"  Part="1"
 F 0 "S63" H 10700 4300 59  0000 L BNN
 F 1 "- _" H 11100 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10900 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 10900 4200 50  0001 C CNN
 F 3 "" H 10900 4200 50  0001 C CNN
 	1    10900 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S71
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S71
 U 1 1 5CFD4A7C
 P 11700 4800
-AR Path="/5CFD4A7C" Ref="S71"  Part="1" 
-AR Path="/5F5D4893/5CFD4A7C" Ref="S71"  Part="1" 
+AR Path="/5CFD4A7C" Ref="S71"  Part="1"
+AR Path="/5F5D4893/5CFD4A7C" Ref="S71"  Part="1"
 F 0 "S71" H 11500 4900 59  0000 L BNN
 F 1 "# ~~" H 11900 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 11700 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 11700 4800 50  0001 C CNN
 F 3 "" H 11700 4800 50  0001 C CNN
 	1    11700 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S70
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S70
 U 1 1 F769DD2F
 P 11700 4500
-AR Path="/F769DD2F" Ref="S70"  Part="1" 
-AR Path="/5F5D4893/F769DD2F" Ref="S70"  Part="1" 
+AR Path="/F769DD2F" Ref="S70"  Part="1"
+AR Path="/5F5D4893/F769DD2F" Ref="S70"  Part="1"
 F 0 "S70" H 11500 4600 59  0000 L BNN
 F 1 "] }" H 11900 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 11700 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 11700 4500 50  0001 C CNN
 F 3 "" H 11700 4500 50  0001 C CNN
 	1    11700 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S69
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S69
 U 1 1 8F6F7655
 P 11700 4200
-AR Path="/8F6F7655" Ref="S69"  Part="1" 
-AR Path="/5F5D4893/8F6F7655" Ref="S69"  Part="1" 
+AR Path="/8F6F7655" Ref="S69"  Part="1"
+AR Path="/5F5D4893/8F6F7655" Ref="S69"  Part="1"
 F 0 "S69" H 11500 4300 59  0000 L BNN
 F 1 "= +" H 11900 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 11700 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 11700 4200 50  0001 C CNN
 F 3 "" H 11700 4200 50  0001 C CNN
 	1    11700 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S66
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S66
 U 1 1 EE796BDA
 P 10900 5100
-AR Path="/EE796BDA" Ref="S66"  Part="1" 
-AR Path="/5F5D4893/EE796BDA" Ref="S66"  Part="1" 
+AR Path="/EE796BDA" Ref="S66"  Part="1"
+AR Path="/5F5D4893/EE796BDA" Ref="S66"  Part="1"
 F 0 "S66" H 10700 5200 59  0000 L BNN
 F 1 "/ ?" H 11100 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 10900 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 10900 5100 50  0001 C CNN
 F 3 "" H 10900 5100 50  0001 C CNN
 	1    10900 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S68
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S68
 U 1 1 1F782065
 P 11700 3700
-AR Path="/1F782065" Ref="S68"  Part="1" 
-AR Path="/5F5D4893/1F782065" Ref="S68"  Part="1" 
+AR Path="/1F782065" Ref="S68"  Part="1"
+AR Path="/5F5D4893/1F782065" Ref="S68"  Part="1"
 F 0 "S68" H 11500 3800 59  0000 L BNN
 F 1 "F12" H 11900 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 11700 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 11700 3700 50  0001 C CNN
 F 3 "" H 11700 3700 50  0001 C CNN
 	1    11700 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_2 S72
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_2 S72
 U 1 1 616BB05F
 P 11700 5100
-AR Path="/616BB05F" Ref="S72"  Part="1" 
-AR Path="/5F5D4893/616BB05F" Ref="S72"  Part="1" 
+AR Path="/616BB05F" Ref="S72"  Part="1"
+AR Path="/5F5D4893/616BB05F" Ref="S72"  Part="1"
 F 0 "S72" H 11500 5200 59  0000 L BNN
 F 1 "RShift" H 11900 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_2" H 11700 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_2" H 11700 5100 50  0001 C CNN
 F 3 "" H 11700 5100 50  0001 C CNN
 	1    11700 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S67
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S67
 U 1 1 A031D05D
 P 10900 5600
-AR Path="/A031D05D" Ref="S67"  Part="1" 
-AR Path="/5F5D4893/A031D05D" Ref="S67"  Part="1" 
+AR Path="/A031D05D" Ref="S67"  Part="1"
+AR Path="/5F5D4893/A031D05D" Ref="S67"  Part="1"
 F 0 "S67" H 10700 5700 59  0000 L BNN
 F 1 "Menu" H 11100 5500 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.25u" H 10900 5600 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.25u" H 10900 5600 50  0001 C CNN
 F 3 "" H 10900 5600 50  0001 C CNN
 	1    10900 5600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.1 S73
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_1.1 S73
 U 1 1 6F0D7EE6
 P 11700 5600
-AR Path="/6F0D7EE6" Ref="S73"  Part="1" 
-AR Path="/5F5D4893/6F0D7EE6" Ref="S73"  Part="1" 
+AR Path="/6F0D7EE6" Ref="S73"  Part="1"
+AR Path="/5F5D4893/6F0D7EE6" Ref="S73"  Part="1"
 F 0 "S73" H 11500 5700 59  0000 L BNN
 F 1 "RCtrl" H 11900 5500 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.25u" H 11700 5600 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.25u" H 11700 5600 50  0001 C CNN
 F 3 "" H 11700 5600 50  0001 C CNN
 	1    11700 5600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_0.7X1.45 S74
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_0.7X1.45 S74
 U 1 1 F7F1C23A
 P 12500 4200
-AR Path="/F7F1C23A" Ref="S74"  Part="1" 
-AR Path="/5F5D4893/F7F1C23A" Ref="S74"  Part="1" 
+AR Path="/F7F1C23A" Ref="S74"  Part="1"
+AR Path="/5F5D4893/F7F1C23A" Ref="S74"  Part="1"
 F 0 "S74" H 12300 4300 59  0000 L BNN
 F 1 "Backspace" H 12700 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_0.7X1.45" H 12500 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_0.7X1.45" H 12500 4200 50  0001 C CNN
 F 3 "" H 12500 4200 50  0001 C CNN
 	1    12500 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_ENTER S75
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_ENTER S75
 U 1 1 989E095E
 P 12500 4800
-AR Path="/989E095E" Ref="S75"  Part="1" 
-AR Path="/5F5D4893/989E095E" Ref="S75"  Part="1" 
+AR Path="/989E095E" Ref="S75"  Part="1"
+AR Path="/5F5D4893/989E095E" Ref="S75"  Part="1"
 F 0 "S75" H 12300 4900 59  0000 L BNN
 F 1 "Enter" H 12700 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_ENTER" H 12500 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_ENTER" H 12500 4800 50  0001 C CNN
 F 3 "" H 12500 4800 50  0001 C CNN
 	1    12500 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S76
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S76
 U 1 1 1B7138D8
 P 14100 3700
-AR Path="/1B7138D8" Ref="S76"  Part="1" 
-AR Path="/5F5D4893/1B7138D8" Ref="S76"  Part="1" 
+AR Path="/1B7138D8" Ref="S76"  Part="1"
+AR Path="/5F5D4893/1B7138D8" Ref="S76"  Part="1"
 F 0 "S76" H 13900 3800 59  0000 L BNN
 F 1 "SysReq" H 14300 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14100 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 14100 3700 50  0001 C CNN
 F 3 "" H 14100 3700 50  0001 C CNN
 F 4 "PtrScr" H 14100 3550 50  0000 C CNN "Value2"
 	1    14100 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S77
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S77
 U 1 1 058DBF50
 P 14100 4200
-AR Path="/058DBF50" Ref="S77"  Part="1" 
-AR Path="/5F5D4893/058DBF50" Ref="S77"  Part="1" 
+AR Path="/058DBF50" Ref="S77"  Part="1"
+AR Path="/5F5D4893/058DBF50" Ref="S77"  Part="1"
 F 0 "S77" H 13900 4300 59  0000 L BNN
 F 1 "Ins" H 14300 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14100 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 14100 4200 50  0001 C CNN
 F 3 "" H 14100 4200 50  0001 C CNN
 	1    14100 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S78
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S78
 U 1 1 B9390BF2
 P 14100 4500
-AR Path="/B9390BF2" Ref="S78"  Part="1" 
-AR Path="/5F5D4893/B9390BF2" Ref="S78"  Part="1" 
+AR Path="/B9390BF2" Ref="S78"  Part="1"
+AR Path="/5F5D4893/B9390BF2" Ref="S78"  Part="1"
 F 0 "S78" H 13900 4600 59  0000 L BNN
 F 1 "Del" H 14300 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14100 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 14100 4500 50  0001 C CNN
 F 3 "" H 14100 4500 50  0001 C CNN
 	1    14100 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S80
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S80
 U 1 1 714E104C
 P 14900 3700
-AR Path="/714E104C" Ref="S80"  Part="1" 
-AR Path="/5F5D4893/714E104C" Ref="S80"  Part="1" 
+AR Path="/714E104C" Ref="S80"  Part="1"
+AR Path="/5F5D4893/714E104C" Ref="S80"  Part="1"
 F 0 "S80" H 14700 3800 59  0000 L BNN
 F 1 "Scroll Lock" H 15100 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 14900 3700 50  0001 C CNN
 F 3 "" H 14900 3700 50  0001 C CNN
 	1    14900 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S81
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S81
 U 1 1 96FCB3FD
 P 14900 4200
-AR Path="/96FCB3FD" Ref="S81"  Part="1" 
-AR Path="/5F5D4893/96FCB3FD" Ref="S81"  Part="1" 
+AR Path="/96FCB3FD" Ref="S81"  Part="1"
+AR Path="/5F5D4893/96FCB3FD" Ref="S81"  Part="1"
 F 0 "S81" H 14700 4300 59  0000 L BNN
 F 1 "Begin()" H 15100 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 14900 4200 50  0001 C CNN
 F 3 "" H 14900 4200 50  0001 C CNN
 	1    14900 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S82
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S82
 U 1 1 2FB362B0
 P 14900 4500
-AR Path="/2FB362B0" Ref="S82"  Part="1" 
-AR Path="/5F5D4893/2FB362B0" Ref="S82"  Part="1" 
+AR Path="/2FB362B0" Ref="S82"  Part="1"
+AR Path="/5F5D4893/2FB362B0" Ref="S82"  Part="1"
 F 0 "S82" H 14700 4600 59  0000 L BNN
 F 1 "End()" H 15100 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 14900 4500 50  0001 C CNN
 F 3 "" H 14900 4500 50  0001 C CNN
 	1    14900 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S86
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S86
 U 1 1 5DC1DB80
 P 15700 3700
-AR Path="/5DC1DB80" Ref="S86"  Part="1" 
-AR Path="/5F5D4893/5DC1DB80" Ref="S86"  Part="1" 
+AR Path="/5DC1DB80" Ref="S86"  Part="1"
+AR Path="/5F5D4893/5DC1DB80" Ref="S86"  Part="1"
 F 0 "S86" H 15500 3800 59  0000 L BNN
 F 1 "Synergy" H 15900 3600 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 15700 3700 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 15700 3700 50  0001 C CNN
 F 3 "" H 15700 3700 50  0001 C CNN
 	1    15700 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S87
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S87
 U 1 1 C46E5BA7
 P 15700 4200
-AR Path="/C46E5BA7" Ref="S87"  Part="1" 
-AR Path="/5F5D4893/C46E5BA7" Ref="S87"  Part="1" 
+AR Path="/C46E5BA7" Ref="S87"  Part="1"
+AR Path="/5F5D4893/C46E5BA7" Ref="S87"  Part="1"
 F 0 "S87" H 15500 4300 59  0000 L BNN
 F 1 "Page Up" H 15900 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 15700 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 15700 4200 50  0001 C CNN
 F 3 "" H 15700 4200 50  0001 C CNN
 	1    15700 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S88
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S88
 U 1 1 807EA112
 P 15700 4500
-AR Path="/807EA112" Ref="S88"  Part="1" 
-AR Path="/5F5D4893/807EA112" Ref="S88"  Part="1" 
+AR Path="/807EA112" Ref="S88"  Part="1"
+AR Path="/5F5D4893/807EA112" Ref="S88"  Part="1"
 F 0 "S88" H 15500 4600 59  0000 L BNN
 F 1 "Page Down" H 15900 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 15700 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 15700 4500 50  0001 C CNN
 F 3 "" H 15700 4500 50  0001 C CNN
 	1    15700 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S84
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S84
 U 1 1 13355FB8
 P 14900 5100
-AR Path="/13355FB8" Ref="S84"  Part="1" 
-AR Path="/5F5D4893/13355FB8" Ref="S84"  Part="1" 
+AR Path="/13355FB8" Ref="S84"  Part="1"
+AR Path="/5F5D4893/13355FB8" Ref="S84"  Part="1"
 F 0 "S84" H 14700 5200 59  0000 L BNN
 F 1 "Up" H 15100 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 14900 5100 50  0001 C CNN
 F 3 "" H 14900 5100 50  0001 C CNN
 	1    14900 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S79
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S79
 U 1 1 67CF1735
 P 14100 5400
-AR Path="/67CF1735" Ref="S79"  Part="1" 
-AR Path="/5F5D4893/67CF1735" Ref="S79"  Part="1" 
+AR Path="/67CF1735" Ref="S79"  Part="1"
+AR Path="/5F5D4893/67CF1735" Ref="S79"  Part="1"
 F 0 "S79" H 13900 5500 59  0000 L BNN
 F 1 "Left" H 14300 5300 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14100 5400 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 14100 5400 50  0001 C CNN
 F 3 "" H 14100 5400 50  0001 C CNN
 	1    14100 5400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S85
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S85
 U 1 1 96EA2D50
 P 14900 5400
-AR Path="/96EA2D50" Ref="S85"  Part="1" 
-AR Path="/5F5D4893/96EA2D50" Ref="S85"  Part="1" 
+AR Path="/96EA2D50" Ref="S85"  Part="1"
+AR Path="/5F5D4893/96EA2D50" Ref="S85"  Part="1"
 F 0 "S85" H 14700 5500 59  0000 L BNN
 F 1 "Down" H 15100 5300 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 5400 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 14900 5400 50  0001 C CNN
 F 3 "" H 14900 5400 50  0001 C CNN
 	1    14900 5400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S89
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S89
 U 1 1 12BBAE07
 P 15700 5400
-AR Path="/12BBAE07" Ref="S89"  Part="1" 
-AR Path="/5F5D4893/12BBAE07" Ref="S89"  Part="1" 
+AR Path="/12BBAE07" Ref="S89"  Part="1"
+AR Path="/5F5D4893/12BBAE07" Ref="S89"  Part="1"
 F 0 "S89" H 15500 5500 59  0000 L BNN
 F 1 "Right" H 15900 5300 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 15700 5400 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 15700 5400 50  0001 C CNN
 F 3 "" H 15700 5400 50  0001 C CNN
 	1    15700 5400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S83
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S83
 U 1 1 2F941615
 P 14900 4800
-AR Path="/2F941615" Ref="S83"  Part="1" 
-AR Path="/5F5D4893/2F941615" Ref="S83"  Part="1" 
+AR Path="/2F941615" Ref="S83"  Part="1"
+AR Path="/5F5D4893/2F941615" Ref="S83"  Part="1"
 F 0 "S83" H 14700 4900 59  0000 L BNN
 F 1 "Fn" H 15100 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 14900 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 14900 4800 50  0001 C CNN
 F 3 "" H 14900 4800 50  0001 C CNN
 	1    14900 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S90
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S90
 U 1 1 FFA03D0A
 P 17300 4200
-AR Path="/FFA03D0A" Ref="S90"  Part="1" 
-AR Path="/5F5D4893/FFA03D0A" Ref="S90"  Part="1" 
+AR Path="/FFA03D0A" Ref="S90"  Part="1"
+AR Path="/5F5D4893/FFA03D0A" Ref="S90"  Part="1"
 F 0 "S90" H 17100 4300 59  0000 L BNN
 F 1 "Num Lock" H 17500 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 17300 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 17300 4200 50  0001 C CNN
 F 3 "" H 17300 4200 50  0001 C CNN
 	1    17300 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S91
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S91
 U 1 1 34D68417
 P 17300 4500
-AR Path="/34D68417" Ref="S91"  Part="1" 
-AR Path="/5F5D4893/34D68417" Ref="S91"  Part="1" 
+AR Path="/34D68417" Ref="S91"  Part="1"
+AR Path="/5F5D4893/34D68417" Ref="S91"  Part="1"
 F 0 "S91" H 17100 4600 59  0000 L BNN
 F 1 "7" H 17500 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 17300 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 17300 4500 50  0001 C CNN
 F 3 "" H 17300 4500 50  0001 C CNN
 	1    17300 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S92
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S92
 U 1 1 5C676FCA
 P 17300 4800
-AR Path="/5C676FCA" Ref="S92"  Part="1" 
-AR Path="/5F5D4893/5C676FCA" Ref="S92"  Part="1" 
+AR Path="/5C676FCA" Ref="S92"  Part="1"
+AR Path="/5F5D4893/5C676FCA" Ref="S92"  Part="1"
 F 0 "S92" H 17100 4900 59  0000 L BNN
 F 1 "4" H 17500 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 17300 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 17300 4800 50  0001 C CNN
 F 3 "" H 17300 4800 50  0001 C CNN
 	1    17300 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S93
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S93
 U 1 1 ED30A4C6
 P 17300 5100
-AR Path="/ED30A4C6" Ref="S93"  Part="1" 
-AR Path="/5F5D4893/ED30A4C6" Ref="S93"  Part="1" 
+AR Path="/ED30A4C6" Ref="S93"  Part="1"
+AR Path="/5F5D4893/ED30A4C6" Ref="S93"  Part="1"
 F 0 "S93" H 17100 5200 59  0000 L BNN
 F 1 "1" H 17500 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 17300 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 17300 5100 50  0001 C CNN
 F 3 "" H 17300 5100 50  0001 C CNN
 	1    17300 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_0.7X1.45 S94
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_0.7X1.45 S94
 U 1 1 DEED8008
 P 17300 5400
-AR Path="/DEED8008" Ref="S94"  Part="1" 
-AR Path="/5F5D4893/DEED8008" Ref="S94"  Part="1" 
+AR Path="/DEED8008" Ref="S94"  Part="1"
+AR Path="/5F5D4893/DEED8008" Ref="S94"  Part="1"
 F 0 "S94" H 17100 5500 59  0000 L BNN
 F 1 "0" H 17500 5300 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_0.7X1.45" H 17300 5400 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_0.7X1.45" H 17300 5400 50  0001 C CNN
 F 3 "" H 17300 5400 50  0001 C CNN
 	1    17300 5400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S95
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S95
 U 1 1 B232C28E
 P 18100 4200
-AR Path="/B232C28E" Ref="S95"  Part="1" 
-AR Path="/5F5D4893/B232C28E" Ref="S95"  Part="1" 
+AR Path="/B232C28E" Ref="S95"  Part="1"
+AR Path="/5F5D4893/B232C28E" Ref="S95"  Part="1"
 F 0 "S95" H 17900 4300 59  0000 L BNN
 F 1 "/" H 18300 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18100 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 18100 4200 50  0001 C CNN
 F 3 "" H 18100 4200 50  0001 C CNN
 	1    18100 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S96
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S96
 U 1 1 E4152C4C
 P 18100 4500
-AR Path="/E4152C4C" Ref="S96"  Part="1" 
-AR Path="/5F5D4893/E4152C4C" Ref="S96"  Part="1" 
+AR Path="/E4152C4C" Ref="S96"  Part="1"
+AR Path="/5F5D4893/E4152C4C" Ref="S96"  Part="1"
 F 0 "S96" H 17900 4600 59  0000 L BNN
 F 1 "8" H 18300 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18100 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 18100 4500 50  0001 C CNN
 F 3 "" H 18100 4500 50  0001 C CNN
 	1    18100 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S97
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S97
 U 1 1 362A74C9
 P 18100 4800
-AR Path="/362A74C9" Ref="S97"  Part="1" 
-AR Path="/5F5D4893/362A74C9" Ref="S97"  Part="1" 
+AR Path="/362A74C9" Ref="S97"  Part="1"
+AR Path="/5F5D4893/362A74C9" Ref="S97"  Part="1"
 F 0 "S97" H 17900 4900 59  0000 L BNN
 F 1 "5" H 18300 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18100 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 18100 4800 50  0001 C CNN
 F 3 "" H 18100 4800 50  0001 C CNN
 	1    18100 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S98
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S98
 U 1 1 789672E0
 P 18100 5100
-AR Path="/789672E0" Ref="S98"  Part="1" 
-AR Path="/5F5D4893/789672E0" Ref="S98"  Part="1" 
+AR Path="/789672E0" Ref="S98"  Part="1"
+AR Path="/5F5D4893/789672E0" Ref="S98"  Part="1"
 F 0 "S98" H 17900 5200 59  0000 L BNN
 F 1 "2" H 18300 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18100 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 18100 5100 50  0001 C CNN
 F 3 "" H 18100 5100 50  0001 C CNN
 	1    18100 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S103
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S103
 U 1 1 7434A669
 P 18900 5400
-AR Path="/7434A669" Ref="S103"  Part="1" 
-AR Path="/5F5D4893/7434A669" Ref="S103"  Part="1" 
+AR Path="/7434A669" Ref="S103"  Part="1"
+AR Path="/5F5D4893/7434A669" Ref="S103"  Part="1"
 F 0 "S103" H 18700 5500 59  0000 L BNN
 F 1 "." H 19100 5300 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18900 5400 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 18900 5400 50  0001 C CNN
 F 3 "" H 18900 5400 50  0001 C CNN
 	1    18900 5400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S99
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S99
 U 1 1 8666D7C3
 P 18900 4200
-AR Path="/8666D7C3" Ref="S99"  Part="1" 
-AR Path="/5F5D4893/8666D7C3" Ref="S99"  Part="1" 
+AR Path="/8666D7C3" Ref="S99"  Part="1"
+AR Path="/5F5D4893/8666D7C3" Ref="S99"  Part="1"
 F 0 "S99" H 18700 4300 59  0000 L BNN
 F 1 "*" H 19100 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18900 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 18900 4200 50  0001 C CNN
 F 3 "" H 18900 4200 50  0001 C CNN
 	1    18900 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S100
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S100
 U 1 1 31CD12C0
 P 18900 4500
-AR Path="/31CD12C0" Ref="S100"  Part="1" 
-AR Path="/5F5D4893/31CD12C0" Ref="S100"  Part="1" 
+AR Path="/31CD12C0" Ref="S100"  Part="1"
+AR Path="/5F5D4893/31CD12C0" Ref="S100"  Part="1"
 F 0 "S100" H 18700 4600 59  0000 L BNN
 F 1 "9" H 19100 4400 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18900 4500 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 18900 4500 50  0001 C CNN
 F 3 "" H 18900 4500 50  0001 C CNN
 	1    18900 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S101
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S101
 U 1 1 27AF0B56
 P 18900 4800
-AR Path="/27AF0B56" Ref="S101"  Part="1" 
-AR Path="/5F5D4893/27AF0B56" Ref="S101"  Part="1" 
+AR Path="/27AF0B56" Ref="S101"  Part="1"
+AR Path="/5F5D4893/27AF0B56" Ref="S101"  Part="1"
 F 0 "S101" H 18700 4900 59  0000 L BNN
 F 1 "6" H 19100 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18900 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 18900 4800 50  0001 C CNN
 F 3 "" H 18900 4800 50  0001 C CNN
 	1    18900 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S102
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S102
 U 1 1 5B86533B
 P 18900 5100
-AR Path="/5B86533B" Ref="S102"  Part="1" 
-AR Path="/5F5D4893/5B86533B" Ref="S102"  Part="1" 
+AR Path="/5B86533B" Ref="S102"  Part="1"
+AR Path="/5F5D4893/5B86533B" Ref="S102"  Part="1"
 F 0 "S102" H 18700 5200 59  0000 L BNN
 F 1 "3" H 19100 5000 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 18900 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 18900 5100 50  0001 C CNN
 F 3 "" H 18900 5100 50  0001 C CNN
 	1    18900 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_NORM S104
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_NORM S104
 U 1 1 CCD5440B
 P 19700 4200
-AR Path="/CCD5440B" Ref="S104"  Part="1" 
-AR Path="/5F5D4893/CCD5440B" Ref="S104"  Part="1" 
+AR Path="/CCD5440B" Ref="S104"  Part="1"
+AR Path="/5F5D4893/CCD5440B" Ref="S104"  Part="1"
 F 0 "S104" H 19500 4300 59  0000 L BNN
 F 1 "-" H 19900 4100 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_NORM" H 19700 4200 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_NORM" H 19700 4200 50  0001 C CNN
 F 3 "" H 19700 4200 50  0001 C CNN
 	1    19700 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.45X0.7 S105
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_1.45X0.7 S105
 U 1 1 9C4F5E6A
 P 19700 4800
-AR Path="/9C4F5E6A" Ref="S105"  Part="1" 
-AR Path="/5F5D4893/9C4F5E6A" Ref="S105"  Part="1" 
+AR Path="/9C4F5E6A" Ref="S105"  Part="1"
+AR Path="/5F5D4893/9C4F5E6A" Ref="S105"  Part="1"
 F 0 "S105" H 19500 4900 59  0000 L BNN
 F 1 "+" H 19900 4700 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.45X0.7" H 19700 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.45X0.7" H 19700 4800 50  0001 C CNN
 F 3 "" H 19700 4800 50  0001 C CNN
 	1    19700 4800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:CHERRY_MX_KEY_1.45X0.7 S106
+L MXKeyboard-eagle-import:CHERRY_MX_KEY_1.45X0.7 S106
 U 1 1 C5A72085
 P 19700 5400
-AR Path="/C5A72085" Ref="S106"  Part="1" 
-AR Path="/5F5D4893/C5A72085" Ref="S106"  Part="1" 
+AR Path="/C5A72085" Ref="S106"  Part="1"
+AR Path="/5F5D4893/C5A72085" Ref="S106"  Part="1"
 F 0 "S106" H 19500 5500 59  0000 L BNN
 F 1 "Enter" H 19900 5300 59  0000 R BNN
-F 2 "MXKeyboard_RGB:MX_KEY_1.45X0.7" H 19700 5400 50  0001 C CNN
+F 2 "MXKeyboard:MX_KEY_1.45X0.7" H 19700 5400 50  0001 C CNN
 F 3 "" H 19700 5400 50  0001 C CNN
 	1    19700 5400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D1
+L MXKeyboard-eagle-import:BAS16VY D1
 U 1 1 8D141E84
 P 2300 3550
-AR Path="/8D141E84" Ref="D1"  Part="1" 
-AR Path="/5F5D4893/8D141E84" Ref="D1"  Part="1" 
+AR Path="/8D141E84" Ref="D1"  Part="1"
+AR Path="/5F5D4893/8D141E84" Ref="D1"  Part="1"
 F 0 "D1" H 2150 3610 59  0000 L BNN
 F 1 "BAS16VY" H 2300 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 2300 3550 50  0001 C CNN
 F 3 "" H 2300 3550 50  0001 C CNN
 	1    2300 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D1
+L MXKeyboard-eagle-import:BAS16VY D1
 U 2 1 8D141E88
 P 2300 4050
-AR Path="/8D141E88" Ref="D1"  Part="2" 
-AR Path="/5F5D4893/8D141E88" Ref="D1"  Part="2" 
+AR Path="/8D141E88" Ref="D1"  Part="2"
+AR Path="/5F5D4893/8D141E88" Ref="D1"  Part="2"
 F 0 "D1" H 2150 4110 59  0000 L BNN
 F 1 "BAS16VY" H 2300 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 2300 4050 50  0001 C CNN
 F 3 "" H 2300 4050 50  0001 C CNN
 	2    2300 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D1
+L MXKeyboard-eagle-import:BAS16VY D1
 U 3 1 8D141E8C
 P 2300 4350
-AR Path="/8D141E8C" Ref="D1"  Part="3" 
-AR Path="/5F5D4893/8D141E8C" Ref="D1"  Part="3" 
+AR Path="/8D141E8C" Ref="D1"  Part="3"
+AR Path="/5F5D4893/8D141E8C" Ref="D1"  Part="3"
 F 0 "D1" H 2150 4410 59  0000 L BNN
 F 1 "BAS16VY" H 2300 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 2300 4350 50  0001 C CNN
 F 3 "" H 2300 4350 50  0001 C CNN
 	3    2300 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D2
+L MXKeyboard-eagle-import:BAS16VY D2
 U 1 1 20478EC3
 P 2300 4650
-AR Path="/20478EC3" Ref="D2"  Part="1" 
-AR Path="/5F5D4893/20478EC3" Ref="D2"  Part="1" 
+AR Path="/20478EC3" Ref="D2"  Part="1"
+AR Path="/5F5D4893/20478EC3" Ref="D2"  Part="1"
 F 0 "D2" H 2150 4710 59  0000 L BNN
 F 1 "BAS16VY" H 2300 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 2300 4650 50  0001 C CNN
 F 3 "" H 2300 4650 50  0001 C CNN
 	1    2300 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D2
+L MXKeyboard-eagle-import:BAS16VY D2
 U 2 1 20478ECF
 P 2300 4950
-AR Path="/20478ECF" Ref="D2"  Part="2" 
-AR Path="/5F5D4893/20478ECF" Ref="D2"  Part="2" 
+AR Path="/20478ECF" Ref="D2"  Part="2"
+AR Path="/5F5D4893/20478ECF" Ref="D2"  Part="2"
 F 0 "D2" H 2150 5010 59  0000 L BNN
 F 1 "BAS16VY" H 2300 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 2300 4950 50  0001 C CNN
 F 3 "" H 2300 4950 50  0001 C CNN
 	2    2300 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D2
+L MXKeyboard-eagle-import:BAS16VY D2
 U 3 1 20478ECB
 P 2300 5450
-AR Path="/20478ECB" Ref="D2"  Part="3" 
-AR Path="/5F5D4893/20478ECB" Ref="D2"  Part="3" 
+AR Path="/20478ECB" Ref="D2"  Part="3"
+AR Path="/5F5D4893/20478ECB" Ref="D2"  Part="3"
 F 0 "D2" H 2150 5510 59  0000 L BNN
 F 1 "BAS16VY" H 2300 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 2300 5450 50  0001 C CNN
 F 3 "" H 2300 5450 50  0001 C CNN
 	3    2300 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D3
+L MXKeyboard-eagle-import:BAS16VY D3
 U 1 1 39967F7A
 P 3100 3550
-AR Path="/39967F7A" Ref="D3"  Part="1" 
-AR Path="/5F5D4893/39967F7A" Ref="D3"  Part="1" 
+AR Path="/39967F7A" Ref="D3"  Part="1"
+AR Path="/5F5D4893/39967F7A" Ref="D3"  Part="1"
 F 0 "D3" H 2950 3610 59  0000 L BNN
 F 1 "BAS16VY" H 3100 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3100 3550 50  0001 C CNN
 F 3 "" H 3100 3550 50  0001 C CNN
 	1    3100 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D3
+L MXKeyboard-eagle-import:BAS16VY D3
 U 2 1 39967F76
 P 3100 4050
-AR Path="/39967F76" Ref="D3"  Part="2" 
-AR Path="/5F5D4893/39967F76" Ref="D3"  Part="2" 
+AR Path="/39967F76" Ref="D3"  Part="2"
+AR Path="/5F5D4893/39967F76" Ref="D3"  Part="2"
 F 0 "D3" H 2950 4110 59  0000 L BNN
 F 1 "BAS16VY" H 3100 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3100 4050 50  0001 C CNN
 F 3 "" H 3100 4050 50  0001 C CNN
 	2    3100 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D3
+L MXKeyboard-eagle-import:BAS16VY D3
 U 3 1 39967F72
 P 3100 4350
-AR Path="/39967F72" Ref="D3"  Part="3" 
-AR Path="/5F5D4893/39967F72" Ref="D3"  Part="3" 
+AR Path="/39967F72" Ref="D3"  Part="3"
+AR Path="/5F5D4893/39967F72" Ref="D3"  Part="3"
 F 0 "D3" H 2950 4410 59  0000 L BNN
 F 1 "BAS16VY" H 3100 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3100 4350 50  0001 C CNN
 F 3 "" H 3100 4350 50  0001 C CNN
 	3    3100 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D4
+L MXKeyboard-eagle-import:BAS16VY D4
 U 1 1 DCE5EB0D
 P 3100 4650
-AR Path="/DCE5EB0D" Ref="D4"  Part="1" 
-AR Path="/5F5D4893/DCE5EB0D" Ref="D4"  Part="1" 
+AR Path="/DCE5EB0D" Ref="D4"  Part="1"
+AR Path="/5F5D4893/DCE5EB0D" Ref="D4"  Part="1"
 F 0 "D4" H 2950 4710 59  0000 L BNN
 F 1 "BAS16VY" H 3100 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3100 4650 50  0001 C CNN
 F 3 "" H 3100 4650 50  0001 C CNN
 	1    3100 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D4
+L MXKeyboard-eagle-import:BAS16VY D4
 U 2 1 DCE5EB01
 P 3100 4950
-AR Path="/DCE5EB01" Ref="D4"  Part="2" 
-AR Path="/5F5D4893/DCE5EB01" Ref="D4"  Part="2" 
+AR Path="/DCE5EB01" Ref="D4"  Part="2"
+AR Path="/5F5D4893/DCE5EB01" Ref="D4"  Part="2"
 F 0 "D4" H 2950 5010 59  0000 L BNN
 F 1 "BAS16VY" H 3100 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3100 4950 50  0001 C CNN
 F 3 "" H 3100 4950 50  0001 C CNN
 	2    3100 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D4
+L MXKeyboard-eagle-import:BAS16VY D4
 U 3 1 DCE5EB05
 P 3100 5450
-AR Path="/DCE5EB05" Ref="D4"  Part="3" 
-AR Path="/5F5D4893/DCE5EB05" Ref="D4"  Part="3" 
+AR Path="/DCE5EB05" Ref="D4"  Part="3"
+AR Path="/5F5D4893/DCE5EB05" Ref="D4"  Part="3"
 F 0 "D4" H 2950 5510 59  0000 L BNN
 F 1 "BAS16VY" H 3100 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3100 5450 50  0001 C CNN
 F 3 "" H 3100 5450 50  0001 C CNN
 	3    3100 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D5
+L MXKeyboard-eagle-import:BAS16VY D5
 U 1 1 73B70CE6
 P 3900 3550
-AR Path="/73B70CE6" Ref="D5"  Part="1" 
-AR Path="/5F5D4893/73B70CE6" Ref="D5"  Part="1" 
+AR Path="/73B70CE6" Ref="D5"  Part="1"
+AR Path="/5F5D4893/73B70CE6" Ref="D5"  Part="1"
 F 0 "D5" H 3750 3610 59  0000 L BNN
 F 1 "BAS16VY" H 3900 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3900 3550 50  0001 C CNN
 F 3 "" H 3900 3550 50  0001 C CNN
 	1    3900 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D5
+L MXKeyboard-eagle-import:BAS16VY D5
 U 2 1 73B70CEA
 P 3900 4050
-AR Path="/73B70CEA" Ref="D5"  Part="2" 
-AR Path="/5F5D4893/73B70CEA" Ref="D5"  Part="2" 
+AR Path="/73B70CEA" Ref="D5"  Part="2"
+AR Path="/5F5D4893/73B70CEA" Ref="D5"  Part="2"
 F 0 "D5" H 3750 4110 59  0000 L BNN
 F 1 "BAS16VY" H 3900 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3900 4050 50  0001 C CNN
 F 3 "" H 3900 4050 50  0001 C CNN
 	2    3900 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D5
+L MXKeyboard-eagle-import:BAS16VY D5
 U 3 1 73B70CEE
 P 3900 4350
-AR Path="/73B70CEE" Ref="D5"  Part="3" 
-AR Path="/5F5D4893/73B70CEE" Ref="D5"  Part="3" 
+AR Path="/73B70CEE" Ref="D5"  Part="3"
+AR Path="/5F5D4893/73B70CEE" Ref="D5"  Part="3"
 F 0 "D5" H 3750 4410 59  0000 L BNN
 F 1 "BAS16VY" H 3900 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3900 4350 50  0001 C CNN
 F 3 "" H 3900 4350 50  0001 C CNN
 	3    3900 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D6
+L MXKeyboard-eagle-import:BAS16VY D6
 U 1 1 0CA8CD4D
 P 3900 4650
-AR Path="/0CA8CD4D" Ref="D6"  Part="1" 
-AR Path="/5F5D4893/0CA8CD4D" Ref="D6"  Part="1" 
+AR Path="/0CA8CD4D" Ref="D6"  Part="1"
+AR Path="/5F5D4893/0CA8CD4D" Ref="D6"  Part="1"
 F 0 "D6" H 3750 4710 59  0000 L BNN
 F 1 "BAS16VY" H 3900 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3900 4650 50  0001 C CNN
 F 3 "" H 3900 4650 50  0001 C CNN
 	1    3900 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D6
+L MXKeyboard-eagle-import:BAS16VY D6
 U 2 1 0CA8CD41
 P 3900 4950
-AR Path="/0CA8CD41" Ref="D6"  Part="2" 
-AR Path="/5F5D4893/0CA8CD41" Ref="D6"  Part="2" 
+AR Path="/0CA8CD41" Ref="D6"  Part="2"
+AR Path="/5F5D4893/0CA8CD41" Ref="D6"  Part="2"
 F 0 "D6" H 3750 5010 59  0000 L BNN
 F 1 "BAS16VY" H 3900 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3900 4950 50  0001 C CNN
 F 3 "" H 3900 4950 50  0001 C CNN
 	2    3900 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D6
+L MXKeyboard-eagle-import:BAS16VY D6
 U 3 1 0CA8CD45
 P 3900 5450
-AR Path="/0CA8CD45" Ref="D6"  Part="3" 
-AR Path="/5F5D4893/0CA8CD45" Ref="D6"  Part="3" 
+AR Path="/0CA8CD45" Ref="D6"  Part="3"
+AR Path="/5F5D4893/0CA8CD45" Ref="D6"  Part="3"
 F 0 "D6" H 3750 5510 59  0000 L BNN
 F 1 "BAS16VY" H 3900 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 3900 5450 50  0001 C CNN
 F 3 "" H 3900 5450 50  0001 C CNN
 	3    3900 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D7
+L MXKeyboard-eagle-import:BAS16VY D7
 U 1 1 64AFC188
 P 4700 3550
-AR Path="/64AFC188" Ref="D7"  Part="1" 
-AR Path="/5F5D4893/64AFC188" Ref="D7"  Part="1" 
+AR Path="/64AFC188" Ref="D7"  Part="1"
+AR Path="/5F5D4893/64AFC188" Ref="D7"  Part="1"
 F 0 "D7" H 4550 3610 59  0000 L BNN
 F 1 "BAS16VY" H 4700 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 4700 3550 50  0001 C CNN
 F 3 "" H 4700 3550 50  0001 C CNN
 	1    4700 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D7
+L MXKeyboard-eagle-import:BAS16VY D7
 U 2 1 64AFC184
 P 4700 4050
-AR Path="/64AFC184" Ref="D7"  Part="2" 
-AR Path="/5F5D4893/64AFC184" Ref="D7"  Part="2" 
+AR Path="/64AFC184" Ref="D7"  Part="2"
+AR Path="/5F5D4893/64AFC184" Ref="D7"  Part="2"
 F 0 "D7" H 4550 4110 59  0000 L BNN
 F 1 "BAS16VY" H 4700 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 4700 4050 50  0001 C CNN
 F 3 "" H 4700 4050 50  0001 C CNN
 	2    4700 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D7
+L MXKeyboard-eagle-import:BAS16VY D7
 U 3 1 64AFC180
 P 4700 4350
-AR Path="/64AFC180" Ref="D7"  Part="3" 
-AR Path="/5F5D4893/64AFC180" Ref="D7"  Part="3" 
+AR Path="/64AFC180" Ref="D7"  Part="3"
+AR Path="/5F5D4893/64AFC180" Ref="D7"  Part="3"
 F 0 "D7" H 4550 4410 59  0000 L BNN
 F 1 "BAS16VY" H 4700 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 4700 4350 50  0001 C CNN
 F 3 "" H 4700 4350 50  0001 C CNN
 	3    4700 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D8
+L MXKeyboard-eagle-import:BAS16VY D8
 U 1 1 F6A72D8D
 P 4700 4650
-AR Path="/F6A72D8D" Ref="D8"  Part="1" 
-AR Path="/5F5D4893/F6A72D8D" Ref="D8"  Part="1" 
+AR Path="/F6A72D8D" Ref="D8"  Part="1"
+AR Path="/5F5D4893/F6A72D8D" Ref="D8"  Part="1"
 F 0 "D8" H 4550 4710 59  0000 L BNN
 F 1 "BAS16VY" H 4700 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 4700 4650 50  0001 C CNN
 F 3 "" H 4700 4650 50  0001 C CNN
 	1    4700 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D8
+L MXKeyboard-eagle-import:BAS16VY D8
 U 2 1 F6A72D81
 P 4700 4950
-AR Path="/F6A72D81" Ref="D8"  Part="2" 
-AR Path="/5F5D4893/F6A72D81" Ref="D8"  Part="2" 
+AR Path="/F6A72D81" Ref="D8"  Part="2"
+AR Path="/5F5D4893/F6A72D81" Ref="D8"  Part="2"
 F 0 "D8" H 4550 5010 59  0000 L BNN
 F 1 "BAS16VY" H 4700 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 4700 4950 50  0001 C CNN
 F 3 "" H 4700 4950 50  0001 C CNN
 	2    4700 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D8
+L MXKeyboard-eagle-import:BAS16VY D8
 U 3 1 F6A72D85
 P 5500 4950
-AR Path="/F6A72D85" Ref="D8"  Part="3" 
-AR Path="/5F5D4893/F6A72D85" Ref="D8"  Part="3" 
+AR Path="/F6A72D85" Ref="D8"  Part="3"
+AR Path="/5F5D4893/F6A72D85" Ref="D8"  Part="3"
 F 0 "D8" H 5350 5010 59  0000 L BNN
 F 1 "BAS16VY" H 5500 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 5500 4950 50  0001 C CNN
 F 3 "" H 5500 4950 50  0001 C CNN
 	3    5500 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D9
+L MXKeyboard-eagle-import:BAS16VY D9
 U 1 1 01F958EF
 P 5500 3550
-AR Path="/01F958EF" Ref="D9"  Part="1" 
-AR Path="/5F5D4893/01F958EF" Ref="D9"  Part="1" 
+AR Path="/01F958EF" Ref="D9"  Part="1"
+AR Path="/5F5D4893/01F958EF" Ref="D9"  Part="1"
 F 0 "D9" H 5350 3610 59  0000 L BNN
 F 1 "BAS16VY" H 5500 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 5500 3550 50  0001 C CNN
 F 3 "" H 5500 3550 50  0001 C CNN
 	1    5500 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D9
+L MXKeyboard-eagle-import:BAS16VY D9
 U 2 1 01F958E3
 P 5500 4050
-AR Path="/01F958E3" Ref="D9"  Part="2" 
-AR Path="/5F5D4893/01F958E3" Ref="D9"  Part="2" 
+AR Path="/01F958E3" Ref="D9"  Part="2"
+AR Path="/5F5D4893/01F958E3" Ref="D9"  Part="2"
 F 0 "D9" H 5350 4110 59  0000 L BNN
 F 1 "BAS16VY" H 5500 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 5500 4050 50  0001 C CNN
 F 3 "" H 5500 4050 50  0001 C CNN
 	2    5500 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D9
+L MXKeyboard-eagle-import:BAS16VY D9
 U 3 1 01F958E7
 P 5500 4350
-AR Path="/01F958E7" Ref="D9"  Part="3" 
-AR Path="/5F5D4893/01F958E7" Ref="D9"  Part="3" 
+AR Path="/01F958E7" Ref="D9"  Part="3"
+AR Path="/5F5D4893/01F958E7" Ref="D9"  Part="3"
 F 0 "D9" H 5350 4410 59  0000 L BNN
 F 1 "BAS16VY" H 5500 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 5500 4350 50  0001 C CNN
 F 3 "" H 5500 4350 50  0001 C CNN
 	3    5500 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D10
+L MXKeyboard-eagle-import:BAS16VY D10
 U 1 1 4EB806FC
 P 6300 3550
-AR Path="/4EB806FC" Ref="D10"  Part="1" 
-AR Path="/5F5D4893/4EB806FC" Ref="D10"  Part="1" 
+AR Path="/4EB806FC" Ref="D10"  Part="1"
+AR Path="/5F5D4893/4EB806FC" Ref="D10"  Part="1"
 F 0 "D10" H 6150 3610 59  0000 L BNN
 F 1 "BAS16VY" H 6300 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 6300 3550 50  0001 C CNN
 F 3 "" H 6300 3550 50  0001 C CNN
 	1    6300 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D10
+L MXKeyboard-eagle-import:BAS16VY D10
 U 2 1 4EB806F0
 P 6300 4050
-AR Path="/4EB806F0" Ref="D10"  Part="2" 
-AR Path="/5F5D4893/4EB806F0" Ref="D10"  Part="2" 
+AR Path="/4EB806F0" Ref="D10"  Part="2"
+AR Path="/5F5D4893/4EB806F0" Ref="D10"  Part="2"
 F 0 "D10" H 6150 4110 59  0000 L BNN
 F 1 "BAS16VY" H 6300 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 6300 4050 50  0001 C CNN
 F 3 "" H 6300 4050 50  0001 C CNN
 	2    6300 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D10
+L MXKeyboard-eagle-import:BAS16VY D10
 U 3 1 4EB806F4
 P 6300 4350
-AR Path="/4EB806F4" Ref="D10"  Part="3" 
-AR Path="/5F5D4893/4EB806F4" Ref="D10"  Part="3" 
+AR Path="/4EB806F4" Ref="D10"  Part="3"
+AR Path="/5F5D4893/4EB806F4" Ref="D10"  Part="3"
 F 0 "D10" H 6150 4410 59  0000 L BNN
 F 1 "BAS16VY" H 6300 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 6300 4350 50  0001 C CNN
 F 3 "" H 6300 4350 50  0001 C CNN
 	3    6300 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D11
+L MXKeyboard-eagle-import:BAS16VY D11
 U 1 1 BAC73F4F
 P 6300 4650
-AR Path="/BAC73F4F" Ref="D11"  Part="1" 
-AR Path="/5F5D4893/BAC73F4F" Ref="D11"  Part="1" 
+AR Path="/BAC73F4F" Ref="D11"  Part="1"
+AR Path="/5F5D4893/BAC73F4F" Ref="D11"  Part="1"
 F 0 "D11" H 6150 4710 59  0000 L BNN
 F 1 "BAS16VY" H 6300 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 6300 4650 50  0001 C CNN
 F 3 "" H 6300 4650 50  0001 C CNN
 	1    6300 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D11
+L MXKeyboard-eagle-import:BAS16VY D11
 U 2 1 BAC73F43
 P 5500 4650
-AR Path="/BAC73F43" Ref="D11"  Part="2" 
-AR Path="/5F5D4893/BAC73F43" Ref="D11"  Part="2" 
+AR Path="/BAC73F43" Ref="D11"  Part="2"
+AR Path="/5F5D4893/BAC73F43" Ref="D11"  Part="2"
 F 0 "D11" H 5350 4710 59  0000 L BNN
 F 1 "BAS16VY" H 5500 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 5500 4650 50  0001 C CNN
 F 3 "" H 5500 4650 50  0001 C CNN
 	2    5500 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D11
+L MXKeyboard-eagle-import:BAS16VY D11
 U 3 1 BAC73F47
 P 6300 4950
-AR Path="/BAC73F47" Ref="D11"  Part="3" 
-AR Path="/5F5D4893/BAC73F47" Ref="D11"  Part="3" 
+AR Path="/BAC73F47" Ref="D11"  Part="3"
+AR Path="/5F5D4893/BAC73F47" Ref="D11"  Part="3"
 F 0 "D11" H 6150 5010 59  0000 L BNN
 F 1 "BAS16VY" H 6300 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 6300 4950 50  0001 C CNN
 F 3 "" H 6300 4950 50  0001 C CNN
 	3    6300 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D12
+L MXKeyboard-eagle-import:BAS16VY D12
 U 1 1 279ED16D
 P 7100 3550
-AR Path="/279ED16D" Ref="D12"  Part="1" 
-AR Path="/5F5D4893/279ED16D" Ref="D12"  Part="1" 
+AR Path="/279ED16D" Ref="D12"  Part="1"
+AR Path="/5F5D4893/279ED16D" Ref="D12"  Part="1"
 F 0 "D12" H 6950 3610 59  0000 L BNN
 F 1 "BAS16VY" H 7100 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7100 3550 50  0001 C CNN
 F 3 "" H 7100 3550 50  0001 C CNN
 	1    7100 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D12
+L MXKeyboard-eagle-import:BAS16VY D12
 U 2 1 279ED161
 P 7100 4050
-AR Path="/279ED161" Ref="D12"  Part="2" 
-AR Path="/5F5D4893/279ED161" Ref="D12"  Part="2" 
+AR Path="/279ED161" Ref="D12"  Part="2"
+AR Path="/5F5D4893/279ED161" Ref="D12"  Part="2"
 F 0 "D12" H 6950 4110 59  0000 L BNN
 F 1 "BAS16VY" H 7100 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7100 4050 50  0001 C CNN
 F 3 "" H 7100 4050 50  0001 C CNN
 	2    7100 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D12
+L MXKeyboard-eagle-import:BAS16VY D12
 U 3 1 279ED165
 P 7100 4350
-AR Path="/279ED165" Ref="D12"  Part="3" 
-AR Path="/5F5D4893/279ED165" Ref="D12"  Part="3" 
+AR Path="/279ED165" Ref="D12"  Part="3"
+AR Path="/5F5D4893/279ED165" Ref="D12"  Part="3"
 F 0 "D12" H 6950 4410 59  0000 L BNN
 F 1 "BAS16VY" H 7100 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7100 4350 50  0001 C CNN
 F 3 "" H 7100 4350 50  0001 C CNN
 	3    7100 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D13
+L MXKeyboard-eagle-import:BAS16VY D13
 U 1 1 1B9FE3C0
 P 7100 4650
-AR Path="/1B9FE3C0" Ref="D13"  Part="1" 
-AR Path="/5F5D4893/1B9FE3C0" Ref="D13"  Part="1" 
+AR Path="/1B9FE3C0" Ref="D13"  Part="1"
+AR Path="/5F5D4893/1B9FE3C0" Ref="D13"  Part="1"
 F 0 "D13" H 6950 4710 59  0000 L BNN
 F 1 "BAS16VY" H 7100 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7100 4650 50  0001 C CNN
 F 3 "" H 7100 4650 50  0001 C CNN
 	1    7100 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D13
+L MXKeyboard-eagle-import:BAS16VY D13
 U 2 1 1B9FE3CC
 P 7100 4950
-AR Path="/1B9FE3CC" Ref="D13"  Part="2" 
-AR Path="/5F5D4893/1B9FE3CC" Ref="D13"  Part="2" 
+AR Path="/1B9FE3CC" Ref="D13"  Part="2"
+AR Path="/5F5D4893/1B9FE3CC" Ref="D13"  Part="2"
 F 0 "D13" H 6950 5010 59  0000 L BNN
 F 1 "BAS16VY" H 7100 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7100 4950 50  0001 C CNN
 F 3 "" H 7100 4950 50  0001 C CNN
 	2    7100 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D13
+L MXKeyboard-eagle-import:BAS16VY D13
 U 3 1 1B9FE3C8
 P 7100 5450
-AR Path="/1B9FE3C8" Ref="D13"  Part="3" 
-AR Path="/5F5D4893/1B9FE3C8" Ref="D13"  Part="3" 
+AR Path="/1B9FE3C8" Ref="D13"  Part="3"
+AR Path="/5F5D4893/1B9FE3C8" Ref="D13"  Part="3"
 F 0 "D13" H 6950 5510 59  0000 L BNN
 F 1 "BAS16VY" H 7100 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7100 5450 50  0001 C CNN
 F 3 "" H 7100 5450 50  0001 C CNN
 	3    7100 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D14
+L MXKeyboard-eagle-import:BAS16VY D14
 U 1 1 1213472B
 P 7900 3550
-AR Path="/1213472B" Ref="D14"  Part="1" 
-AR Path="/5F5D4893/1213472B" Ref="D14"  Part="1" 
+AR Path="/1213472B" Ref="D14"  Part="1"
+AR Path="/5F5D4893/1213472B" Ref="D14"  Part="1"
 F 0 "D14" H 7750 3610 59  0000 L BNN
 F 1 "BAS16VY" H 7900 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7900 3550 50  0001 C CNN
 F 3 "" H 7900 3550 50  0001 C CNN
 	1    7900 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D14
+L MXKeyboard-eagle-import:BAS16VY D14
 U 2 1 12134727
 P 7900 4050
-AR Path="/12134727" Ref="D14"  Part="2" 
-AR Path="/5F5D4893/12134727" Ref="D14"  Part="2" 
+AR Path="/12134727" Ref="D14"  Part="2"
+AR Path="/5F5D4893/12134727" Ref="D14"  Part="2"
 F 0 "D14" H 7750 4110 59  0000 L BNN
 F 1 "BAS16VY" H 7900 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7900 4050 50  0001 C CNN
 F 3 "" H 7900 4050 50  0001 C CNN
 	2    7900 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D14
+L MXKeyboard-eagle-import:BAS16VY D14
 U 3 1 12134723
 P 7900 4350
-AR Path="/12134723" Ref="D14"  Part="3" 
-AR Path="/5F5D4893/12134723" Ref="D14"  Part="3" 
+AR Path="/12134723" Ref="D14"  Part="3"
+AR Path="/5F5D4893/12134723" Ref="D14"  Part="3"
 F 0 "D14" H 7750 4410 59  0000 L BNN
 F 1 "BAS16VY" H 7900 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7900 4350 50  0001 C CNN
 F 3 "" H 7900 4350 50  0001 C CNN
 	3    7900 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D15
+L MXKeyboard-eagle-import:BAS16VY D15
 U 1 1 2A336CCE
 P 7900 4650
-AR Path="/2A336CCE" Ref="D15"  Part="1" 
-AR Path="/5F5D4893/2A336CCE" Ref="D15"  Part="1" 
+AR Path="/2A336CCE" Ref="D15"  Part="1"
+AR Path="/5F5D4893/2A336CCE" Ref="D15"  Part="1"
 F 0 "D15" H 7750 4710 59  0000 L BNN
 F 1 "BAS16VY" H 7900 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7900 4650 50  0001 C CNN
 F 3 "" H 7900 4650 50  0001 C CNN
 	1    7900 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D15
+L MXKeyboard-eagle-import:BAS16VY D15
 U 2 1 2A336CC2
 P 7900 4950
-AR Path="/2A336CC2" Ref="D15"  Part="2" 
-AR Path="/5F5D4893/2A336CC2" Ref="D15"  Part="2" 
+AR Path="/2A336CC2" Ref="D15"  Part="2"
+AR Path="/5F5D4893/2A336CC2" Ref="D15"  Part="2"
 F 0 "D15" H 7750 5010 59  0000 L BNN
 F 1 "BAS16VY" H 7900 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7900 4950 50  0001 C CNN
 F 3 "" H 7900 4950 50  0001 C CNN
 	2    7900 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D15
+L MXKeyboard-eagle-import:BAS16VY D15
 U 3 1 2A336CC6
 P 7900 5450
-AR Path="/2A336CC6" Ref="D15"  Part="3" 
-AR Path="/5F5D4893/2A336CC6" Ref="D15"  Part="3" 
+AR Path="/2A336CC6" Ref="D15"  Part="3"
+AR Path="/5F5D4893/2A336CC6" Ref="D15"  Part="3"
 F 0 "D15" H 7750 5510 59  0000 L BNN
 F 1 "BAS16VY" H 7900 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 7900 5450 50  0001 C CNN
 F 3 "" H 7900 5450 50  0001 C CNN
 	3    7900 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D16
+L MXKeyboard-eagle-import:BAS16VY D16
 U 1 1 2B8C609C
 P 8700 3550
-AR Path="/2B8C609C" Ref="D16"  Part="1" 
-AR Path="/5F5D4893/2B8C609C" Ref="D16"  Part="1" 
+AR Path="/2B8C609C" Ref="D16"  Part="1"
+AR Path="/5F5D4893/2B8C609C" Ref="D16"  Part="1"
 F 0 "D16" H 8550 3610 59  0000 L BNN
 F 1 "BAS16VY" H 8700 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 8700 3550 50  0001 C CNN
 F 3 "" H 8700 3550 50  0001 C CNN
 	1    8700 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D16
+L MXKeyboard-eagle-import:BAS16VY D16
 U 2 1 2B8C6090
 P 8700 4050
-AR Path="/2B8C6090" Ref="D16"  Part="2" 
-AR Path="/5F5D4893/2B8C6090" Ref="D16"  Part="2" 
+AR Path="/2B8C6090" Ref="D16"  Part="2"
+AR Path="/5F5D4893/2B8C6090" Ref="D16"  Part="2"
 F 0 "D16" H 8550 4110 59  0000 L BNN
 F 1 "BAS16VY" H 8700 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 8700 4050 50  0001 C CNN
 F 3 "" H 8700 4050 50  0001 C CNN
 	2    8700 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D16
+L MXKeyboard-eagle-import:BAS16VY D16
 U 3 1 2B8C6094
 P 8700 4350
-AR Path="/2B8C6094" Ref="D16"  Part="3" 
-AR Path="/5F5D4893/2B8C6094" Ref="D16"  Part="3" 
+AR Path="/2B8C6094" Ref="D16"  Part="3"
+AR Path="/5F5D4893/2B8C6094" Ref="D16"  Part="3"
 F 0 "D16" H 8550 4410 59  0000 L BNN
 F 1 "BAS16VY" H 8700 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 8700 4350 50  0001 C CNN
 F 3 "" H 8700 4350 50  0001 C CNN
 	3    8700 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D17
+L MXKeyboard-eagle-import:BAS16VY D17
 U 1 1 20A09832
 P 8700 4650
-AR Path="/20A09832" Ref="D17"  Part="1" 
-AR Path="/5F5D4893/20A09832" Ref="D17"  Part="1" 
+AR Path="/20A09832" Ref="D17"  Part="1"
+AR Path="/5F5D4893/20A09832" Ref="D17"  Part="1"
 F 0 "D17" H 8550 4710 59  0000 L BNN
 F 1 "BAS16VY" H 8700 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 8700 4650 50  0001 C CNN
 F 3 "" H 8700 4650 50  0001 C CNN
 	1    8700 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D18
+L MXKeyboard-eagle-import:BAS16VY D18
 U 1 1 A2E1D69D
 P 9500 3550
-AR Path="/A2E1D69D" Ref="D18"  Part="1" 
-AR Path="/5F5D4893/A2E1D69D" Ref="D18"  Part="1" 
+AR Path="/A2E1D69D" Ref="D18"  Part="1"
+AR Path="/5F5D4893/A2E1D69D" Ref="D18"  Part="1"
 F 0 "D18" H 9350 3610 59  0000 L BNN
 F 1 "BAS16VY" H 9500 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 9500 3550 50  0001 C CNN
 F 3 "" H 9500 3550 50  0001 C CNN
 	1    9500 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D17
+L MXKeyboard-eagle-import:BAS16VY D17
 U 2 1 20A0983E
 P 8700 4950
-AR Path="/20A0983E" Ref="D17"  Part="2" 
-AR Path="/5F5D4893/20A0983E" Ref="D17"  Part="2" 
+AR Path="/20A0983E" Ref="D17"  Part="2"
+AR Path="/5F5D4893/20A0983E" Ref="D17"  Part="2"
 F 0 "D17" H 8550 5010 59  0000 L BNN
 F 1 "BAS16VY" H 8700 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 8700 4950 50  0001 C CNN
 F 3 "" H 8700 4950 50  0001 C CNN
 	2    8700 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D17
+L MXKeyboard-eagle-import:BAS16VY D17
 U 3 1 20A0983A
 P 8300 5450
-AR Path="/20A0983A" Ref="D17"  Part="3" 
-AR Path="/5F5D4893/20A0983A" Ref="D17"  Part="3" 
+AR Path="/20A0983A" Ref="D17"  Part="3"
+AR Path="/5F5D4893/20A0983A" Ref="D17"  Part="3"
 F 0 "D17" H 8150 5510 59  0000 L BNN
 F 1 "BAS16VY" H 8300 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 8300 5450 50  0001 C CNN
 F 3 "" H 8300 5450 50  0001 C CNN
 	3    8300 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D18
+L MXKeyboard-eagle-import:BAS16VY D18
 U 2 1 A2E1D691
 P 9500 4050
-AR Path="/A2E1D691" Ref="D18"  Part="2" 
-AR Path="/5F5D4893/A2E1D691" Ref="D18"  Part="2" 
+AR Path="/A2E1D691" Ref="D18"  Part="2"
+AR Path="/5F5D4893/A2E1D691" Ref="D18"  Part="2"
 F 0 "D18" H 9350 4110 59  0000 L BNN
 F 1 "BAS16VY" H 9500 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 9500 4050 50  0001 C CNN
 F 3 "" H 9500 4050 50  0001 C CNN
 	2    9500 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D18
+L MXKeyboard-eagle-import:BAS16VY D18
 U 3 1 A2E1D695
 P 9500 4350
-AR Path="/A2E1D695" Ref="D18"  Part="3" 
-AR Path="/5F5D4893/A2E1D695" Ref="D18"  Part="3" 
+AR Path="/A2E1D695" Ref="D18"  Part="3"
+AR Path="/5F5D4893/A2E1D695" Ref="D18"  Part="3"
 F 0 "D18" H 9350 4410 59  0000 L BNN
 F 1 "BAS16VY" H 9500 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 9500 4350 50  0001 C CNN
 F 3 "" H 9500 4350 50  0001 C CNN
 	3    9500 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D19
+L MXKeyboard-eagle-import:BAS16VY D19
 U 1 1 9B5A414A
 P 9500 4650
-AR Path="/9B5A414A" Ref="D19"  Part="1" 
-AR Path="/5F5D4893/9B5A414A" Ref="D19"  Part="1" 
+AR Path="/9B5A414A" Ref="D19"  Part="1"
+AR Path="/5F5D4893/9B5A414A" Ref="D19"  Part="1"
 F 0 "D19" H 9350 4710 59  0000 L BNN
 F 1 "BAS16VY" H 9500 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 9500 4650 50  0001 C CNN
 F 3 "" H 9500 4650 50  0001 C CNN
 	1    9500 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D19
+L MXKeyboard-eagle-import:BAS16VY D19
 U 2 1 9B5A4146
 P 9500 4950
-AR Path="/9B5A4146" Ref="D19"  Part="2" 
-AR Path="/5F5D4893/9B5A4146" Ref="D19"  Part="2" 
+AR Path="/9B5A4146" Ref="D19"  Part="2"
+AR Path="/5F5D4893/9B5A4146" Ref="D19"  Part="2"
 F 0 "D19" H 9350 5010 59  0000 L BNN
 F 1 "BAS16VY" H 9500 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 9500 4950 50  0001 C CNN
 F 3 "" H 9500 4950 50  0001 C CNN
 	2    9500 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D19
+L MXKeyboard-eagle-import:BAS16VY D19
 U 3 1 9B5A4142
 P 9500 5450
-AR Path="/9B5A4142" Ref="D19"  Part="3" 
-AR Path="/5F5D4893/9B5A4142" Ref="D19"  Part="3" 
+AR Path="/9B5A4142" Ref="D19"  Part="3"
+AR Path="/5F5D4893/9B5A4142" Ref="D19"  Part="3"
 F 0 "D19" H 9350 5510 59  0000 L BNN
 F 1 "BAS16VY" H 9500 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 9500 5450 50  0001 C CNN
 F 3 "" H 9500 5450 50  0001 C CNN
 	3    9500 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D20
+L MXKeyboard-eagle-import:BAS16VY D20
 U 1 1 5A7E911D
 P 10300 3550
-AR Path="/5A7E911D" Ref="D20"  Part="1" 
-AR Path="/5F5D4893/5A7E911D" Ref="D20"  Part="1" 
+AR Path="/5A7E911D" Ref="D20"  Part="1"
+AR Path="/5F5D4893/5A7E911D" Ref="D20"  Part="1"
 F 0 "D20" H 10150 3610 59  0000 L BNN
 F 1 "BAS16VY" H 10300 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 10300 3550 50  0001 C CNN
 F 3 "" H 10300 3550 50  0001 C CNN
 	1    10300 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D20
+L MXKeyboard-eagle-import:BAS16VY D20
 U 2 1 5A7E9111
 P 10300 4050
-AR Path="/5A7E9111" Ref="D20"  Part="2" 
-AR Path="/5F5D4893/5A7E9111" Ref="D20"  Part="2" 
+AR Path="/5A7E9111" Ref="D20"  Part="2"
+AR Path="/5F5D4893/5A7E9111" Ref="D20"  Part="2"
 F 0 "D20" H 10150 4110 59  0000 L BNN
 F 1 "BAS16VY" H 10300 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 10300 4050 50  0001 C CNN
 F 3 "" H 10300 4050 50  0001 C CNN
 	2    10300 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D20
+L MXKeyboard-eagle-import:BAS16VY D20
 U 3 1 5A7E9115
 P 10300 4350
-AR Path="/5A7E9115" Ref="D20"  Part="3" 
-AR Path="/5F5D4893/5A7E9115" Ref="D20"  Part="3" 
+AR Path="/5A7E9115" Ref="D20"  Part="3"
+AR Path="/5F5D4893/5A7E9115" Ref="D20"  Part="3"
 F 0 "D20" H 10150 4410 59  0000 L BNN
 F 1 "BAS16VY" H 10300 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 10300 4350 50  0001 C CNN
 F 3 "" H 10300 4350 50  0001 C CNN
 	3    10300 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D21
+L MXKeyboard-eagle-import:BAS16VY D21
 U 1 1 A44ADF98
 P 10300 4650
-AR Path="/A44ADF98" Ref="D21"  Part="1" 
-AR Path="/5F5D4893/A44ADF98" Ref="D21"  Part="1" 
+AR Path="/A44ADF98" Ref="D21"  Part="1"
+AR Path="/5F5D4893/A44ADF98" Ref="D21"  Part="1"
 F 0 "D21" H 10150 4710 59  0000 L BNN
 F 1 "BAS16VY" H 10300 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 10300 4650 50  0001 C CNN
 F 3 "" H 10300 4650 50  0001 C CNN
 	1    10300 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D21
+L MXKeyboard-eagle-import:BAS16VY D21
 U 2 1 A44ADF94
 P 10300 4950
-AR Path="/A44ADF94" Ref="D21"  Part="2" 
-AR Path="/5F5D4893/A44ADF94" Ref="D21"  Part="2" 
+AR Path="/A44ADF94" Ref="D21"  Part="2"
+AR Path="/5F5D4893/A44ADF94" Ref="D21"  Part="2"
 F 0 "D21" H 10150 5010 59  0000 L BNN
 F 1 "BAS16VY" H 10300 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 10300 4950 50  0001 C CNN
 F 3 "" H 10300 4950 50  0001 C CNN
 	2    10300 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D21
+L MXKeyboard-eagle-import:BAS16VY D21
 U 3 1 A44ADF90
 P 10300 5450
-AR Path="/A44ADF90" Ref="D21"  Part="3" 
-AR Path="/5F5D4893/A44ADF90" Ref="D21"  Part="3" 
+AR Path="/A44ADF90" Ref="D21"  Part="3"
+AR Path="/5F5D4893/A44ADF90" Ref="D21"  Part="3"
 F 0 "D21" H 10150 5510 59  0000 L BNN
 F 1 "BAS16VY" H 10300 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 10300 5450 50  0001 C CNN
 F 3 "" H 10300 5450 50  0001 C CNN
 	3    10300 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D22
+L MXKeyboard-eagle-import:BAS16VY D22
 U 1 1 5D706025
 P 11100 3550
-AR Path="/5D706025" Ref="D22"  Part="1" 
-AR Path="/5F5D4893/5D706025" Ref="D22"  Part="1" 
+AR Path="/5D706025" Ref="D22"  Part="1"
+AR Path="/5F5D4893/5D706025" Ref="D22"  Part="1"
 F 0 "D22" H 10950 3610 59  0000 L BNN
 F 1 "BAS16VY" H 11100 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11100 3550 50  0001 C CNN
 F 3 "" H 11100 3550 50  0001 C CNN
 	1    11100 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D22
+L MXKeyboard-eagle-import:BAS16VY D22
 U 2 1 5D706029
 P 11100 4050
-AR Path="/5D706029" Ref="D22"  Part="2" 
-AR Path="/5F5D4893/5D706029" Ref="D22"  Part="2" 
+AR Path="/5D706029" Ref="D22"  Part="2"
+AR Path="/5F5D4893/5D706029" Ref="D22"  Part="2"
 F 0 "D22" H 10950 4110 59  0000 L BNN
 F 1 "BAS16VY" H 11100 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11100 4050 50  0001 C CNN
 F 3 "" H 11100 4050 50  0001 C CNN
 	2    11100 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D22
+L MXKeyboard-eagle-import:BAS16VY D22
 U 3 1 5D70602D
 P 11100 4350
-AR Path="/5D70602D" Ref="D22"  Part="3" 
-AR Path="/5F5D4893/5D70602D" Ref="D22"  Part="3" 
+AR Path="/5D70602D" Ref="D22"  Part="3"
+AR Path="/5F5D4893/5D70602D" Ref="D22"  Part="3"
 F 0 "D22" H 10950 4410 59  0000 L BNN
 F 1 "BAS16VY" H 11100 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11100 4350 50  0001 C CNN
 F 3 "" H 11100 4350 50  0001 C CNN
 	3    11100 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D23
+L MXKeyboard-eagle-import:BAS16VY D23
 U 1 1 40BA98E3
 P 11100 4650
-AR Path="/40BA98E3" Ref="D23"  Part="1" 
-AR Path="/5F5D4893/40BA98E3" Ref="D23"  Part="1" 
+AR Path="/40BA98E3" Ref="D23"  Part="1"
+AR Path="/5F5D4893/40BA98E3" Ref="D23"  Part="1"
 F 0 "D23" H 10950 4710 59  0000 L BNN
 F 1 "BAS16VY" H 11100 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11100 4650 50  0001 C CNN
 F 3 "" H 11100 4650 50  0001 C CNN
 	1    11100 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D23
+L MXKeyboard-eagle-import:BAS16VY D23
 U 2 1 40BA98EF
 P 11100 4950
-AR Path="/40BA98EF" Ref="D23"  Part="2" 
-AR Path="/5F5D4893/40BA98EF" Ref="D23"  Part="2" 
+AR Path="/40BA98EF" Ref="D23"  Part="2"
+AR Path="/5F5D4893/40BA98EF" Ref="D23"  Part="2"
 F 0 "D23" H 10950 5010 59  0000 L BNN
 F 1 "BAS16VY" H 11100 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11100 4950 50  0001 C CNN
 F 3 "" H 11100 4950 50  0001 C CNN
 	2    11100 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D23
+L MXKeyboard-eagle-import:BAS16VY D23
 U 3 1 40BA98EB
 P 11100 5450
-AR Path="/40BA98EB" Ref="D23"  Part="3" 
-AR Path="/5F5D4893/40BA98EB" Ref="D23"  Part="3" 
+AR Path="/40BA98EB" Ref="D23"  Part="3"
+AR Path="/5F5D4893/40BA98EB" Ref="D23"  Part="3"
 F 0 "D23" H 10950 5510 59  0000 L BNN
 F 1 "BAS16VY" H 11100 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11100 5450 50  0001 C CNN
 F 3 "" H 11100 5450 50  0001 C CNN
 	3    11100 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D24
+L MXKeyboard-eagle-import:BAS16VY D24
 U 1 1 5A2B5BA5
 P 11900 3550
-AR Path="/5A2B5BA5" Ref="D24"  Part="1" 
-AR Path="/5F5D4893/5A2B5BA5" Ref="D24"  Part="1" 
+AR Path="/5A2B5BA5" Ref="D24"  Part="1"
+AR Path="/5F5D4893/5A2B5BA5" Ref="D24"  Part="1"
 F 0 "D24" H 11750 3610 59  0000 L BNN
 F 1 "BAS16VY" H 11900 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11900 3550 50  0001 C CNN
 F 3 "" H 11900 3550 50  0001 C CNN
 	1    11900 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D24
+L MXKeyboard-eagle-import:BAS16VY D24
 U 2 1 5A2B5BA9
 P 11900 4050
-AR Path="/5A2B5BA9" Ref="D24"  Part="2" 
-AR Path="/5F5D4893/5A2B5BA9" Ref="D24"  Part="2" 
+AR Path="/5A2B5BA9" Ref="D24"  Part="2"
+AR Path="/5F5D4893/5A2B5BA9" Ref="D24"  Part="2"
 F 0 "D24" H 11750 4110 59  0000 L BNN
 F 1 "BAS16VY" H 11900 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11900 4050 50  0001 C CNN
 F 3 "" H 11900 4050 50  0001 C CNN
 	2    11900 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D24
+L MXKeyboard-eagle-import:BAS16VY D24
 U 3 1 5A2B5BAD
 P 11900 4350
-AR Path="/5A2B5BAD" Ref="D24"  Part="3" 
-AR Path="/5F5D4893/5A2B5BAD" Ref="D24"  Part="3" 
+AR Path="/5A2B5BAD" Ref="D24"  Part="3"
+AR Path="/5F5D4893/5A2B5BAD" Ref="D24"  Part="3"
 F 0 "D24" H 11750 4410 59  0000 L BNN
 F 1 "BAS16VY" H 11900 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11900 4350 50  0001 C CNN
 F 3 "" H 11900 4350 50  0001 C CNN
 	3    11900 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D25
+L MXKeyboard-eagle-import:BAS16VY D25
 U 1 1 58164064
 P 11900 4650
-AR Path="/58164064" Ref="D25"  Part="1" 
-AR Path="/5F5D4893/58164064" Ref="D25"  Part="1" 
+AR Path="/58164064" Ref="D25"  Part="1"
+AR Path="/5F5D4893/58164064" Ref="D25"  Part="1"
 F 0 "D25" H 11750 4710 59  0000 L BNN
 F 1 "BAS16VY" H 11900 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11900 4650 50  0001 C CNN
 F 3 "" H 11900 4650 50  0001 C CNN
 	1    11900 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D25
+L MXKeyboard-eagle-import:BAS16VY D25
 U 2 1 58164068
 P 11900 4950
-AR Path="/58164068" Ref="D25"  Part="2" 
-AR Path="/5F5D4893/58164068" Ref="D25"  Part="2" 
+AR Path="/58164068" Ref="D25"  Part="2"
+AR Path="/5F5D4893/58164068" Ref="D25"  Part="2"
 F 0 "D25" H 11750 5010 59  0000 L BNN
 F 1 "BAS16VY" H 11900 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11900 4950 50  0001 C CNN
 F 3 "" H 11900 4950 50  0001 C CNN
 	2    11900 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D25
+L MXKeyboard-eagle-import:BAS16VY D25
 U 3 1 5816406C
 P 11900 5450
-AR Path="/5816406C" Ref="D25"  Part="3" 
-AR Path="/5F5D4893/5816406C" Ref="D25"  Part="3" 
+AR Path="/5816406C" Ref="D25"  Part="3"
+AR Path="/5F5D4893/5816406C" Ref="D25"  Part="3"
 F 0 "D25" H 11750 5510 59  0000 L BNN
 F 1 "BAS16VY" H 11900 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 11900 5450 50  0001 C CNN
 F 3 "" H 11900 5450 50  0001 C CNN
 	3    11900 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D26
+L MXKeyboard-eagle-import:BAS16VY D26
 U 1 1 E30E77C8
 P 12700 4050
-AR Path="/E30E77C8" Ref="D26"  Part="1" 
-AR Path="/5F5D4893/E30E77C8" Ref="D26"  Part="1" 
+AR Path="/E30E77C8" Ref="D26"  Part="1"
+AR Path="/5F5D4893/E30E77C8" Ref="D26"  Part="1"
 F 0 "D26" H 12550 4110 59  0000 L BNN
 F 1 "BAS16VY" H 12700 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 12700 4050 50  0001 C CNN
 F 3 "" H 12700 4050 50  0001 C CNN
 	1    12700 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D26
+L MXKeyboard-eagle-import:BAS16VY D26
 U 2 1 E30E77C4
 P 12700 4650
-AR Path="/E30E77C4" Ref="D26"  Part="2" 
-AR Path="/5F5D4893/E30E77C4" Ref="D26"  Part="2" 
+AR Path="/E30E77C4" Ref="D26"  Part="2"
+AR Path="/5F5D4893/E30E77C4" Ref="D26"  Part="2"
 F 0 "D26" H 12550 4710 59  0000 L BNN
 F 1 "BAS16VY" H 12700 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 12700 4650 50  0001 C CNN
 F 3 "" H 12700 4650 50  0001 C CNN
 	2    12700 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D26
+L MXKeyboard-eagle-import:BAS16VY D26
 U 3 1 E30E77C0
 P 12700 5450
-AR Path="/E30E77C0" Ref="D26"  Part="3" 
-AR Path="/5F5D4893/E30E77C0" Ref="D26"  Part="3" 
+AR Path="/E30E77C0" Ref="D26"  Part="3"
+AR Path="/5F5D4893/E30E77C0" Ref="D26"  Part="3"
 F 0 "D26" H 12550 5510 59  0000 L BNN
 F 1 "BAS16VY" H 12700 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 12700 5450 50  0001 C CNN
 F 3 "" H 12700 5450 50  0001 C CNN
 	3    12700 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D27
+L MXKeyboard-eagle-import:BAS16VY D27
 U 1 1 55B9129C
 P 14300 3550
-AR Path="/55B9129C" Ref="D27"  Part="1" 
-AR Path="/5F5D4893/55B9129C" Ref="D27"  Part="1" 
+AR Path="/55B9129C" Ref="D27"  Part="1"
+AR Path="/5F5D4893/55B9129C" Ref="D27"  Part="1"
 F 0 "D27" H 14150 3610 59  0000 L BNN
 F 1 "BAS16VY" H 14300 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 14300 3550 50  0001 C CNN
 F 3 "" H 14300 3550 50  0001 C CNN
 	1    14300 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D27
+L MXKeyboard-eagle-import:BAS16VY D27
 U 2 1 55B91290
 P 14300 4050
-AR Path="/55B91290" Ref="D27"  Part="2" 
-AR Path="/5F5D4893/55B91290" Ref="D27"  Part="2" 
+AR Path="/55B91290" Ref="D27"  Part="2"
+AR Path="/5F5D4893/55B91290" Ref="D27"  Part="2"
 F 0 "D27" H 14150 4110 59  0000 L BNN
 F 1 "BAS16VY" H 14300 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 14300 4050 50  0001 C CNN
 F 3 "" H 14300 4050 50  0001 C CNN
 	2    14300 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D27
+L MXKeyboard-eagle-import:BAS16VY D27
 U 3 1 55B91294
 P 14300 4350
-AR Path="/55B91294" Ref="D27"  Part="3" 
-AR Path="/5F5D4893/55B91294" Ref="D27"  Part="3" 
+AR Path="/55B91294" Ref="D27"  Part="3"
+AR Path="/5F5D4893/55B91294" Ref="D27"  Part="3"
 F 0 "D27" H 14150 4410 59  0000 L BNN
 F 1 "BAS16VY" H 14300 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 14300 4350 50  0001 C CNN
 F 3 "" H 14300 4350 50  0001 C CNN
 	3    14300 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D28
+L MXKeyboard-eagle-import:BAS16VY D28
 U 1 1 B5D15FF9
 P 15100 3550
-AR Path="/B5D15FF9" Ref="D28"  Part="1" 
-AR Path="/5F5D4893/B5D15FF9" Ref="D28"  Part="1" 
+AR Path="/B5D15FF9" Ref="D28"  Part="1"
+AR Path="/5F5D4893/B5D15FF9" Ref="D28"  Part="1"
 F 0 "D28" H 14950 3610 59  0000 L BNN
 F 1 "BAS16VY" H 15100 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 15100 3550 50  0001 C CNN
 F 3 "" H 15100 3550 50  0001 C CNN
 	1    15100 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D28
+L MXKeyboard-eagle-import:BAS16VY D28
 U 2 1 B5D15FF5
 P 15100 4050
-AR Path="/B5D15FF5" Ref="D28"  Part="2" 
-AR Path="/5F5D4893/B5D15FF5" Ref="D28"  Part="2" 
+AR Path="/B5D15FF5" Ref="D28"  Part="2"
+AR Path="/5F5D4893/B5D15FF5" Ref="D28"  Part="2"
 F 0 "D28" H 14950 4110 59  0000 L BNN
 F 1 "BAS16VY" H 15100 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 15100 4050 50  0001 C CNN
 F 3 "" H 15100 4050 50  0001 C CNN
 	2    15100 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D28
+L MXKeyboard-eagle-import:BAS16VY D28
 U 3 1 B5D15FF1
 P 15100 4350
-AR Path="/B5D15FF1" Ref="D28"  Part="3" 
-AR Path="/5F5D4893/B5D15FF1" Ref="D28"  Part="3" 
+AR Path="/B5D15FF1" Ref="D28"  Part="3"
+AR Path="/5F5D4893/B5D15FF1" Ref="D28"  Part="3"
 F 0 "D28" H 14950 4410 59  0000 L BNN
 F 1 "BAS16VY" H 15100 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 15100 4350 50  0001 C CNN
 F 3 "" H 15100 4350 50  0001 C CNN
 	3    15100 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D29
+L MXKeyboard-eagle-import:BAS16VY D29
 U 1 1 773A8A4A
 P 15900 3550
-AR Path="/773A8A4A" Ref="D29"  Part="1" 
-AR Path="/5F5D4893/773A8A4A" Ref="D29"  Part="1" 
+AR Path="/773A8A4A" Ref="D29"  Part="1"
+AR Path="/5F5D4893/773A8A4A" Ref="D29"  Part="1"
 F 0 "D29" H 15750 3610 59  0000 L BNN
 F 1 "BAS16VY" H 15900 3550 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 15900 3550 50  0001 C CNN
 F 3 "" H 15900 3550 50  0001 C CNN
 	1    15900 3550
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D29
+L MXKeyboard-eagle-import:BAS16VY D29
 U 2 1 773A8A46
 P 15900 4050
-AR Path="/773A8A46" Ref="D29"  Part="2" 
-AR Path="/5F5D4893/773A8A46" Ref="D29"  Part="2" 
+AR Path="/773A8A46" Ref="D29"  Part="2"
+AR Path="/5F5D4893/773A8A46" Ref="D29"  Part="2"
 F 0 "D29" H 15750 4110 59  0000 L BNN
 F 1 "BAS16VY" H 15900 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 15900 4050 50  0001 C CNN
 F 3 "" H 15900 4050 50  0001 C CNN
 	2    15900 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D29
+L MXKeyboard-eagle-import:BAS16VY D29
 U 3 1 773A8A42
 P 15900 4350
-AR Path="/773A8A42" Ref="D29"  Part="3" 
-AR Path="/5F5D4893/773A8A42" Ref="D29"  Part="3" 
+AR Path="/773A8A42" Ref="D29"  Part="3"
+AR Path="/5F5D4893/773A8A42" Ref="D29"  Part="3"
 F 0 "D29" H 15750 4410 59  0000 L BNN
 F 1 "BAS16VY" H 15900 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 15900 4350 50  0001 C CNN
 F 3 "" H 15900 4350 50  0001 C CNN
 	3    15900 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D30
+L MXKeyboard-eagle-import:BAS16VY D30
 U 1 1 C9688693
 P 15100 4650
-AR Path="/C9688693" Ref="D30"  Part="1" 
-AR Path="/5F5D4893/C9688693" Ref="D30"  Part="1" 
+AR Path="/C9688693" Ref="D30"  Part="1"
+AR Path="/5F5D4893/C9688693" Ref="D30"  Part="1"
 F 0 "D30" H 14950 4710 59  0000 L BNN
 F 1 "BAS16VY" H 15100 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 15100 4650 50  0001 C CNN
 F 3 "" H 15100 4650 50  0001 C CNN
 	1    15100 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D30
+L MXKeyboard-eagle-import:BAS16VY D30
 U 2 1 C968869F
 P 15100 4950
-AR Path="/C968869F" Ref="D30"  Part="2" 
-AR Path="/5F5D4893/C968869F" Ref="D30"  Part="2" 
+AR Path="/C968869F" Ref="D30"  Part="2"
+AR Path="/5F5D4893/C968869F" Ref="D30"  Part="2"
 F 0 "D30" H 14950 5010 59  0000 L BNN
 F 1 "BAS16VY" H 15100 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 15100 4950 50  0001 C CNN
 F 3 "" H 15100 4950 50  0001 C CNN
 	2    15100 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D30
+L MXKeyboard-eagle-import:BAS16VY D30
 U 3 1 C968869B
 P 13100 5450
-AR Path="/C968869B" Ref="D30"  Part="3" 
-AR Path="/5F5D4893/C968869B" Ref="D30"  Part="3" 
+AR Path="/C968869B" Ref="D30"  Part="3"
+AR Path="/5F5D4893/C968869B" Ref="D30"  Part="3"
 F 0 "D30" H 12950 5510 59  0000 L BNN
 F 1 "BAS16VY" H 13100 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 13100 5450 50  0001 C CNN
 F 3 "" H 13100 5450 50  0001 C CNN
 	3    13100 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D31
+L MXKeyboard-eagle-import:BAS16VY D31
 U 1 1 FF02821F
 P 14300 5250
-AR Path="/FF02821F" Ref="D31"  Part="1" 
-AR Path="/5F5D4893/FF02821F" Ref="D31"  Part="1" 
+AR Path="/FF02821F" Ref="D31"  Part="1"
+AR Path="/5F5D4893/FF02821F" Ref="D31"  Part="1"
 F 0 "D31" H 14150 5310 59  0000 L BNN
 F 1 "BAS16VY" H 14300 5250 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 14300 5250 50  0001 C CNN
 F 3 "" H 14300 5250 50  0001 C CNN
 	1    14300 5250
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D31
+L MXKeyboard-eagle-import:BAS16VY D31
 U 2 1 FF028213
 P 15100 5250
-AR Path="/FF028213" Ref="D31"  Part="2" 
-AR Path="/5F5D4893/FF028213" Ref="D31"  Part="2" 
+AR Path="/FF028213" Ref="D31"  Part="2"
+AR Path="/5F5D4893/FF028213" Ref="D31"  Part="2"
 F 0 "D31" H 14950 5310 59  0000 L BNN
 F 1 "BAS16VY" H 15100 5250 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 15100 5250 50  0001 C CNN
 F 3 "" H 15100 5250 50  0001 C CNN
 	2    15100 5250
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D31
+L MXKeyboard-eagle-import:BAS16VY D31
 U 3 1 FF028217
 P 15900 5250
-AR Path="/FF028217" Ref="D31"  Part="3" 
-AR Path="/5F5D4893/FF028217" Ref="D31"  Part="3" 
+AR Path="/FF028217" Ref="D31"  Part="3"
+AR Path="/5F5D4893/FF028217" Ref="D31"  Part="3"
 F 0 "D31" H 15750 5310 59  0000 L BNN
 F 1 "BAS16VY" H 15900 5250 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 15900 5250 50  0001 C CNN
 F 3 "" H 15900 5250 50  0001 C CNN
 	3    15900 5250
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D32
+L MXKeyboard-eagle-import:BAS16VY D32
 U 1 1 49718CC1
 P 17500 4050
-AR Path="/49718CC1" Ref="D32"  Part="1" 
-AR Path="/5F5D4893/49718CC1" Ref="D32"  Part="1" 
+AR Path="/49718CC1" Ref="D32"  Part="1"
+AR Path="/5F5D4893/49718CC1" Ref="D32"  Part="1"
 F 0 "D32" H 17350 4110 59  0000 L BNN
 F 1 "BAS16VY" H 17500 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 17500 4050 50  0001 C CNN
 F 3 "" H 17500 4050 50  0001 C CNN
 	1    17500 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D32
+L MXKeyboard-eagle-import:BAS16VY D32
 U 2 1 49718CCD
 P 17500 4350
-AR Path="/49718CCD" Ref="D32"  Part="2" 
-AR Path="/5F5D4893/49718CCD" Ref="D32"  Part="2" 
+AR Path="/49718CCD" Ref="D32"  Part="2"
+AR Path="/5F5D4893/49718CCD" Ref="D32"  Part="2"
 F 0 "D32" H 17350 4410 59  0000 L BNN
 F 1 "BAS16VY" H 17500 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 17500 4350 50  0001 C CNN
 F 3 "" H 17500 4350 50  0001 C CNN
 	2    17500 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D32
+L MXKeyboard-eagle-import:BAS16VY D32
 U 3 1 49718CC9
 P 17500 4650
-AR Path="/49718CC9" Ref="D32"  Part="3" 
-AR Path="/5F5D4893/49718CC9" Ref="D32"  Part="3" 
+AR Path="/49718CC9" Ref="D32"  Part="3"
+AR Path="/5F5D4893/49718CC9" Ref="D32"  Part="3"
 F 0 "D32" H 17350 4710 59  0000 L BNN
 F 1 "BAS16VY" H 17500 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 17500 4650 50  0001 C CNN
 F 3 "" H 17500 4650 50  0001 C CNN
 	3    17500 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D33
+L MXKeyboard-eagle-import:BAS16VY D33
 U 1 1 B9D1D775
 P 17500 4950
-AR Path="/B9D1D775" Ref="D33"  Part="1" 
-AR Path="/5F5D4893/B9D1D775" Ref="D33"  Part="1" 
+AR Path="/B9D1D775" Ref="D33"  Part="1"
+AR Path="/5F5D4893/B9D1D775" Ref="D33"  Part="1"
 F 0 "D33" H 17350 5010 59  0000 L BNN
 F 1 "BAS16VY" H 17500 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 17500 4950 50  0001 C CNN
 F 3 "" H 17500 4950 50  0001 C CNN
 	1    17500 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D33
+L MXKeyboard-eagle-import:BAS16VY D33
 U 2 1 B9D1D779
 P 18300 4950
-AR Path="/B9D1D779" Ref="D33"  Part="2" 
-AR Path="/5F5D4893/B9D1D779" Ref="D33"  Part="2" 
+AR Path="/B9D1D779" Ref="D33"  Part="2"
+AR Path="/5F5D4893/B9D1D779" Ref="D33"  Part="2"
 F 0 "D33" H 18150 5010 59  0000 L BNN
 F 1 "BAS16VY" H 18300 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 18300 4950 50  0001 C CNN
 F 3 "" H 18300 4950 50  0001 C CNN
 	2    18300 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D33
+L MXKeyboard-eagle-import:BAS16VY D33
 U 3 1 B9D1D77D
 P 17500 5250
-AR Path="/B9D1D77D" Ref="D33"  Part="3" 
-AR Path="/5F5D4893/B9D1D77D" Ref="D33"  Part="3" 
+AR Path="/B9D1D77D" Ref="D33"  Part="3"
+AR Path="/5F5D4893/B9D1D77D" Ref="D33"  Part="3"
 F 0 "D33" H 17350 5310 59  0000 L BNN
 F 1 "BAS16VY" H 17500 5250 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 17500 5250 50  0001 C CNN
 F 3 "" H 17500 5250 50  0001 C CNN
 	3    17500 5250
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D34
+L MXKeyboard-eagle-import:BAS16VY D34
 U 1 1 802F4FC5
 P 18300 4050
-AR Path="/802F4FC5" Ref="D34"  Part="1" 
-AR Path="/5F5D4893/802F4FC5" Ref="D34"  Part="1" 
+AR Path="/802F4FC5" Ref="D34"  Part="1"
+AR Path="/5F5D4893/802F4FC5" Ref="D34"  Part="1"
 F 0 "D34" H 18150 4110 59  0000 L BNN
 F 1 "BAS16VY" H 18300 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 18300 4050 50  0001 C CNN
 F 3 "" H 18300 4050 50  0001 C CNN
 	1    18300 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D34
+L MXKeyboard-eagle-import:BAS16VY D34
 U 2 1 802F4FC9
 P 18300 4350
-AR Path="/802F4FC9" Ref="D34"  Part="2" 
-AR Path="/5F5D4893/802F4FC9" Ref="D34"  Part="2" 
+AR Path="/802F4FC9" Ref="D34"  Part="2"
+AR Path="/5F5D4893/802F4FC9" Ref="D34"  Part="2"
 F 0 "D34" H 18150 4410 59  0000 L BNN
 F 1 "BAS16VY" H 18300 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 18300 4350 50  0001 C CNN
 F 3 "" H 18300 4350 50  0001 C CNN
 	2    18300 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D34
+L MXKeyboard-eagle-import:BAS16VY D34
 U 3 1 802F4FCD
 P 18300 4650
-AR Path="/802F4FCD" Ref="D34"  Part="3" 
-AR Path="/5F5D4893/802F4FCD" Ref="D34"  Part="3" 
+AR Path="/802F4FCD" Ref="D34"  Part="3"
+AR Path="/5F5D4893/802F4FCD" Ref="D34"  Part="3"
 F 0 "D34" H 18150 4710 59  0000 L BNN
 F 1 "BAS16VY" H 18300 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 18300 4650 50  0001 C CNN
 F 3 "" H 18300 4650 50  0001 C CNN
 	3    18300 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D35
+L MXKeyboard-eagle-import:BAS16VY D35
 U 1 1 958FFED1
 P 19100 4050
-AR Path="/958FFED1" Ref="D35"  Part="1" 
-AR Path="/5F5D4893/958FFED1" Ref="D35"  Part="1" 
+AR Path="/958FFED1" Ref="D35"  Part="1"
+AR Path="/5F5D4893/958FFED1" Ref="D35"  Part="1"
 F 0 "D35" H 18950 4110 59  0000 L BNN
 F 1 "BAS16VY" H 19100 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 19100 4050 50  0001 C CNN
 F 3 "" H 19100 4050 50  0001 C CNN
 	1    19100 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D35
+L MXKeyboard-eagle-import:BAS16VY D35
 U 2 1 958FFEDD
 P 19100 4350
-AR Path="/958FFEDD" Ref="D35"  Part="2" 
-AR Path="/5F5D4893/958FFEDD" Ref="D35"  Part="2" 
+AR Path="/958FFEDD" Ref="D35"  Part="2"
+AR Path="/5F5D4893/958FFEDD" Ref="D35"  Part="2"
 F 0 "D35" H 18950 4410 59  0000 L BNN
 F 1 "BAS16VY" H 19100 4350 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 19100 4350 50  0001 C CNN
 F 3 "" H 19100 4350 50  0001 C CNN
 	2    19100 4350
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D35
+L MXKeyboard-eagle-import:BAS16VY D35
 U 3 1 958FFED9
 P 19100 4650
-AR Path="/958FFED9" Ref="D35"  Part="3" 
-AR Path="/5F5D4893/958FFED9" Ref="D35"  Part="3" 
+AR Path="/958FFED9" Ref="D35"  Part="3"
+AR Path="/5F5D4893/958FFED9" Ref="D35"  Part="3"
 F 0 "D35" H 18950 4710 59  0000 L BNN
 F 1 "BAS16VY" H 19100 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 19100 4650 50  0001 C CNN
 F 3 "" H 19100 4650 50  0001 C CNN
 	3    19100 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D36
+L MXKeyboard-eagle-import:BAS16VY D36
 U 1 1 9C1443FC
 P 19100 4950
-AR Path="/9C1443FC" Ref="D36"  Part="1" 
-AR Path="/5F5D4893/9C1443FC" Ref="D36"  Part="1" 
+AR Path="/9C1443FC" Ref="D36"  Part="1"
+AR Path="/5F5D4893/9C1443FC" Ref="D36"  Part="1"
 F 0 "D36" H 18950 5010 59  0000 L BNN
 F 1 "BAS16VY" H 19100 4950 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 19100 4950 50  0001 C CNN
 F 3 "" H 19100 4950 50  0001 C CNN
 	1    19100 4950
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D36
+L MXKeyboard-eagle-import:BAS16VY D36
 U 2 1 9C1443F0
 P 19100 5250
-AR Path="/9C1443F0" Ref="D36"  Part="2" 
-AR Path="/5F5D4893/9C1443F0" Ref="D36"  Part="2" 
+AR Path="/9C1443F0" Ref="D36"  Part="2"
+AR Path="/5F5D4893/9C1443F0" Ref="D36"  Part="2"
 F 0 "D36" H 18950 5310 59  0000 L BNN
 F 1 "BAS16VY" H 19100 5250 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 19100 5250 50  0001 C CNN
 F 3 "" H 19100 5250 50  0001 C CNN
 	2    19100 5250
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D36
+L MXKeyboard-eagle-import:BAS16VY D36
 U 3 1 9C1443F4
 P 16500 5450
-AR Path="/9C1443F4" Ref="D36"  Part="3" 
-AR Path="/5F5D4893/9C1443F4" Ref="D36"  Part="3" 
+AR Path="/9C1443F4" Ref="D36"  Part="3"
+AR Path="/5F5D4893/9C1443F4" Ref="D36"  Part="3"
 F 0 "D36" H 16350 5510 59  0000 L BNN
 F 1 "BAS16VY" H 16500 5450 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 16500 5450 50  0001 C CNN
 F 3 "" H 16500 5450 50  0001 C CNN
 	3    16500 5450
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D37
+L MXKeyboard-eagle-import:BAS16VY D37
 U 1 1 92531D2C
 P 19900 4050
-AR Path="/92531D2C" Ref="D37"  Part="1" 
-AR Path="/5F5D4893/92531D2C" Ref="D37"  Part="1" 
+AR Path="/92531D2C" Ref="D37"  Part="1"
+AR Path="/5F5D4893/92531D2C" Ref="D37"  Part="1"
 F 0 "D37" H 19750 4110 59  0000 L BNN
 F 1 "BAS16VY" H 19900 4050 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 19900 4050 50  0001 C CNN
 F 3 "" H 19900 4050 50  0001 C CNN
 	1    19900 4050
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D37
+L MXKeyboard-eagle-import:BAS16VY D37
 U 2 1 92531D20
 P 19900 4650
-AR Path="/92531D20" Ref="D37"  Part="2" 
-AR Path="/5F5D4893/92531D20" Ref="D37"  Part="2" 
+AR Path="/92531D20" Ref="D37"  Part="2"
+AR Path="/5F5D4893/92531D20" Ref="D37"  Part="2"
 F 0 "D37" H 19750 4710 59  0000 L BNN
 F 1 "BAS16VY" H 19900 4650 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 19900 4650 50  0001 C CNN
 F 3 "" H 19900 4650 50  0001 C CNN
 	2    19900 4650
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:BAS16VY D37
+L MXKeyboard-eagle-import:BAS16VY D37
 U 3 1 92531D24
 P 19900 5250
-AR Path="/92531D24" Ref="D37"  Part="3" 
-AR Path="/5F5D4893/92531D24" Ref="D37"  Part="3" 
+AR Path="/92531D24" Ref="D37"  Part="3"
+AR Path="/5F5D4893/92531D24" Ref="D37"  Part="3"
 F 0 "D37" H 19750 5310 59  0000 L BNN
 F 1 "BAS16VY" H 19900 5250 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-363_SC-70-6" H 19900 5250 50  0001 C CNN
 F 3 "" H 19900 5250 50  0001 C CNN
 	3    19900 5250
-	1    0    0    1   
+	1    0    0    1
 $EndComp
 $Comp
 L Device:R_Small R31
 U 1 1 19BAA81D
 P 1400 4000
-AR Path="/19BAA81D" Ref="R31"  Part="1" 
-AR Path="/5F5D4893/19BAA81D" Ref="R31"  Part="1" 
+AR Path="/19BAA81D" Ref="R31"  Part="1"
+AR Path="/5F5D4893/19BAA81D" Ref="R31"  Part="1"
 F 0 "R31" V 1350 4000 59  0000 C BNN
 F 1 "20k" V 1450 4000 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 1400 4000 50  0001 C CNN
@@ -4868,14 +4868,14 @@ F 4 "Multicomp" H 1400 4000 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 1400 4000 59  0001 L BNN "MPN"
 F 6 "2130963" H 1400 4000 59  0001 L BNN "OC_FARNELL"
 	1    1400 4000
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L Device:R_Small R32
 U 1 1 A55F53B5
 P 1400 4300
-AR Path="/A55F53B5" Ref="R32"  Part="1" 
-AR Path="/5F5D4893/A55F53B5" Ref="R32"  Part="1" 
+AR Path="/A55F53B5" Ref="R32"  Part="1"
+AR Path="/5F5D4893/A55F53B5" Ref="R32"  Part="1"
 F 0 "R32" V 1350 4300 59  0000 C BNN
 F 1 "20k" V 1450 4300 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 1400 4300 50  0001 C CNN
@@ -4884,14 +4884,14 @@ F 4 "Multicomp" H 1400 4300 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 1400 4300 59  0001 L BNN "MPN"
 F 6 "2130963" H 1400 4300 59  0001 L BNN "OC_FARNELL"
 	1    1400 4300
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L Device:R_Small R33
 U 1 1 70C53D48
 P 1400 4600
-AR Path="/70C53D48" Ref="R33"  Part="1" 
-AR Path="/5F5D4893/70C53D48" Ref="R33"  Part="1" 
+AR Path="/70C53D48" Ref="R33"  Part="1"
+AR Path="/5F5D4893/70C53D48" Ref="R33"  Part="1"
 F 0 "R33" V 1350 4600 59  0000 C BNN
 F 1 "20k" V 1450 4600 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 1400 4600 50  0001 C CNN
@@ -4900,14 +4900,14 @@ F 4 "Multicomp" H 1400 4600 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 1400 4600 59  0001 L BNN "MPN"
 F 6 "2130963" H 1400 4600 59  0001 L BNN "OC_FARNELL"
 	1    1400 4600
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L Device:R_Small R34
 U 1 1 AD2297CA
 P 1400 4900
-AR Path="/AD2297CA" Ref="R34"  Part="1" 
-AR Path="/5F5D4893/AD2297CA" Ref="R34"  Part="1" 
+AR Path="/AD2297CA" Ref="R34"  Part="1"
+AR Path="/5F5D4893/AD2297CA" Ref="R34"  Part="1"
 F 0 "R34" V 1350 4959 59  0000 C BNN
 F 1 "20k" V 1450 4900 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 1400 4900 50  0001 C CNN
@@ -4916,14 +4916,14 @@ F 4 "Multicomp" H 1400 4900 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 1400 4900 59  0001 L BNN "MPN"
 F 6 "2130963" H 1400 4900 59  0001 L BNN "OC_FARNELL"
 	1    1400 4900
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L Device:R_Small R35
 U 1 1 357824E1
 P 1400 5400
-AR Path="/357824E1" Ref="R35"  Part="1" 
-AR Path="/5F5D4893/357824E1" Ref="R35"  Part="1" 
+AR Path="/357824E1" Ref="R35"  Part="1"
+AR Path="/5F5D4893/357824E1" Ref="R35"  Part="1"
 F 0 "R35" V 1350 5400 59  0000 C BNN
 F 1 "20k" V 1450 5400 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 1400 5400 50  0001 C CNN
@@ -4932,7 +4932,7 @@ F 4 "Multicomp" H 1400 5400 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 1400 5400 59  0001 L BNN "MPN"
 F 6 "2130963" H 1400 5400 59  0001 L BNN "OC_FARNELL"
 	1    1400 5400
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Text Notes 1600 2400 0    59   ~ 0
 MXKeyboard (RGB LED)
@@ -4990,8 +4990,8 @@ $Comp
 L Device:R_Small R2
 U 1 1 3068770C
 P 20300 4000
-AR Path="/3068770C" Ref="R2"  Part="1" 
-AR Path="/5F5D4893/3068770C" Ref="R2"  Part="1" 
+AR Path="/3068770C" Ref="R2"  Part="1"
+AR Path="/5F5D4893/3068770C" Ref="R2"  Part="1"
 F 0 "R2" V 20250 4000 59  0000 C BNN
 F 1 "20k" V 20350 4000 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 20300 4000 50  0001 C CNN
@@ -5000,7 +5000,7 @@ F 4 "Multicomp" H 20300 4000 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 20300 4000 59  0001 L BNN "MPN"
 F 6 "2130963" H 20300 4000 59  0001 L BNN "OC_FARNELL"
 	1    20300 4000
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L power:GND #PWR02
@@ -5011,14 +5011,14 @@ F 1 "GND" H 20505 5127 50  0000 C CNN
 F 2 "" H 20500 5300 50  0001 C CNN
 F 3 "" H 20500 5300 50  0001 C CNN
 	1    20500 5300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:R_Small R6
 U 1 1 273358DB
 P 20300 5200
-AR Path="/273358DB" Ref="R6"  Part="1" 
-AR Path="/5F5D4893/273358DB" Ref="R6"  Part="1" 
+AR Path="/273358DB" Ref="R6"  Part="1"
+AR Path="/5F5D4893/273358DB" Ref="R6"  Part="1"
 F 0 "R6" V 20250 5200 59  0000 C BNN
 F 1 "20k" V 20350 5200 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 20300 5200 50  0001 C CNN
@@ -5027,14 +5027,14 @@ F 4 "Multicomp" H 20300 5200 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 20300 5200 59  0001 L BNN "MPN"
 F 6 "2130963" H 20300 5200 59  0001 L BNN "OC_FARNELL"
 	1    20300 5200
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 B6B05A86
 P 20300 4900
-AR Path="/B6B05A86" Ref="R5"  Part="1" 
-AR Path="/5F5D4893/B6B05A86" Ref="R5"  Part="1" 
+AR Path="/B6B05A86" Ref="R5"  Part="1"
+AR Path="/5F5D4893/B6B05A86" Ref="R5"  Part="1"
 F 0 "R5" V 20250 4900 59  0000 C BNN
 F 1 "20k" V 20350 4900 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 20300 4900 50  0001 C CNN
@@ -5043,14 +5043,14 @@ F 4 "Multicomp" H 20300 4900 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 20300 4900 59  0001 L BNN "MPN"
 F 6 "2130963" H 20300 4900 59  0001 L BNN "OC_FARNELL"
 	1    20300 4900
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L Device:R_Small R4
 U 1 1 2908B31E
 P 20300 4600
-AR Path="/2908B31E" Ref="R4"  Part="1" 
-AR Path="/5F5D4893/2908B31E" Ref="R4"  Part="1" 
+AR Path="/2908B31E" Ref="R4"  Part="1"
+AR Path="/5F5D4893/2908B31E" Ref="R4"  Part="1"
 F 0 "R4" V 20250 4600 59  0000 C BNN
 F 1 "20k" V 20350 4600 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 20300 4600 50  0001 C CNN
@@ -5059,14 +5059,14 @@ F 4 "Multicomp" H 20300 4600 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 20300 4600 59  0001 L BNN "MPN"
 F 6 "2130963" H 20300 4600 59  0001 L BNN "OC_FARNELL"
 	1    20300 4600
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L Device:R_Small R3
 U 1 1 97D6B0C7
 P 20300 4300
-AR Path="/97D6B0C7" Ref="R3"  Part="1" 
-AR Path="/5F5D4893/97D6B0C7" Ref="R3"  Part="1" 
+AR Path="/97D6B0C7" Ref="R3"  Part="1"
+AR Path="/5F5D4893/97D6B0C7" Ref="R3"  Part="1"
 F 0 "R3" V 20250 4300 59  0000 C BNN
 F 1 "20k" V 20350 4300 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 20300 4300 50  0001 C CNN
@@ -5075,14 +5075,14 @@ F 4 "Multicomp" H 20300 4300 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 20300 4300 59  0001 L BNN "MPN"
 F 6 "2130963" H 20300 4300 59  0001 L BNN "OC_FARNELL"
 	1    20300 4300
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 086E4599
 P 20300 3500
-AR Path="/086E4599" Ref="R1"  Part="1" 
-AR Path="/5F5D4893/086E4599" Ref="R1"  Part="1" 
+AR Path="/086E4599" Ref="R1"  Part="1"
+AR Path="/5F5D4893/086E4599" Ref="R1"  Part="1"
 F 0 "R1" V 20250 3500 59  0000 C BNN
 F 1 "20k" V 20350 3500 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 20300 3500 50  0001 C CNN
@@ -5091,7 +5091,7 @@ F 4 "Multicomp" H 20300 3500 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 20300 3500 59  0001 L BNN "MPN"
 F 6 "2130963" H 20300 3500 59  0001 L BNN "OC_FARNELL"
 	1    20300 3500
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Connection ~ 20500 4000
 Connection ~ 20500 4300
@@ -5137,7 +5137,7 @@ F 1 "GND" H 1205 5327 50  0000 C CNN
 F 2 "" H 1200 5500 50  0001 C CNN
 F 3 "" H 1200 5500 50  0001 C CNN
 	1    1200 5500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Label 1650 5400 0    10   ~ 0
 ROW6
@@ -5161,8 +5161,8 @@ $Comp
 L Device:R_Small R30
 U 1 1 B032C944
 P 1400 3500
-AR Path="/B032C944" Ref="R30"  Part="1" 
-AR Path="/5F5D4893/B032C944" Ref="R30"  Part="1" 
+AR Path="/B032C944" Ref="R30"  Part="1"
+AR Path="/5F5D4893/B032C944" Ref="R30"  Part="1"
 F 0 "R30" V 1350 3500 59  0000 C BNN
 F 1 "20k" V 1450 3500 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 1400 3500 50  0001 C CNN
@@ -5171,7 +5171,7 @@ F 4 "Multicomp" H 1400 3500 59  0001 L BNN "MFR"
 F 5 "MC0063W0603120K5" H 1400 3500 59  0001 L BNN "MPN"
 F 6 "2130963" H 1400 3500 59  0001 L BNN "OC_FARNELL"
 	1    1400 3500
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L power:GND #PWR065
@@ -5182,7 +5182,7 @@ F 1 "GND" H 8105 5527 50  0000 C CNN
 F 2 "" H 8100 5700 50  0001 C CNN
 F 3 "" H 8100 5700 50  0001 C CNN
 	1    8100 5700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:GND #PWR066
@@ -5193,7 +5193,7 @@ F 1 "GND" H 12905 5527 50  0000 C CNN
 F 2 "" H 12900 5700 50  0001 C CNN
 F 3 "" H 12900 5700 50  0001 C CNN
 	1    12900 5700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:GND #PWR067
@@ -5204,161 +5204,161 @@ F 1 "GND" H 16505 5527 50  0000 C CNN
 F 2 "" H 16500 5700 50  0001 C CNN
 F 3 "" H 16500 5700 50  0001 C CNN
 	1    16500 5700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB1
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB1
 U 1 1 9D59DDD9
 P 12350 5050
 F 0 "STB1" V 12200 5050 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 12100 4900 50  0000 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 12350 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 12350 4800 50  0001 C CNN
 F 3 "" H 12350 5050 50  0001 C CNN
 	1    12350 5050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB2
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB2
 U 1 1 9D5E9FF4
 P 12600 5050
 F 0 "STB2" V 12750 5050 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 12728 5005 50  0001 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 12600 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 12600 4800 50  0001 C CNN
 F 3 "" H 12600 5050 50  0001 C CNN
 	1    12600 5050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB3
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB3
 U 1 1 9D62F4B4
 P 12500 3800
 F 0 "STB3" V 12350 3800 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 12250 3650 50  0000 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 12500 3550 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 12500 3550 50  0001 C CNN
 F 3 "" H 12500 3800 50  0001 C CNN
 	1    12500 3800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB4
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB4
 U 1 1 9D6305AF
 P 12750 3800
 F 0 "STB4" V 12900 3800 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 12878 3755 50  0001 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 12750 3550 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 12750 3550 50  0001 C CNN
 F 3 "" H 12750 3800 50  0001 C CNN
 	1    12750 3800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB5
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB5
 U 1 1 9D63095A
 P 17950 5350
 F 0 "STB5" V 17800 5350 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 17700 5200 50  0000 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 17950 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 17950 5100 50  0001 C CNN
 F 3 "" H 17950 5350 50  0001 C CNN
 	1    17950 5350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB6
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB6
 U 1 1 9D631531
 P 18200 5350
 F 0 "STB6" V 18350 5350 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 18328 5305 50  0001 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 18200 5100 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 18200 5100 50  0001 C CNN
 F 3 "" H 18200 5350 50  0001 C CNN
 	1    18200 5350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB7
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB7
 U 1 1 9E908433
 P 19550 5650
 F 0 "STB7" V 19400 5650 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 19300 5500 50  0000 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 19550 5400 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 19550 5400 50  0001 C CNN
 F 3 "" H 19550 5650 50  0001 C CNN
 	1    19550 5650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB8
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB8
 U 1 1 9E90908D
 P 19800 5650
 F 0 "STB8" V 19950 5650 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 19928 5605 50  0001 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 19800 5400 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 19800 5400 50  0001 C CNN
 F 3 "" H 19800 5650 50  0001 C CNN
 	1    19800 5650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB9
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB9
 U 1 1 9E90DCC1
 P 19550 6000
 F 0 "STB9" V 19400 6000 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 19300 5850 50  0000 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 19550 5750 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 19550 5750 50  0001 C CNN
 F 3 "" H 19550 6000 50  0001 C CNN
 	1    19550 6000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB10
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB10
 U 1 1 9E90DEB2
 P 19800 6000
 F 0 "STB10" V 19950 6000 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 19928 5955 50  0001 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 19800 5750 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 19800 5750 50  0001 C CNN
 F 3 "" H 19800 6000 50  0001 C CNN
 	1    19800 6000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB11
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB11
 U 1 1 9E9918C2
 P 13150 5050
 F 0 "STB11" V 13000 5050 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 12900 4900 50  0000 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 13150 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 13150 4800 50  0001 C CNN
 F 3 "" H 13150 5050 50  0001 C CNN
 	1    13150 5050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB12
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB12
 U 1 1 9E9929B3
 P 13400 5050
 F 0 "STB12" V 13550 5050 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 13528 5005 50  0001 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 13400 4800 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 13400 4800 50  0001 C CNN
 F 3 "" H 13400 5050 50  0001 C CNN
 	1    13400 5050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB13
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB13
 U 1 1 5FECBD80
 P 5950 5550
 F 0 "STB13" V 5800 5550 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 5700 5400 50  0000 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 5950 5300 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 5950 5300 50  0001 C CNN
 F 3 "" H 5950 5550 50  0001 C CNN
 	1    5950 5550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
-L MXKeyboard_RGB-eagle-import:Cherry_MX_Stabiliser STB14
+L MXKeyboard-eagle-import:Cherry_MX_Stabiliser STB14
 U 1 1 5FECC738
 P 6250 5550
 F 0 "STB14" V 6400 5550 50  0000 C CNN
 F 1 "Cherry_MX_Stabiliser" H 6378 5505 50  0001 L CNN
-F 2 "MXKeyboard_RGB:MX_STABILISER" H 6250 5300 50  0001 C CNN
+F 2 "MXKeyboard:MX_STABILISER" H 6250 5300 50  0001 C CNN
 F 3 "" H 6250 5550 50  0001 C CNN
 	1    6250 5550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	1500 5400 1750 5400

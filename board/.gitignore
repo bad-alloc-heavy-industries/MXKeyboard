@@ -5,6 +5,7 @@ eagle.epf
 *.l#*
 
 *-bak
+*.bck
 fp-info-cache
 
 img/
