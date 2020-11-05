@@ -427,146 +427,161 @@ $Comp
 L DX_MON:USB-Micro-B USB
 U 1 1 A37A79AB
 P 9850 5200
-AR Path="/A37A79AB" Ref="USB"  Part="1"
-AR Path="/5F5D6257/A37A79AB" Ref="USB1"  Part="1"
+AR Path="/A37A79AB" Ref="USB"  Part="1" 
+AR Path="/5F5D6257/A37A79AB" Ref="USB1"  Part="1" 
 F 0 "USB1" H 10000 5550 59  0000 R CNN
 F 1 "USB" H 10000 4850 59  0000 R CNN
 F 2 "rhais_usb:MICRO-USB-B-(IN_PCB)" H 9850 5200 50  0001 C CNN
-F 3 "" H 9850 5200 50  0001 C CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10103593.pdf" H 9850 5200 50  0001 C CNN
+F 4 "Amphenol ICC" H 9850 5200 50  0001 C CNN "MFR"
+F 5 "10103593-0001LF" H 9850 5200 50  0001 C CNN "MPN"
+F 6 "2293751" H 9850 5200 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/amphenol-icc-fci/10103593-0001lf/micro-usb-2-0-type-b-receptacle/dp/2293751" H 9850 5200 50  0001 C CNN "URL_FARNELL"
 	1    9850 5200
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 F1C90C04
 P 9950 5900
-AR Path="/F1C90C04" Ref="C1"  Part="1"
-AR Path="/5F5D6257/F1C90C04" Ref="C1"  Part="1"
+AR Path="/F1C90C04" Ref="C1"  Part="1" 
+AR Path="/5F5D6257/F1C90C04" Ref="C1"  Part="1" 
 F 0 "C1" H 10000 5950 59  0000 L BNN
 F 1 "0.1uF" H 10000 5850 59  0000 L TNN
 F 2 "rhais_rcl:C0603" H 9950 5900 50  0001 C CNN
-F 3 "" H 9950 5900 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 9950 5900 50  0001 C CNN
 F 4 "Multicomp" H 9950 5900 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 9950 5900 59  0001 L BNN "MPN"
 F 6 "2310559" H 9950 5900 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 9950 5900 50  0001 C CNN "URL_FARNELL"
 	1    9950 5900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even JP1
 U 1 1 2F430EF2
 P 3600 2200
-AR Path="/2F430EF2" Ref="JP1"  Part="1"
-AR Path="/5F5D6257/2F430EF2" Ref="JP1"  Part="1"
+AR Path="/2F430EF2" Ref="JP1"  Part="1" 
+AR Path="/5F5D6257/2F430EF2" Ref="JP1"  Part="1" 
 F 0 "JP1" H 3350 2525 59  0000 L BNN
 F 1 "PINHD-2X5" H 3350 1800 59  0000 L BNN
 F 2 "rhais_connector-pinheader:PinHeader_2x05_P1.27mm_Vertical_SMD" H 3600 2200 50  0001 C CNN
-F 3 "" H 3600 2200 50  0001 C CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/20021121.pdf" H 3600 2200 50  0001 C CNN
+F 4 "Amphenol ICC" H 3600 2200 50  0001 C CNN "MFR"
+F 5 "20021121-00010C4LF" H 3600 2200 50  0001 C CNN "MPN"
+F 6 "1865279" H 3600 2200 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/amphenol-icc-fci/20021121-00010c4lf/connector-header-smt-r-a-1-27mm/dp/1865279" H 3600 2200 50  0001 C CNN "URL_FARNELL"
 	1    3600 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C2
 U 1 1 B94C3227
 P 5300 2200
-AR Path="/B94C3227" Ref="C2"  Part="1"
-AR Path="/5F5D6257/B94C3227" Ref="C2"  Part="1"
+AR Path="/B94C3227" Ref="C2"  Part="1" 
+AR Path="/5F5D6257/B94C3227" Ref="C2"  Part="1" 
 F 0 "C2" V 5350 2250 59  0000 L CNN
 F 1 "0.1uF" V 5350 2150 59  0000 R CNN
 F 2 "rhais_rcl:C0603" H 5300 2200 50  0001 C CNN
-F 3 "" H 5300 2200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 5300 2200 50  0001 C CNN
 F 4 "Multicomp" H 5300 2200 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 5300 2200 59  0001 L BNN "MPN"
 F 6 "2310559" H 5300 2200 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 5300 2200 50  0001 C CNN "URL_FARNELL"
 	1    5300 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C3
 U 1 1 DAA3AADF
 P 5500 2200
-AR Path="/DAA3AADF" Ref="C3"  Part="1"
-AR Path="/5F5D6257/DAA3AADF" Ref="C3"  Part="1"
+AR Path="/DAA3AADF" Ref="C3"  Part="1" 
+AR Path="/5F5D6257/DAA3AADF" Ref="C3"  Part="1" 
 F 0 "C3" V 5550 2250 59  0000 L CNN
 F 1 "0.1uF" V 5550 2150 59  0000 R CNN
 F 2 "rhais_rcl:C0603" H 5500 2200 50  0001 C CNN
-F 3 "" H 5500 2200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 5500 2200 50  0001 C CNN
 F 4 "Multicomp" H 5500 2200 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 5500 2200 59  0001 L BNN "MPN"
 F 6 "2310559" H 5500 2200 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 5500 2200 50  0001 C CNN "URL_FARNELL"
 	1    5500 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C4
 U 1 1 F80B1965
 P 5700 2200
-AR Path="/F80B1965" Ref="C4"  Part="1"
-AR Path="/5F5D6257/F80B1965" Ref="C4"  Part="1"
+AR Path="/F80B1965" Ref="C4"  Part="1" 
+AR Path="/5F5D6257/F80B1965" Ref="C4"  Part="1" 
 F 0 "C4" V 5750 2250 59  0000 L CNN
 F 1 "0.1uF" V 5750 2150 59  0000 R CNN
 F 2 "rhais_rcl:C0603" H 5700 2200 50  0001 C CNN
-F 3 "" H 5700 2200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 5700 2200 50  0001 C CNN
 F 4 "Multicomp" H 5700 2200 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 5700 2200 59  0001 L BNN "MPN"
 F 6 "2310559" H 5700 2200 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 5700 2200 50  0001 C CNN "URL_FARNELL"
 	1    5700 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C5
 U 1 1 295533C0
 P 5900 2200
-AR Path="/295533C0" Ref="C5"  Part="1"
-AR Path="/5F5D6257/295533C0" Ref="C5"  Part="1"
+AR Path="/295533C0" Ref="C5"  Part="1" 
+AR Path="/5F5D6257/295533C0" Ref="C5"  Part="1" 
 F 0 "C5" V 5950 2250 59  0000 L CNN
 F 1 "0.1uF" V 5950 2150 59  0000 R CNN
 F 2 "rhais_rcl:C0603" H 5900 2200 50  0001 C CNN
-F 3 "" H 5900 2200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 5900 2200 50  0001 C CNN
 F 4 "Multicomp" H 5900 2200 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 5900 2200 59  0001 L BNN "MPN"
 F 6 "2310559" H 5900 2200 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 5900 2200 50  0001 C CNN "URL_FARNELL"
 	1    5900 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C6
 U 1 1 2E21776E
 P 6100 2200
-AR Path="/2E21776E" Ref="C6"  Part="1"
-AR Path="/5F5D6257/2E21776E" Ref="C6"  Part="1"
+AR Path="/2E21776E" Ref="C6"  Part="1" 
+AR Path="/5F5D6257/2E21776E" Ref="C6"  Part="1" 
 F 0 "C6" V 6150 2250 59  0000 L CNN
 F 1 "0.1uF" V 6150 2150 59  0000 R CNN
 F 2 "rhais_rcl:C0603" H 6100 2200 50  0001 C CNN
-F 3 "" H 6100 2200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 6100 2200 50  0001 C CNN
 F 4 "Multicomp" H 6100 2200 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 6100 2200 59  0001 L BNN "MPN"
 F 6 "2310559" H 6100 2200 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 6100 2200 50  0001 C CNN "URL_FARNELL"
 	1    6100 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R18
 U 1 1 6A070FAE
 P 4800 4100
-AR Path="/6A070FAE" Ref="R18"  Part="1"
-AR Path="/5F5D6257/6A070FAE" Ref="R18"  Part="1"
+AR Path="/6A070FAE" Ref="R18"  Part="1" 
+AR Path="/5F5D6257/6A070FAE" Ref="R18"  Part="1" 
 F 0 "R18" V 4750 4100 59  0000 C BNN
 F 1 "10k" V 4850 4100 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 4800 4100 50  0001 C CNN
-F 3 "" H 4800 4100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 4800 4100 50  0001 C CNN
 F 4 "Multicomp" H 4800 4100 59  0001 L BNN "MFR"
-F 5 "MC0063W0603110K" H 4800 4100 59  0001 L BNN "MPN"
-F 6 "2130939" H 4800 4100 59  0001 L BNN "OC_FARNELL"
+F 5 "MCWR06X1002FTL" H 4800 4100 59  0001 L BNN "MPN"
+F 6 "2446547" H 4800 4100 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mcwr06x1002ftl/res-10k-1-0-1w-0603-thick-film/dp/2446547" H 4800 4100 50  0001 C CNN "URL_FARNELL"
 	1    4800 4100
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L MXKeyboard-eagle-import:PS_2 PS/2
 U 1 1 554878EE
 P 14300 6300
-AR Path="/554878EE" Ref="PS/2"  Part="1"
-AR Path="/5F5D6257/554878EE" Ref="PS/2"  Part="1"
+AR Path="/554878EE" Ref="PS/2"  Part="1" 
+AR Path="/5F5D6257/554878EE" Ref="PS/2"  Part="1" 
 F 0 "PS/2" H 14300 6300 50  0001 C CNN
 F 1 "PS_2" H 14300 6300 50  0001 C CNN
 F 2 "MXKeyboard:TM_0508_A_6" H 14300 6300 50  0001 C CNN
@@ -576,280 +591,285 @@ F 5 "1200113" H 14300 6300 50  0001 C CNN "OC_FARNELL"
 F 6 "TM 0508 A/6" H 14300 6300 50  0001 C CNN "MPN"
 F 7 "Lumberg" H 14300 6300 50  0001 C CNN "MFR"
 	1    14300 6300
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R19
 U 1 1 B4133811
 P 14300 7400
-AR Path="/B4133811" Ref="R19"  Part="1"
-AR Path="/5F5D6257/B4133811" Ref="R19"  Part="1"
+AR Path="/B4133811" Ref="R19"  Part="1" 
+AR Path="/5F5D6257/B4133811" Ref="R19"  Part="1" 
 F 0 "R19" V 14250 7400 59  0000 C BNN
 F 1 "1M" V 14350 7400 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 14300 7400 50  0001 C CNN
-F 3 "" H 14300 7400 50  0001 C CNN
-F 4 "Vishay" H 14300 7400 59  0001 L BNN "MFR"
-F 5 "CRCW08051M00FKEA" H 14300 7400 59  0001 L BNN "MPN"
-F 6 "1652946" H 14300 7400 59  0001 L BNN "OC_FARNELL"
-F 7 "" H 14300 7400 59  0001 L BNN "URL"
-F 8 "https://uk.farnell.com/vishay/crcw08051m00fkea/res-1m-1-0-125w-0805-thick-film/dp/1652946" H 14300 7400 50  0001 C CNN "URL_FARNELL"
+F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 14300 7400 50  0001 C CNN
+F 4 "Multicomp" H 14300 7400 59  0001 L BNN "MFR"
+F 5 "MCWR06X1004FTL" H 14300 7400 59  0001 L BNN "MPN"
+F 6 "2447285" H 14300 7400 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mcwr06x1004ftl/res-1m-1-0-1w-0603-thick-film/dp/2447285" H 14300 7400 50  0001 C CNN "URL_FARNELL"
 	1    14300 7400
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L MXKeyboard-eagle-import:NTS0104 U12
 U 1 1 A9F22F29
 P 12800 6500
-AR Path="/A9F22F29" Ref="U12"  Part="1"
-AR Path="/5F5D6257/A9F22F29" Ref="U12"  Part="1"
+AR Path="/A9F22F29" Ref="U12"  Part="1" 
+AR Path="/5F5D6257/A9F22F29" Ref="U12"  Part="1" 
 F 0 "U12" H 13200 5980 59  0000 R TNN
 F 1 "NTS0104" H 12400 5980 59  0000 L TNN
 F 2 "rhais_package-qfn:DHVQFN-14-1EP_2.5x3mm_P0.5mm_EP1x1.5mm" H 12800 6500 50  0001 C CNN
-F 3 "" H 12800 6500 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/NTS0104.pdf" H 12800 6500 50  0001 C CNN
 F 4 "NXP" H 12800 6500 59  0001 L BNN "MFR"
 F 5 "NTS0104BQ,115" H 12800 6500 59  0001 L BNN "MPN"
 F 6 "2444925" H 12800 6500 59  0001 L BNN "OC_FARNELL"
 F 7 "http://uk.farnell.com/nxp/nts0104bq-115/transceiver-bidir-translator-dhvqfn14/dp/2444925" H 12800 6500 59  0001 L BNN "URL_FARNELL"
 	1    12800 6500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C8
 U 1 1 B2598F92
 P 13500 5900
-AR Path="/B2598F92" Ref="C8"  Part="1"
-AR Path="/5F5D6257/B2598F92" Ref="C8"  Part="1"
+AR Path="/B2598F92" Ref="C8"  Part="1" 
+AR Path="/5F5D6257/B2598F92" Ref="C8"  Part="1" 
 F 0 "C8" H 13550 5950 59  0000 L BNN
 F 1 "0.1uF" H 13550 5850 59  0000 L TNN
 F 2 "rhais_rcl:C0603" H 13500 5900 50  0001 C CNN
-F 3 "" H 13500 5900 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 13500 5900 50  0001 C CNN
 F 4 "Multicomp" H 13500 5900 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 13500 5900 59  0001 L BNN "MPN"
 F 6 "2310559" H 13500 5900 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 13500 5900 50  0001 C CNN "URL_FARNELL"
 	1    13500 5900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C9
 U 1 1 F7AEDC46
 P 12100 5900
-AR Path="/F7AEDC46" Ref="C9"  Part="1"
-AR Path="/5F5D6257/F7AEDC46" Ref="C9"  Part="1"
+AR Path="/F7AEDC46" Ref="C9"  Part="1" 
+AR Path="/5F5D6257/F7AEDC46" Ref="C9"  Part="1" 
 F 0 "C9" H 12150 5950 59  0000 L BNN
 F 1 "0.1uF" H 12150 5850 59  0000 L TNN
 F 2 "rhais_rcl:C0603" H 12100 5900 50  0001 C CNN
-F 3 "" H 12100 5900 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 12100 5900 50  0001 C CNN
 F 4 "Multicomp" H 12100 5900 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 12100 5900 59  0001 L BNN "MPN"
 F 6 "2310559" H 12100 5900 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 12100 5900 50  0001 C CNN "URL_FARNELL"
 	1    12100 5900
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L MXKeyboard-eagle-import:TC1015-3.3VCT713 U14
 U 1 1 9D30ECAF
 P 7700 2200
-AR Path="/9D30ECAF" Ref="U14"  Part="1"
-AR Path="/5F5D6257/9D30ECAF" Ref="U14"  Part="1"
+AR Path="/9D30ECAF" Ref="U14"  Part="1" 
+AR Path="/5F5D6257/9D30ECAF" Ref="U14"  Part="1" 
 F 0 "U14" H 7700 2200 50  0001 C CNN
 F 1 "TC1015-3.3VCT713" H 7700 2200 50  0001 C CNN
 F 2 "rhais_package-smd:SOT-23-5" H 7700 2200 50  0001 C CNN
-F 3 "" H 7700 2200 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21335e.pdf" H 7700 2200 50  0001 C CNN
+F 4 "Microchip" H 7700 2200 50  0001 C CNN "MFR"
+F 5 "TC1015-3.3VCT713" H 7700 2200 50  0001 C CNN "MPN"
+F 6 "1331505" H 7700 2200 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/microchip/tc1015-3-3vct713/ic-v-reg-ldo-100ma-smd-sot-23/dp/1331505" H 7700 2200 50  0001 C CNN "URL_FARNELL"
 	1    7700 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C11
 U 1 1 C2E82A64
 P 7000 2500
-AR Path="/C2E82A64" Ref="C11"  Part="1"
-AR Path="/5F5D6257/C2E82A64" Ref="C11"  Part="1"
+AR Path="/C2E82A64" Ref="C11"  Part="1" 
+AR Path="/5F5D6257/C2E82A64" Ref="C11"  Part="1" 
 F 0 "C11" V 7050 2550 59  0000 L CNN
 F 1 "1uF" V 7050 2450 59  0000 R CNN
 F 2 "rhais_rcl:C0603" H 7000 2500 50  0001 C CNN
-F 3 "" H 7000 2500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860632.pdf" H 7000 2500 50  0001 C CNN
 F 4 "Multicomp" H 7000 2500 59  0001 L BNN "MFR"
-F 5 "MC0603X105K100CT" H 7000 2500 59  0001 L BNN "MPN"
-F 6 "1759399" H 7000 2500 59  0001 L BNN "OC_FARNELL"
-F 7 "" H 7000 2500 59  0001 L BNN "URL"
-F 8 "https://uk.farnell.com/multicomp/mc0603x105k100ct/cap-1-f-10v-10-x5r-0603/dp/1759399" H 7000 2500 50  0001 C CNN "URL_FARNELL"
+F 5 "MC0603B105K160CT" H 7000 2500 59  0001 L BNN "MPN"
+F 6 "2320814" H 7000 2500 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b105k160ct/cap-1-f-16v-10-x7r-0603/dp/2320814" H 7000 2500 50  0001 C CNN "URL_FARNELL"
 	1    7000 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C12
 U 1 1 62F1FCC7
 P 8400 2500
-AR Path="/62F1FCC7" Ref="C12"  Part="1"
-AR Path="/5F5D6257/62F1FCC7" Ref="C12"  Part="1"
+AR Path="/62F1FCC7" Ref="C12"  Part="1" 
+AR Path="/5F5D6257/62F1FCC7" Ref="C12"  Part="1" 
 F 0 "C12" V 8450 2550 59  0000 L CNN
 F 1 "470pF" V 8450 2450 59  0000 R CNN
 F 2 "rhais_rcl:C0603" H 8400 2500 50  0001 C CNN
-F 3 "" H 8400 2500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2861120.pdf" H 8400 2500 50  0001 C CNN
 F 4 "Multicomp" H 8400 2500 59  0001 L BNN "MFR"
 F 5 "MC0603B471J500CT" H 8400 2500 59  0001 L BNN "MPN"
 F 6 "2627442" H 8400 2500 59  0001 L BNN "OC_FARNELL"
-F 7 "" H 8400 2500 59  0001 L BNN "URL"
-F 8 "https://uk.farnell.com/multicomp/mc0603b471j500ct/cap-470pf-50v-5-x7r-0603/dp/2627442" H 8400 2500 50  0001 C CNN "URL_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b471j500ct/cap-470pf-50v-5-x7r-0603/dp/2627442" H 8400 2500 50  0001 C CNN "URL_FARNELL"
 	1    8400 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C13
 U 1 1 01759F2E
 P 8600 2500
-AR Path="/01759F2E" Ref="C13"  Part="1"
-AR Path="/5F5D6257/01759F2E" Ref="C13"  Part="1"
+AR Path="/01759F2E" Ref="C13"  Part="1" 
+AR Path="/5F5D6257/01759F2E" Ref="C13"  Part="1" 
 F 0 "C13" V 8650 2550 59  0000 L CNN
 F 1 "1uF" V 8650 2450 59  0000 R CNN
 F 2 "rhais_rcl:C0603" H 8600 2500 50  0001 C CNN
-F 3 "" H 8600 2500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860632.pdf" H 8600 2500 50  0001 C CNN
 F 4 "Multicomp" H 8600 2500 59  0001 L BNN "MFR"
-F 5 "MC0603X105K100CT" H 8600 2500 59  0001 L BNN "MPN"
-F 6 "1759399" H 8600 2500 59  0001 L BNN "OC_FARNELL"
-F 7 "" H 8600 2500 59  0001 L BNN "URL"
-F 8 "https://uk.farnell.com/multicomp/mc0603x105k100ct/cap-1-f-10v-10-x5r-0603/dp/1759399" H 8600 2500 50  0001 C CNN "URL_FARNELL"
+F 5 "MC0603B105K160CT" H 8600 2500 59  0001 L BNN "MPN"
+F 6 "2320814" H 8600 2500 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b105k160ct/cap-1-f-16v-10-x7r-0603/dp/2320814" H 8600 2500 50  0001 C CNN "URL_FARNELL"
 	1    8600 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 54E7B095
 P 12200 2000
-AR Path="/54E7B095" Ref="H1"  Part="1"
-AR Path="/5F5D6257/54E7B095" Ref="H1"  Part="1"
+AR Path="/54E7B095" Ref="H1"  Part="1" 
+AR Path="/5F5D6257/54E7B095" Ref="H1"  Part="1" 
 F 0 "H1" H 12200 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12310 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12200 2000 50  0001 C CNN
 F 3 "" H 12200 2000 50  0001 C CNN
 	1    12200 2000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 FFEB2954
 P 12500 2000
-AR Path="/FFEB2954" Ref="H2"  Part="1"
-AR Path="/5F5D6257/FFEB2954" Ref="H2"  Part="1"
+AR Path="/FFEB2954" Ref="H2"  Part="1" 
+AR Path="/5F5D6257/FFEB2954" Ref="H2"  Part="1" 
 F 0 "H2" H 12500 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12610 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12500 2000 50  0001 C CNN
 F 3 "" H 12500 2000 50  0001 C CNN
 	1    12500 2000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 CAE5E1D2
 P 12800 2000
-AR Path="/CAE5E1D2" Ref="H3"  Part="1"
-AR Path="/5F5D6257/CAE5E1D2" Ref="H3"  Part="1"
+AR Path="/CAE5E1D2" Ref="H3"  Part="1" 
+AR Path="/5F5D6257/CAE5E1D2" Ref="H3"  Part="1" 
 F 0 "H3" H 12800 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12910 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12800 2000 50  0001 C CNN
 F 3 "" H 12800 2000 50  0001 C CNN
 	1    12800 2000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 8E35FD77
 P 13100 2000
-AR Path="/8E35FD77" Ref="H4"  Part="1"
-AR Path="/5F5D6257/8E35FD77" Ref="H4"  Part="1"
+AR Path="/8E35FD77" Ref="H4"  Part="1" 
+AR Path="/5F5D6257/8E35FD77" Ref="H4"  Part="1" 
 F 0 "H4" H 13100 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13210 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13100 2000 50  0001 C CNN
 F 3 "" H 13100 2000 50  0001 C CNN
 	1    13100 2000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H5
 U 1 1 1E95D56F
 P 13400 2000
-AR Path="/1E95D56F" Ref="H5"  Part="1"
-AR Path="/5F5D6257/1E95D56F" Ref="H5"  Part="1"
+AR Path="/1E95D56F" Ref="H5"  Part="1" 
+AR Path="/5F5D6257/1E95D56F" Ref="H5"  Part="1" 
 F 0 "H5" H 13400 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13510 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13400 2000 50  0001 C CNN
 F 3 "" H 13400 2000 50  0001 C CNN
 	1    13400 2000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H6
 U 1 1 EA1E7D4B
 P 13700 2000
-AR Path="/EA1E7D4B" Ref="H6"  Part="1"
-AR Path="/5F5D6257/EA1E7D4B" Ref="H6"  Part="1"
+AR Path="/EA1E7D4B" Ref="H6"  Part="1" 
+AR Path="/5F5D6257/EA1E7D4B" Ref="H6"  Part="1" 
 F 0 "H6" H 13700 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13810 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13700 2000 50  0001 C CNN
 F 3 "" H 13700 2000 50  0001 C CNN
 	1    13700 2000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H7
 U 1 1 E84F0E84
 P 14000 2000
-AR Path="/E84F0E84" Ref="H7"  Part="1"
-AR Path="/5F5D6257/E84F0E84" Ref="H7"  Part="1"
+AR Path="/E84F0E84" Ref="H7"  Part="1" 
+AR Path="/5F5D6257/E84F0E84" Ref="H7"  Part="1" 
 F 0 "H7" H 14000 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 14110 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 14000 2000 50  0001 C CNN
 F 3 "" H 14000 2000 50  0001 C CNN
 	1    14000 2000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L MXKeyboard-eagle-import:CXO-7M OSC1
 U 1 1 01133300
 P 9900 2200
-AR Path="/01133300" Ref="OSC1"  Part="1"
-AR Path="/5F5D6257/01133300" Ref="OSC1"  Part="1"
+AR Path="/01133300" Ref="OSC1"  Part="1" 
+AR Path="/5F5D6257/01133300" Ref="OSC1"  Part="1" 
 F 0 "OSC1" H 10000 1780 85  0000 L TNN
 F 1 "16MHz" H 9500 2620 85  0000 L BNN
 F 2 "rhais_osc:SMD3225" H 9900 2200 50  0001 C CNN
-F 3 "" H 9900 2200 50  0001 C CNN
-F 4 "Multicomp" H 9900 2200 85  0001 L BNN "ALT_MFR"
-F 5 "MCSJK-3N-16.00-3.3-25-B" H 9900 2200 85  0001 L BNN "ALT_MPN"
-F 6 "2854286" H 9900 2200 85  0001 L BNN "ALT_OC_FARNELL"
-F 7 "https://uk.farnell.com/multicomp/mcsjk-3n-16-00-3-3-25-b/oscillator-16mhz-3-2mm-x-2-5mm/dp/2854286" H 9900 2200 85  0001 L BNN "ALT_URL"
-F 8 "IQD" H 9900 2200 85  0001 L BNN "MFR"
-F 9 "LFSPXO025494" H 9900 2200 85  0001 L BNN "MPN"
-F 10 "2449455" H 9900 2200 85  0001 L BNN "OC_FARNELL"
-F 11 "" H 9900 2200 85  0001 L BNN "URL"
-F 12 "http://uk.farnell.com/iqd-frequency-products/lfspxo025494/oscillator-16mhz-15pf-smd/dp/2449455" H 9900 2200 50  0001 C CNN "URL_FARNELL"
+F 3 "http://www.farnell.com/datasheets/2864171.pdf" H 9900 2200 50  0001 C CNN
+F 4 "Multicomp" H 9900 2200 85  0001 L BNN "MFR"
+F 5 "MCSJK-3N-16.00-3.3-25-B" H 9900 2200 85  0001 L BNN "MPN"
+F 6 "2854286" H 9900 2200 85  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mcsjk-3n-16-00-3-3-25-b/oscillator-16mhz-3-2mm-x-2-5mm/dp/2854286" H 9900 2200 50  0001 C CNN "URL_FARNELL"
 	1    9900 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L MXKeyboard-eagle-import:ATXMEGA256A3U-MH U11
 U 1 1 43CCD586
 P 5700 5800
-AR Path="/43CCD586" Ref="U11"  Part="1"
-AR Path="/5F5D6257/43CCD586" Ref="U11"  Part="1"
+AR Path="/43CCD586" Ref="U11"  Part="1" 
+AR Path="/5F5D6257/43CCD586" Ref="U11"  Part="1" 
 F 0 "U11" H 6800 7320 59  0000 R BNN
 F 1 "ATXMEGA256A3U-MH" H 6800 4280 59  0000 R TNN
 F 2 "rhais_package-qfn:QFN-64-1EP_9x9mm_P0.5mm_EP7.5x7.5mm" H 5700 5800 50  0001 C CNN
-F 3 "" H 5700 5800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8386-8-and-16-bit-AVR-Microcontroller-ATxmega64A3U-128A3U-192A3U-256A3U_datasheet.pdf" H 5700 5800 50  0001 C CNN
+F 4 "Atmel" H 5700 5800 50  0001 C CNN "MFR"
+F 5 "ATXMEGA256A3U-MH" H 5700 5800 50  0001 C CNN "MPN"
+F 6 "2066308" H 5700 5800 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/microchip/atxmega256a3u-mh/mcu-8bit-avr-xmega-32mhz-qfn-64/dp/2066308" H 5700 5800 50  0001 C CNN "URL_FARNELL"
 	1    5700 5800
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R37
 U 1 1 B80E1D1D
 P 9300 5750
-AR Path="/B80E1D1D" Ref="R37"  Part="1"
-AR Path="/5F5D6257/B80E1D1D" Ref="R37"  Part="1"
+AR Path="/B80E1D1D" Ref="R37"  Part="1" 
+AR Path="/5F5D6257/B80E1D1D" Ref="R37"  Part="1" 
 F 0 "R37" V 9250 5750 59  0000 C BNN
 F 1 "100k" V 9350 5750 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 9300 5750 50  0001 C CNN
-F 3 "" H 9300 5750 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 9300 5750 50  0001 C CNN
+F 4 "Multicomp" H 9300 5750 50  0001 C CNN "MFR"
+F 5 "MCWR06X1003FTL" H 9300 5750 50  0001 C CNN "MPN"
+F 6 "2447226" H 9300 5750 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mcwr06x1003ftl/res-100k-1-0-1w-0603-thick-film/dp/2447226" H 9300 5750 50  0001 C CNN "URL_FARNELL"
 	1    9300 5750
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text HLabel 4400 6500 0    50   Output ~ 0
 SCLK_GREEN
@@ -878,7 +898,7 @@ F 1 "GND" H 5705 7327 50  0000 C CNN
 F 2 "" H 5700 7500 50  0001 C CNN
 F 3 "" H 5700 7500 50  0001 C CNN
 	1    5700 7500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR039
@@ -889,7 +909,7 @@ F 1 "+3.3V" H 5715 4273 50  0000 C CNN
 F 2 "" H 5700 4100 50  0001 C CNN
 F 3 "" H 5700 4100 50  0001 C CNN
 	1    5700 4100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR036
@@ -900,7 +920,7 @@ F 1 "+3.3V" H 4515 4173 50  0000 C CNN
 F 2 "" H 4500 4000 50  0001 C CNN
 F 3 "" H 4500 4000 50  0001 C CNN
 	1    4500 4000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text HLabel 9700 4500 2    50   Output ~ 0
 BLANK
@@ -911,12 +931,13 @@ P 9500 4500
 F 0 "R38" V 9450 4500 50  0000 C BNN
 F 1 "10k" V 9550 4500 50  0000 C TNN
 F 2 "rhais_rcl:R0603" H 9500 4500 50  0001 C CNN
-F 3 "" H 9500 4500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 9500 4500 50  0001 C CNN
 F 4 "Multicomp" H 9500 4500 50  0001 C CNN "MFR"
-F 5 "MC0063W0603110K" H 9500 4500 50  0001 C CNN "MPN"
-F 6 "2130939" H 9500 4500 50  0001 C CNN "OC_FARNELL"
+F 5 "MCWR06X1002FTL" H 9500 4500 50  0001 C CNN "MPN"
+F 6 "2446547" H 9500 4500 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mcwr06x1002ftl/res-10k-1-0-1w-0603-thick-film/dp/2446547" H 9500 4500 50  0001 C CNN "URL_FARNELL"
 	1    9500 4500
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	9600 4500 9700 4500
@@ -929,7 +950,7 @@ F 1 "+3.3V" H 9315 4573 50  0000 C CNN
 F 2 "" H 9300 4400 50  0001 C CNN
 F 3 "" H 9300 4400 50  0001 C CNN
 	1    9300 4400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9400 4500 9300 4500
@@ -996,7 +1017,7 @@ F 1 "GND" H 9505 6027 50  0000 C CNN
 F 2 "" H 9500 6200 50  0001 C CNN
 F 3 "" H 9500 6200 50  0001 C CNN
 	1    9500 6200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR048
@@ -1007,7 +1028,7 @@ F 1 "GND" H 12805 7327 50  0000 C CNN
 F 2 "" H 12800 7500 50  0001 C CNN
 F 3 "" H 12800 7500 50  0001 C CNN
 	1    12800 7500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR049
@@ -1018,7 +1039,7 @@ F 1 "GND" H 14105 7327 50  0000 C CNN
 F 2 "" H 14100 7500 50  0001 C CNN
 F 3 "" H 14100 7500 50  0001 C CNN
 	1    14100 7500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR047
@@ -1029,7 +1050,7 @@ F 1 "+3.3V" H 12615 5773 50  0000 C CNN
 F 2 "" H 12600 5600 50  0001 C CNN
 F 3 "" H 12600 5600 50  0001 C CNN
 	1    12600 5600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR035
@@ -1040,7 +1061,7 @@ F 1 "GND" H 4005 2327 50  0000 C CNN
 F 2 "" H 4000 2500 50  0001 C CNN
 F 3 "" H 4000 2500 50  0001 C CNN
 	1    4000 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR038
@@ -1051,7 +1072,7 @@ F 1 "GND" H 5705 2327 50  0000 C CNN
 F 2 "" H 5700 2500 50  0001 C CNN
 F 3 "" H 5700 2500 50  0001 C CNN
 	1    5700 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR041
@@ -1062,7 +1083,7 @@ F 1 "GND" H 7705 2727 50  0000 C CNN
 F 2 "" H 7700 2900 50  0001 C CNN
 F 3 "" H 7700 2900 50  0001 C CNN
 	1    7700 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR034
@@ -1073,7 +1094,7 @@ F 1 "+3.3V" H 4015 2073 50  0000 C CNN
 F 2 "" H 4000 1900 50  0001 C CNN
 F 3 "" H 4000 1900 50  0001 C CNN
 	1    4000 1900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR046
@@ -1084,7 +1105,7 @@ F 1 "GND" H 9905 2727 50  0000 C CNN
 F 2 "" H 9900 2900 50  0001 C CNN
 F 3 "" H 9900 2900 50  0001 C CNN
 	1    9900 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR037
@@ -1095,7 +1116,7 @@ F 1 "+3.3V" H 5715 2073 50  0000 C CNN
 F 2 "" H 5700 1900 50  0001 C CNN
 F 3 "" H 5700 1900 50  0001 C CNN
 	1    5700 1900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR042
@@ -1106,7 +1127,7 @@ F 1 "+3.3V" H 8415 1973 50  0000 C CNN
 F 2 "" H 8400 1800 50  0001 C CNN
 F 3 "" H 8400 1800 50  0001 C CNN
 	1    8400 1800
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR045
@@ -1117,7 +1138,7 @@ F 1 "+3.3V" H 9915 1573 50  0000 C CNN
 F 2 "" H 9900 1400 50  0001 C CNN
 F 3 "" H 9900 1400 50  0001 C CNN
 	1    9900 1400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR050
@@ -1128,7 +1149,7 @@ F 1 "GND" H 14305 2127 50  0000 C CNN
 F 2 "" H 14300 2300 50  0001 C CNN
 F 3 "" H 14300 2300 50  0001 C CNN
 	1    14300 2300
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text HLabel 13000 5500 1    50   Output ~ 0
 5V_PS2
@@ -1185,98 +1206,98 @@ F 1 "+5V" H 7015 1973 50  0000 C CNN
 F 2 "" H 7000 1800 50  0001 C CNN
 F 3 "" H 7000 1800 50  0001 C CNN
 	1    7000 1800
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H14
 U 1 1 2A9BA88F
 P 12200 2400
-AR Path="/2A9BA88F" Ref="H14"  Part="1"
-AR Path="/5F5D6257/2A9BA88F" Ref="H14"  Part="1"
+AR Path="/2A9BA88F" Ref="H14"  Part="1" 
+AR Path="/5F5D6257/2A9BA88F" Ref="H14"  Part="1" 
 F 0 "H14" H 12200 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12310 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12200 2400 50  0001 C CNN
 F 3 "" H 12200 2400 50  0001 C CNN
 	1    12200 2400
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H13
 U 1 1 ECADA0F6
 P 12500 2400
-AR Path="/ECADA0F6" Ref="H13"  Part="1"
-AR Path="/5F5D6257/ECADA0F6" Ref="H13"  Part="1"
+AR Path="/ECADA0F6" Ref="H13"  Part="1" 
+AR Path="/5F5D6257/ECADA0F6" Ref="H13"  Part="1" 
 F 0 "H13" H 12500 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12610 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12500 2400 50  0001 C CNN
 F 3 "" H 12500 2400 50  0001 C CNN
 	1    12500 2400
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H12
 U 1 1 C55F88FF
 P 12800 2400
-AR Path="/C55F88FF" Ref="H12"  Part="1"
-AR Path="/5F5D6257/C55F88FF" Ref="H12"  Part="1"
+AR Path="/C55F88FF" Ref="H12"  Part="1" 
+AR Path="/5F5D6257/C55F88FF" Ref="H12"  Part="1" 
 F 0 "H12" H 12800 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12910 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12800 2400 50  0001 C CNN
 F 3 "" H 12800 2400 50  0001 C CNN
 	1    12800 2400
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H11
 U 1 1 7FEC3EE5
 P 13100 2400
-AR Path="/7FEC3EE5" Ref="H11"  Part="1"
-AR Path="/5F5D6257/7FEC3EE5" Ref="H11"  Part="1"
+AR Path="/7FEC3EE5" Ref="H11"  Part="1" 
+AR Path="/5F5D6257/7FEC3EE5" Ref="H11"  Part="1" 
 F 0 "H11" H 13100 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13210 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13100 2400 50  0001 C CNN
 F 3 "" H 13100 2400 50  0001 C CNN
 	1    13100 2400
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H10
 U 1 1 16B5B13C
 P 13400 2400
-AR Path="/16B5B13C" Ref="H10"  Part="1"
-AR Path="/5F5D6257/16B5B13C" Ref="H10"  Part="1"
+AR Path="/16B5B13C" Ref="H10"  Part="1" 
+AR Path="/5F5D6257/16B5B13C" Ref="H10"  Part="1" 
 F 0 "H10" H 13400 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13510 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13400 2400 50  0001 C CNN
 F 3 "" H 13400 2400 50  0001 C CNN
 	1    13400 2400
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H9
 U 1 1 70432B84
 P 13700 2400
-AR Path="/70432B84" Ref="H9"  Part="1"
-AR Path="/5F5D6257/70432B84" Ref="H9"  Part="1"
+AR Path="/70432B84" Ref="H9"  Part="1" 
+AR Path="/5F5D6257/70432B84" Ref="H9"  Part="1" 
 F 0 "H9" H 13700 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13810 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13700 2400 50  0001 C CNN
 F 3 "" H 13700 2400 50  0001 C CNN
 	1    13700 2400
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H8
 U 1 1 82B5A77A
 P 14000 2400
-AR Path="/82B5A77A" Ref="H8"  Part="1"
-AR Path="/5F5D6257/82B5A77A" Ref="H8"  Part="1"
+AR Path="/82B5A77A" Ref="H8"  Part="1" 
+AR Path="/5F5D6257/82B5A77A" Ref="H8"  Part="1" 
 F 0 "H8" H 14000 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 14110 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 14000 2400 50  0001 C CNN
 F 3 "" H 14000 2400 50  0001 C CNN
 	1    14000 2400
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:TestPoint_Small TP4
@@ -1285,9 +1306,9 @@ P 8700 2000
 F 0 "TP4" H 8748 2046 50  0000 L CNN
 F 1 "+3.3V" H 8748 1955 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8900 2000 50  0001 C CNN
-F 3 "~" H 8900 2000 50  0001 C CNN
+F 3 "" H 8900 2000 50  0001 C CNN
 	1    8700 2000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8700 2000 8600 2000
@@ -1296,35 +1317,35 @@ $Comp
 L Device:R_Small R17
 U 1 1 063E4601
 P 9700 5900
-AR Path="/063E4601" Ref="R17"  Part="1"
-AR Path="/5F5D6257/063E4601" Ref="R17"  Part="1"
+AR Path="/063E4601" Ref="R17"  Part="1" 
+AR Path="/5F5D6257/063E4601" Ref="R17"  Part="1" 
 F 0 "R17" V 9650 5900 59  0000 C BNN
 F 1 "1M" V 9750 5900 59  0000 C TNN
 F 2 "rhais_rcl:R0603" H 9700 5900 50  0001 C CNN
-F 3 "" H 9700 5900 50  0001 C CNN
-F 4 "Vishay" H 9700 5900 59  0001 L BNN "MFR"
-F 5 "CRCW08051M00FKEA" H 9700 5900 59  0001 L BNN "MPN"
-F 6 "1652946" H 9700 5900 59  0001 L BNN "OC_FARNELL"
-F 7 "" H 9700 5900 59  0001 L BNN "URL"
-F 8 "https://uk.farnell.com/vishay/crcw08051m00fkea/res-1m-1-0-125w-0805-thick-film/dp/1652946" H 9700 5900 50  0001 C CNN "URL_FARNELL"
+F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 9700 5900 50  0001 C CNN
+F 4 "Multicomp" H 9700 5900 59  0001 L BNN "MFR"
+F 5 "MCWR06X1004FTL" H 9700 5900 59  0001 L BNN "MPN"
+F 6 "2447285" H 9700 5900 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mcwr06x1004ftl/res-1m-1-0-1w-0603-thick-film/dp/2447285" H 9700 5900 50  0001 C CNN "URL_FARNELL"
 	1    9700 5900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C7
 U 1 1 69A561B9
 P 14300 7100
-AR Path="/69A561B9" Ref="C7"  Part="1"
-AR Path="/5F5D6257/69A561B9" Ref="C7"  Part="1"
+AR Path="/69A561B9" Ref="C7"  Part="1" 
+AR Path="/5F5D6257/69A561B9" Ref="C7"  Part="1" 
 F 0 "C7" V 14350 7150 59  0000 L CNN
 F 1 "0.1uF" V 14350 7050 59  0000 R CNN
 F 2 "rhais_rcl:C0603" H 14300 7100 50  0001 C CNN
-F 3 "" H 14300 7100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 14300 7100 50  0001 C CNN
 F 4 "Multicomp" H 14300 7100 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 14300 7100 59  0001 L BNN "MPN"
 F 6 "2310559" H 14300 7100 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 14300 7100 50  0001 C CNN "URL_FARNELL"
 	1    14300 7100
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 NoConn ~ 3900 2300
 $Comp
@@ -1334,9 +1355,9 @@ P 13000 3000
 F 0 "FID1" H 12916 2954 50  0000 R CNN
 F 1 "Fiducial" H 12916 3045 50  0000 R CNN
 F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 13000 3000 50  0001 C CNN
-F 3 "~" H 13000 3000 50  0001 C CNN
+F 3 "" H 13000 3000 50  0001 C CNN
 	1    13000 3000
-	1    0    0    1
+	1    0    0    1   
 $EndComp
 $Comp
 L Mechanical:Fiducial FID2
@@ -1345,9 +1366,9 @@ P 13500 3000
 F 0 "FID2" H 13585 3046 50  0000 L CNN
 F 1 "Fiducial" H 13585 2955 50  0000 L CNN
 F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 13500 3000 50  0001 C CNN
-F 3 "~" H 13500 3000 50  0001 C CNN
+F 3 "" H 13500 3000 50  0001 C CNN
 	1    13500 3000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Bus Line
 	4350 4400 4350 4800

@@ -346,11 +346,11 @@ P 277 0 1 0 132 -171 130 -170 125 -167 118 -162 109 -156 100 -150 93 -146 88 -14
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_74HC238BQ
+# MXKeyboard-eagle-import_74HC238BQ
 #
-DEF MXKeyboard_RGB-eagle-import_74HC238BQ U 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_74HC238BQ U 0 40 Y Y 1 L N
 F0 "U" 0 850 50 H I C CNN
-F1 "MXKeyboard_RGB-eagle-import_74HC238BQ" 650 -350 50 H I C CNN
+F1 "MXKeyboard-eagle-import_74HC238BQ" 650 -350 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -393,11 +393,11 @@ X GND EP 400 -400 100 U 0 50 1 0 P N
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_ATXMEGA256A3U-MH
+# MXKeyboard-eagle-import_ATXMEGA256A3U-MH
 #
-DEF MXKeyboard_RGB-eagle-import_ATXMEGA256A3U-MH U 0 40 N Y 1 F N
+DEF MXKeyboard-eagle-import_ATXMEGA256A3U-MH U 0 40 N Y 1 F N
 F0 "U" -1100 1550 59 H V L CNN
-F1 "MXKeyboard_RGB-eagle-import_ATXMEGA256A3U-MH" 1100 -1550 59 H V R CNN
+F1 "MXKeyboard-eagle-import_ATXMEGA256A3U-MH" 1100 -1550 59 H V R CNN
 F2 "rhais_package-qfn:QFN-64-1EP_9x9mm_P0.5mm_EP7.5x7.5mm" 0 -1900 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -473,11 +473,11 @@ X PB3 9 -1200 100 100 R 0 50 1 0 B
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_BAS16VY
+# MXKeyboard-eagle-import_BAS16VY
 #
-DEF MXKeyboard_RGB-eagle-import_BAS16VY D 0 40 Y Y 3 L N
+DEF MXKeyboard-eagle-import_BAS16VY D 0 40 Y Y 3 L N
 F0 "D" -150 60 59 H V L BNN
-F1 "MXKeyboard_RGB-eagle-import_BAS16VY" 0 0 50 H I C CNN
+F1 "MXKeyboard-eagle-import_BAS16VY" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -505,11 +505,11 @@ X C 4 150 0 100 L 0 0 3 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_0.7X1.45
+# MXKeyboard-eagle-import_CHERRY_MX_KEY_0.7X1.45
 #
-DEF MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_0.7X1.45 S 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_CHERRY_MX_KEY_0.7X1.45 S 0 40 Y Y 1 L N
 F0 "S" -200 100 59 H V L BNN
-F1 "MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_0.7X1.45" 200 -100 59 H V R BNN
+F1 "MXKeyboard-eagle-import_CHERRY_MX_KEY_0.7X1.45" 200 -100 59 H V R BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -519,11 +519,11 @@ X 2 2 300 0 200 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_0.9
+# MXKeyboard-eagle-import_CHERRY_MX_KEY_0.9
 #
-DEF MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_0.9 S 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_CHERRY_MX_KEY_0.9 S 0 40 Y Y 1 L N
 F0 "S" -200 100 59 H V L BNN
-F1 "MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_0.9" 200 -100 59 H V R BNN
+F1 "MXKeyboard-eagle-import_CHERRY_MX_KEY_0.9" 200 -100 59 H V R BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -533,11 +533,11 @@ X 2 2 300 0 200 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_1.1
+# MXKeyboard-eagle-import_CHERRY_MX_KEY_1.1
 #
-DEF MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_1.1 S 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_CHERRY_MX_KEY_1.1 S 0 40 Y Y 1 L N
 F0 "S" -200 100 59 H V L BNN
-F1 "MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_1.1" 200 -100 59 H V R BNN
+F1 "MXKeyboard-eagle-import_CHERRY_MX_KEY_1.1" 200 -100 59 H V R BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -547,11 +547,11 @@ X 2 2 300 0 200 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_1.3
+# MXKeyboard-eagle-import_CHERRY_MX_KEY_1.3
 #
-DEF MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_1.3 S 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_CHERRY_MX_KEY_1.3 S 0 40 Y Y 1 L N
 F0 "S" -200 100 59 H V L BNN
-F1 "MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_1.3" 200 -100 59 H V R BNN
+F1 "MXKeyboard-eagle-import_CHERRY_MX_KEY_1.3" 200 -100 59 H V R BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -561,11 +561,11 @@ X 2 2 300 0 200 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_1.45X0.7
+# MXKeyboard-eagle-import_CHERRY_MX_KEY_1.45X0.7
 #
-DEF MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_1.45X0.7 S 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_CHERRY_MX_KEY_1.45X0.7 S 0 40 Y Y 1 L N
 F0 "S" -200 100 59 H V L BNN
-F1 "MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_1.45X0.7" 200 -100 59 H V R BNN
+F1 "MXKeyboard-eagle-import_CHERRY_MX_KEY_1.45X0.7" 200 -100 59 H V R BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -575,11 +575,11 @@ X 2 2 300 0 200 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_2
+# MXKeyboard-eagle-import_CHERRY_MX_KEY_2
 #
-DEF MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_2 S 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_CHERRY_MX_KEY_2 S 0 40 Y Y 1 L N
 F0 "S" -200 100 59 H V L BNN
-F1 "MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_2" 200 -100 59 H V R BNN
+F1 "MXKeyboard-eagle-import_CHERRY_MX_KEY_2" 200 -100 59 H V R BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -589,11 +589,11 @@ X 2 2 300 0 200 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_4.45
+# MXKeyboard-eagle-import_CHERRY_MX_KEY_4.45
 #
-DEF MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_4.45 S 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_CHERRY_MX_KEY_4.45 S 0 40 Y Y 1 L N
 F0 "S" -200 100 59 H V L BNN
-F1 "MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_4.45" 200 -100 59 H V R BNN
+F1 "MXKeyboard-eagle-import_CHERRY_MX_KEY_4.45" 200 -100 59 H V R BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -603,11 +603,11 @@ X 2 2 300 0 200 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_ENTER
+# MXKeyboard-eagle-import_CHERRY_MX_KEY_ENTER
 #
-DEF MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_ENTER S 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_CHERRY_MX_KEY_ENTER S 0 40 Y Y 1 L N
 F0 "S" -200 100 59 H V L BNN
-F1 "MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_ENTER" 200 -100 59 H V R BNN
+F1 "MXKeyboard-eagle-import_CHERRY_MX_KEY_ENTER" 200 -100 59 H V R BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -617,11 +617,11 @@ X 2 2 300 0 200 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_NORM
+# MXKeyboard-eagle-import_CHERRY_MX_KEY_NORM
 #
-DEF MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_NORM S 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_CHERRY_MX_KEY_NORM S 0 40 Y Y 1 L N
 F0 "S" -200 100 59 H V L BNN
-F1 "MXKeyboard_RGB-eagle-import_CHERRY_MX_KEY_NORM" 200 -100 59 H V R BNN
+F1 "MXKeyboard-eagle-import_CHERRY_MX_KEY_NORM" 200 -100 59 H V R BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -631,11 +631,11 @@ X 2 2 300 0 200 L 0 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_CXO-7M
+# MXKeyboard-eagle-import_CXO-7M
 #
-DEF MXKeyboard_RGB-eagle-import_CXO-7M OSC 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_CXO-7M OSC 0 40 Y Y 1 L N
 F0 "OSC" 100 -420 85 H V L TNN
-F1 "MXKeyboard_RGB-eagle-import_CXO-7M" -400 420 85 H V L BNN
+F1 "MXKeyboard-eagle-import_CXO-7M" -400 420 85 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -650,11 +650,11 @@ X VDD 4 0 600 200 D 0 50 1 0 W
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_Cherry_MX_Stabiliser
+# MXKeyboard-eagle-import_Cherry_MX_Stabiliser
 #
-DEF MXKeyboard_RGB-eagle-import_Cherry_MX_Stabiliser STB 0 40 N Y 1 F N
+DEF MXKeyboard-eagle-import_Cherry_MX_Stabiliser STB 0 40 N Y 1 F N
 F0 "STB" 0 150 50 H V C CNN
-F1 "MXKeyboard_RGB-eagle-import_Cherry_MX_Stabiliser" 0 -150 50 H V C CNN
+F1 "MXKeyboard-eagle-import_Cherry_MX_Stabiliser" 0 -150 50 H V C CNN
 F2 "MXKeyboard_RGB:MX_STABILISER" 0 -250 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -664,11 +664,11 @@ P 2 0 1 0 0 50 0 -50 N
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_DMN65D8L
+# MXKeyboard-eagle-import_DMN65D8L
 #
-DEF MXKeyboard_RGB-eagle-import_DMN65D8L Q 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_DMN65D8L Q 0 40 Y Y 1 L N
 F0 "Q" -300 -400 59 H V L BNN
-F1 "MXKeyboard_RGB-eagle-import_DMN65D8L" 350 -200 59 V V L BNN
+F1 "MXKeyboard-eagle-import_DMN65D8L" 350 -200 59 V V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -705,11 +705,11 @@ X D 3 100 400 100 D 0 50 1 0 I
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_DMP2240UDM
+# MXKeyboard-eagle-import_DMP2240UDM
 #
-DEF MXKeyboard_RGB-eagle-import_DMP2240UDM Q 0 40 Y Y 2 L N
+DEF MXKeyboard-eagle-import_DMP2240UDM Q 0 40 Y Y 2 L N
 F0 "Q" 0 -200 59 H V R TNN
-F1 "MXKeyboard_RGB-eagle-import_DMP2240UDM" 300 50 59 V V C TNN
+F1 "MXKeyboard-eagle-import_DMP2240UDM" 300 50 59 V V C TNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -768,11 +768,11 @@ X D 4 100 400 100 D 0 50 2 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_NTS0104
+# MXKeyboard-eagle-import_NTS0104
 #
-DEF MXKeyboard_RGB-eagle-import_NTS0104 U 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_NTS0104 U 0 40 Y Y 1 L N
 F0 "U" 400 -520 59 H V R TNN
-F1 "MXKeyboard_RGB-eagle-import_NTS0104" -400 520 59 H V L BNN
+F1 "MXKeyboard-eagle-import_NTS0104" -400 520 59 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -796,11 +796,11 @@ X GND PGND 0 -700 200 U 0 50 1 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_PS_2
+# MXKeyboard-eagle-import_PS_2
 #
-DEF MXKeyboard_RGB-eagle-import_PS_2 JP 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_PS_2 JP 0 40 Y Y 1 L N
 F0 "JP" 0 0 50 H I C CNN
-F1 "MXKeyboard_RGB-eagle-import_PS_2" 0 0 50 H I C CNN
+F1 "MXKeyboard-eagle-import_PS_2" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -818,11 +818,11 @@ X EARTH EARTH3 100 -500 100 U 0 50 1 0 P
 ENDDRAW
 ENDDEF
 #
-# MXKeyboard_RGB-eagle-import_TC1015-3.3VCT713
+# MXKeyboard-eagle-import_TC1015-3.3VCT713
 #
-DEF MXKeyboard_RGB-eagle-import_TC1015-3.3VCT713 U 0 40 Y Y 1 L N
+DEF MXKeyboard-eagle-import_TC1015-3.3VCT713 U 0 40 Y Y 1 L N
 F0 "U" -400 -450 50 H I L CNN
-F1 "MXKeyboard_RGB-eagle-import_TC1015-3.3VCT713" 0 450 50 H I C CNN
+F1 "MXKeyboard-eagle-import_TC1015-3.3VCT713" 0 450 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

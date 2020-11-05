@@ -125,33 +125,35 @@ $Comp
 L Device:C_Small C30
 U 1 1 B941D5C4
 P 7300 2900
-AR Path="/B941D5C4" Ref="C30"  Part="1"
-AR Path="/5F5D661B/B941D5C4" Ref="C30"  Part="1"
+AR Path="/B941D5C4" Ref="C30"  Part="1" 
+AR Path="/5F5D661B/B941D5C4" Ref="C30"  Part="1" 
 F 0 "C30" V 7200 2900 59  0000 C CNN
 F 1 "0.1uF" V 7400 2900 59  0000 C CNN
 F 2 "rhais_rcl:C0603" H 7300 2900 50  0001 C CNN
-F 3 "" H 7300 2900 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 7300 2900 50  0001 C CNN
 F 4 "Multicomp" H 7300 2900 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 7300 2900 59  0001 L BNN "MPN"
 F 6 "2310559" H 7300 2900 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 7300 2900 50  0001 C CNN "URL_FARNELL"
 	1    7300 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C31
 U 1 1 1181AB2E
 P 9700 2900
-AR Path="/1181AB2E" Ref="C31"  Part="1"
-AR Path="/5F5D661B/1181AB2E" Ref="C31"  Part="1"
+AR Path="/1181AB2E" Ref="C31"  Part="1" 
+AR Path="/5F5D661B/1181AB2E" Ref="C31"  Part="1" 
 F 0 "C31" V 9600 2900 59  0000 C CNN
 F 1 "0.1uF" V 9800 2900 59  0000 C CNN
 F 2 "rhais_rcl:C0603" H 9700 2900 50  0001 C CNN
-F 3 "" H 9700 2900 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 9700 2900 50  0001 C CNN
 F 4 "Multicomp" H 9700 2900 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 9700 2900 59  0001 L BNN "MPN"
 F 6 "2310559" H 9700 2900 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 9700 2900 50  0001 C CNN "URL_FARNELL"
 	1    9700 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Notes 2700 2200 0    59   ~ 0
 Active when DCOL[5..4] == 00
@@ -168,7 +170,7 @@ F 1 "GND" H 4105 3627 50  0000 C CNN
 F 2 "" H 4100 3800 50  0001 C CNN
 F 3 "" H 4100 3800 50  0001 C CNN
 	1    4100 3800
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR054
@@ -179,7 +181,7 @@ F 1 "GND" H 5205 3727 50  0000 C CNN
 F 2 "" H 5200 3900 50  0001 C CNN
 F 3 "" H 5200 3900 50  0001 C CNN
 	1    5200 3900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR056
@@ -190,7 +192,7 @@ F 1 "GND" H 6505 3627 50  0000 C CNN
 F 2 "" H 6500 3800 50  0001 C CNN
 F 3 "" H 6500 3800 50  0001 C CNN
 	1    6500 3800
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR057
@@ -201,7 +203,7 @@ F 1 "GND" H 7605 3727 50  0000 C CNN
 F 2 "" H 7600 3900 50  0001 C CNN
 F 3 "" H 7600 3900 50  0001 C CNN
 	1    7600 3900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR059
@@ -212,7 +214,7 @@ F 1 "GND" H 8905 3627 50  0000 C CNN
 F 2 "" H 8900 3800 50  0001 C CNN
 F 3 "" H 8900 3800 50  0001 C CNN
 	1    8900 3800
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 9350 2900 2    10   ~ 0
 COLUMN21
@@ -340,17 +342,18 @@ $Comp
 L Device:C_Small C29
 U 1 1 B4176B2A
 P 4900 2900
-AR Path="/B4176B2A" Ref="C29"  Part="1"
-AR Path="/5F5D661B/B4176B2A" Ref="C29"  Part="1"
+AR Path="/B4176B2A" Ref="C29"  Part="1" 
+AR Path="/5F5D661B/B4176B2A" Ref="C29"  Part="1" 
 F 0 "C29" V 4800 2900 59  0000 C CNN
 F 1 "0.1uF" V 5000 2900 59  0000 C CNN
 F 2 "rhais_rcl:C0603" H 4900 2900 50  0001 C CNN
-F 3 "" H 4900 2900 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 4900 2900 50  0001 C CNN
 F 4 "Multicomp" H 4900 2900 59  0001 L BNN "MFR"
 F 5 "MC0603B104J250CT" H 4900 2900 59  0001 L BNN "MPN"
 F 6 "2310559" H 4900 2900 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 4900 2900 50  0001 C CNN "URL_FARNELL"
 	1    4900 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5250 2900 5300 2900
@@ -371,7 +374,7 @@ F 1 "+3.3V" V 2650 3500 50  0000 L BNN
 F 2 "" H 2700 3500 50  0001 C CNN
 F 3 "" H 2700 3500 50  0001 C CNN
 	1    2700 3500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR052
@@ -382,7 +385,7 @@ F 1 "+3.3V" V 4050 1900 50  0000 L BNN
 F 2 "" H 4100 1900 50  0001 C CNN
 F 3 "" H 4100 1900 50  0001 C CNN
 	1    4100 1900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR055
@@ -393,7 +396,7 @@ F 1 "+3.3V" V 6450 1900 50  0000 L BNN
 F 2 "" H 6500 1900 50  0001 C CNN
 F 3 "" H 6500 1900 50  0001 C CNN
 	1    6500 1900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR058
@@ -404,7 +407,7 @@ F 1 "+3.3V" V 8850 1900 50  0000 L BNN
 F 2 "" H 8900 1900 50  0001 C CNN
 F 3 "" H 8900 1900 50  0001 C CNN
 	1    8900 1900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 2850 3600 0    10   ~ 0
 DCOL4
@@ -467,40 +470,52 @@ $Comp
 L MXKeyboard-eagle-import:74HC238BQ U17
 U 1 1 E1651699
 P 8500 3100
-AR Path="/E1651699" Ref="U17"  Part="1"
-AR Path="/5F5D661B/E1651699" Ref="U17"  Part="1"
+AR Path="/E1651699" Ref="U17"  Part="1" 
+AR Path="/5F5D661B/E1651699" Ref="U17"  Part="1" 
 F 0 "U17" H 8500 3100 50  0001 C CNN
 F 1 "74HC238BQ" H 8500 3100 50  0001 C CNN
 F 2 "rhais_package-qfn:DQFN16_1EP_2.5x3.5mm_P0.5mm" H 8500 3100 50  0001 C CNN
-F 3 "" H 8500 3100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT238.pdf" H 8500 3100 50  0001 C CNN
+F 4 "Nexperia" H 8500 3100 50  0001 C CNN "MFR"
+F 5 "74HC238BQ,115" H 8500 3100 50  0001 C CNN "MPN"
+F 6 "2164750" H 8500 3100 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/nexperia/74hc238bq/ic-3-8-line-decoder-demux-dhvqfn16/dp/2164750" H 8500 3100 50  0001 C CNN "URL_FARNELL"
 	1    8500 3100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L MXKeyboard-eagle-import:74HC238BQ U16
 U 1 1 3D1E7172
 P 6100 3100
-AR Path="/3D1E7172" Ref="U16"  Part="1"
-AR Path="/5F5D661B/3D1E7172" Ref="U16"  Part="1"
+AR Path="/3D1E7172" Ref="U16"  Part="1" 
+AR Path="/5F5D661B/3D1E7172" Ref="U16"  Part="1" 
 F 0 "U16" H 6100 3100 50  0001 C CNN
 F 1 "74HC238BQ" H 6100 3100 50  0001 C CNN
 F 2 "rhais_package-qfn:DQFN16_1EP_2.5x3.5mm_P0.5mm" H 6100 3100 50  0001 C CNN
-F 3 "" H 6100 3100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT238.pdf" H 6100 3100 50  0001 C CNN
+F 4 "Nexperia" H 6100 3100 50  0001 C CNN "MFR"
+F 5 "74HC238BQ,115" H 6100 3100 50  0001 C CNN "MPN"
+F 6 "2164750" H 6100 3100 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/nexperia/74hc238bq/ic-3-8-line-decoder-demux-dhvqfn16/dp/2164750" H 6100 3100 50  0001 C CNN "URL_FARNELL"
 	1    6100 3100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L MXKeyboard-eagle-import:74HC238BQ U15
 U 1 1 6D3D1EC3
 P 3700 3100
-AR Path="/6D3D1EC3" Ref="U15"  Part="1"
-AR Path="/5F5D661B/6D3D1EC3" Ref="U15"  Part="1"
+AR Path="/6D3D1EC3" Ref="U15"  Part="1" 
+AR Path="/5F5D661B/6D3D1EC3" Ref="U15"  Part="1" 
 F 0 "U15" H 3700 3100 50  0001 C CNN
 F 1 "74HC238BQ" H 3700 3100 50  0001 C CNN
 F 2 "rhais_package-qfn:DQFN16_1EP_2.5x3.5mm_P0.5mm" H 3700 3100 50  0001 C CNN
-F 3 "" H 3700 3100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT238.pdf" H 3700 3100 50  0001 C CNN
+F 4 "Nexperia" H 3700 3100 50  0001 C CNN "MFR"
+F 5 "74HC238BQ,115" H 3700 3100 50  0001 C CNN "MPN"
+F 6 "2164750" H 3700 3100 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/nexperia/74hc238bq/ic-3-8-line-decoder-demux-dhvqfn16/dp/2164750" H 3700 3100 50  0001 C CNN "URL_FARNELL"
 	1    3700 3100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Bus Line
 	7550 2500 7550 3700
