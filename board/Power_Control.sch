@@ -151,8 +151,7 @@ F 3 "https://www.murata.com/en-eu/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD
 F 4 "muRata" H 8300 2600 59  0001 L BNN "MFR"
 F 5 "GRM21BR61A476ME15L" H 8300 2600 59  0001 L BNN "MPN"
 F 6 "2611939" H 8300 2600 59  0001 L BNN "OC_FARNELL"
-F 7 "" H 8300 2600 59  0001 L BNN "URL"
-F 8 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 8300 2600 50  0001 C CNN "URL_FARNELL"
+F 7 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 8300 2600 50  0001 C CNN "URL_FARNELL"
 	1    8300 2600
 	1    0    0    -1  
 $EndComp
@@ -288,8 +287,7 @@ F 3 "https://www.murata.com/en-eu/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD
 F 4 "muRata" H 6800 2600 59  0001 L BNN "MFR"
 F 5 "GRM21BR61A476ME15L" H 6800 2600 59  0001 L BNN "MPN"
 F 6 "2611939" H 6800 2600 59  0001 L BNN "OC_FARNELL"
-F 7 "" H 6800 2600 59  0001 L BNN "URL"
-F 8 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 6800 2600 50  0001 C CNN "URL_FARNELL"
+F 7 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 6800 2600 50  0001 C CNN "URL_FARNELL"
 	1    6800 2600
 	-1   0    0    -1  
 $EndComp
@@ -358,8 +356,7 @@ F 3 "https://www.murata.com/en-eu/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD
 F 4 "muRata" H 4700 4000 59  0001 L BNN "MFR"
 F 5 "GRM21BR61A476ME15L" H 4700 4000 59  0001 L BNN "MPN"
 F 6 "2611939" H 4700 4000 59  0001 L BNN "OC_FARNELL"
-F 7 "" H 4700 4000 59  0001 L BNN "URL"
-F 8 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 4700 4000 50  0001 C CNN "URL_FARNELL"
+F 7 "https://uk.farnell.com/murata/grm21br61a476me15l/cap-47-f-10v-20-x5r-0805/dp/2611939" H 4700 4000 50  0001 C CNN "URL_FARNELL"
 	1    4700 4000
 	1    0    0    -1  
 $EndComp
