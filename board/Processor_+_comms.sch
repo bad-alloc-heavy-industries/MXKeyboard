@@ -1157,8 +1157,6 @@ Text HLabel 9500 5000 0    50   Output ~ 0
 5V_USB
 NoConn ~ 6900 7100
 NoConn ~ 6900 7000
-NoConn ~ 6900 6200
-NoConn ~ 6900 6100
 NoConn ~ 4500 7000
 NoConn ~ 4500 6800
 NoConn ~ 4500 6600
@@ -1370,8 +1368,82 @@ F 3 "" H 13500 3000 50  0001 C CNN
 	1    13500 3000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x04_MountingPin J1
+U 1 1 5FC1037E
+P 3000 5200
+F 0 "J1" H 3000 5400 50  0000 C CNN
+F 1 "53261-0471" V 3150 5150 50  0000 C BNN
+F 2 "rhais_connector-molex:Molex_PicoBlade_53261-0471_1x04-1MP_P1.25mm_Horizontal" H 3000 5200 50  0001 C CNN
+F 3 "https://www.molex.com/webdocs/datasheets/pdf/en-us/0532610471_PCB_HEADERS.pdf" H 3000 5200 50  0001 C CNN
+F 4 "53261-0471" H 3000 5200 50  0001 C CNN "MPN"
+F 5 "Molex" H 3000 5200 50  0001 C CNN "MFR"
+F 6 "1125374" H 3000 5200 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/molex/53261-0471/connector-header-4pos-1row-1-25mm/dp/1125374" H 3000 5200 50  0001 C CNN "URL_FARNELL"
+	1    3000 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR071
+U 1 1 5FC1118A
+P 3000 5700
+F 0 "#PWR071" H 3000 5450 50  0001 C CNN
+F 1 "GND" H 3005 5527 50  0000 C CNN
+F 2 "" H 3000 5700 50  0001 C CNN
+F 3 "" H 3000 5700 50  0001 C CNN
+	1    3000 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5600 3000 5700
+Wire Wire Line
+	6900 6100 7300 6100
+Wire Wire Line
+	6900 6200 7300 6200
+Text Label 7300 6200 0    50   ~ 0
+DBG_TX
+Text Label 7300 6100 0    50   ~ 0
+DBG_RX
+$Comp
+L power:GND #PWR0102
+U 1 1 5FC88EB6
+P 3300 5500
+F 0 "#PWR0102" H 3300 5250 50  0001 C CNN
+F 1 "GND" H 3305 5327 50  0000 C CNN
+F 2 "" H 3300 5500 50  0001 C CNN
+F 3 "" H 3300 5500 50  0001 C CNN
+	1    3300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5FC891F5
+P 3300 5000
+F 0 "#PWR0103" H 3300 4850 50  0001 C CNN
+F 1 "+3.3V" H 3315 5173 50  0000 C CNN
+F 2 "" H 3300 5000 50  0001 C CNN
+F 3 "" H 3300 5000 50  0001 C CNN
+	1    3300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5100 3300 5100
+Wire Wire Line
+	3300 5100 3300 5000
+Wire Wire Line
+	3200 5400 3300 5400
+Wire Wire Line
+	3300 5400 3300 5500
+Wire Wire Line
+	3200 5200 3300 5200
+Wire Wire Line
+	3200 5300 3300 5300
 Wire Bus Line
 	4350 4400 4350 4800
 Wire Bus Line
 	7050 6300 7050 6800
+Text Label 3300 5200 0    50   ~ 0
+DBG_TX
+Text Label 3300 5300 0    50   ~ 0
+DBG_RX
 $EndSCHEMATC
