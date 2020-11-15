@@ -11,6 +11,7 @@
 extern void run();
 
 extern void oscInit();
+extern void ps2Init() noexcept;
 extern void ledInit();
 extern void timerInit(TC0_t &timer);
 extern void dmaInit();

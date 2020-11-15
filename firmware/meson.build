@@ -3,7 +3,7 @@
 firmwareSrc = [
 	'startup.cxx', 'fuses.cxx', 'MXKeyboard.cxx', 'uart.cxx',
 	'system.cxx', 'led.cxx', 'timer.cxx', 'dma.cxx',
-	'memory.cxx', 'usb.cxx', 'usbRequests.cxx'
+	'memory.cxx', 'ps2.cxx', 'usb.cxx', 'usbRequests.cxx'
 ]
 
 firmwareArgs = []
