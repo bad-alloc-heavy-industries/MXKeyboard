@@ -33,6 +33,7 @@ needs_exe_wrapper = true
 has_function_printf = true
 sys_root = prefix
 
+[built-in options]
 c_args = common_flags + compile_flags
 cpp_args = common_flags + compile_flags + ['-fno-rtti', '-fno-exceptions']
 c_link_args = common_flags + ['-nostdlib']
