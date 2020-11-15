@@ -10,6 +10,7 @@ void run()
 	dmaInit();
 	ledInit();
 	PMIC.CTRL = 0x87;
+	usbInit();
 	__builtin_avr_sei();
 
 	while (true)

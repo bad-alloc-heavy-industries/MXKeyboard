@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
-keyboardSrc = [
+firmwareSrc = [
 	'startup.cxx', 'fuses.cxx', 'MXKeyboard.cxx', 'uart.cxx',
 	'system.cxx', 'led.cxx', 'timer.cxx', 'dma.cxx',
-	'memory.cxx'
+	'memory.cxx', 'usb.cxx', 'usbRequests.cxx'
 ]
 
 firmwareArgs = []
@@ -13,7 +13,7 @@ endif
 
 firmware = executable(
 	'MXKeyboard',
-	keyboardSrc,
+	firmwareSrc,
 	include_directories: include_directories('include', 'include/c++'),
 	cpp_args: firmwareArgs,
 	link_args: ['-T', '@0@/atxmega256a3u.ld'.format(meson.current_source_dir())],
