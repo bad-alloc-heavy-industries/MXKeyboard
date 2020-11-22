@@ -10,8 +10,9 @@ void run()
 	//ps2Init();
 	dmaInit();
 	ledInit();
-	PMIC.CTRL = 0x87;
+	keyInit();
 	usbInit();
+	PMIC.CTRL = 0x87;
 	__builtin_avr_sei();
 
 	while (true)

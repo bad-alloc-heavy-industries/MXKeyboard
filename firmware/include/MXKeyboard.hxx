@@ -17,6 +17,7 @@ extern void timerInit(TC0_t &timer);
 extern void dmaInit();
 extern void dmaInit(DMA_CH_t &channel, DMA_CH_TRIGSRC_t triggerSource);
 extern void usbInit() noexcept;
+extern void keyInit() noexcept;
 
 extern void dmaTransferLength(DMA_CH_t &channel, uint16_t length);
 extern void dmaTransferSource(DMA_CH_t &channel, const void *address);
