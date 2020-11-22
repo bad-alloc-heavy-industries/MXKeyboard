@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: BSD-3-Clause
+#ifndef LIMITS
+#define LIMITS
+
+namespace std
+{
+	template<typename> struct numeric_limits;
+
+	template<> struct numeric_limits<unsigned char>
+	{
+	private:
+		using T = unsigned char;
+
+	public:
+		constexpr static bool is_specialized = true;
+		constexpr static T min() noexcept { return 0; }
+		constexpr static T max() noexcept { return T(-1); }
+
+		constexpr static int digits = 8;
+		constexpr static int digits10 = 2; // digits * log10(2)
+	};
+} // namespace std
+
+#endif /*LIMITS*/
