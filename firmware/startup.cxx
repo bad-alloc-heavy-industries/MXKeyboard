@@ -92,90 +92,90 @@ void vectorTable()
 		jmp irqEmptyDef ; DMA Channel 1 vector
 		jmp dmaChannel2IRQ ; DMA Channel 2 vector
 		jmp irqEmptyDef ; DMA Channel 3 vector
-		jmp irqEmptyDef ; vector 10
-		jmp irqEmptyDef ; vector 11
-		jmp irqEmptyDef ; vector 12
-		jmp irqEmptyDef ; vector 13
-		jmp tcc0OverflowIRQ ; vector 14
-		jmp irqEmptyDef ; vector 15
-		jmp irqEmptyDef ; vector 16
-		jmp irqEmptyDef ; vector 17
-		jmp irqEmptyDef ; vector 18
-		jmp irqEmptyDef ; vector 19
-		jmp irqEmptyDef ; vector 20
-		jmp irqEmptyDef ; vector 21
-		jmp irqEmptyDef ; vector 22
-		jmp irqEmptyDef ; vector 23
-		jmp irqEmptyDef ; vector 24
-		jmp irqEmptyDef ; vector 25
-		jmp irqEmptyDef ; vector 26
-		jmp irqEmptyDef ; vector 27
-		jmp irqEmptyDef ; vector 28
-		jmp irqEmptyDef ; vector 29
-		jmp irqEmptyDef ; vector 30
-		jmp irqEmptyDef ; vector 31
-		jmp irqEmptyDef ; vector 32
-		jmp irqEmptyDef ; vector 33
-		jmp irqEmptyDef ; vector 34
-		jmp irqEmptyDef ; vector 35
-		jmp irqEmptyDef ; vector 36
-		jmp irqEmptyDef ; vector 37
-		jmp irqEmptyDef ; vector 38
-		jmp irqEmptyDef ; vector 39
-		jmp irqEmptyDef ; vector 40
-		jmp irqEmptyDef ; vector 41
-		jmp irqEmptyDef ; vector 42
-		jmp irqEmptyDef ; vector 43
-		jmp irqEmptyDef ; vector 44
-		jmp irqEmptyDef ; vector 45
-		jmp irqEmptyDef ; vector 46
-		jmp irqEmptyDef ; vector 47
-		jmp irqEmptyDef ; vector 48
-		jmp irqEmptyDef ; vector 49
-		jmp irqEmptyDef ; vector 50
-		jmp irqEmptyDef ; vector 51
-		jmp irqEmptyDef ; vector 52
-		jmp irqEmptyDef ; vector 53
-		jmp irqEmptyDef ; vector 54
-		jmp irqEmptyDef ; vector 55
-		jmp irqEmptyDef ; vector 56
-		jmp irqEmptyDef ; vector 57
-		jmp irqEmptyDef ; vector 58
-		jmp irqEmptyDef ; vector 59
-		jmp irqEmptyDef ; vector 60
-		jmp irqEmptyDef ; vector 61
-		jmp irqEmptyDef ; vector 62
-		jmp irqEmptyDef ; vector 63
-		jmp irqEmptyDef ; vector 64
-		jmp irqEmptyDef ; vector 65
-		jmp irqEmptyDef ; vector 66
-		jmp irqEmptyDef ; vector 67
-		jmp irqEmptyDef ; vector 68
-		jmp irqEmptyDef ; vector 69
-		jmp irqEmptyDef ; vector 70
-		jmp irqEmptyDef ; vector 71
-		jmp irqEmptyDef ; vector 72
-		jmp irqEmptyDef ; vector 73
-		jmp irqEmptyDef ; vector 74
+		jmp irqEmptyDef ; RTC Overflow vector
+		jmp irqEmptyDef ; RTC Compare vector
+		jmp irqEmptyDef ; Two-Wire C Peripheral vector
+		jmp irqEmptyDef ; Two-Wire C Controller vector
+		jmp tcc0OverflowIRQ ; Timer/Counter C Type 0 Overflow vector | Type 2 Low-Byte Underflow vector
+		jmp irqEmptyDef ; Timer/Counter C Type 0 Error vector | Type 2 High-Byte Underflow vector
+		jmp irqEmptyDef ; Timer/Counter C Type 0 Capture-Comp A vector | Type 2 Low-Byte Compare A vector
+		jmp irqEmptyDef ; Timer/Counter C Type 0 Capture-Comp B vector | Type 2 Low-Byte Compare B vector
+		jmp irqEmptyDef ; Timer/Counter C Type 0 Capture-Comp C vector | Type 2 Low-Byte Compare C vector
+		jmp irqEmptyDef ; Timer/Counter C Type 0 Capture-Comp D vector | Type 2 Low-Byte Compare D vector
+		jmp irqEmptyDef ; Timer/Counter C Type 1 Overflow vector
+		jmp irqEmptyDef ; Timer/Counter C Type 1 Error vector
+		jmp irqEmptyDef ; Timer/Counter C Type 1 Capture-Comp A vector
+		jmp irqEmptyDef ; Timer/Counter C Type 1 Capture-Comp B vector
+		jmp irqEmptyDef ; SPI C vector
+		jmp irqEmptyDef ; USART C0 Receive Complete vector
+		jmp irqEmptyDef ; USART C0 Data Register Empty vector
+		jmp irqEmptyDef ; USART C0 Transmit Complete vector
+		jmp irqEmptyDef ; USART C1 Receive Complete vector
+		jmp irqEmptyDef ; USART C1 Data Register Empty vector
+		jmp irqEmptyDef ; USART C1 Transmit Complete vector
+		jmp irqEmptyDef ; AES vector
+		jmp irqEmptyDef ; NVM EEPROM Ready vector
+		jmp irqEmptyDef ; NVM SPM Ready vector
+		jmp irqEmptyDef ; Port B Int0 vector
+		jmp irqEmptyDef ; Port B Int1 vector
+		jmp irqEmptyDef ; Analog Comparator B Int0 vector
+		jmp irqEmptyDef ; Analog Comparator B Int1 vector
+		jmp irqEmptyDef ; Analog Compatator B Window vector
+		jmp irqEmptyDef ; ADC B Channel 0 vector
+		jmp irqEmptyDef ; ADC B Channel 1 vector
+		jmp irqEmptyDef ; ADC B Channel 2 vector
+		jmp irqEmptyDef ; ADC B Channel 3 vector
+		jmp ps2IRQ ; Port E Int0 vector
+		jmp irqEmptyDef ; Port E Int1 vector
+		jmp irqEmptyDef ; Two-Wire E Peripheral vector
+		jmp irqEmptyDef ; Two-Wire E Controller vector
+		jmp irqEmptyDef ; Timer/Counter E Type 0 Overflow vector | Type 2 Low-Byte Underflow vector
+		jmp irqEmptyDef ; Timer/Counter E Type 0 Error vector | Type 2 High-Byte Underflow vector
+		jmp irqEmptyDef ; Timer/Counter E Type 0 Capture-Comp A vector | Type 2 Low-Byte Compare A vector
+		jmp irqEmptyDef ; Timer/Counter E Type 0 Capture-Comp B vector | Type 2 Low-Byte Compare B vector
+		jmp irqEmptyDef ; Timer/Counter E Type 0 Capture-Comp C vector | Type 2 Low-Byte Compare C vector
+		jmp irqEmptyDef ; Timer/Counter E Type 0 Capture-Comp D vector | Type 2 Low-Byte Compare D vector
+		jmp irqEmptyDef ; Timer/Counter E Type 1 Overflow vector
+		jmp irqEmptyDef ; Timer/Counter E Type 1 Error vector
+		jmp irqEmptyDef ; Timer/Counter E Type 1 Capture-Comp A vector
+		jmp irqEmptyDef ; Timer/Counter E Type 1 Capture-Comp B vector
+		jmp irqEmptyDef ; SPI E vector
+		jmp irqEmptyDef ; USART E0 Data Complete vector
+		jmp irqEmptyDef ; USART E0 Data Register Empty vector
+		jmp irqEmptyDef ; USART E0 Transmit Complete vector
+		jmp irqEmptyDef ; USART E1 Data Complete vector
+		jmp irqEmptyDef ; USART E1 Data Register Empty vector
+		jmp irqEmptyDef ; USART E1 Transmit Complete vector
+		jmp irqEmptyDef ; Port D Int0 vector
+		jmp irqEmptyDef ; Port D Int1 vector
+		jmp irqEmptyDef ; Port A Int0 vector
+		jmp irqEmptyDef ; Port A Int1 vector
+		jmp irqEmptyDef ; Analog Comparator A Int0 vector
+		jmp irqEmptyDef ; Analog Comparator A Int1 vector
+		jmp irqEmptyDef ; Analog Compatator A Window vector
+		jmp irqEmptyDef ; ADC A Channel 0 vector
+		jmp irqEmptyDef ; ADC A Channel 1 vector
+		jmp irqEmptyDef ; ADC A Channel 2 vector
+		jmp irqEmptyDef ; ADC A Channel 3 vector
 		jmp irqEmptyDef ; vector 75
 		jmp irqEmptyDef ; vector 76
-		jmp irqEmptyDef ; vector 77
-		jmp irqEmptyDef ; vector 78
-		jmp irqEmptyDef ; vector 79
-		jmp irqEmptyDef ; vector 80
-		jmp irqEmptyDef ; vector 81
-		jmp irqEmptyDef ; vector 82
-		jmp irqEmptyDef ; vector 83
-		jmp irqEmptyDef ; vector 84
-		jmp irqEmptyDef ; vector 85
-		jmp irqEmptyDef ; vector 86
-		jmp irqEmptyDef ; vector 87
-		jmp irqEmptyDef ; vector 88
-		jmp irqEmptyDef ; vector 89
-		jmp irqEmptyDef ; vector 90
-		jmp irqEmptyDef ; vector 91
-		jmp irqEmptyDef ; vector 92
-		jmp irqEmptyDef ; vector 93
+		jmp irqEmptyDef ; Timer/Counter D Type 0 Overflow vector | Type 2 Low-Byte Underflow vector
+		jmp irqEmptyDef ; Timer/Counter D Type 0 Error vector | Type 2 High-Byte Underflow vector
+		jmp irqEmptyDef ; Timer/Counter D Type 0 Capture-Comp A vector | Type 2 Low-Byte Compare A vector
+		jmp irqEmptyDef ; Timer/Counter D Type 0 Capture-Comp B vector | Type 2 Low-Byte Compare B vector
+		jmp irqEmptyDef ; Timer/Counter D Type 0 Capture-Comp C vector | Type 2 Low-Byte Compare C vector
+		jmp irqEmptyDef ; Timer/Counter D Type 0 Capture-Comp D vector | Type 2 Low-Byte Compare D vector
+		jmp irqEmptyDef ; Timer/Counter D Type 1 Overflow vector
+		jmp irqEmptyDef ; Timer/Counter D Type 1 Error vector
+		jmp irqEmptyDef ; Timer/Counter D Type 1 Capture-Comp A vector
+		jmp irqEmptyDef ; Timer/Counter D Type 1 Capture-Comp B vector
+		jmp irqEmptyDef ; SPI D vector
+		jmp irqEmptyDef ; USART D0 Data Complete vector
+		jmp irqEmptyDef ; USART D0 Data Register Empty vector
+		jmp irqEmptyDef ; USART D0 Transmit Complete vector
+		jmp irqEmptyDef ; USART D1 Data Complete vector
+		jmp irqEmptyDef ; USART D1 Data Register Empty vector
+		jmp irqEmptyDef ; USART D1 Transmit Complete vector
 		jmp irqEmptyDef ; vector 94
 		jmp irqEmptyDef ; vector 95
 		jmp irqEmptyDef ; vector 96
@@ -186,29 +186,28 @@ void vectorTable()
 		jmp irqEmptyDef ; vector 101
 		jmp irqEmptyDef ; vector 102
 		jmp irqEmptyDef ; vector 103
-		jmp irqEmptyDef ; vector 104
-		jmp irqEmptyDef ; vector 105
+		jmp irqEmptyDef ; Port F Int0 vector
+		jmp irqEmptyDef ; Port F Int1 vector
 		jmp irqEmptyDef ; vector 106
 		jmp irqEmptyDef ; vector 107
-		jmp irqEmptyDef ; vector 108
-		jmp irqEmptyDef ; vector 109
-		jmp irqEmptyDef ; vector 110
-		jmp irqEmptyDef ; vector 111
-		jmp irqEmptyDef ; vector 112
-		jmp irqEmptyDef ; vector 113
+		jmp irqEmptyDef ; Timer/Counter F Type 0 Overflow vector | Type 2 Low-Byte Underflow vector
+		jmp irqEmptyDef ; Timer/Counter F Type 0 Error vector | Type 2 High-Byte Underflow vector
+		jmp irqEmptyDef ; Timer/Counter F Type 0 Capture-Comp A vector | Type 2 Low-Byte Compare A vector
+		jmp irqEmptyDef ; Timer/Counter F Type 0 Capture-Comp B vector | Type 2 Low-Byte Compare B vector
+		jmp irqEmptyDef ; Timer/Counter F Type 0 Capture-Comp C vector | Type 2 Low-Byte Compare C vector
+		jmp irqEmptyDef ; Timer/Counter F Type 0 Capture-Comp D vector | Type 2 Low-Byte Compare D vector
 		jmp irqEmptyDef ; vector 114
 		jmp irqEmptyDef ; vector 115
 		jmp irqEmptyDef ; vector 116
 		jmp irqEmptyDef ; vector 117
 		jmp irqEmptyDef ; vector 118
-		jmp irqEmptyDef ; vector 119
-		jmp irqEmptyDef ; vector 120
-		jmp irqEmptyDef ; vector 121
+		jmp irqEmptyDef ; USART F0 Data Complete vector
+		jmp irqEmptyDef ; USART F0 Data Register Empty vector
+		jmp irqEmptyDef ; USART F0 Transmit Complete vector
 		jmp irqEmptyDef ; vector 122
 		jmp irqEmptyDef ; vector 123
 		jmp irqEmptyDef ; vector 124
-		jmp irqEmptyDef ; vector 125
-		jmp irqEmptyDef ; vector 126
-		jmp irqEmptyDef ; vector 127
+		jmp irqEmptyDef ; USB Bus Event vector
+		jmp irqEmptyDef ; USB Transaction Complete vector
 	)");
 }
