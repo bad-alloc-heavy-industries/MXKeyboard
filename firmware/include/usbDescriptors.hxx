@@ -28,9 +28,26 @@ namespace usb::descriptors
 	enum class usbClass_t : uint8_t
 	{
 		none = 0x00U,
-		acm = 0x02U,
+		audio = 0x01U,
+		cdcACM = 0x02U,
 		hid = 0x03U,
-		massStorage = 0x06U,
+		physical = 0x05U,
+		image = 0x06U,
+		printer = 0x07U,
+		massStorage = 0x08U,
+		hub = 0x09U,
+		cdcData = 0x0AU,
+		smartCard = 0x0BU,
+		contentSecurity = 0x0DU,
+		video = 0x0EU,
+		healthcare = 0x0FU,
+		audioVisual = 0x10U,
+		billboard = 0x11U,
+		typeCBridge = 0x12U,
+		diagnostic = 0xDCU,
+		wireless = 0xE0U,
+		misc = 0xEFU,
+		application = 0xFEU,
 		vendor = 0xFFU
 	};
 
@@ -57,8 +74,8 @@ namespace usb::descriptors
 		defaults = 0x80U,
 		selfPowered = 0x40U,
 		remoteWakeup = 0x20U,
-		HNP = 0x02U,
-		SRP = 0x01U
+		hostNegotiationProto = 0x02U,
+		sessionRequestProto = 0x01U
 	};
 
 	struct usbConfigDescriptor_t
@@ -143,56 +160,62 @@ namespace usb::descriptors
 		};
 	} // namespace protocols
 
-	enum class hidCountryCode_t : uint8_t
-	{
-		notSupported = 0,
-		arabic = 1,
-		belgian = 2,
-		canadianBi = 3,
-		canadianFrench = 4,
-		czech = 5,
-		danish = 6,
-		finnish = 7,
-		french = 8,
-		german = 9,
-		greek = 10,
-		hebrew = 11,
-		hungary = 12,
-		iso = 13,
-		italian = 14,
-		japanese = 15,
-		korean = 16,
-		latinAmerican = 17,
-		dutch = 18,
-		norwegian = 19,
-		persian = 20,
-		polish = 21,
-		portuguese = 22,
-		russian = 23,
-		slovak = 24,
-		spanish = 25,
-		swissFrench = 27,
-		swissGerman = 28,
-		swiss = 29,
-		taiwanese = 30,
-		turkishQ = 31,
-		english = 32,
-		american = 33,
-		balkan = 34,
-		turkishF = 35
-	};
-
-	struct usbHIDDescriptor_t
+	struct usbStringDescBase_t
 	{
 		uint8_t length;
-		usbDescriptor_t descriptorType;
-		uint16_t hidVersion;
-		hidCountryCode_t countryCode;
-		uint8_t numDescriptors;
-	};
+		uint8_t descriptorType;
+	} usbStringDescBase_t;
 
 	namespace hid
 	{
+		enum class countryCode_t : uint8_t
+		{
+			notSupported = 0,
+			arabic = 1,
+			belgian = 2,
+			canadianBi = 3,
+			canadianFrench = 4,
+			czech = 5,
+			danish = 6,
+			finnish = 7,
+			french = 8,
+			german = 9,
+			greek = 10,
+			hebrew = 11,
+			hungary = 12,
+			iso = 13,
+			italian = 14,
+			japanese = 15,
+			korean = 16,
+			latinAmerican = 17,
+			dutch = 18,
+			norwegian = 19,
+			persian = 20,
+			polish = 21,
+			portuguese = 22,
+			russian = 23,
+			slovak = 24,
+			spanish = 25,
+			swissFrench = 27,
+			swissGerman = 28,
+			swiss = 29,
+			taiwanese = 30,
+			turkishQ = 31,
+			english = 32,
+			american = 33,
+			balkan = 34,
+			turkishF = 35
+		};
+
+		struct hidDescriptor_t
+		{
+			uint8_t length;
+			usbDescriptor_t descriptorType;
+			uint16_t hidVersion;
+			countryCode_t countryCode;
+			uint8_t numDescriptors;
+		};
+
 		struct reportDescriptor_t
 		{
 			usbDescriptor_t descriptorType;
@@ -205,6 +228,12 @@ namespace usb::descriptors
 		uint8_t length;
 		const void *descriptor;
 	};
+
+	struct usbMultiPartTable_t
+	{
+		uint8_t numDesc;
+		const usbMultiPartDesc_t *descriptors;
+	} usbMultiPartTable_t;
 } // namespace usb::descriptors
 
 #endif /*USB_DESCRIPTORS__HXX*/

@@ -28,7 +28,7 @@ static const std::array<usbConfigDescriptor_t, usb::configDescriptorCount> usbCo
 		sizeof(usbConfigDescriptor_t),
 		usbDescriptor_t::configuration,
 		sizeof(usbConfigDescriptor_t) + sizeof(usbInterfaceDescriptor_t) +
-			sizeof(usbHIDDescriptor_t) + sizeof(hid::reportDescriptor_t) +
+			sizeof(hid::hidDescriptor_t) + sizeof(hid::reportDescriptor_t) +
 			sizeof(usbEndpointDescriptor_t),
 		usb::interfaceDescriptorCount,
 		1, // This config
@@ -65,12 +65,12 @@ static const std::array<usbEndpointDescriptor_t, usb::endpointDescriptorCount> u
 	}
 };
 
-static const usbHIDDescriptor_t usbKeyboardDesc
+static const hid::hidDescriptor_t usbKeyboardDesc
 {
-	sizeof(usbHIDDescriptor_t),
+	sizeof(hid::hidDescriptor_t),
 	usbDescriptor_t::hid,
 	0x0111, // USB HID 1.11 in BCD
-	hidCountryCode_t::english,
+	hid::countryCode_t::english,
 	usb::hidReportDescriptorCount
 };
 
@@ -93,7 +93,7 @@ static const usbMultiPartDesc_t usbConfigSecs[]
 		&usbInterfaceDesc[0]
 	},
 	{
-		sizeof(usbHIDDescriptor_t),
+		sizeof(hid::hidDescriptor_t),
 		&usbKeyboardDesc
 	},
 	{
