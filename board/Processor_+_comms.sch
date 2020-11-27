@@ -778,18 +778,18 @@ $EndComp
 $Comp
 L Device:R_Small R37
 U 1 1 B80E1D1D
-P 9100 5500
+P 4000 9700
 AR Path="/B80E1D1D" Ref="R37"  Part="1" 
 AR Path="/5F5D6257/B80E1D1D" Ref="R37"  Part="1" 
-F 0 "R37" V 9050 5500 59  0000 C BNN
-F 1 "5k1" V 9150 5500 59  0000 C TNN
-F 2 "rhais_rcl:R0603" H 9100 5500 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 9100 5500 50  0001 C CNN
-F 4 "Multicomp" H 9100 5500 50  0001 C CNN "MFR"
-F 5 "MCWR06X1003FTL" H 9100 5500 50  0001 C CNN "MPN"
-F 6 "2447226" H 9100 5500 50  0001 C CNN "OC_FARNELL"
-F 7 "https://uk.farnell.com/multicomp/mcwr06x1003ftl/res-100k-1-0-1w-0603-thick-film/dp/2447226" H 9100 5500 50  0001 C CNN "URL_FARNELL"
-	1    9100 5500
+F 0 "R37" V 3950 9700 59  0000 C BNN
+F 1 "5k1" V 4050 9700 59  0000 C TNN
+F 2 "rhais_rcl:R0603" H 4000 9700 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 4000 9700 50  0001 C CNN
+F 4 "Multicomp" H 4000 9700 50  0001 C CNN "MFR"
+F 5 "MCWR06X5101FTL" H 4000 9700 50  0001 C CNN "MPN"
+F 6 "2447404" H 4000 9700 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mcwr06x5101ftl/res-5k1-1-0-1w-0603-thick-film/dp/2447404" H 4000 9700 50  0001 C CNN "URL_FARNELL"
+	1    4000 9700
 	1    0    0    -1  
 $EndComp
 Text HLabel 4400 6500 0    50   Output ~ 0
@@ -1074,7 +1074,7 @@ F 3 "" H 14300 2300 50  0001 C CNN
 $EndComp
 Text HLabel 13000 5600 1    50   Output ~ 0
 5V_PS2
-Text HLabel 9200 4500 0    50   Output ~ 0
+Text HLabel 9100 4500 0    50   Output ~ 0
 5V_USB
 NoConn ~ 6900 7100
 NoConn ~ 6900 7000
@@ -1084,12 +1084,9 @@ NoConn ~ 4500 6600
 NoConn ~ 4500 6400
 NoConn ~ 4500 5700
 NoConn ~ 4500 5600
-NoConn ~ 4500 5500
-NoConn ~ 4500 5400
 NoConn ~ 4500 5200
 NoConn ~ 4500 5100
 NoConn ~ 4500 5000
-NoConn ~ 6900 5000
 NoConn ~ 6900 4900
 NoConn ~ 6900 4700
 NoConn ~ 6900 4500
@@ -1306,12 +1303,12 @@ $EndComp
 Wire Wire Line
 	3000 5600 3000 5700
 Wire Wire Line
-	6900 6100 7300 6100
+	6900 6100 7600 6100
 Wire Wire Line
-	6900 6200 7300 6200
-Text Label 7300 6200 0    50   ~ 0
+	6900 6200 7600 6200
+Text Label 7600 6200 2    50   ~ 0
 DBG_TX
-Text Label 7300 6100 0    50   ~ 0
+Text Label 7600 6100 2    50   ~ 0
 DBG_RX
 $Comp
 L power:GND #PWR0102
@@ -1425,50 +1422,35 @@ NoConn ~ 10300 4600
 $Comp
 L Device:R_Small R?
 U 1 1 602E361F
-P 8800 5500
+P 4000 8600
 AR Path="/602E361F" Ref="R?"  Part="1" 
 AR Path="/5F5D6257/602E361F" Ref="R44"  Part="1" 
-F 0 "R44" V 8750 5500 59  0000 C BNN
-F 1 "5k1" V 8850 5500 59  0000 C TNN
-F 2 "rhais_rcl:R0603" H 8800 5500 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 8800 5500 50  0001 C CNN
-F 4 "Multicomp" H 8800 5500 50  0001 C CNN "MFR"
-F 5 "MCWR06X1003FTL" H 8800 5500 50  0001 C CNN "MPN"
-F 6 "2447226" H 8800 5500 50  0001 C CNN "OC_FARNELL"
-F 7 "https://uk.farnell.com/multicomp/mcwr06x1003ftl/res-100k-1-0-1w-0603-thick-film/dp/2447226" H 8800 5500 50  0001 C CNN "URL_FARNELL"
-	1    8800 5500
+F 0 "R44" V 3950 8600 59  0000 C BNN
+F 1 "5k1" V 4050 8600 59  0000 C TNN
+F 2 "rhais_rcl:R0603" H 4000 8600 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 4000 8600 50  0001 C CNN
+F 4 "Multicomp" H 4000 8600 50  0001 C CNN "MFR"
+F 5 "MCWR06X5101FTL" H 4000 8600 50  0001 C CNN "MPN"
+F 6 "2447404" H 4000 8600 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mcwr06x5101ftl/res-5k1-1-0-1w-0603-thick-film/dp/2447404" H 4000 8600 50  0001 C CNN "URL_FARNELL"
+	1    4000 8600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR072
 U 1 1 602E4F49
-P 8950 5800
-F 0 "#PWR072" H 8950 5550 50  0001 C CNN
-F 1 "GND" H 8955 5627 50  0000 C CNN
-F 2 "" H 8950 5800 50  0001 C CNN
-F 3 "" H 8950 5800 50  0001 C CNN
-	1    8950 5800
+P 4000 8800
+F 0 "#PWR072" H 4000 8550 50  0001 C CNN
+F 1 "GND" H 4005 8627 50  0000 C CNN
+F 2 "" H 4000 8800 50  0001 C CNN
+F 3 "" H 4000 8800 50  0001 C CNN
+	1    4000 8800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8800 5600 8800 5700
-Wire Wire Line
-	8800 5700 8950 5700
-Wire Wire Line
-	8950 5700 8950 5800
-Wire Wire Line
-	8950 5700 9100 5700
-Wire Wire Line
-	9100 5700 9100 5600
-Connection ~ 8950 5700
-Wire Wire Line
-	9100 5400 9100 4800
-Wire Wire Line
 	9100 4800 9300 4800
 Wire Wire Line
-	9300 4700 8800 4700
-Wire Wire Line
-	8800 4700 8800 5400
+	9300 4700 9100 4700
 Wire Wire Line
 	6900 5100 9200 5100
 Wire Wire Line
@@ -1477,8 +1459,368 @@ Text Label 7000 5100 0    50   ~ 0
 D-
 Text Label 7000 5200 0    50   ~ 0
 D+
+$Comp
+L DX_MON:CYPD3177 U13
+U 1 1 5FC11697
+P 5700 9300
+F 0 "U13" H 4800 10250 50  0000 L CNN
+F 1 "CYPD3177" H 5700 9300 50  0000 C CNN
+F 2 "rhais_package-qfn:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5700 9300 50  0001 C CNN
+F 3 "" H 5700 9300 50  0001 C CNN
+	1    5700 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR076
+U 1 1 5FC14309
+P 5700 10500
+F 0 "#PWR076" H 5700 10250 50  0001 C CNN
+F 1 "GND" H 5705 10327 50  0000 C CNN
+F 2 "" H 5700 10500 50  0001 C CNN
+F 3 "" H 5700 10500 50  0001 C CNN
+	1    5700 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 8200 5500 8300
+Text Label 9100 4800 0    50   ~ 0
+CC2
+Text Label 9100 4700 0    50   ~ 0
+CC1
+Text Label 6900 9200 2    50   ~ 0
+CC2
+Text Label 6900 9100 2    50   ~ 0
+CC1
+Wire Wire Line
+	6900 9100 6700 9100
+Wire Wire Line
+	6700 9200 6900 9200
+Text Label 6900 9400 2    50   ~ 0
+D+
+Text Label 6900 9500 2    50   ~ 0
+D-
+Wire Wire Line
+	6900 9500 6700 9500
+Wire Wire Line
+	6700 9400 6900 9400
+Wire Wire Line
+	4700 8800 4400 8800
+Wire Wire Line
+	4400 8800 4400 8900
+Wire Wire Line
+	5900 8300 5900 7900
+Wire Wire Line
+	5800 8300 5800 7900
+$Comp
+L power:GND #PWR074
+U 1 1 5FCBA7F2
+P 4400 9200
+F 0 "#PWR074" H 4400 8950 50  0001 C CNN
+F 1 "GND" H 4405 9027 50  0000 C CNN
+F 2 "" H 4400 9200 50  0001 C CNN
+F 3 "" H 4400 9200 50  0001 C CNN
+	1    4400 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 8900 4400 8900
+Wire Wire Line
+	4700 9000 4200 9000
+Wire Wire Line
+	4200 9500 4000 9500
+Wire Wire Line
+	4200 9000 4200 8400
+Wire Wire Line
+	4200 8400 4000 8400
+Wire Wire Line
+	4000 8400 4000 8500
+Wire Wire Line
+	4000 8700 4000 8800
+$Comp
+L Device:R_Small R45
+U 1 1 5FD5C2BA
+P 4000 8200
+F 0 "R45" V 3950 8200 50  0000 C BNN
+F 1 "1k" V 4050 8200 50  0000 C TNN
+F 2 "rhais_rcl:R0603" H 4000 8200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 4000 8200 50  0001 C CNN
+F 4 "Multicomp" H 4000 8200 50  0001 C CNN "MFR"
+F 5 "MCWR06X1001FTL" H 4000 8200 50  0001 C CNN "MPN"
+F 6 "2447272" H 4000 8200 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mcwr06x1001ftl/res-1k-1-0-1w-0603-thick-film/dp/2447272" H 4000 8200 50  0001 C CNN "URL_FARNELL"
+	1    4000 8200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R46
+U 1 1 5FD5CEF9
+P 4000 9300
+F 0 "R46" V 3950 9300 50  0000 C BNN
+F 1 "1k" V 4050 9300 50  0000 C TNN
+F 2 "rhais_rcl:R0603" H 4000 9300 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 4000 9300 50  0001 C CNN
+F 4 "Multicomp" H 4000 9300 50  0001 C CNN "MFR"
+F 5 "MCWR06X1001FTL" H 4000 9300 50  0001 C CNN "MPN"
+F 6 "2447272" H 4000 9300 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mcwr06x1001ftl/res-1k-1-0-1w-0603-thick-film/dp/2447272" H 4000 9300 50  0001 C CNN "URL_FARNELL"
+	1    4000 9300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VBUS #PWR079
+U 1 1 5FD90F50
+P 9200 4400
+F 0 "#PWR079" H 9200 4250 50  0001 C CNN
+F 1 "VBUS" H 9215 4573 50  0000 C CNN
+F 2 "" H 9200 4400 50  0001 C CNN
+F 3 "" H 9200 4400 50  0001 C CNN
+	1    9200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4400 9200 4500
+Connection ~ 9200 4500
+Wire Wire Line
+	9200 4500 9100 4500
+$Comp
+L power:VBUS #PWR075
+U 1 1 5FDB8A7A
+P 5500 8200
+F 0 "#PWR075" H 5500 8050 50  0001 C CNN
+F 1 "VBUS" H 5515 8373 50  0000 C CNN
+F 2 "" H 5500 8200 50  0001 C CNN
+F 3 "" H 5500 8200 50  0001 C CNN
+	1    5500 8200
+	1    0    0    -1  
+$EndComp
+Text Label 5900 7900 3    50   ~ 0
+PD_VIO
+Text Label 3600 9100 0    50   ~ 0
+PD_VIO
+Text Label 3600 8000 0    50   ~ 0
+PD_VIO
+Wire Wire Line
+	4000 9500 4000 9600
+Wire Wire Line
+	4000 9400 4000 9500
+Connection ~ 4000 9500
+Wire Wire Line
+	4000 9200 4000 9100
+Wire Wire Line
+	4000 9100 3600 9100
+Wire Wire Line
+	4000 8400 4000 8300
+Connection ~ 4000 8400
+Wire Wire Line
+	4000 8100 4000 8000
+Wire Wire Line
+	4000 8000 3600 8000
+$Comp
+L power:GND #PWR073
+U 1 1 5FE0E023
+P 4000 9900
+F 0 "#PWR073" H 4000 9650 50  0001 C CNN
+F 1 "GND" H 4005 9727 50  0000 C CNN
+F 2 "" H 4000 9900 50  0001 C CNN
+F 3 "" H 4000 9900 50  0001 C CNN
+	1    4000 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 9900 4000 9800
+$Comp
+L power:GND #PWR077
+U 1 1 5FE6D110
+P 8000 9550
+F 0 "#PWR077" H 8000 9300 50  0001 C CNN
+F 1 "GND" H 8005 9377 50  0000 C CNN
+F 2 "" H 8000 9550 50  0001 C CNN
+F 3 "" H 8000 9550 50  0001 C CNN
+	1    8000 9550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 9450 8100 9450
+Wire Wire Line
+	8100 9450 8100 9350
+Connection ~ 8000 9450
+Wire Wire Line
+	8000 9450 8000 9550
+Wire Wire Line
+	8000 9450 7900 9450
+Wire Wire Line
+	7900 9450 7900 9350
+Text Label 8000 8950 1    50   ~ 0
+PD_VIO
+Wire Wire Line
+	7900 9150 7900 9050
+Wire Wire Line
+	7900 9050 8000 9050
+Wire Wire Line
+	8100 9150 8100 9050
+Wire Wire Line
+	8100 9050 8000 9050
+Connection ~ 8000 9050
+$Comp
+L Device:C_Small C?
+U 1 1 5FEEBA7D
+P 7900 9250
+AR Path="/5FEEBA7D" Ref="C?"  Part="1" 
+AR Path="/5F5D6257/5FEEBA7D" Ref="C34"  Part="1" 
+F 0 "C34" V 7950 9300 59  0000 L CNN
+F 1 "0.1uF" V 7950 9200 59  0000 R CNN
+F 2 "rhais_rcl:C0603" H 7900 9250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1870456.pdf" H 7900 9250 50  0001 C CNN
+F 4 "Multicomp" H 7900 9250 59  0001 L BNN "MFR"
+F 5 "MC0603B104J250CT" H 7900 9250 59  0001 L BNN "MPN"
+F 6 "2310559" H 7900 9250 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b104j250ct/cap-0-1-f-25v-5-x7r-0603-reel/dp/2310559" H 7900 9250 50  0001 C CNN "URL_FARNELL"
+	1    7900 9250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FEEC911
+P 8100 9250
+AR Path="/5FEEC911" Ref="C?"  Part="1" 
+AR Path="/5F5D6257/5FEEC911" Ref="C35"  Part="1" 
+F 0 "C35" V 8150 9300 59  0000 L CNN
+F 1 "1uF" V 8150 9200 59  0000 R CNN
+F 2 "rhais_rcl:C0603" H 8100 9250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860632.pdf" H 8100 9250 50  0001 C CNN
+F 4 "Multicomp" H 8100 9250 59  0001 L BNN "MFR"
+F 5 "MC0603B105K160CT" H 8100 9250 59  0001 L BNN "MPN"
+F 6 "2320814" H 8100 9250 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b105k160ct/cap-1-f-16v-10-x7r-0603/dp/2320814" H 8100 9250 50  0001 C CNN "URL_FARNELL"
+	1    8100 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FF80FEB
+P 8500 9250
+AR Path="/5FF80FEB" Ref="C?"  Part="1" 
+AR Path="/5F5D6257/5FF80FEB" Ref="C36"  Part="1" 
+F 0 "C36" V 8550 9300 59  0000 L CNN
+F 1 "1uF" V 8550 9200 59  0000 R CNN
+F 2 "rhais_rcl:C0603" H 8500 9250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860632.pdf" H 8500 9250 50  0001 C CNN
+F 4 "Multicomp" H 8500 9250 59  0001 L BNN "MFR"
+F 5 "MC0603B105K160CT" H 8500 9250 59  0001 L BNN "MPN"
+F 6 "2320814" H 8500 9250 59  0001 L BNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mc0603b105k160ct/cap-1-f-16v-10-x7r-0603/dp/2320814" H 8500 9250 50  0001 C CNN "URL_FARNELL"
+	1    8500 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR078
+U 1 1 5FF814B9
+P 8500 9550
+F 0 "#PWR078" H 8500 9300 50  0001 C CNN
+F 1 "GND" H 8505 9377 50  0000 C CNN
+F 2 "" H 8500 9550 50  0001 C CNN
+F 3 "" H 8500 9550 50  0001 C CNN
+	1    8500 9550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 9350 8500 9550
+Text Label 5800 7900 3    50   ~ 0
+PD_VCore
+Text Label 8500 8950 1    50   ~ 0
+PD_VCore
+Wire Wire Line
+	8500 8950 8500 9150
+Wire Wire Line
+	8000 8950 8000 9050
+Wire Wire Line
+	5600 10300 5600 10400
+$Comp
+L Device:R_Small R47
+U 1 1 6015326A
+P 7000 8700
+F 0 "R47" V 6950 8700 50  0000 C BNN
+F 1 "10k" V 7050 8700 50  0000 C TNN
+F 2 "rhais_rcl:R0603" H 7000 8700 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2860681.pdf" H 7000 8700 50  0001 C CNN
+F 4 "Multicomp" H 7000 8700 50  0001 C CNN "MFR"
+F 5 "MCWR06X1002FTL" H 7000 8700 50  0001 C CNN "MPN"
+F 6 "2446547" H 7000 8700 50  0001 C CNN "OC_FARNELL"
+F 7 "https://uk.farnell.com/multicomp/mcwr06x1002ftl/res-10k-1-0-1w-0603-thick-film/dp/2446547" H 7000 8700 50  0001 C CNN "URL_FARNELL"
+	1    7000 8700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4500 5500
+NoConn ~ 4500 5400
+NoConn ~ 6900 5000
+NoConn ~ 6700 9900
+NoConn ~ 6700 9800
+NoConn ~ 4700 9700
+Wire Wire Line
+	6700 8900 7000 8900
+Wire Wire Line
+	7000 8900 7000 8800
+Wire Wire Line
+	7000 8600 7000 8500
+NoConn ~ 4700 9300
+NoConn ~ 4700 9400
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 6021BA2E
+P 7000 8500
+F 0 "#PWR0104" H 7000 8350 50  0001 C CNN
+F 1 "+3.3V" H 7015 8673 50  0000 C CNN
+F 2 "" H 7000 8500 50  0001 C CNN
+F 3 "" H 7000 8500 50  0001 C CNN
+	1    7000 8500
+	1    0    0    -1  
+$EndComp
+Text Label 7300 8900 2    50   ~ 0
+~PD_OK
+Wire Wire Line
+	7300 8900 7000 8900
+Connection ~ 7000 8900
+Text Label 7150 5400 2    50   ~ 0
+~PD_OK
+Wire Wire Line
+	7150 5400 6900 5400
+NoConn ~ 6700 8800
+$Comp
+L power:VBUS #PWR080
+U 1 1 6027223F
+P 6800 8600
+F 0 "#PWR080" H 6800 8450 50  0001 C CNN
+F 1 "VBUS" H 6815 8773 50  0000 C CNN
+F 2 "" H 6800 8600 50  0001 C CNN
+F 3 "" H 6800 8600 50  0001 C CNN
+	1    6800 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 8700 6800 8700
+Wire Wire Line
+	6800 8700 6800 8600
+NoConn ~ 4700 9800
+Wire Wire Line
+	4200 9500 4200 9100
+Wire Wire Line
+	4200 9100 4700 9100
+Connection ~ 4400 8900
+Wire Wire Line
+	4400 8900 4400 9200
+Text Notes 3500 9250 2    50   ~ 0
+Total board current is calculated to be:\n(3.5mA✕109✕2chan)+(1mA✕109)+100mA = 972mA\n\nISNK_COARSE is set for 1A\nISNK_FINE is set for +250mA adjust
+Wire Wire Line
+	5600 10400 5700 10400
+Wire Wire Line
+	5700 10400 5700 10500
+Wire Wire Line
+	5700 10400 5800 10400
+Wire Wire Line
+	5800 10400 5800 10300
 Wire Bus Line
 	4350 4400 4350 4800
 Wire Bus Line
 	7050 6300 7050 6800
+Connection ~ 5700 10400
 $EndSCHEMATC
