@@ -8,5 +8,5 @@ eagle.epf
 *.bck
 fp-info-cache
 
-img/
 Gerber/
+gerber/
