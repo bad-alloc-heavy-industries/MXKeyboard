@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: BSD-3-Clause
 #include "MXKeyboard.hxx"
 #include "ps2.hxx"
+#include "interrupts.hxx"
 
 /*!
  * PS2_CLK = PE1
