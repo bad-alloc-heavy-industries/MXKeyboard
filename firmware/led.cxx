@@ -90,9 +90,9 @@ static ledData_t leds{};
 inline USART_t &ledChannelToUART(const channel_t channel)
 {
 	if (channel == channel_t::red)
-		return USARTC0;
-	else if (channel == channel_t::green)
 		return USARTD0;
+	else if (channel == channel_t::green)
+		return USARTC0;
 	else if (channel == channel_t::blue)
 		return USARTC1;
 	return USARTD1; // This is invalid but harmless.
