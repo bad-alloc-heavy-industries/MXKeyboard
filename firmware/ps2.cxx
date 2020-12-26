@@ -18,27 +18,29 @@
 constexpr inline uint8_t highByte(uint16_t value) noexcept { return value >> 8; }
 constexpr inline uint8_t lowByte(uint16_t value) noexcept { return uint8_t(value); }
 
+constexpr static uint8_t PORT_INVEN_gc{0x40U};
+constexpr static uint8_t USART_SBMODE_1BIT_gc{0x00U};
+constexpr static uint8_t USART_SBMODE_2BIT_gc{0x08U};
+
 void ps2Init() noexcept
 {
-	// Configure the USART dealing with PS2 into 8-bit w/ parity mode, and make it clock-synchronous.
-	USARTE0.CTRLC = USART_CMODE_SYNCHRONOUS_gc | USART_CHSIZE_8BIT_gc | USART_PMODE_ODD_gc;
-	// Enable RX & TX
-	USARTE0.CTRLB = 0x18U;
-	USARTE0.BAUDCTRLB = highByte(799);
-	USARTE0.BAUDCTRLA = lowByte(799);
 	// Set up clock + data as "Wired AND w/ pull-up" which is OC+pull
 	// We also want the clock pin to react to being pulled low.
 	PORTE.PIN1CTRL = PORT_OPC_WIREDANDPULL_gc | PORT_ISC_LEVEL_gc;
 	PORTE.PIN3CTRL = PORT_OPC_WIREDANDPULL_gc;
+	// Make PE1 and 3 high outputs
 	PORTE.OUTSET = 0x0AU;
-	// Make PE1 and 3 outputs
 	PORTE.DIRSET = 0x0AU;
-	// Do we need the clock output to be inverted IO?
-	// Do we need to set the TX pin high before enabling it as an output?
-	// TODO: Check with a scope.
+	// Configure the USART dealing with PS2 into 8-bit w/ parity mode, and make it clock-synchronous.
+	USARTE0.CTRLC = USART_CMODE_SYNCHRONOUS_gc | USART_CHSIZE_8BIT_gc | USART_SBMODE_1BIT_gc | USART_PMODE_ODD_gc;
+	USARTE0.BAUDCTRLB = highByte(799);
+	USARTE0.BAUDCTRLA = lowByte(799);
+	// Enable RX & TX
+	USARTE0.CTRLB = 0x18U;
 	// Enable PE1 as INT0IF
 	PORTE.INT0MASK = 0x02U;
-	PORTE.INTCTRL = (PORTE.INTCTRL & 0xFCU) | PORT_INT0LVL_HI_gc;
+	PORTE.INTCTRL = (PORTE.INTCTRL & 0xFCU) | PORT_INT0LVL_MED_gc;
+	// TODO: Check with a scope.
 }
 
 [[nodiscard]] uint8_t ps2Read() noexcept
