@@ -1,5 +1,5 @@
 #include <array>
-#include "usbTypes.hxx"
+#include "usb/types.hxx"
 #include "usbDescriptors.hxx"
 
 using namespace usb::descriptors;

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BSD-3-Clause
 #include <array>
 #include "MXKeyboard.hxx"
-#include "usbTypes.hxx"
+#include "usb/types.hxx"
 
 /*!
  * "USB IN" transfers == Controller In
