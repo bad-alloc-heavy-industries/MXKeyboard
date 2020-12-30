@@ -2,6 +2,8 @@
 #ifndef TYPE_TRAITS
 #define TYPE_TRAITS
 
+#include <cstddef>
+
 namespace std
 {
 	template<typename T, T v> struct integral_constant
@@ -20,6 +22,13 @@ namespace std
 	template<typename T> struct enable_if<true, T> { using type = T; };
 	template<bool cond, typename T = void> using enable_if_t = typename enable_if<cond, T>::type;
 
+	template<bool cond, typename ifTrue_t, typename ifFalse_t> struct conditional
+		{ using type = ifTrue_t; };
+	template<typename ifTrue_t, typename ifFalse_t>
+		struct conditional<false, ifTrue_t, ifFalse_t> { using type = ifFalse_t; };
+	template<bool cond, typename ifTrue_t, typename ifFalse_t> using conditional_t =
+		typename conditional<cond, ifTrue_t, ifFalse_t>::type;
+
 	using true_type = integral_constant<bool, true>;
 	using false_type = integral_constant<bool, false>;
 	template<bool value> using _bool_constant = integral_constant<bool, value>;
@@ -31,6 +40,14 @@ namespace std
 	}
 
 	template<typename T> auto declval() noexcept -> decltype(impl::declval<T>());
+
+	template<typename, size_t uint = 0> struct extent :
+		public integral_constant<size_t, 0> { };
+	template<typename T, size_t uint, size_t size> struct extent<T[size], uint> :
+		public integral_constant<size_t, uint == 0 ? size : extent<T, uint - 1>::value> { };
+	template<typename T, size_t uint> struct extent<T[], uint> :
+		public integral_constant<size_t, uint == 0 ? 0 : extent<T, uint - 1>::value> { };
+	template<typename T> constexpr inline bool extent_v = extent<T>::value;
 
 	// impl for is_nothrow_swapable
 	namespace impl
@@ -44,10 +61,12 @@ namespace std
 			using type = decltype(test<T>());
 		};
 	} // namespace impl
+
 	template<typename T> struct is_nothrow_swappable :
 		impl::is_nothrow_swappable<T>::type { };
 
-	template<typename T> constexpr inline bool is_nothrow_swappable_v = is_nothrow_swappable<T>::value;
+	template<typename T> constexpr inline bool is_nothrow_swappable_v =
+		is_nothrow_swappable<T>::value;
 
 	template<typename T> struct remove_cv { using type = T; };
 	template<typename T> struct remove_cv<const T> { using type = T; };
@@ -58,8 +77,136 @@ namespace std
 	template<typename T> struct remove_reference<T &> { using type = T; };
 	template<typename T> struct remove_reference<T &&> { using type = T; };
 
+	template<typename T> struct remove_extent { using type = T; };
+	template<typename T, size_t size> struct remove_extent<T [size]>
+		{ using type = T; };
+	template<typename T> struct remove_extent<T []> { using type = T; };
+
+	template<typename T> struct remove_all_extents { using type = T; };
+	template<typename T, size_t size> struct remove_all_extents<T [size]>
+		{ using type = typename remove_all_extents<T>::type; };
+	template<typename T> struct remove_all_extents<T []>
+		{ using type = typename remove_all_extents<T>::type; };
+
 	template<typename T> using remove_cv_t = typename remove_cv<T>::type;
 	template<typename T> using remove_reference_t = typename remove_reference<T>::type;
+	template<typename T> using remove_extent_t = typename remove_extent<T>::type;
+	template<typename T> using remove_all_extents_t = typename remove_all_extents<T>::type;
+
+	// impl for is_void
+	namespace impl
+	{
+		template<typename> struct is_void : public false_type { };
+		template<> struct is_void<void> : public true_type { };
+	}
+
+	template<typename T> struct is_void : public impl::is_void<remove_cv_t<T>> { };
+	template<typename T> inline constexpr bool is_void_v = is_void<T>::value;
+
+	template<typename> struct is_lvalue_reference : public false_type { };
+	template<typename T> struct is_lvalue_reference<T &> : public true_type { };
+	template<typename T> inline constexpr bool is_lvalue_reference_v =
+		is_lvalue_reference<T>::value;
+
+	template<typename> struct is_rvalue_reference : public false_type { };
+	template<typename T> struct is_rvalue_reference<T &&> : public true_type { };
+	template<typename T> inline constexpr bool is_rvalue_reference_v =
+		is_rvalue_reference<T>::value;
+
+
+	template<typename T> struct is_reference : public _bool_constant<
+		is_lvalue_reference_v<T> || is_rvalue_reference_v<T>> { };
+	template<typename T> inline constexpr bool is_reference_v = is_reference<T>::value;
+
+	template<typename> struct is_function : public false_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) & noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) && noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) & noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) && noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) const noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) const & noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) const && noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) const noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) const & noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) const && noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) volatile noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) volatile & noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) volatile && noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) volatile noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) volatile & noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) volatile && noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) const volatile noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) const volatile & noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t...) const volatile && noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) const volatile noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) const volatile & noexcept(ne)> : public true_type { };
+	template<typename res_t, typename... args_t, bool ne>
+		struct is_function<res_t(args_t......) const volatile && noexcept(ne)> : public true_type { };
+	template<typename T> inline constexpr bool is_function_v = is_function<T>::value;
+
+	template<typename T> struct is_object :
+		public _bool_constant<!(is_function_v<T> || is_reference_v<T> || is_void_v<T>)> { };
+	template<typename T> inline constexpr bool is_object_v = is_object<T>::value;
+
+	template<typename> struct is_array : public false_type { };
+	template<typename T, size_t size> struct is_array<T[size]> : public true_type { };
+	template<typename T> struct is_array<T[]> : public true_type { };
+	template<typename T> inline constexpr bool is_array_v = is_array<T>::value;
+
+	// impl of is_referenceable
+	namespace impl
+	{
+		template<typename T> struct is_referenceable : public _bool_constant<
+			is_object_v<T> || is_reference_v<T>> { };
+		template<typename res_t, typename... args_t, bool ne>
+			struct is_referenceable<res_t(args_t...) noexcept(ne)> :public true_type { };
+		template<typename res_t, typename... args_t, bool ne>
+			struct is_referenceable<res_t(args_t......) noexcept(ne)> : public true_type { };
+
+		template<typename from_t, typename to_t, bool = is_void_v<from_t> || is_function_v<to_t> || is_array_v<to_t>>
+			struct is_convertible { using type = typename is_void<to_t>::type; };
+
+		template<typename from_t, typename to_t> struct is_convertible<from_t, to_t, false>
+		{
+		private:
+			template<typename to1_t> static void testAux(to1_t) noexcept;
+
+			template<typename from1_t, typename to1_t, typename = decltype(testAux<to1_t>(declval<from1_t>()))>
+				static true_type test(int);
+			template<typename, typename> static false_type test(...);
+
+		public:
+			using type = decltype(test<from_t, to_t>(0));
+		};
+	} // namespace impl
+	template<typename from_t, typename to_t> struct is_convertible :
+		public impl::is_convertible<from_t, to_t> { };
+	template<typename from_t, typename to_t> inline constexpr bool is_convertible_v = is_convertible<from_t, to_t>::value;
 
 	// impl for is_integral
 	namespace impl
@@ -87,13 +234,153 @@ namespace std
 	// impl for is_signed
 	namespace impl
 	{
+		template<typename T> constexpr inline bool _is_signed() noexcept { return T(-1) < T(0); }
 		// Should be is_arithmetic, but..
-		template<typename T, bool = is_integral<T>::value> struct is_signed : false_type { };
-		template<typename T> struct is_signed<T, true> : public _bool_constant<T(-1) < T(0)> { };
+		template<typename T, bool = std::is_integral<T>::value> struct is_signed : false_type { };
+		template<typename T> struct is_signed<T, true> : public _bool_constant<_is_signed<T>()> { };
 	} // namespace impl
 
 	template<typename T> struct is_signed : impl::is_signed<T>::type { };
+
+	namespace impl
+	{
+		template<typename T> struct is_array_known_bounds :
+			public _bool_constant<(extent<T>::value > 0)> { };
+		template<typename T> inline constexpr bool is_array_known_bounds_v =
+			is_array_known_bounds<T>::value;
+
+		template<typename T> struct is_array_unknown_bounds :
+			public _bool_constant<is_array_v<T> && !extent_v<T>> { };
+		template<typename T> inline constexpr bool is_array_unknown_bounds_v =
+			is_array_unknown_bounds<T>::value;
+	} // namespace impl
+
+	template<typename T, typename... args_t> struct is_constructible :
+		public _bool_constant<__is_constructible(T, args_t...)>
+	{
+		//static_assert(impl::is_complete_or_unbounded(impl::type_identity<T>{}),
+		//	"template argument must be a complete class or an unbounded array");
+	};
+	template<typename T, typename... args_t> inline constexpr bool is_constructible_v =
+		is_constructible<T, args_t...>::value;
+
+	// impl for is_nothrow_default_constructible, is_nothrow_constructible and
+	// is_nothrow_move_constructible
+	namespace impl
+	{
+		template<typename T> struct is_implicitly_default_constructible_safe
+		{
+		private:
+			template<typename U> static void helper(const U &);
+			template<typename U> static true_type test(const U &, decltype(helper<const U &>({})) * = nullptr);
+			template<typename U> static false_type test(...);
+
+		public:
+			using type = decltype(test(declval<T>()));
+		};
+
+		template<typename T> struct is_implicitly_default_constructible :
+			public _bool_constant<is_constructible_v<T> && is_implicitly_default_constructible_safe<T>::type::value> { };
+
+		template<typename T> struct is_default_constructible
+		{
+			template<typename U, typename = decltype(U())> static true_type test(int);
+			template<typename> static false_type test(...);
+
+			using type = decltype(test<T>(0));
+		};
+
+		template<typename T> struct is_default_constructible_atom :
+			public _bool_constant<!is_void_v<T> && is_default_constructible<T>::type::value> { };
+
+		template<typename T, bool = is_array_v<T>> struct is_default_constructible_safe;
+		template<typename T> struct is_default_constructible_safe<T, true> :
+			public _bool_constant<is_array_known_bounds_v<T> &&
+			is_default_constructible_atom<remove_all_extents_t<T>>::value> { };
+		template<typename T> struct is_default_constructible_safe<T, false> :
+			public is_default_constructible_atom<T> { };
+
+		template<typename T> struct is_nothrow_default_constructible_atom :
+			public _bool_constant<noexcept(T{})> { };
+
+		template<typename T, bool = is_array_v<T>> struct is_nothrow_default_constructible;
+		template<typename T> struct is_nothrow_default_constructible<T, true> :
+			public _bool_constant<is_array_known_bounds_v<T> &&
+			is_nothrow_default_constructible_atom<remove_all_extents_t<T>>::value> { };
+		template<typename T> struct is_nothrow_default_constructible<T, false> :
+			public is_nothrow_default_constructible_atom<T> { };
+
+		template<typename T, typename... args_t> struct is_nothrow_constructible :
+			public _bool_constant<noexcept(T(declval<args_t>()...))> { };
+		template<typename T, typename arg_t> struct is_nothrow_constructible<T, arg_t> :
+			public _bool_constant<noexcept(static_cast<T>(declval<arg_t>()))> { };
+		template<typename T> struct is_nothrow_constructible<T> :
+			public is_nothrow_default_constructible<T> { };
+
+		template<typename T, bool = is_referenceable<T>::value>
+			struct is_nothrow_move_constructible;
+
+		template<typename T> struct is_nothrow_move_constructible<T, false> : public false_type { };
+		template<typename T> struct is_nothrow_move_constructible<T, true> :
+			public is_nothrow_constructible<T, T &&> { };
+	} // namespace impl
+
+	template<typename T> struct is_default_constructible :
+		public impl::is_default_constructible_safe<T>::type { };
+
+	template<typename T> inline constexpr bool is_default_constructible_v =
+		is_default_constructible<T>::value;
+
+	template<typename T> struct is_nothrow_default_constructible :
+		public _bool_constant<is_default_constructible_v<T> &&
+		impl::is_nothrow_default_constructible<T>::value> { };
+	template<typename T, typename... args_t> struct is_nothrow_constructible :
+		public _bool_constant<is_constructible_v<T, args_t...> &&
+		impl::is_nothrow_constructible<T, args_t...>::value> { };
+	template<typename T> struct is_nothrow_move_constructible :
+		public impl::is_nothrow_move_constructible<T> { };
+
+	template<typename T> struct is_empty : public integral_constant<bool, __is_empty(T)> { };
+	template<typename T> struct is_final : public integral_constant<bool, __is_final(T)> { };
+
 	template<typename T> inline constexpr bool is_signed_v = is_signed<T>::value;
+
+	template<typename T> inline constexpr bool is_nothrow_default_constructible_v =
+		is_nothrow_default_constructible<T>::value;
+	template<typename T> inline constexpr bool is_nothrow_constructible_v =
+		is_nothrow_constructible<T>::value;
+	template<typename T> inline constexpr bool is_nothrow_move_constructible_v =
+		is_nothrow_move_constructible<T>::value;
+
+	template<typename T> inline constexpr bool is_empty_v = is_empty<T>::value;
+	template<typename T> inline constexpr bool is_final_v = is_final<T>::value;
+
+	namespace impl
+	{
+		template<typename...> struct __or;
+		template<> struct __or<> : public false_type { };
+		template<typename b1_t> struct __or<b1_t> : public b1_t { };
+		template<typename b1_t, typename b2_t> struct __or<b1_t, b2_t> :
+			public conditional_t<b1_t::value, b1_t, b2_t> { };
+		template<typename b1_t, typename b2_t, typename b3_t, typename... bn_t>
+			struct __or<b1_t, b2_t, b3_t, bn_t...> : public
+			conditional_t<b1_t::value, b1_t, __or<b2_t, b3_t, bn_t...>> { };
+
+		template<typename...> struct __and;
+		template<> struct __and<> : public true_type { };
+		template<typename b1_t> struct __and<b1_t> : public b1_t { };
+		template<typename b1_t, typename b2_t> struct __and<b1_t, b2_t> :
+			public conditional_t<b1_t::value, b2_t, b1_t> { };
+		template<typename b1_t, typename b2_t, typename b3_t, typename... bn_t>
+			struct __and<b1_t, b2_t, b3_t, bn_t...> : public
+			conditional_t<b1_t::value, __and<b2_t, b3_t, bn_t...>, b1_t> { };
+
+		template<typename T> struct __not : public _bool_constant<!bool(T::value)> { };
+
+		template<typename... vals_t> inline constexpr bool or_v = __or<vals_t...>::values;
+		template<typename... vals_t> inline constexpr bool and_v = __and<vals_t...>::values;
+		template<typename... vals_t> inline constexpr bool not_v = __not<vals_t...>::values;
+	} // namespace impl
 
 	constexpr bool is_constant_evaluated() noexcept
 	{
