@@ -3,23 +3,29 @@
 
 #include <cstdint>
 #include <cstddef>
+#include "types.hxx"
 
 namespace usb::descriptors
 {
 	enum class usbDescriptor_t : uint8_t
 	{
-		invalid,
-		device,
-		configuration,
-		string,
-		interface,
-		endpoint,
-		deviceQualifier,
-		otherSpeed,
-		interfaceSpeed,
-		otg,
-		debug,
-		interfaceAssociation,
+		invalid = 0x00U,
+		device = 0x01U,
+		configuration = 0x02U,
+		string = 0x03U,
+		interface = 0x04U,
+		endpoint = 0x05U,
+		deviceQualifier = 0x06U,
+		otherSpeed = 0x07U,
+		interfacePower = 0x08U, // Speed, Power?
+		otg = 0x09U,
+		debug = 0x0AU,
+		interfaceAssociation = 0x0BU,
+		security = 0x0CU,
+		key = 0x0DU,
+		encryptionType = 0x0EU,
+		deviceCapability = 0x10U,
+		wirelessEndpoint = 0x11U,
 		hid = 0x21U,
 		report = 0x22U,
 		physicalDesc = 0x23U
@@ -51,7 +57,7 @@ namespace usb::descriptors
 		vendor = 0xFFU
 	};
 
-	struct usbDeviceDescriptor_t
+	struct usbDeviceDescriptor_t final
 	{
 		uint8_t length;
 		usbDescriptor_t descriptorType;
@@ -69,6 +75,19 @@ namespace usb::descriptors
 		uint8_t numConfigurations;
 	};
 
+	struct usbDeviceQualifierDescriptor_t final
+	{
+		uint8_t length;
+		usbDescriptor_t descriptorType;
+		uint16_t usbVersion;
+		usbClass_t deviceClass;
+		uint8_t deviceSubClass;
+		uint8_t deviceProtocol;
+		uint8_t maxPacketSize0;
+		uint8_t numOtherConfigurations;
+		uint8_t reserved;
+	};
+
 	enum class usbConfigAttr_t : uint8_t
 	{
 		defaults = 0x80U,
@@ -78,7 +97,7 @@ namespace usb::descriptors
 		sessionRequestProto = 0x01U
 	};
 
-	struct usbConfigDescriptor_t
+	struct usbConfigDescriptor_t final
 	{
 		uint8_t length;
 		usbDescriptor_t descriptorType;
@@ -90,7 +109,7 @@ namespace usb::descriptors
 		uint8_t maxPower;
 	};
 
-	struct usbInterfaceDescriptor_t
+	struct usbInterfaceDescriptor_t final
 	{
 		uint8_t length;
 		usbDescriptor_t descriptorType;
@@ -111,17 +130,13 @@ namespace usb::descriptors
 		interrupt = 3
 	};
 
-	enum class usbEndpointDir_t : uint8_t
-	{
-		controllerOut = 0x00U,
-		controllerIn = 0x80U
-	};
+	using usbEndpointDir_t = usb::types::endpointDir_t;
 
 	constexpr static const uint8_t endpointDirMask{0x7F};
 	constexpr inline uint8_t endpointAddress(const usbEndpointDir_t dir, const uint8_t number) noexcept
 		{ return uint8_t(dir) | (number & endpointDirMask); }
 
-	struct usbEndpointDescriptor_t
+	struct usbEndpointDescriptor_t final
 	{
 		uint8_t length;
 		usbDescriptor_t descriptorType;
@@ -143,6 +158,11 @@ namespace usb::descriptors
 			none = 0,
 			bootInterface = 1
 		};
+
+		enum class vendor_t : uint8_t
+		{
+			none = 0
+		};
 	} // namespace subclasses
 
 	namespace protocols
@@ -160,11 +180,12 @@ namespace usb::descriptors
 		};
 	} // namespace protocols
 
-	struct usbStringDescBase_t
+	struct usbStringDesc_t final
 	{
 		uint8_t length;
-		uint8_t descriptorType;
-	} usbStringDescBase_t;
+		usbDescriptor_t descriptorType;
+		const char16_t *const string;
+	};
 
 	namespace hid
 	{
@@ -207,7 +228,7 @@ namespace usb::descriptors
 			turkishF = 35
 		};
 
-		struct hidDescriptor_t
+		struct hidDescriptor_t final
 		{
 			uint8_t length;
 			usbDescriptor_t descriptorType;
@@ -216,24 +237,49 @@ namespace usb::descriptors
 			uint8_t numDescriptors;
 		};
 
-		struct reportDescriptor_t
+		struct reportDescriptor_t final
 		{
 			usbDescriptor_t descriptorType;
 			uint16_t length;
 		};
 	} // namespace hid
 
-	struct usbMultiPartDesc_t
+	struct usbMultiPartDesc_t final
 	{
 		uint8_t length;
 		const void *descriptor;
 	};
 
-	struct usbMultiPartTable_t
+	struct usbMultiPartTable_t final
 	{
-		uint8_t numDesc;
-		const usbMultiPartDesc_t *descriptors;
-	} usbMultiPartTable_t;
+	private:
+		const usbMultiPartDesc_t *_begin;
+		const usbMultiPartDesc_t *_end;
+
+	public:
+		constexpr usbMultiPartTable_t(const usbMultiPartDesc_t *const begin,
+			const usbMultiPartDesc_t *const end) noexcept: _begin{begin}, _end{end} { }
+		constexpr auto begin() const noexcept { return _begin; }
+		constexpr auto end() const noexcept { return _end; }
+		constexpr auto count() const noexcept { return _end - _begin; }
+
+		constexpr auto &part(const std::size_t index) const noexcept
+		{
+			if (_begin + index >= _end)
+				return *_end;
+			return _begin[index];
+		}
+		constexpr auto &operator [](const std::size_t index) const noexcept { return part(index); }
+
+		constexpr auto totalLength() const noexcept
+		{
+			// TODO: Convert to std::accumulate() later.
+			std::size_t count{};
+			for (const auto &descriptor : *this)
+				count += descriptor.length;
+			return count;
+		}
+	};
 } // namespace usb::descriptors
 
 #endif /*USB_DESCRIPTORS__HXX*/
