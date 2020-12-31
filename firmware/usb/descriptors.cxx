@@ -39,7 +39,7 @@ static const usbDeviceQualifierDescriptor_t usbDeviceQualifierDesc
 };
 
 static const std::array<usbConfigDescriptor_t, configDescriptorCount> usbConfigDesc
-{
+{{
 	{
 		sizeof(usbConfigDescriptor_t),
 		usbDescriptor_t::configuration,
@@ -52,10 +52,10 @@ static const std::array<usbConfigDescriptor_t, configDescriptorCount> usbConfigD
 		usbConfigAttr_t::defaults,
 		250 // "500mA max", except we need 1A
 	}
-};
+}};
 
 static const std::array<usbInterfaceDescriptor_t, interfaceDescriptorCount> usbInterfaceDesc
-{
+{{
 	{
 		sizeof(usbInterfaceDescriptor_t),
 		usbDescriptor_t::interface,
@@ -67,10 +67,10 @@ static const std::array<usbInterfaceDescriptor_t, interfaceDescriptorCount> usbI
 		uint8_t(protocols::hid_t::keyboard),
 		0 // No string to describe this interface (for now)
 	}
-};
+}};
 
 static const std::array<usbEndpointDescriptor_t, endpointDescriptorCount> usbEndpointDesc
-{
+{{
 	{
 		sizeof(usbEndpointDescriptor_t),
 		usbDescriptor_t::endpoint,
@@ -79,7 +79,7 @@ static const std::array<usbEndpointDescriptor_t, endpointDescriptorCount> usbEnd
 		epBufferSize,
 		1 // Poll once per frame
 	}
-};
+}};
 
 static const hid::hidDescriptor_t usbKeyboardDesc
 {
@@ -91,15 +91,15 @@ static const hid::hidDescriptor_t usbKeyboardDesc
 };
 
 static const  std::array<hid::reportDescriptor_t, hidReportDescriptorCount>usbKeyboardReportDesc
-{
+{{
 	{
 		usbDescriptor_t::report,
 		{}
 	}
-};
+}};
 
 static const std::array<usbMultiPartDesc_t, 5> usbConfigSecs
-{
+{{
 	{
 		sizeof(usbConfigDescriptor_t),
 		&usbConfigDesc[0]
@@ -120,7 +120,7 @@ static const std::array<usbMultiPartDesc_t, 5> usbConfigSecs
 		sizeof(usbEndpointDescriptor_t),
 		&usbEndpointDesc[0]
 	}
-};
+}};
 
 static const std::array<usbMultiPartTable_t, 1> usbConfigDescriptors
 {{
