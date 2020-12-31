@@ -35,11 +35,11 @@ namespace std
 
 	namespace impl
 	{
-		template<typename T, typename U = T &&> U declval();
-		template<typename T> T declval();
+		template<typename T, typename U = T &&> U declval(int);
+		template<typename T> T declval(long);
 	}
 
-	template<typename T> auto declval() noexcept -> decltype(impl::declval<T>());
+	template<typename T> auto declval() noexcept -> decltype(impl::declval<T>(0));
 
 	template<typename, size_t uint = 0> struct extent :
 		public integral_constant<size_t, 0> { };
@@ -196,12 +196,13 @@ namespace std
 		template<typename from_t, typename to_t, bool = is_void_v<from_t> || is_function_v<to_t> || is_array_v<to_t>>
 			struct is_convertible { using type = typename std::is_void<to_t>::type; };
 
-		template<typename from_t, typename to_t> struct is_convertible<from_t, to_t, false>
+		template<typename from_t, typename to_t>
+			struct is_convertible<from_t, to_t, false>
 		{
 		private:
 			template<typename to1_t> static void testAux(to1_t) noexcept;
 
-			template<typename from1_t, typename to1_t, typename = decltype(testAux<to1_t>(declval<from1_t>()))>
+			template<typename from1_t, typename to1_t, typename = decltype(testAux<to1_t>(std::declval<from1_t>()))>
 				static true_type test(int);
 			template<typename, typename> static false_type test(...);
 
@@ -316,19 +317,24 @@ namespace std
 		template<typename T> struct is_nothrow_default_constructible<T, false> :
 			public is_nothrow_default_constructible_atom<T> { };
 
-		template<typename T, typename... args_t> struct is_nothrow_constructible :
-			public _bool_constant<noexcept(T(declval<args_t>()...))> { };
-		template<typename T, typename arg_t> struct is_nothrow_constructible<T, arg_t> :
-			public _bool_constant<noexcept(static_cast<T>(declval<arg_t>()))> { };
-		template<typename T> struct is_nothrow_constructible<T> :
-			public is_nothrow_default_constructible<T> { };
+		template<bool, typename, typename...> struct is_nothrow_constructible : public false_type { };
+		template<typename T, typename... args_t> struct is_nothrow_constructible<true, T, args_t...> :
+			public _bool_constant<noexcept(T(std::declval<args_t>()...))> { };
+		template<typename T, typename arg_t> struct is_nothrow_constructible<true, T, arg_t> :
+			public _bool_constant<noexcept(static_cast<T>(std::declval<arg_t>()))> { };
+		template<typename T> struct is_nothrow_constructible<true, T> : public _bool_constant<noexcept(T{})> { };
+		template<typename T, size_t num> struct is_nothrow_constructible<true, T [num]> :
+			public _bool_constant<noexcept(remove_all_extents_t<T>::type())> { };
+
+		template<typename T, typename... args_t> using is_nothrow_constructible_t =
+			typename is_nothrow_constructible<__is_constructible(T, args_t...), T, args_t...>::type;
 
 		template<typename T, bool = is_referenceable<T>::value>
 			struct is_nothrow_move_constructible;
 
 		template<typename T> struct is_nothrow_move_constructible<T, false> : public false_type { };
 		template<typename T> struct is_nothrow_move_constructible<T, true> :
-			public is_nothrow_constructible<T, T &&> { };
+			public is_nothrow_constructible_t<T, T &&> { };
 
 		template<typename T, typename U> struct is_nothrow_assignable :
 			public _bool_constant<noexcept(declval<T>() = declval<U>())> { };
@@ -344,8 +350,7 @@ namespace std
 		public _bool_constant<is_default_constructible_v<T> &&
 		impl::is_nothrow_default_constructible<T>::value> { };
 	template<typename T, typename... args_t> struct is_nothrow_constructible :
-		public _bool_constant<is_constructible_v<T, args_t...> &&
-		impl::is_nothrow_constructible<T, args_t...>::value> { };
+		public impl::is_nothrow_constructible_t<T, args_t...> { };
 	template<typename T> struct is_nothrow_move_constructible :
 		public impl::is_nothrow_move_constructible<T> { };
 
