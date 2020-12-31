@@ -156,4 +156,57 @@ using namespace usb::core;
 
 namespace usb::device
 {
-}
+	answer_t handleGetDescriptor() noexcept
+	{
+		if (packet.requestType.dir() == endpointDir_t::controllerOut)
+			return {response_t::unhandled, nullptr, 0};
+		const auto descriptor = packet.value.asDescriptor();
+
+		switch (descriptor.type)
+		{
+			// Handle device descriptor requests
+			case usbDescriptor_t::device:
+				return {response_t::data, &usbDeviceDesc, usbDeviceDesc.length};
+			case usbDescriptor_t::deviceQualifier:
+				return {response_t::data, &usbDeviceQualifierDesc, usbDeviceQualifierDesc.length};
+			// Handle configuration descriptor requests
+			case usbDescriptor_t::configuration:
+			{
+				if (descriptor.index >= configDescriptorCount)
+					break;
+				const auto &configDescriptor{usbConfigDescriptors[descriptor.index]};
+				epStatusControllerIn[0].isMultiPart(true);
+				epStatusControllerIn[0].partNumber = 0;
+				epStatusControllerIn[0].partsData = &configDescriptor;
+				return {response_t::data, nullptr, configDescriptor.totalLength()};
+			}
+			// Handle interface descriptor requests
+			case usbDescriptor_t::interface:
+			{
+				if (descriptor.index >= interfaceDescriptorCount)
+					break;
+				const auto &interfaceDescriptor{usbInterfaceDesc[descriptor.index]};
+				return {response_t::data, &interfaceDescriptor, interfaceDescriptor.length};
+			}
+			// Handle endpoint descriptor requests
+			case usbDescriptor_t::endpoint:
+			{
+				if (descriptor.index >= endpointDescriptorCount)
+					break;
+				const auto &endpointDescriptor{usbEndpointDesc[descriptor.index]};
+				return {response_t::data, &endpointDescriptor, endpointDescriptor.length};
+			}
+			// Handle string requests
+			case usbDescriptor_t::string:
+			{
+				if (descriptor.index >= stringCount)
+					break;
+				const auto &string{usbStrings[descriptor.index]};
+				return {response_t::data, &string, string.length};
+			}
+			default:
+				break;
+		}
+		return {response_t::unhandled, nullptr, 0};
+	}
+} // namespace usb::device
