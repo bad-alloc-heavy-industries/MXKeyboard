@@ -167,7 +167,7 @@ namespace std
 					std::is_convertible<uTypes_t, types_t>...>;
 			}
 
-			template<typename... uTypes_t> constexpr static bool is_explicitly_constructable()
+			template<typename... uTypes_t> constexpr static bool is_explicitly_constructible()
 			{
 				return and_v<std::is_constructible<types_t, uTypes_t>...,
 					__not<__and<std::is_convertible<uTypes_t, types_t>...>>>;
@@ -183,14 +183,16 @@ namespace std
 			}
 		};
 
-		template<typename... types_t> struct tupleConstraints_t<false, types_t...>
+		template<typename... types_t>
+			struct tupleConstraints_t<false, types_t...>
 		{
 			template<typename... uTypes_t> constexpr static bool is_implicitly_constructible() { return false; }
 			template<typename... uTypes_t> constexpr static bool is_explicitly_constructible() { return false; }
 		};
 	} // namespace impl
 
-	template<typename... elements_t> struct tuple : public impl::tuple_t<0, elements_t...>
+	template<typename... elements_t> struct tuple :
+		public impl::tuple_t<0, elements_t...>
 	{
 	private:
 		using inherited_t = impl::tuple_t<0, elements_t...>;
@@ -227,6 +229,7 @@ namespace std
 		template<typename tuple_t, typename T> struct useOtherCtor_t<tuple_t, tuple<T>, tuple<T>> : true_type { };
 
 		template<typename tuple_t> constexpr static bool useOtherCtor() { return useOtherCtor_t<tuple_t>::value; }
+		template<typename... uElements_t> constexpr static bool isNonEmpty() { return sizeof...(uElements_t); }
 
 	public:
 		// Constructors
@@ -234,10 +237,10 @@ namespace std
 			noexcept(impl::and_v<is_nothrow_default_constructible<elements_t>...>) : inherited_t{} { }
 		template<typename dummy = void, explicitDefaultCtor_t<is_void_v<dummy>> = false> constexpr explicit tuple()
 			noexcept(impl::and_v<is_nothrow_default_constructible<elements_t>...>) : inherited_t{} { }
-		template<bool notEmpty = sizeof...(elements_t) >= 1, implicitCtor_t<notEmpty, const elements_t &...> = true>
-			constexpr tuple(const elements_t &...elements) noexcept(nothrowConstructible<const elements_t &...>()) :
-			inherited_t{elements...} { }
-		template<bool notEmpty = sizeof...(elements_t) >= 1, explicitCtor_t<notEmpty, const elements_t &...> = false>
+		template<bool notEmpty = isNonEmpty<elements_t...>(), implicitCtor_t<notEmpty, const elements_t &...> = true>
+			constexpr tuple(const elements_t &...elements)
+			noexcept(nothrowConstructible<const elements_t &...>()) : inherited_t{elements...} { }
+		template<bool notEmpty = isNonEmpty<elements_t...>(), explicitCtor_t<notEmpty, const elements_t &...> = false>
 			constexpr explicit tuple(const elements_t &...elements)
 			noexcept(nothrowConstructible<const elements_t &...>()) : inherited_t{elements...} { }
 		template<typename... uElements_t, bool valid = validArgs<uElements_t...>(),
