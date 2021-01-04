@@ -3,6 +3,7 @@
 #include "MXKeyboard.hxx"
 #include "interrupts.hxx"
 #include "usb/core.hxx"
+#include "usb/device.hxx"
 
 /*!
  * "USB IN" transfers == Controller In
@@ -165,4 +166,31 @@ void usbBusEvtIRQ() noexcept
 
 void usbIOCompIRQ() noexcept
 {
+	USB.INTFLAGSBCLR = vals::usb::itrStatusIOComplete;
+
+	if (usbState == deviceState_t::detached ||
+		usbState == deviceState_t::attached ||
+		usbState == deviceState_t::powered)
+	{
+		USB.INTFLAGSBCLR = vals::usb::itrStatusSetup;
+		return;
+	}
+
+	for (uint8_t endpointNum{}; endpointNum < usb::endpointCount; ++endpointNum)
+	{
+		const auto endpoint{endpointNum >> 1};
+		const auto status{endpoints[endpointNum].STATUS};
+		if (status & vals::usb::usbEPStatusIOComplete ||
+			status & vals::usb::usbEPStatusSetupComplete)
+		{
+			usbPacket.endpoint(endpoint);
+			if (endpoint & 1)
+				usbPacket.dir(endpointDir_t::controllerOut);
+			else
+				usbPacket.dir(endpointDir_t::controllerIn);
+
+			if (endpoint == 0)
+				usb::device::handleControlPacket();
+		}
+	}
 }
