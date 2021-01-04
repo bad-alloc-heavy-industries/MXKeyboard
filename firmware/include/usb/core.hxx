@@ -2,6 +2,7 @@
 #ifndef USB_CORE__HXX
 #define USB_CORE__HXX
 
+#include <avr/io.h>
 #include "types.hxx"
 
 namespace usb::core
@@ -17,6 +18,9 @@ namespace usb::core
 
 	extern std::array<usbEPStatus_t<const void>, usb::endpointCount> epStatusControllerIn;
 	extern std::array<usbEPStatus_t<void>, usb::endpointCount> epStatusControllerOut;
+
+	extern std::array<::USB_EP_t, usb::endpointCount> endpoints;
+	extern std::array<std::array<uint8_t, usb::epBufferSize>, usb::endpointCount> epBuffer;
 
 	extern const void *sendData(const uint8_t ep, const void *const bufferPtr, const uint8_t length) noexcept;
 	extern void *recvData(const uint8_t ep, void *const buffer, const uint8_t length) noexcept;

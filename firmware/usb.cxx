@@ -10,10 +10,25 @@
  * We are always the Peripheral, so this is unabiguous.
  */
 
-// These are organised EPxOut, EPxIn, etc
-std::array<USB_EP_t, usb::endpointCount> endpoints{};
+using namespace usb::types;
 
-std::array<std::array<uint8_t, usb::epBufferSize>, usb::endpointCount> epBuffer{};
+namespace usb::core
+{
+	// These are organised EPxOut, EPxIn, etc
+	std::array<USB_EP_t, endpointCount> endpoints{};
+	std::array<std::array<uint8_t, usb::epBufferSize>, usb::endpointCount> epBuffer{};
+
+	deviceState_t usbState;
+	usbEP_t usbPacket;
+	bool usbSuspended;
+	ctrlState_t usbCtrlState;
+	uint8_t usbDeferalFlags;
+
+	std::array<usbEPStatus_t<const void>, endpointCount> epStatusControllerIn;
+	std::array<usbEPStatus_t<void>, endpointCount> epStatusControllerOut;
+}
+
+using namespace usb::core;
 
 void usbInit() noexcept
 {
