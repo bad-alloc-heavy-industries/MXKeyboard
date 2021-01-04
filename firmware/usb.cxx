@@ -16,6 +16,7 @@ std::array<std::array<uint8_t, usb::epBufferSize>, usb::endpointCount> epBuffer{
 
 void usbInit() noexcept
 {
+	// Enable the USB peripheral
 	USB.CTRLA = vals::usb::ctrlAUSBEnable | vals::usb::ctrlAModeFullSpeed | vals::usb::ctrlAMaxEP(4); //6
 	USB.EPPTR = reinterpret_cast<std::uintptr_t>(endpoints.data());
 
@@ -27,14 +28,27 @@ void usbInit() noexcept
 	}();
 
 	// Configure EP0Out as our primary control input EP
-	endpoints[0].CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc | vals::usb::usbEPCtrlStall;
+	endpoints[0].CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc;
 	// Configure EP0In as our primary control output endpoint
-	endpoints[1].CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc | vals::usb::usbEPCtrlStall;
+	endpoints[1].CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc;
 	// Configure EP1Out to perminantly stall.
 	endpoints[2].CTRL = USB_EP_TYPE_DISABLE_gc | vals::usb::usbEPCtrlStall;
 	// Configure EP1In
 	endpoints[3].CTRL = USB_EP_TYPE_BULK_gc | USB_EP_BUFSIZE_64_gc | vals::usb::usbEPCtrlStall;
 
+	// Reset all USB interrupts
+	USB.INTCTRLA &= vals::usb::intCtrlAClearMask;
+	USB.INTCTRLB &= vals::usb::intCtrlBClearMask;
+	// Ensure the device address is 0
+	USB.ADDR &= ~vals::usb::addressMask;
+
+	// Enable the USB reset interrupt
+	USB.INTCTRLA |= vals::usb::intCtrlAEnableBusEvent | USB_INTLVL_MED_gc;
+
+	// Initialise the state machine
+	usbState = deviceState_t::detached;
+	usbCtrlState = ctrlState_t::idle;
+	usbDeferalFlags = 0;
 	USB.CTRLB = vals::usb::ctrlBAttach;
 }
 
