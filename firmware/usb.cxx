@@ -37,3 +37,26 @@ void usbInit() noexcept
 
 	USB.CTRLB = vals::usb::ctrlBAttach;
 }
+
+namespace usb::core
+{
+	const void *sendData(const uint8_t ep, const void *const bufferPtr, const uint8_t length) noexcept
+	{
+		auto *const inBuffer{static_cast<const uint8_t *>(bufferPtr)};
+		auto *const outBuffer{epBuffer[(ep << 1) + 1].data()};
+		// Copy the data to tranmit from the user buffer
+		for (uint8_t i{0}; i < length; ++i)
+			outBuffer[i] = inBuffer[i];
+		return inBuffer + length;
+	}
+
+	void *recvData(const uint8_t ep, void *const bufferPtr, const uint8_t length) noexcept
+	{
+		const auto *const inBuffer{epBuffer[(ep << 1)].data()};
+		auto *const outBuffer{static_cast<uint8_t *>(bufferPtr)};
+		// Copy the received data to the user buffer
+		for (uint8_t i{0}; i < length; ++i)
+			outBuffer[i] = inBuffer[i];
+		return outBuffer + length;
+	}
+} // namespace usb::core
