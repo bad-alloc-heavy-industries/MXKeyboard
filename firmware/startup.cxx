@@ -207,7 +207,7 @@ void vectorTable()
 		jmp irqEmptyDef ; vector 122
 		jmp irqEmptyDef ; vector 123
 		jmp irqEmptyDef ; vector 124
-		jmp irqEmptyDef ; USB Bus Event vector
-		jmp irqEmptyDef ; USB Transaction Complete vector
+		jmp usbBusEvtIRQ ; USB Bus Event vector
+		jmp usbIOCompIRQ ; USB Transaction Complete vector
 	)");
 }

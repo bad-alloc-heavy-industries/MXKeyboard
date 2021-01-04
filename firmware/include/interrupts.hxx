@@ -11,6 +11,8 @@ extern "C"
 	void dmaChannel1IRQ() INTERRUPT;
 	void dmaChannel2IRQ() INTERRUPT;
 	void tcc0OverflowIRQ() INTERRUPT;
+	void usbBusEvtIRQ() noexcept INTERRUPT;
+	void usbIOCompIRQ() noexcept INTERRUPT;
 	void ps2IRQ() noexcept INTERRUPT;
 }
 

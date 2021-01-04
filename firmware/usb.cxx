@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: BSD-3-Clause
 #include <array>
 #include "MXKeyboard.hxx"
-#include "usb/types.hxx"
+#include "interrupts.hxx"
+#include "usb/core.hxx"
 
 /*!
  * "USB IN" transfers == Controller In
@@ -74,3 +75,11 @@ namespace usb::core
 		return outBuffer + length;
 	}
 } // namespace usb::core
+
+void usbBusEvtIRQ() noexcept
+{
+}
+
+void usbIOCompIRQ() noexcept
+{
+}
