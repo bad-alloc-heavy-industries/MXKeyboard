@@ -107,6 +107,18 @@ bool usbServiceCtrlEPWrite() noexcept
 
 namespace usb::device
 {
+	void prepareSetupPacket() noexcept
+	{
+		auto &ep0{endpoints[1]};
+		usbCtrlState = ctrlState_t::wait;
+
+		static_assert(sizeof(packet) == 8);
+
+		ep0.DATAPTR = reinterpret_cast<std::uintptr_t>(&packet);
+		ep0.CNT = sizeof(packet);
+		ep0.STATUS &= ~(vals::usb::usbEPStatusNACK0 | vals::usb::usbEPStatusDTS);
+	}
+
 	void handleControlPacket() noexcept
 	{
 	}
