@@ -12,9 +12,9 @@ namespace std
 
 	namespace impl
 	{
-		template<typename T> struct is_empty_non_tuple : is_empty<T> { };
+		template<typename T> struct is_empty_non_tuple : std::is_empty<T> { };
 		template<typename elm0_t, typename... elms_t>
-			struct is_empty_non_tuple<tuple<elm0_t, elms_t...>> : false_type { };
+			struct is_empty_non_tuple<std::tuple<elm0_t, elms_t...>> : false_type { };
 
 		template<typename T> using empty_not_final = conditional_t<is_final_v<T>, false_type,
 			is_empty_non_tuple<T>>;
@@ -37,7 +37,8 @@ namespace std
 			constexpr static const head_t &head(const headBase_t &base) noexcept { return base; }
 		};
 
-		template<std::size_t idx, typename head_t> struct headBase_t<idx, head_t, false>
+		template<std::size_t idx, typename head_t>
+			struct headBase_t<idx, head_t, false>
 		{
 			head_t _head;
 
@@ -78,7 +79,7 @@ namespace std
 				enable_if_t<sizeof...(tail_t) == sizeof...(uTail_t)>>
 			constexpr explicit tuple_t(uHead_t &&head, uTail_t &&...tail) :
 				inherited_t{std::forward<uTail_t>(tail)...},
-				base_t(std::forward<uHead_t>(head)) { }
+				base_t{std::forward<uHead_t>(head)} { }
 
 			constexpr tuple_t(tuple_t &&tuple) noexcept(is_nothrow_move_constructible_v<head_t> &&
 				is_nothrow_move_constructible_v<inherited_t>) :
@@ -87,12 +88,12 @@ namespace std
 			template<typename... uElements_t>
 				constexpr tuple_t(const tuple_t<idx, uElements_t...> &tuple) :
 				inherited_t{tuple_t<idx, uElements_t...>::tail(tuple)},
-				base_t(tuple_t<idx, uElements_t...>::head(tuple)) { }
+				base_t{tuple_t<idx, uElements_t...>::head(tuple)} { }
 
 			template<typename uHead_t, typename... uTail_t>
 				constexpr tuple_t(tuple_t<idx, uHead_t, uTail_t...> &&tuple) :
 				inherited_t{std::move(tuple_t<idx, uHead_t, uTail_t...>::tail(tuple))},
-				base_t(std::forward<uHead_t>(tuple_t<idx, uHead_t, uTail_t...>::head(tuple))) { }
+				base_t{std::forward<uHead_t>(tuple_t<idx, uHead_t, uTail_t...>::head(tuple))} { }
 
 			tuple_t &operator =(const tuple_t &) = delete;
 
@@ -126,23 +127,21 @@ namespace std
 
 			using base_t = headBase_t<idx, head_t>;
 
-			constexpr static head_t &head(tuple_t &tuple) noexcept
-				{ return base_t::head(tuple); }
-			constexpr static const head_t &head(const tuple_t &tuple) noexcept
-				{ return base_t::head(tuple); }
+			constexpr static head_t &head(tuple_t &tuple) noexcept { return base_t::head(tuple); }
+			constexpr static const head_t &head(const tuple_t &tuple) noexcept { return base_t::head(tuple); }
 
 			constexpr tuple_t() : base_t{} { }
 			constexpr explicit tuple_t(const head_t &head) : base_t{head} { }
 			template<typename uHead_t> constexpr explicit tuple_t(uHead_t &&head) :
-				base_t(std::forward<uHead_t>(head)) { }
+				base_t{std::forward<uHead_t>(head)} { }
 			constexpr tuple_t(const tuple_t &) = default;
 
 			constexpr tuple_t(tuple_t &&tuple) noexcept(is_nothrow_move_constructible_v<head_t>) :
 				base_t{std::forward<head_t>(head(tuple))} { }
 			template<typename uHead_t> constexpr tuple_t(const tuple_t<idx, uHead_t> &tuple) :
-				base_t(tuple_t<idx, uHead_t>::head(tuple)) { }
+				base_t{tuple_t<idx, uHead_t>::head(tuple)} { }
 			template<typename uHead_t> constexpr tuple_t(tuple_t<idx, uHead_t> &&tuple) :
-				base_t(std::forward<uHead_t>(tuple_t<idx, uHead_t>::head(tuple))) { }
+				base_t{std::forward<uHead_t>(tuple_t<idx, uHead_t>::head(tuple))} { }
 
 			tuple_t &operator =(const tuple_t &) = delete;
 
@@ -312,6 +311,69 @@ namespace std
 		tuple() = default;
 		void swap(tuple &) noexcept { }
 	};
+
+	template<typename... elements_t> struct tuple_size<tuple<elements_t...>> :
+		public integral_constant<std::size_t, sizeof...(elements_t)> { };
+	template<typename T> const inline size_t tuple_size_v = tuple_size<T>::value;
+
+	template<std::size_t i, typename head_t, typename... tail_t>
+		struct tuple_element<i, tuple<head_t, tail_t...>> : tuple_element<i - 1, tuple<tail_t...>> { };
+	template<typename head_t, typename... tail_t>
+		struct tuple_element<0, tuple<head_t, tail_t...>> { using type = head_t; };
+
+	template<size_t i> struct tuple_element<i, tuple<>>
+		{ static_assert(i < tuple_size<tuple<>>::value, "tuple index is in range"); };
+
+	namespace impl
+	{
+		template<std::size_t i, typename head_t, typename... tail_t> constexpr head_t &
+			get(tuple_t<i, head_t, tail_t...> &tuple) noexcept
+				{ return tuple_t<i, head_t, tail_t...>::head(tuple); }
+		template<std::size_t i, typename head_t, typename... tail_t> constexpr const head_t &
+			get(const tuple_t<i, head_t, tail_t...> &tuple) noexcept
+				{ return tuple_t<i, head_t, tail_t...>::head(tuple); }
+	} // namespace impl
+
+	template<std::size_t i, typename... elements_t> constexpr tuple_element_t<i, tuple<elements_t...>> &
+		get(tuple<elements_t...> &_tuple) noexcept { return impl::get<i>(_tuple); }
+	template<std::size_t i, typename... elements_t> constexpr const tuple_element_t<i, tuple<elements_t...>> &
+		get(const tuple<elements_t...> &_tuple) noexcept { return impl::get<i>(_tuple); }
+
+	template<std::size_t i, typename... elements_t> constexpr tuple_element_t<i, tuple<elements_t...>> &&
+		get(tuple<elements_t...> &&_tuple) noexcept
+	{
+		using element_t = tuple_element_t<i, tuple<elements_t...>>;
+		return std::forward<element_t &&>(std::get<i>(_tuple));
+	}
+
+	template<std::size_t i, typename... elements_t> constexpr const tuple_element_t<i, tuple<elements_t...>> &&
+		get(const tuple<elements_t...> &&_tuple) noexcept
+	{
+		using element_t = tuple_element_t<i, tuple<elements_t...>>;
+		return std::forward<const element_t &&>(std::get<i>(_tuple));
+	}
+
+	namespace impl
+	{
+		template<typename head_t, size_t i, typename... tail_t> constexpr head_t &
+			typeGet(tuple_t<i, head_t, tail_t...> &tuple) noexcept
+				{ return tuple_t<i, head_t, tail_t...>::head(tuple); }
+		template<typename head_t, size_t i, typename... tail_t> constexpr const head_t &
+			typeGet(const tuple_t<i, head_t, tail_t...> &tuple) noexcept
+				{ return tuple_t<i, head_t, tail_t...>::head(tuple); }
+	} // namespace impl
+
+	template<typename T, typename... types_t> constexpr T &get(tuple<types_t...> &tuple) noexcept
+		{ return impl::typeGet<T>(tuple); }
+	template<typename T, typename... types_t> constexpr const T &get(const tuple<types_t...> &tuple) noexcept
+		{ return impl::typeGet<T>(tuple); }
+	template<typename T, typename... types_t> constexpr T &&get(tuple<types_t...> &&tuple) noexcept
+		{ return std::forward<T &&>(impl::typeGet<T>(tuple)); }
+	template<typename T, typename... types_t> constexpr const T &&get(const tuple<types_t...> &&tuple) noexcept
+		{ return std::forward<const T &&>(impl::typeGet<T>(tuple)); }
+
+	template<typename... elements_t> constexpr inline void
+		swap(tuple<elements_t...> &x, tuple<elements_t...> &y) noexcept(noexcept(x.swap(y))) { x.swap(y); }
 } // namespace std
 
 #endif /*TUPLE*/
