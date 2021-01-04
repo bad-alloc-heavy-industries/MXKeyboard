@@ -70,6 +70,42 @@ void usbInit() noexcept
 
 namespace usb::core
 {
+	void reset()
+	{
+		for (auto &endpoint : endpoints)
+		{
+			endpoint.CTRL |= vals::usb::usbEPCtrlItrDisable;
+			endpoint.CTRL &= ~vals::usb::usbEPCtrlStall;
+			endpoint.STATUS &= ~(vals::usb::usbEPStatusStall | vals::usb::usbEPStatusIOComplete |
+				vals::usb::usbEPStatusSetupComplete);
+			endpoint.STATUS |= vals::usb::usbEPStatusNACK0 | vals::usb::usbEPStatusNACK1;
+		}
+
+		// Once we get done, idle the peripheral
+		USB.ADDR &= ~vals::usb::addressMask;
+		usbState = deviceState_t::attached;
+		USB.INTCTRLA |= vals::usb::intCtrlAEnableBusEvent | vals::usb::intCtrlAEnableSOF;
+		USB.INTCTRLB |= vals::usb::intCtrlBEnableIOComplete | vals::usb::intCtrlBEnableSetupComplete;
+		endpoints[0].CTRL &= ~vals::usb::usbEPCtrlItrDisable;
+		endpoints[1].CTRL &= ~vals::usb::usbEPCtrlItrDisable;
+
+		usb::device::prepareSetupPacket();
+		USB.INTFLAGSACLR = vals::usb::itrStatusReset;
+	}
+
+	void wakeup()
+	{
+		usbSuspended = false;
+		//USB.CTRLB |= vals::usb::ctrlBRemoteWakeUp;
+		USB.INTFLAGSACLR = vals::usb::itrStatusResume;
+	}
+
+	void suspend()
+	{
+		usbSuspended = true;
+		USB.INTFLAGSACLR = vals::usb::itrStatusSuspend;
+	}
+
 	const void *sendData(const uint8_t ep, const void *const bufferPtr, const uint8_t length) noexcept
 	{
 		auto *const inBuffer{static_cast<const uint8_t *>(bufferPtr)};
@@ -93,6 +129,38 @@ namespace usb::core
 
 void usbBusEvtIRQ() noexcept
 {
+	const auto intCtrl{USB.INTCTRLA};
+	const auto status{USB.INTFLAGSASET};
+
+	if (usbState == deviceState_t::attached)
+		usbState = deviceState_t::powered;
+
+	if (status & vals::usb::itrStatusResume && intCtrl & vals::usb::intCtrlAEnableBusEvent)
+		usb::core::wakeup();
+	else if (usbSuspended)
+		return;
+
+	if (status & vals::usb::itrStatusReset && intCtrl & vals::usb::intCtrlAEnableBusEvent)
+	{
+		usb::core::reset();
+		usbState = deviceState_t::waiting;
+		return;
+	}
+	else if (status & vals::usb::itrStatusSuspend && intCtrl & vals::usb::intCtrlAEnableBusEvent)
+		usb::core::suspend();
+
+	if (status & vals::usb::itrStatusSOF && intCtrl & vals::usb::intCtrlAEnableSOF)
+	{
+#if 0
+		if (usbStatusTimeout)
+			--usbStatusTimeout;
+		else
+			usb::device::handleStatusPhase();
+#endif
+		USB.INTFLAGSACLR = vals::usb::itrStatusSOF;
+	}
+
+	// TODO: Handle other events we care about here.
 }
 
 void usbIOCompIRQ() noexcept
