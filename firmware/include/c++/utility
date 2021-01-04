@@ -16,6 +16,28 @@ namespace std
 		return static_cast<T &&>(t);
 	}
 
+	template<typename> struct tuple_size;
+
+	namespace impl
+	{
+		template<typename T, typename U = remove_cv_t<T>, typename = enable_if_t<is_same_v<T, U>>,
+			size_t = tuple_size<T>::value> using enable_if_has_tuple_size = T;
+	} // namespace impl
+
+	template<typename T> struct tuple_size<const impl::enable_if_has_tuple_size<T>> : public tuple_size<T> { };
+	template<typename T> struct tuple_size<volatile impl::enable_if_has_tuple_size<T>> : public tuple_size<T> { };
+	template<typename T> struct tuple_size<const volatile impl::enable_if_has_tuple_size<T>> : public tuple_size<T> { };
+
+	template<std::size_t, typename> struct tuple_element;
+	template<std::size_t i, typename T> using tuple_element_t = typename tuple_element<i, T>::type;
+
+	template<std::size_t i, typename T> struct tuple_element<i, const T>
+		{ using type = add_const_t<tuple_element_t<i, T>>; };
+	template<std::size_t i, typename T> struct tuple_element<i, volatile T>
+		{ using type = add_volatile_t<tuple_element_t<i, T>>; };
+	template<std::size_t i, typename T> struct tuple_element<i, const volatile T>
+		{ using type = add_cv_t<tuple_element_t<i, T>>; };
+
 	template<typename T> constexpr remove_reference_t<T> &&move(T &&t) noexcept
 		{ return static_cast<remove_reference_t<T> &&>(t); }
 
