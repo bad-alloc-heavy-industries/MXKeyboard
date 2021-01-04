@@ -199,7 +199,74 @@ namespace usb::device
 		ep0.STATUS &= ~(vals::usb::usbEPStatusNACK0 | vals::usb::usbEPStatusDTS);
 	}
 
+	void handleControllerOutPacket() noexcept
+	{
+		// If we're in the data phase
+		if (usbCtrlState == ctrlState_t::dataRX)
+		{
+			if (usbServiceCtrlEPRead())
+			{
+				// If we now have all the data for the transaction..
+				usbCtrlState = ctrlState_t::statusTX;
+				// TODO: Handle data and generate status response.
+			}
+		}
+		// If we're in the status phase
+		else
+			prepareSetupPacket();
+		endpoints[1].STATUS &= ~vals::usb::usbEPStatusIOComplete;
+	}
+
+	void handleControllerInPacket() noexcept
+	{
+		if (usbState == deviceState_t::addressing)
+		{
+			// We just handled an addressing request, and prepared our answer. Before we get a chance
+			// to return from the interrupt that caused this chain of events, lets set the device address.
+			const auto address{packet.value.asAddress()};
+
+			// Check that the last setup packet was actually a set address request
+			if (packet.requestType.type() != setupPacket::request_t::typeStandard ||
+				packet.request != request_t::setAddress || address.addrH != 0)
+			{
+				USB.ADDR &= ~vals::usb::addressMask;
+				usbState = deviceState_t::waiting;
+			}
+			else
+			{
+				USB.ADDR = address.addrL & vals::usb::addressMask;
+				usbState = deviceState_t::addressed;
+			}
+		}
+
+		// If we're in the data phase
+		if (usbCtrlState == ctrlState_t::dataTX)
+		{
+			if (usbServiceCtrlEPWrite())
+			{
+				// If we now have all the data for the transaction..
+				usbCtrlState = ctrlState_t::statusRX;
+				//usbCtrlState = ctrlState_t::idle;
+			}
+		}
+		// Otherwise this was a status phase TX-complete interrupt
+		else
+			prepareSetupPacket();
+		endpoints[0].STATUS &= ~vals::usb::usbEPStatusIOComplete;
+	}
+
 	void handleControlPacket() noexcept
 	{
+		// If we received a packet..
+		if (usbPacket.dir() == endpointDir_t::controllerOut)
+		{
+			const auto status{endpoints[1].STATUS};
+			if (status & vals::usb::usbEPStatusSetupComplete)
+				handleSetupPacket();
+			else
+				handleControllerOutPacket();
+		}
+		else
+			handleControllerInPacket();
 	}
 } // namespace usb::device
