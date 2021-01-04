@@ -107,6 +107,48 @@ bool usbServiceCtrlEPWrite() noexcept
 
 namespace usb::device
 {
+	void completeSetupPacket() noexcept
+	{
+		// If we have no response
+		if (!epStatusControllerIn[0].needsArming())
+		{
+			// But rather need more data
+			if (epStatusControllerOut[0].needsArming())
+			{
+				// <SETUP[0]><OUT[1]><OUT[0]>...<IN[1]>
+				usbCtrlState = ctrlState_t::dataRX;
+			}
+			// We need to stall in answer
+			else if (epStatusControllerIn[0].stall())
+			{
+				auto &ep0 = endpoints[1]; // EP0In
+				// <SETUP[0]><STALL>
+				ep0.CTRL |= vals::usb::usbEPCtrlStall;
+				usbCtrlState = ctrlState_t::idle;
+			}
+		}
+		// We have a valid response
+		else
+		{
+			endpoints[1].DATAPTR = reinterpret_cast<std::uintptr_t>(epBuffer[1].data());
+			// Is this as part of a multi-part transaction?
+			if (packet.requestType.dir() == endpointDir_t::controllerIn)
+				// <SETUP[0]><IN[1]><IN[0]>...<OUT[1]>
+				usbCtrlState = ctrlState_t::dataTX;
+			// Or just a quick answer?
+			else
+				//  <SETUP[0]><IN[1]>
+				usbCtrlState = ctrlState_t::statusTX;
+			if (usbServiceCtrlEPWrite())
+			{
+				if (usbCtrlState == ctrlState_t::dataTX)
+					usbCtrlState = ctrlState_t::statusRX;
+				else
+					usbCtrlState = ctrlState_t::idle;
+			}
+		}
+	}
+
 	void prepareSetupPacket() noexcept
 	{
 		auto &ep0{endpoints[1]};
