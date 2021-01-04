@@ -149,6 +149,44 @@ namespace usb::device
 		}
 	}
 
+	void handleSetupPacket() noexcept
+	{
+		// Read in the new setup packet
+		static_assert(sizeof(setupPacket_t) == 8); // Setup packets must be 8 bytes.
+		epStatusControllerOut[0].memBuffer = &packet;
+		epStatusControllerOut[0].transferCount = sizeof(setupPacket_t);
+		if (!usbServiceCtrlEPRead())
+		{
+			// Truncated transfer.. WTF.
+			auto &ep0{endpoints[1]};
+			ep0.CTRL |= vals::usb::usbEPCtrlStall;
+			return;
+		}
+
+		// Set up EP0 state for a reply of some kind
+		//usbDeferalFlags = 0;
+		usbCtrlState = ctrlState_t::wait;
+		epStatusControllerIn[0].needsArming(false);
+		epStatusControllerIn[0].stall(false);
+		epStatusControllerIn[0].transferCount = 0;
+		epStatusControllerOut[0].needsArming(false);
+		epStatusControllerOut[0].stall(false);
+		epStatusControllerOut[0].transferCount = 0;
+
+		const auto &[response, data, size] = handleStandardRequest();
+
+		epStatusControllerIn[0].stall(response == response_t::stall || response == response_t::unhandled);
+		epStatusControllerIn[0].needsArming(response == response_t::data || response == response_t::zeroLength);
+		epStatusControllerIn[0].memBuffer = data;
+		epStatusControllerIn[0].transferCount = response == response_t::zeroLength ? 0 : size;
+		// If the response is whacko, don't do the stupid thing
+		if (response == response_t::data && !data && !epStatusControllerIn[0].isMultiPart())
+			epStatusControllerIn[0].needsArming(false);
+		completeSetupPacket();
+		endpoints[1].STATUS &= ~vals::usb::usbEPStatusSetupComplete;
+		USB.INTFLAGSBCLR = vals::usb::itrStatusSetup;
+	}
+
 	void prepareSetupPacket() noexcept
 	{
 		auto &ep0{endpoints[1]};
