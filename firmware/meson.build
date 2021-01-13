@@ -43,8 +43,14 @@ run_target(
 	command: [objdump, '-dC', firmware]
 )
 
-size = find_program('size')
+size = find_program('get_fw_size.py', dirs: '@0@/../scripts'.format(meson.current_source_dir()))
 run_target(
 	'size',
-	command: [size, firmware]
+	command: [
+		size,
+		'--flash-size=262144', # 256KiB of Flash
+		'--ram-size=16384', # 16KiB of RAM
+		'--size-prog=@0@'.format(find_program('size').path()),
+		firmware
+	]
 )
