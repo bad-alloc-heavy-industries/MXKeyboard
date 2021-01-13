@@ -117,9 +117,9 @@ def analyze_elf(elf, size_prog):
         if parts[0] == ".text":
             bootloader_size = int(parts[2], 10)
 
-    program_size = sections[".text"] + sections.get(".relocate", 0)
+    program_size = sections[".text"] + sections.get(".relocate", 0) + sections.get(".data", 0)
     stack_size = sections[".stack"]
-    variables_size = sections.get(".relocate", 0) + sections[".bss"]
+    variables_size = sections.get(".relocate", 0) + sections.get(".data", 0) + sections[".bss"]
 
     return bootloader_size, program_size, stack_size, variables_size
 
