@@ -4,6 +4,7 @@
 #include <avr/cpufunc.h>
 #include "MXKeyboard.hxx"
 #include "led.hxx"
+#include "uart.hxx"
 #include "flash.hxx"
 #include "interrupts.hxx"
 
