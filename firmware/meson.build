@@ -12,6 +12,14 @@ if targetCXX.has_argument('-Wno-misspelled-isr')
 	firmwareArgs += ['-Wno-misspelled-isr']
 endif
 
+if debug and optimisation == '0'
+	add_project_arguments('-Og', language: 'cpp')
+	add_project_link_arguments('-Og', language: 'cpp')
+elif optimisation == '0'
+	add_project_arguments('-O1', language: 'cpp')
+	add_project_link_arguments('-O1', language: 'cpp')
+endif
+
 firmware = executable(
 	'MXKeyboard',
 	firmwareSrc,
