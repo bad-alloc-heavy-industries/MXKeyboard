@@ -1,0 +1,79 @@
+#ifndef STRING_VIEW
+#define STRING_VIEW
+
+#include <cstddef>
+#include <utility>
+
+namespace std
+{
+	struct string_view
+	{
+	private:
+		const char *_string{nullptr};
+		size_t _count{0};
+
+	public:
+		constexpr string_view() noexcept = default;
+		constexpr string_view(const string_view &other) noexcept = default;
+		constexpr string_view(const char *const string, const size_t count) noexcept :
+			_string{string}, _count{count} { }
+
+		using value_type = char;
+		using pointer = char *;
+		using const_pointer = const char *;
+		using reference = char &;
+		using const_reference = const char &;
+		using const_iterator = const char *;
+		using iterator = const_iterator;
+		using size_type = std::size_t;
+		using difference_type = std::ptrdiff_t;
+		constexpr static auto npos{static_cast<std::size_t>(-1)};
+
+		constexpr string_view &operator =(const string_view &other) noexcept = default;
+
+		constexpr const_reference operator [](const size_t pos) const
+			{ return _string[pos]; }
+
+#if 0
+		constexpr const_reference at(const size_t pos) const
+		{
+			if (pos >= size())
+				throw std::out_of_range{};
+			return _string[pos];
+		}
+#endif
+
+		constexpr const_pointer data() const noexcept { return _string; }
+		constexpr size_t size() const noexcept { return _count; }
+		constexpr size_t length() const noexcept { return _count; }
+		[[nodiscard]] constexpr bool empty() const noexcept { return _count == 0; }
+
+		constexpr const_iterator begin() const noexcept { return _string; }
+		constexpr const_iterator cbegin() const noexcept { return _string; }
+		constexpr const_iterator end() const noexcept { return _string + _count; }
+		constexpr const_iterator cend() const noexcept { return _string + _count; }
+
+		constexpr const_reference front() const { return _string[0]; }
+		constexpr const_reference back() const { return _string[size() - 1]; }
+
+		constexpr void swap(string_view &other) noexcept
+		{
+			std::swap(_string, other._string);
+			std::swap(_count, other._count);
+		}
+	};
+
+	inline namespace literals
+	{
+		inline namespace string_view_literals
+		{
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wliteral-suffix"
+			constexpr string_view operator ""sv(const char *const data, const std::size_t length) noexcept
+				{ return {data, length}; }
+#pragma GCC diagnostic pop
+		}
+	}
+} // namespace std
+
+#endif /*STRING_VIEW*/
