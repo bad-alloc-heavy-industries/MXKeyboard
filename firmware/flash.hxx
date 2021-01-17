@@ -46,6 +46,81 @@ loopDone%=:
 	}
 };
 
+template<> struct flash_t<uint8_t> final
+{
+private:
+	uint8_t value_;
+
+public:
+	constexpr flash_t(const uint8_t value) noexcept : value_{value} { }
+
+	operator uint8_t() const noexcept
+	{
+		uint8_t result{};
+		const auto valueAddr{reinterpret_cast<uint32_t>(&value_)};
+		const uint8_t z{RAMPZ};
+
+		__asm__(R"(
+			out 0x3B, %C[value]
+			movw r30, %[value]
+			elpm %[result], Z+
+			)" : [result] "=r" (result) : [value] "r" (valueAddr) :
+				"r30", "r31"
+		);
+
+		RAMPZ = z;
+		return result;
+	}
+};
+
+template<> struct flash_t<char *> final
+{
+private:
+	const char *value_;
+
+public:
+	constexpr flash_t(const char *const value) noexcept : value_{value} { }
+	constexpr flash_t<char *> operator +(const std::size_t count) const noexcept
+		{ return {value_ + count}; }
+
+	char operator *() const noexcept
+	{
+		char result{};
+		const auto valueAddr{reinterpret_cast<uint32_t>(value_)};
+		const uint8_t z{RAMPZ};
+
+		__asm__(R"(
+			out 0x3B, %C[value]
+			movw r30, %[value]
+			elpm %[result], Z+
+			)" : [result] "=r" (result) : [value] "r" (valueAddr) :
+				"r30", "r31"
+		);
+
+		RAMPZ = z;
+		return result;
+	}
+
+	constexpr flash_t<char *> &operator ++() noexcept
+	{
+		++value_;
+		return *this;
+	}
+
+	constexpr flash_t<char *> &operator --() noexcept
+	{
+		--value_;
+		return *this;
+	}
+
+	char operator [](const std::size_t count) const noexcept
+		{ return *operator +(count); }
+	constexpr bool operator ==(const flash_t<char *> &other) const noexcept
+		{ return value_ == other.value_; }
+	constexpr bool operator !=(const flash_t<char *> &other) const noexcept
+		{ return !operator ==(other); }
+};
+
 template<> struct flash_t<uint16_t> final
 {
 private:
