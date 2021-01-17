@@ -16,7 +16,7 @@ using namespace usb::types;
 namespace usb::core
 {
 	// These are organised EPxOut, EPxIn, etc
-	std::array<USB_EP_t, endpointCount> endpoints{};
+	alignas(2) std::array<USB_EP_t, endpointCount> endpoints{};
 	std::array<std::array<uint8_t, usb::epBufferSize>, usb::endpointCount> epBuffer{};
 
 	deviceState_t usbState;
