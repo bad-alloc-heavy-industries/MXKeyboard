@@ -8,7 +8,7 @@
 
 extern void uartInit() noexcept;
 extern void uartWrite(USART_t &uart, uint8_t data);
-extern void uartWrite(USART_t &uart, std::string_view str);
+extern void uartWrite(USART_t &uart, std::flash_string_view str);
 extern void uartWaitTXComplete(USART_t &uart);
 
 static auto &debugUART{USARTE1};

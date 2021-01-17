@@ -79,6 +79,12 @@ void uartWrite(USART_t &uart, const uint8_t data)
 	uart.DATA = data;
 }
 
+void uartWrite(USART_t &uart, std::flash_string_view str)
+{
+	for (const char c : str)
+		uartWrite(uart, c);
+}
+
 void uartWaitTXComplete(USART_t &uart)
 {
 	while (!(uart.STATUS & 0x40))
