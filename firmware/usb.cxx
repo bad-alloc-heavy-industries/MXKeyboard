@@ -140,6 +140,28 @@ namespace usb::core
 			outBuffer[i] = inBuffer[i];
 		return outBuffer + length;
 	}
+
+	template<endpointDir_t direction> void handlePacket(const uint8_t endpoint)
+	{
+		const auto status{[=]()
+		{
+			if constexpr (direction == endpointDir_t::controllerOut)
+				return endpoints[endpoint].controllerOut.STATUS;
+			else
+				return endpoints[endpoint].controllerIn.STATUS;
+		}()};
+
+		if ((status & vals::usb::usbEPStatusIOComplete) ||
+			(direction == endpointDir_t::controllerOut &&
+			(status & vals::usb::usbEPStatusSetupComplete)))
+		{
+			usbPacket.endpoint(endpoint);
+			usbPacket.dir(direction);
+
+			if (endpoint == 0)
+				usb::device::handleControlPacket();
+		}
+	}
 } // namespace usb::core
 
 void usbBusEvtIRQ() noexcept
@@ -190,21 +212,9 @@ void usbIOCompIRQ() noexcept
 		return;
 	}
 
-	for (uint8_t endpointNum{}; endpointNum < usb::endpointCount; ++endpointNum)
+	for (uint8_t endpoint{}; endpoint < /*usb::endpointCount*/1; ++endpoint)
 	{
-		const auto endpoint{endpointNum >> 1};
-		const auto status{endpoints[endpointNum].STATUS};
-		if (status & vals::usb::usbEPStatusIOComplete ||
-			status & vals::usb::usbEPStatusSetupComplete)
-		{
-			usbPacket.endpoint(endpoint);
-			if (endpoint & 1)
-				usbPacket.dir(endpointDir_t::controllerOut);
-			else
-				usbPacket.dir(endpointDir_t::controllerIn);
-
-			if (endpoint == 0)
-				usb::device::handleControlPacket();
-		}
+		usb::core::handlePacket<endpointDir_t::controllerOut>(endpoint);
+		usb::core::handlePacket<endpointDir_t::controllerIn>(endpoint);
 	}
 }
