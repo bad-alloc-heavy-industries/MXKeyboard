@@ -3,6 +3,7 @@
 #define UTILITY
 
 #include <type_traits>
+#include <bits/pair.hxx>
 #include <bits/move.hxx>
 
 namespace std
@@ -28,15 +29,6 @@ namespace std
 		{ using type = add_volatile_t<tuple_element_t<i, T>>; };
 	template<std::size_t i, typename T> struct tuple_element<i, const volatile T>
 		{ using type = add_cv_t<tuple_element_t<i, T>>; };
-
-	template<typename T> constexpr inline /*enable_if_t<!is_tuple_like_v<T> && is_move_constructable_v<T> &&
-		is_move_assignable_v<T>>*/void swap(T &a, T &b) noexcept(true)
-	{
-		T other{move(a)};
-		a = move(b);
-		b = move(other);
-	}
-
 } // namespace std
 
 #endif /*UTILITY*/
