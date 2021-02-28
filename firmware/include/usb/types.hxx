@@ -69,13 +69,14 @@ namespace vals::usb
 	constexpr static const uint8_t usbEPStatusBank{0x08};
 	constexpr static const uint8_t usbEPStatusSetupComplete{0x10};
 	constexpr static const uint8_t usbEPStatusIOComplete{0x20};
+	constexpr static const uint8_t usbEPStatusNotReady{0x40};
 	constexpr static const uint8_t usbEPStatusStall{0x80};
 } // namespace vals::usb
 
 namespace usb
 {
 	// Reserve space for EP0 In + Out, EP1 In + Out, and EP2 In + Out.
-	constexpr static const uint8_t endpointCount{6};
+	constexpr static const uint8_t endpointCount{3};
 	constexpr static const uint8_t epBufferSize{64};
 
 	constexpr static const uint16_t vid{0x1209};
