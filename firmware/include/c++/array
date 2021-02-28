@@ -61,6 +61,19 @@ namespace std
 
 		T elems[N];
 	};
+
+	template<typename T, typename... Us> array(T, Us...) ->
+		array<enable_if_t<(is_same_v<T, Us> && ...), T>, 1 + sizeof...(Us)>;
+
+	template<typename> struct tuple_size;
+	template<typename T, size_t N> struct tuple_size<array<T, N>> : public integral_constant<std::size_t, N> { };
+
+	template<size_t, typename> struct tuple_element;
+	template<size_t idx, typename T, size_t N> struct tuple_element<idx, array<T, N>>
+	{
+		static_assert(idx < N, "index is out of bounds");
+		using type = T;
+	};
 } // namespace std
 
 #endif /*ARRAY*/
