@@ -81,13 +81,20 @@ namespace usb::core
 {
 	void reset()
 	{
+		const auto ep0OutStatus{endpoints[0].controllerOut.STATUS};
 		for (auto &endpoint : endpoints)
 		{
-			endpoint.CTRL |= vals::usb::usbEPCtrlItrDisable;
-			endpoint.CTRL &= ~vals::usb::usbEPCtrlStall;
-			endpoint.STATUS &= ~(vals::usb::usbEPStatusStall | vals::usb::usbEPStatusIOComplete |
-				vals::usb::usbEPStatusSetupComplete);
-			endpoint.STATUS |= vals::usb::usbEPStatusNACK0 | vals::usb::usbEPStatusNACK1;
+			endpoint.controllerOut.CTRL |= vals::usb::usbEPCtrlItrDisable;
+			endpoint.controllerOut.CTRL &= ~vals::usb::usbEPCtrlStall;
+			endpoint.controllerOut.STATUS |= vals::usb::usbEPStatusNACK0;// | vals::usb::usbEPStatusNACK1;
+			endpoint.controllerOut.STATUS &= ~(vals::usb::usbEPStatusNotReady | vals::usb::usbEPStatusStall |
+				vals::usb::usbEPStatusIOComplete | vals::usb::usbEPStatusSetupComplete | vals::usb::usbEPStatusNACK1);
+
+			endpoint.controllerIn.CTRL |= vals::usb::usbEPCtrlItrDisable;
+			endpoint.controllerIn.CTRL &= ~vals::usb::usbEPCtrlStall;
+			endpoint.controllerIn.STATUS |= vals::usb::usbEPStatusNACK0;// | vals::usb::usbEPStatusNACK1;
+			endpoint.controllerIn.STATUS &= ~(vals::usb::usbEPStatusNotReady | vals::usb::usbEPStatusStall |
+				vals::usb::usbEPStatusIOComplete | vals::usb::usbEPStatusSetupComplete | vals::usb::usbEPStatusNACK1);
 		}
 
 		// Once we get done, idle the peripheral
@@ -95,10 +102,9 @@ namespace usb::core
 		usbState = deviceState_t::attached;
 		USB.INTCTRLA |= vals::usb::intCtrlAEnableBusEvent | vals::usb::intCtrlAEnableSOF;
 		USB.INTCTRLB |= vals::usb::intCtrlBEnableIOComplete | vals::usb::intCtrlBEnableSetupComplete;
-		endpoints[0].CTRL &= ~vals::usb::usbEPCtrlItrDisable;
-		endpoints[1].CTRL &= ~vals::usb::usbEPCtrlItrDisable;
-
-		usb::device::prepareSetupPacket();
+		endpoints[0].controllerOut.STATUS = ep0OutStatus; // Restore this as this data races with this interrupt :(
+		endpoints[0].controllerOut.CTRL &= ~vals::usb::usbEPCtrlItrDisable;
+		endpoints[0].controllerIn.CTRL &= ~vals::usb::usbEPCtrlItrDisable;
 		USB.INTFLAGSACLR = vals::usb::itrStatusReset;
 	}
 
