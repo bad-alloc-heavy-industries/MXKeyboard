@@ -35,7 +35,7 @@ namespace std
 		return a;
 	}
 
-	template<typename T, typename Compare> constexpr inline const T &min(const T &a, const T &b, Compare comp)
+	template<typename T, typename compare_t> constexpr inline const T &min(const T &a, const T &b, compare_t comp)
 	{
 		if (comp(b, a))
 			return b;
