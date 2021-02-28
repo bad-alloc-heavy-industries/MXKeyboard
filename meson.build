@@ -23,5 +23,8 @@ endif
 targetCXX = meson.get_compiler('cpp', native: false)
 hostCXX = meson.get_compiler('cpp', native: true)
 
+debug = get_option('debug')
+optimisation = get_option('optimization')
+
 subdir('bootloader')
 subdir('firmware')
