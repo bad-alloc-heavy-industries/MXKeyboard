@@ -34,24 +34,32 @@ using namespace usb::core;
 void usbInit() noexcept
 {
 	// Enable the USB peripheral
-	USB.CTRLA = vals::usb::ctrlAUSBEnable | vals::usb::ctrlAModeFullSpeed | vals::usb::ctrlAMaxEP(4); //6
+	USB.CTRLB &= ~vals::usb::ctrlBAttach;
+	USB.CTRLA = vals::usb::ctrlAUSBEnable | vals::usb::ctrlAModeFullSpeed | vals::usb::ctrlAMaxEP(2);
 	USB.EPPTR = reinterpret_cast<std::uintptr_t>(endpoints.data());
 
 	[]() noexcept
 	{
 		uint8_t i{};
 		for (auto &endpoint : endpoints)
-			endpoint.DATAPTR = reinterpret_cast<std::uintptr_t>(epBuffer[i++].data());
+		{
+			endpoint.controllerOut.DATAPTR = reinterpret_cast<std::uintptr_t>(epBuffer[i++].data());
+			endpoint.controllerOut.CNT = 0;
+			endpoint.controllerIn.DATAPTR = reinterpret_cast<std::uintptr_t>(epBuffer[i++].data());
+			endpoint.controllerIn.CNT = 0;
+		}
 	}();
 
 	// Configure EP0Out as our primary control input EP
-	endpoints[0].CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc;
+	endpoints[0].controllerOut.CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc;
+	endpoints[0].controllerOut.STATUS = vals::usb::usbEPStatusNACK0;
 	// Configure EP0In as our primary control output endpoint
-	endpoints[1].CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc;
+	endpoints[0].controllerIn.CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc;
+	endpoints[0].controllerIn.STATUS = vals::usb::usbEPStatusNACK0;
 	// Configure EP1Out to perminantly stall.
-	endpoints[2].CTRL = USB_EP_TYPE_DISABLE_gc | vals::usb::usbEPCtrlStall;
+	endpoints[1].controllerOut.CTRL = USB_EP_TYPE_DISABLE_gc | vals::usb::usbEPCtrlStall;
 	// Configure EP1In
-	endpoints[3].CTRL = USB_EP_TYPE_BULK_gc | USB_EP_BUFSIZE_64_gc | vals::usb::usbEPCtrlStall;
+	endpoints[1].controllerIn.CTRL = USB_EP_TYPE_BULK_gc | USB_EP_BUFSIZE_64_gc | vals::usb::usbEPCtrlStall;
 
 	// Reset all USB interrupts
 	USB.INTCTRLA &= vals::usb::intCtrlAClearMask;
