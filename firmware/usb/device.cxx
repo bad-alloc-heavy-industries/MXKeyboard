@@ -103,6 +103,7 @@ namespace usb::device
 
 	void completeSetupPacket() noexcept
 	{
+		endpoints[0].controllerOut.STATUS &= ~vals::usb::usbEPStatusSetupComplete;
 		// If we have no response
 		if (!epStatusControllerIn[0].needsArming())
 		{
@@ -115,7 +116,7 @@ namespace usb::device
 			// We need to stall in answer
 			else if (epStatusControllerIn[0].stall())
 			{
-				auto &ep0 = endpoints[1]; // EP0In
+				auto &ep0{endpoints[0].controllerIn}; // EP0In
 				// <SETUP[0]><STALL>
 				ep0.CTRL |= vals::usb::usbEPCtrlStall;
 				usbCtrlState = ctrlState_t::idle;
@@ -124,7 +125,6 @@ namespace usb::device
 		// We have a valid response
 		else
 		{
-			endpoints[1].DATAPTR = reinterpret_cast<std::uintptr_t>(epBuffer[1].data());
 			// Is this as part of a multi-part transaction?
 			if (packet.requestType.dir() == endpointDir_t::controllerIn)
 				// <SETUP[0]><IN[1]><IN[0]>...<OUT[1]>
@@ -152,7 +152,7 @@ namespace usb::device
 		if (!readCtrlEP())
 		{
 			// Truncated transfer.. WTF.
-			auto &ep0{endpoints[1]};
+			auto &ep0{endpoints[0].controllerIn}; // Is this stall on EP0 In or Out?
 			ep0.CTRL |= vals::usb::usbEPCtrlStall;
 			return;
 		}
@@ -177,20 +177,7 @@ namespace usb::device
 		if (response == response_t::data && !data && !epStatusControllerIn[0].isMultiPart())
 			epStatusControllerIn[0].needsArming(false);
 		completeSetupPacket();
-		endpoints[1].STATUS &= ~vals::usb::usbEPStatusSetupComplete;
 		USB.INTFLAGSBCLR = vals::usb::itrStatusSetup;
-	}
-
-	void prepareSetupPacket() noexcept
-	{
-		auto &ep0{endpoints[1]};
-		usbCtrlState = ctrlState_t::wait;
-
-		static_assert(sizeof(packet) == 8);
-
-		ep0.DATAPTR = reinterpret_cast<std::uintptr_t>(&packet);
-		ep0.CNT = sizeof(packet);
-		ep0.STATUS &= ~(vals::usb::usbEPStatusNACK0 | vals::usb::usbEPStatusDTS);
 	}
 
 	void handleControllerOutPacket() noexcept
@@ -207,8 +194,8 @@ namespace usb::device
 		}
 		// If we're in the status phase
 		else
-			prepareSetupPacket();
-		endpoints[1].STATUS &= ~vals::usb::usbEPStatusIOComplete;
+			usbCtrlState = ctrlState_t::idle;
+		endpoints[0].controllerOut.STATUS &= ~vals::usb::usbEPStatusIOComplete;
 	}
 
 	void handleControllerInPacket() noexcept
@@ -245,8 +232,8 @@ namespace usb::device
 		}
 		// Otherwise this was a status phase TX-complete interrupt
 		else
-			prepareSetupPacket();
-		endpoints[0].STATUS &= ~vals::usb::usbEPStatusIOComplete;
+			usbCtrlState = ctrlState_t::idle;
+		endpoints[0].controllerIn.STATUS &= ~vals::usb::usbEPStatusIOComplete;
 	}
 
 	void handleControlPacket() noexcept
@@ -254,7 +241,7 @@ namespace usb::device
 		// If we received a packet..
 		if (usbPacket.dir() == endpointDir_t::controllerOut)
 		{
-			const auto status{endpoints[1].STATUS};
+			const auto status{endpoints[0].controllerOut.STATUS};
 			if (status & vals::usb::usbEPStatusSetupComplete)
 				handleSetupPacket();
 			else
