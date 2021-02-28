@@ -27,6 +27,20 @@ namespace std
 			*first = value_;
 		return first;
 	}
+
+	template<typename T> constexpr inline const T &min(const T &a, const T &b)
+	{
+		if (b < a)
+			return b;
+		return a;
+	}
+
+	template<typename T, typename Compare> constexpr inline const T &min(const T &a, const T &b, Compare comp)
+	{
+		if (comp(b, a))
+			return b;
+		return a;
+	}
 } // namespace std
 
 #endif /*ALGORITHM*/
