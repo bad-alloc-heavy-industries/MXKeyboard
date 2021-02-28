@@ -38,17 +38,13 @@ void usbInit() noexcept
 	USB.CTRLA = vals::usb::ctrlAUSBEnable | vals::usb::ctrlAModeFullSpeed | vals::usb::ctrlAMaxEP(2);
 	USB.EPPTR = reinterpret_cast<std::uintptr_t>(endpoints.data());
 
-	[]() noexcept
+	for (auto &[i, endpoint] : utility::indexedIterator_t{endpoints})
 	{
-		uint8_t i{};
-		for (auto &endpoint : endpoints)
-		{
-			endpoint.controllerOut.DATAPTR = reinterpret_cast<std::uintptr_t>(epBuffer[i++].data());
-			endpoint.controllerOut.CNT = 0;
-			endpoint.controllerIn.DATAPTR = reinterpret_cast<std::uintptr_t>(epBuffer[i++].data());
-			endpoint.controllerIn.CNT = 0;
-		}
-	}();
+		endpoint->controllerOut.DATAPTR = reinterpret_cast<std::uintptr_t>(epBuffer[i << 1U].data());
+		endpoint->controllerOut.CNT = 0;
+		endpoint->controllerIn.DATAPTR = reinterpret_cast<std::uintptr_t>(epBuffer[(i << 1U) + 1U].data());
+		endpoint->controllerIn.CNT = 0;
+	}
 
 	// Configure EP0Out as our primary control input EP
 	endpoints[0].controllerOut.CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc;
