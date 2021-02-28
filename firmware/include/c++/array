@@ -5,6 +5,7 @@
 #include <cstddef>
 #include <type_traits>
 #include <algorithm>
+#include <bits/rangeAccess.hxx>
 
 namespace std
 {
