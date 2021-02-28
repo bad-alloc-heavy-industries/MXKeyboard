@@ -5,6 +5,8 @@
 #include <cstddef>
 #include <utility>
 #include "flash.hxx"
+#include <bits/move.hxx>
+#include <bits/rangeAccess.hxx>
 
 namespace std
 {
