@@ -170,21 +170,21 @@ void usbBusEvtIRQ() noexcept
 	if (usbState == deviceState_t::attached)
 		usbState = deviceState_t::powered;
 
-	if (status & vals::usb::itrStatusResume && intCtrl & vals::usb::intCtrlAEnableBusEvent)
+	if ((status & vals::usb::itrStatusResume) && (intCtrl & vals::usb::intCtrlAEnableBusEvent))
 		usb::core::wakeup();
-	else if (usbSuspended)
-		return;
+	/*else if (usbSuspended)
+		return;*/
 
-	if (status & vals::usb::itrStatusReset && intCtrl & vals::usb::intCtrlAEnableBusEvent)
+	if ((status & vals::usb::itrStatusReset) && (intCtrl & vals::usb::intCtrlAEnableBusEvent))
 	{
 		usb::core::reset();
 		usbState = deviceState_t::waiting;
 		return;
 	}
-	else if (status & vals::usb::itrStatusSuspend && intCtrl & vals::usb::intCtrlAEnableBusEvent)
+	else if ((status & vals::usb::itrStatusSuspend) && (intCtrl & vals::usb::intCtrlAEnableBusEvent))
 		usb::core::suspend();
 
-	if (status & vals::usb::itrStatusSOF && intCtrl & vals::usb::intCtrlAEnableSOF)
+	if ((status & vals::usb::itrStatusSOF) && (intCtrl & vals::usb::intCtrlAEnableSOF))
 	{
 #if 0
 		if (usbStatusTimeout)
