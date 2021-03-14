@@ -77,19 +77,21 @@ namespace usb::core
 {
 	void reset()
 	{
-		const auto ep0OutStatus{endpoints[0].controllerOut.STATUS};
-		for (auto &endpoint : endpoints)
+		for (auto &[i, endpoint] : utility::indexedIterator_t{endpoints})
 		{
-			endpoint.controllerOut.CTRL |= vals::usb::usbEPCtrlItrDisable;
-			endpoint.controllerOut.CTRL &= ~vals::usb::usbEPCtrlStall;
-			endpoint.controllerOut.STATUS |= vals::usb::usbEPStatusNACK0;// | vals::usb::usbEPStatusNACK1;
-			endpoint.controllerOut.STATUS &= ~(vals::usb::usbEPStatusNotReady | vals::usb::usbEPStatusStall |
-				vals::usb::usbEPStatusIOComplete | vals::usb::usbEPStatusSetupComplete | vals::usb::usbEPStatusNACK1);
+			endpoint->controllerOut.CTRL |= vals::usb::usbEPCtrlItrDisable;
+			endpoint->controllerOut.CTRL &= ~vals::usb::usbEPCtrlStall;
+			if (i != 0)
+			{
+				endpoint->controllerOut.STATUS |= vals::usb::usbEPStatusNACK0;// | vals::usb::usbEPStatusNACK1;
+				endpoint->controllerOut.STATUS &= ~(vals::usb::usbEPStatusNotReady | vals::usb::usbEPStatusStall |
+					vals::usb::usbEPStatusIOComplete | vals::usb::usbEPStatusSetupComplete | vals::usb::usbEPStatusNACK1);
+			}
 
-			endpoint.controllerIn.CTRL |= vals::usb::usbEPCtrlItrDisable;
-			endpoint.controllerIn.CTRL &= ~vals::usb::usbEPCtrlStall;
-			endpoint.controllerIn.STATUS |= vals::usb::usbEPStatusNACK0;// | vals::usb::usbEPStatusNACK1;
-			endpoint.controllerIn.STATUS &= ~(vals::usb::usbEPStatusNotReady | vals::usb::usbEPStatusStall |
+			endpoint->controllerIn.CTRL |= vals::usb::usbEPCtrlItrDisable;
+			endpoint->controllerIn.CTRL &= ~vals::usb::usbEPCtrlStall;
+			endpoint->controllerIn.STATUS |= vals::usb::usbEPStatusNACK0;// | vals::usb::usbEPStatusNACK1;
+			endpoint->controllerIn.STATUS &= ~(vals::usb::usbEPStatusNotReady | vals::usb::usbEPStatusStall |
 				vals::usb::usbEPStatusIOComplete | vals::usb::usbEPStatusSetupComplete | vals::usb::usbEPStatusNACK1);
 		}
 
