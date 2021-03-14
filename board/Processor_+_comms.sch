@@ -660,6 +660,9 @@ F 0 "H1" H 12200 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12310 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12200 2000 50  0001 C CNN
 F 3 "" H 12200 2000 50  0001 C CNN
+F 4 "Accu" H 12200 2000 50  0001 C CNN "MFR"
+F 5 "SHK-M3-20-A2-BL" H 12200 2000 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-countersunk-screws/154624-SHK-M3-20-A2-BL" H 12200 2000 50  0001 C CNN "URL"
 	1    12200 2000
 	1    0    0    -1  
 $EndComp
@@ -673,6 +676,9 @@ F 0 "H2" H 12500 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12610 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12500 2000 50  0001 C CNN
 F 3 "" H 12500 2000 50  0001 C CNN
+F 4 "SHP-M3-10-V2-A2-BL" H 12500 2000 50  0001 C CNN "MPN"
+F 5 "Accu" H 12500 2000 50  0001 C CNN "MFR"
+F 6 "https://www.accu.co.uk/en/hexalobular-pan-head-screws/475666-SHP-M3-10-V2-A2-BL" H 12500 2000 50  0001 C CNN "URL"
 	1    12500 2000
 	1    0    0    -1  
 $EndComp
@@ -686,6 +692,9 @@ F 0 "H3" H 12800 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12910 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12800 2000 50  0001 C CNN
 F 3 "" H 12800 2000 50  0001 C CNN
+F 4 "Accu" H 12800 2000 50  0001 C CNN "MFR"
+F 5 "SHK-M3-20-A2-BL" H 12800 2000 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-countersunk-screws/154624-SHK-M3-20-A2-BL" H 12800 2000 50  0001 C CNN "URL"
 	1    12800 2000
 	1    0    0    -1  
 $EndComp
@@ -699,6 +708,9 @@ F 0 "H4" H 13100 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13210 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13100 2000 50  0001 C CNN
 F 3 "" H 13100 2000 50  0001 C CNN
+F 4 "Accu" H 13100 2000 50  0001 C CNN "MFR"
+F 5 "SHP-M3-10-V2-A2-BL" H 13100 2000 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-pan-head-screws/475666-SHP-M3-10-V2-A2-BL" H 13100 2000 50  0001 C CNN "URL"
 	1    13100 2000
 	1    0    0    -1  
 $EndComp
@@ -712,6 +724,9 @@ F 0 "H5" H 13400 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13510 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13400 2000 50  0001 C CNN
 F 3 "" H 13400 2000 50  0001 C CNN
+F 4 "Accu" H 13400 2000 50  0001 C CNN "MFR"
+F 5 "SHK-M3-20-A2-BL" H 13400 2000 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-countersunk-screws/154624-SHK-M3-20-A2-BL" H 13400 2000 50  0001 C CNN "URL"
 	1    13400 2000
 	1    0    0    -1  
 $EndComp
@@ -725,6 +740,9 @@ F 0 "H6" H 13700 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13810 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13700 2000 50  0001 C CNN
 F 3 "" H 13700 2000 50  0001 C CNN
+F 4 "Accu" H 13700 2000 50  0001 C CNN "MFR"
+F 5 "SHK-M3-20-A2-BL" H 13700 2000 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-countersunk-screws/154624-SHK-M3-20-A2-BL" H 13700 2000 50  0001 C CNN "URL"
 	1    13700 2000
 	1    0    0    -1  
 $EndComp
@@ -738,6 +756,9 @@ F 0 "H7" H 14000 2150 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 14110 1903 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 14000 2000 50  0001 C CNN
 F 3 "" H 14000 2000 50  0001 C CNN
+F 4 "Accu" H 14000 2000 50  0001 C CNN "MFR"
+F 5 "SHK-M3-20-A2-BL" H 14000 2000 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-countersunk-screws/154624-SHK-M3-20-A2-BL" H 14000 2000 50  0001 C CNN "URL"
 	1    14000 2000
 	1    0    0    -1  
 $EndComp
@@ -1122,6 +1143,9 @@ F 0 "H14" H 12200 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12310 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12200 2400 50  0001 C CNN
 F 3 "" H 12200 2400 50  0001 C CNN
+F 4 "Accu" H 12200 2400 50  0001 C CNN "MFR"
+F 5 "SHK-M3-20-A2-BL" H 12200 2400 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-countersunk-screws/154624-SHK-M3-20-A2-BL" H 12200 2400 50  0001 C CNN "URL"
 	1    12200 2400
 	-1   0    0    1   
 $EndComp
@@ -1135,6 +1159,9 @@ F 0 "H13" H 12500 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12610 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12500 2400 50  0001 C CNN
 F 3 "" H 12500 2400 50  0001 C CNN
+F 4 "Accu" H 12500 2400 50  0001 C CNN "MFR"
+F 5 "SHP-M3-4-A2-BL" H 12500 2400 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-pan-head-screws/154785-SHP-M3-4-A2-BL" H 12500 2400 50  0001 C CNN "URL"
 	1    12500 2400
 	-1   0    0    1   
 $EndComp
@@ -1148,6 +1175,9 @@ F 0 "H12" H 12800 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 12910 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 12800 2400 50  0001 C CNN
 F 3 "" H 12800 2400 50  0001 C CNN
+F 4 "Accu" H 12800 2400 50  0001 C CNN "MFR"
+F 5 "SHK-M3-20-A2-BL" H 12800 2400 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-countersunk-screws/154624-SHK-M3-20-A2-BL" H 12800 2400 50  0001 C CNN "URL"
 	1    12800 2400
 	-1   0    0    1   
 $EndComp
@@ -1161,6 +1191,9 @@ F 0 "H11" H 13100 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13210 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13100 2400 50  0001 C CNN
 F 3 "" H 13100 2400 50  0001 C CNN
+F 4 "Accu" H 13100 2400 50  0001 C CNN "MFR"
+F 5 "SHK-M3-20-A2-BL" H 13100 2400 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-countersunk-screws/154624-SHK-M3-20-A2-BL" H 13100 2400 50  0001 C CNN "URL"
 	1    13100 2400
 	-1   0    0    1   
 $EndComp
@@ -1174,6 +1207,9 @@ F 0 "H10" H 13400 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13510 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13400 2400 50  0001 C CNN
 F 3 "" H 13400 2400 50  0001 C CNN
+F 4 "Accu" H 13400 2400 50  0001 C CNN "MFR"
+F 5 "SHK-M3-20-A2-BL" H 13400 2400 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-countersunk-screws/154624-SHK-M3-20-A2-BL" H 13400 2400 50  0001 C CNN "URL"
 	1    13400 2400
 	-1   0    0    1   
 $EndComp
@@ -1187,6 +1223,9 @@ F 0 "H9" H 13700 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 13810 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 13700 2400 50  0001 C CNN
 F 3 "" H 13700 2400 50  0001 C CNN
+F 4 "Accu" H 13700 2400 50  0001 C CNN "MFR"
+F 5 "SHP-M3-10-V2-A2-BL" H 13700 2400 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-pan-head-screws/475666-SHP-M3-10-V2-A2-BL" H 13700 2400 50  0001 C CNN "URL"
 	1    13700 2400
 	-1   0    0    1   
 $EndComp
@@ -1200,6 +1239,9 @@ F 0 "H8" H 14000 2550 59  0000 C BNN
 F 1 "MOUNT-PAD-ROUND3.2" H 14110 2303 59  0001 L BNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 14000 2400 50  0001 C CNN
 F 3 "" H 14000 2400 50  0001 C CNN
+F 4 "Accu" H 14000 2400 50  0001 C CNN "MFR"
+F 5 "SHP-M3-10-V2-A2-BL" H 14000 2400 50  0001 C CNN "MPN"
+F 6 "https://www.accu.co.uk/en/hexalobular-pan-head-screws/475666-SHP-M3-10-V2-A2-BL" H 14000 2400 50  0001 C CNN "URL"
 	1    14000 2400
 	-1   0    0    1   
 $EndComp
