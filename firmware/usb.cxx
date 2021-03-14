@@ -2,6 +2,7 @@
 #include <array>
 #include "MXKeyboard.hxx"
 #include "interrupts.hxx"
+#include "indexedIterator.hxx"
 #include "usb/core.hxx"
 #include "usb/device.hxx"
 
@@ -36,27 +37,27 @@ void usbInit() noexcept
 	// Enable the USB peripheral
 	USB.CTRLB &= ~vals::usb::ctrlBAttach;
 	USB.CTRLA = vals::usb::ctrlAUSBEnable | vals::usb::ctrlAModeFullSpeed | vals::usb::ctrlAMaxEP(2);
-	USB.EPPTR = reinterpret_cast<std::uintptr_t>(endpoints.data());
 
 	for (auto &[i, endpoint] : utility::indexedIterator_t{endpoints})
 	{
 		endpoint->controllerOut.DATAPTR = reinterpret_cast<std::uintptr_t>(epBuffer[i << 1U].data());
 		endpoint->controllerOut.CNT = 0;
+		endpoint->controllerOut.STATUS = vals::usb::usbEPStatusNACK0 | vals::usb::usbEPStatusNACK1;
 		endpoint->controllerIn.DATAPTR = reinterpret_cast<std::uintptr_t>(epBuffer[(i << 1U) + 1U].data());
 		endpoint->controllerIn.CNT = 0;
+		endpoint->controllerIn.STATUS = vals::usb::usbEPStatusNACK0 | vals::usb::usbEPStatusNACK1;
 	}
 
 	// Configure EP0Out as our primary control input EP
-	endpoints[0].controllerOut.CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc;
-	endpoints[0].controllerOut.STATUS = vals::usb::usbEPStatusNACK0;
+	endpoints[0].controllerOut.CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc | vals::usb::usbEPCtrlItrDisable;
 	// Configure EP0In as our primary control output endpoint
-	endpoints[0].controllerIn.CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc;
-	endpoints[0].controllerIn.STATUS = vals::usb::usbEPStatusNACK0;
+	endpoints[0].controllerIn.CTRL = USB_EP_TYPE_CONTROL_gc | USB_EP_BUFSIZE_64_gc | vals::usb::usbEPCtrlItrDisable;
 	// Configure EP1Out to perminantly stall.
 	endpoints[1].controllerOut.CTRL = USB_EP_TYPE_DISABLE_gc | vals::usb::usbEPCtrlStall;
 	// Configure EP1In
 	endpoints[1].controllerIn.CTRL = USB_EP_TYPE_BULK_gc | USB_EP_BUFSIZE_64_gc | vals::usb::usbEPCtrlStall;
 
+	USB.EPPTR = reinterpret_cast<std::uintptr_t>(endpoints.data());
 	// Reset all USB interrupts
 	USB.INTCTRLA &= vals::usb::intCtrlAClearMask;
 	USB.INTCTRLB &= vals::usb::intCtrlBClearMask;
@@ -83,24 +84,25 @@ namespace usb::core
 			endpoint->controllerOut.CTRL &= ~vals::usb::usbEPCtrlStall;
 			if (i != 0)
 			{
-				endpoint->controllerOut.STATUS |= vals::usb::usbEPStatusNACK0;// | vals::usb::usbEPStatusNACK1;
+				endpoint->controllerOut.STATUS |= vals::usb::usbEPStatusNACK0 | vals::usb::usbEPStatusNACK1;
 				endpoint->controllerOut.STATUS &= ~(vals::usb::usbEPStatusNotReady | vals::usb::usbEPStatusStall |
-					vals::usb::usbEPStatusIOComplete | vals::usb::usbEPStatusSetupComplete | vals::usb::usbEPStatusNACK1);
+					vals::usb::usbEPStatusIOComplete | vals::usb::usbEPStatusSetupComplete);
 			}
+			else
+				endpoint->controllerOut.STATUS &= ~(vals::usb::usbEPStatusNACK0);
 
 			endpoint->controllerIn.CTRL |= vals::usb::usbEPCtrlItrDisable;
 			endpoint->controllerIn.CTRL &= ~vals::usb::usbEPCtrlStall;
-			endpoint->controllerIn.STATUS |= vals::usb::usbEPStatusNACK0;// | vals::usb::usbEPStatusNACK1;
+			endpoint->controllerIn.STATUS |= vals::usb::usbEPStatusNACK0 | vals::usb::usbEPStatusNACK1;
 			endpoint->controllerIn.STATUS &= ~(vals::usb::usbEPStatusNotReady | vals::usb::usbEPStatusStall |
-				vals::usb::usbEPStatusIOComplete | vals::usb::usbEPStatusSetupComplete | vals::usb::usbEPStatusNACK1);
+				vals::usb::usbEPStatusIOComplete | vals::usb::usbEPStatusSetupComplete);
 		}
 
 		// Once we get done, idle the peripheral
 		USB.ADDR &= ~vals::usb::addressMask;
 		usbState = deviceState_t::attached;
-		USB.INTCTRLA |= vals::usb::intCtrlAEnableBusEvent | vals::usb::intCtrlAEnableSOF;
+		USB.INTCTRLA |= vals::usb::intCtrlAEnableBusEvent;
 		USB.INTCTRLB |= vals::usb::intCtrlBEnableIOComplete | vals::usb::intCtrlBEnableSetupComplete;
-		endpoints[0].controllerOut.STATUS = ep0OutStatus; // Restore this as this data races with this interrupt :(
 		endpoints[0].controllerOut.CTRL &= ~vals::usb::usbEPCtrlItrDisable;
 		endpoints[0].controllerIn.CTRL &= ~vals::usb::usbEPCtrlItrDisable;
 		USB.INTFLAGSACLR = vals::usb::itrStatusReset;
@@ -184,16 +186,16 @@ void usbBusEvtIRQ() noexcept
 	else if ((status & vals::usb::itrStatusSuspend) && (intCtrl & vals::usb::intCtrlAEnableBusEvent))
 		usb::core::suspend();
 
+#if 0
 	if ((status & vals::usb::itrStatusSOF) && (intCtrl & vals::usb::intCtrlAEnableSOF))
 	{
-#if 0
 		if (usbStatusTimeout)
 			--usbStatusTimeout;
 		else
 			usb::device::handleStatusPhase();
-#endif
 		USB.INTFLAGSACLR = vals::usb::itrStatusSOF;
 	}
+#endif
 
 	// TODO: Handle other events we care about here.
 }
