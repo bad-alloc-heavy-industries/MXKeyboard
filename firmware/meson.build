@@ -7,10 +7,12 @@ firmwareSrc = [
 	'usb.cxx', 'usb/descriptors.cxx', 'usb/device.cxx'
 ]
 
-firmwareArgs = []
-if targetCXX.has_argument('-Wno-misspelled-isr')
-	firmwareArgs += ['-Wno-misspelled-isr']
-endif
+firmwareArgs = targetCXX.get_supported_arguments(
+	'-Wno-misspelled-isr',
+	'-Wvla',
+	'-Wimplicit-fallthrough',
+	'-Wstack-usage=2048'
+)
 
 if debug and optimisation == '0'
 	add_project_arguments('-Og', language: 'cpp')
