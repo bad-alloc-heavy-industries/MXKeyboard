@@ -10,30 +10,30 @@
 
 namespace std
 {
-	struct string_view
+	template<typename char_t> struct basic_string_view
 	{
 	private:
-		const char *_string{nullptr};
+		const char_t *_string{nullptr};
 		size_t _count{0};
 
 	public:
-		constexpr string_view() noexcept = default;
-		constexpr string_view(const string_view &other) noexcept = default;
-		constexpr string_view(const char *const string, const size_t count) noexcept :
+		constexpr basic_string_view() noexcept = default;
+		constexpr basic_string_view(const basic_string_view &other) noexcept = default;
+		constexpr basic_string_view(const char_t *const string, const size_t count) noexcept :
 			_string{string}, _count{count} { }
 
-		using value_type = char;
-		using pointer = char *;
-		using const_pointer = const char *;
-		using reference = char &;
-		using const_reference = const char &;
-		using const_iterator = const char *;
+		using value_type = char_t;
+		using pointer = char_t *;
+		using const_pointer = const char_t *;
+		using reference = char_t &;
+		using const_reference = const char_t &;
+		using const_iterator = const char_t *;
 		using iterator = const_iterator;
 		using size_type = std::size_t;
 		using difference_type = std::ptrdiff_t;
 		constexpr static auto npos{static_cast<std::size_t>(-1)};
 
-		constexpr string_view &operator =(const string_view &other) noexcept = default;
+		constexpr basic_string_view &operator =(const basic_string_view &other) noexcept = default;
 
 		constexpr const_reference operator [](const size_t pos) const
 			{ return _string[pos]; }
@@ -60,12 +60,15 @@ namespace std
 		constexpr const_reference front() const { return _string[0]; }
 		constexpr const_reference back() const { return _string[size() - 1]; }
 
-		constexpr void swap(string_view &other) noexcept
+		constexpr void swap(basic_string_view &other) noexcept
 		{
 			std::swap(_string, other._string);
 			std::swap(_count, other._count);
 		}
 	};
+
+	using string_view = basic_string_view<char>;
+	using u16string_view = basic_string_view<char16_t>;
 
 	struct flash_string_view
 	{
