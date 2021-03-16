@@ -83,22 +83,30 @@ static const std::array<usbEndpointDescriptor_t, endpointDescriptorCount> usbEnd
 
 static const hid::hidDescriptor_t usbKeyboardDesc
 {
-	sizeof(hid::hidDescriptor_t),
+	sizeof(hid::hidDescriptor_t) + sizeof(hid::reportDescriptor_t),
 	usbDescriptor_t::hid,
 	0x0111, // USB HID 1.11 in BCD
 	hid::countryCode_t::english,
 	hidReportDescriptorCount
 };
 
-static const  std::array<hid::reportDescriptor_t, hidReportDescriptorCount>usbKeyboardReportDesc
+static const std::array<uint8_t, 4> usbKeyboardReport
+{{
+	hid::descriptor_t::usage | hid::descriptorType_t::global | hid::descriptorSize(1),
+	uint8_t(hid::usagePage_t::genericDesktop),
+	hid::descriptor_t::usage | hid::descriptorType_t::local | hid::descriptorSize(1),
+	uint8_t(hid::systemUsage_t::keyboard)
+}};
+
+static const std::array<hid::reportDescriptor_t, hidReportDescriptorCount> usbKeyboardReportDesc
 {{
 	{
 		usbDescriptor_t::report,
-		{}
+		sizeof(hid::reportDescriptor_t) + usbKeyboardReport.size()
 	}
 }};
 
-static const std::array<usbMultiPartDesc_t, 5> usbConfigSecs
+static const std::array<usbMultiPartDesc_t, 6> usbConfigSecs
 {{
 	{
 		sizeof(usbConfigDescriptor_t),
@@ -114,7 +122,7 @@ static const std::array<usbMultiPartDesc_t, 5> usbConfigSecs
 	},
 	{
 		sizeof(hid::reportDescriptor_t),
-		&usbKeyboardDesc
+		&usbKeyboardReportDesc
 	},
 	{
 		sizeof(usbEndpointDescriptor_t),

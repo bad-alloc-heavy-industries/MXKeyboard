@@ -237,6 +237,53 @@ namespace usb::descriptors
 			usbDescriptor_t descriptorType;
 			uint16_t length;
 		};
+
+		enum class descriptor_t : uint8_t
+		{
+			usage = 0
+		};
+
+		enum class descriptorType_t : uint8_t
+		{
+			main = 0x00U,
+			global = 0x04U,
+			local = 0x08U,
+			reserved = 0x0CU
+		};
+
+		enum class usagePage_t : uint8_t
+		{
+			genericDesktop = 1
+		};
+
+		enum class systemUsage_t : uint8_t
+		{
+			keyboard = 9
+		};
+
+		constexpr inline uint8_t log2(uint8_t value) noexcept
+		{
+			uint8_t result = 0;
+			if (value <= 0x0FU)
+				result += 4, value <<= 4;
+			if (value <= 0x3FU)
+				result += 2, value <<= 2;
+			if (value <= 0x7FU)
+				++result;
+			return uint8_t(sizeof(uint8_t) * 8U) - result;
+		}
+
+		constexpr inline uint8_t descriptorSize(const uint8_t size) noexcept
+		{
+			if (!size)
+				return size;
+			else if (size > 4)
+				return 0x03U; // BAD..
+			return log2(size);
+		}
+
+		constexpr inline uint8_t operator |(const descriptor_t desc, const descriptorType_t type) noexcept
+			{ return uint8_t(desc) | uint8_t(type); }
 	} // namespace hid
 
 	struct usbMultiPartDesc_t final
