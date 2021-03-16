@@ -230,8 +230,8 @@ namespace usb::device
 			if (writeCtrlEP())
 			{
 				// If we now have all the data for the transaction..
-				usbCtrlState = ctrlState_t::statusRX;
-				//usbCtrlState = ctrlState_t::idle;
+				//usbCtrlState = ctrlState_t::statusRX;
+				usbCtrlState = ctrlState_t::idle;
 			}
 		}
 		// Otherwise this was a status phase TX-complete interrupt
