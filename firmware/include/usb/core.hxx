@@ -30,8 +30,8 @@ namespace usb::core
 	extern std::array<endpointCtrl_t, usb::endpointCount> endpoints;
 	extern std::array<std::array<uint8_t, usb::epBufferSize>, usb::endpointCount * 2> epBuffer;
 
-	extern const void *sendData(const uint8_t ep, const void *const bufferPtr, const uint8_t length) noexcept;
-	extern void *recvData(const uint8_t ep, void *const buffer, const uint8_t length) noexcept;
+	extern const void *sendData(uint8_t ep, const void *bufferPtr, uint8_t length, uint8_t offset = 0) noexcept;
+	extern void *recvData(uint8_t ep, void *buffer, uint8_t length) noexcept;
 } // namespace usb::core
 
 #endif /*USB_CORE__HXX*/

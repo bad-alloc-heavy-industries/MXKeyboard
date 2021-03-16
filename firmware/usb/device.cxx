@@ -71,6 +71,7 @@ namespace usb::device
 			if (!epStatus.memBuffer)
 				epStatus.memBuffer = epStatus.partsData->part(0).descriptor;
 			auto sendAmount{sendCount};
+			uint8_t sendOffset{0};
 			while (sendAmount)
 			{
 				const auto &part{epStatus.partsData->part(epStatus.partNumber)};
@@ -78,13 +79,14 @@ namespace usb::device
 				const auto partAmount{[&]() -> uint8_t
 				{
 					auto *const buffer{static_cast<const uint8_t *>(epStatus.memBuffer)};
-					const auto amount{part.length - (buffer - begin)};
+					const auto amount{part.length - uint8_t(buffer - begin)};
 					if (amount > sendAmount)
 						return sendAmount;
 					return amount;
 				}()};
 				sendAmount -= partAmount;
-				epStatus.memBuffer = sendData(0, epStatus.memBuffer, partAmount);
+				epStatus.memBuffer = sendData(0, epStatus.memBuffer, partAmount, sendOffset);
+				sendOffset += partAmount;
 				// Get the buffer back to check if we exhausted it
 				auto *const buffer{static_cast<const uint8_t *>(epStatus.memBuffer)};
 				if (buffer - begin == part.length &&

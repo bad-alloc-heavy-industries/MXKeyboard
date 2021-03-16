@@ -121,10 +121,11 @@ namespace usb::core
 		USB.INTFLAGSACLR = vals::usb::itrStatusSuspend;
 	}
 
-	const void *sendData(const uint8_t ep, const void *const bufferPtr, const uint8_t length) noexcept
+	const void *sendData(const uint8_t ep, const void *const bufferPtr, const uint8_t length,
+		const uint8_t offset) noexcept
 	{
 		auto *const inBuffer{static_cast<const uint8_t *>(bufferPtr)};
-		auto *const outBuffer{epBuffer[(ep << 1) + 1].data()};
+		auto *const outBuffer{epBuffer[(ep << 1) + 1].data() + offset};
 		// Copy the data to tranmit from the user buffer
 		if (epStatusControllerIn[ep].memoryType() == memory_t::sram)
 		{
