@@ -99,7 +99,7 @@ namespace usb::descriptors
 		sessionRequestProto = 0x01U
 	};
 
-	struct usbConfigDescriptor_t final
+	struct [[gnu::packed]] usbConfigDescriptor_t final
 	{
 		uint8_t length;
 		usbDescriptor_t descriptorType;
@@ -138,7 +138,7 @@ namespace usb::descriptors
 	constexpr inline uint8_t endpointAddress(const usbEndpointDir_t dir, const uint8_t number) noexcept
 		{ return uint8_t(dir) | (number & endpointDirMask); }
 
-	struct usbEndpointDescriptor_t final
+	struct [[gnu::packed]] usbEndpointDescriptor_t final
 	{
 		uint8_t length;
 		usbDescriptor_t descriptorType;
@@ -223,7 +223,7 @@ namespace usb::descriptors
 			turkishF = 35
 		};
 
-		struct hidDescriptor_t final
+		struct [[gnu::packed]] hidDescriptor_t final
 		{
 			uint8_t length;
 			usbDescriptor_t descriptorType;
@@ -232,7 +232,7 @@ namespace usb::descriptors
 			uint8_t numDescriptors;
 		};
 
-		struct reportDescriptor_t final
+		struct [[gnu::packed]] reportDescriptor_t final
 		{
 			usbDescriptor_t descriptorType;
 			uint16_t length;
