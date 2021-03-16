@@ -19,12 +19,12 @@ namespace usb::device
 		{
 			case request_t::setAddress:
 				usbState = deviceState_t::addressing;
-				return {response_t::zeroLength, nullptr, 0};
+				return {response_t::zeroLength, nullptr, 0, memory_t::sram};
 			case request_t::getDescriptor:
 				return handleGetDescriptor();
 		}
 
-		return {response_t::unhandled, nullptr, 0};
+		return {response_t::unhandled, nullptr, 0, memory_t::sram};
 	}
 
 	/*!
@@ -167,11 +167,12 @@ namespace usb::device
 		epStatusControllerOut[0].stall(false);
 		epStatusControllerOut[0].transferCount = 0;
 
-		const auto &[response, data, size] = handleStandardRequest();
+		const auto &[response, data, size, memoryType] = handleStandardRequest();
 
 		epStatusControllerIn[0].stall(response == response_t::stall || response == response_t::unhandled);
 		epStatusControllerIn[0].needsArming(response == response_t::data || response == response_t::zeroLength);
 		epStatusControllerIn[0].memBuffer = data;
+		epStatusControllerIn[0].memoryType(memoryType);
 		const uint16_t transferCount = response == response_t::zeroLength ? 0U : size;
 		epStatusControllerIn[0].transferCount = std::min(transferCount, packet.length);
 		// If the response is whacko, don't do the stupid thing

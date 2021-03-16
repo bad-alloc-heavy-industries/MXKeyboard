@@ -153,6 +153,12 @@ namespace usb::types
 		[[nodiscard]] endpointDir_t dir() const noexcept { return static_cast<endpointDir_t>(value & 0x80U); }
 	};
 
+	enum class memory_t
+	{
+		sram,
+		flash
+	};
+
 	template<typename buffer_t> struct usbEPStatus_t final
 	{
 	private:
@@ -199,10 +205,18 @@ namespace usb::types
 		}
 
 		[[nodiscard]] bool isMultiPart() const noexcept { return value & 0x08U; }
+
+		void memoryType(memory_t type) noexcept
+		{
+			value &= 0xEFU;
+			value |= type == memory_t::flash ? 0x10U : 0x00U;
+		}
+
+		memory_t memoryType() const noexcept { return (value & 0x10U) ? memory_t::flash : memory_t::sram; }
 		void resetStatus() noexcept { value = 0; }
 	};
 
-	using answer_t = std::tuple<response_t, const void *, std::size_t>;
+	using answer_t = std::tuple<response_t, const void *, std::size_t, memory_t>;
 } // namespace usb::types
 
 #endif /*USB_TYPES__HXX*/

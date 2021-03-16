@@ -126,8 +126,20 @@ namespace usb::core
 		auto *const inBuffer{static_cast<const uint8_t *>(bufferPtr)};
 		auto *const outBuffer{epBuffer[(ep << 1) + 1].data()};
 		// Copy the data to tranmit from the user buffer
-		for (uint8_t i{0}; i < length; ++i)
-			outBuffer[i] = inBuffer[i];
+		if (epStatusControllerIn[ep].memoryType() == memory_t::sram)
+		{
+			for (uint8_t i{0}; i < length; ++i)
+				outBuffer[i] = inBuffer[i];
+		}
+		else
+		{
+			flash_t<char *> flashBuffer{static_cast<const char *>(bufferPtr)};
+			for (uint8_t i{0}; i < length; ++i)
+			{
+				outBuffer[i] = *flashBuffer;
+				++flashBuffer;
+			}
+		}
 		return inBuffer + length;
 	}
 

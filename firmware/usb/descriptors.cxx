@@ -159,26 +159,30 @@ namespace usb::device
 	answer_t handleGetDescriptor() noexcept
 	{
 		if (packet.requestType.dir() == endpointDir_t::controllerOut)
-			return {response_t::unhandled, nullptr, 0};
+			return {response_t::unhandled, nullptr, 0, memory_t::sram};
 		const auto descriptor = packet.value.asDescriptor();
 
 		switch (descriptor.type)
 		{
 			// Handle device descriptor requests
 			case usbDescriptor_t::device:
-				return {response_t::data, &usbDeviceDesc, usbDeviceDesc.length};
+				return {response_t::data, &usbDeviceDesc, usbDeviceDesc.length, memory_t::flash};
 			case usbDescriptor_t::deviceQualifier:
-				return {response_t::data, &usbDeviceQualifierDesc, usbDeviceQualifierDesc.length};
+				static_assert(sizeof(usbDeviceQualifierDescriptor_t) == 10);
+				return {response_t::data, &usbDeviceQualifierDesc, usbDeviceQualifierDesc.length, memory_t::flash};
 			// Handle configuration descriptor requests
 			case usbDescriptor_t::configuration:
 			{
 				if (descriptor.index >= configDescriptorCount)
 					break;
-				const auto &configDescriptor{usbConfigDescriptors[descriptor.index]};
+				static_assert(sizeof(usbConfigDescriptor_t) == 9);
+				static_assert(sizeof(usbInterfaceDescriptor_t) == 9);
+				static_assert(sizeof(usbEndpointDescriptor_t) == 7);
+				const auto configDescriptor{*usbConfigDescriptors[descriptor.index]};
 				epStatusControllerIn[0].isMultiPart(true);
 				epStatusControllerIn[0].partNumber = 0;
-				epStatusControllerIn[0].partsData = &configDescriptor;
-				return {response_t::data, nullptr, configDescriptor.totalLength()};
+				epStatusControllerIn[0].partsData = configDescriptor;
+				return {response_t::data, nullptr, configDescriptor.totalLength(), memory_t::flash};
 			}
 			// Handle interface descriptor requests
 			case usbDescriptor_t::interface:
@@ -186,7 +190,7 @@ namespace usb::device
 				if (descriptor.index >= interfaceDescriptorCount)
 					break;
 				const auto &interfaceDescriptor{usbInterfaceDesc[descriptor.index]};
-				return {response_t::data, &interfaceDescriptor, interfaceDescriptor.length};
+				return {response_t::data, &interfaceDescriptor, interfaceDescriptor.length, memory_t::flash};
 			}
 			// Handle endpoint descriptor requests
 			case usbDescriptor_t::endpoint:
@@ -194,19 +198,18 @@ namespace usb::device
 				if (descriptor.index >= endpointDescriptorCount)
 					break;
 				const auto &endpointDescriptor{usbEndpointDesc[descriptor.index]};
-				return {response_t::data, &endpointDescriptor, endpointDescriptor.length};
+				return {response_t::data, &endpointDescriptor, endpointDescriptor.length, memory_t::flash};
 			}
 			// Handle string requests
 			case usbDescriptor_t::string:
 			{
 				if (descriptor.index >= stringCount)
 					break;
-				const auto &string{usbStrings[descriptor.index]};
-				return {response_t::data, &string, string.length};
+				return {response_t::data, &string, string.length, memory_t::flash};
 			}
 			default:
 				break;
 		}
-		return {response_t::unhandled, nullptr, 0};
+		return {response_t::unhandled, nullptr, 0, memory_t::sram};
 	}
 } // namespace usb::device
