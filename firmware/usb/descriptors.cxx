@@ -122,33 +122,36 @@ static const std::array<usbMultiPartDesc_t, 5> usbConfigSecs
 	}
 }};
 
-static const std::array<usbMultiPartTable_t, 1> usbConfigDescriptors
+static const std::array<flash_t<usbMultiPartTable_t>, 1> usbConfigDescriptors
 {{
-	{usbConfigSecs.begin(), usbConfigSecs.end()}
+	{{usbConfigSecs.begin(), usbConfigSecs.end()}}
 }};
 
-static const std::array<usbStringDesc_t, stringCount> usbStrings
+static const std::array<usbStringDesc_t, stringCount + 1> usbStringDescs
 {{
-	{
-		0,
-		usbDescriptor_t::string,
-		u"bad_alloc Heavy Industries"
-	},
-	{
-		0,
-		usbDescriptor_t::string,
-		u"MXKeyboard"
-	},
-	{
-		0,
-		usbDescriptor_t::string,
-		u""
-	},
-	{
-		0,
-		usbDescriptor_t::string,
-		u"HID keyboard interface"
-	}
+	{{u"\x0904", 1}},
+	{{u"bad_alloc Heavy Industries", 26}},
+	{{u"MXKeyboard", 10}},
+	{{u"", 0}},
+	{{u"HID keyboard interface", 22}}
+}};
+
+static const std::array<std::array<usbMultiPartDesc_t, 2>, stringCount + 1> usbStringParts
+{{
+	usbStringDescs[0].asParts(),
+	usbStringDescs[1].asParts(),
+	usbStringDescs[2].asParts(),
+	usbStringDescs[3].asParts(),
+	usbStringDescs[4].asParts()
+}};
+
+static const std::array<flash_t<usbMultiPartTable_t>, stringCount + 1> usbStrings
+{{
+	{{usbStringParts[0].begin(), usbStringParts[0].end()}},
+	{{usbStringParts[1].begin(), usbStringParts[1].end()}},
+	{{usbStringParts[2].begin(), usbStringParts[2].end()}},
+	{{usbStringParts[3].begin(), usbStringParts[3].end()}},
+	{{usbStringParts[4].begin(), usbStringParts[4].end()}},
 }};
 
 using namespace usb::types;
@@ -205,7 +208,11 @@ namespace usb::device
 			{
 				if (descriptor.index >= stringCount)
 					break;
-				return {response_t::data, &string, string.length, memory_t::flash};
+				const auto &string{*usbStrings[descriptor.index]};
+				epStatusControllerIn[0].isMultiPart(true);
+				epStatusControllerIn[0].partNumber = 0;
+				epStatusControllerIn[0].partsData = string;
+				return {response_t::data, nullptr, string.totalLength(), memory_t::flash};
 			}
 			default:
 				break;

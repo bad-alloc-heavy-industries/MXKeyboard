@@ -3,7 +3,9 @@
 
 #include <cstdint>
 #include <cstddef>
+#include <string_view>
 #include "types.hxx"
+#include "../flash.hxx"
 
 namespace usb::descriptors
 {
@@ -180,13 +182,6 @@ namespace usb::descriptors
 		};
 	} // namespace protocols
 
-	struct usbStringDesc_t final
-	{
-		uint8_t length;
-		usbDescriptor_t descriptorType;
-		const char16_t *const string;
-	};
-
 	namespace hid
 	{
 		enum class countryCode_t : uint8_t
@@ -249,35 +244,189 @@ namespace usb::descriptors
 		uint8_t length;
 		const void *descriptor;
 	};
+} // namespace usb::descriptors
 
+template<> struct flash_t<usb::descriptors::usbMultiPartDesc_t> final
+{
+private:
+	using T = usb::descriptors::usbMultiPartDesc_t;
+	const T *value_;
+
+public:
+	constexpr flash_t(const T *const value) noexcept : value_{value} { }
+	constexpr flash_t(const flash_t &) noexcept = default;
+	constexpr flash_t(flash_t &&) noexcept = default;
+	constexpr flash_t &operator =(const flash_t &) noexcept = default;
+	constexpr flash_t &operator =(flash_t &&) noexcept = default;
+
+	T operator *() const noexcept
+	{
+		T result{};
+		const auto resultAddr{reinterpret_cast<uint32_t>(&result)};
+		const auto valueAddr{reinterpret_cast<uint32_t>(value_)};
+		const uint8_t x{RAMPX};
+		const uint8_t z{RAMPZ};
+
+		static_assert(sizeof(T) == 3);
+
+		__asm__(R"(
+			movw r26, %[result]
+			out 0x39, %C[result]
+			movw r30, %[value]
+			out 0x3B, %C[value]
+			elpm r16, Z+
+			st X+, r16
+			elpm r16, Z+
+			st X+, r16
+			elpm r16, Z
+			st X+, r16
+			)" : : [result] "r" (resultAddr), [value] "r" (valueAddr) :
+				"r16", "r26", "r27", "r30", "r31"
+		);
+
+		RAMPZ = z;
+		RAMPX = x;
+		return result;
+	}
+
+	constexpr std::ptrdiff_t operator -(const flash_t &other) const noexcept
+		{ return value_ - other.value_; }
+
+	constexpr flash_t operator +(const size_t offset) const noexcept
+		{ return {value_ + offset}; }
+
+	constexpr flash_t &operator ++() noexcept
+	{
+		++value_;
+		return *this;
+	}
+
+	T operator[](const size_t offset) const noexcept
+		{ return *(*this + offset); }
+
+	constexpr bool operator ==(const flash_t &other) const noexcept
+		{ return value_ == other.value_; }
+	constexpr bool operator !=(const flash_t &other) const noexcept
+		{ return value_ != other.value_; }
+
+	constexpr bool operator >=(const flash_t &other) const noexcept
+		{ return value_ >= other.value_; }
+
+	constexpr const T *pointer() const noexcept { return value_; }
+};
+
+namespace usb::descriptors
+{
 	struct usbMultiPartTable_t final
 	{
 	private:
-		const usbMultiPartDesc_t *_begin;
-		const usbMultiPartDesc_t *_end;
+		flash_t<usbMultiPartDesc_t> _begin;
+		flash_t<usbMultiPartDesc_t> _end;
 
 	public:
+		constexpr usbMultiPartTable_t() noexcept : _begin{nullptr}, _end{nullptr} { }
 		constexpr usbMultiPartTable_t(const usbMultiPartDesc_t *const begin,
-			const usbMultiPartDesc_t *const end) noexcept: _begin{begin}, _end{end} { }
-		constexpr auto begin() const noexcept { return _begin; }
-		constexpr auto end() const noexcept { return _end; }
+			const usbMultiPartDesc_t *const end) noexcept : _begin{begin}, _end{end} { }
+		constexpr auto &begin() const noexcept { return _begin; }
+		constexpr auto &end() const noexcept { return _end; }
 		constexpr auto count() const noexcept { return _end - _begin; }
 
-		constexpr auto &part(const std::size_t index) const noexcept
+		auto part(const std::size_t index) const noexcept
 		{
 			if (_begin + index >= _end)
-				return *_end;
-			return _begin[index];
+				return _end;
+			return _begin + index;
 		}
-		constexpr auto &operator [](const std::size_t index) const noexcept { return part(index); }
+		auto operator [](const std::size_t index) const noexcept { return part(index); }
 
-		constexpr auto totalLength() const noexcept
+		[[nodiscard]] auto totalLength() const noexcept
 		{
 			// TODO: Convert to std::accumulate() later.
 			std::size_t count{};
-			for (const auto &descriptor : *this)
+			for (const auto descriptor : *this)
 				count += descriptor.length;
 			return count;
+		}
+
+		constexpr void operator =(const usbMultiPartTable_t &other) noexcept
+		{
+			_begin = other._begin;
+			_end = other._end;
+		}
+	};
+} // namespace usb::descriptors
+
+template<> struct flash_t<usb::descriptors::usbMultiPartTable_t> final
+{
+private:
+	using T = usb::descriptors::usbMultiPartTable_t;
+	T value_;
+
+public:
+	constexpr flash_t(const T value) noexcept : value_{value} { }
+
+	T operator *() const noexcept
+	{
+		T result{};
+		const auto resultAddr{reinterpret_cast<uint32_t>(&result)};
+		const auto valueAddr{reinterpret_cast<uint32_t>(&value_)};
+		const uint8_t x{RAMPX};
+		const uint8_t z{RAMPZ};
+
+		static_assert(sizeof(T) == 4);
+
+		__asm__(R"(
+			movw r26, %[result]
+			out 0x39, %C[result]
+			movw r30, %[value]
+			out 0x3B, %C[value]
+			elpm r16, Z+
+			st X+, r16
+			elpm r16, Z+
+			st X+, r16
+			elpm r16, Z+
+			st X+, r16
+			elpm r16, Z
+			st X+, r16
+			)" : : [result] "r" (resultAddr), [value] "r" (valueAddr) :
+				"r16", "r26", "r27", "r30", "r31"
+		);
+
+		RAMPZ = z;
+		RAMPX = x;
+		return result;
+	}
+};
+
+namespace usb::descriptors
+{
+	struct [[gnu::packed]] usbStringDesc_t
+	{
+		uint8_t length;
+		usbDescriptor_t descriptorType;
+		const char16_t *const string;
+
+		constexpr usbStringDesc_t(const std::u16string_view data) :
+			length{uint8_t(baseLength() + (data.length() * 2))},
+			descriptorType{usbDescriptor_t::string}, string{data.data()} { }
+
+		constexpr uint8_t baseLength() const noexcept { return sizeof(usbStringDesc_t) - sizeof(char16_t *); }
+		constexpr uint8_t stringLength() const noexcept { return length - baseLength(); }
+
+		constexpr auto asParts() const noexcept
+		{
+			const std::array<usbMultiPartDesc_t, 2> parts
+			{{
+				{
+					baseLength(),
+					this
+				},
+				{
+					stringLength(),
+					string
+				}
+			}};
+			return parts;
 		}
 	};
 } // namespace usb::descriptors

@@ -89,8 +89,6 @@ namespace usb
 	constexpr static const uint8_t stringCount{4};
 } // namespace usb
 
-namespace usb::descriptors { struct usbMultiPartTable_t; }
-
 namespace usb::types
 {
 	enum class ctrlState_t
@@ -152,7 +150,12 @@ namespace usb::types
 
 		[[nodiscard]] endpointDir_t dir() const noexcept { return static_cast<endpointDir_t>(value & 0x80U); }
 	};
+} // namespace usb::types
 
+#include "descriptors.hxx"
+
+namespace usb::types
+{
 	enum class memory_t
 	{
 		sram,
@@ -170,7 +173,7 @@ namespace usb::types
 		uint16_t transferCount{};
 		// Multi-part fields
 		uint8_t partNumber{};
-		const usb::descriptors::usbMultiPartTable_t *partsData{nullptr};
+		usb::descriptors::usbMultiPartTable_t partsData{};
 
 		usbEPStatus_t() = default;
 
