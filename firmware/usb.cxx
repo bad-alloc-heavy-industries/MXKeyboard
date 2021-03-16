@@ -226,7 +226,7 @@ void usbIOCompIRQ() noexcept
 
 	for (uint8_t endpoint{}; endpoint < /*usb::endpointCount*/1; ++endpoint)
 	{
-		usb::core::handlePacket<endpointDir_t::controllerOut>(endpoint);
 		usb::core::handlePacket<endpointDir_t::controllerIn>(endpoint);
+		usb::core::handlePacket<endpointDir_t::controllerOut>(endpoint);
 	}
 }
