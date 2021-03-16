@@ -19,6 +19,20 @@ namespace std
 		constexpr static int digits = 8;
 		constexpr static int digits10 = 2; // digits * log10(2)
 	};
+
+	template<> struct numeric_limits<unsigned int>
+	{
+	private:
+		using T = unsigned int;
+
+	public:
+		constexpr static bool is_specialized = true;
+		constexpr static T min() noexcept { return 0; }
+		constexpr static T max() noexcept { return T(-1); }
+
+		constexpr static int digits = 32;
+		constexpr static int digits10 = 9; // digits * log10(2)
+	};
 } // namespace std
 
 #endif /*LIMITS*/
