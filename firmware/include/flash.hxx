@@ -12,20 +12,21 @@ private:
 	T value_;
 
 public:
+	constexpr flash_t() noexcept : value_{} { }
 	constexpr flash_t(const T value) noexcept : value_{value} { }
 
 	operator T() const noexcept
 	{
 		T result{};
+		const auto resultAddr{reinterpret_cast<uint32_t>(&result)};
+		const auto valueAddr{reinterpret_cast<uint32_t>(&value_)};
 		const uint8_t x{RAMPX};
 		const uint8_t z{RAMPZ};
 
 		__asm__(R"(
-			mov r26, %A[result]
-			mov r27, %B[result]
+			movw r26, %[result]
 			out 0x39, %C[result]
-			mov r30, %A[value]
-			mov r31, %B[value]
+			movw r30, %[value]
 			out 0x3B, %C[value]
 			ldi r17, %[count]
 			cpi r17, 0
@@ -36,7 +37,7 @@ loop%=:
 			dec r17
 			rjmp loop%=
 loopDone%=:
-			)" : [result] "=g" (result) : [value] "p" (&value_), [count] "I" (sizeof(T)) :
+			)" : : [result] "g" (resultAddr), [value] "g" (valueAddr), [count] "I" (sizeof(T)) :
 				"r16", "r17", "r26", "r27", "r30", "r31"
 		);
 
