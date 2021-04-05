@@ -65,7 +65,7 @@ public:
 			out 0x3B, %C[value]
 			movw r30, %[value]
 			elpm %[result], Z+
-			)" : [result] "=r" (result) : [value] "r" (valueAddr) :
+			)" : [result] "=r" (result) : [value] "g" (valueAddr) :
 				"r30", "r31"
 		);
 
@@ -94,7 +94,7 @@ public:
 			out 0x3B, %C[value]
 			movw r30, %[value]
 			elpm %[result], Z+
-			)" : [result] "=r" (result) : [value] "r" (valueAddr) :
+			)" : [result] "=r" (result) : [value] "g" (valueAddr) :
 				"r30", "r31"
 		);
 
