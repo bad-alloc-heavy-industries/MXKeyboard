@@ -187,21 +187,17 @@ void ledLatch()
 
 enum class rgbState_t : uint8_t
 {
-	none, red, purple, blue
+	red, purple, blue, cyan, green, yellow
 };
-static rgbState_t currentState{rgbState_t::none};
-static uint8_t redValue{0};
+static rgbState_t currentState{rgbState_t::red};
+static uint8_t redValue{255};
+static uint8_t greenValue{0};
 static uint8_t blueValue{0};
 
 void nextRGBValue() noexcept
 {
 	switch (currentState)
 	{
-		case rgbState_t::none:
-			++redValue;
-			if (redValue == 255U)
-				currentState = rgbState_t::red;
-			break;
 		case rgbState_t::red:
 			++blueValue;
 			if (blueValue == 255U)
@@ -213,9 +209,24 @@ void nextRGBValue() noexcept
 				currentState = rgbState_t::blue;
 			break;
 		case rgbState_t::blue:
+			++greenValue;
+			if (greenValue == 255U)
+				currentState = rgbState_t::cyan;
+			break;
+		case rgbState_t::cyan:
 			--blueValue;
 			if (!blueValue)
-				currentState = rgbState_t::none;
+				currentState = rgbState_t::green;
+			break;
+		case rgbState_t::green:
+			++redValue;
+			if (redValue == 255U)
+				currentState = rgbState_t::yellow;
+			break;
+		case rgbState_t::yellow:
+			--greenValue;
+			if (!greenValue)
+				currentState = rgbState_t::red;
 			break;
 	}
 }
@@ -224,8 +235,9 @@ void nextRGBValue() noexcept
 
 void tcc0OverflowIRQ()
 {
-	for (uint8_t i{0}; i < 109; ++i)
-		ledSetValue(i, redValue, 7, blueValue);
+	//for (uint8_t i{0}; i < 109; ++i)
+	for (uint8_t i{106}; i < 109; ++i)
+		ledSetValue(i, redValue, greenValue, blueValue);
 	nextRGBValue();
 
 #if 0
