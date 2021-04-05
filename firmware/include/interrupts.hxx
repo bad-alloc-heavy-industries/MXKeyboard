@@ -14,6 +14,7 @@ extern "C"
 	void usbBusEvtIRQ() noexcept INTERRUPT;
 	void usbIOCompIRQ() noexcept INTERRUPT;
 	void ps2IRQ() noexcept INTERRUPT;
+	void keyIRQ() noexcept INTERRUPT;
 }
 
 #endif /*INTERRUPTS__HXX*/

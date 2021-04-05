@@ -14,7 +14,7 @@ template<typename T, std::size_t offset, std::size_t count>
 {
     T mask_base{};
     for (std::size_t idx{}; idx < count; ++idx)
-        mask_base |= (1U << (offset + idx));
+        mask_base |= T(1U << (offset + idx));
     return mask_base;
 }
 

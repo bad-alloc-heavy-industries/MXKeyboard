@@ -159,7 +159,7 @@ void vectorTable()
 		jmp irqEmptyDef ; ADC A Channel 3 vector
 		jmp irqEmptyDef ; vector 75
 		jmp irqEmptyDef ; vector 76
-		jmp irqEmptyDef ; Timer/Counter D Type 0 Overflow vector | Type 2 Low-Byte Underflow vector
+		jmp keyIRQ ; Timer/Counter D Type 0 Overflow vector | Type 2 Low-Byte Underflow vector
 		jmp irqEmptyDef ; Timer/Counter D Type 0 Error vector | Type 2 High-Byte Underflow vector
 		jmp irqEmptyDef ; Timer/Counter D Type 0 Capture-Comp A vector | Type 2 Low-Byte Compare A vector
 		jmp irqEmptyDef ; Timer/Counter D Type 0 Capture-Comp B vector | Type 2 Low-Byte Compare B vector
