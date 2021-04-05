@@ -327,7 +327,7 @@ public:
 			st X+, r16
 			elpm r16, Z
 			st X+, r16
-			)" : : [result] "r" (resultAddr), [value] "r" (valueAddr) :
+			)" : : [result] "g" (resultAddr), [value] "g" (valueAddr) :
 				"r16", "r26", "r27", "r30", "r31"
 		);
 
@@ -395,11 +395,7 @@ namespace usb::descriptors
 			return count;
 		}
 
-		constexpr void operator =(const usbMultiPartTable_t &other) noexcept
-		{
-			_begin = other._begin;
-			_end = other._end;
-		}
+		constexpr usbMultiPartTable_t &operator =(const usbMultiPartTable_t &) noexcept = default;
 	};
 } // namespace usb::descriptors
 
@@ -435,7 +431,7 @@ public:
 			st X+, r16
 			elpm r16, Z
 			st X+, r16
-			)" : : [result] "r" (resultAddr), [value] "r" (valueAddr) :
+			)" : : [result] "g" (resultAddr), [value] "g" (valueAddr) :
 				"r16", "r26", "r27", "r30", "r31"
 		);
 
