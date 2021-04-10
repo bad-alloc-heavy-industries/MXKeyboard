@@ -4,7 +4,6 @@
 #include <cstring>
 #include <array>
 #include <avr/io.h>
-//#include <avr/pgmspace.h>
 
 template<typename T> struct flash_t final
 {
@@ -129,22 +128,22 @@ private:
 
 public:
 	constexpr flash_t(const uint16_t value) noexcept : value_{value} { }
-	//operator uint16_t() const noexcept { return pgm_read_word_far(&value_); }
 	operator uint16_t() const noexcept
 	{
 		uint16_t result{};
-		__asm__ __volatile__(R"(
-			in r0, %[rampz]
-			out %[rampz], %C[value]
+		const auto valueAddr{reinterpret_cast<uint32_t>(&value_)};
+		const uint8_t z{RAMPZ};
+
+		__asm__(R"(
+			out 0x3B, %C[value]
 			movw r30, %[value]
 			elpm %A[result], Z+
 			elpm %B[result], Z
-			out %[rampz], r0
-			)" :
-			[result] "=r" (result) :
-			[value] "p" (&value_), [rampz] "I" (_SFR_IO_ADDR(RAMPZ)) :
-			"r30", "r31"
+			)" : [result] "=r" (result) : [value] "g" (valueAddr) :
+				"r30", "r31"
 		);
+
+		RAMPZ = z;
 		return result;
 	}
 };
