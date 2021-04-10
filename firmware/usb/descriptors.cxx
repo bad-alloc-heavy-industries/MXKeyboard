@@ -61,7 +61,7 @@ static const std::array<usbInterfaceDescriptor_t, interfaceDescriptorCount> usbI
 		usbDescriptor_t::interface,
 		0, // interface index 0
 		0, // alternate 0
-		0, // one endpoint to the interface
+		1, // one endpoint to the interface
 		usbClass_t::hid,
 		uint8_t(subclasses::hid_t::bootInterface),
 		uint8_t(protocols::hid_t::keyboard),
