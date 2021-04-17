@@ -52,6 +52,7 @@ SECTIONS
 
 	.text : ALIGN(2)
 	{
+		PROVIDE(beginText = .);
 		PROVIDE(vectorAddr = .);
 		*(.vectors)
 		KEEP(*(.vectors))
@@ -67,11 +68,9 @@ SECTIONS
 		*(.progmem.*)
 		*(.lowtext .lowtext.*)
 
-		PROVIDE(globalCtorsStart = .);
-		*(.ctors)
-		*(.ctors.*)
-		KEEP(*(.ctors))
-		PROVIDE(globalCtorsEnd = .);
+		PROVIDE(beginCtors = .);
+		KEEP(*(.init_array .ctors.* .ctors))
+		PROVIDE(endCtors = .);
 
 		*(.startup)
 		KEEP(*(.startup))
@@ -79,6 +78,7 @@ SECTIONS
 		*(.rodata.* .rodata .gnu.linkonce.r*)
 		*(.hightext .hightext.* .progmemx.*)
 		*(.jumptables .jumptables.*)
+		PROVIDE(endText = .);
 	} >text
 
 	.stack :
@@ -90,18 +90,18 @@ SECTIONS
 
 	.data : ALIGN(2)
 	{
-		PROVIDE(dataStart = .);
+		PROVIDE(beginData = .);
 		*(.data .data.* .gnu.linkonce.d*)
-		PROVIDE(dataEnd = .);
+		PROVIDE(endData = .);
 	} >data AT >text
 
-	PROVIDE(dataMemory = LOADADDR(.data));
+	PROVIDE(addrData = LOADADDR(.data));
 
 	.bss :
 	{
-		PROVIDE(bssStart = .);
+		PROVIDE(beginBSS = .);
 		*(.bss .bss.* COMMON)
-		PROVIDE(bssEnd = .);
+		PROVIDE(endBSS = .);
 	} >data
 
 	.noinit :

@@ -5,17 +5,54 @@
 
 extern const char stackTop;
 extern char vectorAddr;
-extern const uint8_t dataStart;
-extern const uint8_t dataEnd;
-extern const uint8_t dataMemory;
-extern char bssStart;
-extern const char bssEnd;
+extern const uint8_t beginData;
+extern const uint8_t endData;
+extern const uint8_t addrData;
+extern uint8_t beginBSS;
+extern const uint8_t endBSS;
+
+using ctorFuncs_t = void (*)();
+extern const ctorFuncs_t beginCtors, endCtors;
 
 #define NAKED __attribute__((naked))
 
 extern "C" void vectorTable() USED SECTION(".vectors") NAKED __attribute__((optimize(0)));
 extern "C" void init() DEFAULT_VISIBILITY USED SECTION(".startup");
 extern "C" void irqEmptyDef() INTERRUPT;
+
+void copyData() noexcept
+{
+	const uint8_t x{RAMPX};
+	const uint8_t z{RAMPZ};
+
+	__asm__(R"(
+		; Set up X with addrData
+		ldi r26, lo8(addrData)
+		ldi r27, hi8(addrData)
+		ldi r16, hh8(addrData)
+		out 0x39, r16
+		; Set up Z with beginData
+		ldi r30, lo8(beginData)
+		ldi r31, hi8(beginData)
+		ldi r16, hh8(beginData)
+		out 0x3B, r16
+		ldi r17, hi8(endData)
+dataCopyLoop:
+		; Check the current value of Z against endData
+		cpi r30, lo8(endData)
+		cpc r31, r17
+		breq dataCopyDone
+		; Load the next byte from Flash and store it at the location pointed to by X
+		elpm r16, Z+
+		st X+, r16
+		rjmp dataCopyLoop
+dataCopyDone:
+		)" : : : "r16", "r17", "r26", "r27", "r30", "r31"
+	);
+
+	RAMPZ = z;
+	RAMPX = x;
+}
 
 void init()
 {
@@ -44,30 +81,10 @@ void init()
 
 	while (true)
 	{
-		__asm__(R"(
-			ldi r26, lo8(dataMemory)
-			ldi r27, hi8(dataMemory)
-			ldi r16, hh8(dataMemory)
-			out 0x3B, r16
-			ldi r30, lo8(dataStart)
-			ldi r31, hi8(dataStart)
-			ldi r16, hh8(dataStart)
-			out 0x3B, r16
-			ldi r16, hi8(dataEnd)
-dataCopyLoop:
-			cpi r30, lo8(dataEnd)
-			cpc r31, r16
-			brne dataCopyDone
-			elpm r0, Z+
-			st X+, r0
-			rjmp dataCopyLoop
-dataCopyDone:
-			)" : : : "r26", "r27", "r30", "r31", "r16", "r0"
-		);
-
-		auto *dst{&bssStart};
-		while (dst < &bssEnd)
-			*dst++ = 0;
+		__builtin_avr_cli();
+		copyData();
+		for (auto *dst{&beginBSS}; dst < &endBSS; ++dst)
+			*dst = 0;
 
 		run();
 	}
