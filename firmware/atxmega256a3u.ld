@@ -57,13 +57,11 @@ SECTIONS
 		*(.vectors)
 		KEEP(*(.vectors))
 
-		*(.progmem.gcc*)
-
-		PROVIDE(__trampolines_start = .);
+		PROVIDE(beginTrampolines = .);
 		/* Handling for jump trampolines */
 		*(.trampolines)
 		*(.trampolines.*)
-		PROVIDE(__trampolines_end = .);
+		PROVIDE(endTrampolines = .);
 
 		*(.progmem.*)
 		*(.lowtext .lowtext.*)
