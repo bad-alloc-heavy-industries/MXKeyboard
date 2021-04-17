@@ -28,20 +28,20 @@ void copyData() noexcept
 
 	__asm__(R"(
 		; Set up X with addrData
-		ldi r26, lo8(addrData)
-		ldi r27, hi8(addrData)
-		ldi r16, hh8(addrData)
+		ldi r26, lo8(beginData)
+		ldi r27, hi8(beginData)
+		ldi r16, hh8(beginData)
 		out 0x39, r16
 		; Set up Z with beginData
-		ldi r30, lo8(beginData)
-		ldi r31, hi8(beginData)
-		ldi r16, hh8(beginData)
+		ldi r30, lo8(addrData)
+		ldi r31, hi8(addrData)
+		ldi r16, hh8(addrData)
 		out 0x3B, r16
 		ldi r17, hi8(endData)
 dataCopyLoop:
 		; Check the current value of Z against endData
-		cpi r30, lo8(endData)
-		cpc r31, r17
+		cpi r26, lo8(endData)
+		cpc r27, r17
 		breq dataCopyDone
 		; Load the next byte from Flash and store it at the location pointed to by X
 		elpm r16, Z+
