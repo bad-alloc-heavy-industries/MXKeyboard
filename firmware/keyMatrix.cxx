@@ -14,6 +14,8 @@
  * The row signals are on Port F, bits 0-5
  */
 
+using namespace mxKeyboard::keyMatrix;
+
 constexpr static const auto columnMask{genMask<std::uint8_t, 0U, 5U>()};
 constexpr static const auto rowMask{genMask<std::uint8_t, 0U, 6U>()};
 
