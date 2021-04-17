@@ -156,21 +156,21 @@ void ledData_t::colour(const uint8_t led, const uint8_t r, const uint8_t g, cons
 
 	if (led & 1U)
 	{
-		maskAndCombine(red[startByte], 0xF0U, correctedR >> 8U);
+		maskAndCombine(red[startByte], 0xF0U, uint8_t(correctedR >> 8U));
 		red[startByte + 1] = uint8_t(correctedR);
-		maskAndCombine(green[startByte], 0xF0U, correctedG >> 8U);
+		maskAndCombine(green[startByte], 0xF0U, uint8_t(correctedG >> 8U));
 		green[startByte + 1] = uint8_t(correctedG);
-		maskAndCombine(blue[startByte], 0xF0U, correctedB >> 8U);
+		maskAndCombine(blue[startByte], 0xF0U, uint8_t(correctedB >> 8U));
 		blue[startByte + 1] = uint8_t(correctedB);
 	}
 	else
 	{
 		red[startByte] = uint8_t(correctedR >> 4U);
-		maskAndCombine(red[startByte + 1], 0x0FU, correctedR << 4U);
+		maskAndCombine(red[startByte + 1], 0x0FU, uint8_t(correctedR << 4U));
 		green[startByte] = uint8_t(correctedG >> 4U);
-		maskAndCombine(green[startByte + 1], 0x0FU, correctedG << 4U);
+		maskAndCombine(green[startByte + 1], 0x0FU, uint8_t(correctedG << 4U));
 		blue[startByte] = uint8_t(correctedB >> 4U);
-		maskAndCombine(blue[startByte + 1], 0x0FU, correctedB << 4U);
+		maskAndCombine(blue[startByte + 1], 0x0FU, uint8_t(correctedB << 4U));
 	}
 }
 
