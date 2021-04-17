@@ -65,15 +65,63 @@ void keyIRQ() noexcept
 		const auto pressStates = PORTF.IN;
 		for (uint8_t row{0}; row < 6; ++row)
 		{
-			const bool keyPressed = (pressStates >> row) & 1U;
-			const auto &key = keyStates[(column * 6) + row];
+			const bool switchState{(pressStates >> row) & 1U};
+			auto &key{keyStates[(column * 6) + row]};
 			if (key.ledIndex == 255)
 				continue;
 
-			if (keyPressed)
-				ledSetValue(key.ledIndex, 0x00, 0xFF, 0x00);
+			if (key.state.physicalState() == switchState)
+			{
+				if (key.state.dirty())
+				{
+					key.debounce = 0;
+					key.timePress = 0;
+					key.timeRelease = 0;
+					key.state.dirty(false);
+				}
+
+				if (key.state.logicalState())
+					ledSetValue(key.ledIndex, 0x00, 0xFF, 0x00);
+				else
+					ledSetValue(key.ledIndex, 0x1F, 0x1F, 0xFF);
+			}
 			else
-				ledSetValue(key.ledIndex, 0x1F, 0x1F, 0xFF);
+			{
+				uint8_t timerCount{0};
+				key.state.dirty(true);
+
+				if (key.debounce)
+				{
+					--key.debounce;
+					continue;
+				}
+				else if (key.state.keyType() == keyType_t::momentary)
+				{
+					if (switchState)
+						timerCount = key.timePress--;
+					else
+						timerCount = key.timeRelease--;
+				}
+				else if (switchState) // keyType_t::latching
+				{
+					// If the latching key is currently considered pressed
+					if (key.state.logicalState())
+						timerCount = key.timeRelease--;
+					else
+						timerCount = key.timePress--;
+				}
+				// If the timer for the key expired
+				if (!timerCount)
+				{
+					key.state.physicalState(switchState);
+					// If the key is momentary, update it with the current real state
+					if (key.state.keyType() == keyType_t::momentary)
+						key.state.logicalState(switchState);
+					// Else invert the logical state as we are completing a key press
+					else if (switchState) // keyType_t::latching
+						key.state.logicalState(!key.state.logicalState());
+				}
+			}
 		}
 	}
 }
