@@ -21,7 +21,7 @@ extern "C" void vectorTable() USED SECTION(".vectors") NAKED __attribute__((opti
 extern "C" void init() DEFAULT_VISIBILITY USED SECTION(".startup");
 extern "C" void irqEmptyDef() INTERRUPT;
 
-void copyData() noexcept
+inline void copyData() noexcept
 {
 	const uint8_t x{RAMPX};
 	const uint8_t z{RAMPZ};
@@ -55,7 +55,7 @@ dataCopyDone:
 	RAMPX = x;
 }
 
-[[gnu::naked]] void callCtors() noexcept
+inline void callCtors() noexcept
 {
 	__asm__(R"(
 		; Set up X with beginCtors
@@ -112,7 +112,7 @@ void init()
 		copyData();
 		for (auto *dst{&beginBSS}; dst < &endBSS; ++dst)
 			*dst = 0;
-		callCtors();
+		//callCtors();
 		run();
 	}
 }
