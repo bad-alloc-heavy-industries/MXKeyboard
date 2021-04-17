@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 #include <cstdint>
+#include <avr/builtins.h>
 #include "MXKeyboard.hxx"
 #include "interrupts.hxx"
 
@@ -54,6 +55,32 @@ dataCopyDone:
 	RAMPX = x;
 }
 
+[[gnu::naked]] void callCtors() noexcept
+{
+	__asm__(R"(
+		; Set up X with beginCtors
+		ldi r26, lo8(beginCtors)
+		ldi r27, hi8(beginCtors)
+ctorLoop:
+		; Check the current value of X against endCtors
+		ldi r16, hi8(endCtors)
+		cpi r26, hi8(endCtors)
+		cpc r27, r16
+		breq ctorDone
+		; Load Z with the next constructor address from Flash
+		movw r30, r26
+		elpm r16, Z+
+		elpm r17, Z+
+		movw r26, r30
+		movw r30, r16
+		; Call the constructor
+		eicall
+		rjmp ctorLoop
+ctorDone:
+		)" : : :
+	);
+}
+
 void init()
 {
 	__asm__("clr r1");
@@ -85,7 +112,7 @@ void init()
 		copyData();
 		for (auto *dst{&beginBSS}; dst < &endBSS; ++dst)
 			*dst = 0;
-
+		callCtors();
 		run();
 	}
 }
