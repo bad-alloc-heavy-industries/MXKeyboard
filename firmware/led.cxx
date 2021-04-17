@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 #include <cstddef>
 #include <array>
-#include <avr/cpufunc.h>
 #include "MXKeyboard.hxx"
 #include "led.hxx"
 #include "uart.hxx"
@@ -25,6 +24,7 @@ struct ledData_t
 	std::array<uint8_t, ledStringLength> red{};
 	std::array<uint8_t, ledStringLength> green{};
 	std::array<uint8_t, ledStringLength> blue{};
+	bool setup{false};
 
 	void colour(uint8_t led, uint8_t r, uint8_t g, uint8_t b) noexcept;
 };
@@ -108,23 +108,22 @@ void ledInit()
 {
 	// Set PE4 and 5 to output and get blanking happening ASAP
 	PORTE.OUTCLR = 0x20;
-	PORTE.DIRSET = 0x30;
 	PORTE.OUTSET = 0x10;
+	PORTE.DIRSET = 0x30;
 	uartInit();
 	timerInit(TCC0);
-	dmaInit(DMA.CH0, DMA_CH_TRIGSRC_USARTC0_DRE_gc);
-	dmaInit(DMA.CH1, DMA_CH_TRIGSRC_USARTD0_DRE_gc);
+	dmaInit(DMA.CH0, DMA_CH_TRIGSRC_USARTD0_DRE_gc);
+	dmaInit(DMA.CH1, DMA_CH_TRIGSRC_USARTC0_DRE_gc);
 	dmaInit(DMA.CH2, DMA_CH_TRIGSRC_USARTC1_DRE_gc);
-	dmaTransferLength(DMA.CH0, leds.red.size());
 	dmaTransferSource(DMA.CH0, leds.red.data());
+	dmaTransferLength(DMA.CH0, leds.red.size());
 	dmaTransferDest(DMA.CH0, &ledChannelToUART(channel_t::red).DATA);
-	dmaTransferLength(DMA.CH1, leds.green.size());
 	dmaTransferSource(DMA.CH1, leds.green.data());
+	dmaTransferLength(DMA.CH1, leds.green.size());
 	dmaTransferDest(DMA.CH1, &ledChannelToUART(channel_t::green).DATA);
-	dmaTransferLength(DMA.CH2, leds.blue.size());
 	dmaTransferSource(DMA.CH2, leds.blue.data());
+	dmaTransferLength(DMA.CH2, leds.blue.size());
 	dmaTransferDest(DMA.CH2, &ledChannelToUART(channel_t::blue).DATA);
-	dmaInterruptEnable(DMA.CH2);
 }
 
 /*
@@ -235,12 +234,14 @@ void nextRGBValue() noexcept
 
 void tcc0OverflowIRQ()
 {
+	if (leds.setup)
+		ledLatch();
 	//for (uint8_t i{0}; i < 109; ++i)
 	for (uint8_t i{106}; i < 109; ++i)
 		ledSetValue(i, redValue, greenValue, blueValue);
 	nextRGBValue();
 
-#if 0
+#if 1
 	dmaTrigger(DMA.CH0);
 	dmaTrigger(DMA.CH1);
 	dmaTrigger(DMA.CH2);
@@ -251,11 +252,8 @@ void tcc0OverflowIRQ()
 		uartWrite(ledChannelToUART(channel_t::green), static_cast<uint8_t>(leds.green[i]));
 		uartWrite(ledChannelToUART(channel_t::blue), static_cast<uint8_t>(leds.blue[i]));
 	}
-	uartWaitTXComplete(ledChannelToUART(channel_t::red));
-	uartWaitTXComplete(ledChannelToUART(channel_t::green));
-	uartWaitTXComplete(ledChannelToUART(channel_t::blue));
-	ledLatch();
 #endif
+	leds.setup = true;
 }
 
 void dmaChannel2IRQ() { ledLatch(); }
