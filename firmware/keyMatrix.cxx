@@ -51,6 +51,7 @@ void keyInit() noexcept
 	{
 		const key_t key = keys[i];
 		keyState->ledIndex = key.ledIndex;
+		keyState->usbScancode = key.usbScancode;
 	}
 }
 
