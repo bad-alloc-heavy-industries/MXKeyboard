@@ -238,12 +238,7 @@ namespace usb::descriptors
 			uint16_t length;
 		};
 
-		enum class descriptor_t : uint8_t
-		{
-			usage = 0
-		};
-
-		enum class descriptorType_t : uint8_t
+		enum struct descriptorType_t : uint8_t
 		{
 			main = 0x00U,
 			global = 0x04U,
@@ -251,15 +246,97 @@ namespace usb::descriptors
 			reserved = 0x0CU
 		};
 
-		enum class usagePage_t : uint8_t
+		namespace items
 		{
-			genericDesktop = 1
+			enum struct global_t : uint8_t
+			{
+				usagePage = 0x00U,
+				logicalMinimum = 0x10U,
+				logicalMaximum = 0x20U,
+				physicalMinimum = 0x30U,
+				physicalMaximum = 0x40U,
+				unitExponent = 0x50U,
+				unit = 0x60U,
+				reportSize = 0x70U,
+				reportID = 0x80U,
+				reportCount = 0x90U,
+				push = 0xA0U,
+				pop = 0xB0U
+			};
+
+			enum struct local_t : uint8_t
+			{
+				usage = 0x00U,
+				usageMinimum = 0x10U,
+				usageMaximum = 0x20U,
+			};
+
+			enum struct main_t : uint8_t
+			{
+				input = 0x80U,
+				output = 0x90U,
+				collection = 0xA0U,
+				feaure = 0xB0U,
+				endCollection = 0xC0U,
+			};
+
+			constexpr inline uint8_t operator |(const global_t desc, const uint8_t size) noexcept
+				{ return uint8_t(desc) | uint8_t(descriptorType_t::global) | size; }
+			constexpr inline uint8_t operator |(const local_t desc, const uint8_t size) noexcept
+				{ return uint8_t(desc) | uint8_t(descriptorType_t::local) | size; }
+			constexpr inline uint8_t operator |(const main_t desc, const uint8_t size) noexcept
+				{ return uint8_t(desc) | uint8_t(descriptorType_t::main) | size; }
+		} // namespace items
+
+		enum struct collectionType_t : uint8_t
+		{
+			physical = 0,
+			application = 1,
+			logical = 2,
+			report = 3,
+			namedArray = 4,
+			usageSwitch = 5,
+			usageModifier = 6
 		};
 
-		enum class systemUsage_t : uint8_t
+		enum struct usagePage_t : uint8_t
 		{
-			keyboard = 9
+			genericDesktop = 1,
+			keyboard = 7,
+			led = 8
 		};
+
+		enum struct systemUsage_t : uint8_t
+		{
+			keyboard = 6
+		};
+
+		enum struct led_t : uint8_t
+		{
+			undefined = 0,
+			numLock = 1,
+			capsLock = 2,
+			scrollLock = 3,
+			compose = 4,
+			kana = 5,
+			power = 6,
+			shift = 7
+		};
+
+		enum struct input_t : uint8_t
+		{
+			data = 0,
+			array = 0,
+			absolute = 0,
+			constant = 1,
+			variable = 2,
+			relative = 3,
+		};
+
+		constexpr inline uint8_t operator |(const input_t a, const input_t b) noexcept
+			{ return uint8_t(a) | uint8_t(b); }
+		constexpr inline uint8_t operator |(const uint8_t a, const input_t b) noexcept
+			{ return a | uint8_t(b); }
 
 		constexpr inline uint8_t log2(uint8_t value) noexcept
 		{
@@ -281,9 +358,6 @@ namespace usb::descriptors
 				return 0x03U; // BAD..
 			return log2(size);
 		}
-
-		constexpr inline uint8_t operator |(const descriptor_t desc, const descriptorType_t type) noexcept
-			{ return uint8_t(desc) | uint8_t(type); }
 	} // namespace hid
 
 	struct usbMultiPartDesc_t final
