@@ -288,6 +288,21 @@ namespace usb::descriptors
 				{ return uint8_t(desc) | uint8_t(descriptorType_t::main) | size; }
 		} // namespace items
 
+		enum struct main_t : uint8_t
+		{
+			data = 0,
+			array = 0,
+			absolute = 0,
+			constant = 1,
+			variable = 2,
+			relative = 3,
+		};
+
+		constexpr inline uint8_t operator |(const main_t a, const main_t b) noexcept
+			{ return uint8_t(a) | uint8_t(b); }
+		constexpr inline uint8_t operator |(const uint8_t a, const main_t b) noexcept
+			{ return a | uint8_t(b); }
+
 		enum struct collectionType_t : uint8_t
 		{
 			physical = 0,
@@ -473,21 +488,6 @@ namespace usb::descriptors
 			power = 6,
 			shift = 7
 		};
-
-		enum struct input_t : uint8_t
-		{
-			data = 0,
-			array = 0,
-			absolute = 0,
-			constant = 1,
-			variable = 2,
-			relative = 3,
-		};
-
-		constexpr inline uint8_t operator |(const input_t a, const input_t b) noexcept
-			{ return uint8_t(a) | uint8_t(b); }
-		constexpr inline uint8_t operator |(const uint8_t a, const input_t b) noexcept
-			{ return a | uint8_t(b); }
 
 		constexpr inline uint8_t log2(uint8_t value) noexcept
 		{

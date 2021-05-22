@@ -90,7 +90,7 @@ static const hid::hidDescriptor_t usbKeyboardDesc
 	hidReportDescriptorCount
 };
 
-static const std::array<uint8_t, 40> usbKeyboardReport
+static const std::array<uint8_t, 63> usbKeyboardReport
 {{
 	// Usage Page (Generic Desktop)
 	hid::items::global_t::usagePage | hid::descriptorSize(1),
@@ -125,7 +125,7 @@ static const std::array<uint8_t, 40> usbKeyboardReport
 	8,
 	// Input (Data | Variable | Absolute) Modifier byte
 	hid::items::main_t::input | hid::descriptorSize(1),
-	hid::input_t::data | hid::input_t::variable | hid::input_t::absolute,
+	hid::main_t::data | hid::main_t::variable | hid::main_t::absolute,
 	// Report Count (1)
 	hid::items::global_t::reportCount | hid::descriptorSize(1),
 	1,
@@ -133,10 +133,10 @@ static const std::array<uint8_t, 40> usbKeyboardReport
 	hid::items::global_t::reportSize | hid::descriptorSize(1),
 	8,
 	hid::items::main_t::input | hid::descriptorSize(1),
-	0U | hid::input_t::constant,
-	// Report Count (5)
+	0U | hid::main_t::constant,
+	// Report Count (3)
 	hid::items::global_t::reportCount | hid::descriptorSize(1),
-	5,
+	3,
 	// Report Size (1)
 	hid::items::global_t::reportSize | hid::descriptorSize(1),
 	1,
@@ -151,7 +151,42 @@ static const std::array<uint8_t, 40> usbKeyboardReport
 	uint8_t(hid::led_t::scrollLock),
 	// Output (Data | Variable | Absolute) LED report
 	hid::items::main_t::output | hid::descriptorSize(1),
-	hid::input_t::data | hid::input_t::variable | hid::input_t::absolute,
+	hid::main_t::data | hid::main_t::variable | hid::main_t::absolute,
+	// Report Count (5)
+	hid::items::global_t::reportCount | hid::descriptorSize(1),
+	5,
+	// Report Size (3)
+	hid::items::global_t::reportSize | hid::descriptorSize(1),
+	3,
+	// Output (Constant)
+	hid::items::main_t::output | hid::descriptorSize(1),
+	0U | hid::main_t::constant,
+	// Report Count (6)
+	hid::items::global_t::reportCount | hid::descriptorSize(1),
+	6,
+	// Report Size (8)
+	hid::items::global_t::reportSize | hid::descriptorSize(1),
+	8,
+	// Usage Page (KeyCodes)
+	hid::items::global_t::usagePage | hid::descriptorSize(1),
+	uint8_t(hid::usagePage_t::keyboard),
+	// Usage Minimum (Minimum Scancode) = 0
+	hid::items::local_t::usageMinimum | hid::descriptorSize(1),
+	uint8_t(hid::scancode_t::reserved),
+	// Usage Maximum (Maximum Scancode) = 0x65
+	hid::items::local_t::usageMaximum | hid::descriptorSize(1),
+	uint8_t(hid::scancode_t::power),
+	// Logical Minumum = 0
+	hid::items::global_t::logicalMinimum | hid::descriptorSize(1),
+	0,
+	// Logical Maximum = 101
+	hid::items::global_t::logicalMaximum | hid::descriptorSize(1),
+	101,
+	// Input (Data | Array) Scancodes
+	hid::items::main_t::input | hid::descriptorSize(1),
+	hid::main_t::data | hid::main_t::array,
+	// End Collection
+	hid::items::main_t::endCollection | hid::descriptorSize(0)
 }};
 
 static const std::array<hid::reportDescriptor_t, hidReportDescriptorCount> usbKeyboardReportDesc
