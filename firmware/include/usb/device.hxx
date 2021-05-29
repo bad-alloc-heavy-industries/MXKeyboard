@@ -138,6 +138,7 @@ namespace usb
 	{
 		extern types::setupPacket_t packet;
 		extern uint8_t activeConfig;
+		extern uint8_t activeAltMode;
 
 		extern void handleControlPacket() noexcept;
 		extern types::answer_t handleGetDescriptor() noexcept;
