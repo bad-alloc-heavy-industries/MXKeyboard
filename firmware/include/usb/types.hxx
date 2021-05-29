@@ -61,6 +61,7 @@ namespace vals::usb
 	// Endpoint control register constants
 	constexpr static const uint8_t usbEPCtrlStall{0x04};
 	constexpr static const uint8_t usbEPCtrlItrDisable{0x08};
+	constexpr static const uint8_t usbEPCtrlTypeMask{0xC0};
 
 	// Endpoint status register constants
 	constexpr static const uint8_t usbEPStatusDTS{0x01};
