@@ -9,7 +9,8 @@ void usbHandleStatusCtrlEP() noexcept;
 
 namespace usb::device
 {
-	setupPacket_t packet;
+	setupPacket_t packet{};
+	uint8_t activeConfig{};
 
 	answer_t handleStandardRequest() noexcept
 	{

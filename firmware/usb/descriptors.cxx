@@ -344,6 +344,26 @@ namespace usb::device
 				epStatusControllerIn[0].partsData = string;
 				return {response_t::data, nullptr, string.totalLength(), memory_t::flash};
 			}
+			case usbDescriptor_t::hid:
+			{
+				if (descriptor.index >= 1 || activeConfig != 1)
+					break;
+				const auto descriptor{*usbHIDDescriptor};
+				epStatusControllerIn[0].isMultiPart(true);
+				epStatusControllerIn[0].partNumber = 0;
+				epStatusControllerIn[0].partsData = descriptor;
+				return {response_t::data, nullptr, descriptor.totalLength(), memory_t::flash};
+			}
+			case usbDescriptor_t::report:
+			{
+				if (descriptor.index >= hidReportDescriptorCount || activeConfig != 1)
+					break;
+				const auto reportDescriptor{*usbReports[descriptor.index]};
+				epStatusControllerIn[0].isMultiPart(true);
+				epStatusControllerIn[0].partNumber = 0;
+				epStatusControllerIn[0].partsData = reportDescriptor;
+				return {response_t::data, nullptr, reportDescriptor.totalLength(), memory_t::flash};
+			}
 			default:
 				break;
 		}

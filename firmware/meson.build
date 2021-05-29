@@ -11,7 +11,8 @@ firmwareArgs = targetCXX.get_supported_arguments(
 	'-Wno-misspelled-isr',
 	'-Wvla',
 	'-Wimplicit-fallthrough',
-	'-Wstack-usage=2048'
+	'-Wstack-usage=2048',
+	'-fno-jump-tables'
 )
 
 if debug and optimisation == '0'
