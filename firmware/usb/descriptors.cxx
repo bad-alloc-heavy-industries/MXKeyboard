@@ -221,10 +221,13 @@ static const std::array<usbMultiPartDesc_t, 6> usbConfigSecs
 	}
 }};
 
-static const std::array<flash_t<usbMultiPartTable_t>, 1> usbConfigDescriptors
-{{
-	{{usbConfigSecs.begin(), usbConfigSecs.end()}}
-}};
+namespace usb::descriptors
+{
+	const std::array<flash_t<usbMultiPartTable_t>, usb::configDescriptorCount> usbConfigDescriptors
+	{{
+		{{usbConfigSecs.begin(), usbConfigSecs.end()}}
+	}};
+} // namespace usb::descriptors
 
 static const std::array<usbMultiPartDesc_t, 2> usbHIDSecs
 {{

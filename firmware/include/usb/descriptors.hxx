@@ -697,6 +697,8 @@ namespace usb::descriptors
 			return parts;
 		}
 	};
+
+	extern const std::array<flash_t<usbMultiPartTable_t>, usb::configDescriptorCount> usbConfigDescriptors;
 } // namespace usb::descriptors
 
 #endif /*USB_DESCRIPTORS__HXX*/
