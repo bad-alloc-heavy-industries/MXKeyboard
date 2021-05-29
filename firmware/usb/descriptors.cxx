@@ -226,6 +226,37 @@ static const std::array<flash_t<usbMultiPartTable_t>, 1> usbConfigDescriptors
 	{{usbConfigSecs.begin(), usbConfigSecs.end()}}
 }};
 
+static const std::array<usbMultiPartDesc_t, 2> usbHIDSecs
+{{
+	{
+		sizeof(hid::hidDescriptor_t),
+		&usbKeyboardDesc
+	},
+	{
+		sizeof(hid::reportDescriptor_t),
+		&usbKeyboardReportDesc
+	}
+}};
+
+static const flash_t<usbMultiPartTable_t> usbHIDDescriptor{{usbHIDSecs.begin(), usbHIDSecs.end()}};
+
+static const std::array<usbMultiPartDesc_t, 2> usbBootReportSecs
+{{
+	{
+		sizeof(hid::reportDescriptor_t),
+		&usbKeyboardReportDesc
+	},
+	{
+		usbKeyboardReport.size(),
+		usbKeyboardReport.data()
+	},
+}};
+
+static const std::array<flash_t<usbMultiPartTable_t>, hidReportDescriptorCount> usbReports
+{{
+	{{usbBootReportSecs.begin(), usbBootReportSecs.end()}}
+}};
+
 static const std::array<usbStringDesc_t, stringCount + 1> usbStringDescs
 {{
 	{{u"\x0904", 1}},
