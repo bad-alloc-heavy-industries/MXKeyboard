@@ -4,7 +4,7 @@
 
 #include <array>
 #include "flash.hxx"
-#include "usb/descriptors.hxx"
+#include "usb/types.hxx"
 
 namespace mxKeyboard::keyMatrix
 {

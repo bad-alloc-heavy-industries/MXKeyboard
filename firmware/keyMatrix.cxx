@@ -19,7 +19,7 @@ using namespace mxKeyboard::keyMatrix;
 constexpr static const auto columnMask{genMask<std::uint8_t, 0U, 5U>()};
 constexpr static const auto rowMask{genMask<std::uint8_t, 0U, 6U>()};
 
-std::array<keyState_t, keyCount> keyStates{};
+std::array<keyState_t, keyCount> keyStates{{}};
 
 void keyInit() noexcept
 {
@@ -61,7 +61,7 @@ void keyIRQ() noexcept
 	{
 		PORTA.OUT = column;
 		// This waits for the propergation delays in the 3-to-8 decoders so the PORTF read is valid
-		for (volatile uint8_t wait{0}; wait < 2; ++wait)
+		for (volatile uint8_t wait{0}; wait < 1; ++wait)
 			continue;
 		const auto pressStates = PORTF.IN;
 		for (uint8_t row{0}; row < 6; ++row)
