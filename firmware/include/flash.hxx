@@ -46,6 +46,47 @@ loopDone%=:
 	}
 };
 
+template<typename T> struct flash_t<T *> final
+{
+private:
+	const void *value_;
+
+public:
+	constexpr flash_t() noexcept : value_{nullptr} { }
+	constexpr flash_t(const void *const value) noexcept : value_{value} { }
+
+	T operator *() const noexcept
+	{
+		T result{};
+		const auto resultAddr{reinterpret_cast<uint32_t>(&result)};
+		const auto valueAddr{reinterpret_cast<uint32_t>(value_)};
+		const uint8_t x{RAMPX};
+		const uint8_t z{RAMPZ};
+
+		__asm__(R"(
+			movw r26, %[result]
+			out 0x39, %C[result]
+			movw r30, %[value]
+			out 0x3B, %C[value]
+			ldi r17, %[count]
+			cpi r17, 0
+loop%=:
+			breq loopDone%=
+			elpm r16, Z+
+			st X+, r16
+			dec r17
+			rjmp loop%=
+loopDone%=:
+			)" : : [result] "g" (resultAddr), [value] "g" (valueAddr), [count] "I" (sizeof(T)) :
+				"r16", "r17", "r26", "r27", "r30", "r31"
+		);
+
+		RAMPZ = z;
+		RAMPX = x;
+		return result;
+	}
+};
+
 template<> struct flash_t<uint8_t> final
 {
 private:
