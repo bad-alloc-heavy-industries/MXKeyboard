@@ -96,6 +96,15 @@ namespace usb
 					std::memcpy(&result, &value, sizeof(value));
 					return result;
 				}
+
+				[[nodiscard]] uint8_t asConfiguration() const noexcept
+				{
+					uint8_t result{};
+					static_assert(sizeof(uint8_t) < sizeof(uint16_t));
+					static_assert(sizeof(uint8_t) == 1);
+					std::memcpy(&result, &value, sizeof(result));
+					return result;
+				}
 			};
 
 			struct index_t final

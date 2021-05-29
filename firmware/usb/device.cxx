@@ -5,12 +5,97 @@
 using namespace usb;
 using namespace usb::types;
 using namespace usb::core;
+using usb::descriptors::usbDescriptor_t;
+using usb::descriptors::usbEndpointDescriptor_t;
+using usb::descriptors::usbEndpointType_t;
 void usbHandleStatusCtrlEP() noexcept;
 
 namespace usb::device
 {
 	setupPacket_t packet{};
 	uint8_t activeConfig{};
+
+	namespace endpoint
+	{
+		uint8_t mapType(const usbEndpointType_t type)
+		{
+			switch (type)
+			{
+				case usbEndpointType_t::isochronous:
+					return USB_EP_TYPE_ISOCHRONOUS_gc;
+				case usbEndpointType_t::control:
+					return USB_EP_TYPE_CONTROL_gc;
+				default:
+					break;
+			}
+			return USB_EP_TYPE_BULK_gc;
+		}
+
+		uint8_t mapMaxSize(const uint16_t size)
+		{
+			if (size <= 8)
+				return USB_EP_BUFSIZE_8_gc;
+			else if (size <= 16)
+				return USB_EP_BUFSIZE_16_gc;
+			else if (size <= 32)
+				return USB_EP_BUFSIZE_32_gc;
+			else if (size <= 64)
+				return USB_EP_BUFSIZE_64_gc;
+			// This should never happen..
+			return USB_EP_BUFSIZE_1023_gc;
+		}
+	}
+
+	void setupEndpoint(const usbEndpointDescriptor_t &endpoint)
+	{
+		if (endpoint.endpointType == usbEndpointType_t::control)
+			return;
+
+		const auto direction{static_cast<endpointDir_t>(endpoint.endpointAddress & ~usb::descriptors::endpointDirMask)};
+		const auto endpointNumber{uint8_t(endpoint.endpointAddress & usb::descriptors::endpointDirMask)};
+		auto &epCtrl
+		{
+			[direction](endpointCtrl_t &endpoint) -> USB_EP_t &
+			{
+				if (direction == endpointDir_t::controllerIn)
+					return endpoint.controllerIn;
+				else
+					return endpoint.controllerOut;
+			}(endpoints[endpointNumber])
+		};
+
+		epCtrl.CNT = 0;
+		epCtrl.CTRL = endpoint::mapType(endpoint.endpointType) | endpoint::mapMaxSize(endpoint.maxPacketSize);
+	}
+
+	bool handleSetConfiguration() noexcept
+	{
+		usb::core::resetEPs(epReset_t::user);
+
+		const auto config{packet.value.asConfiguration()};
+		if (config > usb::configDescriptorCount)
+			return false;
+		activeConfig = config;
+
+		if (activeConfig == 0)
+			usbState = deviceState_t::addressed;
+		else
+		{
+			const auto descriptors{*usb::descriptors::usbConfigDescriptors[activeConfig - 1]};
+			for (const auto &part : descriptors)
+			{
+				flash_t<char *> descriptor{static_cast<const char *>(part.descriptor)};
+				const auto type{static_cast<usbDescriptor_t>(descriptor[1])};
+				if (type == usbDescriptor_t::endpoint)
+				{
+					const auto endpoint{*flash_t<usbEndpointDescriptor_t *>{part.descriptor}};
+					setupEndpoint(endpoint);
+				}
+			}
+		}
+
+		return true;
+	}
 
 	answer_t handleStandardRequest() noexcept
 	{
@@ -23,6 +108,15 @@ namespace usb::device
 				return {response_t::zeroLength, nullptr, 0, memory_t::sram};
 			case request_t::getDescriptor:
 				return handleGetDescriptor();
+			case request_t::setConfiguration:
+				if (handleSetConfiguration())
+					// Acknowledge the request.
+					return {response_t::zeroLength, nullptr, 0, memory_t::sram};
+				else
+					// Bad request? Stall.
+					return {response_t::stall, nullptr, 0, memory_t::sram};
+			case request_t::getConfiguration:
+				return {response_t::data, &activeConfig, 1, memory_t::sram};
 		}
 
 		return {response_t::unhandled, nullptr, 0, memory_t::sram};
