@@ -15,6 +15,7 @@ namespace usb::device
 	setupPacket_t packet{};
 	uint8_t activeConfig{};
 	uint8_t activeAltMode{};
+	std::array<uint8_t, 2> statusResponse{};
 
 	namespace endpoint
 	{
@@ -98,6 +99,43 @@ namespace usb::device
 		return true;
 	}
 
+	answer_t handleGetStatus() noexcept
+	{
+		const auto &epStatus{epStatusControllerIn[0]};
+
+		switch (packet.requestType.recipient())
+		{
+		case setupPacket::recipient_t::device:
+			statusResponse[0] = 0; // We are bus-powered and don't support remote wakeup
+			statusResponse[1] = 0;
+			return {response_t::data, statusResponse.data(), statusResponse.size(), memory_t::sram};
+		case setupPacket::recipient_t::interface:
+			// Interface requests are required to answer with all 0's
+			statusResponse[0] = 0;
+			statusResponse[1] = 0;
+			return {response_t::data, statusResponse.data(), statusResponse.size(), memory_t::sram};
+		case setupPacket::recipient_t::endpoint:
+		{
+			auto &epCtrl
+			{
+				[](endpointCtrl_t &endpoint) -> USB_EP_t &
+				{
+					if (packet.index.dir() == endpointDir_t::controllerIn)
+						return endpoint.controllerIn;
+					else
+						return endpoint.controllerOut;
+				}(endpoints[packet.index.endpoint()])
+			};
+			statusResponse[0] = (epCtrl.STATUS & vals::usb::usbEPStatusStall) ? 1 : 0;
+			statusResponse[1] = 0;
+			return {response_t::data, statusResponse.data(), statusResponse.size(), memory_t::sram};
+		}
+		default:
+			// Bad request? Stall.
+			return {response_t::stall, nullptr, 0, memory_t::sram};
+		}
+	}
+
 	answer_t handleStandardRequest() noexcept
 	{
 		const auto &epStatus{epStatusControllerIn[0]};
@@ -118,6 +156,8 @@ namespace usb::device
 					return {response_t::stall, nullptr, 0, memory_t::sram};
 			case request_t::getConfiguration:
 				return {response_t::data, &activeConfig, 1, memory_t::sram};
+			case request_t::getStatus:
+				return handleGetStatus();
 			case request_t::getInterface:
 				return {response_t::data, &activeAltMode, 1, memory_t::sram};
 			case request_t::setInterface:
