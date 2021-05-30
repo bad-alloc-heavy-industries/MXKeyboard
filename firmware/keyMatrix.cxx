@@ -133,4 +133,5 @@ void keyIRQ() noexcept
 			}
 		}
 	}
+	usb::hid::handleReport();
 }

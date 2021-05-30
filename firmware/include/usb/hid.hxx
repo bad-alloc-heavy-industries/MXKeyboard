@@ -25,6 +25,7 @@ namespace usb::hid
 
 	extern void keyPress(scancode_t key) noexcept;
 	extern void keyRelease(scancode_t key) noexcept;
+	extern void handleReport() noexcept;
 } // namespace usb::hid
 
 #endif /*USB_HID__HXX*/

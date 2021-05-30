@@ -260,8 +260,6 @@ namespace usb::core
 
 			if (endpoint == 0)
 				usb::device::handleControlPacket();
-			else if (usb::device::activeConfig == 1 && endpoint == 1 && direction == endpointDir_t::controllerIn)
-				usb::hid::handleReport();
 		}
 	}
 } // namespace usb::core
