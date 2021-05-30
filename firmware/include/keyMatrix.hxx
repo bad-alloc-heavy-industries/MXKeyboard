@@ -89,7 +89,7 @@ namespace mxKeyboard::keyMatrix
 
 		{{12, usbScancode_t::f2}},
 		{{13, usbScancode_t::_2}},
-		{{14, usbScancode_t::u}},
+		{{14, usbScancode_t::w}},
 		{{15, usbScancode_t::s}},
 		{{16, usbScancode_t::z}},
 		{{17, usbScancode_t::leftAlt}},
