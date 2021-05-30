@@ -66,7 +66,7 @@ void usbInit() noexcept
 	USB.ADDR &= ~vals::usb::addressMask;
 
 	// Enable the USB reset interrupt
-	USB.INTCTRLA |= vals::usb::intCtrlAEnableBusEvent | USB_INTLVL_MED_gc;
+	USB.INTCTRLA |= vals::usb::intCtrlAEnableBusEvent | USB_INTLVL_LO_gc;
 
 	// Initialise the state machine
 	usbState = deviceState_t::detached;

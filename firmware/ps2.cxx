@@ -15,7 +15,7 @@
  * in the in-built div2 gives a BSEL of 800 - 1
  */
 
-constexpr inline uint8_t highByte(uint16_t value) noexcept { return value >> 8; }
+constexpr inline uint8_t highByte(uint16_t value) noexcept { return value >> 8U; }
 constexpr inline uint8_t lowByte(uint16_t value) noexcept { return uint8_t(value); }
 
 constexpr static uint8_t PORT_INVEN_gc{0x40U};
@@ -39,7 +39,7 @@ void ps2Init() noexcept
 	USARTE0.CTRLB = 0x18U;
 	// Enable PE1 as INT0IF
 	PORTE.INT0MASK = 0x02U;
-	PORTE.INTCTRL = (PORTE.INTCTRL & 0xFCU) | PORT_INT0LVL_MED_gc;
+	PORTE.INTCTRL = uint8_t((PORTE.INTCTRL & 0xFCU) | PORT_INT0LVL_MED_gc);
 	// TODO: Check with a scope.
 }
 
