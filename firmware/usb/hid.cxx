@@ -126,7 +126,7 @@ namespace usb::hid
 	{{
 		{
 			usbDescriptor_t::report,
-			sizeof(hid::reportDescriptor_t) + usbKeyboardReport.size()
+			usbKeyboardReport.size()
 		}
 	}};
 }
