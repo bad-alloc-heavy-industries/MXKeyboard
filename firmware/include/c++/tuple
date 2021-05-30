@@ -275,28 +275,28 @@ namespace std
 		constexpr tuple &operator =(conditional_t<assignable<const elements_t &...>(), const tuple &,
 			const impl::noneSuch_t &> tuple) noexcept(nothrowAssignable<const elements_t &...>())
 		{
-			assign(tuple);
+			impl::tuple_t<0, elements_t...>::assign(tuple);
 			return *this;
 		}
 
 		constexpr tuple &operator =(conditional_t<assignable<elements_t...>(), tuple &&,
 			impl::noneSuch_t &&> tuple) noexcept(nothrowAssignable<elements_t...>())
 		{
-			assign(std::move(tuple));
+			impl::tuple_t<0, elements_t...>::assign(std::move(tuple));
 			return *this;
 		}
 
 		template<typename... uElements_t> constexpr enable_if_t<assignable<const uElements_t &...>(), tuple &>
 			operator =(const tuple<uElements_t...> &tuple) noexcept(nothrowAssignable<const uElements_t &...>())
 		{
-			assign(tuple);
+			impl::tuple_t<0, elements_t...>::assign(tuple);
 			return *this;
 		}
 
 		template<typename... uElements_t> constexpr enable_if_t<assignable<uElements_t...>(), tuple &>
 			operator =(tuple<uElements_t...> &&tuple) noexcept(nothrowAssignable<uElements_t...>())
 		{
-			assign(std::move(tuple));
+			impl::tuple_t<0, elements_t...>::assign(std::move(tuple));
 			return *this;
 		}
 
@@ -373,6 +373,9 @@ namespace std
 		{ return std::forward<T &&>(impl::typeGet<T>(tuple)); }
 	template<typename T, typename... types_t> constexpr const T &&get(const tuple<types_t...> &&tuple) noexcept
 		{ return std::forward<const T &&>(impl::typeGet<T>(tuple)); }
+
+	template<typename... elements_t> constexpr tuple<elements_t &...> tie(elements_t &...args) noexcept
+		{ return tuple<elements_t &...>(args...); }
 
 	template<typename... elements_t> constexpr inline void
 		swap(tuple<elements_t...> &x, tuple<elements_t...> &y) noexcept(noexcept(x.swap(y))) { x.swap(y); }
