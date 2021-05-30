@@ -109,8 +109,6 @@ namespace usb::device
 
 	answer_t handleGetStatus() noexcept
 	{
-		const auto &epStatus{epStatusControllerIn[0]};
-
 		switch (packet.requestType.recipient())
 		{
 		case setupPacket::recipient_t::device:
@@ -146,8 +144,6 @@ namespace usb::device
 
 	answer_t handleStandardRequest() noexcept
 	{
-		const auto &epStatus{epStatusControllerIn[0]};
-
 		switch (packet.request)
 		{
 			case request_t::setAddress:
