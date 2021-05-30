@@ -152,22 +152,24 @@ namespace usb::device
 				if (handleSetConfiguration())
 					// Acknowledge the request.
 					return {response_t::zeroLength, nullptr, 0, memory_t::sram};
-				else
-					// Bad request? Stall.
-					return {response_t::stall, nullptr, 0, memory_t::sram};
+				// Bad request? Stall.
+				return {response_t::stall, nullptr, 0, memory_t::sram};
 			case request_t::getConfiguration:
 				return {response_t::data, &activeConfig, 1, memory_t::sram};
 			case request_t::getStatus:
 				return handleGetStatus();
 			case request_t::getInterface:
-				return {response_t::data, &activeAltMode, 1, memory_t::sram};
+				if (packet.index == 0)
+					// If the interface is the correct one
+					return {response_t::data, &activeAltMode, 1, memory_t::sram};
+				// Bad request? Stall.
+				return {response_t::stall, nullptr, 0, memory_t::sram};
 			case request_t::setInterface:
 				if (packet.value == 0)
 					// Valid alt-mode, ack it.
 					return {response_t::zeroLength, nullptr, 0, memory_t::sram};
-				else
-					// Bad requeust? Stall.
-					return {response_t::stall, nullptr, 0, memory_t::sram};
+				// Bad requeust? Stall.
+				return {response_t::stall, nullptr, 0, memory_t::sram};
 		}
 
 		return {response_t::unhandled, nullptr, 0, memory_t::sram};
