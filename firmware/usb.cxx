@@ -164,6 +164,82 @@ namespace usb::core
 		return outBuffer + length;
 	}
 
+	/*!
+	 * @returns true when the all the data to be read has been retreived,
+	 * false if there is more left to fetch.
+	 */
+	bool readEP(const uint8_t ep) noexcept
+	{
+		auto &epStatus{epStatusControllerOut[ep]};
+		auto &epCtrl{endpoints[ep].controllerOut};
+		auto readCount{epCtrl.CNT};
+		// Bounds sanity and then adjust how much is left to transfer
+		if (readCount > epStatus.transferCount)
+			readCount = epStatus.transferCount;
+		epStatus.transferCount -= readCount;
+		epStatus.memBuffer = recvData(ep, epStatus.memBuffer, readCount);
+		// Mark the recv buffer contents as done with
+		epCtrl.CNT = 0;
+		epCtrl.STATUS = 0;
+		return !epStatus.transferCount;
+	}
+
+	/*!
+	 * @returns true when the data to be transmitted is entirely sent,
+	 * false if there is more left to send.
+	 */
+	bool writeEP(const uint8_t ep) noexcept
+	{
+		auto &epStatus{epStatusControllerIn[ep]};
+		auto &epCtrl{endpoints[ep].controllerIn};
+		const auto sendCount{[&]() noexcept -> uint8_t
+		{
+			// Bounds sanity and then adjust how much is left to transfer
+			if (epStatus.transferCount < epBufferSize)
+				return epStatus.transferCount;
+			return epBufferSize;
+		}()};
+		epStatus.transferCount -= sendCount;
+
+		if (!epStatus.isMultiPart())
+			epStatus.memBuffer = sendData(ep, epStatus.memBuffer, sendCount);
+		else
+		{
+			if (!epStatus.memBuffer)
+				epStatus.memBuffer = (*epStatus.partsData.part(0)).descriptor;
+			auto sendAmount{sendCount};
+			uint8_t sendOffset{0};
+			while (sendAmount)
+			{
+				const auto part{*epStatus.partsData.part(epStatus.partNumber)};
+				auto *const begin{static_cast<const uint8_t *>(part.descriptor)};
+				const auto partAmount{[&]() -> uint8_t
+				{
+					auto *const buffer{static_cast<const uint8_t *>(epStatus.memBuffer)};
+					const auto amount{part.length - uint8_t(buffer - begin)};
+					if (amount > sendAmount)
+						return sendAmount;
+					return amount;
+				}()};
+				sendAmount -= partAmount;
+				epStatus.memBuffer = sendData(ep, epStatus.memBuffer, partAmount, sendOffset);
+				sendOffset += partAmount;
+				// Get the buffer back to check if we exhausted it
+				auto *const buffer{static_cast<const uint8_t *>(epStatus.memBuffer)};
+				if (uint8_t(buffer - begin) == part.length &&
+						epStatus.partNumber + 1 < epStatus.partsData.count())
+					// We exhausted the chunk's buffer, so grab the next chunk
+					epStatus.memBuffer = (*epStatus.partsData.part(++epStatus.partNumber)).descriptor;
+			}
+			if (!epStatus.transferCount)
+				epStatus.isMultiPart(false);
+		}
+		// Mark the buffer as ready to send
+		epCtrl.CNT = sendCount;
+		epCtrl.STATUS &= ~(vals::usb::usbEPStatusNotReady | vals::usb::usbEPStatusNACK0);
+		return !epStatus.transferCount;
+	}
+
 	template<endpointDir_t direction> void handlePacket(const uint8_t endpoint)
 	{
 		const auto status{[=]()
