@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: BSD-3-Clause
 #include "usb/core.hxx"
 #include "usb/device.hxx"
+#include "usb/hid.hxx"
 
 using namespace usb;
 using namespace usb::types;
@@ -315,6 +316,8 @@ namespace usb::device
 		epStatusControllerOut[0].transferCount = 0;
 
 		const auto &[response, data, size, memoryType] = handleStandardRequest();
+		if (activeConfig == 1 && response == response_t::unhandled)
+			usb::hid::handleHIDRequest();
 
 		epStatusControllerIn[0].stall(response == response_t::stall || response == response_t::unhandled);
 		epStatusControllerIn[0].needsArming(response == response_t::data || response == response_t::zeroLength);
