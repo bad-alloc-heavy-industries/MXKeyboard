@@ -317,9 +317,14 @@ namespace usb::device
 		epStatusControllerOut[0].stall(false);
 		epStatusControllerOut[0].transferCount = 0;
 
-		const auto &[response, data, size, memoryType] = handleStandardRequest();
+		response_t response{response_t::unhandled};
+		const void *data{nullptr};
+		std::size_t size{0};
+		memory_t memoryType{memory_t::sram};
+
+		std::tie(response, data, size, memoryType) = handleStandardRequest();
 		if (activeConfig == 1 && response == response_t::unhandled)
-			usb::hid::handleHIDRequest();
+			std::tie(response, data, size, memoryType) = usb::hid::handleHIDRequest();
 
 		epStatusControllerIn[0].stall(response == response_t::stall || response == response_t::unhandled);
 		epStatusControllerIn[0].needsArming(response == response_t::data || response == response_t::zeroLength);
