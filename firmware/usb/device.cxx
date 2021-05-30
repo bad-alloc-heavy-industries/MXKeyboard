@@ -95,6 +95,13 @@ namespace usb::device
 					setupEndpoint(endpoint);
 				}
 			}
+
+			// TODO: Make this not hard-coded.
+			if (activeConfig == 1)
+			{
+				usb::hid::init();
+				activeAltMode = 0;
+			}
 		}
 
 		return true;

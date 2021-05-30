@@ -5,6 +5,7 @@
 #include "indexedIterator.hxx"
 #include "usb/core.hxx"
 #include "usb/device.hxx"
+#include "usb/hid.hxx"
 
 /*!
  * "USB IN" transfers == Controller In
@@ -259,6 +260,8 @@ namespace usb::core
 
 			if (endpoint == 0)
 				usb::device::handleControlPacket();
+			else if (usb::device::activeConfig == 1 && endpoint == 1 && direction == endpointDir_t::controllerIn)
+				usb::hid::handleReport();
 		}
 	}
 } // namespace usb::core

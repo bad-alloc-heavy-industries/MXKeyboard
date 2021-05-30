@@ -2,6 +2,7 @@
 #include "usb/core.hxx"
 #include "usb/device.hxx"
 #include "usb/hid.hxx"
+#include "indexSequence.hxx"
 
 using usb::hidReportDescriptorCount;
 using namespace usb::types;
@@ -147,6 +148,24 @@ static const flash_t<usbMultiPartTable_t> usbHIDDescriptor{{usbHIDSecs.begin(), 
 
 namespace usb::hid
 {
+	bool reportStale{false};
+	bootReport_t bootReport{};
+
+	std::array<scancode_t, 99> keyQueue{};
+	std::size_t keyCount{};
+
+	static_assert(sizeof(bootReport_t) == 8);
+
+	void init() noexcept
+	{
+		reportStale = false;
+		bootReport = {};
+		keyCount = 0;
+
+		epStatusControllerIn[1].stall(false);
+		epStatusControllerIn[1].memoryType(memory_t::sram);
+	}
+
 	answer_t handleGetDescriptor() noexcept
 	{
 		if (packet.requestType.dir() == endpointDir_t::controllerOut)
@@ -183,5 +202,74 @@ namespace usb::hid
 	{
 		if (packet.request == request_t::getDescriptor)
 			return handleGetDescriptor();
+		return {response_t::unhandled, nullptr, 0, memory_t::sram};
+	}
+
+	void handleReport() noexcept
+	{
+		if (reportStale)
+		{
+			if (keyCount > bootReport.keyCodes.size())
+			{
+				for (auto &keyCode : bootReport.keyCodes)
+					keyCode = scancode_t::errorRollOver;
+			}
+			else
+				std::memcpy(bootReport.keyCodes.data(), keyQueue.data(), bootReport.keyCodes.size());
+
+			epStatusControllerIn[1].memBuffer = &bootReport;
+			epStatusControllerIn[1].needsArming(true);
+			epStatusControllerIn[1].transferCount = sizeof(bootReport);
+			reportStale = false;
+			writeEP(1);
+		}
+	}
+
+	void handleModifier(const scancode_t key, const bool pressed) noexcept
+	{
+		const uint8_t bit{uint8_t(uint8_t(key) - uint8_t(scancode_t::leftControl))};
+		const auto mask = 1U << bit;
+		if (pressed)
+			bootReport.modifier |= mask;
+		else
+			bootReport.modifier &= ~mask;
+		reportStale = true;
+	}
+
+	void keyPress(const scancode_t key) noexcept
+	{
+		if (key >= scancode_t::leftControl && key <= scancode_t::rightMeta)
+			handleModifier(key, true);
+		else
+		{
+			for (const auto &i : utility::indexSequence_t{keyCount})
+			{
+				if (keyQueue[i] == key)
+					return;
+			}
+			keyQueue[keyCount] = key;
+			++keyCount;
+			reportStale = true;
+		}
+	}
+
+	void keyRelease(const scancode_t key) noexcept
+	{
+		if (key >= scancode_t::leftControl && key <= scancode_t::rightMeta)
+			handleModifier(key, false);
+		else
+		{
+			bool found{false};
+			for (const auto &i : utility::indexSequence_t{keyCount})
+			{
+				if (found)
+					keyQueue[i - 1] = keyQueue[i];
+				else if (keyQueue[i] == key)
+					found = true;
+			}
+			if (found)
+				keyQueue[--keyCount] = scancode_t::reserved;
+			reportStale = true;
+		}
 	}
 } // namespace usb::hid

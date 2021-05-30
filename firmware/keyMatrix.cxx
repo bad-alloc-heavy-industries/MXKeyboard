@@ -8,6 +8,7 @@
 #include "mask.hxx"
 #include "indexedIterator.hxx"
 #include "led.hxx"
+#include "usb/hid.hxx"
 
 /*!
  * The column signals are on Port A, bits 0-4
@@ -52,6 +53,8 @@ void keyInit() noexcept
 		const key_t key = keys[i];
 		keyState->ledIndex = key.ledIndex;
 		keyState->usbScancode = key.usbScancode;
+		if (key.ledIndex != 255)
+			ledSetValue(key.ledIndex, 0x1F, 0x1F, 0xFF);
 	}
 }
 
@@ -79,12 +82,17 @@ void keyIRQ() noexcept
 					key.timePress = 0;
 					key.timeRelease = 0;
 					key.state.dirty(false);
+					if (key.state.logicalState())
+					{
+						ledSetValue(key.ledIndex, 0x00, 0xFF, 0x00);
+						usb::hid::keyPress(key.usbScancode);
+					}
+					else
+					{
+						ledSetValue(key.ledIndex, 0x1F, 0x1F, 0xFF);
+						usb::hid::keyRelease(key.usbScancode);
+					}
 				}
-
-				if (key.state.logicalState())
-					ledSetValue(key.ledIndex, 0x00, 0xFF, 0x00);
-				else
-					ledSetValue(key.ledIndex, 0x1F, 0x1F, 0xFF);
 			}
 			else
 			{
