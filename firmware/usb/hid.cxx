@@ -209,6 +209,8 @@ namespace usb::hid
 	{
 		if (reportStale)
 		{
+			pauseWriteEP(1);
+
 			if (keyCount > bootReport.keyCodes.size())
 			{
 				for (auto &keyCode : bootReport.keyCodes)
