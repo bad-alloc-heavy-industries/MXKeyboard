@@ -55,6 +55,9 @@ void keyInit() noexcept
 		keyState->usbScancode = key.usbScancode;
 		if (key.ledIndex != 255)
 			ledSetValue(key.ledIndex, 0x1F, 0x1F, 0xFF);
+		if (key.usbScancode == usbScancode_t::numLock || key.usbScancode == usbScancode_t::capsLock ||
+			key.usbScancode == usbScancode_t::scrollLock)
+			keyState->state.keyType(keyType_t::latching);
 	}
 }
 
