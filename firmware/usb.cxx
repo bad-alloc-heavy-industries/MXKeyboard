@@ -241,6 +241,12 @@ namespace usb::core
 		return !epStatus.transferCount;
 	}
 
+	void pauseWriteEP(const uint8_t ep) noexcept
+	{
+		auto &epCtrl{endpoints[ep].controllerIn};
+		epCtrl.STATUS |= vals::usb::usbEPStatusNotReady | vals::usb::usbEPStatusNACK0;
+	}
+
 	template<endpointDir_t direction> void handlePacket(const uint8_t endpoint)
 	{
 		const auto status{[=]()
