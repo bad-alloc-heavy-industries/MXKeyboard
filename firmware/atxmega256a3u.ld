@@ -5,7 +5,8 @@ OUTPUT_ARCH(avr:106)
 MEMORY
 {
 	/* Once we start writing the bootloader, text should become 0x040000 in size. */
-	text	(rx)	: ORIGIN = 0x000000, LENGTH = 0x042000
+	text	(rx)	: ORIGIN = 0x000000, LENGTH = 0x041000
+	profile (r!x)	: ORIGIN = 0x041000, LENGTH = 0x001000
 	data	(rw!x)	: ORIGIN = 0x802000, LENGTH = 0x004000
 	eeprom	(rw!x)	: ORIGIN = 0x801000, LENGTH = 0x001000
 	fuse	(rw!x)	: ORIGIN = 0x820000, LENGTH = 0x000006
@@ -94,6 +95,11 @@ SECTIONS
 	} >data AT >text
 
 	PROVIDE(addrData = LOADADDR(.data));
+
+	.profile : ALIGN(2)
+	{
+		KEEP(*(.profile))
+	} >profile
 
 	.bss :
 	{
