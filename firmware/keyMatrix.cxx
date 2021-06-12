@@ -7,7 +7,9 @@
 #include "keyMatrix.hxx"
 #include "mask.hxx"
 #include "indexedIterator.hxx"
+#include "indexSequence.hxx"
 #include "led.hxx"
+#include "profile.hxx"
 #include "usb/hid.hxx"
 
 /*!
@@ -16,10 +18,12 @@
  */
 
 using namespace mxKeyboard::keyMatrix;
+using mxKeyboard::profile::profile_t;
 
 constexpr static const auto columnMask{genMask<std::uint8_t, 0U, 5U>()};
 constexpr static const auto rowMask{genMask<std::uint8_t, 0U, 6U>()};
 
+profile_t profile{};
 std::array<keyState_t, keyCount> keyStates{{}};
 
 void keyInit() noexcept
@@ -47,17 +51,48 @@ void keyInit() noexcept
 	TCD0.PERBUF = 10000; // 1MHz / 1kHz = 5000
 	TCD0.CNT = 0;
 
-	// Pull the initial key state information from flash
-	for (const auto &[i, keyState] : utility::indexedIterator_t{keyStates})
+	// Enable normal lds/sts access to the EEPROM
+	NVM.CTRLB |= NVM_EEMAPEN_bm;
+
+	profile = profile_t::read(0);
+	if (!profile.valid(0))
 	{
+		profile.clear();
+		profile.number(0);
+		profile.debounce(1);
+
+		for (const auto &index : utility::indexSequence_t{keyCount})
+		{
+			const auto i{static_cast<uint8_t>(index)};
+			const key_t key = keys[i];
+			profile.keyColour(i, {0x1FU, 0x1FU, 0xFFU});
+			profile.timePress(i, 0);
+			profile.timePress(i, 0);
+			profile.scancode(i, key.usbScancode);
+
+			if (key.usbScancode == usbScancode_t::numLock || key.usbScancode == usbScancode_t::capsLock ||
+				key.usbScancode == usbScancode_t::scrollLock)
+				profile.keyType(i, keyType_t::latching);
+		}
+		profile.write();
+	}
+
+	// Pull the initial key state information from flash
+	for (const auto &[index, keyState] : utility::indexedIterator_t{keyStates})
+	{
+		const auto i{static_cast<uint8_t>(index)};
 		const key_t key = keys[i];
+		keyState->state = {};
+		keyState->debounce = profile.debounce();
+		keyState->timePress = profile.timePress(i);
+		keyState->timeRelease = profile.timeRelease(i);
 		keyState->ledIndex = key.ledIndex;
-		keyState->usbScancode = key.usbScancode;
+		keyState->ledColour = profile.keyColour(i);
+		keyState->usbScancode = profile.scancode(i);
+		keyState->state.keyType(profile.keyType(i) ? keyType_t::latching : keyType_t::momentary);
+
 		if (key.ledIndex != 255)
-			ledSetValue(key.ledIndex, 0x1F, 0x1F, 0xFF);
-		if (key.usbScancode == usbScancode_t::numLock || key.usbScancode == usbScancode_t::capsLock ||
-			key.usbScancode == usbScancode_t::scrollLock)
-			keyState->state.keyType(keyType_t::latching);
+			ledSetValue(key.ledIndex, keyState->ledColour.r, keyState->ledColour.g, keyState->ledColour.b);
 	}
 }
 
@@ -92,7 +127,7 @@ void keyIRQ() noexcept
 					}
 					else
 					{
-						ledSetValue(key.ledIndex, 0x1F, 0x1F, 0xFF);
+						ledSetValue(key.ledIndex, key.ledColour.r, key.ledColour.g, key.ledColour.b);
 						usb::hid::keyRelease(key.usbScancode);
 					}
 				}

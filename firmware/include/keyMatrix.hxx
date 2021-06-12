@@ -75,6 +75,7 @@ namespace mxKeyboard::keyMatrix
 		uint8_t timePress{0};
 		uint8_t timeRelease{0};
 		uint8_t ledIndex{255};
+		rgb_t ledColour{};
 		usbScancode_t usbScancode{0};
 	};
 
