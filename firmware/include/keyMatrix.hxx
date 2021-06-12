@@ -43,21 +43,21 @@ namespace mxKeyboard::keyMatrix
 		void physicalState(const bool state) noexcept
 		{
 			value &= 0xFEU;
-			value |= state ? 0x01U : 0x00U;
+			value |= uint8_t(state ? 0x01U : 0x00U);
 		}
 
 		bool logicalState() const noexcept { return value & 0x02U; }
 		void logicalState(const bool state) noexcept
 		{
 			value &= 0xFDU;
-			value |= state ? 0x02U : 0x00U;
+			value |= uint8_t(state ? 0x02U : 0x00U);
 		}
 
 		bool dirty() const noexcept { return value & 0x04U; }
 		void dirty(const bool state) noexcept
 		{
 			value &= 0xFBU;
-			value |= state ? 0x04U : 0x00U;
+			value |= uint8_t(state ? 0x04U : 0x00U);
 		}
 
 		keyType_t keyType() const noexcept { return static_cast<keyType_t>(value & 0x08U); }
