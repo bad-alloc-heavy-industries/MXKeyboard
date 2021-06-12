@@ -12,6 +12,13 @@ namespace mxKeyboard::keyMatrix
 
 	using usbScancode_t = usb::descriptors::hid::scancode_t;
 
+	struct rgb_t final
+	{
+		uint8_t r;
+		uint8_t g;
+		uint8_t b;
+	};
+
 	struct key_t final
 	{
 		uint8_t ledIndex;
