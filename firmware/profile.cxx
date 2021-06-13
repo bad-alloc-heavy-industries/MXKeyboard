@@ -41,7 +41,7 @@ loopDone%=:
 	{
 		NVM.CMD = NVM_CMD_ERASE_FLASH_BUFFER_gc;
 		CCP = CCP_IOREG_gc;
-		NVM.CTRLA |= NVM_CMDEX_bm;
+		NVM.CTRLA = NVM_CMDEX_bm;
 		while (NVM.STATUS & NVM_NVMBUSY_bm)
 			continue;
 	}
@@ -86,8 +86,9 @@ loopDone%=:
 			)" : : [page] "r" (pageAddr) : "r16", "r30", "r31"
 		);
 
-		while (NVM.STATUS & NVM_FBUSY_bm)
+		while (NVM.STATUS & NVM_NVMBUSY_bm)
 			continue;
+		NVM.CMD = NVM_CMD_NO_OPERATION_gc;
 	}
 
 public:
