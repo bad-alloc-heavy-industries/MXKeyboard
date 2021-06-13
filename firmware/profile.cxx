@@ -116,7 +116,7 @@ public:
 
 		const auto *const sourceBuffer{reinterpret_cast<const uint8_t *>(&source)};
 		const auto destAddr{reinterpret_cast<uint32_t>(value_)};
-		auto pageAddr{destAddr & uint32_t(~(flashPageSize - 1U))};
+		auto pageAddr{destAddr & uint32_t(~flashPageMask)};
 		auto offset{static_cast<uint16_t>(destAddr - pageAddr)};
 
 		readToRAM(pageAddr, reinterpret_cast<uint32_t>(flashBuffer.data()), offset);
@@ -134,7 +134,7 @@ public:
 		else
 		{
 			auto remainder{static_cast<uint16_t>((offset + sizeof(flashPart_t)) - flashPageSize)};
-			offset &= flashPageSize - 1U;
+			offset &= flashPageMask;
 			erasePageBuffer();
 			loadPageBuffer(pageAddr, flashBuffer);
 			writePage(pageAddr);
