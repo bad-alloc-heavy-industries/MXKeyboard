@@ -1,11 +1,14 @@
 // SPDX-License-Identifier: BSD-3-Clause
+#include "indexSequence.hxx"
 #include "profile.hxx"
 
 using mxKeyboard::keyMatrix::keyType_t;
 using mxKeyboard::profile::flashPart_t;
 
-constexpr static size_t flashPageSize{512U};
-constexpr static size_t eepromPageSize{32U};
+constexpr static uint16_t flashPageSize{512U};
+constexpr static auto flashPageMask{flashPageSize - 1U};
+constexpr static uint16_t eepromPageSize{32U};
+constexpr static auto eepromPageMask{eepromPageSize - 1U};
 
 template<> struct flash_t<flashPart_t> final
 {
@@ -150,6 +153,72 @@ public:
 	}
 };
 
+struct eeprom_t final
+{
+private:
+	[[gnu::noinline]]
+	static void writePage(const uint32_t pageAddr) noexcept
+	{
+		NVM.CMD = NVM_CMD_ERASE_WRITE_EEPROM_PAGE_gc;
+		NVM.ADDR0 = pageAddr & 0xFFU;
+		NVM.ADDR1 = (pageAddr >> 8U) & 0xFFU;
+		NVM.ADDR2 = (pageAddr >> 16U) & 0xFFU;
+		CCP = CCP_IOREG_gc;
+		NVM.CTRLA = NVM_CMDEX_bm;
+		while (NVM.STATUS & NVM_NVMBUSY_bm)
+			continue;
+	}
+
+public:
+	template<typename T> static void write(uint16_t destAddr, const T &source) noexcept
+	{
+		auto *eeprom{reinterpret_cast<uint8_t *>(MAPPED_EEPROM_START)};
+		const auto *const sourceBuffer{reinterpret_cast<const uint8_t *>(&source)};
+		auto pageAddr{destAddr & uint16_t(~eepromPageMask)};
+
+		eeprom += pageAddr;
+		for (const auto &i : utility::indexSequence_t{destAddr - pageAddr})
+		{
+			// Load the EEPROM data
+			volatile const auto value{eeprom[i]};
+			// Load the EEPROM Page Buffer with that data
+			eeprom[i] = value;
+		}
+
+		auto offset{static_cast<uint16_t>(destAddr - pageAddr)};
+		for (const auto &i : utility::indexSequence_t{sizeof(T)})
+		{
+			// If we are on a page boundary and that is not the start of the 0th page
+			if (offset + i && ((offset + i) & eepromPageMask) == 0)
+			{
+				// Perform an atomic erase + write cycle
+				writePage(pageAddr);
+				pageAddr += eepromPageSize;
+			}
+			// Load the EEPROM Page Buffer with data
+			eeprom[offset + i] = sourceBuffer[i];
+		}
+
+		offset += sizeof(T);
+		const auto remainder{offset & eepromPageMask};
+		offset &= uint16_t(~eepromPageMask);
+		if (remainder)
+		{
+			for (const auto &i : utility::indexSequence_t{remainder, eepromPageSize})
+			{
+				// Load the EEPROM data
+				volatile const auto value{eeprom[offset + i]};
+				// Load the EEPROM Page Buffer with that data
+				eeprom[offset + i] = value;
+			}
+		}
+		// Flush the final page to EEPROM
+		writePage(pageAddr);
+
+		NVM.CMD = NVM_CMD_NO_OPERATION_gc;
+	}
+};
+
 namespace mxKeyboard::profile
 {
 	[[gnu::section(".profile")]] const static std::array<flashPart_t, profileCount> flashProfiles{{}};
@@ -169,6 +238,7 @@ namespace mxKeyboard::profile
 	{
 		flash_t<flashPart_t> flashPart{&flashProfiles[eeprom.profileNumber]};
 		flashPart = flash;
+		eeprom_t::write(sizeof(eepromPart_t) * eeprom.profileNumber, eeprom);
 	}
 
 	void profile_t::keyType(const uint8_t index, const keyType_t type) noexcept
