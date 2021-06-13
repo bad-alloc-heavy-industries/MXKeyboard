@@ -3,7 +3,7 @@
 firmwareSrc = [
 	'startup.cxx', 'fuses.cxx', 'MXKeyboard.cxx', 'uart.cxx',
 	'system.cxx', 'led.cxx', 'timer.cxx', 'dma.cxx',
-	'memory.cxx', 'ps2.cxx', 'keyMatrix.cxx',
+	'memory.cxx', 'ps2.cxx', 'keyMatrix.cxx', 'profile.cxx',
 	'usb.cxx', 'usb/descriptors.cxx', 'usb/device.cxx', 'usb/hid.cxx'
 ]
 
