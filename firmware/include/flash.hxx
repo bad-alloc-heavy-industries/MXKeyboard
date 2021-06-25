@@ -14,7 +14,9 @@ public:
 	constexpr flash_t() noexcept : value_{} { }
 	constexpr flash_t(const T value) noexcept : value_{value} { }
 
-	operator T() const noexcept
+	operator T() const noexcept { return operator *(); }
+
+	T operator *() const noexcept
 	{
 		T result{};
 		const auto resultAddr{reinterpret_cast<uint32_t>(&result)};
