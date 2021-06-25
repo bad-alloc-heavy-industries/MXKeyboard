@@ -181,7 +181,7 @@ namespace usb::types
 		void transferTerminated(const bool terminated) noexcept
 		{
 			value &= 0xFEU;
-			value |= terminated ? 0x01U : 0x00U;
+			value |= uint8_t(terminated ? 0x01U : 0x00U);
 		}
 
 		[[nodiscard]] bool transferTerminated() const noexcept { return value & 0x01U; }
@@ -189,7 +189,7 @@ namespace usb::types
 		void needsArming(const bool needed) noexcept
 		{
 			value &= 0xFDU;
-			value |= needed ? 0x02U : 0x00U;
+			value |= uint8_t(needed ? 0x02U : 0x00U);
 		}
 
 		[[nodiscard]] bool needsArming() const noexcept { return value & 0x02U; }
@@ -197,7 +197,7 @@ namespace usb::types
 		void stall(const bool needed) noexcept
 		{
 			value &= 0xFBU;
-			value |= needed ? 0x04U : 0x00U;
+			value |= uint8_t(needed ? 0x04U : 0x00U);
 		}
 
 		[[nodiscard]] bool stall() const noexcept { return value & 0x04U; }
@@ -205,7 +205,7 @@ namespace usb::types
 		void isMultiPart(const bool multiPart) noexcept
 		{
 			value &= 0xF7U;
-			value |= multiPart ? 0x08U : 0x00U;
+			value |= uint8_t(multiPart ? 0x08U : 0x00U);
 		}
 
 		[[nodiscard]] bool isMultiPart() const noexcept { return value & 0x08U; }
@@ -213,7 +213,7 @@ namespace usb::types
 		void memoryType(memory_t type) noexcept
 		{
 			value &= 0xEFU;
-			value |= type == memory_t::flash ? 0x10U : 0x00U;
+			value |= uint8_t(type == memory_t::flash ? 0x10U : 0x00U);
 		}
 
 		memory_t memoryType() const noexcept { return (value & 0x10U) ? memory_t::flash : memory_t::sram; }
