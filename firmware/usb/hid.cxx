@@ -4,7 +4,6 @@
 #include "usb/hid.hxx"
 #include "indexSequence.hxx"
 
-using usb::hidReportDescriptorCount;
 using namespace usb::types;
 using namespace usb::descriptors;
 using namespace usb::core;
@@ -156,7 +155,7 @@ namespace usb::hid
 
 	static_assert(sizeof(bootReport_t) == 8);
 
-	void init() noexcept
+	void init(const uint8_t endpoint) noexcept
 	{
 		reportStale = false;
 		bootReport = {};
@@ -273,5 +272,17 @@ namespace usb::hid
 				keyQueue[--keyCount] = scancode_t::reserved;
 			reportStale = true;
 		}
+	}
+
+	static const handler_t hidKeyboardHandler
+	{
+		init,
+		nullptr,
+		nullptr
+	};
+
+	void registerHandlers(const uint8_t inEP, const uint8_t config) noexcept
+	{
+		registerHandler({inEP, endpointDir_t::controllerIn}, config, hidKeyboardHandler);
 	}
 } // namespace usb::hid

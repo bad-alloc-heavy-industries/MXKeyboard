@@ -26,11 +26,30 @@ dragonAVR = subproject(
 	'dragonAVR_dep'
 )
 
+dragonUSB = subproject(
+	'dragonUSB',
+	required: true,
+	version: '>=0.0.1',
+	default_options: [
+		'chip=atxmega256a3u',
+		'interfaces=1',
+		'endpoints=1',
+		'epBufferSize=64',
+		'configDescriptors=1',
+		'ifaceDescriptors=1',
+		'endpointDescriptors=1',
+		'strings=4',
+		#'drivers=dfu'
+	]
+).get_variable(
+	'dragonUSB_dep'
+)
+
 firmwareSrc = [
 	'startup.cxx', 'fuses.cxx', 'MXKeyboard.cxx', 'uart.cxx',
 	'system.cxx', 'led.cxx', 'timer.cxx', 'dma.cxx',
 	'memory.cxx', 'ps2.cxx', 'keyMatrix.cxx', 'profile.cxx',
-	'usb.cxx', 'usb/descriptors.cxx', 'usb/device.cxx', 'usb/hid.cxx'
+	'usb/descriptors.cxx', 'usb/hid.cxx'
 ]
 
 firmwareArgs = targetCXX.get_supported_arguments(
@@ -53,7 +72,7 @@ firmware = executable(
 	'MXKeyboard',
 	firmwareSrc,
 	include_directories: include_directories('include'),
-	dependencies: [substrate, dragonAVR],
+	dependencies: [substrate, dragonAVR, dragonUSB],
 	cpp_args: firmwareArgs,
 	link_args: ['-T', '@0@/atxmega256a3u.ld'.format(meson.current_source_dir())],
 	gnu_symbol_visibility: 'inlineshidden',

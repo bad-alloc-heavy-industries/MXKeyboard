@@ -3,7 +3,8 @@
 #define USB_HID__HXX
 
 #include <array>
-#include "types.hxx"
+#include <usb/types.hxx>
+#include "constants.hxx"
 
 namespace usb::hid
 {
@@ -26,6 +27,8 @@ namespace usb::hid
 	extern void keyPress(scancode_t key) noexcept;
 	extern void keyRelease(scancode_t key) noexcept;
 	extern void handleReport() noexcept;
+
+	extern void registerHandlers(uint8_t inEP, uint8_t config) noexcept;
 } // namespace usb::hid
 
 #endif /*USB_HID__HXX*/
