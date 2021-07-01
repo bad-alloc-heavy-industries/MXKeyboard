@@ -1,5 +1,31 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
+substrate = subproject(
+	'substrate',
+	required: true,
+	version: '>=0.0.1',
+	default_options: [
+		'build_tests=false',
+		'build_library=false'
+	]
+).get_variable(
+	'substrate_dep'
+).partial_dependency(
+	compile_args: true,
+	includes: true
+)
+
+dragonAVR = subproject(
+	'dragonAVR',
+	required: true,
+	version: '>=0.0.1',
+	default_options: [
+		'chip=atxmega256a3u'
+	]
+).get_variable(
+	'dragonAVR_dep'
+)
+
 firmwareSrc = [
 	'startup.cxx', 'fuses.cxx', 'MXKeyboard.cxx', 'uart.cxx',
 	'system.cxx', 'led.cxx', 'timer.cxx', 'dma.cxx',
@@ -26,7 +52,8 @@ endif
 firmware = executable(
 	'MXKeyboard',
 	firmwareSrc,
-	include_directories: include_directories('include', 'include/c++'),
+	include_directories: include_directories('include'),
+	dependencies: [substrate, dragonAVR],
 	cpp_args: firmwareArgs,
 	link_args: ['-T', '@0@/atxmega256a3u.ld'.format(meson.current_source_dir())],
 	gnu_symbol_visibility: 'inlineshidden',
