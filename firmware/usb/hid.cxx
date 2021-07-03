@@ -197,10 +197,28 @@ namespace usb::hid
 		return {response_t::unhandled, nullptr, 0, memory_t::sram};
 	}
 
-	answer_t handleHIDRequest() noexcept
+	static answer_t handleHIDRequest() noexcept
 	{
-		if (packet.request == request_t::getDescriptor)
-			return handleGetDescriptor();
+		return {response_t::unhandled, nullptr, 0, memory_t::sram};
+	}
+
+	static answer_t handleSetupRequest(std::size_t interface, const usb::types::setupPacket_t &) noexcept
+	{
+		if (packet.requestType.recipient() != setupPacket::recipient_t::interface ||
+			packet.index != interface)
+			return {response_t::unhandled, nullptr, 0};
+
+		switch (packet.requestType.type())
+		{
+			case setupPacket::request_t::typeStandard:
+				if (packet.request == request_t::getDescriptor)
+					return handleGetDescriptor();
+				break;
+			case setupPacket::request_t::typeClass:
+				return handleHIDRequest();
+			default:
+				break;
+		}
 		return {response_t::unhandled, nullptr, 0, memory_t::sram};
 	}
 
@@ -284,6 +302,6 @@ namespace usb::hid
 	void registerHandlers(const uint8_t inEP, const uint8_t interface, const uint8_t config) noexcept
 	{
 		usb::core::registerHandler({inEP, endpointDir_t::controllerIn}, config, *hidKeyboardHandler);
-		usb::device::registerHandler(interface, config, handleHIDRequest);
+		usb::device::registerHandler(interface, config, handleSetupRequest);
 	}
 } // namespace usb::hid

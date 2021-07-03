@@ -20,15 +20,11 @@ namespace usb::hid
 	extern const hidDescriptor_t usbKeyboardDesc;
 	extern const std::array<reportDescriptor_t, hidReportDescriptorCount> usbKeyboardReportDesc;
 
-	extern void init() noexcept;
-	extern types::answer_t handleHIDRequest() noexcept;
-	extern void handleReport() noexcept;
-
 	extern void keyPress(scancode_t key) noexcept;
 	extern void keyRelease(scancode_t key) noexcept;
 	extern void handleReport() noexcept;
 
-	extern void registerHandlers(uint8_t inEP, uint8_t config) noexcept;
+	extern void registerHandlers(uint8_t inEP, uint8_t interface, uint8_t config) noexcept;
 } // namespace usb::hid
 
 #endif /*USB_HID__HXX*/
