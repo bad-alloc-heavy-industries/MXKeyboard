@@ -155,7 +155,7 @@ namespace usb::hid
 
 	static_assert(sizeof(bootReport_t) == 8);
 
-	void init(const uint8_t endpoint) noexcept
+	static void init(const uint8_t endpoint) noexcept
 	{
 		reportStale = false;
 		bootReport = {};
@@ -165,7 +165,7 @@ namespace usb::hid
 		epStatusControllerIn[1].memoryType(memory_t::sram);
 	}
 
-	answer_t handleGetDescriptor() noexcept
+	static answer_t handleGetDescriptor() noexcept
 	{
 		if (packet.requestType.dir() == endpointDir_t::controllerOut)
 			return {response_t::unhandled, nullptr, 0, memory_t::sram};
@@ -226,7 +226,7 @@ namespace usb::hid
 		}
 	}
 
-	void handleModifier(const scancode_t key, const bool pressed) noexcept
+	static void handleModifier(const scancode_t key, const bool pressed) noexcept
 	{
 		const uint8_t bit{uint8_t(uint8_t(key) - uint8_t(scancode_t::leftControl))};
 		const auto mask = 1U << bit;
@@ -274,15 +274,16 @@ namespace usb::hid
 		}
 	}
 
-	static const handler_t hidKeyboardHandler
-	{
+	static const flash_t<handler_t> hidKeyboardHandler
+	{{
 		init,
 		nullptr,
 		nullptr
-	};
+	}};
 
-	void registerHandlers(const uint8_t inEP, const uint8_t config) noexcept
+	void registerHandlers(const uint8_t inEP, const uint8_t interface, const uint8_t config) noexcept
 	{
-		registerHandler({inEP, endpointDir_t::controllerIn}, config, hidKeyboardHandler);
+		usb::core::registerHandler({inEP, endpointDir_t::controllerIn}, config, *hidKeyboardHandler);
+		usb::device::registerHandler(interface, config, handleHIDRequest);
 	}
 } // namespace usb::hid
