@@ -79,6 +79,8 @@ namespace mxKeyboard::keyMatrix
 		usbScancode_t usbScancode{0};
 	};
 
+	extern void updateKey(usbScancode_t scancode, bool pressed);
+
 	const std::array<flash_t<key_t>, keyCount> keys
 	{{
 		{{0, usbScancode_t::escape}},

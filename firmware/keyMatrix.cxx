@@ -26,6 +26,10 @@ constexpr static const auto rowMask{genMask<std::uint8_t, 0U, 6U>()};
 static profile_t profile{};
 static std::array<keyState_t, keyCount> keyStates{{}};
 
+static keyState_t *numLock;
+static keyState_t *capsLock;
+static keyState_t *scrollLock;
+
 void keyInit() noexcept
 {
 	// Set up column scan
@@ -93,6 +97,13 @@ void keyInit() noexcept
 
 		if (key.ledIndex != 255)
 			ledSetValue(key.ledIndex, keyState.ledColour.r, keyState.ledColour.g, keyState.ledColour.b);
+
+		if (key.usbScancode == usbScancode_t::numLock)
+			numLock = &keyState;
+		else if (key.usbScancode == usbScancode_t::capsLock)
+			capsLock = &keyState;
+		else if (key.usbScancode == usbScancode_t::scrollLock)
+			scrollLock = &keyState;
 	}
 }
 
@@ -110,6 +121,24 @@ namespace mxKeyboard::keyMatrix
 			ledSetValue(key.ledIndex, key.ledColour.r, key.ledColour.g, key.ledColour.b);
 			usb::hid::keyRelease(key.usbScancode);
 		}
+	}
+
+	void updateKey(const usbScancode_t scancode, const bool pressed)
+	{
+		auto &key
+		{
+			[scancode]() -> keyState_t &
+			{
+				if (scancode == usbScancode_t::numLock)
+					return *numLock;
+				else if (scancode == usbScancode_t::capsLock)
+					return *capsLock;
+				else if (scancode == usbScancode_t::scrollLock)
+					return *scrollLock;
+			}()
+		};
+		key.state.logicalState(pressed);
+		updateKey(key);
 	}
 }
 

@@ -1,12 +1,15 @@
 // SPDX-License-Identifier: BSD-3-Clause
-#include "usb/core.hxx"
-#include "usb/device.hxx"
+#include <usb/core.hxx>
+#include <usb/device.hxx>
 #include "usb/hid.hxx"
 #include "indexSequence.hxx"
+#include "usb/hidTypes.hxx"
+#include "keyMatrix.hxx"
 
+using namespace usb::core;
+using namespace usb::device;
 using namespace usb::types;
 using namespace usb::descriptors;
-using namespace usb::core;
 using usb::device::packet;
 
 namespace usb::hid
@@ -195,6 +198,16 @@ namespace usb::hid
 				break;
 		}
 		return {response_t::unhandled, nullptr, 0, memory_t::sram};
+	}
+
+	static void adjustLockKeyStates() noexcept
+	{
+		// num lock
+		mxKeyboard::keyMatrix::updateKey(scancode_t::numLock, statusStates & 0x01U);
+		// caps lock
+		mxKeyboard::keyMatrix::updateKey(scancode_t::capsLock, statusStates & 0x02U);
+		// scroll lock
+		mxKeyboard::keyMatrix::updateKey(scancode_t::scrollLock, statusStates & 0x04U);
 	}
 
 	static answer_t handleHIDRequest() noexcept
