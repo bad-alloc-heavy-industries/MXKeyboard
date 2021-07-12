@@ -197,7 +197,7 @@ namespace usb::hid
 			default:
 				break;
 		}
-		return {response_t::unhandled, nullptr, 0, memory_t::sram};
+		return {response_t::stall, nullptr, 0};
 	}
 
 	static void adjustLockKeyStates() noexcept
@@ -232,7 +232,7 @@ namespace usb::hid
 			default:
 				break;
 		}
-		return {response_t::unhandled, nullptr, 0, memory_t::sram};
+		return {response_t::stall, nullptr, 0};
 	}
 
 	void handleReport() noexcept
