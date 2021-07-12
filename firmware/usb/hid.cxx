@@ -287,11 +287,11 @@ namespace usb::hid
 	static void handleModifier(const scancode_t key, const bool pressed) noexcept
 	{
 		const uint8_t bit{uint8_t(uint8_t(key) - uint8_t(scancode_t::leftControl))};
-		const auto mask = 1U << bit;
+		const auto mask = uint8_t(1U << bit);
 		if (pressed)
 			bootReport.modifier |= mask;
 		else
-			bootReport.modifier &= ~mask;
+			bootReport.modifier &= uint8_t(~mask);
 		reportStale = true;
 	}
 

@@ -15,7 +15,7 @@
  * in the in-built div2 gives a BSEL of 800 - 1
  */
 
-constexpr inline uint8_t highByte(uint16_t value) noexcept { return value >> 8U; }
+constexpr inline uint8_t highByte(uint16_t value) noexcept { return uint8_t(value >> 8U); }
 constexpr inline uint8_t lowByte(uint16_t value) noexcept { return uint8_t(value); }
 
 constexpr static uint8_t PORT_INVEN_gc{0x40U};

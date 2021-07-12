@@ -157,7 +157,7 @@ void keyIRQ() noexcept
 		const auto pressStates = PORTF.IN;
 		for (uint8_t row{0}; row < 6; ++row)
 		{
-			const bool switchState{(pressStates >> row) & 1U};
+			const auto switchState{bool((pressStates >> row) & 1U)};
 			auto &key{keyStates[(column * 6) + row]};
 			if (key.ledIndex == 255)
 				continue;
