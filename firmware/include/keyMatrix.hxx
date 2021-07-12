@@ -165,7 +165,9 @@ namespace mxKeyboard::keyMatrix
 		{{63, usbScancode_t::leftBracket}},
 		{{64, usbScancode_t::singleQuote}},
 		{{65, usbScancode_t::forwardSlash}},
-		{{66, usbScancode_t::menu}},
+		// This is the menu key.. rather than using the menu scancode,
+		// we apparently have to use the application scancode.. figures.
+		{{66, usbScancode_t::application}},
 
 		{{67, usbScancode_t::f12}},
 		{{68, usbScancode_t::equals}},
