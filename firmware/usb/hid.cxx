@@ -152,6 +152,7 @@ namespace usb::hid
 {
 	bool reportStale{false};
 	bootReport_t bootReport{};
+	uint8_t statusStates{};
 
 	std::array<scancode_t, 99> keyQueue{};
 	std::size_t keyCount{};
@@ -212,7 +213,33 @@ namespace usb::hid
 
 	static answer_t handleHIDRequest() noexcept
 	{
-		return {response_t::unhandled, nullptr, 0, memory_t::sram};
+		const auto request{static_cast<types::request_t>(packet.request)};
+		switch (request)
+		{
+			case types::request_t::getReport:
+				if (packet.requestType.dir() == endpointDir_t::controllerOut)
+					return {response_t::stall, nullptr, 0};
+				break;
+			case types::request_t::setReport:
+			{
+				if (packet.requestType.dir() == endpointDir_t::controllerIn)
+					return {response_t::stall, nullptr, 0};
+				const auto report{packet.value.asReport()};
+				if (report.type == setupPacket::reportType_t::output && report.index == 0 &&
+					packet.length == 1)
+				{
+					auto &epStatus{epStatusControllerOut[0]};
+					epStatus.memBuffer = &statusStates;
+					epStatus.transferCount = packet.length;
+					epStatus.needsArming(true);
+					setupCallback = adjustLockKeyStates;
+					return {response_t::zeroLength, nullptr, 0};
+				}
+				return {response_t::stall, nullptr, 0};
+			}
+		}
+
+		return {response_t::stall, nullptr, 0};
 	}
 
 	static answer_t handleSetupRequest(std::size_t interface) noexcept
