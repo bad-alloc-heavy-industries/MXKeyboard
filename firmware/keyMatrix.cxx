@@ -96,6 +96,23 @@ void keyInit() noexcept
 	}
 }
 
+namespace mxKeyboard::keyMatrix
+{
+	void updateKey(keyState_t &key)
+	{
+		if (key.state.logicalState())
+		{
+			ledSetValue(key.ledIndex, 0x00, 0xFF, 0x00);
+			usb::hid::keyPress(key.usbScancode);
+		}
+		else
+		{
+			ledSetValue(key.ledIndex, key.ledColour.r, key.ledColour.g, key.ledColour.b);
+			usb::hid::keyRelease(key.usbScancode);
+		}
+	}
+}
+
 void keyIRQ() noexcept
 {
 	for (uint8_t column{0}; column < 21; ++column)
@@ -120,16 +137,7 @@ void keyIRQ() noexcept
 					key.timePress = 0;
 					key.timeRelease = 0;
 					key.state.dirty(false);
-					if (key.state.logicalState())
-					{
-						ledSetValue(key.ledIndex, 0x00, 0xFF, 0x00);
-						usb::hid::keyPress(key.usbScancode);
-					}
-					else
-					{
-						ledSetValue(key.ledIndex, key.ledColour.r, key.ledColour.g, key.ledColour.b);
-						usb::hid::keyRelease(key.usbScancode);
-					}
+					updateKey(key);
 				}
 			}
 			else
