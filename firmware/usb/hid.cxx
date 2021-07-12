@@ -152,6 +152,7 @@ namespace usb::hid
 {
 	bool reportStale{false};
 	bootReport_t bootReport{};
+	uint8_t reportEndpoint{};
 	uint8_t statusStates{};
 
 	std::array<scancode_t, 99> keyQueue{};
@@ -163,10 +164,11 @@ namespace usb::hid
 	{
 		reportStale = false;
 		bootReport = {};
+		reportEndpoint = endpoint;
 		keyCount = 0;
 
-		epStatusControllerIn[1].stall(false);
-		epStatusControllerIn[1].memoryType(memory_t::sram);
+		epStatusControllerIn[reportEndpoint].stall(false);
+		epStatusControllerIn[reportEndpoint].memoryType(memory_t::sram);
 	}
 
 	static answer_t handleGetDescriptor() noexcept
@@ -179,7 +181,7 @@ namespace usb::hid
 		{
 			case usbDescriptor_t::hid:
 			{
-				if (descriptor.index >= 1)
+				if (descriptor.index >= 1U)
 					break;
 				const auto descriptor{*usbHIDDescriptor};
 				epStatusControllerIn[0].isMultiPart(true);
@@ -226,7 +228,7 @@ namespace usb::hid
 					return {response_t::stall, nullptr, 0};
 				const auto report{packet.value.asReport()};
 				if (report.type == setupPacket::reportType_t::output && report.index == 0 &&
-					packet.length == 1)
+					packet.length == 1U)
 				{
 					auto &epStatus{epStatusControllerOut[0]};
 					epStatus.memBuffer = &statusStates;
@@ -266,7 +268,7 @@ namespace usb::hid
 	{
 		if (reportStale)
 		{
-			pauseWriteEP(1);
+			pauseWriteEP(reportEndpoint);
 
 			if (keyCount > bootReport.keyCodes.size())
 			{
@@ -276,11 +278,11 @@ namespace usb::hid
 			else
 				std::memcpy(bootReport.keyCodes.data(), keyQueue.data(), bootReport.keyCodes.size());
 
-			epStatusControllerIn[1].memBuffer = &bootReport;
-			epStatusControllerIn[1].needsArming(true);
-			epStatusControllerIn[1].transferCount = sizeof(bootReport);
+			epStatusControllerIn[reportEndpoint].memBuffer = &bootReport;
+			epStatusControllerIn[reportEndpoint].needsArming(true);
+			epStatusControllerIn[reportEndpoint].transferCount = sizeof(bootReport);
 			reportStale = false;
-			writeEP(1);
+			writeEP(reportEndpoint);
 		}
 	}
 
@@ -322,7 +324,7 @@ namespace usb::hid
 			for (const auto &i : substrate::indexSequence_t{keyCount})
 			{
 				if (found)
-					keyQueue[i - 1] = keyQueue[i];
+					keyQueue[i - 1U] = keyQueue[i];
 				else if (keyQueue[i] == key)
 					found = true;
 			}
