@@ -125,20 +125,24 @@ namespace mxKeyboard::keyMatrix
 
 	void updateKey(const usbScancode_t scancode, const bool pressed)
 	{
-		auto &key
+		auto *const key
 		{
-			[scancode]() -> keyState_t &
+			[scancode]() -> keyState_t *
 			{
 				if (scancode == usbScancode_t::numLock)
-					return *numLock;
+					return numLock;
 				else if (scancode == usbScancode_t::capsLock)
-					return *capsLock;
+					return capsLock;
 				else if (scancode == usbScancode_t::scrollLock)
-					return *scrollLock;
+					return scrollLock;
+				return nullptr;
 			}()
 		};
-		key.state.logicalState(pressed);
-		updateKey(key);
+		if (key)
+		{
+			key->state.logicalState(pressed);
+			updateKey(*key);
+		}
 	}
 }
 
