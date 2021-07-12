@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: BSD-3-Clause
 #include <usb/core.hxx>
 #include <usb/device.hxx>
+#include <substrate/index_sequence>
 #include "usb/hid.hxx"
-#include "indexSequence.hxx"
 #include "usb/hidTypes.hxx"
 #include "keyMatrix.hxx"
 
@@ -215,7 +215,7 @@ namespace usb::hid
 		return {response_t::unhandled, nullptr, 0, memory_t::sram};
 	}
 
-	static answer_t handleSetupRequest(std::size_t interface, const usb::types::setupPacket_t &) noexcept
+	static answer_t handleSetupRequest(std::size_t interface) noexcept
 	{
 		if (packet.requestType.recipient() != setupPacket::recipient_t::interface ||
 			packet.index != interface)
@@ -274,7 +274,7 @@ namespace usb::hid
 			handleModifier(key, true);
 		else
 		{
-			for (const auto &i : utility::indexSequence_t{keyCount})
+			for (const auto &i : substrate::indexSequence_t{keyCount})
 			{
 				if (keyQueue[i] == key)
 					return;
@@ -292,7 +292,7 @@ namespace usb::hid
 		else
 		{
 			bool found{false};
-			for (const auto &i : utility::indexSequence_t{keyCount})
+			for (const auto &i : substrate::indexSequence_t{keyCount})
 			{
 				if (found)
 					keyQueue[i - 1] = keyQueue[i];
