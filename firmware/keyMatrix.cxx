@@ -112,15 +112,14 @@ namespace mxKeyboard::keyMatrix
 	void updateKey(keyState_t &key)
 	{
 		if (key.state.logicalState())
-		{
 			ledSetValue(key.ledIndex, 0x00, 0xFF, 0x00);
-			usb::hid::keyPress(key.usbScancode);
-		}
 		else
-		{
 			ledSetValue(key.ledIndex, key.ledColour.r, key.ledColour.g, key.ledColour.b);
+
+		if (key.state.physicalState())
+			usb::hid::keyPress(key.usbScancode);
+		else
 			usb::hid::keyRelease(key.usbScancode);
-		}
 	}
 
 	void updateKey(const usbScancode_t scancode, const bool pressed)
