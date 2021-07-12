@@ -14,7 +14,7 @@ void run()
 	ledInit();
 	keyInit();
 	usb::core::init();
-	usb::hid::registerHandlers(1, 1, 1);
+	usb::hid::registerHandlers(1, 0, 1);
 	usb::core::attach();
 	PMIC.CTRL = 0x87;
 	__builtin_avr_sei();
