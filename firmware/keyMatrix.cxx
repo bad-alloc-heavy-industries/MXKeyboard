@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: BSD-3-Clause
 #include <cstdint>
 #include <array>
+#include <substrate/indexed_iterator>
+#include <substrate/index_sequence>
 #include <avr/cpufunc.h>
 #include "MXKeyboard.hxx"
 #include "interrupts.hxx"
 #include "keyMatrix.hxx"
 #include "mask.hxx"
-#include "indexedIterator.hxx"
-#include "indexSequence.hxx"
 #include "led.hxx"
 #include "profile.hxx"
 #include "usb/hid.hxx"
@@ -23,8 +23,8 @@ using mxKeyboard::profile::profile_t;
 constexpr static const auto columnMask{genMask<std::uint8_t, 0U, 5U>()};
 constexpr static const auto rowMask{genMask<std::uint8_t, 0U, 6U>()};
 
-profile_t profile{};
-std::array<keyState_t, keyCount> keyStates{{}};
+static profile_t profile{};
+static std::array<keyState_t, keyCount> keyStates{{}};
 
 void keyInit() noexcept
 {
@@ -61,7 +61,7 @@ void keyInit() noexcept
 		profile.number(0);
 		profile.debounce(1);
 
-		for (const auto &index : utility::indexSequence_t{keyCount})
+		for (const auto &index : substrate::indexSequence_t{keyCount})
 		{
 			const auto i{static_cast<uint8_t>(index)};
 			const key_t key = keys[i];
@@ -78,21 +78,21 @@ void keyInit() noexcept
 	}
 
 	// Pull the initial key state information from flash
-	for (const auto &[index, keyState] : utility::indexedIterator_t{keyStates})
+	for (const auto &[index, keyState] : substrate::indexedIterator_t{keyStates})
 	{
 		const auto i{static_cast<uint8_t>(index)};
 		const key_t key = keys[i];
-		keyState->state = {};
-		keyState->debounce = profile.debounce();
-		keyState->timePress = profile.timePress(i);
-		keyState->timeRelease = profile.timeRelease(i);
-		keyState->ledIndex = key.ledIndex;
-		keyState->ledColour = profile.keyColour(i);
-		keyState->usbScancode = profile.scancode(i);
-		keyState->state.keyType(profile.keyType(i) ? keyType_t::latching : keyType_t::momentary);
+		keyState.state = {};
+		keyState.debounce = profile.debounce();
+		keyState.timePress = profile.timePress(i);
+		keyState.timeRelease = profile.timeRelease(i);
+		keyState.ledIndex = key.ledIndex;
+		keyState.ledColour = profile.keyColour(i);
+		keyState.usbScancode = profile.scancode(i);
+		keyState.state.keyType(profile.keyType(i) ? keyType_t::latching : keyType_t::momentary);
 
 		if (key.ledIndex != 255)
-			ledSetValue(key.ledIndex, keyState->ledColour.r, keyState->ledColour.g, keyState->ledColour.b);
+			ledSetValue(key.ledIndex, keyState.ledColour.r, keyState.ledColour.g, keyState.ledColour.b);
 	}
 }
 
