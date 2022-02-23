@@ -3,11 +3,12 @@ prefix = '/opt/cxc'
 exec_prefix = prefix / 'bin'
 common_flags = ['-mdouble=64', '-mlong-double=64', '-mmcu=atxmega256a3u', '-ffreestanding']
 compile_flags = ['-ffunction-sections', '-fdata-sections']
+plugin_dir = prefix / 'lib/gcc/avr/11.2.0'
 
 [binaries]
 c = exec_prefix / 'avr-gcc'
 cpp = exec_prefix / 'avr-g++'
-ar = exec_prefix / 'avr-ar'
+ar = [exec_prefix / 'avr-ar', '--plugin', plugin_dir / 'liblto_plugin.so']
 as = exec_prefix / 'avr-as'
 strip = exec_prefix / 'avr-strip'
 objcopy = exec_prefix / 'avr-objcopy'
