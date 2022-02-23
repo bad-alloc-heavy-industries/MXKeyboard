@@ -1,12 +1,6 @@
-eagle.epf
+/MXKeyboard-backups/
+/gerber/
+/bom/
+*.kicad_prl
 
-*.s#*
-*.b#*
-*.l#*
-
-*-bak
-*.bck
 fp-info-cache
-
-Gerber/
-gerber/
