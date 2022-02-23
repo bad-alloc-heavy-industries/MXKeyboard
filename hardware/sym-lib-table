@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name MXKeyboard-eagle-import)(type Legacy)(uri ${KIPRJMOD}/MXKeyboard-eagle-import.lib)(options "")(descr ""))
-  (lib (name MXKeyboard-rescue)(type Legacy)(uri ${KIPRJMOD}/MXKeyboard-rescue.lib)(options "")(descr ""))
+  (lib (name "MXKeyboard-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/MXKeyboard.kicad_sym")(options "")(descr ""))
 )

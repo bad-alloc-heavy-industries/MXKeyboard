@@ -2,5 +2,3 @@
 /gerber/
 /bom/
 *.kicad_prl
-
-fp-info-cache
