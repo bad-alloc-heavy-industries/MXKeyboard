@@ -15,8 +15,8 @@ void dmaInit(DMA_CH_t &channel, const DMA_CH_TRIGSRC_t triggerSource)
 		DMA_CH_DESTRELOAD_NONE_gc | DMA_CH_DESTDIR_FIXED_gc;
 	channel.TRIGSRC = triggerSource;
 	channel.REPCNT = 0;
-	static_assert(sizeof(void *) == sizeof(std::uintptr_t));
-	static_assert(sizeof(uint32_t) > sizeof(std::uintptr_t));
+	static_assert(sizeof(void *) <= sizeof(std::uintptr_t));
+	static_assert(sizeof(uint32_t) == sizeof(std::uintptr_t));
 }
 
 void dmaTransferLength(DMA_CH_t &channel, const uint16_t length)
