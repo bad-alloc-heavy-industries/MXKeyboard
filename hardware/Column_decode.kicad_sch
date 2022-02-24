@@ -2,7 +2,7 @@
 
   (uuid 0fa0e183-23fd-4787-b228-f9207d787009)
 
-  (paper "A4")
+  (paper "A3")
 
   (title_block
     (title "Column decoder")
@@ -1152,7 +1152,7 @@
     (uuid da88cf57-0975-4f67-b828-34f4f4c6151f)
   )
 
-  (symbol (lib_id "Device:C_Small") (at 246.38 73.66 0)
+  (symbol (lib_id "Device:C_Small") (at 246.38 73.66 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00001181ab2e)
     (property "Reference" "C31" (id 0) (at 243.84 73.66 90)
@@ -1183,7 +1183,7 @@
     (pin "2" (uuid 13f13182-95d4-4270-8283-febb7c2646df))
   )
 
-  (symbol (lib_id "MXKeyboard-eagle-import:74HC238BQ") (at 154.94 78.74 0)
+  (symbol (lib_id "MXKeyboard-eagle-import:74HC238BQ") (at 154.94 78.74 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00003d1e7172)
     (property "Reference" "U16" (id 0) (at 154.94 78.74 0)
@@ -1229,7 +1229,7 @@
     (pin "EP" (uuid ab84cbf8-29d0-420c-bbdd-9f3dc1795e21))
   )
 
-  (symbol (lib_id "MXKeyboard-eagle-import:74HC238BQ") (at 93.98 78.74 0)
+  (symbol (lib_id "MXKeyboard-eagle-import:74HC238BQ") (at 93.98 78.74 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006d3d1ec3)
     (property "Reference" "U15" (id 0) (at 93.98 78.74 0)
@@ -1427,7 +1427,7 @@
     (pin "1" (uuid d453164c-37ea-4b84-a0be-27b10de3444f))
   )
 
-  (symbol (lib_id "Device:C_Small") (at 124.46 73.66 0)
+  (symbol (lib_id "Device:C_Small") (at 124.46 73.66 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000b4176b2a)
     (property "Reference" "C29" (id 0) (at 121.92 73.66 90)
@@ -1458,7 +1458,7 @@
     (pin "2" (uuid 5fe532ac-8503-4ee0-adef-8e1f1cde5e8f))
   )
 
-  (symbol (lib_id "Device:C_Small") (at 185.42 73.66 0)
+  (symbol (lib_id "Device:C_Small") (at 185.42 73.66 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000b941d5c4)
     (property "Reference" "C30" (id 0) (at 182.88 73.66 90)
@@ -1489,7 +1489,7 @@
     (pin "2" (uuid d433c803-be8f-42cf-aa6e-2820edeace9d))
   )
 
-  (symbol (lib_id "MXKeyboard-eagle-import:74HC238BQ") (at 215.9 78.74 0)
+  (symbol (lib_id "MXKeyboard-eagle-import:74HC238BQ") (at 215.9 78.74 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000e1651699)
     (property "Reference" "U17" (id 0) (at 215.9 78.74 0)
