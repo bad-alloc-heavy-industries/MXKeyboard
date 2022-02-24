@@ -2,7 +2,7 @@
 
   (uuid b287f145-851e-45cc-b200-e62677b551d5)
 
-  (paper "A3")
+  (paper "A4")
 
   (title_block
     (title "MXKeyboard top-level schematic")
@@ -7302,6 +7302,9 @@
     (path "/00000000-0000-0000-0000-00005f5d6257/c35c139b-7516-4be8-83e3-6322ec396dab"
       (reference "#FLG01") (unit 1) (value "PWR_FLAG") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00005f5d6257/a74fd03b-6437-47f4-a5d5-d2c1d5d4b5e1"
+      (reference "#FLG02") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00005f5d6721/00000000-0000-0000-0000-00005fb49264"
       (reference "#FLG0101") (unit 1) (value "PWR_FLAG") (footprint "")
     )
@@ -7533,17 +7536,8 @@
     (path "/00000000-0000-0000-0000-00005f5d6257/7974400b-1a6d-41e0-b665-a17c9265ef27"
       (reference "#PWR074") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005f5d6257/00000000-0000-0000-0000-00005fdb8a7a"
-      (reference "#PWR075") (unit 1) (value "VBUS") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005f5d6257/a5b0e518-276a-4f6e-9ca1-9d12295a94f0"
       (reference "#PWR076") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005f5d6257/00000000-0000-0000-0000-00005fd90f50"
-      (reference "#PWR079") (unit 1) (value "VBUS") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005f5d6257/00000000-0000-0000-0000-00006027223f"
-      (reference "#PWR080") (unit 1) (value "VBUS") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005f5d6257/dd1c1799-9938-4e5c-b8e2-e528eaff62ba"
       (reference "#PWR081") (unit 1) (value "GND") (footprint "")

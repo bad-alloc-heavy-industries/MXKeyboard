@@ -2,7 +2,7 @@
 
   (uuid 0fa0e183-23fd-4787-b228-f9207d787009)
 
-  (paper "A3")
+  (paper "A4")
 
   (title_block
     (title "Column decoder")

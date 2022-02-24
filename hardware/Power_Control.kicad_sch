@@ -2,7 +2,7 @@
 
   (uuid 7d590ff0-32de-4f01-bf4c-caa51c97e2a2)
 
-  (paper "A3")
+  (paper "A4")
 
   (title_block
     (title "Power Control")
